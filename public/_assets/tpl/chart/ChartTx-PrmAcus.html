@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th style="width:80px">약속명</th>
+      <th class="hide">경혈코드</th>
+      <th style="width:100px">경혈명</th>
+      <th style="width:60px">부위</th>
+      <th style="width:60px">선택</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% _.each(items, function(item){ %>
+    <tr>
+    <td><%= item.ASK_ID %></td>
+    <td class="hide ASK_NAME"><%= item.ASK_NAME %></td>
+    <td class="BLOD_HNAME"><%= item.BLOD_HNAME %></td>
+    <td>--</td>
+    <td>
+    <button class="js-insertAcu btn-small btn-info">입력</button>
+    </td>
+    </tr>
+  <% }) %>
+  </tbody>
+</table>

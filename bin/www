@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+var debug = require('debug')('mH2');
+var app = require('../app');
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
+
+
+// upgrade http server to socket.io server
+var io = require('socket.io').listen(server);
+
+io.sockets.on('connection',function(socket){
+   socket.emit('toclient',{msg:'Welcome !'});
+   socket.on('fromclient',function(data){
+       socket.broadcast.emit('toclient',data); // 자신을 제외하고 다른 클라이언트에게 보냄
+       socket.emit('toclient',data); // 해당 클라이언트에게만 보냄. 다른 클라이언트에 보낼려면?
+       console.log('Message from client :'+data.msg);
+   })
+});

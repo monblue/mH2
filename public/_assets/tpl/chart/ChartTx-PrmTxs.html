@@ -1,0 +1,18 @@
+<% _.each(data, function(item){ %>
+  <div class="row">
+    <span class="col-md-2"><%= item.title %></span>
+    <span class="col-md-6 prmTxItems">
+    <% _.each(item.txs, function(tx){ %>
+        <span class="col-md-2 badge alert-warning" mH-val='{"group":"<%= tx.group %>", "name":"<%= tx.name %>", "OPSC_MOMM_ID":"<%= tx.OPSC_MOMM_ID %>", "gasan":"<%= tx.gasan %>", "price":<%= tx.price %>, "OPSC_BIGO2":"<%= tx.OPSC_BIGO2 %>", "OPSC_BIGO5":"<%= tx.OPSC_BIGO5 %>", "OPSC_BLOD":"<%= tx.OPSC_BLOD %>", "OPSC_AMT":"<%= tx.OPSC_AMT %>", "OPSC_DAY":"<%= tx.OPSC_DAY %>"}'>
+        <%= tx.gname %>
+        </span>
+    <% }) %>
+    </span>
+    <span class="col-md-2 prmTxPrice">
+    <%= item.total %>
+    </span>
+    <span class="col-md-2">
+      <button class="js-apply btn-small btn-info">적용</button>
+    </span>
+  </div>
+<% }) %>

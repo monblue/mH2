@@ -1,0 +1,64 @@
+<!-- wrap: tagName: tr , td: 6개-->
+<% if (LAST == 0) {var badge = 'badge-default'; LAST = LAST2;} else {var badge = 'badge-warning';}
+if (SEX == '0') { SEX = '남'; } else { SEX = '여'; }
+if (AGE > 64) AGE = '<span style="color:#f00">' + AGE + '</span>';
+BTIME = BTIME.substr(0, 2) + ':' + BTIME.substr(2, 2);
+var photo = 'defaultPhoto.jpg'; //default
+if (PIC !== '[]') {
+  photo = JSON.parse(PIC)[0]['CAP_PATH'];
+}
+%>
+<td class="js-takePhoto">
+<!-- !!!'/photo/thumb/'' 를 상수로 불러오기 -->
+  <img src="/photo/thumb/<%=photo%>" />
+</td>
+<td>
+  <span class="badge badge alert-info js-moveState"><%=BNUM%></span>
+</td>
+<td class="js-showDetail">
+  <b><%=NAME%></b>(<%=AGE%>/<%=SEX%>)
+</td>
+<td class="hide">
+  <span class="badge <%=badge%>"><%=LAST%></span>
+</td>
+<td class="hide">
+  <%=BTIME%>
+</td>
+<td class="timer">
+          <select class="timerItem">
+          <option value="1" mH-val="10">상담</option>
+          <option value="2" mH-val="20">핫팩</option>
+          <option value="3" mH-val="10">텐스</option>
+          <option value="4" mH-val="12">유침</option>
+          <option value="5" mH-val="12">전침</option>
+          <option value="6" mH-val="03">부항</option>
+          <option value="7" mH-val="10">기타</option>
+          </select>
+          <select class="timerIntv">
+          <option value="01">01</option>
+          <option value="03">03</option>
+          <option value="05">05</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="00">00</option>
+          </select>
+    <br />
+    <span id='timer_<%=BNUM%>' class="txTimer" style="color:#f00;font-weight:bold;">
+      01:00
+    </span>
+    <!--<td class="dropdown" class="txTimer" style="color:#f00;font-weight:bold;">
+      <a data-toggle="dropdown"  id='timer_<%=BNUM%>' href="#">15:00</a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <li>05:00</li>
+        <li>10:00</li>
+        <li>15:00</li>
+        <li>20:00</li>
+      </ul>
+    </td>-->
+    <span>
+      <button class="btn-small btn-danger mH-ibtn"><i id="icon_<%=BNUM%>" class="glyphicon glyphicon-play"></i></button>
+      <!--<a href="#" id="icon_<%=BNUM%>" class="glyphicon glyphicon-play"></a>-->
+    </span>
+</td>

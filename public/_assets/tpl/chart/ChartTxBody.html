@@ -1,0 +1,219 @@
+<!--wrap: tagName: table, class: table table-striped-->
+<div id="txFee" class="alert alert-warning">
+<label>진료비</label>
+  총액:<span id="feeTotal" style="display:inline-block;width:44px;"></span>
+  본부금:<span id="feeBonbu" style="display:inline-block;width:38px;"></span>
+  청구액:<span id="feeChungu" style="display:inline-block;width:44px;"></span>
+  비보험:<span id="feeBibo" style="display:inline-block;width:46px;"></span>
+  수납액:<span id="feeSunab" style="display:inline-block;width:46px;"></span>
+  <button id="js-showCurTxs" class="btn-small btn-info pull-right">세부내역</button>
+</div>
+<div id="txArticles">
+
+<div>
+<span class="tx_group" mH-group="0" style="width:150px">
+  <label>진찰</label>
+  <select class="OPSC_MOMM_ID">
+    <option value="">---</option>
+    <option value="10100">초진</option>
+    <option value="10200">재진</option>
+  </select>
+</span>
+
+<span class="tx_group" mH-group="1" style="width:150px">
+  <label>할증</label>
+  야간<input type="checkbox" class="dayExtra" value="010">
+  공휴<input type="checkbox" class="dayExtra" value="050">
+  토요<input type="checkbox" class="dayExtra" value="030">
+  </select>
+</span>
+
+<span class="tx_group" mH-group="8" style="width:150px">
+  <label>변증</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="40400">변증</option>
+  </select>
+</span>
+</div>
+
+<div>
+<span class="tx_group" mH-group="3" style="width:400px">
+  <label>침1</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="40011">경1</option>
+    <option value="40012">경2</option>
+    <option value="40011002">1(자락등)</option>
+    <option value="40011006">1(화침등)</option>
+    <option value="40012002">2(자락등)</option>
+    <option value="40012006">2(화침등)</option>
+    <option value="40012004">2(사암등)</option>
+  </select>
+<!-- for ChartITBodyView > article-tx > tx_3 acu -->
+<!-- wrap:  -->
+<span class="dropdown">
+  <button class="dropdown-toggle hide" data-toggle="dropdown">111</button>
+  <input type="text" class="OPSC_BLOD" value="">
+  <input type="hidden" class="OPSC_BLOD" value="">
+  <input type="hidden" class="OPSC_BIGO2" value="">
+</span>
+<span>
+  <button id="js-restoreAcus" class="btn-small btn-info hide">복원</button>
+</span>
+<span>
+	<button id="js-showPrmAcus" class="btn-small btn-info">약속</button>
+</span>
+</span>
+</div>
+
+<div>
+<span class="tx_group" mH-group="5" style="width:220px">
+  <label>침2</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="40120">분구침</option>
+    <option value="40091">전침</option>
+    <option value="40100">레이저</option>
+    <option value="40092">전자침</option>
+  </select>
+</span>
+
+<span class="tx_group" mH-group="4" style="width:230px">
+  <label>특수</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="40030">안와</option>
+    <option value="40070">척추</option>
+    <option value="40060">관절</option>
+    <option value="40080">투자</option>
+    <option value="40040">비강</option>
+    <option value="40050">복강</option>
+  </select>
+</span>
+<span class="tx_group" mH-group="4_1" style="width:230px">
+  <label>특수2</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="40030007">안와(2)</option>
+    <option value="40070007">척추(2)</option>
+    <option value="40060007">관절(2)</option>
+    <option value="40080007">투자(2)</option>
+    <option value="40040007">비강(2)</option>
+    <option value="40050007">복강(2)</option>
+  </select>
+</span>
+
+</div>
+
+<div>
+<span class="tx_group" mH-group="6" style="width:150px">
+  <label>뜸구</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="40304">직접구</option>
+    <option value="40306">간접구</option>
+    <option value="40305">반흔구</option>
+    <option value="40307">기기구</option>
+  </select>
+</span>
+
+<span class="tx_group" mH-group="7" style="width:200px">
+  <label>부항</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="40312">습부1</option>
+    <option value="40313">습부2</option>
+    <option value="40321">유관법</option>
+    <option value="40323">주관법</option>
+    <option value="40322">섬관법</option>
+  </select>
+</span>
+
+<span class="tx_group" mH-group="9" style="width:150px">
+  <label>물리</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="40700">온열</option>
+    <option value="40701">적외선</option>
+    <option value="40702">한냉</option>
+  </select>
+</span>
+
+</div>
+
+<div>
+<span class="tx_group" mH-group="15" style="width:300px">
+  <label>보험약</label>
+  <select class="OPSC_MOMM_ID EX1" mH-EX="1">
+
+  </select>
+<!-- for ChartITBodyView > article-tx -->
+<!-- wrap:  tag: article, id: article-tx -->
+<select class="OPSC_AMT">
+    <option value="1.0">1.0</option>
+    <option value="0.75">0.75</option>
+    <option value="0.5">0.5</option>
+    <option value="0.33">0.33</option>
+    <option value="0.25">0.25</option>
+    <option value="0.2">0.2</option>
+</select>
+<!-- for ChartITBodyView > article-tx -->
+<!-- wrap:  tag: article, id: article-tx -->
+<select class="OPSC_DAY">
+  <% for(var i=1; i<10; i++) { %>
+    <option value="<%= i %>"><%= i %></option>
+  <% } %>
+</select>
+<span class="tx_group" mH-group="2" style="width:100px">
+  <label for="js-checkJoje" class="active" style="width:80px">조제료 제외</label>
+  <input type="checkbox" id="js-checkJoje">
+  <!--<input type="hidden" class="OPSC_DAY">-->
+</span>
+<button class="btn-small btn-info glyphicon glyphicon-plus-sign"></button>
+</span>
+</div>
+<div>
+<span class="tx_group hide" mH-group="15_1" style="width:300px">
+  <label>보험약2</label>
+  <select class="OPSC_MOMM_ID EX2" mH-EX="2">
+
+  </select>
+<!-- for ChartITBodyView > article-tx -->
+<!-- wrap:  tag: article, id: article-tx -->
+<select class="OPSC_AMT">
+    <option value="1.0">1.0</option>
+    <option value="0.75">0.75</option>
+    <option value="0.5">0.5</option>
+    <option value="0.33">0.33</option>
+    <option value="0.25">0.25</option>
+    <option value="0.2">0.2</option>
+</select>
+<!-- for ChartITBodyView > article-tx -->
+<!-- wrap:  tag: article, id: article-tx -->
+<select class="OPSC_DAY">
+  <% for(var i=1; i<10; i++) { %>
+    <option value="<%= i %>"><%= i %></option>
+  <% } %>
+</select>
+</div>
+
+<div>
+<span class="tx_group" mH-group="77" style="width:500px">
+  <label>비보</label>
+  <select class="OPSC_MOMM_ID">
+
+  </select>
+  <button class="btn-small btn-info glyphicon glyphicon-plus-sign"></button>
+</span>
+
+<span class="tx_group" mH-group="88" style="width:500px">
+  <label>자보</label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+    <option value="49020">경근저주파요법(TENS)</option>
+    <option value="92010">제일한방파프수(1매)</option>
+  </select>
+</span>
+</div>
+</div>

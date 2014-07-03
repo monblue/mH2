@@ -1,0 +1,39 @@
+<!-- for getChartNf modal -->
+<!-- wrap:  -->
+<% var photo =  JSON.parse(PIC);
+  if ( photo.length > 0 ) { path = photo[photo.length -1].CAP_PATH} else { path = 'defaultPhoto1.jpg'};
+  //var yy = '19';  //!!!alter DB
+  //var jeungNum = '000000';  //!!!alter DB
+  var birth = hM_formatDate(yy.toString() + jumin01.toString(), '-');
+  first = hM_formatDate(FIRSTDATE, '-');
+  last = hM_formatDate(LASTDATE, '-');
+%>
+
+<table class="table table-default">
+<tr>
+<th colspan="2">
+성명: <%=name%> 차트번호: <%=chartNum%> 증번호: <%=jeungNum%></th>
+</tr>
+<tr class="xs-12">
+<td rowspan="4" class="xs-5">
+  <!--<img src="/photo/<%=path%>" style="width:200px;"></img>-->
+  <img src="/photo/<%=path%>" class="img-responsive">
+</td>
+<td class="xs-7">생일: <%=birth%> </td>
+</tr>
+<tr>
+<td class="xs-7">집전화: <%=telNum%></td>
+</tr>
+<tr>
+<td class="xs-7">휴대폰: </td>
+</tr>
+<tr>
+<td class="xs-7">메모: <%=memo%></td>
+</tr>
+<tr>
+<td colspan="2">주소: <%=ADDRESS%></td>
+</tr>
+<tr>
+<td colspan="2">최초: <%=first%>, 최종: <%=last%></td>
+</tr>
+</table>

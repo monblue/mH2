@@ -1,0 +1,29 @@
+<!-- for searchPatient modal -->
+<!-- wrap:  -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>성명</th>
+      <th>나이</th>
+      <th>성별</th>
+      <th>전화번호</th>
+      <th>접수</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% _.each(items, function(item){ %>
+    <tr >
+    <td><%= item.NAME %></td>
+    <td><%= item.AGE %></td>
+    <td><%= item.SEX %></td>
+    <td><%= item.TEL %></td>
+    <td><button id="<%= item.CHARTID %>" class='js-addPatient'>접수</button></td>
+    </tr>
+  <% }) %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="5">검색 갯수: </td>
+    </tr>
+  </tfoot>
+</table>

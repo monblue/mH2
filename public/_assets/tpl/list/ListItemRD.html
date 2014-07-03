@@ -1,0 +1,24 @@
+<%
+  var options = {"LAST":LAST, "LAST2":LAST2, "JTIME":JTIME, "SEX":SEX, "AGE":AGE, "ORDER1":ORDER1, "ITYPE":ITYPE, "JEJUCODE":JEJUCODE, "TOTAL":TOTAL, "BONBU":BONBU, "PIC":PIC, "CHARTED":JSON.stringify(CHARTED)};
+  var out = mH_getListUI(options);
+%>
+  <a href="#" class="pull-left js-takePhoto">
+    <img src="/photo/thumb/<%=out.txtPIC%>" class="_img-thumbnail" />
+  </a>
+  <div class="pull-right line-btn">
+    <small class="badge badge-danger" title="<%=ORDER1%>"><%=out.txtORDER1%></small>
+    <span><%=out.txtBONBU%> <br class="visible-xs" /> <%=out.txtTOTAL%></span>
+    <span><button class="js-showChart hidden-xs">차팅</button></span>
+  </div>
+  <div class="pull-right line-txt">
+
+  </div>
+  <h4>
+    <a href="#" class="js-showDetail"><b><%=NAME%></b>(<%=out.txtAGE%>/<%=out.txtSEX%>) </a>
+    <small class="badge <%=out.bdgLAST%>" title="<%=LAST%>"><%=out.txtLAST%></small>
+    <small class="badge <%=out.bdgITYPE%>"><%=out.txtITYPE%></small>
+    <small class="badge <%=out.bdgJEJU%>" title="<%=JEJUCODE%>"><%=out.txtJEJU%></small>
+    <small href="#" class="badge alert-danger <%=out.visCHARTED%>" data-toggle="popover" title="" data-content="<%=out.txtCHARTED%>" data-original-title="수납메모">수</small>
+    <!--<br />-->
+  </h4>
+  <div class="clearfix"></div>

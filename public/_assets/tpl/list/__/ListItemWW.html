@@ -1,0 +1,34 @@
+<!-- wrap: tagName: tr , td: 6개-->
+<% if (LAST == 0) {var badge = 'badge-default'; LAST = LAST2;} else {var badge = 'badge-warning';} 
+if (SEX == '0') { SEX = '남'; } else { SEX = '여'; }
+if (AGE > 64) AGE = '<span style="color:#f00">' + AGE + '</span>';
+if (ORDER1) {oMark='지';ORDER1=ORDER1.split('ⓗ')[1]} else {oMark='';}
+  jejuBadge = (JEJU = hM_getJeju(JEJUCODE)) ? 'badge badge-info' : '';
+var photo = 'defaultPhoto.jpg';	//default
+if (PIC !== '[]') {
+	photo = JSON.parse(PIC)[0]['CAP_PATH'];
+}
+%>
+<td class="js-takePhoto">
+<!-- !!!'/photo/thumb/'' 를 상수로 불러오기 -->
+  <img src="/photo/thumb/<%=photo%>" />
+</td>
+<td class="js-showChart">
+  <b><%=NAME%></b>(<%=AGE%>/<%=SEX%>)
+</td>
+<td class="js-showDetail">
+  <span class="badge <%=badge%>"><%=LAST%></span>
+  <span class="badge badge-danger" title="<%=ORDER1%>"><%=oMark%></span>
+</td>
+<td>
+  <span class="<%=jejuBadge%>" title="<%=JEJUCODE%>"><%=JEJU%></span>
+</td>
+<td>
+  <%=JTIME%>
+</td>
+<td class="js-assignBed">
+  이동
+</td>
+<td class="js-showChart">
+  차팅
+</td>

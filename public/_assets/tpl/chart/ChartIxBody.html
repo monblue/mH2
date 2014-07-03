@@ -1,0 +1,40 @@
+<!--wrap: tagName: table, class: table table-striped-->
+<table class="table table-striped">
+<thead>
+	<tr>
+		<th>순번</th>
+		<th>KCD상병명</th>
+		<th>KCD코드</th>
+		<th class="hide">KCD키</th>
+		<th>---</th>
+	</tr>
+</thead>
+<tbody>
+<% items=['1','2','3']; %>
+<% _.each(items, function(item){ %>
+<tr id="Ix_<%=item%>">
+  <td style="text-align:center"><%=item%></td>
+  <td>
+    <span class="dropdown">
+    <button class="dropdown-toggle hide" data-toggle="dropdown">111</button>
+    <input class="ixName" type="text" style="width:300px" value="" />
+    </span>
+  </td>
+  <td>
+    <input class="ODSC_DISM_ID" type="text" style="width:100px" value="" disabled />
+  </td>
+  <td>
+    <input class="ODSC_BIGO1" type="text" style="display:none;" value="" disabled />
+  </td>
+  <td>
+    <button class="js-shiftIx btn-small btn-info glyphicon glyphicon-chevron-down" mH-seq="<%=item%>">
+    </button>
+    <button class="js-delIx btn-small btn-info glyphicon glyphicon-remove-sign">
+    </button>
+  </td>
+</tr>
+<% }) %>
+</tbody>
+<tfoot>
+</tfoot>
+</table>

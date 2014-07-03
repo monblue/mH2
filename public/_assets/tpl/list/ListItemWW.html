@@ -1,0 +1,21 @@
+<% var options = {"LAST":LAST, "LAST2":LAST2, "JTIME":JTIME, "SEX":SEX, "AGE":AGE, "ORDER1":ORDER1, "ITYPE":ITYPE, "JEJUCODE":JEJUCODE, "PIC":PIC};
+  var out = mH_getListUI(options);
+%>
+  <a href="#" class="pull-left js-takePhoto"><img src="/photo/thumb/<%=out.txtPIC%>" class="_img-thumbnail" /></a>
+  <!--<div class="pull-right line-btn hidden-xs">-->
+  <div class="pull-right line-btn">
+    <span><%=out.txtJTIME%></span>
+    <button class="btn btn-primary glyphicon glyphicon-send js-assignBed"></button>
+    <button class="js-showChart hidden-xs">C</button>
+  </div>
+  <div class="pull-right line-txt hidden-xs">
+  </div>
+  <h4>
+    <a href="#" class="js-showDetail"><b><%=NAME%></b>(<%=out.txtAGE%>/<%=out.txtSEX%>) </a>
+    <small class="badge <%=out.bdgLAST%>" title="<%=LAST%>"><%=out.txtLAST%></small>
+    <small class="badge <%=out.bdgITYPE%>"><%=out.txtITYPE%></small>
+    <small class="badge <%=out.bdgJEJU%>" title="<%=JEJUCODE%>"><%=out.txtJEJU%></small>
+    <!--<br />-->
+    <small class="js-showOrder badge <%=out.bdgORDER1%>" title="<%=out.txtORDER1%>">지</small>
+  </h4>
+  <div class="clearfix"></div>
