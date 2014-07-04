@@ -21,14 +21,12 @@ var mssqlconfig = {
 //-----------------------------------------------------------------------------
 // MongoDB
 //-----------------------------------------------------------------------------
-
 var mongo = require('mongodb');
 var MgServer = mongo.Server;
 var MgDb = mongo.Db;
 var BSON = mongo.BSONPure;
 var mgserver = new MgServer('localhost', 27017, {auto_reconnect: true});
 
-//mgdb = new MgDb('bookdb', mgserver, {safe: true});
 mgdb = new MgDb('txdb', mgserver, {safe: true});
 
 mgdb.open(function(err, mgdb) {
@@ -46,185 +44,110 @@ mgdb.open(function(err, mgdb) {
 //-----------------------------------------------------------------------------
 // exports:: mongodb CRUD functions
 //-----------------------------------------------------------------------------
-//exports.mgCreateRs = function(req, res, opts) {
 exports.mgCreateRs = function(opts, cb) {
-	//var data = opts.data || {};
-	var data = opts.body;
-	//var date = opts.date || '20140628';
-	data.date = opts.date || '20140628';
-	var col = opts.col || 'daily';
-  //var item = req.body;
-  console.log('data: ' + data);
-  mgdb.collection(col, function(err, collection) {
-    //collection.insert(item, {safe:true}, function(err, rs) {
-    collection.insert(data, {safe:true}, function(err, rs) {
-      if (err) {
-        cb({'error':'An error has occurred'});
-      } else {
-      	cb(rs);
-      }
+  mgdb.collection(opts.col, function(err, collection) {
+    collection.insert(opts.body, {safe:true}, function(err, rs) {
+      cb(err, rs);
     });
-
   });
 };
 
 
 exports.mgReadAllRs = function(opts, cb) {
-	var col = opts.col || 'daily';
 	var filter = opts.filter || {};
-  mgdb.collection(col, function(err, collection) {
+  mgdb.collection(opts.col, function(err, collection) {
     collection.find(filter).toArray(function(err, rs) {
-      if (err) {
-        cb({'error':'An error has occurred'});
-      } else {
-      	cb(rs);
-      }
+      cb(err, rs);
     });
   });
 }
 
 
 exports.mgReadOneRs = function(opts, cb) {
-	var col = opts.col || 'daily';
 	var filter = opts.filter || {};  //filter = {"date":date, "id":id}
-  //var id = req.params.id;
-  //console.log('Retrieving item: ' + id);
-  mgdb.collection(col, function(err, collection) {
-    //collection.findOne({'_id':new BSON.ObjectID(id)}, function(err, item) {
+  mgdb.collection(opts.col, function(err, collection) {
     collection.findOne(filter, function(err, rs) {
-      if (err) {
-        cb({'error':'An error has occurred'});
-      } else {
-      	cb(rs);
-      }
+      cb(err, rs);
     });
   });
 };
 
 
 exports.mgReadFieldsRs = function(opts, cb) {
-  var col = opts.col || 'daily';
   var filter = opts.filter || {};
   var fields = opts.fields || {};
-  mgdb.collection(col, function(err, collection) {
+  mgdb.collection(opts.col, function(err, collection) {
     collection.find(filter, fields).toArray(function(err, rs) {
-      if (err) {
-        cb({'error':'An error has occurred'});
-      } else {
-        cb(rs);
-      }
+      cb(err, rs);
     });
   });
 }
 
 exports.mgUpdateRs = function(opts, cb) {
-  //var id = req.params.id;
-	var col = opts.col || 'daily';
-	var data = opts.body || {};
 	var filter = opts.filter || {};  //filter = {"date":date, "id":id}
-
-  mgdb.collection(col, function(err, collection) {
-    collection.update(filter, data, {safe:true}, function(err, rs) {
-      if (err) {
-        cb({'error':'An error has occurred'});
-      } else {
-      	cb(rs);
-      }
+  mgdb.collection(opts.col, function(err, collection) {
+    collection.update(filter, opts.body, {safe:true}, function(err, rs) {
+      cb(err, rs);
     });
-
   });
-
 }
 
 
 exports.mgDeleteRs = function(opts, cb) {
-	var col = opts.col || 'daily';
-	var data = opts.body || {};
 	var filter = opts.filter || {};  //filter = {"date":date, "id":id}
-  mgdb.collection(col, function(err, collection) {
+  mgdb.collection(opts.col, function(err, collection) {
     collection.remove(filter, {safe:true}, function(err, rs) {
-      if (err) {
-        cb({'error':'An error has occurred'});
-      } else {
-      	cb(rs);
-      }
+      cb(err, rs);
     });
-
   });
-
 }
 
-
+//-----------------------------------------------------------------------------
+// exports:: mongodb NON-CRUD functions
+//-----------------------------------------------------------------------------
 exports.mgFindRs = function(req, res, opts) {
-	var col = opts.col || 'daily';
   var que = req.body.que;
 
   //var filter = new RegExp(req.query.keyword, '');
   //collection.find({$or:[{_t:{$elemMatch:{t:filter}}},{_t:filter},{_o:filter}]}, {_t:1}).toArray(function(err, docs) {
 
   console.log('find query ', que);
-  mgdb.collection(col, function(err, collection) {
+  mgdb.collection(opts.col, function(err, collection) {
     collection.find(que).toArray(function(err, rs) {
-    	//collection.find({name:/고/}).toArray(function(err, rs) {
       res.send(rs);
     });
   });
 };
 
 
-exports.mgPatchRs = function(req, res, opts) {
+exports.mgPatchRs = function(opts, cb) {
+  var id = opts.id;
+  var item = opts.body;
 
-  var id = req.params.id;
-	var col = opts.col || 'daily';
-  var item = req.body;
-
-  mgdb.collection(col, function(err, collection) {
+  mgdb.collection(opts.col, function(err, collection) {
     collection.update({'id':id}, { $set: item }, {safe:true}, function(err, rs) {
-      if (err) {
-        console.log('Error patching item: ' + err);
-        res.send({'error':'An error has occurred'});
-      } else {
-        console.log('' + result + ' document(s) patched');
-        res.send(item);
-      }
+      cb(err, rs);
     });
-
   });
-
 }
 
 
-
 //-----------------------------------------------------------------------------
-// exports:: MSSQL CRUD functions
+// exports:: MSSQL QUERY functions
 //-----------------------------------------------------------------------------
 exports.msQueryRs = function(opts, cb) {
-	var que = opts.que || '';
 	mssql.connect(mssqlconfig, function(err) {
 	  var request = new mssql.Request();
-	  request.query(que, function(err, rs) {
-	    cb(rs);
-	    //res.end();
+	  request.query(opts.que, function(err, rs) {
+	    cb(err, rs);
 	  });
 	});
-
 }
 
 
-
-
-
-
-
 //-----------------------------------------------------------------------------
-// exports
+// exports : Util Functions
 //-----------------------------------------------------------------------------
-//module.exports = mH_utils;
-
-
-
-
-
 /**
  * json 배열 a, b를 key를 기준으로 비교하여 add, del, upd를 반환
  * @caution: default key = 'id'
@@ -237,8 +160,7 @@ exports.msQueryRs = function(opts, cb) {
 exports.compareJsonArr = function(opts, cb) {
 	var a = opts.a || {};
 	var b = opts.b || {};
-	var key = opts.key || 'id';
-  var key = key || 'id';  //primary key(uniq)
+	var key = opts.key || 'CHARTID';
 
   var arrAdd = [];
   var arrDel = [];
@@ -261,19 +183,27 @@ exports.compareJsonArr = function(opts, cb) {
     }
   });
 
-  cb({"add":arrAdd, "del":arrDel, "upd":arrUpd});
+  var num = arrAdd.length + arrDel.length + arrUpd.length;
+
+  cb({"add":arrAdd, "del":arrDel, "upd":arrUpd, "num":num});
   //return {add:arrAdd, del:arrDel, upd:arrUpd};
 }
+
 
 
 exports.OHISNum = _getOHISNum;
 
 
-var _getOHISNum = function(id) {
+
+
+//-----------------------------------------------------------------------------
+// private functions
+//-----------------------------------------------------------------------------
+var _getOHISNum = function(id, cb) {
   var num = Math.ceil((parseInt(id) + 390)/500) + 9;
-    if (((parseInt(id) + 390)%1000 == 500) num++;
-    return _putZeros(num, 4);
-    //return str_pad($OHISNum, 4, "0", STR_PAD_LEFT);
+    if ((parseInt(id) + 390)%1000 == 500) num++;
+    cb(_putZeros(num, 4));
+    //return _putZeros(num, 4);
 }
 
 

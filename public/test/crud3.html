@@ -317,9 +317,10 @@ TEST(Fetch MSdata): <input type="text" style="width:160px"/><button id="js-fetch
       //var createData = {"tPage":$('#pageText').val()};
 
       console.log('Fetch');
-      var input = $(this).siblings('input').val();
+      var date = $('#txt-date').val();
+      //var input = $(this).siblings('input').val();
       $.ajax({
-        url: baseUrl + 'fetch/' + input,
+        url: baseUrl + 'fetch/' + date,
         async: false,
         type: 'GET',
         success: function(res) {
