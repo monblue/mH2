@@ -102,6 +102,21 @@ exports.mgReadOneRs = function(opts, cb) {
 };
 
 
+exports.mgReadFieldsRs = function(opts, cb) {
+  var col = opts.col || 'daily';
+  var filter = opts.filter || {};
+  var fields = opts.fields || {};
+  mgdb.collection(col, function(err, collection) {
+    collection.find(filter, fields).toArray(function(err, rs) {
+      if (err) {
+        cb({'error':'An error has occurred'});
+      } else {
+        cb(rs);
+      }
+    });
+  });
+}
+
 exports.mgUpdateRs = function(opts, cb) {
   //var id = req.params.id;
 	var col = opts.col || 'daily';
@@ -195,6 +210,12 @@ exports.msQueryRs = function(opts, cb) {
 
 }
 
+
+
+
+
+
+
 //-----------------------------------------------------------------------------
 // exports
 //-----------------------------------------------------------------------------
@@ -235,11 +256,37 @@ exports.compareJsonArr = function(opts, cb) {
 
   _.each(b, function(unit) {
     if (!_.find(a, function(item){ return item[key] == unit[key]; })) {
-      console.log('key, b', key, unit[key]);
+      //console.log('key, b', key, unit[key]);
       arrDel.push(unit);
     }
   });
 
   cb({"add":arrAdd, "del":arrDel, "upd":arrUpd});
   //return {add:arrAdd, del:arrDel, upd:arrUpd};
+}
+
+
+exports.OHISNum = _getOHISNum;
+
+
+var _getOHISNum = function(id) {
+  var num = Math.ceil((parseInt(id) + 390)/500) + 9;
+    if (((parseInt(id) + 390)%1000 == 500) num++;
+    return _putZeros(num, 4);
+    //return str_pad($OHISNum, 4, "0", STR_PAD_LEFT);
+}
+
+
+
+//기능: 숫자 n 앞에 'digits 개수 - n의 자리수'개의 '0'을 놓음
+//참고: 반대 기능은 parseInt(N) / parseFloat(N)로 구현하면 됨 [ex: N = "000124"]
+var _putZeros = function(n, digits) { //개명예정: hM_padZero
+  var zero = '';
+  n = n.toString();
+
+  if (n.length < digits) {
+    for (i = 0; i < digits - n.length; i++)
+      zero += '0';
+  }
+  return zero + n;
 }

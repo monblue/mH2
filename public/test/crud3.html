@@ -12,6 +12,9 @@
 CRUD TEST
 </div>
 <div>
+<div>
+*date: <input type="text" id="txt-date" style="width:160px" value="20140704"/>
+</div>
 ------------------------------------------------------------------
 </div>
 <div>
@@ -61,6 +64,7 @@ TEST(Fetch MSdata): <input type="text" style="width:160px"/><button id="js-fetch
   $(document).ready(function() {
 
 		var baseUrl = 'http://192.168.0.11:3333/';
+    var baseUrl2 = 'http://192.168.0.11:3333/patients/';
   	var apiUrl = 'http://192.168.0.11:3333/patients/20140628';
   	//var apiUrl = 'http://192.168.0.11:3333/patients/';
   	var findUrl = 'http://192.168.0.11:3333/findPt';
@@ -142,9 +146,9 @@ TEST(Fetch MSdata): <input type="text" style="width:160px"/><button id="js-fetch
 
   	//READALL
     $('#js-readall').on('click', function(){
-      //var createData = {"tPage":$('#pageText').val()};
+      var date = $('#txt-date').val();
       $.ajax({
-        url: apiUrl,
+        url: baseUrl2 + date,
         async: false,
         type: 'GET',
         //dataType: 'json',
@@ -158,10 +162,10 @@ TEST(Fetch MSdata): <input type="text" style="width:160px"/><button id="js-fetch
 
   	//READONE
     $('#js-readone').on('click', function(){
-      //var createData = {"tPage":$('#pageText').val()};
+      var date = $('#txt-date').val();
       var input = $(this).siblings('input').val();
       $.ajax({
-        url: apiUrl + '/' + input,
+        url: baseUrl2 + date + '/' + input,
         async: false,
         type: 'GET',
         //dataType: 'json',

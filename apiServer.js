@@ -41,6 +41,8 @@ app.post('/findPt/:date', list.createPatients);  //Find by Query
 app.patch('/patients/:date/:id', list.createPatients);  //Patch
 */
 
+app.get('/fetch/:date', list.fetch);  //ReadOne
+
 /*
 $app->get('/hereIam', 'hereIam');
 
