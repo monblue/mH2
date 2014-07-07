@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');  //npm install --save body-parser
 var path = require('path');
 var list = require('./routes/list');
 var test = require('./routes/test');
+var hanja = require('./routes/hanja');
 //var chart = require('./routes/chart');
 //var user = require('./routes/user');
 //var book = require('./routes/book');
@@ -58,3 +59,7 @@ $app->get('/getInterval/:time', 'getInterval');
 
 ////test
 app.post('/test', test.compareJson);  //ReadAll
+app.get('/hanja', hanja.convK2C);  //ReadAll
+
+app.get('/temp', test.temp);  //ReadAll
+app.get('/var1', function(req,res){console.log(test.var1)});  //ReadAll

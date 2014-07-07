@@ -1,4 +1,5 @@
 var mH_utils = require('../mH_utils');
+var temp = require('./temp');
 
 var _compareJson = function(req, res) {
 /*
@@ -36,7 +37,13 @@ var _compareJson = function(req, res) {
 	//mH_utils.compareJsonArr();
 }
 
+
+var _temp = function(req, res) {
+  temp.temp();
+}
 //-----------------------------------------------------------------------------
 // exports:: mongodb CRUD functions
 //-----------------------------------------------------------------------------
 exports.compareJson = _compareJson;
+exports.temp = _temp;
+exports.var1 = temp.var1;
