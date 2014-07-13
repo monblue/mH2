@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>moonHani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../_assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--<link href="../_assets/css/mH_styles.css" rel="stylesheet" media="screen">-->
+  <style>
+    ul.patient-list {
+      padding:0;
+      margin: 0;
+    }
+    li.patient-list-item {
+      list-style:none;
+      height:44px;
+      padding:2px 0px 2px 0px;
+      margin:0;
+      border-bottom:1px solid rgb(220,220,220);
+    }
+
+    li.patient-list-item.active {
+      /*filter:Alpha(Opacity=30);Opacity:0.9;*/
+      background:rgba(0,256,0,0.5)!important;
+    }
+
+    li.patient-list-item.timerS {
+      /*filter:Alpha(Opacity=30);Opacity:0.9;*/
+      background:rgba(220,256,220,0.5)!important;
+    }
+
+    li.patient-list-item.timerE {
+      /*filter:Alpha(Opacity=30);Opacity:0.9;*/
+      background:rgba(256,220,220,0.5)!important;
+    }
+
+    _li.patient-list-item:nth-child(odd){background:rgb(246,244,246);}
+
+    li.patient-list-item h4{
+      _height:40px;
+      _padding:0;
+      margin: 0;
+      font-size: 16px;
+    }
+    li.patient-list-item img {
+      height:40px;
+      width:54px;
+    }
+    li.patient-list-item .line-btn {
+      padding-top: 3px;
+      padding-right: 2px;
+    }
+    li.patient-list-item .line-txt {
+      padding-top: 10px;
+      padding-right: 2px;
+    }
+    li.patient-list-item .line-full {
+      padding:6px 2px;
+      font-size:20px;
+      _color:rgb(160,0,0);
+      text-align:center;
+      _margin-right:4px;
+      height:40px;
+      width:30px;
+      _background:rgb(256,220,220);
+    }
+    .mH-done {
+      color:rgb(120,120,120)!important;
+      filter:Alpha(Opacity=30);Opacity:0.3;
+      _background:rgba(120,120,120,0.9)!important;
+    }
+/*UI*/
+    .modal-header {
+      background:rgb(256,220,220);
+    }
+    .modal-title {
+      font-weight:bold;
+    }
+
+
+    .down {
+      padding:0;
+    }
+    .down-title {
+      font-weight:bold;
+    }
+
+    #init {
+        position: absolute;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="listSection">
+    <article id="WW" class="col-md-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">대기(1)</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </article>
+    <article id="TR" class="col-md-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <!--<h3 class="panel-title">치료(2)</h3>-->
+
+          <ul class="nav nav-pills">
+<li>
+  <button class="btn btn-info">대기</button>
+</li>
+<li class="pull-right">
+  <button class="btn btn-warning glyphicon glyphicon-refresh"></button>
+</li>
+</ul>
+        </div>
+
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </article>
+    <article id="RD" class="col-md-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">완료(3)</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
+    </article>
+  </section>
+  <audio id="audio-player" name="audio-player" src="../_assets/audio/01.mp3" >
+   HTML5 audio not supported
+  </audio>
+    <!--<script data-main="../_assets/js/list2" src="../_assets/js/require.js"></script>
+    <script src="../_assets/js/_lib/MH_func.js"></script>-->
+</body>
+
+</html>

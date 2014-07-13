@@ -1,5 +1,6 @@
 var mH_utils = require('../mH_utils');
 var async = require('async');
+var dateFormat = require('dateformat');
 
 
 var _createPatientsMG = function(req, res) {
@@ -25,7 +26,7 @@ var _readAllPatientsMS = function(req, res) {
 }
 
 
-var _readOnePatientsMS = function(req, res) {
+var _readOnePatientMS = function(req, res) {
   var que = _readPatientsMSQue({"date":req.params.date, "CHARTID":req.params.id, "type":'one'});
   mH_utils.msQueryRs({"que":que}, function(err, rs){
     res.send(rs);
@@ -33,28 +34,70 @@ var _readOnePatientsMS = function(req, res) {
 }
 
 
-var _readOnePatientsMG = function(req, res) {
+var _readOnePatientMG = function(req, res) {
 	mH_utils.mgReadOneRs({"filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
 		res.send(rs);
 	});
 }
 
 
-var _updatePatientsMG = function(req, res) {
+var _updatePatientMG = function(req, res) {
 	mH_utils.mgUpdateRs({"body":req.body, "filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
 		res.send(rs);
 	});
 }
 
 
-var _deletePatientsMG = function(req, res) {
+var _deletePatientMG = function(req, res) {
 	mH_utils.mgDeleteRs({"filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
 		res.send(rs);
 	});
 }
 
+/**
+ * 환자 검색(in MSSQL)
+ * @caution:
+ * @param  {name:'', tel:'', jumin:''}
+ * @return json
+ */
+var _searchPatientsMS = function(req, res) {
+  var que = _searchPatientsMSQue({"data":req.body, "type":'search'});
 
+	async.waterfall([
+	  function(callback) {
+		  mH_utils.msQueryRs({"que":que}, function(err, rs){
+		  	//res.send(rs);
+		  	callback(err, rs);
+		  	//callback(rs);
+		  });
+	  },
 
+	  function(rs, callback) {
+			async.each(rs, function(r, cb) {  //The second argument (callback) is the "task callback" for a specific r
+			 	r.ITYPE = mH_utils.insuType(r.PART, r.DAE, r.JEUNG); //보험 타입
+
+		    _getPatientPhotoMS({"id":r.CHARTID}, function(err, rs2){
+		    	r.PIC = rs2;
+		    	cb();	//잘 모르겠지만 여기 넣으니 되네@@@@@@@@@
+		    });
+
+	    }, function(err) {
+	      //console.log('foreach rs', rs);
+	      callback(err, rs);	//each가 완료된 후 callback함수로 err, rs 넘김
+	    });
+
+	  },
+
+	],
+
+	function(err, results) {
+	  //console.log(arguments);
+	  console.log(results);
+	  res.send(results);
+	  //cb(err, results);
+	});
+
+}
 
 
 var _getPatientsSyncMG = function(req, res) {
@@ -104,9 +147,10 @@ var _syncPatientsMSMG = function(req, res) {
     	if (updated.num) {
     		console.log('MSData is updated!!! update event will be triggered!!!');
 
+    		//환자 추가
 	      var added = updated.add;
 	      if (added.length) {
-	        console.log('added array', updated.added);
+	        console.log('added array', added);
 
 	        for(i in added) {
 	          //@@@@@ id로 상세 환자정보 얻어내고 mongodb에 insert
@@ -116,8 +160,37 @@ var _syncPatientsMSMG = function(req, res) {
 	        }
 	      }
 
+				//환자 변경
+	      var upded = updated.upd;
+	      if (upded.length) {
+	        console.log('upded array', upded);
+
+	        for(i in upded) {
+	          //@@@@@ 해당 id의 환자 mongodb update
+	          //_updatePatientMG;
+						mH_utils.mgUpdateRs({"body":upded[i], "filter":{"date":date, "CHARTID":upded[i].CHARTID}, "col":'daily'}, function(err, rs){
+							res.send(rs);
+						});
+	        }
+	      }
+
+	      //환자 삭제
+	      var deled = updated.del;
+	      if (deled.length) {
+	        console.log('deled array', deled);
+
+	        for(i in deled) {
+	          //@@@@@ 해당 id의 환자 mongodb delete
+	          //_deletePatientMG;
+						mH_utils.mgDeleteRs({"filter":{"date":date, "CHARTID":deled[i].CHARTID}, "col":'daily'}, function(err, rs){
+							res.send(rs);
+						});
+	        }
+	      }
+
     	} else {
-    		console.log('MSData is not updated!!!');
+    		res.end('MSData is not updated!!!');
+    		//console.log('MSData is not updated!!!');
     	}
 
     });
@@ -125,6 +198,71 @@ var _syncPatientsMSMG = function(req, res) {
   });
 
 }
+
+
+
+
+/**
+ * saveTimer
+ * @caution:
+ * @param  string  date      날짜(YYYYmmdd)
+ * @param  array   patient    환자 data
+ * @return
+ */
+//var _saveTimer = function(date, id, data) {
+var _saveTimer = function(req, res) {
+	var date = req.params.date;
+	var id = req.params.id;
+	//var data = req.params.data;
+	var data = req.body;
+
+  type = data['type'];
+  intv = data['interval'];
+
+  strTimer = type + ':' + data['timerItem'] + ':' + data['timerIntv'];
+
+  switch (type) {
+  case 'ST': //StarT
+    //endTime = time() + data['interval'];
+    endTime = Math.round(Date.now() / 1000) + data['interval'];
+    //strTimer = 'GO:' + _REQUEST['timerItem'] + ':' + endTime;
+    strTimer += ':' + endTime;
+    break;
+  case 'PS': //PauSe
+    strTimer += ':' + intv;
+    break;
+  case 'ED': //EnD
+    //strTimer .= 'ED:' + _REQUEST['timerItem'];
+    break;
+  }
+  //}
+
+	mH_utils.mgPatchRs({"body":{"TIMER":strTimer}, "filter":{"date":date, "CHARTID":id}, "col":'daily'}, function(err, rs){
+		console.log();
+		res.end();
+		//res.send(rs);
+	});
+
+}
+
+/**
+ * getInterval(종료 남은 시간 반환)
+ * @caution:
+ * @param  string  date      날짜(YYYYmmdd)
+ * @param  array   patient    환자 data
+ * @return
+ */
+var _getInterval = function(req, res) {
+//function _getInterval(time) {
+	//var date = req.params.date;
+	var time = req.params.time;
+
+  //echo time - time();
+  //return time - time();
+  //return time - Math.round(Date.now() / 1000);
+  res.send(time - Math.round(Date.now() / 1000));
+}
+
 
 
 var _syncAdd = function(opts, cb) {
@@ -135,16 +273,22 @@ var _syncAdd = function(opts, cb) {
 
 	async.waterfall([
 	  function(callback) {
-      mH_utils.OHISNum(id, function(ohis){	//OHIS 구하기
+      mH_utils.OHISNum(id, function(ohis) {	//OHIS 구하기 + photo data query
   			var que2 = "SELECT CAP_PATH, CAP_WDATE, CAP_REMARK, CAP_BIGO1 FROM OHIS_H.dbo.IM_CAP"
   					+ ohis
   					+ " WHERE CAP_CHAM_ID = '"
   					+ id
   					+ "' ORDER BY CAP_SEQ DESC";
-	      callback(null, que2);
+	      //callback(null, que2);
+		    mH_utils.msQueryRs({"que":que2}, function(err, rs){
+		  		if (!rs) {
+		  			rs = [{}];
+		  		};
+	        callback(err, rs);
+	      });
 	    });
 	  },
-
+/*
 	  function(que2, callback) {	//PIC data 구하기
 	  	mH_utils.msQueryRs({"que":que2}, function(err, rs){
 	  		if (!rs) {
@@ -153,14 +297,16 @@ var _syncAdd = function(opts, cb) {
         callback(err, rs);
       });
 	  },
-
+*/
 	  function(picRs, callback) {  //해당 id 환자정보 구하기
 	  	mH_utils.msQueryRs({"que":que}, function(err, rs){
 	  		rs[0].PIC = picRs;
 	  		rs[0].date = date;
 	  		rs[0].SAVED = {"RC":0, "IX":0, "TX":0};	//@@@@@@@@@@@@@@@
 	  		rs[0].CHARTED = {"TOTAL":0,"BIBO":0};
+	  		rs[0].ITYPE = mH_utils.insuType(rs[0].PART, rs[0].DAE, rs[0].JEUNG); //보험 타입
         callback(err, rs[0]);
+        rs[0].TIMER = '';
       });
 	  },
 
@@ -189,6 +335,49 @@ var _syncAdd = function(opts, cb) {
 }
 
 
+
+/**
+ * UPDATE patient
+ * @caution: !!!date param, sync MSSQL -> mysql / PUT, PATCH
+ * @param  string  date
+ * @return echo json
+ */
+var _patchPatientMS = function(opts, cb) {
+  var patch = _patchPatientMSQue({date:opts.date, id:opts.id, data:opts.data});
+  var que = patch.que;
+  var patient = patch.obj;
+
+  console.log(que);
+
+	mH_utils.msQueryRs({"que":que}, function(err, rs){
+		cb(patient);
+  });
+
+  //cb(patient);
+  //syncUpdate@@@@@@@@@
+}
+
+
+var _getPatientPhotoMS = function(opts, cb) {
+	var id = opts.id;
+  mH_utils.OHISNum(id, function(ohis) {	//OHIS 구하기 + photo data query
+	  var que2 = "SELECT CAP_PATH, CAP_WDATE, CAP_REMARK, CAP_BIGO1 FROM OHIS_H.dbo.IM_CAP"
+			+ ohis
+			+ " WHERE CAP_CHAM_ID = '"
+			+ id
+			+ "' ORDER BY CAP_SEQ DESC";
+	      //callback(null, que2);
+		mH_utils.msQueryRs({"que":que2}, function(err, rs){
+		  console.log('_getPatientPhotoMS rs', rs);
+		  //if (!rs) {
+		  if (!rs.length) {
+		  	//console.log('photo is not exist', rs);
+		  	rs = [{}];
+		  };
+	    cb(err, rs);
+	  });
+	});
+}
 
 //-----------------------------------------------------------------------------
 // get Query
@@ -286,19 +475,170 @@ var _readPatientsMSQue = function(opts) {
 }
 
 
+//환자 검색 query
+var _searchPatientsMSQue = function(opts) {
+  var name = opts.data.name;
+  var tel = opts.data.tel;
+  var jumin = opts.data.jumin;
+
+  console.log('searchPatientsMSQue', opts.data.name);
+
+  //where 구문
+  var where = ' WHERE ';
+  var arrWhere = [];
+  if (name) {
+    arrWhere.push(" cham.CHAM_WHANJA LIKE '%" + name + "%' ");
+  }
+  if (tel) {
+    arrWhere.push(" ( cham.CHAM_TEL LIKE '%" + tel+ "%' OR cham.CHAM_HP LIKE '%" + tel+ "') ");
+  }
+  if (jumin) {
+    arrWhere.push(" cham.CHAM_PASSWORD LIKE '%" + jumin + "%' ");
+  }
+  where += arrWhere.join(' AND ');
+
+  var extra = " FROM hanimacCS.dbo.CC_CHAM AS cham INNER JOIN  hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID ";
+
+  //select fields
+  var arrSelQue = [
+      "cham.CHAM_ID AS CHARTID",
+      "cham.CHAM_JEJU AS JEJUCODE",
+      "cham.CHAM_WHANJA AS NAME",
+      "cham.CHAM_SEX AS SEX",
+      "cham.CHAM_TEL AS TEL",
+      "cham.CHAM_HP AS HP",
+      "substring(cham.CHAM_PASSWORD, 1, 6) AS JUMIN",
+      "hanimacCS.dbo.UF_getAge3(cham.CHAM_PASSWORD, convert(char(8), Getdate(), 112)) AS AGE",
+      "cham.CHAM_PART AS PART",
+      "cham.CHAM_DAE AS DAE",
+      "cham.CHAM_JEUNG AS JEUNG",
+      "kwam.KWAM_DATE AS LASTDATE",
+      "cham.CHAM_읍면동명 AS ADDRESS"
+  ];
+
+  return "SELECT TOP 10 " + arrSelQue.join(', ') + extra + where;
+
+/*
+  //echo json_encode(mH_selectArrayMSSQL(sql));
+  rs =  mH_selectArrayMSSQL(sql);
+
+  foreach(rs as &val) {
+    //print_r('id:' . val['CHARTID']);
+    val['PIC'] = json_encode(_getPatientPhotoMS(val['CHARTID']));
+    //arrType = explode('|', val['TYPE']);
+    val['ITYPE'] = mH_InsuType(val['PART'], val['DAE'], val['JEUNG']);
+    //val['age'] = _getPatientAge(yy, jumin01);
+    //val['itype'] = _getPatientIType(insPart, insDae, insJeung);
+  }
+*/
+}
+
+
+//환자 정보 patch(update) query
+var _patchPatientMSQue = function(opts) {
+	var date = opts.date;
+	var id = opts.id;
+  var date_ = date.substring(6,8);
+  var month = date.substring(0,6);
+  var data = opts.data;
+
+  if (data.BNUM) { //베드 설정 및 이동
+  	//var time_ = new Date().format("hhmmss");
+  	var time_ = dateFormat(new Date(), "HHMMss");
+    //gicho2 = data.BNUM + date("His") + '20';
+    gicho2 = data.BNUM + time_ + '20';
+    sql = "UPDATE Month.dbo.JUBM" + month +
+    			" SET JUBM_GICHO1 = '치료베드', JUBM_GICHO2 = '" + gicho2 +
+    			"' WHERE JUBM_DATE = '" + date_ +
+    			"' AND JUBM_CHAM_ID = '" + id + "'";
+    //return sql;
+    data.BTIME = gicho2.substring(2,6);
+    data.KSTATE = '치료베드';
+
+    //return sql;
+    return {"que":sql, "obj":data};
+  } else if (data.KSTATE) { //진료 단계 변경
+  	state = data.KSTATE;
+    sql = "UPDATE Month.dbo.JUBM" + month +
+          " SET JUBM_GICHO1 = '" + state +
+    			"' WHERE JUBM_DATE = '" + date_ +
+    			"' AND JUBM_CHAM_ID = '" + id + "'";
+    //return sql;
+    return {"que":sql, "obj":data};
+  } else if (data.ORDER1) { //지시사항 변경
+  	order = data.ORDER1;
+    sql = "UPDATE Month.dbo.JUBM" + month +
+          " SET JUBM_TODAY = '" + order +
+    			"' AND JUBM_CHAM_ID = '" + id + "'";
+    //return sql;
+    return {"que":sql, "obj":data};
+  }
+
+}
+
+
 //-----------------------------------------------------------------------------
 // exports:: mongodb CRUD functions
 //-----------------------------------------------------------------------------
 exports.createPatients = _createPatientsMG;
-exports.readAllPatients = _readAllPatientsMG;
 //exports.readAllPatients = _readAllPatientsMS;
-exports.readOnePatients = _readOnePatientsMG;
-//exports.readOnePatients = _readOnePatientsMS;
-exports.updatePatients = _updatePatientsMG;
-exports.deletePatients = _deletePatientsMG;
+exports.readAllPatients = _readAllPatientsMG;
+//exports.readOnePatient = _readOnePatientMS;
+exports.readOnePatient = _readOnePatientMG;
+exports.updatePatient = _updatePatientMG;
+
+exports.patchPatient = function(req, res) {
+	var date = req.params.date;
+	var id = req.params.id;
+	var data = req.body;
+
+	if (data.BNUM || data.KSTATE || data.ORDER1) {  //MSSQL도 update!!!
+		_patchPatientMS({date:date, id:id, data:data}, function(rs){
+			console.log('_patchPatientMS', rs);
+			res.send(rs);
+			//mongodb update(patch)
+		});
+	} else {  //mongodb만 update
+		mH_utils.mgPatchRs({"body":data, "filter":{"date":date, "CHARTID":id}, "col":'daily'}, function(err, rs){
+			console.log();
+			res.end();
+			//res.send(rs);
+		});
+	}
+
+/*
+  //arrPatient = mH_objToArr(json_decode(urldecode(Slim::getInstance()->request()->getBody())));
+  //echo json_encode(arrPatient);
+
+  //MSSQL update: 치료 상태 변경, 베드 배정시 분기,  / 진료비, 최종내원일은 추후 사용여부 결정(수납기능) / 사진 추가는 별도
+  //베드 배정
+  if (isset(arrPatient['BNUM'])) { //치료베드
+    echo json_encode(_updatePatientMS(date, arrPatient));
+  } else if (isset(arrPatient['KSTATE'])) {  //진료단계
+    echo json_encode(_updatePatientMS(date, arrPatient));
+  } else if (isset(arrPatient['ORDER1'])) {  //지시사항
+    _updatePatientMS(date, arrPatient);
+    echo json_encode(_updPatientMY(date, arrPatient));
+  } else if (isset(arrPatient['SAVEDRC']) || isset(arrPatient['SAVEDIX']) || isset(arrPatient['SAVEDTX'])) { //chart 저장 상태
+    echo json_encode(_updPatientMY(date, arrPatient));
+  }
+
+  sql = "UPDATE `patient_date` SET " . mH_getUpdStr(arrPatient) . " WHERE CHARTID = 'id'";
+  mH_executeMYSQL(sql);
+*/
+}
+
+
+
+
+exports.deletePatient = _deletePatientMG;
 
 //exports.fetch = _getPatientsSyncMS;
-exports.fetch = _syncPatientsMSMG;
+exports.syncPatientsMSMG = _syncPatientsMSMG;
+exports.searchPatients = _searchPatientsMS;
+
+exports.saveTimer = _saveTimer;
+exports.getInterval = _getInterval;
 
 
 
@@ -306,31 +646,31 @@ exports.fetch = _syncPatientsMSMG;
 /*
 
 function searchPatientMS() {
-  //$_REQUEST[]
-  $where = 'WHERE ';
-  $andWhere = '';
-  //$arrWhere = array();
-  $name = $_REQUEST['name'];
-  $tel = $_REQUEST['tel'];
-  $jumin = $_REQUEST['jumin'];
-  //print_r($_REQUEST['name']);
+  //_REQUEST[]
+  where = 'WHERE ';
+  andWhere = '';
+  //arrWhere = array();
+  name = _REQUEST['name'];
+  tel = _REQUEST['tel'];
+  jumin = _REQUEST['jumin'];
+  //print_r(_REQUEST['name']);
 
-  if ($name) {
-      $arrWhere['name'] = " cham.CHAM_WHANJA LIKE '%$name%' ";
+  if (name) {
+      arrWhere['name'] = " cham.CHAM_WHANJA LIKE '%name%' ";
   }
 
-  if ($tel) {
-      $arrWhere['tel'] = " ( cham.CHAM_TEL LIKE '%$tel' OR cham.CHAM_HP LIKE '%$tel') ";
+  if (tel) {
+      arrWhere['tel'] = " ( cham.CHAM_TEL LIKE '%tel' OR cham.CHAM_HP LIKE '%tel') ";
   }
 
-  if ($jumin) {
-      $arrWhere['jumin'] = " cham.CHAM_PASSWORD LIKE '%$jumin%' ";
+  if (jumin) {
+      arrWhere['jumin'] = " cham.CHAM_PASSWORD LIKE '%jumin%' ";
   }
 
-  $where = ' WHERE ' . implode(' AND ', $arrWhere);
-  //print_r($where . "\n<br>");
+  where = ' WHERE ' . implode(' AND ', arrWhere);
+  //print_r(where . "\n<br>");
 
-  $sql = "SELECT TOP 10
+  sql = "SELECT TOP 10
       cham.CHAM_ID AS CHARTID,
       cham.CHAM_JEJU AS JEJUCODE,
       cham.CHAM_WHANJA AS NAME,
@@ -346,21 +686,21 @@ function searchPatientMS() {
       cham.CHAM_읍면동명 AS ADDRESS
       FROM hanimacCS.dbo.CC_CHAM AS cham
       INNER JOIN  hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID "
-      . $where .
+      . where .
       " ORDER BY kwam.KWAM_DATE DESC";
-  //echo $sql;
-  //echo json_encode(mH_selectArrayMSSQL($sql));
-  $rs =  mH_selectArrayMSSQL($sql);
+  //echo sql;
+  //echo json_encode(mH_selectArrayMSSQL(sql));
+  rs =  mH_selectArrayMSSQL(sql);
 
-  foreach($rs as &$val) {
-    //print_r('id:' . $val['CHARTID']);
-    $val['PIC'] = json_encode(_getPatientPhotoMS($val['CHARTID']));
-    //$arrType = explode('|', $val['TYPE']);
-    $val['ITYPE'] = mH_InsuType($val['PART'], $val['DAE'], $val['JEUNG']);
-    //$val['age'] = _getPatientAge($yy, $jumin01);
-    //$val['itype'] = _getPatientIType($insPart, $insDae, $insJeung);
+  foreach(rs as &val) {
+    //print_r('id:' . val['CHARTID']);
+    val['PIC'] = json_encode(_getPatientPhotoMS(val['CHARTID']));
+    //arrType = explode('|', val['TYPE']);
+    val['ITYPE'] = mH_InsuType(val['PART'], val['DAE'], val['JEUNG']);
+    //val['age'] = _getPatientAge(yy, jumin01);
+    //val['itype'] = _getPatientIType(insPart, insDae, insJeung);
   }
 
-  echo json_encode($rs);
+  echo json_encode(rs);
 }
 */

@@ -15,14 +15,18 @@ define(function (require) {
 */
             idAttribute: 'CHARTID',
             urlRoot: function() {
-                return GLOBAL.get('_BASEURL') + 'API/list/patients/' + GLOBAL.get('_LISTDATE');
+              //return GLOBAL.get('_BASEURL') + 'API/list/patients/' + GLOBAL.get('_LISTDATE');
+              //return GLOBAL.get('_BASEURL') + 'patients/' + GLOBAL.get('_LISTDATE');
+              return GLOBAL.get('_BASEURL') + 'patients/' + '20140713';
             },
         });
 
     var PatientCollection = Backbone.Collection.extend({
             model: Patient,
             url: function() {
-                return GLOBAL.get('_BASEURL') + 'API/list/patients/' + GLOBAL.get('_LISTDATE');
+              //return GLOBAL.get('_BASEURL') + 'API/list/patients/' + GLOBAL.get('_LISTDATE');
+              //return GLOBAL.get('_BASEURL') + 'patients/' + GLOBAL.get('_LISTDATE');
+              return GLOBAL.get('_BASEURL') + 'patients/' + '20140713';
             },
             initialize: function() {
                 this.fetch({async:false});

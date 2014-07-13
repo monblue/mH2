@@ -109,7 +109,7 @@ exports.mgFindRs = function(req, res, opts) {
   var que = req.body.que;
 
   //var filter = new RegExp(req.query.keyword, '');
-  //collection.find({$or:[{_t:{$elemMatch:{t:filter}}},{_t:filter},{_o:filter}]}, {_t:1}).toArray(function(err, docs) {
+  //collection.find({or:[{_t:{elemMatch:{t:filter}}},{_t:filter},{_o:filter}]}, {_t:1}).toArray(function(err, docs) {
 
   console.log('find query ', que);
   mgdb.collection(opts.col, function(err, collection) {
@@ -119,13 +119,13 @@ exports.mgFindRs = function(req, res, opts) {
   });
 };
 
-
+//부분 UPDATE
 exports.mgPatchRs = function(opts, cb) {
-  var id = opts.id;
+	var filter = opts.filter || {};  //filter = {"date":date, "id":id}
   var item = opts.body;
 
   mgdb.collection(opts.col, function(err, collection) {
-    collection.update({'id':id}, { $set: item }, {safe:true}, function(err, rs) {
+    collection.update(filter, { $set: item }, {safe:true}, function(err, rs) {
       cb(err, rs);
     });
   });
@@ -191,10 +191,35 @@ exports.compareJsonArr = function(opts, cb) {
 
 
 
-exports.OHISNum = _getOHISNum;
+//exports.OHISNum = _getOHISNum;
+
+exports.OHISNum = function(id, cb) {
+  var num = Math.ceil((parseInt(id) + 390)/500) + 9;
+    if ((parseInt(id) + 390)%1000 == 500) num++;
+    cb(_putZeros(num, 4));
+    //return _putZeros(num, 4);
+}
 
 
+//exports.insuType = _insuType;
 
+exports.insuType = function(pPart, pCare, pCard) {  //Kind of Health Insurance Card
+//insuKind = _insuType(0, 2, 5-4201472332);
+    pCare = pCare - 1;
+    pCard = pCard.substr(0, 1) - 1;
+
+    partArr = {'1':'일반', '2':'Insu', '5':'Care', '7':'자보'};
+    careArr = ['보호1', '보호2', '#3', '#4', '차상위1', '차상위2', '차2장', '2장', '#9'];
+    cardArr = ['지역', '지역', '지역', '지역', '공교', '공교', '직장', '직장', '의급'];
+
+    rKind = partArr[pPart];
+    if (rKind == 'Insu' && pCare == -1) rKind = cardArr[pCard];
+    else if (rKind == 'Care') rKind = careArr[pCare];
+    else if (rKind == 'Insu' && pCare != -1) rKind = careArr[pCare];
+    else rKind = rKind;
+
+    return rKind;
+}
 
 //-----------------------------------------------------------------------------
 // private functions
@@ -219,4 +244,24 @@ var _putZeros = function(n, digits) { //개명예정: hM_padZero
       zero += '0';
   }
   return zero + n;
+}
+
+
+
+var _insuType = function(pPart, pCare, pCard) {  //Kind of Health Insurance Card
+//insuKind = _insuType(0, 2, 5-4201472332);
+    pCare = pCare - 1;
+    pCard = substr(pCard, 0, 1) - 1;
+
+    partArr = {'1':'일반', '2':'Insu', '5':'Care', '7':'자보'};
+    careArr = ['보호1', '보호2', '#3', '#4', '차상위1', '차상위2', '차2장', '2장', '#9'];
+    cardArr = ['지역', '지역', '지역', '지역', '공교', '공교', '직장', '직장', '의급'];
+
+    rKind = partArr[pPart];
+    if (rKind == 'Insu' && pCare == -1) rKind = cardArr[pCard];
+    else if (rKind == 'Care') rKind = careArr[pCare];
+    else if (rKind == 'Insu' && pCare != -1) rKind = careArr[pCare];
+    else rKind = rKind;
+
+    return rKind;
 }
