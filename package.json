@@ -13,6 +13,8 @@
     "body-parser": "^1.0.2",
     "debug": "~0.7.4",
     "ejs": "~0.8.5",
-    "ejs-locals": "~1.0.2"
+    "ejs-locals": "~1.0.2",
+    "easyimage": "^0.1.7",
+    "imagemagick": "^0.1.3"
   }
 }

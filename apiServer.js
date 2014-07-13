@@ -32,29 +32,41 @@ app.all('*', function(req, res, next) {
 /// patients : Basic CRUD
 app.post('/patients/:date', list.createPatients);  //Create
 app.get('/patients/:date', list.readAllPatients);  //ReadAll
-app.get('/patients/:date/:id', list.readOnePatients);  //ReadOne
-app.put('/patients/:date/:id', list.updatePatients);  //Update
-app.delete('/patients/:date/:id', list.deletePatients);  //Delete
+app.get('/patients/:date/:id', list.readOnePatient);  //ReadOne
+app.put('/patients/:date/:id', list.updatePatient);  //Update
+app.delete('/patients/:date/:id', list.deletePatient);  //Delete
 /*
 /// patients : Extra
 app.post('/findPt/:date', list.createPatients);  //Find by Query
 //app.post('/patients/:date/:id', list.createPatient);  //forced Post
 app.patch('/patients/:date/:id', list.createPatients);  //Patch
 */
+app.patch('/patients/:date/:id', list.patchPatient);  //Update[Patch]
 
-app.get('/fetch/:date', list.fetch);  //ReadOne
 
-/*
-$app->get('/hereIam', 'hereIam');
+app.get('/syncPatientsMSMG/:date', list.syncPatientsMSMG);  //ReadOne
 
-$app->get('/createPatientTable/:date', 'createPatientTable');
-$app->get('/syncPatientsMSMY/:date', 'syncPatientsMSMY');
-$app->post('/searchPatient', 'searchPatientMS'); //환자 검색(in 전체 DB)
-$app->post('/getUser', 'getUser'); //사용자 정보
+app.post('/searchPatients', list.searchPatients);  //search Patients post:{'name':'','tel':'','jumin':''}
+
+
+//app.post('/getUser', list.getUser); //사용자 정보
 
 //timer
-$app->post('/saveTimer/:date/:id', 'saveTimer');
-$app->get('/getInterval/:time', 'getInterval');
+app.post('/saveTimer/:date/:id', list.saveTimer);
+//app.get('/saveTimer/:date/:id', list.saveTimer);
+app.get('/getInterval/:time', list.getInterval);
+
+/*
+app.get('/hereIam', 'hereIam');
+
+app.get('/createPatientTable/:date', 'createPatientTable');
+app.get('/syncPatientsMSMY/:date', 'syncPatientsMSMY');
+app.post('/searchPatient', 'searchPatientMS'); //환자 검색(in 전체 DB)
+app.post('/getUser', 'getUser'); //사용자 정보
+
+//timer
+app.post('/saveTimer/:date/:id', 'saveTimer');
+app.get('/getInterval/:time', 'getInterval');
 */
 
 ////test

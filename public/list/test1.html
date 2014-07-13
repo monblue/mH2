@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CRUD Test</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../_assets/css/bootstrap.css" />
+</head>
+
+<body>
+<div>
+CRUD TEST
+</div>
+<div>
+------------------------------------------------------------------
+</div>
+<div>
+**CREATE: <button id="js-create">Create</button>
+</div>
+<div>
+**READALL: <button id="js-readall">ReadAll</button>
+</div>
+<div>
+**READONE: <input type="text" style="width:160px"/><button id="js-readone">ReadOne</button>
+</div>
+<div>
+**UPDATE: <input type="text" style="width:160px"/><button id="js-update">Update</button>
+</div>
+<div>
+**DELETE: <input type="text" style="width:160px"/><button id="js-delete">Delete</button>
+</div>
+<div>
+------------------------------------------------------------------
+</div>
+<div>
+READQUE: <input type="text" style="width:160px"/><button id="js-readque">ReadQue</button>
+</div>
+<div>
+POST: <input type="text" style="width:160px"/><button id="js-post">Post</button>
+</div>
+<div>
+PATCH: <input type="text" style="width:160px"/><button id="js-patch">Patch</button>
+</div>
+<script src="../_assets/js/_lib/MH_func.js"></script>
+<script src="../_assets/js/_lib/jquery.js"></script>
+<script src="../_assets/js/_lib/underscore.js"></script>
+<script src="../_assets/js/_lib/backbone.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  	var apiUrl = 'http://192.168.0.11:4545/txRecords/';
+  	var findUrl = 'http://192.168.0.11:4545/findTxRecord/';
+
+  	//var createUrl = '';
+  	var createData = {
+  		"id":"0000001234",
+  		"date":"20140628",
+  		"name":"고은지",
+  		"age":45,
+  		"sex":"여",
+  		"email":"goofy@gmail.com"
+  	};
+
+  	var updateData = {
+  		//"_id":"53ae8bc26e4e91cc15600c00",
+  		"id":"0000001234",
+  		"date":"20140628",
+  		"name":"고은징",
+  		"age":44,
+  		"sex":"여",
+  		"email":"goofy1@gmail.com"
+  	};
+
+  	var patchData = {
+  		"name":"고은정",
+  		"age":43,
+  		"email":"goofy2@gmail.com"
+  	};
+
+  	var patchData = {
+  		"name":"고은정",
+  		"age":43,
+  		"email":"goofy2@gmail.com"
+  	};
+
+  	var findQue = {
+  		name:/고은/
+  	};
+/*
+  	var findQue = {
+  		"name":"고은정",
+  		"email":"goofy2@gmail.com"
+  	};
+*/
+  	//CREATE
+    $('#js-create').on('click', function(){
+      //var createData = {"tPage":$('#pageText').val()};
+      $.ajax({
+        url: apiUrl,
+        async: false,
+        type: 'POST',
+        //dataType: 'json',
+        data: createData,
+        success: function(res) {
+          //console.log('res!!!!!!!!', res);
+          //rs = res;
+        }
+      });
+
+    });
+
+  	//READALL
+    $('#js-readall').on('click', function(){
+      //var createData = {"tPage":$('#pageText').val()};
+      $.ajax({
+        url: apiUrl,
+        async: false,
+        type: 'GET',
+        //dataType: 'json',
+        success: function(res) {
+          console.log('res!!!!!!!!', res);
+          //rs = res;
+        }
+      });
+
+    });
+
+  	//READONE
+    $('#js-readone').on('click', function(){
+      //var createData = {"tPage":$('#pageText').val()};
+      var input = $(this).siblings('input').val();
+      $.ajax({
+        url: apiUrl + input,
+        async: false,
+        type: 'GET',
+        //dataType: 'json',
+        success: function(res) {
+          console.log('res!!!!!!!!', res);
+          //rs = res;
+        }
+      });
+
+    });
+
+  	//UPDATE
+    $('#js-update').on('click', function(){
+      //var createData = {"tPage":$('#pageText').val()};
+      console.log('UPDATE');
+      var input = $(this).siblings('input').val();
+      $.ajax({
+        url: apiUrl + input,
+        //url: apiUrl,
+        async: false,
+        type: 'PUT',
+        data: updateData,
+        //dataType: 'json',
+        success: function(res) {
+          console.log('res!!!!!!!!', res);
+          //rs = res;
+        }
+      });
+
+    });
+
+  	//DELETE
+    $('#js-delete').on('click', function(){
+      //var createData = {"tPage":$('#pageText').val()};
+      console.log('DELETE');
+      var input = $(this).siblings('input').val();
+      $.ajax({
+        url: apiUrl + input,
+        //url: apiUrl,
+        async: false,
+        type: 'DELETE',
+        //data: updateData,
+        //dataType: 'json',
+        success: function(res) {
+          console.log('res!!!!!!!!', res);
+          //rs = res;
+        }
+      });
+
+    });
+
+
+  	//READQUE
+    $('#js-readque').on('click', function(){
+      //var createData = {"tPage":$('#pageText').val()};
+      var input = $(this).siblings('input').val();
+      $.ajax({
+        url: findUrl,
+        async: false,
+        type: 'POST',
+        data: {"que":findQue},
+        //dataType: 'json',
+        success: function(res) {
+          console.log('res!!!!!!!!', res);
+          //rs = res;
+        }
+      });
+
+    });
+
+  	//POST test
+    $('#js-post').on('click', function(){
+      var input = $(this).siblings('input').val();
+      $.ajax({
+        url: apiUrl + input,
+        async: false,
+        type: 'POST',
+        //dataType: 'json',
+        data: createData,
+        success: function(res) {
+          //console.log('res!!!!!!!!', res);
+          //rs = res;
+        }
+      });
+
+    });
+
+  	//PATCH
+    $('#js-patch').on('click', function(){
+      //var createData = {"tPage":$('#pageText').val()};
+      console.log('PATCH');
+      var input = $(this).siblings('input').val();
+      $.ajax({
+        url: apiUrl + input,
+        //url: apiUrl,
+        async: false,
+        type: 'PATCH',
+        data: patchData,
+        //dataType: 'json',
+        success: function(res) {
+          console.log('res!!!!!!!!', res);
+          //rs = res;
+        }
+      });
+
+    });
+
+
+
+/*
+    function fetchPageContents(book, page) {
+      var rs;
+      $.ajax({
+        url: 'http://192.168.0.11:5656/viewPage/' + book + '/' + page,
+        async: false,
+        type: 'GET',
+        //dataType: 'json',
+        //data: data,
+        success: function(res) {
+          //console.log('res!!!!!!!!', res);
+          rs = res;
+        }
+      });
+      return rs;
+    }
+*/
+
+  });
+
+</script>
+</body>
+</html>

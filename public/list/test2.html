@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CRUD Test</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../_assets/css/bootstrap.css" />
+</head>
+
+<body>
+<div>
+JSON TEST
+</div>
+
+<script src="../_assets/js/_lib/jquery.js"></script>
+<script src="../_assets/js/_lib/underscore.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+  	var a = [
+  		{"id":"001", "name":"name1", "age":45},
+  		{"id":"002", "name":"name2", "age":35},
+  		{"id":"003", "name":"name3", "age":25},
+  		{"id":"004", "name":"name4", "age":15},
+  		{"id":"005", "name":"name5", "age":75},
+  	];
+
+  	var b = [
+  		{"id":"001", "name":"name1", "age":45},
+  		{"id":"003", "name":"name3", "age":26},
+  		{"id":"004", "name":"name04", "age":15},
+  		{"id":"005", "name":"name5", "age":75},
+  		{"id":"006", "name":"name6", "age":95},
+  	];
+
+  	console.log('compare', compareJsonArr(a, b, 'id'));
+
+    function compareJsonArr(a, b, key) {
+      var key = key || 'id';  //primary key(uniq)
+
+      var arrAdd = [];
+      var arrDel = [];
+      var arrUpd = [];
+
+      _.each(a, function(unit) {
+        if (!_.findWhere(b, unit)) {
+          if (_.find(b, function(item){ return item[key] == unit[key]; })) {
+            arrUpd.push(unit);
+          } else {
+            arrAdd.push(unit);
+          }
+        }
+      });
+
+      _.each(b, function(unit) {
+        if (!_.find(a, function(item){ return item[key] == unit[key]; })) {
+          console.log('key, b', key, unit[key]);
+          arrDel.push(unit);
+        }
+      });
+
+      return {add:arrAdd, del:arrDel, upd:arrUpd};
+    }
+  });
+
+</script>
+</body>
+</html>

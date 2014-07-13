@@ -74,7 +74,7 @@ define(function (require) {
  * @caution: _RMSTATE(view state) change ->
  */
   var _showList = function(state) {
-    console.log('_showList!!!!!!!!!!');
+    //console.log('_showList!!!!!!!!!!');
     GLOBAL.set('_RMSTATE', state);
   };
 
@@ -83,7 +83,7 @@ define(function (require) {
  * @caution: el(<a>) / child el(.badge) click 처리 (ex: nav-pills)
  */
   var _navAnchorBadge = function(e, attr) {
-    console.log('_navAnchorBadge!!!!!!!!!!');
+    //console.log('_navAnchorBadge!!!!!!!!!!');
     if ($(e.target).attr(attr)) {
       $(e.target).parent().siblings('li').removeClass('active');
       $(e.target).parent().addClass('active');
@@ -100,18 +100,20 @@ define(function (require) {
  * @caution:
  */
   var _syncPatients = function() {
-    console.log('_syncPatients!!!!!!!!!!');
-    _syncPatientsMSMY();
-    _syncPatientsMYBB();
+    //console.log('_syncPatients!!!!!!!!!!');
+    //_syncPatientsMSMY();
+    //_syncPatientsMYBB();
+    _syncPatientsMSMG();
+    _syncPatientsMGBB();
   };
 
 /**
  * Ajax : Sync MYSQL -> Backbone
  * @caution:
  * @return
- */
+
   var _syncPatientsMYBB = function() {
-    console.log('_syncPatientsMYBB date:', GLOBAL.get('_LISTDATE'));
+    //console.log('_syncPatientsMYBB date:', GLOBAL.get('_LISTDATE'));
     $.ajax({
       dataType: 'json',
       async:false,
@@ -122,16 +124,51 @@ define(function (require) {
     });
   };
 
+
+/**
+ * Ajax : Sync mongodb -> Backbone
+ * @caution:
+ * @return
+ */
+  var _syncPatientsMGBB = function(date) {
+    $.ajax({
+      dataType: 'json',
+      async: false,
+      url: GLOBAL.get('_BASEURL') + 'patients/' + GLOBAL.get('_LISTDATE'),
+      success: function(res) {
+      	Patient.Patients.set(res);
+        //console.log('sync MS(MSSQL) to MG(mongodb)');
+      }
+    });
+  };
+
+
 /**
  * Ajax : Sync MSSQL -> MYSQL
  * @caution: setInterval
- */
+
   var _syncPatientsMSMY = function() {
-    console.log('_syncPatientsMSMY date:', GLOBAL.get('_LISTDATE'));
+    //console.log('_syncPatientsMSMY date:', GLOBAL.get('_LISTDATE'));
     $.ajax({
       dataType: 'json',
       async:false,
       url: GLOBAL.get('_BASEURL') + 'API/list/syncPatientsMSMY/' + GLOBAL.get('_LISTDATE'),
+    });
+  };
+ */
+
+
+/**
+ * Ajax : Sync MSSQL -> mongodb
+ * @caution: setInterval
+ */
+  var _syncPatientsMSMG = function() {
+  	console.log('_syncPatientsMSMG date:', GLOBAL.get('_LISTDATE'));
+    $.ajax({
+      dataType: 'json',
+      async: false,
+      url: GLOBAL.get('_BASEURL') + 'syncPatientsMSMG/' + GLOBAL.get('_LISTDATE'),
+      //url: GLOBAL.get('_BASEURL') + 'syncPatientsMSMG/' +'20140713',
     });
   };
 
@@ -141,13 +178,13 @@ define(function (require) {
  * @param   runTime  boolean    ex: GLOBAL.get('_RUNTIME')
  */
   var _runtime = function(runTime) {
-    console.log('runtimer is', runTime);
+    //console.log('runtimer is', runTime);
     if (runTime) {
-      console.log('runtimer is runnig!!!');
+      //console.log('runtimer is runnig!!!');
       _syncPatients();
       runtimer = setInterval(function() {GLOBAL.trigger('change:_LISTDATE'); }, GLOBAL.get('_CHKINTV'));
     } else {
-      console.log('runtimer is stoped!!!');
+      //console.log('runtimer is stoped!!!');
       clearInterval(runtimer);
     }
   };
@@ -157,7 +194,7 @@ define(function (require) {
  * @caution:
  */
   var _sortList = function(key, asc) {
-    console.log('_sortList!!!!!!!!!!');
+    //console.log('_sortList!!!!!!!!!!');
     bodyView.collection.comparator = function(patient) {
       if (asc) {
         return patient.get(key);
@@ -177,7 +214,7 @@ define(function (require) {
  */
     var _searchOuter = function(keyword) {
       $.ajax({
-        url: GLOBAL.get('_BASEURL') + 'API/list/searchPatient',
+        url: GLOBAL.get('_BASEURL') + 'searchPatients',
         type: 'post',
         async: false,
         data: keyword,
@@ -200,7 +237,7 @@ define(function (require) {
 
       //검색어가 없거나 부적절한 문자 없앤 후 검색어가 없으면 종료
       if(!keyword) {
-        console.log('검색어 없음');
+        //console.log('검색어 없음');
         return false;
       }
 
@@ -221,7 +258,7 @@ define(function (require) {
         }
       }
 
-      console.log('{name: name, tel: tel, jumin: jumin}', {name: name, tel: tel, jumin: jumin});
+      //console.log('{name: name, tel: tel, jumin: jumin}', {name: name, tel: tel, jumin: jumin});
 
       return {name: name, tel: tel, jumin: jumin};
     };
@@ -239,7 +276,7 @@ define(function (require) {
       $down.find('.js-addPatient').on('click', function(e){
         var user = 'N01';  //!!!GLOBAL.get('_USERID')
         Patient.Patients.create({CHARTID:$(e.target).attr('id'), user:user}, {type: 'post', wait: true});
-        console.log('js-addPatient clicked');
+        //console.log('js-addPatient clicked');
         $down.find('.close').trigger('click');
       });
 
@@ -354,7 +391,7 @@ define(function (require) {
       ////modal event handler
       //var self = this;
       //console.log('$ui@@@@@@@@', $ui.html());
-      console.log('self@@@@@@@@', self.$el.html());
+      //console.log('self@@@@@@@@', self.$el.html());
       var photoFile = '';
 
       $ui.find('#np-photo-file').on('change', function(){
@@ -416,7 +453,7 @@ define(function (require) {
  * @caution: 치료실에서 안됨@@@@@@@@@@@@@@@@@@
  */
     var _assignBedHandler = function($ui, self) {
-      console.log('assignBed', self.model.get('CHARTID'));
+      //console.log('assignBed', self.model.get('CHARTID'));
       $ui.find('.js-saveBed').on('click', function(e){
         self.model.save({CHARTID:self.model.get('CHARTID'), BNUM:$(e.target).text(), BTIME:""}, {patch:true, wait: true});
         $ui.remove();
@@ -426,45 +463,6 @@ define(function (require) {
         $ui.remove();
       });
     }
-
-/*
-
-    var _showMoveState = function(title, self) {
-      var items = [];
-      for(var i=1;i<16;i++) { //@@@16 -> GLOBAL.get('_BEDMAX') + 1
-        items.push(MH.addZero(i));
-      }
-
-      $down = MH.down({title:'진료 단계 조정', body:_.template(moveStateTpl)(), after:this.$el});
-      //$down = MH.down({title:title, body:_.template(bedTpl)({items:items}), after:self.$el});
-
-      _.each(_.pluck(_.where(Patient.Patients.toJSON(), {KSTATE:'치료베드'}), 'BNUM'), function(bed){
-        $down.find('#bed_' + bed).prop('disabled', true).removeClass('btn-warning').addClass('btn-default');
-      });
-
-      return $down;
-
-    };
-
-
-    var _moveStateHandler = function($ui, self) {
-      console.log('assignBed', self.model.get('CHARTID'));
-      $ui.find('.js-saveBed').on('click', function(e){
-        self.model.save({CHARTID:self.model.get('CHARTID'), BNUM:$(e.target).text(), BTIME:""}, {patch:true, wait: true});
-        $ui.remove();
-      });
-
-      $down.find('#js-roomOut').on('click', function(e){
-        self.model.save({CHARTID:self.model.get('CHARTID'), KSTATE:'수납대기'}, {patch:true, wait: true});
-        //console.log('퇴실되었습니다.');
-        $down.find('.close').trigger('click');
-      });
-
-      $ui.find('.close').on('click', function(e){
-        $ui.remove();
-      });
-    }
-*/
 
 /**
  * _showOrder
@@ -478,7 +476,7 @@ define(function (require) {
         item = {"order1":arrOrder[1].replace('(내원)',''), "order2":arrOrder[2].replace('(치료실)','')};
       }
 
-      console.log(' _showOrder');
+      //console.log(' _showOrder');
       $down = MH.down({title:title, body:_.template(orderTpl)({item:item}), after:self.$el});
 
       return $down;
@@ -492,18 +490,18 @@ define(function (require) {
       $ui.find('.js-edit').on('click', function(e){
         e.stopPropagation();
         if ($(e.target).hasClass('js-edit')) {
-          console.log('click js-edit');
+          //console.log('click js-edit');
           $(e.target).parent().parent().find('input').prop('disabled', false);
           $(e.target).text('저장');
         } else {
-          console.log('click js-save');
+          //console.log('click js-save');
           $(e.target).parent().parent().find('input').prop('disabled', true);
           //save@@@@@@
           //self.model.save({CHARTID:self.model.get('CHARTID'), ORDER1:$(e.target).text(), BTIME:""}, {patch:true, wait: true});
           var ord1 = $ui.find('#order1').val();
           var ord2 = $ui.find('#order2').val();
           var ORDER1 = 'ⓗ' + ord1 + 'ⓗ' + ord2;
-          console.log('ORDER1', ORDER1);
+          //console.log('ORDER1', ORDER1);
 
           patient.save({CHARTID:patient.get('CHARTID'), ORDER1:ORDER1}, {patch:true, wait: true});
 
@@ -556,7 +554,7 @@ define(function (require) {
         dataType: 'json',
         data: options,
         async:false,
-        url: GLOBAL.get('_BASEURL') + 'API/list/saveTimer/' + GLOBAL.get('_LISTDATE') + '/' + self.model.get('CHARTID'),
+        url: GLOBAL.get('_BASEURL') + 'saveTimer/' + GLOBAL.get('_LISTDATE') + '/' + self.model.get('CHARTID'),
         success: function(res) {
           //console.log('_saveTimer ajax respose', res);
           rs = res.TIMER;
@@ -580,7 +578,7 @@ define(function (require) {
         self.$el.find('.timerIntv').val(opts.timerIntv);
       }
 
-      console.log('_setTimerUI', type);
+      //console.log('_setTimerUI', type);
 
       switch(type) {
       case 'ST':
@@ -626,7 +624,7 @@ define(function (require) {
             type:'GET',
             dataType: 'json',
             async:false,
-            url: GLOBAL.get('_BASEURL') + 'API/list/getInterval/' + strTime,
+            url: GLOBAL.get('_BASEURL') + 'getInterval/' + strTime,
             success: function(res) {
               ////console.log('_saveTimer ajax respose', res);
               rs = res;
@@ -640,7 +638,7 @@ define(function (require) {
  * @caution: @@@
  */
     var _cbStartTimer = function(self, opts) {
-      console.log('타이머가 시작되었습니다.');
+      //console.log('타이머가 시작되었습니다.');
       _setTimerUI('ST', self, opts);
       //ALARM.load();
       //setTimeout("_alarmPlay();",500);
@@ -651,7 +649,7 @@ define(function (require) {
  * @caution: @@@
  */
     var _cbPauseTimer = function(self, opts) {
-      console.log('타이머가 일시 정지되었습니다.');
+      //console.log('타이머가 일시 정지되었습니다.');
       _setTimerUI('PS', self, opts);
     };
 
@@ -661,7 +659,7 @@ define(function (require) {
  */
     var _cbEndTimer = function(self, opts) {
       //$("#txAlarm")[0].play();
-      console.log('시간이 다 되었습니다.');
+      //console.log('시간이 다 되었습니다.');
       opts.txTimer = '00:00';
       opts.timerIntv = '00';
       _setTimerUI('ED', self, opts);
@@ -774,7 +772,7 @@ define(function (require) {
  * @caution: //@@listenTo로 호출된 경우-Uncaught TypeError: Cannot read property 'preventDefault' of undefined
  */
     reList: function(e) {
-      console.log('reList is called');
+      //console.log('reList is called');
       if (e) {
         //e.stopPropagation();
       }
@@ -785,7 +783,7 @@ define(function (require) {
       }
       /*
       if (e && !e.type) {
-        console.log('e', e, e.type);
+        //console.log('e', e, e.type);
         //e.preventDefault();
         e.stopPropagation();
       }
@@ -844,7 +842,7 @@ define(function (require) {
  * @caution:
  */
     sortList: function(e){
-      console.log('sortList clicked');
+      //console.log('sortList clicked');
       e.preventDefault();
       e.stopPropagation();
 
@@ -903,7 +901,7 @@ define(function (require) {
       //console.log('keypress searchPatient');
       var keyword = this.$el.find('#np-searchInner').val();
       var patients = _filterByKey(Patient.Patients.toJSON(), 'NAME', RegExp(keyword, "gi"));
-      console.log('result is', patients);
+      //console.log('result is', patients);
       _showSearchInner(patients);  //@@@@@상태, 바로 가기...@@@
     },
 
@@ -954,11 +952,11 @@ define(function (require) {
     },
 
     changeModel: function() {
-      console.log('model changed', this.model.toJSON());
+      //console.log('model changed', this.model.toJSON());
     },
 
     render: function() {
-      console.log('_TPLTAG', GLOBAL.get('_TPLTAG'), this.model.toJSON());
+      //console.log('_TPLTAG', GLOBAL.get('_TPLTAG'), this.model.toJSON());
       this.$el.html(_.template(itemTpls[GLOBAL.get('_TPLTAG')])(this.model.toJSON()));
       if(this.model.get('TOTAL') > 0) {
         this.$el.addClass('mH-done');
@@ -968,7 +966,7 @@ define(function (require) {
         this.initTimer();
       }
 
-      console.log('rendering list item');
+      //console.log('rendering list item');
       this.$el.find('[data-toggle="tooltip"]').tooltip(); //tooltip@@@@@@@@@@
       this.$el.find('[data-toggle="popover"]').popover({"trigger":"hover"});
 
@@ -1000,7 +998,7 @@ define(function (require) {
  * @caution:
  */
     close: function() {
-      console.log('model destroyed');
+      //console.log('model destroyed');
       //this.$el.unbind();
       this.$el.off();
       this.$el.remove();
@@ -1058,7 +1056,7 @@ define(function (require) {
  */
     takePhoto: function() {
       $modal = _showTakePhoto('사진 찍기(' + this.model.get('NAME') + ')', this);
-      console.log('takePhoto modal', $modal);
+      //console.log('takePhoto modal', $modal);
       _takePhotoHandler($modal, this);
     },
 
@@ -1081,7 +1079,7 @@ define(function (require) {
       //$down = _showMoveState('베드 설정', this);
       //_assignBedHandler($down, this);
 
-      console.log('moveState');
+      //console.log('moveState');
       $down = MH.down({title:'진료 단계 조정', body:_.template(moveStateTpl)(), after:this.$el});
       $down.find('.assignBed').html(_showAssignBed2().html())
 
@@ -1231,7 +1229,7 @@ define(function (require) {
     tooltip: function(e) {
       //this.$el.find('[data-toggle="tooltip"]').tooltip(); //tooltip@@@@@@@@@@
       //this.$el.find('[data-toggle="popover"]').popover({"trigger":"hover"});
-      console.log('tooltip!!!');
+      //console.log('tooltip!!!');
       //$(e.target).tooltip(); //tooltip@@@@@@@@@@
       $(e.target).popover({"trigger":"hover"});
     }
@@ -1257,14 +1255,14 @@ define(function (require) {
 
     preRender: function() {
       //$list = $('#listSection');
-      console.log('list preRendering!!!!!!');
+      //console.log('list preRendering!!!!!!');
       //$list.empty();
       $panel = MH.panel(panelOpts);
       $panel.find('.panel-heading').empty().append(headView.render().el);
     },
 
     render: function() {
-      console.log('list rendering....');
+      //console.log('list rendering....');
 
       $panel.find('.panel-body').empty();
       this.$el.empty();
@@ -1277,12 +1275,12 @@ define(function (require) {
     },
 
     addOne: function(patient) {
-      console.log('list addOne is called');
+      //console.log('list addOne is called');
       this.$el.append(new PatientListItem({model:patient}).render().el);
     },
 
     removeOne: function(patient) {
-      console.log('collection removed', patient.get('id'));
+      //console.log('collection removed', patient.get('id'));
       patient.trigger('destroy');
     },
 

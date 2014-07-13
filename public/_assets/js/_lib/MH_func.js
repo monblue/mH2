@@ -442,12 +442,13 @@ function mH_getListUI(opts) {
   }
 
   if (opts.PIC) {
-    if (opts.PIC == '[]' && opts.SEX == '0') {
+    if (!opts.PIC.length && opts.SEX == '0') {
       out.txtPIC = 'default0.png';
-    } else if (opts.PIC == '[]' && opts.SEX == '1') {
+    } else if (!opts.PIC.length && opts.SEX == '1') {
       out.txtPIC = 'default1.png';
     } else {
-      out.txtPIC = JSON.parse(opts.PIC)[0]['CAP_PATH'];
+      //out.txtPIC = JSON.parse(opts.PIC)[0]['CAP_PATH'];
+      out.txtPIC = opts.PIC[0]['CAP_PATH'];
     }
   }
 
@@ -576,15 +577,12 @@ function mH_getListBonbu(age, jeju, bonbu) {
 //기능: 수납 예상액, 보험약, 비보험
 //{"total":total, "bonbu":bonbu, "chungu":chungu, "bibo":bibo, "sunab": bonbu + bibo};
 function mH_getPreSunab(charted) {
-  //var json = JSON.parse(JSON.parse(charted)); //@@double parse
-  //var json = JSON.parse(charted); //@@double parse
-  //console.log('JSON.parse(charted)', json, json.total, json.sunab);
   if (charted.length < 10) {
     console.log('blank json', charted);
     return ['hide', ''];
   } else {
     //console.log('filled json', charted);
-    var json = JSON.parse(JSON.parse(charted)); //@@double parse
+    var json = charted;
     var txt = '';
     //if (json.sunab) {
       txt += '수납액: ' + hM_formatNum(json.sunab);

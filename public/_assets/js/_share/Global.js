@@ -35,7 +35,8 @@ define(function (require) {
       _CURPTID: '',  //편집중인 환자 차트 아이디
       _EDITDATE:'',   //차트 편집일
       _REFDATE:'',  //차트 참고일
-      _BASEURL:'http://192.168.0.11/mH/', //API base url
+      //_BASEURL:'http://192.168.0.11/mH/', //API base url
+      _BASEURL:'http://192.168.0.11:3333/', //API base url
       _TXSTATE:'진료대기',  //default state
       _RMSTATE:'대기', //대기(진료대기), 치료(치료대기/베드), 수납(수납대기), 완료(보험환자/일반환자)
       _TPLTAG:'WW', //
@@ -81,8 +82,6 @@ define(function (require) {
         }
       });
 
-      //console.log('Global is initialized', this.toJSON());
-
       //this.listenTo(this, 'change:_LISTDATE', this.changeListDate);
       //this.listenTo(this, 'change:_TXSTATE', this.changeTxState);
       this.listenTo(this, 'change:_RMSTATE', this.changeRmState);
@@ -99,42 +98,7 @@ define(function (require) {
         //this.set('_RUNTIME', false);  //@@@@@@@@@@@
       }
     },
-/*
-    changeRunTime: function() {
-      //console.log('_RUNTIME is changed from', this.previous('_RUNTIME'), ' to ', this.get('_RUNTIME'));
-      if (this.get('_RUNTIME')) {
-        //setInterval start
-      } else {
-        //setInterval stop
-      }
-    },
 
-    changeTxState: function() {
-      switch(this.get('_TXSTATE')) {
-      case '진료대기':
-        this.set('_TPLTAG', 'WW');
-        break;
-      case '치료대기':
-        this.set('_TPLTAG', 'TR');
-        break;
-      case '치료베드':
-        this.set('_TPLTAG', 'TR');
-        break;
-      case '수납대기':
-        this.set('_TPLTAG', 'RW');
-        break;
-      case '보험환자':
-        this.set('_TPLTAG', 'RD');
-        break;
-      case '일반환자':
-        this.set('_TPLTAG', 'RD');
-        break;
-      }
-
-      //console.log('this is Global... _TXSTATE changed ');
-
-    },
-*/
     changeRmState: function() {
       switch(this.get('_RMSTATE')) {
       case '대기':
