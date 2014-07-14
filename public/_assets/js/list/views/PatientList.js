@@ -330,7 +330,8 @@ define(function (require) {
       var rs = ''
 
       $.ajax({
-        url: GLOBAL.get('_BASEURL') + 'API/utils/upload.php/savePhoto/' + id,
+        //url: GLOBAL.get('_BASEURL') + 'API/utils/upload.php/savePhoto/' + id,
+        url: GLOBAL.get('_BASEURL') + 'saveFace/' + id,
         type: 'POST',
         data: data,
         processData: false,

@@ -5,6 +5,7 @@ var path = require('path');
 var list = require('./routes/list');
 var test = require('./routes/test');
 var hanja = require('./routes/hanja');
+var upload = require('./routes/upload');
 //var chart = require('./routes/chart');
 //var user = require('./routes/user');
 //var book = require('./routes/book');
@@ -75,3 +76,7 @@ app.get('/hanja', hanja.convK2C);  //ReadAll
 
 app.get('/temp', test.temp);  //ReadAll
 app.get('/var1', function(req,res){console.log(test.var1)});  //ReadAll
+
+
+//app.get('/saveFace/:id', upload.saveFile);
+app.post('/saveFace/:id', upload.saveFile);

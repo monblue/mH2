@@ -50,7 +50,7 @@ define(function (require) {
       _USERID:'',   //사용자 아이디
       _USERNM:'',   //사용자 이름
       _USERLV:'',   //사용자 레벨[UI class에 적용 / 레벨이 낮으면 alert 중지, 아니면 실행]
-      _PATH_IMG:'',   //path(photo / audio / movie // 진료 / 신상 / ...)
+      _PATH_IMG:'D:/SOM_Photo/',   //path(photo  / audio / movie // 진료 / 신상 / ...)
       //_TICK_SAVE:0,   //saveAll trigger용(0->1->0... change시 save(RC->IX->TX) trigger);
       _SAVEDRC:0, //0: 저장전, 1: 저장됨, -1: 저장요청, -2: 특이사항 저장(TX에서 필요한 데이터(보험약/비보험/예상 수납액?) 특이사항으로 전달받아야@@@)
       _SAVEDIX:0, //0: 저장전, 1: 저장됨, -1: 저장요청

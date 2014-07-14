@@ -247,7 +247,23 @@ exports.updStr = function(json) {
 
 
 exports.putZeros = _putZeros;
+/*
+exports.putZeros = function(n, digits) { //개명예정: hM_padZero
+  var zero = '';
+  n = n.toString();
 
+  if (n.length < digits) {
+    for (i = 0; i < digits - n.length; i++)
+      zero += '0';
+  }
+  return zero + n;
+}
+*/
+
+exports.strPad = _strPad;
+//exports.strPad = _strPad;
+
+exports.OHIS = _OHIS;
 //-----------------------------------------------------------------------------
 // private functions
 //-----------------------------------------------------------------------------
@@ -258,8 +274,14 @@ var _getOHISNum = function(id, cb) {
     //return _putZeros(num, 4);
 }
 
+function _OHIS(id) {
+  var num = Math.ceil((parseInt(id) + 390)/500) + 9;
+    if ((parseInt(id) + 390)%1000 == 500) num++;
+    return _putZeros(num, 4);
+}
+
 //MSSQL insert용 query
-var _getInsStr = function(json) {
+function _getInsStr(json) {
   var strKey = '(';
   var strVal = "('";
   for(k in json) {
@@ -273,7 +295,7 @@ var _getInsStr = function(json) {
 }
 
 //MSSQL update용 query
-var _getUpdStr = function(json) {
+function _getUpdStr(json) {
   var strUpd = '';
   for(k in json) {
     strUpd += k + "='" + json[k] + "', ";
@@ -284,7 +306,8 @@ var _getUpdStr = function(json) {
 
 //기능: 숫자 n 앞에 'digits 개수 - n의 자리수'개의 '0'을 놓음
 //참고: 반대 기능은 parseInt(N) / parseFloat(N)로 구현하면 됨 [ex: N = "000124"]
-var _putZeros = function(n, digits) { //개명예정: hM_padZero
+//var _putZeros = function(n, digits) { //개명예정: hM_padZero
+function _putZeros(n, digits) { //개명예정: hM_padZero
   var zero = '';
   n = n.toString();
 
@@ -295,15 +318,30 @@ var _putZeros = function(n, digits) { //개명예정: hM_padZero
   return zero + n;
 }
 
-//
-var _strPad = function(opts) {
-  var type;
-  var padChar;
-  var len;
+//opts = {"ori":"", type":"","chr":"", "len"} //type: "PAD_LEFT", "PAD_RIGHT"
+function _strPad(opts) {
+  var type = opts.type || 'PAD_LEFT';
+  var chr = opts.chr || '0';
+  var len = opts.len || 2;
+  var ori = opts.ori || '';
+
+  ori = ori.toString();
+  var pStr = '';
+  if (ori.length < len) {
+    for (i = 0; i < len - ori.length; i++)
+      pStr += chr;
+  }
+
+  if (type == 'PAD_LEFT') {
+  	return pStr + ori;
+  } else {
+  	return ori + pStr;
+  }
+
 }
 
 
-var _insuType = function(pPart, pCare, pCard) {  //Kind of Health Insurance Card
+function _insuType(pPart, pCare, pCard) {  //Kind of Health Insurance Card
 //insuKind = _insuType(0, 2, 5-4201472332);
     pCare = pCare - 1;
     pCard = substr(pCard, 0, 1) - 1;

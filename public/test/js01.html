@@ -1,0 +1,24 @@
+<script>
+console.log(_strPad({"ori":123, "len":10, "type":"PAD_RIGHT"}));
+
+function _strPad(opts) {
+  var type = opts.type || 'PAD_LEFT';
+  var chr = opts.chr || '0';
+  var len = opts.len || 2;
+  var ori = opts.ori || '';
+
+  ori = ori.toString();
+  var pStr = '';
+  if (ori.length < len) {
+    for (i = 0; i < len - ori.length; i++)
+      pStr += chr;
+  }
+
+  if (type == 'PAD_LEFT') {
+  	return pStr + ori;
+  } else {
+  	return ori + pStr;
+  }
+
+}
+</script>
