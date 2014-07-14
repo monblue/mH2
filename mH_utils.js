@@ -221,6 +221,33 @@ exports.insuType = function(pPart, pCare, pCard) {  //Kind of Health Insurance C
     return rKind;
 }
 
+//MSSQL insert용 query
+exports.insStr = function(json) {
+  var strKey = '(';
+  var strVal = "('";
+  for(k in json) {
+    strKey += k + ', ';
+    strVal += json[k] + "', '";  //value는 ''로 감쌈(숫자형은 어떻게??@@@)
+  }
+  strKey = strKey.substring(0, strKey.length-2) + ')';
+  strVal = strVal.substring(0, strVal.length-3) + ')';
+
+  return strKey + ' VALUES ' + strVal;
+}
+
+//MSSQL update용 query
+exports.updStr = function(json) {
+  var strUpd = '';
+  for(k in json) {
+    strUpd += k + "='" + json[k] + "', ";
+  }
+
+  return strUpd.substring(0, strUpd.length-2);
+}
+
+
+exports.putZeros = _putZeros;
+
 //-----------------------------------------------------------------------------
 // private functions
 //-----------------------------------------------------------------------------
@@ -231,7 +258,29 @@ var _getOHISNum = function(id, cb) {
     //return _putZeros(num, 4);
 }
 
+//MSSQL insert용 query
+var _getInsStr = function(json) {
+  var strKey = '(';
+  var strVal = "('";
+  for(k in json) {
+    strKey += k + ', ';
+    strVal += json[k] + "', '";  //value는 ''로 감쌈(숫자형은 어떻게??@@@)
+  }
+  strKey = strKey.substring(0, strKey.length-2) + ')';
+  strVal = strVal.substring(0, strVal.length-3) + ')';
 
+  return strKey + ' VALUES ' + strVal;
+}
+
+//MSSQL update용 query
+var _getUpdStr = function(json) {
+  var strUpd = '';
+  for(k in json) {
+    strUpd += k + "='" + json[k] + "', ";
+  }
+
+  return strUpd.substring(0, strUpd.length-2);
+}
 
 //기능: 숫자 n 앞에 'digits 개수 - n의 자리수'개의 '0'을 놓음
 //참고: 반대 기능은 parseInt(N) / parseFloat(N)로 구현하면 됨 [ex: N = "000124"]
@@ -246,6 +295,12 @@ var _putZeros = function(n, digits) { //개명예정: hM_padZero
   return zero + n;
 }
 
+//
+var _strPad = function(opts) {
+  var type;
+  var padChar;
+  var len;
+}
 
 
 var _insuType = function(pPart, pCare, pCard) {  //Kind of Health Insurance Card
