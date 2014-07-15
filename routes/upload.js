@@ -1,3 +1,11 @@
+//-----------------------------------------------------------------------------
+// CONSTANT
+//-----------------------------------------------------------------------------
+var IMG_SIZE = 540;
+var TMB_SIZE = 54;
+//-----------------------------------------------------------------------------
+// REQUIRE
+//-----------------------------------------------------------------------------
 var mH_utils = require('../mH_utils');
 //var async = require('async');
 //var bodyParser = require('body-parser');  //npm install --save body-parser
@@ -6,6 +14,7 @@ var formidable = require('formidable');
 var fs = require('fs');
 //@@@@@@@@@@@@@ imagemagick binary 설치되어 이어야 함!!!! <http://www.imagemagick.org/script/binary-releases.php>
 var im = require('imagemagick');  //npm install imagemagick@@@
+var easyimg = require('easyimage');
 //var app = express();
 //app.use(bodyParser()); // instruct the app to use the `bodyParser()` middleware for all routes
 
@@ -28,9 +37,12 @@ var _saveFile = function(req, res) {
 	form.parse(req, function(err, fields, files) {
 	  //fs.readFile(files.file.path, function(err, data) {@@@
 
- 	  //console.log(files);
+ 	  console.log(files);
 	  //console.log(files.file.name, files.file.path);
 	  var saveDir = fields.path;
+	  //var isLong = true;
+
+
 
 	  var photo = {
 	    'CAP_CHAM_ID':id,
@@ -61,30 +73,68 @@ var _saveFile = function(req, res) {
 						//res.end();
 					} else {
 					  var newPath = saveDir + imageName;
-					  console.log(newPath);
+					  var thumbPath = saveDir + 'thumb/' + imageName;
 
+					  var	resizeImg = {
+					  	srcData: image,
+							width: IMG_SIZE
+					  }
+
+					  var	resizeTmb = {
+					  	srcData: image,
+							width: TMB_SIZE
+					  }
+
+					  //width > height 여부@@@@@@@@@@@@@@@@
+						im.identify(files.file.path, function(err, features){
+							if (err) throw err
+								if (features.width < features.height) {
+							  	//if (!isLong) {
+							  		resizeImg = {
+							  			srcData: image,
+									  	height: IMG_SIZE
+							  		}
+
+							  		resizeTmb = {
+							  			srcData: image,
+									  	height: TMB_SIZE
+							  		}
+							  	//}
+								}
+						  //RESIZE!!!!!!!!!!!!
+							im.resize(resizeImg, function(err, stdout, stderr) {
+							  if (err) throw err
+							  fs.writeFileSync(newPath, stdout, 'binary');
+							  //console.log('resized ' + imageName + ' to fit within 256x256px')
+							});
+
+							im.resize(resizeTmb, function(err, stdout, stderr){
+							  if (err) throw err
+							  fs.writeFileSync(thumbPath, stdout, 'binary');
+							  //console.log('resized ' + imageName + ' to fit within 256x256px')
+							});
+
+						})
+
+/*
 					  fs.writeFile(newPath, image, function (err) {
 					  	/// write file to uploads/thumbs folder
 					  	if (err) console.log('image save error!!!');
 					  	else console.log('image save success!!!');
 					  });
-
+*/
 					}
 			  });
 
-	    	/*
-	    	var opts = {
-					srcPath: newPath,
-					dstPath: thumbPath,
-					width:
-	    	};
-	    	*/
-	    	//_savePhotoThumb(data.CAP_PATH);
-
-
 	    	//insertDB
 	    	_insPhotoDB({"ohis":ohis, "data":data}, function(err, rs){
-	    		res.send(rs);
+	    		rs = {
+	    			"CAP_WDATE":photo.CAP_WDATE,
+	    			"CAP_PATH":photo.CAP_PATH,
+	    			"CAP_REMARK":photo.CAP_REMARK,
+	    			"CAP_BIGO1":photo.CAP_BIGO1
+	    		}
+	    		res.send(rs);	//photo data response send@@@@@@
 	    	});
 	    });
 	  });

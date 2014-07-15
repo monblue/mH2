@@ -1,4 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>moonHani</title>
+</head>
+<script src="../_assets/js/_lib/underscore.js"></script>
 <script>
+/*
+  id = data['CHARTID'];
+  user = data['user'];
+  month = substr(date, 0, 6);
+  date_ = substr(date, 6, 2);
+  time = date("Hi");
+  magam = (int)date("s");    //JUBM_MAGAM data가 이것이 맞는지는 확실치 않음!!!!!!!!!!
+*/
+  var id = data['CHARTID'];
+  var user = data['user'];
+  var date = '20140715';
+  var id = '0000001234';
+  var user = 'N01';
+  var month = date.substr(0, 6);
+  var date_ = date.substr(6, 2);
+  var time = '0912';
+  var magam = 15;    //JUBM_MAGAM data가 이것이 맞는지는 확실치 않음!!!!!!!!!!
+  //time = date("Hi");
+  //magam = (int)date("s");    //JUBM_MAGAM data가 이것이 맞는지는 확실치 않음!!!!!!!!!!
+
+  var arrIns = {
+		"JUBM_MEDM_ID":'0',  ////insDefaults
+		"JUBM_RNO":'0',
+		"JUBM_MTAMT":'0',
+		"JUBM_MRAMT":'0',
+		"JUBM_IRAMT":'0',
+		"JUBM_BIGUB":'0',
+		"JUBM_HAAMT":'0',
+		"JUBM_JINSUAMT":'0',
+		"JUBM_JINSUAMT1":'0',
+		"JUBM_JINSUAMT2":'0',
+		"JUBM_SUAMT":'0',
+		"JUBM_MISU_AMT":'0',
+		"JUBM_WAAMT":'0',
+		"JUBM_GICHO1":'진료대기',
+		"JUBM_TIME":'',
+		"JUBM_CHAMGO":'',
+		"JUBM_JU_NIGHT":'0',
+		"JUBM_CARD_AMT":'0',
+		"JUBM_CARD_USE":'0',
+		"JUBM_SUNAB_S":'0',
+		"JUBM_BIGO1":'120205310408506',
+		"JUBM_BIGO2":'1002XX3XX4XX5XX',
+		"JUBM_CHAM_ID":id,	////insVariables
+		"JUBM_DATE":date_,
+		"JUBM_CHOJE_CODE":'10200',  //초진, 재진 구분
+		"JUBM_MAGAM":magam,
+		"JUBM_JUBSU_TIME":time,
+		"JUBM_USRM_ID":user,
+    //"JUBM_GWAM_ID":"",  ////insSelects
+    //"JUBM_PART":"",
+    //"JUBM_ORGM_ID":"",
+    //"JUBM_JEUNG":"",
+    //"JUBM_DAE":"",
+    //"JUBM_DOC_ID":"",
+    //"JUBM_FLAG":""
+	}
+
+  var arrIns2 = {
+	  "JUBM_GWAM_ID":'kwam.KWAM_GWAM_ID',
+    "JUBM_PART":'cham.CHAM_PART',
+    "JUBM_ORGM_ID":'cham.CHAM_ORGM_ID',
+    "JUBM_JEUNG":'cham.CHAM_JEUNG',
+    "JUBM_DAE":'cham.CHAM_DAE',
+    "JUBM_DOC_ID":'kwam.KWAM_USRM_ID',
+    "JUBM_FLAG":'kwam.KWAM_FLAG'
+  }
+
+	var keys = " (" + _.keys(arrIns).join(', ') + ", " +
+						_.keys(arrIns2).join(', ') + ")";
+	var vals = "'" + _.values(arrIns).join("', '") + "', " +
+						_.values(arrIns2).join(", ");
+
+  var extra = " FROM hanimacCS.dbo.CC_CHAM AS cham INNER JOIN hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID WHERE cham.CHAM_ID = '" + id + "'";
+
+  var que = "INSERT INTO Month.dbo.JUBM" + month + keys + " SELECT " + vals + extra;
+
+  console.log(que);
+
+
+
+/*
 console.log(_strPad({"ori":123, "len":10, "type":"PAD_RIGHT"}));
 
 function _strPad(opts) {
@@ -21,4 +110,6 @@ function _strPad(opts) {
   }
 
 }
+*/
 </script>
+</html>

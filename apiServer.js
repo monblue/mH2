@@ -33,7 +33,9 @@ app.all('*', function(req, res, next) {
 
 //// list
 /// patients : Basic CRUD
-app.post('/patients/:date', list.createPatients);  //Create
+app.post('/patients/:date', list.createPatient);  //Create NOT USED!!!
+//app.get('/patients/:date/:id/:user', list.createPatient_);  //TEST!!!!@@@@@@@@@@
+
 app.get('/patients/:date', list.readAllPatients);  //ReadAll
 app.get('/patients/:date/:id', list.readOnePatient);  //ReadOne
 app.put('/patients/:date/:id', list.updatePatient);  //Update
@@ -41,9 +43,10 @@ app.delete('/patients/:date/:id', list.deletePatient);  //Delete
 /*
 /// patients : Extra
 app.post('/findPt/:date', list.createPatients);  //Find by Query
-//app.post('/patients/:date/:id', list.createPatient);  //forced Post
+app.post('/patients/:date/:id', list.createPatient);  //forced Post
 app.patch('/patients/:date/:id', list.createPatients);  //Patch
 */
+app.post('/patients/:date/:id', list.createPatient);  //forced Post @@@@@@@@@@@@@@@@
 app.patch('/patients/:date/:id', list.patchPatient);  //Update[Patch]
 
 

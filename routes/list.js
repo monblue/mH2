@@ -1,14 +1,253 @@
 var mH_utils = require('../mH_utils');
 var async = require('async');
 var dateFormat = require('dateformat');
+var _ = require('underscore');
+
+//_syncAdd
 
 
-var _createPatientsMG = function(req, res) {
+
+var _createPatient = function(req, res) {
+  //var que = _createPatientMSQue({"date":req.params.date, "data":req.body, "type":'jubsu'});
+
+  var opts = {
+  	"date":req.params.date,
+  	"id":req.body.CHARTID,
+  	"user":req.body.user,
+  	"type":'jubsu'
+  };
+/*
+  var opts = {
+  	"date":req.params.date,
+  	"id":req.params.id,
+  	"user":req.body.user,
+  	"type":'jubsu'
+  };
+*/
+  _createPatientMSQue(opts, function(que){
+  	console.log(que);
+	  mH_utils.msQueryRs({"que":que}, function(err, rs){
+			_syncAdd(opts, function(err, rs){
+	      mH_utils.mgReadOneRs({"filter":{"date":opts.date, "CHARTID":opts.id}, "col":'daily'}, function(err, rs){	//patient data res.send
+						res.send(rs);
+				});
+			});
+	  });
+  });
+
+
+  //var que = _createPatientMSQue(opts);
+/*
 	mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
 		res.send(rs);
 	});
+*/
+}
+
+
+function _createPatientMSQue(opts, cb) {
+  //echo('Server addPatient' . date . id . user );
+  //'120205310408506', '1002XX3XX4XX5XX'
+  //JUBM_JU_NIGHT : 야간?
+  //JUBM_CHAMGO: 한의맥 청구 [참조]
+  //초재진 자동 생성(90일 기준) 함수로 만듬(KWAM_DATE 와 비교) //datediff(day, kwam.KWAM_DATE, convert(char(8), Getdate(), 112))
+  //청구 입력시 청구 내용에 맞추어 자동으로 바뀌므로 재진(10200)으로 그냥 두어도 됨
+/*
+  var date = '20140715';
+  var id = '0000001234';
+  var user = 'N01';
+*/
+  var date = opts.date;
+  var id = opts.id;
+  var user = opts.user;
+
+  var month = date.substr(0, 6);
+  var date_ = date.substr(6, 2);
+  //var time = '0912';  h:MM:ss
+  //var magam = 15;    //JUBM_MAGAM data가 이것이 맞는지는 확실치 않음!!!!!!!!!!
+  var oDate = new Date();
+  time = dateFormat(oDate, "HHMM");
+  magam = dateFormat(oDate, "s");;    //JUBM_MAGAM data가 이것이 맞는지는 확실치 않음!!!!!!!!!!
+
+  var arrIns = {
+		"JUBM_MEDM_ID":'0',  ////insDefaults
+		"JUBM_RNO":'0',
+		"JUBM_MTAMT":'0',
+		"JUBM_MRAMT":'0',
+		"JUBM_IRAMT":'0',
+		"JUBM_BIGUB":'0',
+		"JUBM_HAAMT":'0',
+		"JUBM_JINSUAMT":'0',
+		"JUBM_JINSUAMT1":'0',
+		"JUBM_JINSUAMT2":'0',
+		"JUBM_SUAMT":'0',
+		"JUBM_MISU_AMT":'0',
+		"JUBM_WAAMT":'0',
+		"JUBM_GICHO1":'진료대기',
+		"JUBM_TIME":'',
+		"JUBM_CHAMGO":'',
+		"JUBM_JU_NIGHT":'0',
+		"JUBM_CARD_AMT":'0',
+		"JUBM_CARD_USE":'0',
+		"JUBM_SUNAB_S":'0',
+		"JUBM_BIGO1":'120205310408506',
+		"JUBM_BIGO2":'1002XX3XX4XX5XX',
+		"JUBM_CHAM_ID":id,	////insVariables
+		"JUBM_DATE":date_,
+		"JUBM_CHOJE_CODE":'10200',  //초진, 재진 구분@@@@@@@@@@@@@@@
+		"JUBM_MAGAM":magam,
+		"JUBM_JUBSU_TIME":time,
+		"JUBM_USRM_ID":user,
+    //"JUBM_GWAM_ID":"",  ////insSelects
+    //"JUBM_PART":"",
+    //"JUBM_ORGM_ID":"",
+    //"JUBM_JEUNG":"",
+    //"JUBM_DAE":"",
+    //"JUBM_DOC_ID":"",
+    //"JUBM_FLAG":""
+	}
+
+  var arrIns2 = {
+	  "JUBM_GWAM_ID":'kwam.KWAM_GWAM_ID',
+    "JUBM_PART":'cham.CHAM_PART',
+    "JUBM_ORGM_ID":'cham.CHAM_ORGM_ID',
+    "JUBM_JEUNG":'cham.CHAM_JEUNG',
+    "JUBM_DAE":'cham.CHAM_DAE',
+    "JUBM_DOC_ID":'kwam.KWAM_USRM_ID',
+    "JUBM_FLAG":'kwam.KWAM_FLAG'
+  }
+
+	var keys = " (" + _.keys(arrIns).join(', ') + ", " +
+						_.keys(arrIns2).join(', ') + ")";
+	var vals = "'" + _.values(arrIns).join("', '") + "', " +
+						_.values(arrIns2).join(", ");
+
+  var extra = " FROM hanimacCS.dbo.CC_CHAM AS cham INNER JOIN hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID WHERE cham.CHAM_ID = '" + id + "'";
+
+  var que = "INSERT INTO Month.dbo.JUBM" + month + keys + " SELECT " + vals + extra;
+
+  //console.log(que);
+
+  cb(que);
+
+/*
+  sql = "INSERT INTO Month.dbo.JUBM" + month +
+        " (JUBM_MEDM_ID, JUBM_CHAM_ID, JUBM_GWAM_ID, JUBM_DATE,
+          JUBM_RNO, JUBM_CHOJE_CODE, JUBM_PART, JUBM_ORGM_ID, JUBM_JEUNG, JUBM_DAE,
+          JUBM_MTAMT, JUBM_MRAMT, JUBM_IRAMT, JUBM_BIGUB, JUBM_HAAMT, JUBM_JINSUAMT,
+          JUBM_JINSUAMT1, JUBM_JINSUAMT2, JUBM_SUAMT, JUBM_MISU_AMT, JUBM_WAAMT,
+          JUBM_GICHO1, JUBM_TIME, JUBM_CHAMGO, JUBM_JU_NIGHT, JUBM_CARD_AMT, JUBM_CARD_USE,
+          JUBM_MAGAM, JUBM_JUBSU_TIME, JUBM_DOC_ID, JUBM_USRM_ID, JUBM_FLAG,
+          JUBM_SUNAB_S, JUBM_BIGO1, JUBM_BIGO2) " +
+				" SELECT
+          '0', 'id', kwam.KWAM_GWAM_ID, 'date_',
+          '0', '10200',
+          cham.CHAM_PART,
+          cham.CHAM_ORGM_ID,
+          cham.CHAM_JEUNG,
+          cham.CHAM_DAE,
+          '0', '0', '0', '0', '0', '0',
+          '0', '0', '0', '0', '0',
+          '진료대기', '', '', '0', '0', '0',
+          'magam', 'time',  kwam.KWAM_USRM_ID, 'user', kwam.KWAM_FLAG,
+          '0', '120205310408506', '1002XX3XX4XX5XX'
+          FROM hanimacCS.dbo.CC_CHAM AS cham
+          INNER JOIN  hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID
+          WHERE cham.CHAM_ID = 'id'";
+
+  mH_executeMSSQL(sql);
+  //print_r(sql);
+
+  patient = _getPatientMS(date, id);
+  //print_r(patient);
+
+  return patient;
+*/
+}
+
+/*
+var _createPatientMG = function(req, res) {
+	mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
+		res.send(rs);
+	});
+}
+
+var _createPatientMS = function(req, res) {
+	mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
+		res.send(rs);
+	});
+}
+*/
+/*
+
+function addPatient(date) {
+
+  data = mH_objToArr(json_decode(urldecode(Slim::getInstance()->request()->getBody())));
+
+  //MSSQL add: 신환은 추후 따로 구현 / 접수는 따로(?) 구현
+  arrPatient = _addPatientMS(date, data);
+  //MYSQL add
+  //arrPatient = _addPatient(date, id, user);
+  sql = "INSERT INTO `patient_date` " . mH_getInsStr(arrPatient);
+  //echo sql;
+
+  mH_executeMYSQL(sql);
+  echo json_encode(arrPatient);
 
 }
+
+
+function _addPatientMS(date, data) {
+  //user???
+  //user = _REQUEST['user'];
+  id = data['CHARTID'];
+  user = data['user'];
+  month = substr(date, 0, 6);
+  date_ = substr(date, 6, 2);
+  time = date("Hi");
+  magam = (int)date("s");    //JUBM_MAGAM data가 이것이 맞는지는 확실치 않음!!!!!!!!!!
+  //echo('Server addPatient' . date . id . user );
+  //'120205310408506', '1002XX3XX4XX5XX'
+  //JUBM_JU_NIGHT : 야간?
+  //JUBM_CHAMGO: 한의맥 청구 [참조]
+  //초재진 자동 생성(90일 기준) 함수로 만듬(KWAM_DATE 와 비교) //datediff(day, kwam.KWAM_DATE, convert(char(8), Getdate(), 112))
+  //청구 입력시 청구 내용에 맞추어 자동으로 바뀌므로 재진(10200)으로 그냥 두어도 됨
+
+  sql = "INSERT INTO Month.dbo.JUBMmonth
+          (JUBM_MEDM_ID, JUBM_CHAM_ID, JUBM_GWAM_ID, JUBM_DATE,
+          JUBM_RNO, JUBM_CHOJE_CODE, JUBM_PART, JUBM_ORGM_ID, JUBM_JEUNG, JUBM_DAE,
+          JUBM_MTAMT, JUBM_MRAMT, JUBM_IRAMT, JUBM_BIGUB, JUBM_HAAMT, JUBM_JINSUAMT,
+          JUBM_JINSUAMT1, JUBM_JINSUAMT2, JUBM_SUAMT, JUBM_MISU_AMT, JUBM_WAAMT,
+          JUBM_GICHO1, JUBM_TIME, JUBM_CHAMGO, JUBM_JU_NIGHT, JUBM_CARD_AMT, JUBM_CARD_USE,
+          JUBM_MAGAM, JUBM_JUBSU_TIME, JUBM_DOC_ID, JUBM_USRM_ID, JUBM_FLAG,
+          JUBM_SUNAB_S, JUBM_BIGO1, JUBM_BIGO2)
+
+          SELECT
+          '0', 'id', kwam.KWAM_GWAM_ID, 'date_',
+          '0', '10200',
+          cham.CHAM_PART,
+          cham.CHAM_ORGM_ID,
+          cham.CHAM_JEUNG,
+          cham.CHAM_DAE,
+          '0', '0', '0', '0', '0', '0',
+          '0', '0', '0', '0', '0',
+          '진료대기', '', '', '0', '0', '0',
+          'magam', 'time',  kwam.KWAM_USRM_ID, 'user', kwam.KWAM_FLAG,
+          '0', '120205310408506', '1002XX3XX4XX5XX'
+          FROM hanimacCS.dbo.CC_CHAM AS cham
+          INNER JOIN  hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID
+          WHERE cham.CHAM_ID = 'id'";
+
+  mH_executeMSSQL(sql);
+  //print_r(sql);
+
+  patient = _getPatientMS(date, id);
+  //print_r(patient);
+
+  return patient;
+
+}
+*/
 
 
 var _readAllPatientsMG = function(req, res) {
@@ -154,7 +393,8 @@ var _syncPatientsMSMG = function(req, res) {
 
 	        for(i in added) {
 	          //@@@@@ id로 상세 환자정보 얻어내고 mongodb에 insert
-	          _syncAdd({"id":added[i].CHARTID, "date":date, "res":res}, function(err, rs) {
+	          //_syncAdd({"id":added[i].CHARTID, "date":date, "res":res}, function(err, rs) {
+	          _syncAdd({"id":added[i].CHARTID, "date":date}, function(err, rs) {
 	            res.send(rs);
 	          });
 	        }
@@ -268,7 +508,7 @@ var _getInterval = function(req, res) {
 var _syncAdd = function(opts, cb) {
   var date = opts.date;
   var id = opts.id;
-  var res = opts.res;
+  //var res = opts.res; //@@@@@@@@@@@@@@@@@
   var que = _readPatientsMSQue({"date":date, "id":id, "type":'one'});
 
 	async.waterfall([
@@ -369,11 +609,16 @@ var _getPatientPhotoMS = function(opts, cb) {
 	      //callback(null, que2);
 		mH_utils.msQueryRs({"que":que2}, function(err, rs){
 		  console.log('_getPatientPhotoMS rs', rs);
+		  if (!rs || !rs.length) {
+		  	rs = [];
+		  };
+		  /*@@@@@@@@@@@@@@@@@@@@@@
 		  //if (!rs) {
 		  if (!rs.length) {
 		  	//console.log('photo is not exist', rs);
 		  	rs = [{}];
 		  };
+		  */
 	    cb(err, rs);
 	  });
 	});
@@ -580,7 +825,10 @@ var _patchPatientMSQue = function(opts) {
 //-----------------------------------------------------------------------------
 // exports:: mongodb CRUD functions
 //-----------------------------------------------------------------------------
-exports.createPatients = _createPatientsMG;
+//exports.createPatients = _createPatientMG;
+//exports.createPatient = _createPatientMG;
+//exports.createPatient_ = _createPatient;
+exports.createPatient = _createPatient;
 //exports.readAllPatients = _readAllPatientsMS;
 exports.readAllPatients = _readAllPatientsMG;
 //exports.readOnePatient = _readOnePatientMS;

@@ -274,7 +274,7 @@ define(function (require) {
       headView.$el.find('#np-searchOuter').val('');
 
       $down.find('.js-addPatient').on('click', function(e){
-        var user = 'N01';  //!!!GLOBAL.get('_USERID')
+        var user = 'N01';  //!!!GLOBAL.get('_USERID')@@@@@@@@@@@
         Patient.Patients.create({CHARTID:$(e.target).attr('id'), user:user}, {type: 'post', wait: true});
         //console.log('js-addPatient clicked');
         $down.find('.close').trigger('click');
@@ -389,10 +389,6 @@ define(function (require) {
  * @caution:
  */
     var _takePhotoHandler = function($ui, self) {
-      ////modal event handler
-      //var self = this;
-      //console.log('$ui@@@@@@@@', $ui.html());
-      //console.log('self@@@@@@@@', self.$el.html());
       var photoFile = '';
 
       $ui.find('#np-photo-file').on('change', function(){
@@ -419,13 +415,10 @@ define(function (require) {
           var id = self.model.get('CHARTID');
           var newPic = _savePatientPhoto({id:id, data:formData}, $ui);
           var oldPic = self.model.get('PIC');
-          if (oldPic == '[]') { //첫사진
-            newPic = '[' + newPic + ']';
-          } else {  //사진 추가
-            newPic = '[' + newPic + ',' + self.model.get('PIC').substring(1);
-          }
-          //self.model.set('PIC', newPic);
-          self.model.save({CHARTID:id, PIC:newPic}, {patch: true});
+
+          oldPic.push(newPic);	//사진정보 추가
+
+          self.model.save({CHARTID:id, PIC:oldPic}, {patch: true});
         }
       });
     };
