@@ -952,3 +952,5 @@ function searchPatientMS() {
   echo json_encode(rs);
 }
 */
+
+////TEST: ASYNC PARALLEL

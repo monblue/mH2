@@ -264,6 +264,7 @@ exports.strPad = _strPad;
 //exports.strPad = _strPad;
 
 exports.OHIS = _OHIS;
+exports.insStr = _getInsStr;
 //-----------------------------------------------------------------------------
 // private functions
 //-----------------------------------------------------------------------------
