@@ -67,9 +67,12 @@ define(function (require) {
         'JINMEMO_MEMO':'',
         'REMK_REMARK':''
       },
-      */
       urlRoot: function() {
         return GLOBAL.get('_BASEURL') + 'API/chart/ChartRc/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE')+ '/' + GLOBAL.get('_CURPTID');
+      },
+      */
+      urlRoot: function() {
+        return GLOBAL.get('_BASEURL') + 'ChartRc/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE')+ '/' + GLOBAL.get('_CURPTID');
       },
     });
 
@@ -215,14 +218,17 @@ define(function (require) {
       //jinMemo = this.$el.find('textarea#newJin').val() + "\n" + this.$el.find('textarea#oldJin').val();
       var data = {
         items: bodyView.model.toJSON(),
-        MEDM: GLOBAL.get('_MEDM'),  //
-        GWAM: GLOBAL.get('_GWAM'), //진료과목?
-        FDOC: GLOBAL.get('_FDOC'),  //
-        LDOC: GLOBAL.get('_LDOC')  //
+        attached : {
+	        MEDM: GLOBAL.get('_MEDM'),  //
+	        GWAM: GLOBAL.get('_GWAM'), //진료과목?
+	        FDOC: GLOBAL.get('_FDOC'),  //
+	        LDOC: GLOBAL.get('_LDOC')  //
+        }
       };
 
       $.ajax({
-        url: GLOBAL.get('_BASEURL') + 'API/chart/ChartRc/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE')+ '/' + GLOBAL.get('_CURPTID'),
+        //url: GLOBAL.get('_BASEURL') + 'API/chart/ChartRc/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE')+ '/' + GLOBAL.get('_CURPTID'),
+        url: GLOBAL.get('_BASEURL') + 'ChartRc/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE')+ '/' + GLOBAL.get('_CURPTID'),
         type: 'POST',
         data: data,
         async: false,

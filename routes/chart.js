@@ -12,132 +12,80 @@ var dateFormat = require('dateformat');
 //-----------------------------------------------------------------------------
 // ChartRc
 //-----------------------------------------------------------------------------
+//// CRUD
 /**
-* @function:
-* @caution:
+* @function: create[insert or upadate] Rc(진료기록, 신상기록, 특이사항)
+* @caution: trim은 client side에서 해결하는 것을 원칙으로 하나, null data는 저장하지 않도록 스크린...
 */
-var _readChartRc = function(req, res) {
+exports.createChartRc = function(req, res) {
+
+  //var rc = req.body.items;
+  var data = req.body.attached;
   var ohis = mH_utils.OHIS(req.params.id);
-  //var opts = {"id":req.params.id, "date":req.params.cur_date, "ohis":ohis, "type":"Rc"};
-  //var ref_date = opts.ref_date;
-  var opts = {"id":req.params.id, "date":req.params.ref_date, "ohis":ohis, "type":"Rc"};
-  _isDone(opts, function(err, rs) {
-    if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
-      //ref_date = cur_date;
-      opts.date = cur_date;
-    }
 
-    async.parallel([
-      function(callback) {
-        opts.type = 'Ossc';
-        //var que = _readRcMSQue({"date":date, "type":'Ossc'});
-        var que = _readRcMSQue(opts);
-        console.log(que);
-        mH_utils.msQueryRs({"que":que}, function(err, rs){
-          callback(err, rs);
-        });
-      },
-
-      function(callback) {
-        opts.type = 'Jinmemo';
-        //var que = _readRcMSQue({"date":date, "type":'Jinmemo'});
-        var que = _readRcMSQue(opts);
-        console.log(que);
-        mH_utils.msQueryRs({"que":que}, function(err, rs){
-          callback(err, rs);
-        });
-      },
-
-      function(callback) {
-        opts.type = 'Jinmemo';
-        //var que = _readRcMSQue({"date":date, "type":'Remark'});
-        var que = _readRcMSQue(opts);
-        console.log(que);
-        mH_utils.msQueryRs({"que":que}, function(err, rs){
-          callback(err, rs);
-        });
-      },
-    ],
-
-    // 모든 task를 끝내고, 아래 callback으로 에러와 배열인자가 전달됩니다.
-    function(err, results) {
-      var rs2 = {};
-      console.log(results[0], results[1]);
-      rs2['OSSC_PF'] = results[0];
-      rs2['JINMEMO_MEMO'] = results[1];
-      rs2['REMK_REMARK'] = results[2];
-      res.send(rs2);  //response
-    });
-  });
-}
-
-/**
-* @function:
-* @caution:
-*/
-/*
-var _createChartRc = function(req, res) {
-  var ohis = mH_utils.OHIS(req.params.id);
-  var RcTx = mH_utils.trim(req.body.OSSC_PF);
-  var RcJm = mH_utils.trim(req.body.JINMEMO_MEMO);
-  var RcRm = mH_utils.trim(req.body.REMK_REMARK);
-  var opts = {"id":req.params.id, "date":req.params.date, "ohis":ohis};
-}
-*/
-
-var _createChartRc = function(req, res) {
-
-  var data = {  //test용
-    "MEMD":"D0",
-    "GWAM":"80",
-    "FDOC":"D1".
-    "LDOC":"D2"
-  };
-
-  var rc = {
-    "RcTx":"진료기록 테스트",
-    "RcJm":"신상기록 테스트",
-    "RcRm":"특이사항 테스트",
-  };
-
-  var ohis = mH_utils.OHIS(req.params.id);
   opts = {
     "id":req.params.id,
-    "date":req.params.date,
+    "date":req.params.cur_date,
     "ohis":ohis,
     "data":data  //@@@@@@@@@@@
   };
-/*
-  opts = {
-    "id":req.params.id,
-    "date":req.params.date,
-    "ohis":ohis,
-    "data":req.body.data  //@@@@@@@@@@@
-  };
-*/
+
+  var RcTx = mH_utils.trim(req.body.items.OSSC_PF);  //'RcTx' 진료기록
+  var RcJm = mH_utils.trim(req.body.items.JINMEMO_MEMO);  //'RcJm' 신상기록
+  var RcRm = mH_utils.trim(req.body.items.REMK_REMARK);  //'RcRm' 특이사항
+
   async.parallel([
-    function(callback) {  //1x
-      opts.type = 'RcTx';
-      //opts.rc = req.body.RcTx;  //trim@@@@@@
-      opts.rc = rc.RcTx;  //trim@@@@@@ 테스트용
-      _createRcPr(opts, callback);
+    function(callback) {  //'RcTx' 진료기록
+      //var RcTx = mH_utils.trim(rc.RcTx);
+			if (!RcTx || RcTx == '') {
+      	callback(null, '진료기록 내용 없음');
+      } else {
+	      var opts1 = JSON.parse(JSON.stringify(opts));  //객체 복제(object clone)
+	      opts1.type = 'RcTx';
+	      opts1.rc = RcTx;
+	      _createRcPr(opts1, callback);
+      }
     },
-    function(callback) {  //2x
-      opts.type = 'RcJm';
-      //opts.rc = req.body.RcTx;  //trim@@@@@@
-      opts.rc = rc.RcJm;  //trim@@@@@@ 테스트용
-      _createRcPr(opts, callback);
+    function(callback) {  //'RcJm' 신상기록
+      //var RcJm = mH_utils.trim(rc.RcJm);
+			if (!RcJm || RcJm == '') {
+      	callback(null, '진료기록 내용 없음');
+      } else {
+	      var opts2 = JSON.parse(JSON.stringify(opts));  //객체 복제(object clone)
+	      opts2.type = 'RcJm';
+	      opts2.rc = RcJm;
+	      _createRcPr(opts2, callback);
+      }
+/*
+      var opts2 = JSON.parse(JSON.stringify(opts));
+      opts2.type = 'RcJm';
+      //opts.rc = mH_utils.trim(req.body.RcTx);  //trim@@@@@@
+      opts2.rc = rc.RcJm;  //trim@@@@@@ 테스트용
+      _createRcPr(opts2, callback);
+*/
     },
-    function(callback) {  //3x
-      opts.type = 'RcRm';
-      //opts.rc = req.body.RcTx;  //trim@@@@@@
-      opts.rc = rc.RcRm;  //trim@@@@@@ 테스트용
-      _createRcPr(opts, callback);
+    function(callback) {  //'RcRm' 특이사항
+      //var RcRm = mH_utils.trim(rc.RcJmRm);
+			if (!RcRm || RcRm == '') {
+      	callback(null, '진료기록 내용 없음');
+      } else {
+	      var opts3 = JSON.parse(JSON.stringify(opts));  //객체 복제(object clone)
+	      opts3.type = 'RcRm';
+	      opts3.rc = RcRm;
+	      _createRcPr(opts3, callback);
+      }
+/*
+      var opts3 = JSON.parse(JSON.stringify(opts));
+      opts3.type = 'RcRm';
+      //opts.rc = mH_utils.trim(req.body.RcTx);  //trim@@@@@@
+      opts3.rc = rc.RcRm;  //trim@@@@@@ 테스트용
+      _createRcPr(opts3, callback);
+*/
     }
   ],
 
   //callback
-  function(err, results) {
+  function(err, results) {  //response send 변경예정@@@@, error, success
     var rs2 = {};
     console.log(results[0], results[1], results[2]);
     rs2['OSSC_PF'] = results[0];
@@ -148,124 +96,47 @@ var _createChartRc = function(req, res) {
 }
 
 
-function _createRcPr(opts, callback) {
-  var que = _checkRcMSQue(opts);
-  console.log(que);
-  mH_utils.msQueryRs({"que":que}, function(err, rs){
-    //callback(err, rs);
-    if (rs) {
-      que = _createRcMSQue(opts);
-    } else {
-      que = _updateRcMSQue(opts);
+/**
+* @function: read Rc(진료기록, 신상기록, 특이사항)
+* @caution:
+*/
+exports.readChartRc = function(req, res) {
+  var ohis = mH_utils.OHIS(req.params.id);
+  var opts = {"id":req.params.id, "date":req.params.ref_date, "ohis":ohis, "type":"Rc"};
+  _isDone(opts, function(err, rs) {
+    //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
+    if (rs) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@@@
+      opts.date = req.params.cur_date;
     }
-    mH_utils.msQueryRs({"que":que}, function(err, rs){
-      callback(err, rs);
+
+    async.parallel([	//async functions
+      function(callback) {	//진료기록
+      	opts.type = 'RcTx';
+        _readRcPr(opts, callback);
+      },
+
+      function(callback) {	//신상기록
+        opts.type = 'RcJm';
+        _readRcPr(opts, callback);
+      },
+
+      function(callback) {  //특이사항
+        opts.type = 'RcRm';
+        _readRcPr(opts, callback);
+      },
+    ],
+
+    function(err, results) {	//callback
+      var rs2 = {};
+      rs2['OSSC_PF'] = mH_utils.trim(results[0][0].OSSC_PF);	//@@@@@@@@에러 생기는 경우 있음... node server down 현상은 어떻게....@@@@@@@@@@@@@
+      rs2['JINMEMO_MEMO'] = mH_utils.trim(results[1][0].JINMEMO_MEMO);
+      rs2['REMK_REMARK'] = mH_utils.trim(results[2][0].REMK_REMARK);
+      res.send(rs2);  //response
     });
   });
-}
-
-
-function _checkRcMSQue(opts) {
-  var type = opts.type;
-  var id = opts.id;
-  var date = opts.date;
-  var ohis = opts.ohis;
-
-  switch(type) {
-  case 'RcTx':
-    que = "SELECT OSSC_CHAM_ID FROM OHIS_H.dbo.OSSC" + ohis +
-          " WHERE OSSC_CHAM_ID = '" + id +
-          "' AND OSSC_DATE = '" + date + "'";
-    break;
-  case 'RcJm':
-    que = "SELECT JINMEMO_CHAM_ID FROM hanimacCS.dbo.CC_JINMEMO" +
-          " WHERE JINMEMO_CHAM_ID = '" + id + "'";
-    break;
-  case 'RcRm':
-    que = "SELECT REMK_CHAM_ID FROM hanimacCS.dbo.CC_REMK" +
-          " WHERE REMK_CHAM_ID = '" + id + "'";
-    break;
-  }
 
 }
 
-
-function _createRcMSQue(opts) {
-  var type = opts.type;
-  var id = opts.id;
-  var date = opts.date;
-  var ohis = opts.ohis;
-  var rc = opts.rc;  //rc: RcTx, RcJm, RcRm
-  var data = opts.data;
-
-  switch(type) {
-  case 'RcTx':
-    pre = "INSERT INTO OHIS_H.dbo.OSSC" + ohis + " ";
-    ins = {
-      "OSSC_MEDM_ID":data['MEDM'],
-      "OSSC_CHAM_ID":id,
-      "OSSC_GWAM_ID":data['GWAM'],
-      "OSSC_DATE":date,
-      "OSSC_PF":rc,
-      "OSSC_FDOC_ID":data['FDOC'],
-      "OSSC_LDOC_ID":data['LDOC']
-    };
-    //extra = ""
-    break;
-  case 'RcJm':
-    pre = "INSERT INTO hanimacCS.dbo.CC_JINMEMO "
-    ins = {
-      "JINMEMO_CHAM_ID":id,
-      "JINMEMO_GWAM_ID":data['GWAM'],
-      "JINMEMO_DATE":date,
-      "JINMEMO_MEMO":rc,
-      "JINMEMO_USRM_ID":data['FDOC']  //FDOC, LDOC, USRM
-    };
-    //extra = ""
-    break;
-  case 'RcRm':
-    pre = "INSERT INTO hanimacCS.dbo.CC_REMK "
-    ins = {
-      "REMK_CHAM_ID":id,
-      "REMK_REMARK":rc,
-      "REMK_DOC_ID":data['FDOC']  //FDOC, LDOC, USRM
-    };
-    //extra = ""
-    break;
-  }
-
-  return pre + mH_utils.insStr(ins);
-
-}
-
-
-function _updateRcMSQue(opts) {
-  var type = opts.type;
-  var id = opts.id;
-  var date = opts.date;
-  var ohis = opts.ohis;
-  var rc = opts.rc;  //rc: RcTx, RcJm, RcRm
-
-  switch(type) {
-  case 'RcTx':
-    que = "UPDATE OHIS_H.dbo.OSSC" + ohis +
-          " SET OSSC_PF = '" + rc
-          "' WHERE OSSC_CHAM_ID = '" + id +
-          "' AND OSSC_DATE = '" + date + "'";
-    break;
-  case 'RcJm':
-    que = "UPDATE hanimacCS.dbo.CC_JINMEMO SET JINMEMO_MEMO = '" +
-          rc + "', JINMEMO_DATE = '" + date +
-          "' WHERE JINMEMO_CHAM_ID = '" + id + "'";
-    break;
-  case 'RcRm':
-    que = "UPDATE hanimacCS.dbo.CC_REMK SET REMK_REMARK = '" +
-          rc + "' WHERE REMK_CHAM_ID = '" + id + "'";
-    break;
-  }
-
-  return que;
-}
 
 /**
 * @function:
@@ -294,8 +165,8 @@ var _readChartOsscs = function(req, res) {
   var n = req.params.n || 10; //보여주는 개수@@@@@@@@@
   var que = "SELECT TOP " + n +
     " OSSC_DATE AS OSSC_DATE, CAST(OSSC_PF AS text) AS OSSC_PF" +
-    " FROM OHIS_H.dbo.OSSC" + ohis +
-    " WHERE OSSC_CHAM_ID = '" + id +
+    " FROM OHIS_H.dbo.OSSC" + opts.ohis +
+    " WHERE OSSC_CHAM_ID = '" + opts.id +
     "' ORDER BY OSSC_DATE DESC"
 
   mH_utils.msQueryRs({"que":que}, function(err, rs){
@@ -311,21 +182,34 @@ var _readChartOsscs = function(req, res) {
 * @function:
 * @caution:
 */
-var _readChartIxs = function(req, res) {
-/*
-    $month = substr($date, 0, 6);
-    $date_ = substr($date, 6, 2);
+exports.readChartIxs = function(req, res) {
+  var ohis = mH_utils.OHIS(req.params.id);
+  var id = req.params.id;
+  var date = req.params.ref_date;
+  var opts = {"id":req.params.id, "date":req.params.ref_date, "ohis":ohis, "type":"Ix"};
+  _isDone(opts, function(err, rs) {
+    //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
+    if (rs) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@@@
+      //opts.date = req.params.cur_date;
+      date = req.params.cur_date;
+    }
 
-    $sql = "SELECT odis.ODIS_SEQ as seq, odis.ODIS_BIGO1 as ODSC_BIGO1, odis.ODIS_DISM_ID as ODSC_DISM_ID,
-            (case
-            when odis.ODIS_BIGO1 != ''
-            then (SELECT DISM_HNAME FROM hanimacCS.dbo.CC_DISM_2011 WHERE DISM_KEY = odis.ODIS_BIGO1 )
-            else (SELECT DISM_HNAME FROM hanimacCS.dbo.CC_DISM_2011 WHERE DISM_ID = odis.ODIS_DISM_ID )
-            end) as ixName
-            FROM Month.dbo.ODIS$month as odis
-            WHERE odis.ODIS_CHAM_ID = '$id' AND  odis.ODIS_DATE = '$date_'
-            ORDER BY odis.ODIS_SEQ";
-*/
+  	var month = opts.date.substr(0, 6);
+  	var date_ = opts.date.substr(6, 2);
+
+  	que = "SELECT odis.ODIS_SEQ as seq, odis.ODIS_BIGO1 as ODSC_BIGO1, odis.ODIS_DISM_ID as ODSC_DISM_ID, " +
+  		"(case when odis.ODIS_BIGO1 != ''" +
+      " then (SELECT DISM_HNAME FROM hanimacCS.dbo.CC_DISM_2011 WHERE DISM_KEY = odis.ODIS_BIGO1 )" +
+      " else (SELECT DISM_HNAME FROM hanimacCS.dbo.CC_DISM_2011 WHERE DISM_ID = odis.ODIS_DISM_ID )" +
+      " end) as ixName" +
+      " FROM Month.dbo.ODIS" + month + " as odis" +
+      " WHERE odis.ODIS_CHAM_ID = '" + id + "' AND  odis.ODIS_DATE = '" + date_ +
+      "' ORDER BY odis.ODIS_SEQ";
+
+	  mH_utils.msQueryRs({"que":que}, function(err, rs){
+	    res.send(rs);
+	  });
+  });
 }
 
 /**
@@ -547,8 +431,30 @@ var _getPrmTxs = function(req, res) {
 * @function:
 * @caution:
 */
-var _readChartTxs = function(req, res) {
+exports.readChartTxs = function(req, res) {
+  var ohis = mH_utils.OHIS(req.params.id);
+  var id = req.params.id;
+  var date = req.params.ref_date;
+  var opts = {"id":req.params.id, "date":req.params.ref_date, "ohis":ohis, "type":"Ix"};
+  _isDone(opts, function(err, rs) {
+    //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
+    if (rs) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@@@
+      //opts.date = req.params.cur_date;
+      date = req.params.cur_date;
+    }
 
+  	que = "SELECT OPSC_MOMM_ID, OPSC_ORDER, OPSC_BIGO2, OPSC_BLOD, OPSC_BIGO5, OPSC_AMT, OPSC_DAY" +
+  		" FROM OHIS_H.dbo.OPSC" + ohis +
+      " WHERE OPSC_CHAM_ID = '" + id + "' AND OPSC_DATE = '" + date +
+      "' AND substring(OPSC_MOMM_ID, 1, 2) != '10' AND OPSC_TOTAL < 2 AND OPSC_BIGUB = '0'" +
+      " ORDER BY OPSC_SEQ";
+
+    console.log(que);
+
+	  mH_utils.msQueryRs({"que":que}, function(err, rs){
+	    res.send(rs);
+	  });
+  });
 }
 
 /**
@@ -708,93 +614,174 @@ var _getPrmTxs = function(req, res) {
 //-----------------------------------------------------------------------------
 // FUNCTIONS
 //-----------------------------------------------------------------------------
-function _readRcMSQue(opts) {
+/**
+* @function: for createChartRc
+* @caution:
+*/
+function _createRcPr(opts, callback) {
+  var que = _checkRcMSQue(opts);
+
+  mH_utils.msQueryRs({"que":que}, function(err, rs) {
+  	console.log('check que, rs', rs);
+    if (!rs || !rs.length) {
+      var que1 = _createRcMSQue(opts);
+    } else {
+      var que1 = _updateRcMSQue(opts);
+    }
+
+    mH_utils.msQueryRs({"que":que1}, function(err, rs1){
+    	console.log('check que1, rs1', opts, que1, rs1);
+      callback(err, que1);
+      //callback(err, rs);
+    });
+
+  });
+}
+
+/**
+* @function: for createChartRc / _createRcPr
+* @caution:
+*/
+function _checkRcMSQue(opts) {
+  switch(opts.type) {
+  case 'RcTx':
+    que = "SELECT OSSC_CHAM_ID FROM OHIS_H.dbo.OSSC" + opts.ohis +
+          " WHERE OSSC_CHAM_ID = '" + opts.id +
+          "' AND OSSC_DATE = '" + opts.date + "'";
+    break;
+  case 'RcJm':
+    que = "SELECT JINMEMO_CHAM_ID FROM hanimacCS.dbo.CC_JINMEMO" +
+          " WHERE JINMEMO_CHAM_ID = '" + opts.id + "'";
+    break;
+  case 'RcRm':
+    que = "SELECT REMK_CHAM_ID FROM hanimacCS.dbo.CC_REMK" +
+          " WHERE REMK_CHAM_ID = '" + opts.id + "'";
+    break;
+  }
+
+  return que;
+}
+
+/**
+* @function: for createChartRc / _createRcPr
+* @caution:
+*/
+function _createRcMSQue(opts) {
+  //var type = opts.type;
   var id = opts.id;
   var date = opts.date;
-  var ohis = opts.ohis;
-  var type = opts.type;
-/*
-    //$OHIS = mH_OHISNum($id);
-    //print_r($sql);
+  //var ohis = opts.ohis;
+  var rc = opts.rc;  //rc: RcTx, RcJm, RcRm
+  var data = opts.data;
 
-    $sql = "SELECT CAST(OSSC_PF AS text) AS OSSC_PF FROM OHIS_H.dbo.OSSC$OHIS
-        WHERE OSSC_CHAM_ID = '$id' AND OSSC_DATE = '$date'";
+  switch(opts.type) {
+  case 'RcTx':
+    pre = "INSERT INTO OHIS_H.dbo.OSSC" + opts.ohis + " ";
+    ins = {
+      "OSSC_MEDM_ID":data['MEDM'],
+      "OSSC_CHAM_ID":id,
+      "OSSC_GWAM_ID":data['GWAM'],
+      "OSSC_DATE":date,
+      "OSSC_PF":rc,
+      "OSSC_FDOC_ID":data['FDOC'],
+      "OSSC_LDOC_ID":data['LDOC']
+    };
+    //extra = ""
+    break;
+  case 'RcJm':
+    pre = "INSERT INTO hanimacCS.dbo.CC_JINMEMO "
+    ins = {
+      "JINMEMO_CHAM_ID":id,
+      "JINMEMO_GWAM_ID":data['GWAM'],
+      "JINMEMO_DATE":date,
+      "JINMEMO_MEMO":rc,
+      "JINMEMO_USRM_ID":data['FDOC']  //FDOC, LDOC, USRM
+    };
+    //extra = ""
+    break;
+  case 'RcRm':
+    pre = "INSERT INTO hanimacCS.dbo.CC_REMK "
+    ins = {
+      "REMK_CHAM_ID":id,
+      "REMK_REMARK":rc,
+      "REMK_DOC_ID":data['FDOC']  //FDOC, LDOC, USRM
+    };
+    //extra = ""
+    break;
+  }
 
-    $sql = "SELECT CAST(JINMEMO_MEMO AS text) AS JINMEMO_MEMO FROM hanimacCS.dbo.CC_JINMEMO
-        WHERE JINMEMO_CHAM_ID = '$id'";
+  return pre + mH_utils.insStr(ins);
 
-    $sql = "SELECT  CAST(REMK_REMARK AS text) AS REMK_REMARK FROM hanimacCS.dbo.CC_REMK
-        WHERE REMK_CHAM_ID = '$id'";
+}
+
+/**
+* @function: for createChartRc / _createRcPr
+* @caution:
 */
+function _updateRcMSQue(opts) {
+  //var type = opts.type;
+  //var id = opts.id;
+  //var date = opts.date;
+  //var ohis = opts.ohis;
+  var rc = opts.rc;  //rc: RcTx, RcJm, RcRm
+
+  switch(opts.type) {
+  case 'RcTx':
+    que = "UPDATE OHIS_H.dbo.OSSC" + opts.ohis +
+          " SET OSSC_PF = '" + rc +
+          "' WHERE OSSC_CHAM_ID = '" + opts.id +
+          "' AND OSSC_DATE = '" + opts.date + "'";
+    break;
+  case 'RcJm':
+    que = "UPDATE hanimacCS.dbo.CC_JINMEMO SET JINMEMO_MEMO = '" +
+          rc + "', JINMEMO_DATE = '" + opts.date +
+          "' WHERE JINMEMO_CHAM_ID = '" + opts.id + "'";
+    break;
+  case 'RcRm':
+    que = "UPDATE hanimacCS.dbo.CC_REMK SET REMK_REMARK = '" +
+          rc + "' WHERE REMK_CHAM_ID = '" + opts.id + "'";
+    break;
+  }
+
+  return que;
 }
 
 
-
-//-----------------------------------------------------------------------------
-// EXPORTS
-//-----------------------------------------------------------------------------
-exports.readChartRc = _readChartRc;
-exports.createChartRc = _createChartRc;
-exports.updateChartRc = _updateChartRc;
-exports.updateChartRc = _updateChartRc;
-exports.deleteChartRc = _deleteChartRc;
-exports.readChartOsscs = _readChartOsscs;
-exports.readChartIxs = _readChartIxs;
-exports.readChartIx = _readChartIx;
-exports.createChartIxs = _createChartIxs;
-exports.createChartIx = _createChartIx;
-exports.updateChartIxs = _updateChartIxs;
-exports.updateChartIx = _updateChartIx;
-exports.updateChartIxs = _updateChartIxs;
-exports.updateChartIx = _updateChartIx;
-exports.deleteChartIxs = _deleteChartIxs;
-exports.deleteChartIx = _deleteChartIx;
-exports.searchIx = _searchIx;
-exports.getPrmIxs = _getPrmIxs;
-exports.getPrmIxs = _getPrmIxs;
-exports.readChartTxs = _readChartTxs;
-exports.readChartTxs = _readChartTxs;
-exports.readChartTx = _readChartTx;
-exports.createChartTxs = _createChartTxs;
-exports.createChartTx = _createChartTx;
-exports.updateChartTxs = _updateChartTxs;
-exports.updateChartTx = _updateChartTx;
-exports.updateChartTxs = _updateChartTxs;
-exports.updateChartTx = _updateChartTx;
-exports.deleteChartTxs = _deleteChartTxs;
-exports.deleteChartTx = _deleteChartTx;
-exports.searchAcu = _searchAcu;
-exports.getMommDataMY = _getMommDataMY;
-exports.getMommDataMS = _getMommDataMS;
-exports.getPrmAcus = _getPrmAcus;
-exports.getAcuCodes = _getAcuCodes;
-exports.getAcuCodes = _getAcuCodes;
-exports.getPrmGroups = _getPrmGroups;
-exports.getPrmGroups = _getPrmGroups;
-exports.getPrmTxs = _getPrmTxs;
-exports.getPrmTxs = _getPrmTxs;
-
-
-
-
-//=================================
-/*
-function _createRcPr(opts, callback) {
-      var que = _checkRcMSQue(opts);
-      console.log(que);
-      mH_utils.msQueryRs({"que":que}, function(err, rs){
-        //callback(err, rs);
-        if (rs) {
-          que = _createRcMSQue(opts);
-        } else {
-          que = _updateRcMSQue(opts);
-        }
-        mH_utils.msQueryRs({"que":que}, function(err, rs){
-          callback(err, rs);
-        });
-      });
-}
+/**
+* @function: for readChartRc
+* @caution:
 */
+function _readRcPr(opts, callback) {
+  mH_utils.msQueryRs({"que":_readRcMSQue(opts)}, function(err, rs){
+    callback(err, rs);
+  });
+}
+
+/**
+* @function: for readChartRc / _readRcPr
+* @caution:
+*/
+function _readRcMSQue(opts) {
+  switch(opts.type) {
+  case 'RcTx':
+    que = "SELECT CAST(OSSC_PF AS text) AS OSSC_PF FROM OHIS_H.dbo.OSSC" + opts.ohis +
+          " WHERE OSSC_CHAM_ID = '" + opts.id +
+          "' AND OSSC_DATE = '" + opts.date + "'";
+    break;
+  case 'RcJm':
+    que = "SELECT CAST(JINMEMO_MEMO AS text) AS JINMEMO_MEMO" +
+    			" FROM hanimacCS.dbo.CC_JINMEMO" +
+          " WHERE JINMEMO_CHAM_ID = '" + opts.id + "'";
+    break;
+  case 'RcRm':
+    que = "SELECT  CAST(REMK_REMARK AS text) AS REMK_REMARK" +
+    			" FROM hanimacCS.dbo.CC_REMK" +
+          " WHERE REMK_CHAM_ID = '" + opts.id + "'";
+    break;
+  }
+  return que;
+}
+
 
 /**
  * MSSQL DB update 확인(type:: 'sunab': , 'Rc':'', 'Ix':'', 'Tx':'')
@@ -825,25 +812,92 @@ function _isDoneMSQue(opts) {
   switch(opts.type) {
   case 'sunab' :  //['TOTAL']
     return "SELECT JUBM_MTAMT AS TOTAL FROM Month.dbo.JUBM" + month +
-          " WHERE JUBM_DATE = '" + date_ +"' AND JUBM_CHAM_ID = '" + id + "' AND JUBM_MTAMT > 0";
+          " WHERE JUBM_DATE = '" + opts.date_ +"' AND JUBM_CHAM_ID = '" + opts.id + "' AND JUBM_MTAMT > 0";
     //break;
   case 'Rc' :
-    return "SELECT OSSC_DATE AS OSSC_DATE FROM OHIS_H.dbo.OSSC" + ohis +
-         " OSSC_DATE = '" + date +"' AND OSSC_CHAM_ID = '" + id + "'";
+    return "SELECT OSSC_DATE AS OSSC_DATE FROM OHIS_H.dbo.OSSC" + opts.ohis +
+         " OSSC_DATE = '" + opts.date +"' AND OSSC_CHAM_ID = '" + opts.id + "'";
     //break;
   case 'Ix' :
     return "SELECT ODIS_CHAM_ID AS CHAM_ID FROM Month.dbo.ODIS" + month +
-          " WHERE ODIS_DATE = '" + date_ +"' AND ODIS_CHAM_ID = '" + id + "'";
+          " WHERE ODIS_DATE = '" + opts.date_ +"' AND ODIS_CHAM_ID = '" + opts.id + "'";
     //break;
   case 'Tx' :
     return "SELECT OENT_CHAM_ID AS CHAM_ID FROM Month.dbo.OENT" + month +
-          " WHERE OENT_DATE = '" + date_ +"' AND OENT_CHAM_ID = '" + id + "'";
+          " WHERE OENT_DATE = '" + opts.date_ +"' AND OENT_CHAM_ID = '" + opts.id + "'";
     //break;
   default :
     return '';
     //break;
   }
 }
+
+
+//-----------------------------------------------------------------------------
+// EXPORTS
+//-----------------------------------------------------------------------------
+//exports.readChartRc = _readChartRc;
+//exports.createChartRc = _createChartRc;
+exports.updateChartRc = _updateChartRc;
+exports.updateChartRc = _updateChartRc;
+exports.deleteChartRc = _deleteChartRc;
+exports.readChartOsscs = _readChartOsscs;
+//exports.readChartIxs = _readChartIxs;
+exports.readChartIx = _readChartIx;
+exports.createChartIxs = _createChartIxs;
+exports.createChartIx = _createChartIx;
+exports.updateChartIxs = _updateChartIxs;
+exports.updateChartIx = _updateChartIx;
+exports.updateChartIxs = _updateChartIxs;
+exports.updateChartIx = _updateChartIx;
+exports.deleteChartIxs = _deleteChartIxs;
+exports.deleteChartIx = _deleteChartIx;
+exports.searchIx = _searchIx;
+exports.getPrmIxs = _getPrmIxs;
+//exports.getPrmIxs = _getPrmIxs;
+//exports.readChartTxs = _readChartTxs;
+//exports.readChartTxs = _readChartTxs;
+exports.readChartTx = _readChartTx;
+exports.createChartTxs = _createChartTxs;
+exports.createChartTx = _createChartTx;
+exports.updateChartTxs = _updateChartTxs;
+exports.updateChartTx = _updateChartTx;
+exports.updateChartTxs = _updateChartTxs;
+exports.updateChartTx = _updateChartTx;
+exports.deleteChartTxs = _deleteChartTxs;
+exports.deleteChartTx = _deleteChartTx;
+exports.searchAcu = _searchAcu;
+exports.getMommDataMY = _getMommDataMY;
+exports.getMommDataMS = _getMommDataMS;
+exports.getPrmAcus = _getPrmAcus;
+exports.getAcuCodes = _getAcuCodes;
+//exports.getAcuCodes = _getAcuCodes;
+exports.getPrmGroups = _getPrmGroups;
+//exports.getPrmGroups = _getPrmGroups;
+exports.getPrmTxs = _getPrmTxs;
+//exports.getPrmTxs = _getPrmTxs;
+
+
+
+
+//=================================
+/*
+function _createRcPr(opts, callback) {
+      var que = _checkRcMSQue(opts);
+      console.log(que);
+      mH_utils.msQueryRs({"que":que}, function(err, rs){
+        //callback(err, rs);
+        if (rs) {
+          que = _createRcMSQue(opts);
+        } else {
+          que = _updateRcMSQue(opts);
+        }
+        mH_utils.msQueryRs({"que":que}, function(err, rs){
+          callback(err, rs);
+        });
+      });
+}
+*/
 
 
 

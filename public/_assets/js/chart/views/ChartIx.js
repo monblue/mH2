@@ -72,7 +72,8 @@ define(function (require) {
     var title = '';
     var items = [];
       $.ajax({
-        url: GLOBAL.get('_BASEURL') + 'API/chart/getPrmIxs',
+        //url: GLOBAL.get('_BASEURL') + 'API/chart/getPrmIxs',
+        url: GLOBAL.get('_BASEURL') + 'getPrmIxs',
         type: 'get',
         async: false,
         //data: keyword,
@@ -165,7 +166,8 @@ define(function (require) {
       urlRoot: function() {
         ////console.log('url is!!!!!!!!!!!!!!!', GLOBAL.toJSON());
         //return GLOBAL.get('_BASEURL') + 'API/chart/ChartRc/' + GLOBAL.get('_CHARTID') + '/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE');
-        return GLOBAL.get('_BASEURL') + 'API/chart/ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE') + '/' + GLOBAL.get('_CURPTID');
+        //return GLOBAL.get('_BASEURL') + 'API/chart/ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE') + '/' + GLOBAL.get('_CURPTID');
+        return GLOBAL.get('_BASEURL') + 'ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE') + '/' + GLOBAL.get('_CURPTID');
         //return 'http://192.168.0.11/mH/API/chart/ChartRc/20130903/20140410';
       },
     });
@@ -178,7 +180,8 @@ define(function (require) {
       url: function() {
         //console.log('url is!!!!!!!!!!!!!!!', GLOBAL.toJSON());
         //return GLOBAL.get('_BASEURL') + 'API/chart/ChartRc/' + GLOBAL.get('_CHARTID') + '/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE');
-        return GLOBAL.get('_BASEURL') + 'API/chart/ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE') + '/' + GLOBAL.get('_CURPTID');
+        //return GLOBAL.get('_BASEURL') + 'API/chart/ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE') + '/' + GLOBAL.get('_CURPTID');
+        return GLOBAL.get('_BASEURL') + 'ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE') + '/' + GLOBAL.get('_CURPTID');
         //return 'http://192.168.0.11/mH/API/chart/ChartRc/20130903/20140410';
       },
     });
@@ -259,7 +262,8 @@ define(function (require) {
       };
 
       $.ajax({
-        url: GLOBAL.get('_BASEURL') + 'API/chart/ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE')+ '/' + GLOBAL.get('_CURPTID'),
+        //url: GLOBAL.get('_BASEURL') + 'API/chart/ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE')+ '/' + GLOBAL.get('_CURPTID'),
+        url: GLOBAL.get('_BASEURL') + 'ChartIxs/' + GLOBAL.get('_REFDATE') + '/' + GLOBAL.get('_EDITDATE')+ '/' + GLOBAL.get('_CURPTID'),
         type: 'POST',
         data: data,
         async: false,
@@ -427,7 +431,8 @@ define(function (require) {
         //console.log('searchIx by Enter', keyword);
 
         $.ajax({
-          url: GLOBAL.get('_BASEURL') + 'API/chart/searchIx/' + keyword,
+          //url: GLOBAL.get('_BASEURL') + 'API/chart/searchIx/' + keyword,
+          url: GLOBAL.get('_BASEURL') + 'searchIx/' + keyword,
           async: false,
           dataType: 'json',
           success: function(res) {

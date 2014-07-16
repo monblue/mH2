@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');  //npm install --save body-parser
 var path = require('path');
 
 var list = require('./routes/list');
-//var chart = require('./routes/chart');
+var chart = require('./routes/chart');
 var test = require('./routes/test');
 var hanja = require('./routes/hanja');
 var upload = require('./routes/upload');
@@ -88,15 +88,16 @@ app.post('/saveFace/:id', upload.saveFile);
 
 
 
-/*
+
 //-----------------------------------------------------------------------------
 // ChartDR
 //-----------------------------------------------------------------------------
 app.get('/ChartRc/:ref_date/:cur_date/:id', chart.readChartRc);
+//app.get('/ChartRc/:ref_date/:cur_date/:id', chart.createChartRc);
 app.post('/ChartRc/:ref_date/:cur_date/:id', chart.createChartRc);
-app.put('/ChartRc/:ref_date/:cur_date/:id', chart.updateChartRc);
-app.patch('/ChartRc/:ref_date/:cur_date/:id', chart.updateChartRc);
-app.delete('/ChartRc/:ref_date/:cur_date/:id', chart.deleteChartRc);
+//app.put('/ChartRc/:ref_date/:cur_date/:id', chart.updateChartRc);
+//app.patch('/ChartRc/:ref_date/:cur_date/:id', chart.updateChartRc);
+//app.delete('/ChartRc/:ref_date/:cur_date/:id', chart.deleteChartRc);
 
 app.get('/ChartOsscs/:id', chart.readChartOsscs);
 
@@ -151,4 +152,3 @@ app.get('/getPrmTxs', chart.getPrmTxs);  //약속 치료 목록
 app.get('/getPrmTxs/:term', chart.getPrmTxs);  //약속 치료 검색 결과 목록
 //ChartTxs/20140205/20140419/0000000492
 //-----------------------------------------------------------------------------
-*/

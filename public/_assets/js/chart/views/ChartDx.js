@@ -138,7 +138,8 @@ define(function (require) {
             '<thead><td>날짜</td><td>진료기록 요약</td><td>적용</td></thead>' +
             '<tbody>';
       $.ajax({
-        url: GLOBAL.get('_BASEURL') + 'API/chart/ChartOsscs/' + GLOBAL.get('_CURPTID'),
+        //url: GLOBAL.get('_BASEURL') + 'API/chart/ChartOsscs/' + GLOBAL.get('_CURPTID'),
+        url: GLOBAL.get('_BASEURL') + 'ChartOsscs/' + GLOBAL.get('_CURPTID'),
         async: false,
         dataType: 'json',
         success: function(res) {

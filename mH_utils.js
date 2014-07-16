@@ -265,6 +265,7 @@ exports.strPad = _strPad;
 
 exports.OHIS = _OHIS;
 exports.insStr = _getInsStr;
+exports.trim = _trim;
 //-----------------------------------------------------------------------------
 // private functions
 //-----------------------------------------------------------------------------
@@ -358,4 +359,10 @@ function _insuType(pPart, pCare, pCard) {  //Kind of Health Insurance Card
     else rKind = rKind;
 
     return rKind;
+}
+
+
+//기능: str trim
+function _trim(str) {
+  return str.replace(/(^\s*)|(\s*$)/gi, "");
 }
