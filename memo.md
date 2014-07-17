@@ -1,3 +1,7 @@
+##
+1. MSSQL, mongodb trigger 및 socket.io를 통한 실시간 sync
+
+
 ## server & port
 ### webServer : 80 / 9999
 * node webServer
@@ -14,6 +18,51 @@
 -------------------------------------------------------------------------------
 
 ## boilerplate
+
+### async boilerplate
+async = require("async");
+
+
+#### async.each
+1. <http://justinklemm.com/node-js-async-tutorial/>
+```
+// 1st parameter in async.each() is the array of items
+async.each(items,
+  // 2nd parameter is the function that each item is passed into
+  function(item, callback){
+    // Call an asynchronous function (often a save() to MongoDB)
+    item.someAsyncCall(function () {
+      // Async call is done, alert via callback
+      callback();
+    });
+  },
+  // 3rd parameter is the function call when everything is done
+  function(err){
+    // All tasks are done now
+    doSomethingOnceAllAreDone();
+  }
+);
+```
+
+2. in moonHani
+```
+async.each(items, function(item, callback) {
+  func1(item, function(){
+    callback(err, rs);
+  });
+}, function(err, rs) {  //callback
+  func2(err, rs);
+});
+
+
+function func1(item, cb) {
+  process(item);
+  err = '';
+  result = '';
+  cb(err, result);
+}
+
+===============================================================
 
 ### webserver[express4]: 1file
 * 실행: node app.js

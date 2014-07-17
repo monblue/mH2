@@ -5,7 +5,6 @@ var mH_utils = require('../mH_utils');
 var async = require('async');
 var dateFormat = require('dateformat');
 
-
 //=============================================================================
 // FUNCTIONS
 //=============================================================================
@@ -225,71 +224,78 @@ var _readChartIx = function(req, res) {
 * @caution:
 */
 var _createChartIxs = function(req, res) {
-/*
-    //$OHIS = mH_OHISNum($id);
+  var ohis = mH_utils.OHIS(req.params.id);
+  var id = req.params.id;
+  var date = req.params.cur_date;
+  var ixItems = req.body.items; //@@@@@@@@@@
+  var data = req.body.attached; //@@@@@@@@@@
 
-    //이미 수납처리된 데이터가 있는 경우 처리@@@
-    if (mH_isDoneSunab($id, $date) > 0) {
-        echo '{"res":"D"}';
-        return;
+  var que = ''; //@@@@@@@@@@@
+  var que1 = ''; //@@@@@@@@@@@
+
+  var opts = {"id":req.params.id, "date":req.params.cur_date, "ohis":ohis, "type":"sunab"};
+  _isDone(opts, function(err, rs) {
+    //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
+    if (rs && rs.length) {  //이미 수납처리된 데이터가 있는 경우 처리@@@
+      //res.send('{"res":"D"}');  //@@@@@@@@@@@@@@@@@@@@
+      console.log('{"res":"D"}');
+      return;
+    } else {
+      var month = opts.date.substr(0, 6);
+      var date_ = opts.date.substr(6, 2);
     }
 
+    var opts1 = JSON.parse(JSON.stringify(opts));
 
-    $month = substr($date, 0, 6);
-    $date_ = substr($date, 6, 2);
-    $ixItems = $data['items'];
-    //'ODIS_MEDM_ID'=>$data['MEDM'],
-    //ODIS_GWAM_ID'=>$data['GWAM'],
+    opts1.type = 'Ix';
 
-    //이미 입력된 데이터가 있는 경우 처리@@@@@[DELETE + INSERT
-    $sql = "SELECT ODIS_CHAM_ID FROM Month.dbo.ODIS$month
-        WHERE ODIS_CHAM_ID = '$id' AND ODIS_DATE = '$date_'";
+    _isDone(opts1, function(err, rs){
+      que1 = '';
+      if (rs && rs.length) {  //이미 입력된 데이터가 있는 경우 처리@@@
+        que1 = "DELETE Month.dbo.ODIS" + month +
+               " WHERE ODIS_CHAM_ID = '" + id +
+               "' AND ODIS_DATE = '" + date_ + "'" + "\n";
+      }
+      ////@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      seq = 0;
+      len = ixItems.length;
 
-    $rs = mH_selectRowMSSQL($sql);
+      for (i=0; i<len; i++) {
+        seq++;
+        main = (seq == 1) ? '주' : '';
+        ODIS_DISM_ID = ixItems[i]['ODSC_DISM_ID'];
+        ODIS_BIGO1 = ixItems[i]['ODSC_BIGO1'];
 
-    if (!empty($rs)) { //delete(message 보내야 함!!!!])
-        $sql = "DELETE Month.dbo.ODIS$month
-                WHERE ODIS_CHAM_ID = '$id' AND ODIS_DATE = '$date_'" . "\n";
-        //echo '{"res":"N"}';
-        //return;
-    }
+        ins = {
+          "ODIS_DATE":date_,
+          "ODIS_CHAM_ID":id,
+          "ODIS_DISM_ID":ODIS_DISM_ID,
+          "ODIS_SEQ":seq,
+          "ODIS_BIGO":main,
+          "ODIS_BIGO1":ODIS_BIGO1,
+          "ODIS_MEDM_ID":data['MEDM'],
+          "ODIS_GWAM_ID":data['GWAM'],
+          "ODIS_DISM_ID1":'',    //?
+          "ODIS_GWAM_ID1":'',    //?
+          "ODIS_VCODE":'',       //희귀 난치성?
+          "ODIS_SANG":''         //?
+        }
 
+        que1 += "INSERT INTO Month.dbo.ODIS" + month + mH_utils.insStr(ins) + "\n";
+      }
 
-    //create(insert)
-    $seq = 0;
-    $max = sizeof($ixItems);
+      mH_utils.msQueryRs({"que":que1}, function(err, rs){
+        res.send(rs);
+      });
 
-    for ($i = 0; $i < $max; ++$i) {
+    });
+  });
 
-        $seq += 1; // for : 중간에 데이터가 없는 경우 고려
-        $main = ($seq == 1) ? '주' : '';
-        $ODIS_DISM_ID = $ixItems[$i]['ODSC_DISM_ID'];
-        $ODIS_BIGO1 = $ixItems[$i]['ODSC_BIGO1'];
-
-        $arrIns = array(
-            'ODIS_DATE'=>$date_,
-            'ODIS_CHAM_ID'=>$id,
-            'ODIS_DISM_ID'=>$ODIS_DISM_ID,
-            'ODIS_SEQ'=>$seq,
-            'ODIS_BIGO'=>$main,
-            'ODIS_BIGO1'=>$ODIS_BIGO1,
-            'ODIS_MEDM_ID'=>$data['MEDM'],
-            'ODIS_GWAM_ID'=>$data['GWAM'],
-            'ODIS_DISM_ID1'=>'',    //?
-            'ODIS_GWAM_ID1'=>'',    //?
-            'ODIS_VCODE'=>'',       //희귀 난치성?
-            'ODIS_SANG'=>''         //?
-        );
-        //print_r(mH_getInsStr($arrIns));
-        $sql .= "INSERT INTO Month.dbo.ODIS$month " . mH_getInsStr($arrIns) . "\n";
-
-    }
-*/
 }
 
 /**
 * @function:
-* @caution:
+* @caution: NOT USED
 */
 var _createChartIx = function(req, res) {
 
@@ -297,7 +303,7 @@ var _createChartIx = function(req, res) {
 
 /**
 * @function:
-* @caution:
+* @caution: NOT USED
 */
 var _updateChartIxs = function(req, res) {
 
@@ -305,7 +311,7 @@ var _updateChartIxs = function(req, res) {
 
 /**
 * @function:
-* @caution:
+* @caution: NOT USED
 */
 var _updateChartIx = function(req, res) {
 
@@ -313,7 +319,7 @@ var _updateChartIx = function(req, res) {
 
 /**
 * @function:
-* @caution:
+* @caution: NOT USED
 */
 var _updateChartIxs = function(req, res) {
 
@@ -321,7 +327,7 @@ var _updateChartIxs = function(req, res) {
 
 /**
 * @function:
-* @caution:
+* @caution: NOT USED
 */
 var _updateChartIx = function(req, res) {
 
@@ -329,7 +335,7 @@ var _updateChartIx = function(req, res) {
 
 /**
 * @function:
-* @caution:
+* @caution: NOT USED or modify parameters
 */
 var _deleteChartIxs = function(req, res) {
 
@@ -348,26 +354,25 @@ var _deleteChartIx = function(req, res) {
 * @caution:
 */
 var _searchIx = function(req, res) {
-/*
-    $term = str_replace('.', '', $term);    //#### '.' 없앰, check항목 더 만들어야...
+  //$term = str_replace('.', '', $term);    //#### '.' 없앰, check항목 더 만들어야...
+  //var term = req.body.term;  //@@@ replace
+  var term = req.params.term;  //@@@ replace
+  var n = req.params.n || 20;
+  var strWhere = " WHERE DISM_NP != 'N'";
+  var arrTerm = term.split(' ');  //@@@ ' ': AND, @@',': OR@@@@@@@@@
 
-    if (substr_count($term, ' ') > 0) {
-        $arrKey = explode(' ', $term);
-        foreach($arrKey as $val) {
-            $arrWhere[] = "DISM_HNAME LIKE '%$val%'";
-        }
-        $strWhere = implode(' AND ', $arrWhere);
-        } else {
-        $strWhere = "DISM_HNAME LIKE '%$term%'";
-    }
-    $strWhere .= " AND DISM_NP != 'N'";
+  for(i in arrTerm) {
+    strWhere += " AND DISM_HNAME LIKE '%" + arrTerm[i] + "%'";
+  }
 
-    //TOP 20: 20개만 불러옴
-    $sql = "SELECT TOP 20 DISM_HNAME as name, DISM_KEY as key1, DISM_ID as code FROM hanimacCS.dbo.CC_DISM_2011 WHERE "
-                .$strWhere." ORDER BY DISM_HNAME";
+  que = "SELECT TOP " + n +
+        " DISM_HNAME as name, DISM_KEY as key1, DISM_ID as code" +
+        " FROM hanimacCS.dbo.CC_DISM_2011" + strWhere +
+        " ORDER BY DISM_HNAME";
 
-   return mH_selectArrayMSSQL($sql);
-*/
+  mH_utils.msQueryRs({"que":que}, function(err, rs){
+    res.send(rs);
+  });
 }
 
 /**
@@ -375,23 +380,27 @@ var _searchIx = function(req, res) {
 * @caution:
 */
 var _getPrmIxs = function(req, res) {
-/*
-  $where = '';
-  if ($term != '') {
-  //if (!$term) {
-    $where = " AND Title LIKE '%$term%'";
-  }
+  var term = req.params.term;  //@@@ replace, trim
 
-  $sql = "SELECT  rtrim(Title) AS Title,
-                  rtrim(CodeName) AS NAME,
-                  rtrim(Code) AS DISM_ID,
-                  rtrim(CodeExp) AS DISM_KEY
-          FROM hanimacCS.dbo.PROMISE50
-          WHERE CLS = '상병명' ".
-          $where .
-          " ORDER BY Title";
-  return mH_selectArrayMSSQL($sql);
-*/
+  var strWhere = " FROM hanimacCS.dbo.PROMISE50 WHERE CLS = '상병명' ";
+  if (term != '') {
+    strWhere += " AND Title LIKE '%" + term + "%'";
+  }
+  strWhere += " ORDER BY Title";
+
+  sel = [
+    "rtrim(Title) AS Title",
+    "rtrim(CodeName) AS NAME",
+    "rtrim(Code) AS DISM_ID",
+    "rtrim(CodeExp) AS DISM_KEY"
+  ];
+
+  que = "SELECT " + sel.join(', ') + strWhere;
+
+  mH_utils.msQueryRs({"que":que}, function(err, rs){
+    res.send(rs);
+  });
+
 }
 
 //-----------------------------------------------------------------------------
@@ -402,29 +411,30 @@ var _getPrmIxs = function(req, res) {
 * @caution:
 */
 var _getPrmTxs = function(req, res) {
-  $where = '';
-  if ($term != '') {
-  //if (!$term) {
-    $where = " AND Title LIKE '%$term%'";
-  }
-/*
-//CodeExp2 AS MOMM_DBL: 보험약 2배수 (1:default, 2:2배수)
-//group by CNT@@@@@@@@@@
+  var term = req.params.term;  //@@@ replace, trim
 
-  $sql = "SELECT  rtrim(Title) AS Title,
-                  rtrim(CLS) AS CLS,
-                  rtrim(CodeName) AS CodeName,
-                  rtrim(Code) AS Code,
-                  rtrim(CodeExp) AS CodeExp,
-                  rtrim(CodeExp1) AS CodeExp1,
-                  rtrim(CodeExp2) AS CodeExp2
-          FROM hanimacCS.dbo.PROMISE50
-          WHERE CLS != '상병명' ".
-          $where .
-          " ORDER BY Title";
-          //" ORDER BY Title, Seq";
-  return mH_selectArrayMSSQL($sql);
-*/
+  var strWhere = " FROM hanimacCS.dbo.PROMISE50 WHERE CLS != '상병명' ";
+  if (term != '') {
+    strWhere += " AND Title LIKE '%" + term + "%'";
+  }
+  strWhere += " ORDER BY Title";
+
+  sel = [
+    "rtrim(Title) AS Title",
+    "rtrim(CLS) AS CLS",
+    "rtrim(CodeName) AS CodeName",
+    "rtrim(Code) AS Code",
+    "rtrim(CodeExp) AS CodeExp",
+    "rtrim(CodeExp1) AS CodeExp1",
+    "rtrim(CodeExp2) AS CodeExp2"
+  ];
+
+  que = "SELECT " + sel.join(', ') + strWhere;
+
+  mH_utils.msQueryRs({"que":que}, function(err, rs){
+    res.send(rs);
+  });
+
 }
 
 /**
@@ -470,6 +480,207 @@ var _readChartTx = function(req, res) {
 * @caution:
 */
 var _createChartTxs = function(req, res) {
+  var ohis = mH_utils.OHIS(req.params.id);
+  var id = req.params.id;
+  var date = req.params.cur_date;
+  var txItems = req.body.items; //@@@@@@@@@
+  var data = req.body.attached; //@@@@@@@@@
+
+  var opts = {"id":req.params.id, "date":req.params.cur_date, "ohis":ohis, "type":"sunab"};
+  _isDone(opts, function(err, rs) {
+    if (rs) {  //이미 수납처리된 데이터가 있는 경우 처리@@@
+      res.send('{"res":"D"}');
+    } else {
+      var month = opts.date.substr(0, 6);
+      var date_ = opts.date.substr(6, 2);
+    }
+
+    var opts1 = JSON.parse(JSON.stringify(opts));
+    opts1.type = "Tx";
+    _isDone(opts1, function(err, rs){
+      var sqlOENT = '';
+      var sqlOPSC = '';
+      if (rs || rs.length) {  //이미 입력된 데이터가 있는 경우 처리@@@
+        sqlOENT = "DELETE Month.dbo.OENT" + month +
+               " WHERE OENT_CHAM_ID = '" + id +
+               "' AND OENT_DATE = '" + date_ + "'" + "\n";
+        sqlOPSC = "DELETE OHIS_H.dbo.OPSC" + ohis +
+               " WHERE OPSC_CHAM_ID = '" + id +
+               "' AND OPSC_DATE = '" + date + "'" + "\n";
+      }
+
+/*
+{
+  "OPSC_MOMM_ID":"",
+  "OPSC_BIGO2":"",
+  "OPSC_BLOD":"",
+  "OPSC_BIGO5":"",
+  "OPSC_ORDER":"",
+  "group":"",
+  "OPSC_AMT":"",
+  "OPSC_DAY":"",
+  "price":"",
+  //"":"",
+  //"":"",
+  //"":"",
+  //"":"",
+  //"":"",
+}
+*/
+
+      var len = txItems.length;
+      for (i = 0; i < len; ++i) {
+        seq = i + 1;
+        mommId = txItems[i]['OPSC_MOMM_ID'];
+        momrId = mommId;  //없애도 되는지 테스트@@@@@@@@@
+        gubun = 0;
+        bigo2 = txItems[i]['OPSC_BIGO2'];
+        blod = txItems[i]['OPSC_BLOD'];    //'자락'이 입력되는 에러 테스트용
+        //blod = '';    //'자락'이 입력되는 에러 테스트용
+        //bigo5 = str_replace(' ', '', txItems[i]['OPSC_BIGO5']);    //자락이 뜨는 에러 해결@@@@@@@@@@
+        bigo5 = txItems[i]['OPSC_BIGO5'].replace(' ', '');    //자락이 뜨는 에러 해결@@@@@@@@@@
+        name = txItems[i]['OPSC_ORDER'];   //보험약의 경우 OPSC_ORDER가 없으면 달력에 'EX'표시 되지 않음!!!@@@
+        amt = 1;
+        day = 1;
+        bibo = 0;
+
+        //@@@보험약, group외 다른 확인방법??
+        if (txItems[i]['group'] == '15' || txItems[i]['group'] == '15_1') {
+            amt = txItems[i]['OPSC_AMT'];
+            day = txItems[i]['OPSC_DAY'];
+
+            if (substr(mommId, 1, 1) == 'C' || substr(momrId, 1, 1) == 'G') {
+                gubun = 6;
+                momrId = str_replace('`', '', mommId);  //없애도 되는지 테스트@@@@@@@@@
+            } else {
+                gubun = 5;
+            }
+        }
+
+        //@@@비보험, group외 다른 확인방법??
+        if (txItems[i]['group'] > 50) {
+            //bibo = txItems[i]['price'];
+            bibo = '1';    //OENT_BIGUB: 1
+        }
+
+
+        arrOENT = {
+          "OENT_MEDM_ID":data['MEDM'],
+          "OENT_DATE":date_,
+          "OENT_CHAM_ID":id,
+          "OENT_GWAM_ID":data['GWAM'],
+          "OENT_CNT":seq,
+          //"OENT_RNO":'',
+          //"OENT_NO":'',
+          "OENT_MOMR_ID":momrId,
+          "OENT_MOMM_ID":mommId,
+          "OENT_BLOD":blod,
+          //"OENT_DANGA":'',
+          "OENT_AMT":amt,
+          "OENT_ONE_AMT":'1',
+          "OENT_DAY":day,
+          //"OENT_USGM_ID":'',
+          //"OENT_INOUT":'0',
+          //"OENT_EX_CODE":'',
+          "OENT_BIGUB":bibo,
+          "OENT_GASAN1":'0', //0이 아닌 경우 확인요@@@@@
+          "OENT_GASAN2":'0', //0이 아닌 경우 확인요@@@@@
+          //"OENT_DEPT_ID":'',
+          //"OENT_GRP_NAME":'',
+          "OENT_GUBUN":gubun,   //0이 아닌 경우 확인요@@@@@
+          //"OENT_SUGI":'0',
+          //"OENT_TOTAL":'0',
+          //"OENT_SUP_ID":'',
+          //"OENT_SUP_NAME":'',
+          "OENT_TRANS_NO":'0',   //필수!!! 0이 아닌 경우 확인요@@@@@
+          "OENT_DOC_ID":data['LDOC'],
+          //"OENT_HCODE":'',
+          //"OENT_BIGO1":'',
+          "OENT_BIGO2":data['MEDM'], // OENT_MEDM_ID와 항상 같은지 확인요
+          "OENT_BIGO3":bigo2,   //OPSC에서는 BIBO2!!!!!
+          //"OENT_LICENSE":'20289',
+          //"OENT_NAME":'문정삼'
+        };
+
+        //비보험 단가(보험 단가가 자동으로 계산된다면 그냥 넣어도 됨@@@@@@@@)
+        if (txItems[i]['group'] > 50) {
+          arrOENT['OENT_DANGA'] = txItems[i]['price'];
+        }
+
+        arrOPSC = {
+          "OPSC_MEDM_ID":data['MEDM'],
+          "OPSC_CHAM_ID":id,
+          "OPSC_GWAM_ID":data['GWAM'],
+          "OPSC_DATE":date,
+          "OPSC_SEQ":seq,
+          //"OPSC_RNO":'1',
+          "OPSC_BLOD":blod,
+          "OPSC_ORDER":name,    //보험약의 경우 OPSC_ORDER가 없으면 달력에 'EX'표시 되지 않음!!!
+          "OPSC_MOMR_ID":momrId,
+          "OPSC_MOMM_ID":mommId,
+          //"OPSC_DANGA":'6960',
+          "OPSC_AMT":amt,
+          "OPSC_ONE_AMT":'1',
+          "OPSC_DAY":day,
+          //"OPSC_USG":'',
+          //"OPSC_INOUT":'0',
+          //"OPSC_EX_CODE":'',
+          "OPSC_BIGUB":bibo,
+          "OPSC_GASAN1":'0',
+          "OPSC_GASAN2":'0',
+          //"OPSC_HANG":'1',
+          //"OPSC_MOK":'2',
+          //"OPSC_HEANG":'0',
+          //"OPSC_DEPT_ID":'',
+          //"OPSC_LINK_CODE":'',
+          //"OPSC_GRP_NAME":'',
+          "OPSC_GUBUN":gubun,
+          "OPSC_TOTAL":'0',
+          //"OPSC_SUP_ID":'',
+          //"OPSC_SUP_NAME":'',
+          "OPSC_TRANS_NO":'0',
+          //"OPSC_HCODE":'',
+          //"OPSC_ACTING":'',
+          //"OPSC_FDOC_ID":data['FDOC'],
+          //"OPSC_LDOC_ID":data['LDOC'],
+          //"OPSC_CHEOPSU":'',
+          //"OPSC_PACK_NUMBER":'',
+          //"OPSC_ILBUN":'',
+          //"OPSC_DESC":'',
+          //"OPSC_HPACK_MEMO":'',
+          //"OPSC_BIGO1":'',
+          "OPSC_BIGO2":bigo2,
+          //"OPSC_BIGO3":'',
+          //"OPSC_BIGO4":'',
+          "OPSC_BIGO5":bigo5,
+          //"OPSC_BIGO6":null,
+          //"OPSC_BIGO7":null,
+          //'OPSC_BIGO8'=>NULL
+        };
+
+        if (txItems[i]['group'] > 50) {   //비보험 단가(보험 단가가 자동으로 계산된다면 그냥 넣어도 됨@@@@@@@@)
+            arrOPSC['OPSC_DANGA'] = txItems[i]['price'];
+        }
+
+        //print_r(dataOENT);
+        //print_r(dataOPSC);
+
+        sqlOENT += "INSERT INTO Month.dbo.OENTmonth " + mH_utils.insStr(arrOENT) + "\n";
+
+        sqlOPSC += "INSERT INTO OHIS_H.dbo.OPSCOHIS " + mH_utils.insStr(arrOPSC) + "\n";
+
+      }
+      //console.log(sqlOENT);
+      //console.log("\n\n");
+      //console.log(sqlOPSC);
+      que = sqlOENT + sqlOPSC;
+
+      mH_utils.msQueryRs({"que":que}, function(err, rs){
+        res.send(rs);
+      });
+
+    });
+  });
 
 }
 
@@ -533,7 +744,41 @@ var _deleteChartTx = function(req, res) {
 * @function:
 * @caution:
 */
-var _searchAcu = function(req, res) {
+exports.searchAcu = function(req, res) {
+  var term = req.params.term.replace(' ', '');  //@@@ replace
+  var arrName = term.split('/');
+  //var arrName = term.split('a');
+  var data = {
+    "PX1":[],
+    "PX2":[]
+  };
+
+  async.each(arrName, function(name, callback) {
+    que = "SELECT BLOD_ID AS code, BLOD_HNAME AS name" +
+          " FROM hanimacCS.dbo.H_BLOD WHERE BLOD_HNAME  LIKE '" +
+          name + "%'";
+    console.log(que);
+
+    mH_utils.msQueryRs({"que":que}, function(err, rs){
+      if (!rs || !rs.length) {
+        console.log('해당 경혈명 없음');
+      } else if (rs.length == 1) {
+        console.log("data['PX1'].push", rs[0]);
+        data['PX1'].push(rs[0]);
+      } else if (rs.length > 1) {
+        for (j in rs) {
+          console.log("data['PX2'].push", rs[j]);
+          data['PX2'].push(rs[j]);
+        }
+      }
+      //callback(null, data);
+      callback();
+    });
+
+  }, function(err) {  //callback
+    console.log('loop is ended');
+    res.send(data);
+  });
 
 }
 
@@ -550,24 +795,64 @@ var _getMommDataMY = function(req, res) {
 * @caution:
 */
 var _getMommDataMS = function(req, res) {
+    //SELECT  MOMM_ID, MOMM_HNAME, MOMM_HANG, MOMM_MOK, MOMM_GUBUN, MOMM_BIGUB, MOMM_ROUND, MOMM_HYANG, MOMM_M1_SUGA, MOMM_M1_DATE, MOMM_DISK_GUBUN, MOMM_BIGO1, MOMM_BIGO2
+    //FROM hanimacCS.dbo.CC_MOMM
+    //WHERE (len(MOMM_ID) = 5 or (len(MOMM_ID) = 8 AND substring(MOMM_ID, 6,2) = '00')) AND isnumeric(substring(MOMM_ID, 1, 1)) > 0  AND MOMM_M1_SUGA > 0 AND MOMM_BIGUB = 0 AND (MOMM_HNAME not like '%병원%' AND MOMM_HNAME not like '%한방과%' AND MOMM_HNAME not like '%-의원%' AND MOMM_HNAME not like '%식%')
+
+  que = "SELECT MOMM_HNAME AS name, MOMM_M1_SUGA AS price" +
+        " FROM hanimacCS.dbo.CC_MOMM" +
+        " WHERE MOMM_ID = '" + id + "'";
+  mH_utils.msQueryRs({"que":que}, function(err, rs){
+    res.send(rs);
+  });
+}
+
+/**
+* @function: 약속 경혈(한글 경혈명 추가!!)
+* @caution: //SELECT BLOD_HNAME FROM hanimacCS.dbo.H_BLOD WHERE BLOD_ID = 'LI002'
+*/
+//http://192.168.0.11:3333/getPrmAcus
+exports.getPrmAcus = function(req, res) { //이중 async.each
+  var que = "SELECT ASK_ID AS ASK_ID, ASK_NAME AS ASK_NAME" +
+        " FROM hanimacCS.dbo.CC_ASK" +
+        " WHERE ASK_BIGO LIKE '약속경혈%' ORDER BY ASK_SEQ";
+
+  mH_utils.msQueryRs({"que":que}, function(err, results){
+    async.each(results, function(result, callback) {
+      result['BLOD_HNAME'] = '';
+      arrAcuId = result['ASK_NAME'].split('/');
+
+      async.each(arrAcuId, function(acuId, callback2) {
+        _getAcuHname(acuId, function(err, rs1){
+          if (rs1 && rs1.length) {
+            result['BLOD_HNAME'] += rs1[0]['BLOD_HNAME'] + '/';
+          }
+          callback2();
+        });
+      }, function(err) {
+        callback();
+      });
+
+    }, function(err) {  //callback
+      res.send(results);
+    });
+  });
 
 }
 
 /**
-* @function:
+* @function: 한글 경혈명 얻기
 * @caution:
 */
-var _getPrmAcus = function(req, res) {
-
+function _getAcuHname(id, cb) {
+  var que = "SELECT BLOD_HNAME AS BLOD_HNAME" +
+        " FROM hanimacCS.dbo.H_BLOD" +
+        " WHERE BLOD_ID = '" + id + "'";
+  mH_utils.msQueryRs({"que":que}, function(err, rs){
+    cb(err, rs);
+  });
 }
 
-/**
-* @function:
-* @caution:
-*/
-var _getAcuCodes = function(req, res) {
-
-}
 
 /**
 * @function:
@@ -866,10 +1151,10 @@ exports.updateChartTxs = _updateChartTxs;
 exports.updateChartTx = _updateChartTx;
 exports.deleteChartTxs = _deleteChartTxs;
 exports.deleteChartTx = _deleteChartTx;
-exports.searchAcu = _searchAcu;
+//exports.searchAcu = _searchAcu;
 exports.getMommDataMY = _getMommDataMY;
 exports.getMommDataMS = _getMommDataMS;
-exports.getPrmAcus = _getPrmAcus;
+//exports.getPrmAcus = _getPrmAcus;
 exports.getAcuCodes = _getAcuCodes;
 //exports.getAcuCodes = _getAcuCodes;
 exports.getPrmGroups = _getPrmGroups;

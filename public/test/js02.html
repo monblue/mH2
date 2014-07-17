@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>moonHani</title>
+</head>
+<!--<script src="../_assets/js/_lib/underscore.js"></script>-->
+<script>
+var mH_utils = {};
+
+mH_utils.OHIS = function(id)  {
+  var num = Math.ceil((parseInt(id) + 390)/500) + 9;
+  if ((parseInt(id) + 390)%1000 == 500) num++;
+  return _putZeros(num, 4);
+}
+
+mH_utils.msQueryRs = function(opts, cb) {
+  var err = null;
+  var que = opts.que;
+  var rs = [];
+
+  cb(err, rs);
+
+}
+
+//MSSQL insert용 query
+mH_utils.insStr = function(json) {
+  var strKey = '(';
+  var strVal = "('";
+  for(k in json) {
+    strKey += k + ', ';
+    strVal += json[k] + "', '";  //value는 ''로 감쌈(숫자형은 어떻게??@@@)
+  }
+  strKey = strKey.substring(0, strKey.length-2) + ')';
+  strVal = strVal.substring(0, strVal.length-3) + ')';
+
+  return strKey + ' VALUES ' + strVal;
+}
+
+
+
+
+  var req = {
+    params: {
+      "id":"0000000134",
+      "ref_date":"20140701",
+      "cur_date":"20140717"
+    },
+    body: {
+      items: [
+        {
+          "ODSC_DISM_ID":"11",
+          "ODSC_BIGO1":"1111"
+        },
+        {
+          "ODSC_DISM_ID":"22",
+          "ODSC_BIGO1":"2222"
+        }
+      ],
+      attached: {
+        "MEDM":"10",
+        "GWAM":"80"
+      }
+    }
+  };
+
+  var ohis = mH_utils.OHIS(req.params.id);
+  var id = req.params.id;
+  var date = req.params.cur_date;
+  var ixItems = req.body.items; //@@@@@@@@@@
+  var data = req.body.attached; //@@@@@@@@@@
+
+  var que = ''; //@@@@@@@@@@@
+  var que1 = ''; //@@@@@@@@@@@
+
+  var opts = {"id":req.params.id, "date":req.params.cur_date, "ohis":ohis, "type":"sunab"};
+  _isDone(opts, function(err, rs) {
+    //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
+    if (rs && rs.length) {  //이미 수납처리된 데이터가 있는 경우 처리@@@
+      //res.send('{"res":"D"}');  //@@@@@@@@@@@@@@@@@@@@
+      console.log('{"res":"D"}');
+      return;
+    } else {
+      var month = opts.date.substr(0, 6);
+      var date_ = opts.date.substr(6, 2);
+    }
+
+    var opts1 = JSON.parse(JSON.stringify(opts));
+
+    opts1.type = 'Ix';
+
+    _isDone(opts1, function(err, rs){
+      que1 = '';
+      if (rs && rs.length) {  //이미 입력된 데이터가 있는 경우 처리@@@
+        que1 = "DELETE Month.dbo.ODIS" + month +
+               " WHERE ODIS_CHAM_ID = '" + id +
+               "' AND ODIS_DATE = '" + date_ + "'" + "\n";
+      }
+      ////@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      seq = 0;
+      len = ixItems.length;
+
+      for (i=0; i<len; i++) {
+        seq++;
+        main = (seq == 1) ? '주' : '';
+        ODIS_DISM_ID = ixItems[i]['ODSC_DISM_ID'];
+        ODIS_BIGO1 = ixItems[i]['ODSC_BIGO1'];
+
+        ins = {
+          "ODIS_DATE":date_,
+          "ODIS_CHAM_ID":id,
+          "ODIS_DISM_ID":ODIS_DISM_ID,
+          "ODIS_SEQ":seq,
+          "ODIS_BIGO":main,
+          "ODIS_BIGO1":ODIS_BIGO1,
+          "ODIS_MEDM_ID":data['MEDM'],
+          "ODIS_GWAM_ID":data['GWAM'],
+          "ODIS_DISM_ID1":'',    //?
+          "ODIS_GWAM_ID1":'',    //?
+          "ODIS_VCODE":'',       //희귀 난치성?
+          "ODIS_SANG":''         //?
+        }
+
+        que1 += "INSERT INTO Month.dbo.ODIS" + month + mH_utils.insStr(ins) + "\n";
+      }
+
+    });
+  });
+
+  console.log(que1);
+
+
+
+
+/*
+  var term = req.params.term;  //@@@ replace
+  var n = req.params.n || 20;
+  var strWhere = " WHERE DISM_NP != 'N'";
+  var arrTerm = term.split(' ');  //@@@ ' ': AND, @@',': OR@@@@@@@@@
+
+  for(i in arrTerm) {
+    strWhere += " AND DISM_HNAME LIKE '%" + arrTerm[i] + "%'";
+  }
+
+  que = "SELECT TOP " + n +
+        " DISM_HNAME as name, DISM_KEY as key1, DISM_ID as code" +
+        " FROM hanimacCS.dbo.CC_DISM_2011" + strWhere +
+        " ORDER BY DISM_HNAME";
+
+
+  var term = req.params.term;  //@@@ replace
+  var strWhere = " FROM hanimacCS.dbo.PROMISE50 WHERE CLS != '상병명' ";
+  if (term != '') {
+    strWhere += " AND Title LIKE '%" + term + "%'";
+  }
+  strWhere += " ORDER BY Title";
+
+  sel = [
+    "rtrim(Title) AS Title",
+    "rtrim(CLS) AS CLS",
+    "rtrim(CodeName) AS CodeName",
+    "rtrim(Code) AS Code",
+    "rtrim(CodeExp) AS CodeExp",
+    "rtrim(CodeExp1) AS CodeExp1",
+    "rtrim(CodeExp2) AS CodeExp2"
+  ];
+
+  que = "SELECT " + sel.join(', ') + strWhere;
+*/
+  //console.log('que: ', que);
+
+
+
+
+
+
+//console.log(mH_utils.OHIS('0000000123'));
+
+
+
+function _putZeros(n, digits) { //개명예정: hM_padZero
+  var zero = '';
+  n = n.toString();
+
+  if (n.length < digits) {
+    for (i = 0; i < digits - n.length; i++)
+      zero += '0';
+  }
+  return zero + n;
+}
+
+  function _isDone(opts, cb) {
+    //var que = _isDoneMSQue(opts);
+    var que = "test que";
+
+    mH_utils.msQueryRs({"que":que}, function(err, rs){
+      rs = '';  //test용
+      if (opts.type == 'Ix') {
+        rs = 'Ix'
+      }
+      cb(err, rs);
+    });
+  }
+
+
+
+//}
+</script>
+</html>
