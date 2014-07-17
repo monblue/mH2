@@ -253,12 +253,14 @@ define(function (require) {
 
       var data = {
         items: items,
-        MEDM: GLOBAL.get('_MEDM'),  //
-        GWAM: GLOBAL.get('_GWAM'), //진료과목?
-        //FDOC: GLOBAL.get('_FDOC'),  //
-        //LDOC: GLOBAL.get('_LDOC')  //
-        //VCODE:
-        //SANG:
+        attached: {
+	        MEDM: GLOBAL.get('_MEDM'),  //
+	        GWAM: GLOBAL.get('_GWAM'), //진료과목?
+	        //FDOC: GLOBAL.get('_FDOC'),  //
+	        //LDOC: GLOBAL.get('_LDOC')  //
+	        //VCODE:
+	        //SANG:
+      	}
       };
 
       $.ajax({

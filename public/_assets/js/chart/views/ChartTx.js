@@ -437,7 +437,7 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
         //url: GLOBAL.get('_BASEURL') + 'API/chart/getPrmTxs',
         url: GLOBAL.get('_BASEURL') + 'getPrmTxs',
         type: 'get',
-        async: false,
+        //async: false,
         //data: keyword,
         dataType: 'json',
         success: function(res) {
@@ -1010,7 +1010,7 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
       if (bodyView.patient) {
         var patient = bodyView.patient;
         console.log('_CURPTID, patient is ', GLOBAL.get('_CURPTID'), patient.toJSON());
-        if (patient.get('SAVEDTX') == 0) {
+        if (patient.get('SAVEDTX') == 0) {	//#################
           this.activeHeader();
           console.log('activeHeader');
         } else {
@@ -1063,10 +1063,13 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
 
 			var data = {
 				items: items,
-				MEDM: GLOBAL.get('_MEDM'),  //
-				GWAM: GLOBAL.get('_GWAM'), //진료과목?
-				FDOC: GLOBAL.get('_FDOC'),	//
-				LDOC: GLOBAL.get('_LDOC')	//
+				attached: {
+					MEDM: GLOBAL.get('_MEDM'),  //
+					GWAM: GLOBAL.get('_GWAM'), //진료과목?
+					FDOC: GLOBAL.get('_FDOC'),	//
+					LDOC: GLOBAL.get('_LDOC')	//
+				}
+
 			};
 
 			$.ajax({
@@ -1101,7 +1104,7 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
       var charted = _.extend(objFee, added);
       console.log('charted', charted, opts);
       //patient.save({"CHARTID":patient.get('CHARTID') , "SAVEDTX":1, "CHARTED":'{TOTAL:1000,BIBO:1120,BONBU:1110}'}, {patch:true});
-      patient.save({"CHARTID":patient.get('CHARTID') , "SAVEDTX":1, "CHARTED":JSON.stringify(charted)}, {patch:true});
+      patient.save({"CHARTID":patient.get('CHARTID') , "SAVEDTX":1, "CHARTED":JSON.stringify(charted)}, {patch:true});  //#################
       GLOBAL.set('_SAVEDTX', 1);
 		},
 

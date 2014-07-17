@@ -266,6 +266,7 @@ exports.strPad = _strPad;
 exports.OHIS = _OHIS;
 exports.insStr = _getInsStr;
 exports.trim = _trim;
+exports.calcAge = _calcAge;
 //-----------------------------------------------------------------------------
 // private functions
 //-----------------------------------------------------------------------------
@@ -356,9 +357,36 @@ function _insuType(pPart, pCare, pCard) {  //Kind of Health Insurance Card
     if (rKind == 'Insu' && pCare == -1) rKind = cardArr[pCard];
     else if (rKind == 'Care') rKind = careArr[pCare];
     else if (rKind == 'Insu' && pCare != -1) rKind = careArr[pCare];
-    else rKind = rKind;
+    //else rKind = rKind;
 
     return rKind;
+}
+
+//jumin: yymmddA 예) 6705061 (주민번호: 670506-1******)
+function _calcAge(jumin) {
+  var v1 = Number(jumin.substr(0,2));
+  var v2 = Number(jumin.substr(6,1));
+  var vy = (v2==1 || v2==2 || v2==5 || v2==6) ? 1900 +v1 : ((v2==3 || v2==4 || v2==7 || v2==8) ? 2000 +v1 : 0);
+  var vm = Number(jumin.substr(2,2));
+  var vd = Number(jumin.substr(4,2));
+
+  var today = new Date();
+  var thisYear = today.getFullYear();
+  var thisMonth = today.getMonth()+1; // Date 를 사용할때 getMonth 는 0 이 1월이므로 1을 더한다
+  var thisDay = today.getDate();
+  var dy = thisYear - vy; // 년차
+  var dmd = (thisMonth - vm) *100 + (thisDay - vd); // 단순 비교이므로, 월에 30을 곱할 필요 없음
+  //console.log('thisYear, thisMonth, thisDay, vy, vm, vd', thisYear, thisMonth, thisDay, vy, vm, vd)
+  return dmd >= 0 ? dy -1 : dy; // 생일이 지나지 않았으면 년차에서 1년을 제하고, 지났으면 년차값이 만 나이
+}
+
+//jumin: yymmddA 예) 6705061 (주민번호: 670506-1******)
+function _calcSex(jumin) {
+ var nSex = Number(jumin.substring(6,7));
+ if (nSex % 2 == 1)
+　　return "남";
+ else
+　　return "여";
 }
 
 

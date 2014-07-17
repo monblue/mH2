@@ -542,7 +542,10 @@ var _syncAdd = function(opts, cb) {
 	  	mH_utils.msQueryRs({"que":que}, function(err, rs){
 	  		rs[0].PIC = picRs;
 	  		rs[0].date = date;
-	  		rs[0].SAVED = {"RC":0, "IX":0, "TX":0};	//@@@@@@@@@@@@@@@
+	  		//rs[0].SAVED = {"RC":0, "IX":0, "TX":0};	//@@@@@@@@@@@@@@@
+	  		rs[0].SAVEDRC = 0;
+	  		rs[0].SAVEDIX = 0;
+	  		rs[0].SAVEDTX = 0;
 	  		rs[0].CHARTED = {"TOTAL":0,"BIBO":0};
 	  		rs[0].ITYPE = mH_utils.insuType(rs[0].PART, rs[0].DAE, rs[0].JEUNG); //보험 타입
         callback(err, rs[0]);
@@ -550,14 +553,6 @@ var _syncAdd = function(opts, cb) {
       });
 	  },
 
-	    //var defaultData
-	    /*
-	            `SAVEDRC` smallint,  //0: 저장전, 1: 저장후
-	            `SAVEDIX` smallint,  //0: 저장전, 1: 저장후
-	            `SAVEDTX` smallint,  //0: 저장전, 1: 저장후
-	            `CHARTED` varchar(100), //{"TOTAL":0,"BIBO":0,}
-	            `PIC` varchar(10000)  //[{},{}]@@@@@@@@@@@
-	    */
 	  function(data, callback) {
 	  	mH_utils.mgCreateRs({"body":data, "date":date, "col":'daily'}, function(err, rs){
 	      callback(err, rs);
@@ -612,13 +607,6 @@ var _getPatientPhotoMS = function(opts, cb) {
 		  if (!rs || !rs.length) {
 		  	rs = [];
 		  };
-		  /*@@@@@@@@@@@@@@@@@@@@@@
-		  //if (!rs) {
-		  if (!rs.length) {
-		  	//console.log('photo is not exist', rs);
-		  	rs = [{}];
-		  };
-		  */
 	    cb(err, rs);
 	  });
 	});
@@ -654,7 +642,9 @@ var _readPatientsMSQue = function(opts) {
 		"cham.CHAM_JEJU AS JEJUCODE",
 		"cham.CHAM_WHANJA AS NAME",
 		"cham.CHAM_SEX AS SEX",
-		"substring(cham.CHAM_PASSWORD, 1, 6) AS jumin01",
+		//cham.CHAM_PASSWORD AS jumin, //나이 구할 수 있음!!!
+		//"substring(cham.CHAM_PASSWORD, 7, 1) AS jumin02",	//yy, sex, 외국인 정보
+		"substring(cham.CHAM_PASSWORD, 1, 6) AS jumin01",  //나이 구할 수 있음
 		"hanimacCS.dbo.UF_getAge3(cham.CHAM_PASSWORD, convert(char(8), Getdate(), 112)) AS AGE",
 		"cham.CHAM_YY AS yy",
 		"cham.CHAM_PART AS PART",
@@ -762,20 +752,6 @@ var _searchPatientsMSQue = function(opts) {
   ];
 
   return "SELECT TOP 10 " + arrSelQue.join(', ') + extra + where;
-
-/*
-  //echo json_encode(mH_selectArrayMSSQL(sql));
-  rs =  mH_selectArrayMSSQL(sql);
-
-  foreach(rs as &val) {
-    //print_r('id:' . val['CHARTID']);
-    val['PIC'] = json_encode(_getPatientPhotoMS(val['CHARTID']));
-    //arrType = explode('|', val['TYPE']);
-    val['ITYPE'] = mH_InsuType(val['PART'], val['DAE'], val['JEUNG']);
-    //val['age'] = _getPatientAge(yy, jumin01);
-    //val['itype'] = _getPatientIType(insPart, insDae, insJeung);
-  }
-*/
 }
 
 
