@@ -1,17 +1,14 @@
 ////////////////////////////////////////////////
 // bookFile.js
-
-var BOOKDIR = 'd:/dev/mH2/file/'; //상수 config에 등록할 것@@@@@@@@@
+/*
 //-----------------------------------------------------------------------------
 // require
 //-----------------------------------------------------------------------------
 var express = require('express');
-var bodyParser = require('body-parser');  //npm install --save body-parser
 var path = require('path');
 var http = require('http');
 var fs = require('fs');
 var mongo = require('mongodb');
-
 
 
 //-----------------------------------------------------------------------------
@@ -40,16 +37,14 @@ db.open(function(err, db) {
 //-----------------------------------------------------------------------------
 // configure: express4이상에서는 변경되어야 함!!!!
 //-----------------------------------------------------------------------------
-app.set('port', process.env.PORT || 5656);
-app.use(bodyParser()); // instruct the app to use the `bodyParser()` middleware for all routes
-
-// Enabling Cross Domain @@@@@@@added by Moon(ref: https://github.com/fernandoperigolo/nodejs-crud/blob/master/app.js)
-app.all('*', function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, PATCH, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  next();
+app.configure(function () {
+    app.set('port', process.env.PORT || 5656);
+    app.use(express.logger('dev'));  // 'default', 'short', 'tiny', 'dev'
+    app.use(express.bodyParser());
+    //app.use(express.static(path.join(__dirname, 'public')));
 });
+
+
 
 //-----------------------------------------------------------------------------
 // routing
@@ -58,7 +53,7 @@ app.all('*', function(req, res, next) {
 //app.get('/test1/:id', test1.findById);
 //app.get('/test2', test1.updatePT);
 
-
+*/
 /**
  *
  * @caution:
@@ -67,12 +62,8 @@ app.all('*', function(req, res, next) {
  */
 app.get('/viewPage/:book/:page', function(req, res) {
 	var p = _getPageSE({"book":req.params.book, "page":req.params.page});
-  console.log('file', p);
 
 	fs.readFile(p.file, 'utf8', function(err, data) {
-  //fs.readFile('d:/dev/mH2/file/yanghan.txt', 'utf8', function(err, data) {
-    if (err) console.log('err!!!');
-    //console.log(data);
 	  res.send(data.substring(data.search(p.sPage), data.search(p.ePage) + p.zpad + 1));
 	  res.end();
 	});
@@ -95,7 +86,7 @@ app.post('/replace/:book', function(req, res) {
 	if (!isRegex) {
 		//특수문자 escape000000
 		//pat = pat.replace(/(\^|\.|\,|\(|\)|\[|\]|\$|\*|\-)/g, '\\$1');
-		var arrChar = ['\\^', '\\.', '\\,', '\\*', '\\+', '\\-', '\\[', '\\]', '\\(', '\\)', '\\?'];
+		var arrChar = ['\\^', '\\.', '\\,'];
 		var len=arrChar.length;
 		for (i=0;i<len;i++) {
 			sChar = new RegExp(arrChar[i], 'g');
@@ -151,8 +142,7 @@ app.post('/savePage/:book/:page', function(req, res) {
 
   var content = fs.readFileSync(p.file, 'utf8');
 	var prevPages = content.substring(0, content.search(p.sPage));
-	//var nextPages = content.substring(content.search(p.ePage) + p.zpad + 2, content.length);
-  var nextPages = content.substring(content.search(p.ePage) + p.zpad + 1, content.length);
+	var nextPages = content.substring(content.search(p.ePage) + p.zpad + 2, content.length);
 	//var content = prevPages + req.body.tPage + nextPages;
 
 		fs.writeFile(p.file, prevPages + req.body.tPage + nextPages, function(err) {
@@ -162,60 +152,6 @@ app.post('/savePage/:book/:page', function(req, res) {
 		});
 
 });
-
-
-
-/*
-app.get('/replaceAll/:book', function(req, res) {
-  var book = req.params.book;
-  var file = './file/' + book + '.txt'
-
-  console.log('pattern replace ', pat, rep, isRegex);
-
-  //async.waterfall
-  //0. readFile / 1. get replace data(mongodb) / 2. replace loop / 3. writeFile
-  fs.readFile(file, {encoding: 'utf-8'}, function(err, data){
-    async.waterfall([
-      function(callback) {
-        mH_utils.msQueryRs({"que":que}, function(err, rs){
-          //res.send(rs);
-          callback(err, rs);
-          //callback(rs);
-        });
-      },
-
-      function(rs, callback) {
-        async.each(rs, function(r, cb) {  //The second argument (callback) is the "task callback" for a specific r
-          r.ITYPE = mH_utils.insuType(r.PART, r.DAE, r.JEUNG); //보험 타입
-
-          _getPatientPhotoMS({"id":r.CHARTID}, function(err, rs2){
-            r.PIC = rs2;
-            cb(); //잘 모르겠지만 여기 넣으니 되네@@@@@@@@@
-          });
-
-        }, function(err) {
-          //console.log('foreach rs', rs);
-          callback(err, rs);  //each가 완료된 후 callback함수로 err, rs 넘김
-        });
-
-      },
-
-    ],
-
-    function(err, results) {
-      //console.log(arguments);
-      console.log(results);
-      res.send(results);
-      //cb(err, results);
-    });
-  });
-
-});
-*/
-
-
-
-
 
 
 http.createServer(app).listen(app.get('port'), function () {
@@ -228,8 +164,7 @@ var _getPageSE = function(options) {
 	var page = options.page || 1;
   var zpad = options.zpad || 3;
   var pageTag = options.pageTag || '`';
-  //var file = './file/' + options.book + '.txt';
-  var file = BOOKDIR + options.book + '.txt';
+  var file = './file/' + options.book + '.txt';
 
 	if (book == 'donggam') {
 		zpad = 4;

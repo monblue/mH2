@@ -86,7 +86,7 @@ exports.createChartRc = function(req, res) {
   //callback
   function(err, results) {  //response send 변경예정@@@@, error, success
     var rs2 = {};
-    console.log(results[0], results[1], results[2]);
+    //console.log(results[0], results[1], results[2]);
     rs2['OSSC_PF'] = results[0];
     rs2['JINMEMO_MEMO'] = results[1];
     rs2['REMK_REMARK'] = results[2];
@@ -101,11 +101,12 @@ exports.createChartRc = function(req, res) {
 */
 exports.readChartRc = function(req, res) {
   var ohis = mH_utils.OHIS(req.params.id);
-  var opts = {"id":req.params.id, "date":req.params.ref_date, "ohis":ohis, "type":"Rc"};
+  //var opts = {"id":req.params.id, "date":req.params.ref_date, "ohis":ohis, "type":"Rc"};
+  var opts = {"id":req.params.id, "date":req.params.cur_date, "ohis":ohis, "type":"Rc"};
   _isDone(opts, function(err, rs) {
     //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
-    if (rs) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@@@
-      opts.date = req.params.cur_date;
+    if (!rs || !rs.length) {  //Rc가 입력되지 않은 경우 ref_date 날짜 데이터 가져옴@@@@@
+      opts.date = req.params.ref_date;
     }
 
     async.parallel([	//async functions
@@ -185,12 +186,11 @@ exports.readChartIxs = function(req, res) {
   var ohis = mH_utils.OHIS(req.params.id);
   var id = req.params.id;
   var date = req.params.ref_date;
-  var opts = {"id":req.params.id, "date":req.params.ref_date, "ohis":ohis, "type":"Ix"};
+  var opts = {"id":req.params.id, "date":req.params.cur_date, "ohis":ohis, "type":"Ix"};
   _isDone(opts, function(err, rs) {
-    //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
-    if (rs) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@@@
-      //opts.date = req.params.cur_date;
-      date = req.params.cur_date;
+    //if (rs || rs.length) {  //Ix가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
+    if (!rs || !rs.length) {  //Ix가 입력되지 않은 경우 ref_date 날짜 데이터 가져옴@@@@@
+      opts.date = req.params.ref_date;
     }
 
   	var month = opts.date.substr(0, 6);
@@ -238,7 +238,7 @@ var _createChartIxs = function(req, res) {
     //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
     if (rs && rs.length) {  //이미 수납처리된 데이터가 있는 경우 처리@@@
       //res.send('{"res":"D"}');  //@@@@@@@@@@@@@@@@@@@@
-      console.log('{"res":"D"}');
+      //console.log('{"res":"D"}');
       return;
     } else {
       var month = opts.date.substr(0, 6);
@@ -396,7 +396,7 @@ var _getPrmIxs = function(req, res) {
   ];
 
   que = "SELECT " + sel.join(', ') + strWhere;
-  console.log(que);
+  //console.log(que);
 
   mH_utils.msQueryRs({"que":que}, function(err, rs){
   	console.log(rs);
@@ -448,12 +448,12 @@ exports.readChartTxs = function(req, res) {
   var ohis = mH_utils.OHIS(req.params.id);
   var id = req.params.id;
   var date = req.params.ref_date;
-  var opts = {"id":req.params.id, "date":req.params.ref_date, "ohis":ohis, "type":"Ix"};
+  var opts = {"id":req.params.id, "date":req.params.cur_date, "ohis":ohis, "type":"Tx"};
   _isDone(opts, function(err, rs) {
-    //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
-    if (rs) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@@@
-      //opts.date = req.params.cur_date;
-      date = req.params.cur_date;
+    //if (rs || rs.length) {  //Tx가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
+    if (!rs || !rs.length) {  //Tx가 입력되지 않은 경우 ref_date 날짜 데이터 가져옴@@@@@
+      //opts.date = req.params.ref_date;
+      date = req.params.ref_date;
     }
 
   	que = "SELECT OPSC_MOMM_ID, OPSC_ORDER, OPSC_BIGO2, OPSC_BLOD, OPSC_BIGO5, OPSC_AMT, OPSC_DAY" +
@@ -465,6 +465,7 @@ exports.readChartTxs = function(req, res) {
     console.log(que);
 
 	  mH_utils.msQueryRs({"que":que}, function(err, rs){
+      console.log(rs);
 	    res.send(rs);
 	  });
   });
@@ -500,7 +501,7 @@ var _createChartTxs = function(req, res) {
 
     var month = opts.date.substr(0, 6);
     var date_ = opts.date.substr(6, 2);
-    console.log('date', opts.date);
+    //console.log('date', opts.date);
 
 
     var opts1 = JSON.parse(JSON.stringify(opts));
@@ -662,7 +663,7 @@ var _createChartTxs = function(req, res) {
       //console.log("\n\n");
       //console.log(sqlOPSC);
       que = sqlOENT + sqlOPSC;
-      console.log(que);
+      //console.log(que);
 
       mH_utils.msQueryRs({"que":que}, function(err, rs){
         res.send(rs);
@@ -729,6 +730,7 @@ var _deleteChartTx = function(req, res) {
 
 }
 
+
 /**
 * @function:
 * @caution: //@@@@@@@ getAcuCodes 와 비교@@@@@@@@@@@@@
@@ -746,17 +748,17 @@ exports.searchAcu = function(req, res) {
     que = "SELECT BLOD_ID AS code, BLOD_HNAME AS name" +
           " FROM hanimacCS.dbo.H_BLOD WHERE BLOD_HNAME  LIKE '" +
           name + "%'";
-    console.log(que);
+    //console.log(que);
 
     mH_utils.msQueryRs({"que":que}, function(err, rs){
       if (!rs || !rs.length) {
-        console.log('해당 경혈명 없음');
+        //console.log('해당 경혈명 없음');
       } else if (rs.length == 1) {
-        console.log("data['PX1'].push", rs[0]);
+        //console.log("data['PX1'].push", rs[0]);
         data['PX1'].push(rs[0]);
       } else if (rs.length > 1) {
         for (j in rs) {
-          console.log("data['PX2'].push", rs[j]);
+          //console.log("data['PX2'].push", rs[j]);
           data['PX2'].push(rs[j]);
         }
       }
@@ -765,7 +767,7 @@ exports.searchAcu = function(req, res) {
     });
 
   }, function(err) {  //callback
-    console.log('loop is ended');
+    //console.log('loop is ended');
     res.send(data);
   });
 
@@ -848,7 +850,40 @@ function _getAcuHname(id, cb) {
 * @caution: @@@@@@@@@@@@@ _searchAcu와 비교할 것 @@@@@@@@@@@@
 */
 var _getAcuCodes = function(req, res) {
+  var term = req.body.term.replace(' ', '');  //@@@ replace
+  var arrName = term.split('/');
+  //var arrName = term.split('a');
+  var data = {
+    "Acu1":[],
+    "Acu2":[]
+  };
 
+  async.each(arrName, function(name, callback) {
+    que = "SELECT BLOD_ID AS code, BLOD_HNAME AS name" +
+          " FROM hanimacCS.dbo.H_BLOD WHERE BLOD_HNAME  LIKE '" +
+          name + "%'";
+    //console.log(que);
+
+    mH_utils.msQueryRs({"que":que}, function(err, rs){
+      if (!rs || !rs.length) {
+        //console.log('해당 경혈명 없음');
+      } else if (rs.length == 1) {
+        //console.log("data['PX1'].push", rs[0]);
+        data['Acu1'].push(rs[0]);
+      } else if (rs.length > 1) {
+        for (j in rs) {
+          //console.log("data['PX2'].push", rs[j]);
+          data['Acu2'].push(rs[j]);
+        }
+      }
+      //callback(null, data);
+      callback();
+    });
+
+  }, function(err) {  //callback
+    //console.log('loop is ended');
+    res.send(data);
+  });
 }
 
 /**

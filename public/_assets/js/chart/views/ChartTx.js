@@ -437,7 +437,7 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
         //url: GLOBAL.get('_BASEURL') + 'API/chart/getPrmTxs',
         url: GLOBAL.get('_BASEURL') + 'getPrmTxs',
         type: 'get',
-        //async: false,
+        async: false,
         //data: keyword,
         dataType: 'json',
         success: function(res) {
@@ -1104,7 +1104,8 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
       var charted = _.extend(objFee, added);
       console.log('charted', charted, opts);
       //patient.save({"CHARTID":patient.get('CHARTID') , "SAVEDTX":1, "CHARTED":'{TOTAL:1000,BIBO:1120,BONBU:1110}'}, {patch:true});
-      patient.save({"CHARTID":patient.get('CHARTID') , "SAVEDTX":1, "CHARTED":JSON.stringify(charted)}, {patch:true});  //#################
+      //patient.save({"CHARTID":patient.get('CHARTID') , "SAVEDTX":1, "CHARTED":JSON.stringify(charted)}, {patch:true});  //#################
+      patient.save({"CHARTID":patient.get('CHARTID') , "SAVEDTX":1, "CHARTED":charted}, {patch:true});  //#################@@@@@@
       GLOBAL.set('_SAVEDTX', 1);
 		},
 
@@ -1248,7 +1249,7 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
 
 			'keypress input[type="text"].OPSC_BLOD': 'searchAcu',
 			'blur input[type="text"].OPSC_BLOD': 'searchAcu',
-			'click .mH-dropdown-close': 'selAcuClose',  //dropdown
+			'click .mH-dropdown-close': 'selAcuClose',  //dropdown@@@@
 			'change .dropdown-menu span input:checkbox': 'changeSelAcu',
 			//'click .closeDown': 'closeDown',
 			'click .dropdown-menu span': 'notClose',  ////dropdown 없어지지 않도록 함!!!
@@ -1481,6 +1482,7 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
 		},
 
 		updSrhAcus: function(e) {
+      console.log('updSrhAcus', $(e.target).val());
 			var acus = $(e.target).val();
 
 			var oldAcuNames = this.model.get('OPSC_BLOD').split('/');
@@ -1557,7 +1559,7 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
 		},
 
 		changeSelAcu: function(e) {
-			//console.log('changeSelAcu', $(e.target).is(':checked'), $(e.target).attr('mH-name'));
+			console.log('changeSelAcu', $(e.target).is(':checked'), $(e.target).attr('mH-name'));
 			if ($(e.target).is(':checked')) {
 				var strAcuNames = this.model.get('OPSC_BLOD') + '/' + $(e.target).attr('mH-name');
 				var strAcuCodes= this.model.get('OPSC_BIGO2') + $(e.target).attr('mH-code');
@@ -1567,6 +1569,7 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
 
 		notClose: function(e){  //dropdown 없어지지 않도록 함!!!
 			//e.preventDefault();
+      console.log('notClose is called');
 			e.stopPropagation();
 			//console.log('not Close');
 		},
@@ -1635,8 +1638,6 @@ var txSub = [{"mainCode":"40011002","subItems":[{"OPSC_BIGO5":"0","name":"자락
       //console.log('보험약 items ', items, items[0], _.template(optionsTpl)(items));
       this.$el.find('[mH-group="77"]').find('select').html(_.template(optionsTpl)(items));
       //for (txMain)
-
-
 
 		},
 

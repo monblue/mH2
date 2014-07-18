@@ -5,12 +5,12 @@ var path = require('path');
 
 var list = require('./routes/list');
 var chart = require('./routes/chart');
-var test = require('./routes/test');
+//var test = require('./routes/test');
 var hanja = require('./routes/hanja');
 var upload = require('./routes/upload');
 //var chart = require('./routes/chart');
 //var user = require('./routes/user');
-//var book = require('./routes/book');
+var book = require('./routes/book');
 
 var app = express();
 app.set('port', process.env.PORT || 3333);
@@ -31,6 +31,9 @@ app.all('*', function(req, res, next) {
   next();
 });
 
+//=============================================================================
+// LIST
+//=============================================================================
 //// list
 /// patients : Basic CRUD
 app.post('/patients/:date', list.createPatient);  //Create NOT USED!!!
@@ -75,20 +78,23 @@ app.post('/saveTimer/:date/:id', 'saveTimer');
 app.get('/getInterval/:time', 'getInterval');
 */
 
+/*
 ////test
 app.post('/test', test.compareJson);  //ReadAll
 app.get('/hanja', hanja.convK2C);  //ReadAll
 
 app.get('/temp', test.temp);  //ReadAll
 app.get('/var1', function(req,res){console.log(test.var1)});  //ReadAll
-
+*/
 
 //app.get('/saveFace/:id', upload.saveFile);
 app.post('/saveFace/:id', upload.saveFile);
 
 
 
-
+//=============================================================================
+// CHART
+//=============================================================================
 //-----------------------------------------------------------------------------
 // ChartDR
 //-----------------------------------------------------------------------------
@@ -134,7 +140,7 @@ app.put('/ChartTxs/:ref_date/:cur_date/:id/:seq', chart.updateChartTx); //NOT US
 app.delete('/ChartTxs/:ref_date/:cur_date/:id', chart.deleteChartTxs);
 app.delete('/ChartTxs/:ref_date/:cur_date/:id/:seq', chart.deleteChartTx); //NOT USED
 
-app.get('/searchAcu/:term', chart.searchAcu);
+//app.get('/searchAcu/:term', chart.searchAcu);
 
 app.get('/getMommDataMY/:id', chart.getMommDataMY);
 app.get('/getMommDataMS/:id', chart.getMommDataMS);
@@ -152,3 +158,13 @@ app.get('/getPrmTxs', chart.getPrmTxs);  //약속 치료 목록
 app.get('/getPrmTxs/:term', chart.getPrmTxs);  //약속 치료 검색 결과 목록
 //ChartTxs/20140205/20140419/0000000492
 //-----------------------------------------------------------------------------
+
+
+
+//=============================================================================
+// BOOK
+//=============================================================================
+app.get('/book/viewPage/:book/:page', book.viewPage);  //
+app.post('/book/replace/:book', book.replaceOne);  //
+app.get('/book/replaceAll/:book', book.replaceAll);  //
+app.post('/book/savePage/:book/:page', book.savePage);  //

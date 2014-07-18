@@ -11,36 +11,36 @@ var _createPatient = function(req, res) {
   //var que = _createPatientMSQue({"date":req.params.date, "data":req.body, "type":'jubsu'});
 
   var opts = {
-  	"date":req.params.date,
-  	"id":req.body.CHARTID,
-  	"user":req.body.user,
-  	"type":'jubsu'
+    "date":req.params.date,
+    "id":req.body.CHARTID,
+    "user":req.body.user,
+    "type":'jubsu'
   };
 /*
   var opts = {
-  	"date":req.params.date,
-  	"id":req.params.id,
-  	"user":req.body.user,
-  	"type":'jubsu'
+    "date":req.params.date,
+    "id":req.params.id,
+    "user":req.body.user,
+    "type":'jubsu'
   };
 */
   _createPatientMSQue(opts, function(que){
-  	console.log(que);
-	  mH_utils.msQueryRs({"que":que}, function(err, rs){
-			_syncAdd(opts, function(err, rs){
-	      mH_utils.mgReadOneRs({"filter":{"date":opts.date, "CHARTID":opts.id}, "col":'daily'}, function(err, rs){	//patient data res.send
-						res.send(rs);
-				});
-			});
-	  });
+    console.log(que);
+    mH_utils.msQueryRs({"que":que}, function(err, rs){
+      _syncAdd(opts, function(err, rs){
+        mH_utils.mgReadOneRs({"filter":{"date":opts.date, "CHARTID":opts.id}, "col":'daily'}, function(err, rs){  //patient data res.send
+            res.send(rs);
+        });
+      });
+    });
   });
 
 
   //var que = _createPatientMSQue(opts);
 /*
-	mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
-		res.send(rs);
-	});
+  mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
+    res.send(rs);
+  });
 */
 }
 
@@ -70,34 +70,34 @@ function _createPatientMSQue(opts, cb) {
   magam = dateFormat(oDate, "s");;    //JUBM_MAGAM data가 이것이 맞는지는 확실치 않음!!!!!!!!!!
 
   var arrIns = {
-		"JUBM_MEDM_ID":'0',  ////insDefaults
-		"JUBM_RNO":'0',
-		"JUBM_MTAMT":'0',
-		"JUBM_MRAMT":'0',
-		"JUBM_IRAMT":'0',
-		"JUBM_BIGUB":'0',
-		"JUBM_HAAMT":'0',
-		"JUBM_JINSUAMT":'0',
-		"JUBM_JINSUAMT1":'0',
-		"JUBM_JINSUAMT2":'0',
-		"JUBM_SUAMT":'0',
-		"JUBM_MISU_AMT":'0',
-		"JUBM_WAAMT":'0',
-		"JUBM_GICHO1":'진료대기',
-		"JUBM_TIME":'',
-		"JUBM_CHAMGO":'',
-		"JUBM_JU_NIGHT":'0',
-		"JUBM_CARD_AMT":'0',
-		"JUBM_CARD_USE":'0',
-		"JUBM_SUNAB_S":'0',
-		"JUBM_BIGO1":'120205310408506',
-		"JUBM_BIGO2":'1002XX3XX4XX5XX',
-		"JUBM_CHAM_ID":id,	////insVariables
-		"JUBM_DATE":date_,
-		"JUBM_CHOJE_CODE":'10200',  //초진, 재진 구분@@@@@@@@@@@@@@@
-		"JUBM_MAGAM":magam,
-		"JUBM_JUBSU_TIME":time,
-		"JUBM_USRM_ID":user,
+    "JUBM_MEDM_ID":'0',  ////insDefaults
+    "JUBM_RNO":'0',
+    "JUBM_MTAMT":'0',
+    "JUBM_MRAMT":'0',
+    "JUBM_IRAMT":'0',
+    "JUBM_BIGUB":'0',
+    "JUBM_HAAMT":'0',
+    "JUBM_JINSUAMT":'0',
+    "JUBM_JINSUAMT1":'0',
+    "JUBM_JINSUAMT2":'0',
+    "JUBM_SUAMT":'0',
+    "JUBM_MISU_AMT":'0',
+    "JUBM_WAAMT":'0',
+    "JUBM_GICHO1":'진료대기',
+    "JUBM_TIME":'',
+    "JUBM_CHAMGO":'',
+    "JUBM_JU_NIGHT":'0',
+    "JUBM_CARD_AMT":'0',
+    "JUBM_CARD_USE":'0',
+    "JUBM_SUNAB_S":'0',
+    "JUBM_BIGO1":'120205310408506',
+    "JUBM_BIGO2":'1002XX3XX4XX5XX',
+    "JUBM_CHAM_ID":id,  ////insVariables
+    "JUBM_DATE":date_,
+    "JUBM_CHOJE_CODE":'10200',  //초진, 재진 구분@@@@@@@@@@@@@@@
+    "JUBM_MAGAM":magam,
+    "JUBM_JUBSU_TIME":time,
+    "JUBM_USRM_ID":user,
     //"JUBM_GWAM_ID":"",  ////insSelects
     //"JUBM_PART":"",
     //"JUBM_ORGM_ID":"",
@@ -105,10 +105,10 @@ function _createPatientMSQue(opts, cb) {
     //"JUBM_DAE":"",
     //"JUBM_DOC_ID":"",
     //"JUBM_FLAG":""
-	}
+  }
 
   var arrIns2 = {
-	  "JUBM_GWAM_ID":'kwam.KWAM_GWAM_ID',
+    "JUBM_GWAM_ID":'kwam.KWAM_GWAM_ID',
     "JUBM_PART":'cham.CHAM_PART',
     "JUBM_ORGM_ID":'cham.CHAM_ORGM_ID',
     "JUBM_JEUNG":'cham.CHAM_JEUNG',
@@ -117,10 +117,10 @@ function _createPatientMSQue(opts, cb) {
     "JUBM_FLAG":'kwam.KWAM_FLAG'
   }
 
-	var keys = " (" + _.keys(arrIns).join(', ') + ", " +
-						_.keys(arrIns2).join(', ') + ")";
-	var vals = "'" + _.values(arrIns).join("', '") + "', " +
-						_.values(arrIns2).join(", ");
+  var keys = " (" + _.keys(arrIns).join(', ') + ", " +
+            _.keys(arrIns2).join(', ') + ")";
+  var vals = "'" + _.values(arrIns).join("', '") + "', " +
+            _.values(arrIns2).join(", ");
 
   var extra = " FROM hanimacCS.dbo.CC_CHAM AS cham INNER JOIN hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID WHERE cham.CHAM_ID = '" + id + "'";
 
@@ -139,7 +139,7 @@ function _createPatientMSQue(opts, cb) {
           JUBM_GICHO1, JUBM_TIME, JUBM_CHAMGO, JUBM_JU_NIGHT, JUBM_CARD_AMT, JUBM_CARD_USE,
           JUBM_MAGAM, JUBM_JUBSU_TIME, JUBM_DOC_ID, JUBM_USRM_ID, JUBM_FLAG,
           JUBM_SUNAB_S, JUBM_BIGO1, JUBM_BIGO2) " +
-				" SELECT
+        " SELECT
           '0', 'id', kwam.KWAM_GWAM_ID, 'date_',
           '0', '10200',
           cham.CHAM_PART,
@@ -167,15 +167,15 @@ function _createPatientMSQue(opts, cb) {
 
 /*
 var _createPatientMG = function(req, res) {
-	mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
-		res.send(rs);
-	});
+  mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
+    res.send(rs);
+  });
 }
 
 var _createPatientMS = function(req, res) {
-	mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
-		res.send(rs);
-	});
+  mH_utils.mgCreateRs({"body":req.body, "date":req.params.date, "col":'daily'}, function(err, rs){
+    res.send(rs);
+  });
 }
 */
 /*
@@ -251,17 +251,17 @@ function _addPatientMS(date, data) {
 
 
 var _readAllPatientsMG = function(req, res) {
-	mH_utils.mgReadAllRs({"filter":{"date":req.params.date}, "col":'daily'}, function(err, rs){
-		res.send(rs);
-	});
+  mH_utils.mgReadAllRs({"filter":{"date":req.params.date}, "col":'daily'}, function(err, rs){
+    res.send(rs);
+  });
 }
 
 
 var _readAllPatientsMS = function(req, res) {
   var que = _readPatientsMSQue({"date":req.params.date, "type":'all'});
-	mH_utils.msQueryRs({"que":que}, function(err, rs){
-		res.send(rs);
-	});
+  mH_utils.msQueryRs({"que":que}, function(err, rs){
+    res.send(rs);
+  });
 }
 
 
@@ -274,23 +274,23 @@ var _readOnePatientMS = function(req, res) {
 
 
 var _readOnePatientMG = function(req, res) {
-	mH_utils.mgReadOneRs({"filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
-		res.send(rs);
-	});
+  mH_utils.mgReadOneRs({"filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
+    res.send(rs);
+  });
 }
 
 
 var _updatePatientMG = function(req, res) {
-	mH_utils.mgUpdateRs({"body":req.body, "filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
-		res.send(rs);
-	});
+  mH_utils.mgUpdateRs({"body":req.body, "filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
+    res.send(rs);
+  });
 }
 
 
 var _deletePatientMG = function(req, res) {
-	mH_utils.mgDeleteRs({"filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
-		res.send(rs);
-	});
+  mH_utils.mgDeleteRs({"filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
+    res.send(rs);
+  });
 }
 
 /**
@@ -302,39 +302,39 @@ var _deletePatientMG = function(req, res) {
 var _searchPatientsMS = function(req, res) {
   var que = _searchPatientsMSQue({"data":req.body, "type":'search'});
 
-	async.waterfall([
-	  function(callback) {
-		  mH_utils.msQueryRs({"que":que}, function(err, rs){
-		  	//res.send(rs);
-		  	callback(err, rs);
-		  	//callback(rs);
-		  });
-	  },
+  async.waterfall([
+    function(callback) {
+      mH_utils.msQueryRs({"que":que}, function(err, rs){
+        //res.send(rs);
+        callback(err, rs);
+        //callback(rs);
+      });
+    },
 
-	  function(rs, callback) {
-			async.each(rs, function(r, cb) {  //The second argument (callback) is the "task callback" for a specific r
-			 	r.ITYPE = mH_utils.insuType(r.PART, r.DAE, r.JEUNG); //보험 타입
+    function(rs, callback) {
+      async.each(rs, function(r, cb) {  //The second argument (callback) is the "task callback" for a specific r
+        r.ITYPE = mH_utils.insuType(r.PART, r.DAE, r.JEUNG); //보험 타입
 
-		    _getPatientPhotoMS({"id":r.CHARTID}, function(err, rs2){
-		    	r.PIC = rs2;
-		    	cb();	//잘 모르겠지만 여기 넣으니 되네@@@@@@@@@
-		    });
+        _getPatientPhotoMS({"id":r.CHARTID}, function(err, rs2){
+          r.PIC = rs2;
+          cb(); //잘 모르겠지만 여기 넣으니 되네@@@@@@@@@
+        });
 
-	    }, function(err) {
-	      //console.log('foreach rs', rs);
-	      callback(err, rs);	//each가 완료된 후 callback함수로 err, rs 넘김
-	    });
+      }, function(err) {
+        //console.log('foreach rs', rs);
+        callback(err, rs);  //each가 완료된 후 callback함수로 err, rs 넘김
+      });
 
-	  },
+    },
 
-	],
+  ],
 
-	function(err, results) {
-	  //console.log(arguments);
-	  console.log(results);
-	  res.send(results);
-	  //cb(err, results);
-	});
+  function(err, results) {
+    //console.log(arguments);
+    console.log(results);
+    res.send(results);
+    //cb(err, results);
+  });
 
 }
 
@@ -383,55 +383,55 @@ var _syncPatientsMSMG = function(req, res) {
     console.log(results[0], results[1]);
     mH_utils.compareJsonArr({"a":results[0], "b":results[1], "key":"CHARTID"}, function(updated) {
 
-    	if (updated.num) {
-    		console.log('MSData is updated!!! update event will be triggered!!!');
+      if (updated.num) {
+        console.log('MSData is updated!!! update event will be triggered!!!');
 
-    		//환자 추가
-	      var added = updated.add;
-	      if (added.length) {
-	        console.log('added array', added);
+        //환자 추가
+        var added = updated.add;
+        if (added.length) {
+          console.log('added array', added);
 
-	        for(i in added) {
-	          //@@@@@ id로 상세 환자정보 얻어내고 mongodb에 insert
-	          //_syncAdd({"id":added[i].CHARTID, "date":date, "res":res}, function(err, rs) {
-	          _syncAdd({"id":added[i].CHARTID, "date":date}, function(err, rs) {
-	            res.send(rs);
-	          });
-	        }
-	      }
+          for(i in added) {
+            //@@@@@ id로 상세 환자정보 얻어내고 mongodb에 insert
+            //_syncAdd({"id":added[i].CHARTID, "date":date, "res":res}, function(err, rs) {
+            _syncAdd({"id":added[i].CHARTID, "date":date}, function(err, rs) {
+              //res.send(rs); //@@@@@@@@@@Can't set headers after they are sent.
+            });
+          }
+        }
 
-				//환자 변경
-	      var upded = updated.upd;
-	      if (upded.length) {
-	        console.log('upded array', upded);
+        //환자 변경
+        var upded = updated.upd;
+        if (upded.length) {
+          console.log('upded array', upded);
 
-	        for(i in upded) {
-	          //@@@@@ 해당 id의 환자 mongodb update
-	          //_updatePatientMG;
-						mH_utils.mgUpdateRs({"body":upded[i], "filter":{"date":date, "CHARTID":upded[i].CHARTID}, "col":'daily'}, function(err, rs){
-							res.send(rs);
-						});
-	        }
-	      }
+          for(i in upded) {
+            //@@@@@ 해당 id의 환자 mongodb update
+            //_updatePatientMG;
+            mH_utils.mgUpdateRs({"body":upded[i], "filter":{"date":date, "CHARTID":upded[i].CHARTID}, "col":'daily'}, function(err, rs){
+              //res.send(rs); //@@@@@@@@@@Can't set headers after they are sent.
+            });
+          }
+        }
 
-	      //환자 삭제
-	      var deled = updated.del;
-	      if (deled.length) {
-	        console.log('deled array', deled);
+        //환자 삭제
+        var deled = updated.del;
+        if (deled.length) {
+          console.log('deled array', deled);
 
-	        for(i in deled) {
-	          //@@@@@ 해당 id의 환자 mongodb delete
-	          //_deletePatientMG;
-						mH_utils.mgDeleteRs({"filter":{"date":date, "CHARTID":deled[i].CHARTID}, "col":'daily'}, function(err, rs){
-							res.send(rs);
-						});
-	        }
-	      }
-
-    	} else {
-    		res.end('MSData is not updated!!!');
-    		//console.log('MSData is not updated!!!');
-    	}
+          for(i in deled) {
+            //@@@@@ 해당 id의 환자 mongodb delete
+            //_deletePatientMG;
+            mH_utils.mgDeleteRs({"filter":{"date":date, "CHARTID":deled[i].CHARTID}, "col":'daily'}, function(err, rs){
+              //res.send(rs); //@@@@@@@@@@Can't set headers after they are sent.
+            });
+          }
+        }
+        res.end('sync success!!!');
+      } else {
+        res.end('MSData is not updated!!!');
+        //console.log('MSData is not updated!!!');
+      }
 
     });
 
@@ -451,10 +451,10 @@ var _syncPatientsMSMG = function(req, res) {
  */
 //var _saveTimer = function(date, id, data) {
 var _saveTimer = function(req, res) {
-	var date = req.params.date;
-	var id = req.params.id;
-	//var data = req.params.data;
-	var data = req.body;
+  var date = req.params.date;
+  var id = req.params.id;
+  //var data = req.params.data;
+  var data = req.body;
 
   type = data['type'];
   intv = data['interval'];
@@ -477,11 +477,11 @@ var _saveTimer = function(req, res) {
   }
   //}
 
-	mH_utils.mgPatchRs({"body":{"TIMER":strTimer}, "filter":{"date":date, "CHARTID":id}, "col":'daily'}, function(err, rs){
-		console.log();
-		res.end();
-		//res.send(rs);
-	});
+  mH_utils.mgPatchRs({"body":{"TIMER":strTimer}, "filter":{"date":date, "CHARTID":id}, "col":'daily'}, function(err, rs){
+    console.log();
+    res.end();
+    //res.send(rs);
+  });
 
 }
 
@@ -494,8 +494,8 @@ var _saveTimer = function(req, res) {
  */
 var _getInterval = function(req, res) {
 //function _getInterval(time) {
-	//var date = req.params.date;
-	var time = req.params.time;
+  //var date = req.params.date;
+  var time = req.params.time;
 
   //echo time - time();
   //return time - time();
@@ -511,61 +511,61 @@ var _syncAdd = function(opts, cb) {
   //var res = opts.res; //@@@@@@@@@@@@@@@@@
   var que = _readPatientsMSQue({"date":date, "id":id, "type":'one'});
 
-	async.waterfall([
-	  function(callback) {
-      mH_utils.OHISNum(id, function(ohis) {	//OHIS 구하기 + photo data query
-  			var que2 = "SELECT CAP_PATH, CAP_WDATE, CAP_REMARK, CAP_BIGO1 FROM OHIS_H.dbo.IM_CAP"
-  					+ ohis
-  					+ " WHERE CAP_CHAM_ID = '"
-  					+ id
-  					+ "' ORDER BY CAP_SEQ DESC";
-	      //callback(null, que2);
-		    mH_utils.msQueryRs({"que":que2}, function(err, rs){
-		  		if (!rs) {
-		  			rs = [{}];
-		  		};
-	        callback(err, rs);
-	      });
-	    });
-	  },
+  async.waterfall([
+    function(callback) {
+      mH_utils.OHISNum(id, function(ohis) { //OHIS 구하기 + photo data query
+        var que2 = "SELECT CAP_PATH, CAP_WDATE, CAP_REMARK, CAP_BIGO1 FROM OHIS_H.dbo.IM_CAP"
+            + ohis
+            + " WHERE CAP_CHAM_ID = '"
+            + id
+            + "' ORDER BY CAP_SEQ DESC";
+        //callback(null, que2);
+        mH_utils.msQueryRs({"que":que2}, function(err, rs){
+          if (!rs) {
+            rs = [{}];
+          };
+          callback(err, rs);
+        });
+      });
+    },
 /*
-	  function(que2, callback) {	//PIC data 구하기
-	  	mH_utils.msQueryRs({"que":que2}, function(err, rs){
-	  		if (!rs) {
-	  			rs = [{}];
-	  		};
+    function(que2, callback) {  //PIC data 구하기
+      mH_utils.msQueryRs({"que":que2}, function(err, rs){
+        if (!rs) {
+          rs = [{}];
+        };
         callback(err, rs);
       });
-	  },
+    },
 */
-	  function(picRs, callback) {  //해당 id 환자정보 구하기
-	  	mH_utils.msQueryRs({"que":que}, function(err, rs){
-	  		rs[0].PIC = picRs;
-	  		rs[0].date = date;
-	  		//rs[0].SAVED = {"RC":0, "IX":0, "TX":0};	//@@@@@@@@@@@@@@@
-	  		rs[0].SAVEDRC = 0;
-	  		rs[0].SAVEDIX = 0;
-	  		rs[0].SAVEDTX = 0;
-	  		rs[0].CHARTED = {"TOTAL":0,"BIBO":0};
-	  		rs[0].ITYPE = mH_utils.insuType(rs[0].PART, rs[0].DAE, rs[0].JEUNG); //보험 타입
+    function(picRs, callback) {  //해당 id 환자정보 구하기
+      mH_utils.msQueryRs({"que":que}, function(err, rs){
+        rs[0].PIC = picRs;
+        rs[0].date = date;
+        //rs[0].SAVED = {"RC":0, "IX":0, "TX":0}; //@@@@@@@@@@@@@@@
+        rs[0].SAVEDRC = 0;
+        rs[0].SAVEDIX = 0;
+        rs[0].SAVEDTX = 0;
+        rs[0].CHARTED = {"TOTAL":0,"BIBO":0};
+        rs[0].ITYPE = mH_utils.insuType(rs[0].PART, rs[0].DAE, rs[0].JEUNG); //보험 타입
         callback(err, rs[0]);
         rs[0].TIMER = '';
       });
-	  },
+    },
 
-	  function(data, callback) {
-	  	mH_utils.mgCreateRs({"body":data, "date":date, "col":'daily'}, function(err, rs){
-	      callback(err, rs);
-	    });
-	  },
+    function(data, callback) {
+      mH_utils.mgCreateRs({"body":data, "date":date, "col":'daily'}, function(err, rs){
+        callback(err, rs);
+      });
+    },
 
-	],
+  ],
 
-	function(err, results) {
-	  //console.log(arguments);
-	  console.log(results);
-	  cb(err, results);
-	});
+  function(err, results) {
+    //console.log(arguments);
+    console.log(results);
+    cb(err, results);
+  });
 
 }
 
@@ -584,8 +584,8 @@ var _patchPatientMS = function(opts, cb) {
 
   console.log(que);
 
-	mH_utils.msQueryRs({"que":que}, function(err, rs){
-		cb(patient);
+  mH_utils.msQueryRs({"que":que}, function(err, rs){
+    cb(patient);
   });
 
   //cb(patient);
@@ -594,22 +594,22 @@ var _patchPatientMS = function(opts, cb) {
 
 
 var _getPatientPhotoMS = function(opts, cb) {
-	var id = opts.id;
-  mH_utils.OHISNum(id, function(ohis) {	//OHIS 구하기 + photo data query
-	  var que2 = "SELECT CAP_PATH, CAP_WDATE, CAP_REMARK, CAP_BIGO1 FROM OHIS_H.dbo.IM_CAP"
-			+ ohis
-			+ " WHERE CAP_CHAM_ID = '"
-			+ id
-			+ "' ORDER BY CAP_SEQ DESC";
-	      //callback(null, que2);
-		mH_utils.msQueryRs({"que":que2}, function(err, rs){
-		  console.log('_getPatientPhotoMS rs', rs);
-		  if (!rs || !rs.length) {
-		  	rs = [];
-		  };
-	    cb(err, rs);
-	  });
-	});
+  var id = opts.id;
+  mH_utils.OHISNum(id, function(ohis) { //OHIS 구하기 + photo data query
+    var que2 = "SELECT CAP_PATH, CAP_WDATE, CAP_REMARK, CAP_BIGO1 FROM OHIS_H.dbo.IM_CAP"
+      + ohis
+      + " WHERE CAP_CHAM_ID = '"
+      + id
+      + "' ORDER BY CAP_SEQ DESC";
+        //callback(null, que2);
+    mH_utils.msQueryRs({"que":que2}, function(err, rs){
+      console.log('_getPatientPhotoMS rs', rs);
+      if (!rs || !rs.length) {
+        rs = [];
+      };
+      cb(err, rs);
+    });
+  });
 }
 
 //-----------------------------------------------------------------------------
@@ -619,11 +619,11 @@ var _readPatientsMSQue = function(opts) {
   var date = opts.date || '20140704';
   var id = opts.id || '';
   var type = opts.type || 'all';
-	//var table = 'Month.dbo.JUBM' + date.substring(0,6);
+  //var table = 'Month.dbo.JUBM' + date.substring(0,6);
   var jdate = date.substring(6,8);
   var month = date.substring(0,6);
 
-  var arrSelQue1 = [	//sync check용
+  var arrSelQue1 = [  //sync check용
     "jubm.JUBM_CHAM_ID AS CHARTID",
     "jubm.JUBM_GICHO1 AS KSTATE",
     "datediff(day, kwam.KWAM_DATE, convert(char(8), Getdate(), 112)) AS LAST",
@@ -636,47 +636,47 @@ var _readPatientsMSQue = function(opts) {
     "jubm.JUBM_TODAY AS ORDER1"
   ];
 
-	var arrSelQue2 = [
-		//"cham.CHAM_ID AS CHARTID",
-		"cham.CHAM_CHARTNUM AS chartNum",
-		"cham.CHAM_JEJU AS JEJUCODE",
-		"cham.CHAM_WHANJA AS NAME",
-		"cham.CHAM_SEX AS SEX",
-		//cham.CHAM_PASSWORD AS jumin, //나이 구할 수 있음!!!
-		//"substring(cham.CHAM_PASSWORD, 7, 1) AS jumin02",	//yy, sex, 외국인 정보
-		"substring(cham.CHAM_PASSWORD, 1, 6) AS jumin01",  //나이 구할 수 있음
-		"hanimacCS.dbo.UF_getAge3(cham.CHAM_PASSWORD, convert(char(8), Getdate(), 112)) AS AGE",
-		"cham.CHAM_YY AS yy",
-		"cham.CHAM_PART AS PART",
-		"cham.CHAM_DAE AS DAE",
-		"cham.CHAM_JEUNG AS JEUNG",
-		"cham.CHAM_TEL AS telNum",
-		"cham.CHAM_HP AS hpNum",
-		"cham.CHAM_BOHOJA AS bohoja",
-		"cast(cham.CHAM_MEMO AS text) AS memo",
-		"cham.CHAM_읍면동명 AS ADDRESS2",
-		"jubm.JUBM_JUBSU_TIME AS JTIME",
-		//"jubm.JUBM_GICHO1 AS KSTATE",
-		//"substring(jubm.JUBM_GICHO2, 1, 2) AS BNUM",
-		//"substring(jubm.JUBM_GICHO2, 3, 4) AS BTIME",
-		//"jubm.JUBM_IRAMT AS BONBU",
-		//"jubm.JUBM_MTAMT AS TOTAL",
-		//"jubm.JUBM_BIGUB AS BIBO",
-		//"jubm.JUBM_TODAY AS ORDER1",
-		"swam.SWAM_DATE AS FIRSTDATE",
-		"kwam.KWAM_DATE AS LASTDATE",
-		"kwam.KWAM_DATE_AF AS LASTDATE2",
-		//"datediff(day, kwam.KWAM_DATE, convert(char(8), Getdate(), 112)) AS LAST",
-		//"datediff(day, kwam.KWAM_DATE_AF, convert(char(8), Getdate(), 112)) AS LAST2",
-		"post.POST_NAME1 + ' ' + post.POST_NAME2 + ' ' + post.POST_NAME3 + ' ' + cham.CHAM_JUSO AS ADDRESS"
-	];
+  var arrSelQue2 = [
+    //"cham.CHAM_ID AS CHARTID",
+    "cham.CHAM_CHARTNUM AS chartNum",
+    "cham.CHAM_JEJU AS JEJUCODE",
+    "cham.CHAM_WHANJA AS NAME",
+    "cham.CHAM_SEX AS SEX",
+    //cham.CHAM_PASSWORD AS jumin, //나이 구할 수 있음!!!
+    //"substring(cham.CHAM_PASSWORD, 7, 1) AS jumin02", //yy, sex, 외국인 정보
+    "substring(cham.CHAM_PASSWORD, 1, 6) AS jumin01",  //나이 구할 수 있음
+    "hanimacCS.dbo.UF_getAge3(cham.CHAM_PASSWORD, convert(char(8), Getdate(), 112)) AS AGE",
+    "cham.CHAM_YY AS yy",
+    "cham.CHAM_PART AS PART",
+    "cham.CHAM_DAE AS DAE",
+    "cham.CHAM_JEUNG AS JEUNG",
+    "cham.CHAM_TEL AS telNum",
+    "cham.CHAM_HP AS hpNum",
+    "cham.CHAM_BOHOJA AS bohoja",
+    "cast(cham.CHAM_MEMO AS text) AS memo",
+    "cham.CHAM_읍면동명 AS ADDRESS2",
+    "jubm.JUBM_JUBSU_TIME AS JTIME",
+    //"jubm.JUBM_GICHO1 AS KSTATE",
+    //"substring(jubm.JUBM_GICHO2, 1, 2) AS BNUM",
+    //"substring(jubm.JUBM_GICHO2, 3, 4) AS BTIME",
+    //"jubm.JUBM_IRAMT AS BONBU",
+    //"jubm.JUBM_MTAMT AS TOTAL",
+    //"jubm.JUBM_BIGUB AS BIBO",
+    //"jubm.JUBM_TODAY AS ORDER1",
+    "swam.SWAM_DATE AS FIRSTDATE",
+    "kwam.KWAM_DATE AS LASTDATE",
+    "kwam.KWAM_DATE_AF AS LASTDATE2",
+    //"datediff(day, kwam.KWAM_DATE, convert(char(8), Getdate(), 112)) AS LAST",
+    //"datediff(day, kwam.KWAM_DATE_AF, convert(char(8), Getdate(), 112)) AS LAST2",
+    "post.POST_NAME1 + ' ' + post.POST_NAME2 + ' ' + post.POST_NAME3 + ' ' + cham.CHAM_JUSO AS ADDRESS"
+  ];
 
 
   var extra = " FROM hanimacCS.dbo.CC_CHAM AS cham"
-  						+ " INNER JOIN Month.dbo.JUBM" + month + " AS jubm ON cham.CHAM_ID = jubm.JUBM_CHAM_ID"
-  						+ " LEFT OUTER JOIN  hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID"
-  						+ " LEFT OUTER JOIN  hanimacCS.dbo.CC_SWAM AS swam ON cham.CHAM_ID = swam.SWAM_CHAM_ID"
-  						+ " LEFT OUTER JOIN hanimacCS.dbo.CC_POST AS post ON cham.CHAM_POST = post.POST_KEY";
+              + " INNER JOIN Month.dbo.JUBM" + month + " AS jubm ON cham.CHAM_ID = jubm.JUBM_CHAM_ID"
+              + " LEFT OUTER JOIN  hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID"
+              + " LEFT OUTER JOIN  hanimacCS.dbo.CC_SWAM AS swam ON cham.CHAM_ID = swam.SWAM_CHAM_ID"
+              + " LEFT OUTER JOIN hanimacCS.dbo.CC_POST AS post ON cham.CHAM_POST = post.POST_KEY";
 
   var where = " WHERE jubm.JUBM_DATE = '"
               + jdate
@@ -700,9 +700,9 @@ var _readPatientsMSQue = function(opts) {
   };
 
   if (type == 'sync') {
-  	arrSelQue = arrSelQue1;
+    arrSelQue = arrSelQue1;
   } else {
-  	arrSelQue = arrSelQue1.concat(arrSelQue2);
+    arrSelQue = arrSelQue1.concat(arrSelQue2);
   }
 
   //var query = "SELECT " + arrSelQue.join(', ') + extra + where;
@@ -757,21 +757,21 @@ var _searchPatientsMSQue = function(opts) {
 
 //환자 정보 patch(update) query
 var _patchPatientMSQue = function(opts) {
-	var date = opts.date;
-	var id = opts.id;
+  var date = opts.date;
+  var id = opts.id;
   var date_ = date.substring(6,8);
   var month = date.substring(0,6);
   var data = opts.data;
 
   if (data.BNUM) { //베드 설정 및 이동
-  	//var time_ = new Date().format("hhmmss");
-  	var time_ = dateFormat(new Date(), "HHMMss");
+    //var time_ = new Date().format("hhmmss");
+    var time_ = dateFormat(new Date(), "HHMMss");
     //gicho2 = data.BNUM + date("His") + '20';
     gicho2 = data.BNUM + time_ + '20';
     sql = "UPDATE Month.dbo.JUBM" + month +
-    			" SET JUBM_GICHO1 = '치료베드', JUBM_GICHO2 = '" + gicho2 +
-    			"' WHERE JUBM_DATE = '" + date_ +
-    			"' AND JUBM_CHAM_ID = '" + id + "'";
+          " SET JUBM_GICHO1 = '치료베드', JUBM_GICHO2 = '" + gicho2 +
+          "' WHERE JUBM_DATE = '" + date_ +
+          "' AND JUBM_CHAM_ID = '" + id + "'";
     //return sql;
     data.BTIME = gicho2.substring(2,6);
     data.KSTATE = '치료베드';
@@ -779,18 +779,18 @@ var _patchPatientMSQue = function(opts) {
     //return sql;
     return {"que":sql, "obj":data};
   } else if (data.KSTATE) { //진료 단계 변경
-  	state = data.KSTATE;
+    state = data.KSTATE;
     sql = "UPDATE Month.dbo.JUBM" + month +
           " SET JUBM_GICHO1 = '" + state +
-    			"' WHERE JUBM_DATE = '" + date_ +
-    			"' AND JUBM_CHAM_ID = '" + id + "'";
+          "' WHERE JUBM_DATE = '" + date_ +
+          "' AND JUBM_CHAM_ID = '" + id + "'";
     //return sql;
     return {"que":sql, "obj":data};
   } else if (data.ORDER1) { //지시사항 변경
-  	order = data.ORDER1;
+    order = data.ORDER1;
     sql = "UPDATE Month.dbo.JUBM" + month +
           " SET JUBM_TODAY = '" + order +
-    			"' AND JUBM_CHAM_ID = '" + id + "'";
+          "' AND JUBM_CHAM_ID = '" + id + "'";
     //return sql;
     return {"que":sql, "obj":data};
   }
@@ -812,23 +812,23 @@ exports.readOnePatient = _readOnePatientMG;
 exports.updatePatient = _updatePatientMG;
 
 exports.patchPatient = function(req, res) {
-	var date = req.params.date;
-	var id = req.params.id;
-	var data = req.body;
+  var date = req.params.date;
+  var id = req.params.id;
+  var data = req.body;
 
-	if (data.BNUM || data.KSTATE || data.ORDER1) {  //MSSQL도 update!!!
-		_patchPatientMS({date:date, id:id, data:data}, function(rs){
-			console.log('_patchPatientMS', rs);
-			res.send(rs);
-			//mongodb update(patch)
-		});
-	} else {  //mongodb만 update
-		mH_utils.mgPatchRs({"body":data, "filter":{"date":date, "CHARTID":id}, "col":'daily'}, function(err, rs){
-			console.log();
-			res.end();
-			//res.send(rs);
-		});
-	}
+  if (data.BNUM || data.KSTATE || data.ORDER1) {  //MSSQL도 update!!!
+    _patchPatientMS({date:date, id:id, data:data}, function(rs){
+      console.log('_patchPatientMS', rs);
+      res.send(rs);
+      //mongodb update(patch)
+    });
+  } else {  //mongodb만 update
+    mH_utils.mgPatchRs({"body":data, "filter":{"date":date, "CHARTID":id}, "col":'daily'}, function(err, rs){
+      console.log();
+      res.end();
+      //res.send(rs);
+    });
+  }
 
 /*
   //arrPatient = mH_objToArr(json_decode(urldecode(Slim::getInstance()->request()->getBody())));

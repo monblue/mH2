@@ -577,8 +577,8 @@ function mH_getListBonbu(age, jeju, bonbu) {
 //기능: 수납 예상액, 보험약, 비보험
 //{"total":total, "bonbu":bonbu, "chungu":chungu, "bibo":bibo, "sunab": bonbu + bibo};
 function mH_getPreSunab(charted) {
-  if (charted.length < 10) {
-    console.log('blank json', charted);
+  if (!charted.TOTAL) {
+    //console.log('blank json', charted);
     return ['hide', ''];
   } else {
     //console.log('filled json', charted);
@@ -600,14 +600,7 @@ function mH_getPreSunab(charted) {
     //return ['', '수납액 '];
     //return ['', '수납액:' + sunab + ',' + '보험약:' + ex +  ',' + '비보험:' + bibo];
   }
-  /*
-  if (json.total > 0) {
-    //return ['', '수납액:' + sunab + ',' + '보험약:' + ex +  ',' + '비보험:' + bibo];
-    return ['', '수납액 ' + json.sunab ];
-  } else {
-    return ['hide', ''];
-  }
-  */
+
 }
 
 

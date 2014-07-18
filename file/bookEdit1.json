@@ -1,0 +1,43 @@
+{ "o" : "東 훌寶鑑", "r" : "東醫寶鑑", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca65d87dd85901baf4ee4" } }
+{ "o" : "과 학의 ", "r" : "과학의 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca67487dd85901baf4ee5" } }
+{ "o" : "정신 과 ", "r" : "정신과 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca68087dd85901baf4ee6" } }
+{ "o" : "r 증후편」", "r" : "「증후편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca71b87dd85901baf4ee7" } }
+{ "o" : " r질병편」", "r" : "「질병편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca73e87dd85901baf4ee8" } }
+{ "o" : "r치료편」", "r" : "「치료편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca75287dd85901baf4ee9" } }
+{ "o" : " r 치료편」", "r" : "「치료편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca75f87dd85901baf4eea" } }
+{ "o" : "r증후편」", "r" : "「증후편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca77487dd85901baf4eeb" } }
+{ "o" : "t季", "r" : "悸", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca7a187dd85901baf4eec" } }
+{ "o" : "征仲", "r" : "怔忡", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca7bc87dd85901baf4eed" } }
+{ "o" : " 蠻證", "r" : " 鬱證", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca81d87dd85901baf4eee" } }
+{ "o" : "肢晕", "r" : "眩暈", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca83387dd85901baf4eef" } }
+{ "o" : " 癌狂", "r" : " 癲狂", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca86487dd85901baf4ef0" } }
+{ "o" : " 癌瘤", "r" : " 癲癎", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca88987dd85901baf4ef1" } }
+{ "o" : " 心 身證", "r" : " 心身證", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca89687dd85901baf4ef2" } }
+{ "o" : "五 臓", "r" : "五臓", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca8a587dd85901baf4ef3" } }
+{ "o" : " 연 구", "r" : " 연구", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca8b987dd85901baf4ef4" } }
+{ "o" : "의 학을", "r" : "의학을", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca8ce87dd85901baf4ef5" } }
+{ "o" : " 에서 ", "r" : "에서 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca8df87dd85901baf4ef6" } }
+{ "o" : "질환 을 ", "r" : "질환을 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca9af87dd85901baf4ef7" } }
+{ "o" : "에 서는 ", "r" : "에서는 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca9bf87dd85901baf4ef8" } }
+{ "o" : "활용 되", "r" : "활용되", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca9d387dd85901baf4ef9" } }
+{ "o" : "의학 의 ", "r" : "의학의 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca9e687dd85901baf4efa" } }
+{ "o" : " 7]능한", "r" : " 가능한", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acb80587dd85901baf4efb" } }
+{ "o" : "『東醫資휠", "r" : "『東醫寶鑑』", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acb82287dd85901baf4efc" } }
+{ "o" : "東 醫寶", "r" : "東醫寶", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acb82d87dd85901baf4efd" } }
+{ "o" : "r 內景篇」", "r" : "「內景篇」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acf94587dd85901baf4efe" } }
+{ "o" : " \"", "r" : " “", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acf9ad87dd85901baf4eff" } }
+{ "o" : "內谏", "r" : "內煉", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfabf87dd85901baf4f00" } }
+{ "o" : "\"이라", "r" : "”이라", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfada87dd85901baf4f01" } }
+{ "o" : "疲飮", "r" : "痰飮", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfbec87dd85901baf4f02" } }
+{ "o" : "熱疲", "r" : "熱痰", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfc2387dd85901baf4f03" } }
+{ "o" : "五腺", "r" : "五臟", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfc7287dd85901baf4f04" } }
+{ "o" : "六膽", "r" : "六腑", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfc8b87dd85901baf4f05" } }
+{ "o" : "r 外形篇」", "r" : "「外形篇」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfcb587dd85901baf4f06" } }
+{ "o" : "肾", "r" : "腎", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acff1c87dd85901baf4f07" } }
+{ "o" : "篇 j", "r" : "篇」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad00d587dd85901baf4f08" } }
+{ "o" : "r 雜病篇」", "r" : "「雜病篇」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad00f787dd85901baf4f09" } }
+{ "o" : "가 운데", "r" : "가운데", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad011c87dd85901baf4f0a" } }
+{ "o" : " 둥의 ", "r" : " 등의 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad012a87dd85901baf4f0b" } }
+{ "o" : "로 인 하", "r" : "로 인하", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad014c87dd85901baf4f0c" } }
+{ "o" : "飲", "r" : "飮", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad015f87dd85901baf4f0d" } }
+{ "o" : " 攀로", "r" : " 鬱로", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad036987dd85901baf4f0e" } }

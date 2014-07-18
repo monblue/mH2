@@ -54,7 +54,7 @@ exports.mgCreateRs = function(opts, cb) {
 
 
 exports.mgReadAllRs = function(opts, cb) {
-	var filter = opts.filter || {};
+  var filter = opts.filter || {};
   mgdb.collection(opts.col, function(err, collection) {
     collection.find(filter).toArray(function(err, rs) {
       cb(err, rs);
@@ -64,7 +64,7 @@ exports.mgReadAllRs = function(opts, cb) {
 
 
 exports.mgReadOneRs = function(opts, cb) {
-	var filter = opts.filter || {};  //filter = {"date":date, "id":id}
+  var filter = opts.filter || {};  //filter = {"date":date, "id":id}
   mgdb.collection(opts.col, function(err, collection) {
     collection.findOne(filter, function(err, rs) {
       cb(err, rs);
@@ -84,7 +84,7 @@ exports.mgReadFieldsRs = function(opts, cb) {
 }
 
 exports.mgUpdateRs = function(opts, cb) {
-	var filter = opts.filter || {};  //filter = {"date":date, "id":id}
+  var filter = opts.filter || {};  //filter = {"date":date, "id":id}
   mgdb.collection(opts.col, function(err, collection) {
     collection.update(filter, opts.body, {safe:true}, function(err, rs) {
       cb(err, rs);
@@ -94,7 +94,7 @@ exports.mgUpdateRs = function(opts, cb) {
 
 
 exports.mgDeleteRs = function(opts, cb) {
-	var filter = opts.filter || {};  //filter = {"date":date, "id":id}
+  var filter = opts.filter || {};  //filter = {"date":date, "id":id}
   mgdb.collection(opts.col, function(err, collection) {
     collection.remove(filter, {safe:true}, function(err, rs) {
       cb(err, rs);
@@ -121,7 +121,7 @@ exports.mgFindRs = function(req, res, opts) {
 
 //부분 UPDATE
 exports.mgPatchRs = function(opts, cb) {
-	var filter = opts.filter || {};  //filter = {"date":date, "id":id}
+  var filter = opts.filter || {};  //filter = {"date":date, "id":id}
   var item = opts.body;
 
   mgdb.collection(opts.col, function(err, collection) {
@@ -136,12 +136,12 @@ exports.mgPatchRs = function(opts, cb) {
 // exports:: MSSQL QUERY functions
 //-----------------------------------------------------------------------------
 exports.msQueryRs = function(opts, cb) {
-	mssql.connect(mssqlconfig, function(err) {
-	  var request = new mssql.Request();
-	  request.query(opts.que, function(err, rs) {
-	    cb(err, rs);
-	  });
-	});
+  mssql.connect(mssqlconfig, function(err) {
+    var request = new mssql.Request();
+    request.query(opts.que, function(err, rs) {
+      cb(err, rs);
+    });
+  });
 }
 
 
@@ -158,9 +158,9 @@ exports.msQueryRs = function(opts, cb) {
  */
 //exports.compareJsonArr = function(a, b, key) {
 exports.compareJsonArr = function(opts, cb) {
-	var a = opts.a || {};
-	var b = opts.b || {};
-	var key = opts.key || 'CHARTID';
+  var a = opts.a || {};
+  var b = opts.b || {};
+  var key = opts.key || 'CHARTID';
 
   var arrAdd = [];
   var arrDel = [];
@@ -336,9 +336,9 @@ function _strPad(opts) {
   }
 
   if (type == 'PAD_LEFT') {
-  	return pStr + ori;
+    return pStr + ori;
   } else {
-  	return ori + pStr;
+    return ori + pStr;
   }
 
 }
