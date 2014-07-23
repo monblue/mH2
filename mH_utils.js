@@ -267,6 +267,8 @@ exports.OHIS = _OHIS;
 exports.insStr = _getInsStr;
 exports.trim = _trim;
 exports.calcAge = _calcAge;
+exports.calcSex = _calcSex;
+exports.calcBirthday = _calcBirthday;
 //-----------------------------------------------------------------------------
 // private functions
 //-----------------------------------------------------------------------------
@@ -384,9 +386,23 @@ function _calcAge(jumin) {
 function _calcSex(jumin) {
  var nSex = Number(jumin.substring(6,7));
  if (nSex % 2 == 1)
-　　return "남";
+　　//return "남";
+		return '0';
  else
-　　return "여";
+　　//return "여";
+		return '1';
+}
+
+
+//jumin: yymmddA 예) 6705061 (주민번호: 670506-1******)
+function _calcBirthday(jumin) {
+  var v1 = Number(jumin.substr(0,2));
+  var v2 = Number(jumin.substr(6,1));
+  var vy = (v2==1 || v2==2 || v2==5 || v2==6) ? 1900 +v1 : ((v2==3 || v2==4 || v2==7 || v2==8) ? 2000 +v1 : 0);
+  var vm = Number(jumin.substr(2,2));
+  var vd = Number(jumin.substr(4,2));
+
+  return vy + '-' + vm + '-' + vd;
 }
 
 

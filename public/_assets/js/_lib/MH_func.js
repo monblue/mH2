@@ -442,12 +442,10 @@ function mH_getListUI(opts) {
   }
 
   if (opts.PIC) {
-    if (!opts.PIC.length && opts.SEX == '0') {
-      out.txtPIC = 'default0.png';
-    } else if (!opts.PIC.length && opts.SEX == '1') {
-      out.txtPIC = 'default1.png';
+    if (!opts.PIC.length) {
+    	if (opts.SEX == '0') out.txtPIC = 'default0.png';
+    	else out.txtPIC = 'default1.png';
     } else {
-      //out.txtPIC = JSON.parse(opts.PIC)[0]['CAP_PATH'];
       out.txtPIC = opts.PIC[0]['CAP_PATH'];
     }
   }

@@ -125,7 +125,7 @@ define(function (require) {
       console.log('chart initialize ', date);
       //Backbone.history.navigate('L' + date);
       //_createPatientTable(GLOBAL.get('_LISTDATE'));
-      _createPatientTable(date);
+      //_createPatientTable(date);
 
       ////@@layout render
       ShellView.render();

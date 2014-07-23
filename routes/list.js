@@ -130,39 +130,6 @@ function _createPatientMSQue(opts, cb) {
 
   cb(que);
 
-/*
-  sql = "INSERT INTO Month.dbo.JUBM" + month +
-        " (JUBM_MEDM_ID, JUBM_CHAM_ID, JUBM_GWAM_ID, JUBM_DATE,
-          JUBM_RNO, JUBM_CHOJE_CODE, JUBM_PART, JUBM_ORGM_ID, JUBM_JEUNG, JUBM_DAE,
-          JUBM_MTAMT, JUBM_MRAMT, JUBM_IRAMT, JUBM_BIGUB, JUBM_HAAMT, JUBM_JINSUAMT,
-          JUBM_JINSUAMT1, JUBM_JINSUAMT2, JUBM_SUAMT, JUBM_MISU_AMT, JUBM_WAAMT,
-          JUBM_GICHO1, JUBM_TIME, JUBM_CHAMGO, JUBM_JU_NIGHT, JUBM_CARD_AMT, JUBM_CARD_USE,
-          JUBM_MAGAM, JUBM_JUBSU_TIME, JUBM_DOC_ID, JUBM_USRM_ID, JUBM_FLAG,
-          JUBM_SUNAB_S, JUBM_BIGO1, JUBM_BIGO2) " +
-        " SELECT
-          '0', 'id', kwam.KWAM_GWAM_ID, 'date_',
-          '0', '10200',
-          cham.CHAM_PART,
-          cham.CHAM_ORGM_ID,
-          cham.CHAM_JEUNG,
-          cham.CHAM_DAE,
-          '0', '0', '0', '0', '0', '0',
-          '0', '0', '0', '0', '0',
-          '진료대기', '', '', '0', '0', '0',
-          'magam', 'time',  kwam.KWAM_USRM_ID, 'user', kwam.KWAM_FLAG,
-          '0', '120205310408506', '1002XX3XX4XX5XX'
-          FROM hanimacCS.dbo.CC_CHAM AS cham
-          INNER JOIN  hanimacCS.dbo.CC_KWAM AS kwam ON cham.CHAM_ID = kwam.KWAM_CHAM_ID
-          WHERE cham.CHAM_ID = 'id'";
-
-  mH_executeMSSQL(sql);
-  //print_r(sql);
-
-  patient = _getPatientMS(date, id);
-  //print_r(patient);
-
-  return patient;
-*/
 }
 
 /*
@@ -320,9 +287,11 @@ var _searchPatientsMS = function(req, res) {
     function(rs, callback) {
       async.each(rs, function(r, cb) {  //The second argument (callback) is the "task callback" for a specific r
         r.ITYPE = mH_utils.insuType(r.PART, r.DAE, r.JEUNG); //보험 타입
+        r.SEX = mH_utils.calcSex(r.JUMIN);	//성별
+      	r.AGE = mH_utils.calcAge(r.JUMIN);  //나이
 
         _getPatientPhotoMS({"id":r.CHARTID}, function(err, rs2){
-          r.PIC = rs2;
+          r.PIC = rs2;  //@@@@@@@@#########
           cb(); //잘 모르겠지만 여기 넣으니 되네@@@@@@@@@
         });
 
@@ -528,9 +497,10 @@ var _syncAdd = function(opts, cb) {
         //callback(null, que2);
         mH_utils.msQueryRs({"que":que2}, function(err, rs){
           if (!rs) {
-            rs = [{}];
+            //rs = [{}];
+            rs = [];
           };
-          callback(err, rs);
+          callback(err, rs);	//@@@@@@@@@##########
         });
       });
     },
@@ -546,6 +516,8 @@ var _syncAdd = function(opts, cb) {
 */
     function(picRs, callback) {  //해당 id 환자정보 구하기
       mH_utils.msQueryRs({"que":que}, function(err, rs){
+      	rs[0].SEX = mH_utils.calcSex(rs[0].JUMIN);	//성별
+      	rs[0].AGE = mH_utils.calcAge(rs[0].JUMIN);  //나이
         rs[0].PIC = picRs;
         rs[0].date = date;
         //rs[0].SAVED = {"RC":0, "IX":0, "TX":0}; //@@@@@@@@@@@@@@@
@@ -609,7 +581,7 @@ var _getPatientPhotoMS = function(opts, cb) {
       + "' ORDER BY CAP_SEQ DESC";
         //callback(null, que2);
     mH_utils.msQueryRs({"que":que2}, function(err, rs){
-      console.log('_getPatientPhotoMS rs', rs);
+      //console.log('_getPatientPhotoMS rs', rs);
       if (!rs || !rs.length) {
         rs = [];
       };
@@ -647,12 +619,12 @@ var _readPatientsMSQue = function(opts) {
     "cham.CHAM_CHARTNUM AS chartNum",
     "cham.CHAM_JEJU AS JEJUCODE",
     "cham.CHAM_WHANJA AS NAME",
-    "cham.CHAM_SEX AS SEX",
-    //cham.CHAM_PASSWORD AS jumin, //나이 구할 수 있음!!!
+    //"cham.CHAM_SEX AS SEX",
+    "cham.CHAM_PASSWORD AS JUMIN", //yy, sex, 외국인 정보, 나이 구할 수 있음!!!
     //"substring(cham.CHAM_PASSWORD, 7, 1) AS jumin02", //yy, sex, 외국인 정보
-    "substring(cham.CHAM_PASSWORD, 1, 6) AS jumin01",  //나이 구할 수 있음
-    "hanimacCS.dbo.UF_getAge3(cham.CHAM_PASSWORD, convert(char(8), Getdate(), 112)) AS AGE",
-    "cham.CHAM_YY AS yy",
+    //"substring(cham.CHAM_PASSWORD, 1, 6) AS jumin01",  //나이 구할 수 있음
+    //"hanimacCS.dbo.UF_getAge3(cham.CHAM_PASSWORD, convert(char(8), Getdate(), 112)) AS AGE",
+    //"cham.CHAM_YY AS yy",
     "cham.CHAM_PART AS PART",
     "cham.CHAM_DAE AS DAE",
     "cham.CHAM_JEUNG AS JEUNG",
@@ -748,8 +720,9 @@ var _searchPatientsMSQue = function(opts) {
       "cham.CHAM_SEX AS SEX",
       "cham.CHAM_TEL AS TEL",
       "cham.CHAM_HP AS HP",
-      "substring(cham.CHAM_PASSWORD, 1, 6) AS JUMIN",
-      "hanimacCS.dbo.UF_getAge3(cham.CHAM_PASSWORD, convert(char(8), Getdate(), 112)) AS AGE",
+      //"substring(cham.CHAM_PASSWORD, 1, 6) AS JUMIN",
+      "cham.CHAM_PASSWORD AS JUMIN",
+      //"hanimacCS.dbo.UF_getAge3(cham.CHAM_PASSWORD, convert(char(8), Getdate(), 112)) AS AGE",
       "cham.CHAM_PART AS PART",
       "cham.CHAM_DAE AS DAE",
       "cham.CHAM_JEUNG AS JEUNG",

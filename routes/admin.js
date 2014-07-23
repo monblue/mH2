@@ -121,7 +121,7 @@ exports.setTxFile = function(req, res) {
     //callback
     function(err, results) {
       //content = results[0];
-      content = 'test.... var txMain = ' + JSON.stringify(results[0]) + ";\r\n\r\n" +
+      content = 'var txMain = ' + JSON.stringify(results[0]) + ";\r\n\r\n" +
             'var txSub = ' + JSON.stringify(results[1]) + ";";
       //console.log(content);
 
