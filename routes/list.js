@@ -251,14 +251,16 @@ function _addPatientMS(date, data) {
 
 
 var _readAllPatientsMG = function(req, res) {
-  mH_utils.mgReadAllRs({"filter":{"date":req.params.date}, "col":'daily'}, function(err, rs){
+  var date = req.params.date || '20140723';
+  mH_utils.mgReadAllRs({"filter":{"date":date}, "col":'daily'}, function(err, rs){
     res.send(rs);
   });
 }
 
 
 var _readAllPatientsMS = function(req, res) {
-  var que = _readPatientsMSQue({"date":req.params.date, "type":'all'});
+  var date = req.params.date || '20140723';
+  var que = _readPatientsMSQue({"date":date, "type":'all'});
   mH_utils.msQueryRs({"que":que}, function(err, rs){
     res.send(rs);
   });
@@ -266,7 +268,8 @@ var _readAllPatientsMS = function(req, res) {
 
 
 var _readOnePatientMS = function(req, res) {
-  var que = _readPatientsMSQue({"date":req.params.date, "CHARTID":req.params.id, "type":'one'});
+  var date = req.params.date || '20140723';
+  var que = _readPatientsMSQue({"date":date, "CHARTID":req.params.id, "type":'one'});
   mH_utils.msQueryRs({"que":que}, function(err, rs){
     res.send(rs);
   });
@@ -274,21 +277,24 @@ var _readOnePatientMS = function(req, res) {
 
 
 var _readOnePatientMG = function(req, res) {
-  mH_utils.mgReadOneRs({"filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
+  var date = req.params.date || '20140723';
+  mH_utils.mgReadOneRs({"filter":{"date":date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
     res.send(rs);
   });
 }
 
 
 var _updatePatientMG = function(req, res) {
-  mH_utils.mgUpdateRs({"body":req.body, "filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
+  var date = req.params.date || '20140723';
+  mH_utils.mgUpdateRs({"body":req.body, "filter":{"date":date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
     res.send(rs);
   });
 }
 
 
 var _deletePatientMG = function(req, res) {
-  mH_utils.mgDeleteRs({"filter":{"date":req.params.date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
+  var date = req.params.date || '20140723';
+  mH_utils.mgDeleteRs({"filter":{"date":date, "CHARTID":req.params.id}, "col":'daily'}, function(err, rs){
     res.send(rs);
   });
 }

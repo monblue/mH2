@@ -11,6 +11,7 @@ var upload = require('./routes/upload');
 //var chart = require('./routes/chart');
 //var user = require('./routes/user');
 var book = require('./routes/book');
+var admin = require('./routes/admin');
 
 var app = express();
 app.set('port', process.env.PORT || 3333);
@@ -39,6 +40,7 @@ app.all('*', function(req, res, next) {
 app.post('/patients/:date', list.createPatient);  //Create NOT USED!!!
 //app.get('/patients/:date/:id/:user', list.createPatient_);  //TEST!!!!@@@@@@@@@@
 
+app.get('/patients', list.readAllPatients);  //ReadAll
 app.get('/patients/:date', list.readAllPatients);  //ReadAll
 app.get('/patients/:date/:id', list.readOnePatient);  //ReadOne
 app.put('/patients/:date/:id', list.updatePatient);  //Update
@@ -168,3 +170,13 @@ app.get('/book/viewPage/:book/:page', book.viewPage);  //
 app.post('/book/replace/:book', book.replaceOne);  //
 app.get('/book/replaceAll/:book', book.replaceAll);  //
 app.post('/book/savePage/:book/:page', book.savePage);  //
+
+//=============================================================================
+// ADMIN
+//=============================================================================
+app.get('/admin/setTxMain', admin.setTxMain);  //
+app.get('/admin/setTxSub', admin.setTxSub);  //
+app.get('/admin/setTxFile', admin.setTxFile);  //
+
+
+app.get('/admin/createMSUser', admin.createMSUser);  //
