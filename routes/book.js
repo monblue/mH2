@@ -1,18 +1,9 @@
 ////////////////////////////////////////////////
-// bookFile.js
-
+// book.js
 var BOOKDIR = 'd:/dev/mH2/file/'; //상수 config에 등록할 것@@@@@@@@@
 //-----------------------------------------------------------------------------
 // require
 //-----------------------------------------------------------------------------
-/*
-var express = require('express');
-var bodyParser = require('body-parser');  //npm install --save body-parser
-var path = require('path');
-var http = require('http');
-var fs = require('fs');
-var mongo = require('mongodb');
-*/
 var mH_utils = require('../mH_utils');
 var fs = require('fs');
 var async = require('async');
@@ -85,7 +76,6 @@ exports.replaceAll = function(req, res) {
     async.waterfall([
       function(callback) {
         //db.bookEdit.find().sort({_id:1})
-        //db.bookEdit.find({$query:{}, $orderby:{_id:1}})
         var filter = {$query:{}, $orderby:{_id:1}}; //_id 오름차순으로...@@@@
         mH_utils.mgReadAllRs({"col":"bookEdit", "filter":filter}, function(err, rs) {
           console.log('bookEdit rs', rs);
@@ -118,7 +108,6 @@ exports.replaceAll = function(req, res) {
     ],
 
     function(err, results) {
-      //console.log(arguments);
       //console.log(results);
       fs.writeFile(file, data, function(err) {
         if(err) throw err;
@@ -149,58 +138,6 @@ exports.savePage = function(req, res) {
     });
 
 }
-
-
-
-/*
-app.get('/replaceAll/:book', function(req, res) {
-  var book = req.params.book;
-  var file = './file/' + book + '.txt'
-
-  console.log('pattern replace ', pat, rep, isRegex);
-
-  //async.waterfall
-  //0. readFile / 1. get replace data(mongodb) / 2. replace loop / 3. writeFile
-  fs.readFile(file, {encoding: 'utf-8'}, function(err, data){
-    async.waterfall([
-      function(callback) {
-        mH_utils.msQueryRs({"que":que}, function(err, rs){
-          //res.send(rs);
-          callback(err, rs);
-          //callback(rs);
-        });
-      },
-
-      function(rs, callback) {
-        async.each(rs, function(r, cb) {  //The second argument (callback) is the "task callback" for a specific r
-          r.ITYPE = mH_utils.insuType(r.PART, r.DAE, r.JEUNG); //보험 타입
-
-          _getPatientPhotoMS({"id":r.CHARTID}, function(err, rs2){
-            r.PIC = rs2;
-            cb(); //잘 모르겠지만 여기 넣으니 되네@@@@@@@@@
-          });
-
-        }, function(err) {
-          //console.log('foreach rs', rs);
-          callback(err, rs);  //each가 완료된 후 callback함수로 err, rs 넘김
-        });
-
-      },
-
-    ],
-
-    function(err, results) {
-      //console.log(arguments);
-      console.log(results);
-      res.send(results);
-      //cb(err, results);
-    });
-  });
-
-});
-*/
-
-
 
 
 var _getPageSE = function(opts) {
@@ -245,7 +182,7 @@ var _replaceOne = function(opts, callback) {
 
 //pattern(수정 대상 string) 변경
 function _setPattern(pat, isRegex) {
-
+/*
     if (!isRegex) {
     //특수문자 escape000000
     //pat = pat.replace(/(\^|\.|\,|\(|\)|\[|\]|\$|\*|\-)/g, '\\$1');
@@ -263,7 +200,7 @@ function _setPattern(pat, isRegex) {
   } else {
     console.log('pattern', pat);
   }
-
+*/
   return new RegExp(pat, 'g');
 }
 
