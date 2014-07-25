@@ -24,7 +24,7 @@ exports.viewPage = function(req, res) {
   fs.readFile(p.file, 'utf8', function(err, data) {
   //fs.readFile('d:/dev/mH2/file/yanghan.txt', 'utf8', function(err, data) {
     if (err) console.log('err!!!');
-    //console.log(data);
+    console.log(data);
     res.send(data.substring(data.search(p.sPage), data.search(p.ePage) + p.zpad + 1));
     res.end();
   });
