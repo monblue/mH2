@@ -1,16 +1,38 @@
+var express = require('express')
+	, path = require('path')
+  , app = express()
+  , routes = require('./routes')
+  , engine = require('ejs-locals');
+//  , routes = require('./routes');
 
-var express = require('express');
-var path = require('path');
 
-var app = express();
+app.engine('ejs', engine);
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views'); 
 app.set('port', process.env.PORT || 9999);
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/photo', express.static('D:\\SOM_Photo'));	//virtual directory
 
-var server = app.listen(app.get('port'), function() {
+app.get('/', routes.index);
 
+var server = app.listen(app.get('port'), function() {
+	//console.log('Express server listening on port ' + app.get('port'));
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var passport = require('passport');

@@ -26,6 +26,7 @@ var MgServer = mongo.Server;
 var MgDb = mongo.Db;
 var BSON = mongo.BSONPure;
 var mgserver = new MgServer('localhost', 27017, {auto_reconnect: true});
+//var mgserver = new MgServer('115.71.239.240', 27017, {auto_reconnect: true});
 
 mgdb = new MgDb('txdb', mgserver, {safe: true});
 

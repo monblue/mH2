@@ -1,0 +1,24 @@
+<% layout('layout') -%>
+<h1><%= title %> testing...</h1>
+<p>Welcome to <%= title %></p>
+
+
+    <b>Send message</b><p>
+    Message  <input type="text" id="msgbox"/>
+    <br>
+    <span id="msgs"></span>
+
+    <script type="text/javascript">
+        //var socket = io.connect('http://localhost');
+        var socket = io.connect('http://192.168.0.11');
+        $("#msgbox").keyup(function(event) {
+            if (event.which == 13) {
+                socket.emit('fromclient',{msg:$('#msgbox').val()});
+                $('#msgbox').val('');
+            }
+        });
+        socket.on('toclient',function(data){
+            console.log(data.msg);
+            $('#msgs').append(data.msg+'<BR>');
+        });
+    </script>

@@ -1,0 +1,253 @@
+Uncaught ReferenceError: App is not defined voice-commands.js:19
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.magnific-popup/dist/magnific-popup.css
+404 (Not Found) dashboard2.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.niftymodals/css/component.css
+404 (Not Found) dashboard2.html:28
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.summernote/dist/summernote.css
+404 (Not Found) dashboard2.html:29
+GET http://192.168.0.11:9999/test/flatdream/js/behaviour/dashboard2.js
+404 (Not Found) dashboard2.html:646
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.niftymodals/js/jquery.modalEffects.js
+404 (Not Found) dashboard2.html:649
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.summernote/dist/summernote.min.js
+404 (Not Found) dashboard2.html:650
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.magnific-popup/dist/jquery.magnific-popup.min.js
+404 (Not Found) dashboard2.html:651
+GET http://192.168.0.11:9999/test/flatdream/js/skycons/skycons.js
+404 (Not Found) dashboard2.html:652
+Uncaught ReferenceError: Skycons is not defined dashboard2.html:657
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img4.jpg
+404 (Not Found) dashboard2.html:349
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img6.jpg
+404 (Not Found) dashboard2.html:350
+GET http://192.168.0.11:9999/test/flatdream/images/avatar1_50.jpg
+404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/images/mov_bbb.mp4 404 (Not Found) ui-buttons.html:1097
+GET http://192.168.0.11:9999/test/flatdream/images/blur_bg.png 404 (Not Found) jquery.js:3
+GET http://192.168.0.11:9999/test/flatdream/images/mov_bbb.ogg 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/images/pi-icon.png 404 (Not Found) jquery.js:3
+GET http://192.168.0.11:9999/test/flatdream/images/yt-icon.png 404 (Not Found) 
+
+GET http://192.168.0.11:9999/test/flatdream/images/small-icons/svg/map2.svg 404 (Not Found) jquery.js:3
+GET http://192.168.0.11:9999/test/flatdream/images/small-icons/svg/flag.svg 404 (Not Found) jquery.js:3
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.gritter/images/gritter-bg.png 404 (Not Found) jquery.js:3
+GET http://192.168.0.11:9999/test/flatdream/images/avatar1_50.jpg 404 (Not Found) 
+
+
+
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.niftymodals/css/component.css 404 (Not Found) ui-modals.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/skins/flat/green.css 404 (Not Found) ui-modals.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/icheck.js 404 (Not Found) ui-modals.html:1667
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.niftymodals/js/jquery.modalEffects.js 404 (Not Found) 
+
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/skycons/skycons.js 404 (Not Found) ui-tiles.html:819
+Uncaught ReferenceError: Skycons is not defined ui-tiles.html:822
+GET http://192.168.0.11:9999/test/flatdream/images/meteocons/meteo_05.png 404 (Not Found) ui-tiles.html:566
+GET http://192.168.0.11:9999/test/flatdream/images/meteocons/meteo_11.png 404 (Not Found) ui-tiles.html:577
+GET http://192.168.0.11:9999/test/flatdream/images/meteocons/meteo_26.png 404 (Not Found) ui-tiles.html:599
+GET http://192.168.0.11:9999/test/flatdream/images/meteocons/meteo_06.png 404 (Not Found) ui-tiles.html:611
+GET http://192.168.0.11:9999/test/flatdream/images/meteocons/meteo_09.png 404 (Not Found) ui-tiles.html:622
+GET http://192.168.0.11:9999/test/flatdream/images/meteocons/meteo_18.png 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.nestable/jquery.nestable.js 404 (Not Found) 
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.fullcalendar/fullcalendar/fullcalendar.css 404 (Not Found) ui-calendar.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.fullcalendar/fullcalendar/fullcalendar.print.css 404 (Not Found) ui-calendar.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.fullcalendar/fullcalendar/fullcalendar.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jasny.bootstrap/extend/css/jasny-bootstrap.min.css 404 (Not Found) form-elements.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css 404 (Not Found) form-elements.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.switch/bootstrap-switch.min.css 404 (Not Found) form-elements.html:28
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css 404 (Not Found) form-elements.html:29
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.css 404 (Not Found) form-elements.html:30
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.slider/css/slider.css 404 (Not Found) form-elements.html:31
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/skins/flat/green.css 404 (Not Found) form-elements.html:32
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.daterangepicker/daterangepicker-bs3.css 404 (Not Found) form-elements.html:33
+GET http://192.168.0.11:9999/test/flatdream/js/jasny.bootstrap/extend/js/jasny-bootstrap.min.js 404 (Not Found) form-elements.html:1177
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.daterangepicker/moment.min.js 404 (Not Found) form-elements.html:1178
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.daterangepicker/daterangepicker.js 404 (Not Found) form-elements.html:1179
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.touchspin/bootstrap-touchspin/bootstrap.touchspin.js 404 (Not Found) form-elements.html:1180
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js 404 (Not Found) form-elements.html:1181
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.switch/bootstrap-switch.js 404 (Not Found) form-elements.html:1182
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js 404 (Not Found) form-elements.html:1183
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.min.js 404 (Not Found) form-elements.html:1184
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.slider/js/bootstrap-slider.js 404 (Not Found) form-elements.html:1185
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/icheck.min.js 404 (Not Found) form-elements.html:1186
+Uncaught TypeError: undefined is not a function form-elements.html:1190
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap/dist/fonts/glyphicons-halflings-regular.woff 404 (Not Found) jquery.js:3
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf 404 (Not Found) js/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf:1
+allow right click initializing for http://192.168.0.11:9999/test/flatdream/form-elements.html rightclick.js:1
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap/dist/fonts/glyphicons-halflings-regular.svg 404 (Not Found) 
+
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.multiselect/css/bootstrap-multiselect.css 404 (Not Found) form-multiselect.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.multiselect/css/multi-select.css 404 (Not Found) form-multiselect.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.multiselect/js/bootstrap-multiselect.js 404 (Not Found) form-multiselect.html:860
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.multiselect/js/jquery.multi-select.js 404 (Not Found) form-multiselect.html:861
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.quicksearch/jquery.quicksearch.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.parsley/dist/parsley.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.switch/bootstrap-switch.min.css 404 (Not Found) form-wizard.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.css 404 (Not Found) form-wizard.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.slider/css/slider.css 404 (Not Found) form-wizard.html:28
+GET http://192.168.0.11:9999/test/flatdream/js/fuelux/css/fuelux.css 404 (Not Found) form-wizard.html:29
+GET http://192.168.0.11:9999/test/flatdream/js/fuelux/css/fuelux-responsive.min.css 404 (Not Found) form-wizard.html:30
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.switch/bootstrap-switch.js 404 (Not Found) form-wizard.html:558
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.min.js 404 (Not Found) form-wizard.html:559
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.slider/js/bootstrap-slider.js 404 (Not Found) form-wizard.html:560
+GET http://192.168.0.11:9999/test/flatdream/js/fuelux/loader.min.js 404 (Not Found) form-wizard.html:561
+GET http://192.168.0.11:9999/test/flatdream/js/modernizr.js 404 (Not Found) form-wizard.html:562
+Uncaught TypeError: undefined is not a function form-wizard.html:564
+Uncaught TypeError: undefined is not a function form-wizard.html:577
+GET http://192.168.0.11:9999/test/flatdream/js/fuelux/img/glyphicons-halflings-white.png 404 (Not Found) 
+
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.maskedinput/jquery.maskedinput.js 404 (Not Found) 
+
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.wysihtml5/dist/bootstrap3-wysihtml5.min.css 404 (Not Found) form-wysiwyg.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.summernote/dist/summernote.css 404 (Not Found) form-wysiwyg.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/ckeditor/ckeditor.js 404 (Not Found) form-wysiwyg.html:483
+GET http://192.168.0.11:9999/test/flatdream/js/ckeditor/adapters/jquery.js 404 (Not Found) form-wysiwyg.html:484
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.summernote/dist/summernote.min.js 404 (Not Found) form-wysiwyg.html:485
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.wysihtml5/dist/wysihtml5-0.3.0.js 404 (Not Found) form-wysiwyg.html:486
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.wysihtml5/dist/bootstrap3-wysihtml5.all.min.js 404 (Not Found) 
+
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/dropzone/css/dropzone.css 404 (Not Found) form-upload.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/dropzone/dropzone.js 404 (Not Found) 
+
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.switch/bootstrap-switch.min.css 404 (Not Found) tables-general.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.switch/bootstrap-switch.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.datatables/bootstrap-adapter/css/datatables.css 404 (Not Found) tables-datatables.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.jeditable/jquery.jeditable.mini.js 404 (Not Found) tables-datatables.html:1694
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.datatables/jquery.datatables.min.js 404 (Not Found) tables-datatables.html:1695
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.datatables/bootstrap-adapter/js/datatables.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css 404 (Not Found) tables-xeditable.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.x-editable/src/inputs-ext/typeaheadjs/lib/typeahead.js-bootstrap.css 404 (Not Found) tables-xeditable.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.css 404 (Not Found) tables-xeditable.html:28
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.x-editable/dist/bootstrap3-editable/js/bootstrap-editable.js 404 (Not Found) tables-xeditable.html:470
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.x-editable/src/inputs/combodate/lib/moment.min.js 404 (Not Found) tables-xeditable.html:471
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.x-editable/src/inputs-ext/typeaheadjs/lib/typeahead.js 404 (Not Found) tables-xeditable.html:472
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.x-editable/src/inputs-ext/typeaheadjs/typeaheadjs.js 404 (Not Found) tables-xeditable.html:473
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.min.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.vectormaps/maps/jquery-jvectormap-us-merc-en.js 404 (Not Found) vector-maps.html:494
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.vectormaps/maps/jquery-jvectormap-fr-merc-en.js 404 (Not Found) vector-maps.html:496
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.vectormaps/maps/jquery-jvectormap-uk-mill-en.js 404 (Not Found) vector-maps.html:497
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.vectormaps/maps/jquery-jvectormap-us-il-chicago-mill-en.js 404 (Not Found) vector-maps.html:498
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.vectormaps/maps/jquery-jvectormap-au-mill-en.js 404 (Not Found) vector-maps.html:499
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.vectormaps/maps/jquery-jvectormap-map.js 404 (Not Found) vector-maps.html:501
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.vectormaps/maps/jquery-jvectormap-ca-lcc-en.js 404 (Not Found) vector-maps.html:502
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.vectormaps/maps/jquery-jvectormap-in-mill-en.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/skins/square/blue.css 404 (Not Found) email-inbox.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/icheck.min.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/skins/square/blue.css 404 (Not Found) email-read.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/icheck.min.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.css 404 (Not Found) email-compose.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.wysihtml5/dist/bootstrap3-wysihtml5.min.css 404 (Not Found) email-compose.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.wysihtml5/dist/wysihtml5-0.3.0.js 404 (Not Found) email-compose.html:464
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.wysihtml5/dist/bootstrap3-wysihtml5.all.min.js 404 (Not Found) email-compose.html:465
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.min.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/prettify/prettify.css 404 (Not Found) typography.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/prettify/run_prettify.js 404 (Not Found) 
+
+
+ET http://192.168.0.11:9999/test/flatdream/js/jquery.easypiechart/jquery.easy-pie-chart.css 404 (Not Found) charts.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.easypiechart/jquery.easy-pie-chart.js 404 (Not Found) 
+
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jasny.bootstrap/extend/css/jasny-bootstrap.min.css 404 (Not Found) pages-profile.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.easypiechart/jquery.easy-pie-chart.css 404 (Not Found) pages-profile.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.niftymodals/css/component.css 404 (Not Found) pages-profile.html:28
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.crop/css/jquery.Jcrop.css 404 (Not Found) pages-profile.html:29
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.easypiechart/jquery.easy-pie-chart.js 404 (Not Found) pages-profile.html:747
+GET http://192.168.0.11:9999/test/flatdream/js/jasny.bootstrap/extend/js/jasny-bootstrap.min.js 404 (Not Found) pages-profile.html:745
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.crop/js/jquery.Jcrop.js 404 (Not Found) pages-profile.html:749
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.niftymodals/js/jquery.modalEffects.js 404 (Not Found) pages-profile.html:748
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.upload/js/jquery.iframe-transport.js 404 (Not Found) pages-profile.html:752
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.upload/js/jquery.fileupload.js 404 (Not Found) pages-profile.html:754
+Uncaught TypeError: undefined is not a function pages-profile.html:770
+GET http://192.168.0.11:9999/test/flatdream/images/avatars/avatar1.jpg 404 (Not Found) pages-profile.html:235
+GET http://192.168.0.11:9999/test/flatdream/images/avatars/avatar2.jpg 404 (Not Found) pages-profile.html:343
+GET http://192.168.0.11:9999/test/flatdream/images/avatar1_50.jpg 404 (Not Found) pages-profile.html:350
+GET http://192.168.0.11:9999/test/flatdream/images/av.jpg 404 (Not Found) pages-profile.html:384
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img4.jpg 404 (Not Found) pages-profile.html:513
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img6.jpg 404 (Not Found) pages-profile.html:514
+GET http://192.168.0.11:9999/test/flatdream/images/menu-tail-up.png 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.parsley/parsley.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/intro.js/introjs.css 404 (Not Found) pages-tour.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/intro.js/intro.js 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.magnific-popup/dist/magnific-popup.css 404 (Not Found) pages-gallery.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/masonry.js 404 (Not Found) pages-gallery.html:505
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.magnific-popup/dist/jquery.magnific-popup.min.js 404 (Not Found) pages-gallery.html:506
+Uncaught TypeError: undefined is not a function pages-gallery.html:514
+GET http://192.168.0.11:9999/test/flatdream/images/sunset2.jpg 404 (Not Found) pages-gallery.html:243
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img3.jpg 404 (Not Found) pages-gallery.html:257
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img1.jpg 404 (Not Found) pages-gallery.html:271
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img2.jpg 404 (Not Found) pages-gallery.html:285
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img4.jpg 404 (Not Found) pages-gallery.html:299
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img5.jpg 404 (Not Found) pages-gallery.html:313
+GET http://192.168.0.11:9999/test/flatdream/images/gallery/img6.jpg 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css 404 (Not Found) pages-search.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.css 404 (Not Found) pages-search.html:27
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.slider/css/slider.css 404 (Not Found) pages-search.html:28
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/skins/flat/green.css 404 (Not Found) pages-search.html:29
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js 404 (Not Found) pages-search.html:553
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.select2/select2.min.js 404 (Not Found) pages-search.html:554
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap.slider/js/bootstrap-slider.js 404 (Not Found) pages-search.html:555
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.icheck/icheck.min.js 404 (Not Found) pages-search.html:556
+Uncaught TypeError: undefined is not a function pages-search.html:562
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap/dist/fonts/glyphicons-halflings-regular.woff 404 (Not Found) jquery.js:3
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf 404 (Not Found) js/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf:1
+allow right click initializing for http://192.168.0.11:9999/test/flatdream/pages-search.html rightclick.js:1
+GET http://192.168.0.11:9999/test/flatdream/js/bootstrap/dist/fonts/glyphicons-halflings-regular.svg 404 (Not Found) 
+
+
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.timeline/css/component.css 404 (Not Found) pages-timeline.html:26
+GET http://192.168.0.11:9999/test/flatdream/js/jquery.timeline/js/modernizr.custom.js 404 (Not Found) 
+
+
