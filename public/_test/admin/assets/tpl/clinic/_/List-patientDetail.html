@@ -1,0 +1,36 @@
+<% var photo =  JSON.parse(PIC);
+  if ( photo.length > 0 ) { path = photo[photo.length -1].CAP_PATH} else { path = 'defaultPhoto1.jpg'};
+  //var yy = '19';  //!!!alter DB
+  //var jeungNum = '000000';  //!!!alter DB
+  var birth = hM_formatDate(yy.toString() + jumin01.toString(), '-');
+  first = hM_formatDate(FIRSTDATE, '-');
+  last = hM_formatDate(LASTDATE, '-');
+%>
+<div class="_container">
+  <div class="_head">
+  성명: <%=name%> 차트번호: <%=chartNum%> 증번호: <%=jeungNum%>
+  </div>
+  <div class="_body row">
+    <span class="col-xs-5">
+      <img src="/photo/<%=path%>" class="img-responsive">
+    </span>
+    <span class="col-xs-7">
+      <div>
+        생일: <%=birth%>
+      </div>
+      <div>
+        집전화: <%=telNum%>
+      </div>
+      <div>
+        휴대폰:
+      </div>
+      <div>
+        메모: <%=memo%>
+      </div>
+    </span>
+  </div>
+  <div class="_tail xs-12">
+    <div>주소: <%=ADDRESS%></div>
+    <div>최초: <%=first%>, 최종: <%=last%></div>
+  </div>
+</div>

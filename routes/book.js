@@ -19,12 +19,12 @@ var _ = require('underscore');
  */
 exports.viewPage = function(req, res) {
   var p = _getPageSE({"book":req.params.book, "page":req.params.page});
-  console.log('file', p);
+  //console.log('file', p);
 
   fs.readFile(p.file, 'utf8', function(err, data) {
   //fs.readFile('d:/dev/mH2/file/yanghan.txt', 'utf8', function(err, data) {
     if (err) console.log('err!!!');
-    console.log(data);
+    //console.log(data);
     res.send(data.substring(data.search(p.sPage), data.search(p.ePage) + p.zpad + 1));
     res.end();
   });
@@ -50,12 +50,12 @@ exports.replaceOne = function(req, res) {
   //_replaceOne(opts, function(content, pat2) { //@@@@@@@@@@
     fs.writeFile(file, content, function(err) {
       if (err) throw err;
-      console.log('File write completed');
+      //console.log('File write completed');
       //var data = {'o':pat, 'r':rep, 'e':isRegex, 'b':book};
       var data = {'o':pat, 'r':rep, 'e':isRegex, 'b':book};
       //db에 저장
       mH_utils.mgCreateRs({"col":"bookEdit", "body":data}, function(err, rs){
-        console.log('insert success');
+        //console.log('insert success');
         res.send(rs);
       });
     });
@@ -69,7 +69,7 @@ exports.replaceAll = function(req, res) {
   var book = req.params.book;
   var file = BOOKDIR + book + '.txt';
 
-  console.log('file', file);
+  //console.log('file', file);
 
   fs.readFile(file, {encoding: 'utf-8'}, function(err, data) {
     //var content = data;
@@ -78,17 +78,17 @@ exports.replaceAll = function(req, res) {
         //db.bookEdit.find().sort({_id:1})
         var filter = {$query:{}, $orderby:{_id:1}}; //_id 오름차순으로...@@@@
         mH_utils.mgReadAllRs({"col":"bookEdit", "filter":filter}, function(err, rs) {
-          console.log('bookEdit rs', rs);
+          //console.log('bookEdit rs', rs);
           callback(err, rs);
         });
       },
 
       function(rs, callback) {
-        console.log('rs', rs);
+        //console.log('rs', rs);
         async.each(rs, function(r, cb) {
           pat = r.o;
           //정규식일 경우 구분할 필요는?
-          console.log('pat1', pat);
+          //console.log('pat1', pat);
 /*
           if (!r.e) {
             pat = pat.replace("\\", "\\\\");
@@ -96,7 +96,7 @@ exports.replaceAll = function(req, res) {
 */
           //pat = new RegExp(pat, 'g');
           pat = _setPattern(pat, r.o)
-          console.log('pat2', pat);
+          //console.log('pat2', pat);
           data = data.replace(pat, r.r);
           cb();
         }, function(err) {
@@ -111,7 +111,7 @@ exports.replaceAll = function(req, res) {
       //console.log(results);
       fs.writeFile(file, data, function(err) {
         if(err) throw err;
-        console.log('file edit success');
+        //console.log('file edit success');
         res.end();
       });
       //res.send(results);
@@ -121,7 +121,7 @@ exports.replaceAll = function(req, res) {
 
 
 exports.savePage = function(req, res) {
-  console.log('savePage', req.body.tPage);
+  //console.log('savePage', req.body.tPage);
 
   var p = _getPageSE({"book":req.params.book, "page":req.params.page});
 
@@ -133,7 +133,7 @@ exports.savePage = function(req, res) {
 
     fs.writeFile(p.file, prevPages + req.body.tPage + nextPages, function(err) {
       if(err) throw err;
-      console.log('File write completed');
+      //console.log('File write completed');
       res.end();
     });
 
@@ -192,13 +192,13 @@ function _setPattern(pat, isRegex) {
       sChar = new RegExp(arrChar[i], 'g');
       //pat = pat.replace(sChar, '\\' + arrChar[i]);
       pat = pat.replace(sChar, arrChar[i]);
-      console.log('sChar, sRep', sChar, '\\' + arrChar[i]);
+      //console.log('sChar, sRep', sChar, '\\' + arrChar[i]);
       //console.log('sChar, sRep', sChar, '\\' + arrChar[i].substring(1, arrChar[i].length));
     }
     //pat = pat.replace(/(\^)/g, '\\$1');
-    console.log('pat', pat);
+    //console.log('pat', pat);
   } else {
-    console.log('pattern', pat);
+    //console.log('pattern', pat);
   }
 */
   return new RegExp(pat, 'g');

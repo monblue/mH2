@@ -1,0 +1,37 @@
+<!-- for  -->
+<!-- wrap:  -->
+<%
+  var jinRec = '<초진>[증상]:';
+%>
+<div id="chartRc_Rc">
+<ul class="nav nav-pills nav-stacked col-xs-2">
+  <li class="active" id="js-showOssc"><a href="#">진료기록</a></li>
+  <li id="js-showJinmemo"><a href="#">신상기록</a></li>
+  <li id="js-showRemark"><a href="#">특이사항</a></li>
+</ul>
+<span class="" id="Ossc">
+  <div>
+    <button type="button" class="js-delStamp btn-small btn-info">날짜제거</button>
+	  <button type="button" class="btn-small btn-info">상용구</button>
+  </div>
+	<textarea id="OSSC_PF" class="col-xs-10" style="height:120px;"><%=OSSC_PF%></textarea>
+  <!--<textarea id="OSSC_PF" class="col-xs-10" style="height:120px;"><%=jinRec%></textarea>-->
+</span>
+<span class="hide" id="Jinmemo">
+	<div>
+    <button type="button" class="js-addStamp btn-small btn-info">오늘날짜</button>
+	  <button type="button" class="btn-small btn-info">상용구</button>
+    </span></span>
+  </div>
+	<textarea id="newJin" class="col-xs-10" style="height:40px;"></textarea>
+	<textarea id="JINMEMO_MEMO" class="col-xs-10" style="height:90px;"><%=JINMEMO_MEMO%></textarea>
+</span>
+<span class="hide" id="Remark">
+  <div>
+	  <button type="button" class="js-delArea btn-small btn-info">비우기</button>
+    <button type="button" class="js-addStamp btn-small btn-info">오늘날짜</button>
+    <button type="button" class="btn-small btn-info">상용구</button>
+  </div>
+	<textarea id="REMK_REMARK" class="col-xs-10" style="height:120px;"><%=REMK_REMARK%></textarea>
+</span>
+</div>

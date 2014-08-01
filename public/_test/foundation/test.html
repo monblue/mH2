@@ -1,0 +1,349 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <!--<script src="js/vendor/modernizr.js"></script>-->
+    <style>
+ul.off-canvas-list li a{background-color:#333;border-bottom:medium none;border-top:1px solid #262626}
+ul.off-canvas-list li a:hover{background-color:#0D90B3}
+ul.off-canvas-list li .links a{border-top:medium none!important;font-size:.9em;margin-top:-2em;line-height:2.2em}
+ul.off-canvas-list li a.topics{background-image:url(../images/plus.png);background-position:right center;background-repeat:no-repeat}
+.accordion .content.active{background-color:#0D90B3;display:block}
+.accordion dd.active a{background-color:#0D90B3}
+
+
+.accordion,
+.accordion ul,
+.accordion li,
+.accordion a,
+.accordion span {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.accordion li {
+    list-style: none;
+}
+
+.accordion li > a {
+    display: block;
+    position: relative;
+    min-width: 110px;
+    padding: 0 10px 0 40px;
+
+    color: #fdfdfd;
+    font: bold 12px/32px Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(0,0,0, .35);
+
+    background: #6c6e74;
+    background: -moz-linear-gradient(top,  #6c6e74 0%, #4b4d51 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6c6e74), color-stop(100%,#4b4d51));
+    background: -webkit-linear-gradient(top,  #6c6e74 0%,#4b4d51 100%);
+    background: -o-linear-gradient(top,  #6c6e74 0%,#4b4d51 100%);
+    background: -ms-linear-gradient(top,  #6c6e74 0%,#4b4d51 100%);
+    background: linear-gradient(top,  #6c6e74 0%,#4b4d51 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+}
+
+.accordion li > a span {
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    padding: 0 10px;
+    margin-right: 10px;
+
+    font: normal bold 12px/18px Arial, sans-serif;
+    background: #404247;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
+    -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0, .2), 1px 1px 1px rgba(255,255,255, .1);
+}
+
+.accordion > li > a:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin: 4px 8px;
+
+    background-repeat: no-repeat;
+    background-image: url(../img/icons.png);
+    background-position: 0px 0px;
+}
+
+.accordion li.files > a:before { background-position: 0px 0px; }
+.accordion li.files:hover > a:before,
+.accordion li.files:target > a:before { background-position: 0px -24px; }
+
+.accordion li.mail > a:before { background-position: -24px 0px; }
+.accordion li.mail:hover > a:before,
+.accordion li.mail:target > a:before { background-position: -24px -24px; }
+
+.accordion li.cloud > a:before { background-position: -48px 0px; }
+.accordion li.cloud:hover > a:before,
+.accordion li.cloud:target > a:before { background-position: -48px -24px; }
+
+.accordion li.sign > a:before { background-position: -72px 0px; }
+.accordion li.sign:hover > a:before,
+.accordion li.sign:target > a:before { background-position: -72px -24px; }
+
+.sub-menu li a {
+    color: #797979;
+    text-shadow: 1px 1px 0px rgba(255,255,255, .2);
+
+    background: #e5e5e5;
+    border-bottom: 1px solid #c9c9c9;
+
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+    -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255, .1), 0px 1px 0px 0px rgba(0,0,0, .1);
+}
+
+.sub-menu li:last-child a { border: none; }
+
+.sub-menu li > a span {
+    color: #797979;
+    text-shadow: 1px 1px 0px rgba(255,255,255, .2);
+    background: transparent;
+    border: 1px solid #c9c9c9;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.sub-menu em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 14px;
+    color: #a6a6a6;
+    font: normal 10px/32px Arial, sans-serif;
+}
+
+
+.accordion > li:hover > a,
+.accordion > li:target > a {
+    color: #3e5706;
+    text-shadow: 1px 1px 1px rgba(255,255,255, .2);
+
+    /*background: url(../img/active.png) repeat-x;*/
+    background: #a5cd4e;
+    background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+    background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+    background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+    background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+    background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
+}
+
+.accordion > li:hover > a span,
+.accordion > li:target > a span {
+    color: #fdfdfd;
+    text-shadow: 0px 1px 0px rgba(0,0,0, .35);
+    background: #3e5706;
+}
+
+.sub-menu li:hover a { background: #efefef; }
+
+
+.accordion li > .sub-menu {
+    height: 0;
+    overflow: hidden;
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.accordion li:target > .sub-menu {
+    height: 98px;
+}
+    </style>
+  </head>
+  <body>
+<div class="off-canvas-wrap docs-wrap" data-offcanvas="">
+  <div class="inner-wrap">
+    <!--<nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+      </section>
+
+      <section class="right tab-bar-section">
+        <h1 class="title">Foundation</h1>
+      </section>
+
+
+    </nav>-->
+
+<nav class="top-bar" data-topbar>
+  <!-- Title -->
+  <ul class="title-area">
+    <!--<li>
+    <a class="left-off-canvas-toggle menu-icon"><span>LS</span></a>
+    </li>
+    <li class="name left-off-canvas-toggle menu-icon"><h1><a href="#">Sexy Top Bar</a></h1></li>
+    <li class="name left-off-canvas-toggle menu-icon"><h1><a href="#">Sexy Top Bar</a></h1></li>-->
+    <!-- Mobile Menu Toggle
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>-->
+  </ul>
+
+  <!-- Top Bar Section -->
+
+<section class="top-bar-section">
+
+    <!-- Top Bar Left Nav Elements -->
+    <ul class="left">
+
+      <!-- Search | has-form wrapper -->
+      <li class="left-off-canvas-toggle menu-icon"><a href="#">Menu</a></li>
+      <li class="has-form">
+        <div class="row collapse">
+          <div class="large-8 small-9 columns">
+            <input type="text" placeholder="Find Stuff">
+          </div>
+          <div class="large-4 small-3 columns">
+            <a href="#" class="alert button expand">Search</a>
+          </div>
+        </div>
+      </li>
+      <li class="has-form">
+        <a class="button">Test</a>
+      </li>
+    </ul>
+
+    <!-- Top Bar Right Nav Elements -->
+    <ul class="right">
+      <!-- Divider -->
+      <li class="divider"></li>
+
+      <!-- Dropdown -->
+      <li class="has-dropdown not-click"><a href="http://zurb.com">Item 1</a>
+        <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+          <li><label>Level One</label></li>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sub-item 3</a></li>
+          <li class="has-dropdown not-click"><a href="#">Sub-item 4</a>
+
+            <!-- Nested Dropdown -->
+            <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+              <li><label>Level Two</label></li>
+              <li><a href="#">Sub-item 2</a></li>
+              <li><a href="#">Sub-item 3</a></li>
+              <li><a href="#">Sub-item 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sub-item 5</a></li>
+        </ul>
+      </li>
+
+      <li class="divider"></li>
+
+      <!-- Anchor -->
+      <li><a href="#">Generic Button</a></li>
+      <li class="divider"></li>
+
+      <!-- Button -->
+      <li class="has-form show-for-large-up">
+        <a href="http://foundation.zurb.com/docs" class="button">Get Lucky</a>
+      </li>
+    </ul>
+  </section></nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list accordion">
+        <li><label>Foundation</label></li>
+<li id="one" class="files"><a href="#one">My Files<span>495</span></a>
+
+    <ul class="sub-menu">
+
+        <li><a href="#"><em>01</em>Dropbox<span>42</span></a></li>
+
+        <li><a href="#"><em>02</em>Skydrive<span>87</span></a></li>
+
+        <li><a href="#"><em>03</em>FTP Server<span>366</span></a></li>
+
+    </ul>
+
+</li>
+
+    <li id="two" class="mail"><a href="#two">Mail<span>26</span></a>
+    <ul class="sub-menu">
+
+        <li><a href="#"><em>01</em>Dropbox<span>42</span></a></li>
+
+        <li><a href="#"><em>02</em>Skydrive<span>87</span></a></li>
+
+        <li><a href="#"><em>03</em>FTP Server<span>366</span></a></li>
+
+    </ul>
+    </li>
+    <li id="three" class="cloud"><a href="#three">Cloud<span>58</span></a>
+    <ul class="sub-menu">
+
+        <li><a href="#"><em>01</em>Dropbox<span>42</span></a></li>
+
+        <li><a href="#"><em>02</em>Skydrive<span>87</span></a></li>
+
+        <li><a href="#"><em>03</em>FTP Server<span>366</span></a></li>
+
+    </ul>
+    </li>
+    <li id="four" class="sign"><a href="#four">Sign Out</a></li>
+
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <div class="row">
+        <div class="large-12 columns">
+          <br>
+          <h4>The Psychohistorians</h4>
+          <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
+
+          <p>Using psychohistory, Seldon has discovered the declining nature of the Empire, angering the aristocratic members of the Committee of Public Safety, the de facto rulers of the Empire. The Committee considers Seldon's views and statements treasonous, and he is arrested along with young mathematician Gaal Dornick, who has arrived on Trantor to meet Seldon. Seldon is tried by the Committee and defends his beliefs, explaining his theories and predictions, including his belief that the Empire will collapse in 500 years and enter a 30,000-year dark age, to the Committee's members. </p>
+
+        </div>
+      </div>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+        $(document).foundation({
+          offcanvas : {
+            open_method: 'move', // Sets method in which offcanvas opens, can also be 'overlap'
+            close_on_click : false
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<% var options = {"LAST":LAST, "LAST2":LAST2, "JTIME":JTIME, "SEX":SEX, "AGE":AGE, "ORDER1":ORDER1, "JEJUCODE":JEJUCODE, "PIC":PIC, "CHARTED":JSON.stringify(CHARTED)}; //@@@JSON.stringify(CHARTED)
+  var out = mH_getListUI(options);
+  //console.log('out.visCHARTED, out.txtCHARTED', JSON.stringify(CHARTED), out.visCHARTED, out.txtCHARTED);
+%>
+  <div class="js-moveState pull-left line-full alert-success">
+    <%=BNUM%>
+  </div>
+  <span class="pull-left js-takePhoto hidden-xs"><img src="/photo/thumb/<%=out.txtPIC%>" class="_img-thumbnail" /></span>
+  <!--<div class="pull-right line-btn hidden-xs">-->
+  <div class="pull-right line-btn">
+  <small class="badge badge-danger hidden-xs" title="<%=ORDER1%>"><%=out.txtORDER1%></small>
+  <span class="hidden-xs"><%=BTIME%></span>
+  <span>
+          <select class="timerItem">
+          <option value="1" mH-val="10">상담</option>
+          <option value="2" mH-val="20" selected>핫팩</option>
+          <option value="3" mH-val="10">텐스</option>
+          <option value="4" mH-val="12">유침</option>
+          <option value="5" mH-val="12">전침</option>
+          <option value="6" mH-val="03">부항</option>
+          <option value="7" mH-val="10">기타</option>
+          </select>
+          <select class="timerIntv">
+          <option value="01">01</option>
+          <option value="03">03</option>
+          <option value="05">05</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="15">15</option>
+          <option value="20" selected>20</option>
+          <option value="00">00</option>
+          </select>
+  </span>
+  <span id='timer_<%=BNUM%>' class="txTimer hide" style="color:#f00;font-weight:bold;">
+      20:00
+  </span>
+  <button class="js-showChart hidden-xs">C</button>
+  <button id="icon_<%=BNUM%>" class="timerBtn btn-small btn-info glyphicon glyphicon-play"></button>
+  <button class="js-playBell hidden">B</button>
+  </div>
+  <h4><a href="#" class="js-showDetail"><b><%=NAME%></b>(<%=out.txtAGE%>/<%=out.txtSEX%>) </a>
+  <br />
+  <small class="js-showOrder badge <%=out.bdgORDER1%>" title="<%=out.txtORDER1%>">지</small>
+  <!--<small class="js-preSunab badge badge-danger" data-toggle="tooltip" data-placement="right" title="">수</small>
+  <small class="badge <%=out.bdgJEJU%> hidden-xs hide" title="<%=JEJUCODE%>"><%=out.txtJEJU%></small>
+  <a href="#" class="btn btn-lg btn-danger" data-toggle="popover" title="" data-content="And here's some amazing content. It's very engaging. right?" role="button" data-original-title="A Title">수</a>-->
+  <small href="#" class="badge alert-danger <%=out.visCHARTED%>" data-toggle="popover" title="" data-content="<%=out.txtCHARTED%>" data-original-title="수납메모">수</small>
+  <!--<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">수</button>-->
+  </h4>
+  <div class="clearfix"></div>
+  <audio id="audio-player<%=BNUM%>" name="audio-player" src="../_assets/audio/01.mp3"></audio>

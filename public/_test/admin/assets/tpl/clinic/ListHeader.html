@@ -1,0 +1,51 @@
+<ul class="nav nav-pills">
+<li class="active">
+  <a href="#" class="js-showList" data-toggle="tab" mH-state="대기">대기<span class="stateNum badge"></span></a>
+</li>
+<li>
+  <a href="#" class="js-showList" data-toggle="tab" mH-state="치료">치료<span class="stateNum badge"></span></a>
+</li>
+<!--
+<li>
+  <a href="#" class="js-showList" data-toggle="tab" mH-state="수납">수납<span class="badge"></span></a>
+</li>
+-->
+<li>
+  <a href="#" class="js-showList" data-toggle="tab" mH-state="완료">완료<span class="stateNum badge"></span></a>
+</li>
+<li class="dropdown pull-right">
+  <button class="btn btn-warning dropdown-toggle glyphicon glyphicon-search" data-toggle="dropdown"></button>
+  <ul class="dropdown-menu">
+    <li>
+    <input type="text" id="np-searchOuter" class="form-control" placeholder="접수 환자 검색">
+    <button type="submit" id="js-searchOuter" class="btn btn-default hide">Submit</button>
+    </li>
+    <li>
+    <input type="text" id="np-searchInner" class="form-control" placeholder="내원 환자 검색">
+    <button type="submit" id="js-searchInner" class="btn btn-default hide">Submit</button>
+    </li>
+    <li>
+    <label>정렬</label>
+    <select id="js-sortList">
+      <option value="NAME">이름</option>
+      <option value="AGE">나이</option>
+      <option value="JTIME">접수</option>
+      <option value="LAST">내원</option>
+      <option value="BTIME">입실</option>
+      <option value="BNUM">베드</option>
+      <option value="BONBU">본부금</option>
+      <option value="TOTAL">진료비</option>
+      <option value="BIBO">비보험</option>
+    </select>
+    <label>오름</label>
+    <input type="checkbox" id="np-isAsc"/>
+    </li>
+  </ul>
+</li>
+<li class="pull-right hide">
+  <button class="btn btn-warning glyphicon glyphicon-eye-open"></button>
+</li>
+<li class="pull-right">
+  <button class="btn btn-warning glyphicon glyphicon-refresh"></button>
+</li>
+</ul>

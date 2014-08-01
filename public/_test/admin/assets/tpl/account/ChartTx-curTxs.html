@@ -1,0 +1,40 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>코드</th>
+      <th>치료 항목</th>
+      <th>단가</th>
+      <th>가산</th>
+      <th>금액</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% var total = 0;
+  _.each(items, function(item) {
+    var OPSC_AMT = item.OPSC_AMT || 1.0;  var OPSC_DAY = item.OPSC_DAY || 1;
+    var amt = (OPSC_AMT == 1.0) ? '' : '[' + OPSC_AMT + ']';
+    var day = (OPSC_DAY == 1) ? '' : '(' + OPSC_DAY + ')';
+    var fee = Math.round(parseInt(item.price)*parseFloat(item.gasan)*parseFloat(OPSC_AMT)*parseInt(OPSC_DAY));
+    total += fee; %>
+    <tr>
+    <td><%= item.OPSC_MOMM_ID %>|<%= item.OPSC_BIGO5 %>|<%= item.OPSC_BIGO2 %>|<%= item.OPSC_BLOD %></td>
+    <td><%= item.name %><%= amt %><%= day %></td>
+    <td><%= item.price %></td>
+    <td><%= item.gasan %></td>
+    <td class="fee"><%= fee %></td>
+    </tr>
+  <% }); 
+    total = Math.floor(total/10)*10;
+  %>
+  
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>합계</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th id="total"><%= total %></th>
+    </tr>
+  </tfoot>
+</table>

@@ -1,0 +1,12 @@
+<style>
+  li.search-Ixs:hover {background-color: rgba(255, 0, 0, 0.3);};
+</style>
+<div id="selAcu" class="dropdown-menu" style="width:300px">
+  <div class="mH-dropdown-close">닫기</div>
+  <span style="display:inline-block;word-wrap:break-word;">
+  <% _.each(items, function(item){ %>
+    <input type="checkbox" id="ac_<%= item.code %>" mH-name="<%= item.name %>" mH-code="<%= item.code %>">
+    <label for="ac_<%= item.code %>" class="plain" ><%= item.name %>(<%= item.code %>)</label>
+  <% }) %>
+  </span>
+</div>

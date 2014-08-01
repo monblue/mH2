@@ -1,0 +1,24 @@
+<ul class="patient-list">
+<% _.each(items, function(item){ %>
+<% var options = {"LAST":item.LAST, "LAST2":item.LAST2, "JTIME":item.JTIME, "SEX":item.SEX, "AGE":item.AGE, "ORDER1":item.ORDER1, "JEJUCODE":item.JEJUCODE, "PIC":item.PIC};
+  var out = mH_getListUI(options);
+  console.log('options, out', options, out);
+%>
+<li class="patient-list-item">
+  <a href="#" class="pull-left js-takePhoto"><img src="/photo/thumb/<%=out.txtPIC%>" class="_img-thumbnail" /></a>
+  <div class="pull-right line-btn">
+    <small class="badge badge-danger" title="<%=item.ORDER1%>"><%=out.txtORDER1%></small>
+    <span><%=out.txtJTIME%></span>
+    <span><button><%=item.KSTATE%></button></span>
+  </div>
+  <div class="pull-right line-txt">
+  </div>
+  <h4>
+    <a href="#" class="js-showDetail"><b><%=item.NAME%></b>(<%=out.txtAGE%>/<%=out.txtSEX%>) </a>
+    <small class="badge <%=out.bdgLAST%>" title="<%=item.LAST%>"><%=out.txtLAST%></small>
+    <small class="badge <%=out.bdgJEJU%>" title="<%=item.JEJUCODE%>"><%=out.txtJEJU%></small>
+  </h4>
+  <div class="clearfix"></div>
+</li>
+<% }) %>
+</ul>

@@ -1,0 +1,25 @@
+<ul class="patient-list">
+<% _.each(items, function(item){ %>
+<% var options = {"SEX":item.SEX, "AGE":item.AGE, "JEJUCODE":item.JEJUCODE, "PIC":item.PIC};
+  var out = mH_getListUI(options);
+  item.LASTDATE = hM_formatDate(item.LASTDATE, '-');
+  //console.log('options, out', options, out);
+%>
+<li class="patient-list-item">
+  <a href="#" class="pull-left js-takePhoto"><img src="/photo/thumb/<%=out.txtPIC%>" class="_img-thumbnail" /></a>
+  <div class="pull-right line-btn">
+    <span><button id="<%=item.CHARTID%>" class="js-addPatient">접수</button></span>
+  </div>
+  <div class="pull-right line-txt">
+  </div>
+  <h4>
+    <a href="#" class="js-showDetail"><b><%=item.NAME%></b>(<%=out.txtAGE%>/<%=out.txtSEX%>) </a>
+    <small title="<%=item.TEL%>"><%=item.TEL%></small>
+    <br />
+    <small title="<%=item.TEL%>"><%=item.LASTDATE%></small>
+    <small title="<%=item.TEL%>"><%=item.ADDRESS%></small>
+  </h4>
+  <div class="clearfix"></div>
+</li>
+<% }) %>
+</ul>

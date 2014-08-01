@@ -1,0 +1,15 @@
+<!-- for ChartITBodyView > article-tx -->
+<!-- wrap:  tag: article, id: article-tx -->
+<!-- !!!UI type에 따라 분기시킴 --> 
+<!-- group=2[조제료] 이면 보이지 말도록 -->
+<%if(data.group != '2') {%>
+<span class="tx_group" data-group="<%=data.group%>" style="width:<%=data.width%>">
+  <label><%=data.name%></label>
+  <select class="OPSC_MOMM_ID">
+  <option value="">---</option>
+  <% _.each(data.txitems, function(item){ %>
+    <option value="<%= item.code %>"><%= item.name %></option>
+  <% }) %>
+  </select>
+</span>
+<% } %>

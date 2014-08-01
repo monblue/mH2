@@ -1,0 +1,10 @@
+<!-- for list modal assignBed -->
+<!-- wrap: tagName: div, class: modal-body -->
+<div>
+  치료베드 설정[<span class="NAME"></span>]
+  <div id="moveState-bed-buttons">
+   <% _.each(items, function(item){ %>
+    <button id="bed_<%=item%>" type="button" class="btn btn-warning js-saveBed"><%=item%></button>
+  <% }) %>
+  </div>
+</div>

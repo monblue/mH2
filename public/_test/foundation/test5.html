@@ -1,0 +1,288 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <!--<script src="js/vendor/modernizr.js"></script>-->
+    <style>
+
+/*custom font for text*/
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+/*CSS file for fontawesome - an iconfont we will be using. This CSS file imported contains the font-face declaration. More info: http://fortawesome.github.io/Font-Awesome/ */
+@import url(http://thecodeplayer.com/uploads/fonts/fontawesome/css/font-awesome.min.css);
+
+ul.off-canvas-list li a{background-color:#333;border-bottom:medium none;border-top:1px solid #262626}
+ul.off-canvas-list li a:hover{background-color:#0D90B3}
+ul.off-canvas-list li .links a{border-top:medium none!important;font-size:.9em;margin-top:-2em;line-height:2.2em}
+ul.off-canvas-list li a.topics{background-image:url(../images/plus.png);background-position:right center;background-repeat:no-repeat}
+.accordion .content.active{background-color:#0D90B3;display:block}
+.accordion dd.active a{background-color:#0D90B3}
+
+
+
+.container {
+padding: 0;
+margin:0px 0 0px -40px;
+}
+
+#accordian {
+	background: #004050;
+	_width: 250px;
+	_margin: 100px auto 0 auto;
+_margin-left: -20px;  /*** @@@@@@@@ ***/
+_margin-bottom: -20px;
+padding: 0;
+	color: white;
+	/*Some cool shadow and glow effect*/
+	box-shadow:
+		0 5px 15px 1px rgba(0, 0, 0, 0.6),
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+/*heading styles*/
+#accordian lv1 {
+display: block;
+font-weight: bold;
+margin: 0;
+padding: 0;
+width:100%;
+	font-size: 12px;
+	line-height: 34px;
+	padding: 0 10px;
+	cursor: pointer;
+	/*fallback for browsers not supporting gradients*/
+	background: #003040;
+	background: linear-gradient(#003040, #002535);
+}
+/*heading hover effect*/
+#accordian lv1:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#accordian lv1 span {
+	_display: inline-block;
+	font-size: 16px;
+	margin-right: 10px;
+}
+/*list items*/
+#accordian li {
+	list-style-type: none;
+}
+/*links*/
+#accordian ul ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 27px;
+	display: block;
+	_padding: 0 15px;
+	_margin-left: -30px;  /*** @@@@@@@@ ***/
+	padding: 0 15px;
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
+}
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+	background: #003545;
+	border-left: 5px solid lightgreen;
+}
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
+}
+#accordian li.active ul {
+	display: block;
+}
+
+.left-off-canvas-toggle span {
+	font-size: 24px;
+}
+    </style>
+  </head>
+  <body>
+<div class="off-canvas-wrap docs-wrap" data-offcanvas="">
+  <div class="inner-wrap">
+    <!--<nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+      </section>
+
+      <section class="right tab-bar-section">
+        <h1 class="title">Foundation</h1>
+      </section>
+
+
+    </nav>-->
+
+<nav class="top-bar" data-topbar>
+  <!-- Title -->
+  <ul class="title-area">
+    <!--<li>
+    <a class="left-off-canvas-toggle menu-icon"><span>LS</span></a>
+    </li>
+    <li class="name left-off-canvas-toggle menu-icon"><h1><a href="#">Sexy Top Bar</a></h1></li>
+    <li class="name left-off-canvas-toggle menu-icon"><h1><a href="#">Sexy Top Bar</a></h1></li>-->
+    <!-- Mobile Menu Toggle
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>-->
+  </ul>
+
+  <!-- Top Bar Section -->
+
+<section class="top-bar-section">
+
+    <!-- Top Bar Left Nav Elements -->
+    <ul class="left">
+
+      <!-- Search | has-form wrapper -->
+      <li class="left-off-canvas-toggle"><a href="#"><span class="icon-align-justify"></span></a></li>
+      <li class="has-form">
+        <div class="row collapse">
+          <div class="large-8 small-9 columns">
+            <input type="text" placeholder="Find Stuff">
+          </div>
+          <div class="large-4 small-3 columns">
+            <a href="#" class="alert button expand">Search</a>
+          </div>
+        </div>
+      </li>
+      <li class="has-form">
+        <a class="button">Test</a>
+      </li>
+    </ul>
+
+    <!-- Top Bar Right Nav Elements -->
+    <ul class="right">
+      <!-- Divider -->
+      <li class="divider"></li>
+
+      <!-- Dropdown -->
+      <li class="has-dropdown not-click"><a href="http://zurb.com">Item 1</a>
+        <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+          <li><label>Level One</label></li>
+          <li><a href="#">Sub-item 1</a></li>
+          <li><a href="#">Sub-item 2</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Sub-item 3</a></li>
+          <li class="has-dropdown not-click"><a href="#">Sub-item 4</a>
+
+            <!-- Nested Dropdown -->
+            <ul class="dropdown"><li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+              <li><label>Level Two</label></li>
+              <li><a href="#">Sub-item 2</a></li>
+              <li><a href="#">Sub-item 3</a></li>
+              <li><a href="#">Sub-item 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Sub-item 5</a></li>
+        </ul>
+      </li>
+
+      <li class="divider"></li>
+
+      <!-- Anchor -->
+      <li><a href="#">Generic Button</a></li>
+      <li class="divider"></li>
+
+      <!-- Button -->
+      <li class="has-form show-for-large-up">
+        <a href="http://foundation.zurb.com/docs" class="button">Get Lucky</a>
+      </li>
+    </ul>
+  </section></nav>
+
+    <aside class="left-off-canvas-menu" id="accordian">
+      <ul class="off-canvas-list">
+		<li><label>Main Menu</label></li>
+		<li>
+			<lv1><span class="icon-dashboard"></span>Dashboard</lv1>
+			<ul>
+				<li><a href="#">Reports</a></li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">Graphs</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</li>
+		<!-- we will keep this LI open by default -->
+		<li class="active">
+			<lv1><span class="icon-tasks"></span>Tasks</lv1>
+			<ul>
+				<li><a href="#">Today's tasks</a></li>
+				<li><a href="#">Urgent</a></li>
+				<li><a href="#">Overdues</a></li>
+				<li><a href="#">Recurring</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</li>
+		<li>
+			<lv1><span class="icon-calendar"></span>Calendar</lv1>
+			<ul>
+				<li><a href="#">Current Month</a></li>
+				<li><a href="#">Current Week</a></li>
+				<li><a href="#">Previous Month</a></li>
+				<li><a href="#">Previous Week</a></li>
+				<li><a href="#">Next Month</a></li>
+				<li><a href="#">Next Week</a></li>
+				<li><a href="#">Team Calendar</a></li>
+				<li><a href="#">Private Calendar</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</li>
+		<li>
+			<lv1><span class="icon-heart"></span>Favourites</lv1>
+			<ul>
+				<li><a href="#">Global favs</a></li>
+				<li><a href="#">My favs</a></li>
+				<li><a href="#">Team favs</a></li>
+				<li><a href="#" class="js-viewThis" mH-anc="doc.html">Settings</a></li>
+			</ul>
+		</li>
+      </ul>
+    </aside>
+
+    <section class="main-section">
+      <div class="row">
+        <div class="large-12 columns">
+          <br>
+          <h4>The Psychohistorians</h4>
+          <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
+
+          <p>Using psychohistory, Seldon has discovered the declining nature of the Empire, angering the aristocratic members of the Committee of Public Safety, the de facto rulers of the Empire. The Committee considers Seldon's views and statements treasonous, and he is arrested along with young mathematician Gaal Dornick, who has arrived on Trantor to meet Seldon. Seldon is tried by the Committee and defends his beliefs, explaining his theories and predictions, including his belief that the Empire will collapse in 500 years and enter a 30,000-year dark age, to the Committee's members. </p>
+          <p>Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.</p>
+
+          <p>Using psychohistory, Seldon has discovered the declining nature of the Empire, angering the aristocratic members of the Committee of Public Safety, the de facto rulers of the Empire. The Committee considers Seldon's views and statements treasonous, and he is arrested along with young mathematician Gaal Dornick, who has arrived on Trantor to meet Seldon. Seldon is tried by the Committee and defends his beliefs, explaining his theories and predictions, including his belief that the Empire will collapse in 500 years and enter a 30,000-year dark age, to the Committee's members. </p>
+
+        </div>
+      </div>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+        $(document).foundation({
+          offcanvas : {
+            open_method: 'move', // Sets method in which offcanvas opens, can also be 'overlap'
+            close_on_click : false
+          }
+        });
+
+  $("#accordian lv1").click(function(){
+		//slide up all the link lists
+		$("#accordian ul ul").slideUp();
+		//slide down the link list below the lv1 clicked - only if its closed
+		if(!$(this).next().is(":visible"))
+		{
+			$(this).next().slideDown();
+		}
+	})
+      });
+
+    </script>
+
+  </body>
+</html>

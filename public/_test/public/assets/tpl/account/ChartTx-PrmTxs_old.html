@@ -1,0 +1,18 @@
+<% _.each(data, function(item){ %>
+  <div class="row">
+    <span class="col-md-3"><%= item.title %></span>
+    <span class="col-md-7 prmTxItems">
+    <% _.each(item.txs, function(tx){ %>
+      <div>
+        <span class="prmTxKey col-md-2"><%= tx.gname %></span>
+        <span class="prmTxName col-md-7"><%= tx.name %></span>
+        <span class="prmTxId col-md-3"><%= tx.OPSC_MOMM_ID %></span>
+        <span class="prmTxKey hide"><%= tx.price %></span>
+      </div>
+    <% }) %>
+    </span>
+    <span class="col-md-2">
+      <button class="js-apply btn-small btn-info">적용</button>
+    </span>
+  </div>
+<% }) %>

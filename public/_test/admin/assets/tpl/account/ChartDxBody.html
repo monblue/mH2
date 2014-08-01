@@ -1,0 +1,53 @@
+<!-- for  -->
+<!-- wrap:  -->
+<div id="chartDx_Dx">
+<ul class="nav nav-pills nav-stacked col-xs-1">
+  <li id="js-showDx1"><a>망진</a></li>
+  <li id="js-showDx2"><a>문진</a></li>
+  <li id="js-showDx3"><a>문진</a></li>
+  <li id="js-showDx4" class="active"><a>절진</a></li>
+</ul>
+<div id="DxView" class="hide">
+<span class="" id="Dx1">
+  망면
+</span>
+<span class="" id="Dx2">
+  망설
+</span>
+<span class="" id="Dx3">
+  망태
+</span>
+</div>
+<div id="Dxhand">
+<div class="" id="Dx1">
+  <span class="label label-danger">기초</span>
+  <span>
+    <select>
+      <option>01:00</option>
+      <option>00:30</option>
+      <option>00:10</option>
+    </select>
+    <button id="handTimer" class="timerBtn btn-small btn-info glyphicon glyphicon-play"></button>
+    <input type="text" style="width:40px;">
+  </span>
+  <span>
+    <label>부침</label>
+    <input type="range" name="points" value="0" min="-5" max="5" style="width:100px;display:inline-block;" onchange="rangevalue1.value=value" />
+    <output id="rangevalue1" style="width:20px;display:inline-block;">0</output>
+  </span>
+  <span>
+    <label>강약</label>
+    <!--<meter value="0" min="-50"  max="50">100%</meter>-->
+    <input type="range" name="points" value="0" min="-5" max="5" style="width:100px;display:inline-block;" onchange="rangevalue2.value=value" />
+    <output id="rangevalue2" style="width:20px;display:inline-block;">0</output>
+  </span>
+  </span>
+</div>
+<hr />
+<div class="" id="Dx1">
+  <span class="label label-danger">세부</span>
+  <span>맥상</span>
+  <input type="color" name="favcolor">
+</div>
+</div>
+</div>

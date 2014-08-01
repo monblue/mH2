@@ -1,0 +1,37 @@
+<!-- wrap: tagName: tr , td: 6개-->
+<% if (LAST == 0) {var badge = 'alert-default'; LAST = LAST2;} else {var badge = 'alert-warning';}
+  if (SEX == '0') { SEX = '남'; } else { SEX = '여'; };
+  //BONBU = hM_formatNum(BONBU);
+  //TOTAL = hM_formatNum(TOTAL);
+  JTIME = JTIME.substr(0, 2) + ':' + JTIME.substr(2, 2);
+  jejuBadge = (JEJU = hM_getJeju(JEJUCODE)) ? 'badge alert-info' : '';
+  TOTAL = hM_alertTotal(TOTAL, BONBU);
+  BONBU = hM_alertBonbu(AGE, JEJU, BONBU);
+  if (AGE > 64) AGE = '<span style="color:#f00">' + AGE + '</span>';
+  var photo = 'defaultPhoto.jpg'; //default
+  if (PIC !== '[]') {
+    photo = JSON.parse(PIC)[0]['CAP_PATH'];
+  }
+%>
+<td class="js-takePhoto">
+<!-- !!!'/photo/thumb/'' 를 상수로 불러오기 -->
+  <img src="/photo/thumb/<%=photo%>" />
+</td>
+<td class="js-showDetail">
+  <b><%=NAME%></b>(<%=AGE%>/<%=SEX%>)
+</td>
+<td class="hide">
+  <span class="badge <%=badge%>"><%=LAST%></span>
+</td>
+<td>
+  <span class="<%=jejuBadge%>" title="<%=JEJUCODE%>"><%=JEJU%></span>
+</td>
+<td>
+  <%=BONBU%>
+</td>
+<td class="hide">
+  <%=TOTAL%>
+</td>
+<td class="hide">
+  <%=JTIME%>
+</td>

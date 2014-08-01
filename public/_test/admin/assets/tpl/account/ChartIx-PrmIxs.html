@@ -1,0 +1,17 @@
+<% _.each(data, function(item){ %>
+  <div class="row">
+    <span class="col-md-3"><%= item.title %></span>
+    <span class="col-md-7 prmIxItems">
+    <% _.each(item.ixs, function(ix){ %>
+      <div>
+        <span class="prmIxName col-md-9"><%= ix.NAME %></span>
+        <span class="prmIxId col-md-3"><%= ix.DISM_ID %></span>
+        <span class="prmIxKey hide"><%= ix.DISM_KEY %></span>
+      </div>
+    <% }) %>
+    </span>
+    <span class="col-md-2">
+      <button class="js-apply btn-small btn-info">적용</button>
+    </span>
+  </div>
+<% }) %>

@@ -1,0 +1,72 @@
+body {
+    background-color: #232323;
+    color: #555;
+    padding: 5px;
+}
+.main {
+    background-color: #008CBA;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+.primary {
+    background-color: #fff;
+    padding: 0 1px 0 0;
+    box-shadow: -4px 0 3px -3px #000 inset;
+}
+.sub-header {
+    height: 200px;
+    background: #F47063;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: -2px 0 3px -3px #000 inset;
+}
+.sub-header h1 {
+    color: #fff;
+    margin: 0;
+    text-shadow: 2px 0 1px #555;
+}
+.sub-header h2 {
+    font-size: 18px;
+    color: #fff;
+    margin:0;
+}
+.content {
+    padding :10px 10px;
+}
+
+@media only screen and (min-width: 640px) {
+
+    .top-bar {
+        border-top-left-radius: 3px;
+        box-shadow: -3px 0 3px -3px #000 inset;
+    }
+
+    .top-bar-section ul {
+        background: none;
+    }
+    .top-bar-section > ul > li:first-child > a{
+        border-top-left-radius: 3px;
+    }
+    .top-bar-section .has-dropdown > a:after {
+        border-color: #555 transparent transparent;
+    }
+
+    .top-bar-section .has-dropdown:hover > a:after {
+        border-color: #eee transparent transparent;
+    }
+    .top-bar-section ul li.active > a {
+        background: #008CBA;
+    }
+
+    .top-bar-section li a:hover:not(.button) {
+        background: #008CBA;
+    }
+
+    .top-bar-section .has-dropdown:hover > a {
+        background: #008CBA;
+    }
+
+    .top-bar-section .divider,.top-bar-section > ul > .divider {
+        border: 1px solid #ccc;
+    }
+}

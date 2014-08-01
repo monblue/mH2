@@ -1,0 +1,25 @@
+<!-- for list modal takePhoto -->
+<!-- wrap: tagName: carousel, id: carousel -->
+  <ol class="carousel-indicators">
+    <!--s: each-->
+    <% _.each(items, function(item, index){ var active = !index ? 'active' : '' %>
+    <li data-target="#myCarousel" data-slide-to="<%= index %>" class="<%= active %>"></li>
+    <% }) %>
+    <!--e: each-->
+  </ol>
+  <div class="carousel-inner">
+  <!--s: each-->
+  <% _.each(items, function(item, index){ var active = !index ? 'active' : '' %>
+    <div class="item <%= active %>">
+    <img src="<%= item.name %>" alt="First slide">
+    <div class="container">
+    <div class="carousel-caption">
+      <p><%= item.caption %></p>
+    </div>
+    </div>
+    </div>
+    <% }) %>
+  <!--e: each-->
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
