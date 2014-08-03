@@ -14,49 +14,49 @@
 { "_id" : { "$oid" : "53ac2c7efb70a24804000bf7" }, "o" : "는 데\\,", "r" : "는데,", "e" : 0, "b" : "text_neuropsychiatry" }
 { "_id" : { "$oid" : "53ac2c8efb70a24804000bf8" }, "o" : " 신 경정신", "r" : " 신경정신", "e" : 0, "b" : "text_neuropsychiatry" }
 { "_id" : { "$oid" : "53ac2c9cfb70a24804000bf9" }, "o" : "응용 할", "r" : "응용할", "e" : 0, "b" : "text_neuropsychiatry" }
-{ "o" : "東 훌寶鑑", "r" : "東醫寶鑑", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca65d87dd85901baf4ee4" } }
-{ "o" : "과 학의 ", "r" : "과학의 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca67487dd85901baf4ee5" } }
-{ "o" : "정신 과 ", "r" : "정신과 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca68087dd85901baf4ee6" } }
-{ "o" : "r 증후편」", "r" : "「증후편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca71b87dd85901baf4ee7" } }
-{ "o" : " r질병편」", "r" : "「질병편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca73e87dd85901baf4ee8" } }
-{ "o" : "r치료편」", "r" : "「치료편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca75287dd85901baf4ee9" } }
-{ "o" : " r 치료편」", "r" : "「치료편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca75f87dd85901baf4eea" } }
-{ "o" : "r증후편」", "r" : "「증후편」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca77487dd85901baf4eeb" } }
-{ "o" : "t季", "r" : "悸", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca7a187dd85901baf4eec" } }
-{ "o" : "征仲", "r" : "怔忡", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca7bc87dd85901baf4eed" } }
-{ "o" : " 蠻證", "r" : " 鬱證", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca81d87dd85901baf4eee" } }
-{ "o" : "肢晕", "r" : "眩暈", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca83387dd85901baf4eef" } }
-{ "o" : " 癌狂", "r" : " 癲狂", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca86487dd85901baf4ef0" } }
-{ "o" : " 癌瘤", "r" : " 癲癎", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca88987dd85901baf4ef1" } }
-{ "o" : " 心 身證", "r" : " 心身證", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca89687dd85901baf4ef2" } }
-{ "o" : "五 臓", "r" : "五臓", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca8a587dd85901baf4ef3" } }
-{ "o" : " 연 구", "r" : " 연구", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca8b987dd85901baf4ef4" } }
-{ "o" : "의 학을", "r" : "의학을", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca8ce87dd85901baf4ef5" } }
-{ "o" : " 에서 ", "r" : "에서 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca8df87dd85901baf4ef6" } }
-{ "o" : "질환 을 ", "r" : "질환을 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca9af87dd85901baf4ef7" } }
-{ "o" : "에 서는 ", "r" : "에서는 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca9bf87dd85901baf4ef8" } }
-{ "o" : "활용 되", "r" : "활용되", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca9d387dd85901baf4ef9" } }
-{ "o" : "의학 의 ", "r" : "의학의 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53aca9e687dd85901baf4efa" } }
-{ "o" : " 7]능한", "r" : " 가능한", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acb80587dd85901baf4efb" } }
-{ "o" : "『東醫資휠", "r" : "『東醫寶鑑』", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acb82287dd85901baf4efc" } }
-{ "o" : "東 醫寶", "r" : "東醫寶", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acb82d87dd85901baf4efd" } }
-{ "o" : "r 內景篇」", "r" : "「內景篇」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acf94587dd85901baf4efe" } }
-{ "o" : " \"", "r" : " “", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acf9ad87dd85901baf4eff" } }
-{ "o" : "內谏", "r" : "內煉", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfabf87dd85901baf4f00" } }
-{ "o" : "\"이라", "r" : "”이라", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfada87dd85901baf4f01" } }
-{ "o" : "疲飮", "r" : "痰飮", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfbec87dd85901baf4f02" } }
-{ "o" : "熱疲", "r" : "熱痰", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfc2387dd85901baf4f03" } }
-{ "o" : "五腺", "r" : "五臟", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfc7287dd85901baf4f04" } }
-{ "o" : "六膽", "r" : "六腑", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfc8b87dd85901baf4f05" } }
-{ "o" : "r 外形篇」", "r" : "「外形篇」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acfcb587dd85901baf4f06" } }
-{ "o" : "肾", "r" : "腎", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53acff1c87dd85901baf4f07" } }
-{ "o" : "篇 j", "r" : "篇」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad00d587dd85901baf4f08" } }
-{ "o" : "r 雜病篇」", "r" : "「雜病篇」", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad00f787dd85901baf4f09" } }
-{ "o" : "가 운데", "r" : "가운데", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad011c87dd85901baf4f0a" } }
-{ "o" : " 둥의 ", "r" : " 등의 ", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad012a87dd85901baf4f0b" } }
-{ "o" : "로 인 하", "r" : "로 인하", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad014c87dd85901baf4f0c" } }
-{ "o" : "飲", "r" : "飮", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad015f87dd85901baf4f0d" } }
-{ "o" : " 攀로", "r" : " 鬱로", "e" : 0, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53ad036987dd85901baf4f0e" } }
+{ "_id" : { "$oid" : "53aca65d87dd85901baf4ee4" }, "o" : "東 훌寶鑑", "r" : "東醫寶鑑", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca67487dd85901baf4ee5" }, "o" : "과 학의 ", "r" : "과학의 ", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca68087dd85901baf4ee6" }, "o" : "정신 과 ", "r" : "정신과 ", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca71b87dd85901baf4ee7" }, "o" : "r 증후편」", "r" : "「증후편」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca73e87dd85901baf4ee8" }, "o" : " r질병편」", "r" : "「질병편」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca75287dd85901baf4ee9" }, "o" : "r치료편」", "r" : "「치료편」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca75f87dd85901baf4eea" }, "o" : " r 치료편」", "r" : "「치료편」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca77487dd85901baf4eeb" }, "o" : "r증후편」", "r" : "「증후편」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca7a187dd85901baf4eec" }, "o" : "t季", "r" : "悸", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca7bc87dd85901baf4eed" }, "o" : "征仲", "r" : "怔忡", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca81d87dd85901baf4eee" }, "o" : " 蠻證", "r" : " 鬱證", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca83387dd85901baf4eef" }, "o" : "肢晕", "r" : "眩暈", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca86487dd85901baf4ef0" }, "o" : " 癌狂", "r" : " 癲狂", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca88987dd85901baf4ef1" }, "o" : " 癌瘤", "r" : " 癲癎", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca89687dd85901baf4ef2" }, "o" : " 心 身證", "r" : " 心身證", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca8a587dd85901baf4ef3" }, "o" : "五 臓", "r" : "五臓", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca8b987dd85901baf4ef4" }, "o" : " 연 구", "r" : " 연구", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca8ce87dd85901baf4ef5" }, "o" : "의 학을", "r" : "의학을", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca8df87dd85901baf4ef6" }, "o" : " 에서 ", "r" : "에서 ", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca9af87dd85901baf4ef7" }, "o" : "질환 을 ", "r" : "질환을 ", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca9bf87dd85901baf4ef8" }, "o" : "에 서는 ", "r" : "에서는 ", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca9d387dd85901baf4ef9" }, "o" : "활용 되", "r" : "활용되", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53aca9e687dd85901baf4efa" }, "o" : "의학 의 ", "r" : "의학의 ", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acb80587dd85901baf4efb" }, "o" : " 7]능한", "r" : " 가능한", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acb82287dd85901baf4efc" }, "o" : "『東醫資휠", "r" : "『東醫寶鑑』", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acb82d87dd85901baf4efd" }, "o" : "東 醫寶", "r" : "東醫寶", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acf94587dd85901baf4efe" }, "o" : "r 內景篇」", "r" : "「內景篇」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acf9ad87dd85901baf4eff" }, "o" : " \"", "r" : " “", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acfabf87dd85901baf4f00" }, "o" : "內谏", "r" : "內煉", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acfada87dd85901baf4f01" }, "o" : "\"이라", "r" : "”이라", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acfbec87dd85901baf4f02" }, "o" : "疲飮", "r" : "痰飮", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acfc2387dd85901baf4f03" }, "o" : "熱疲", "r" : "熱痰", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acfc7287dd85901baf4f04" }, "o" : "五腺", "r" : "五臟", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acfc8b87dd85901baf4f05" }, "o" : "六膽", "r" : "六腑", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acfcb587dd85901baf4f06" }, "o" : "r 外形篇」", "r" : "「外形篇」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53acff1c87dd85901baf4f07" }, "o" : "肾", "r" : "腎", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53ad00d587dd85901baf4f08" }, "o" : "篇 j", "r" : "篇」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53ad00f787dd85901baf4f09" }, "o" : "r 雜病篇」", "r" : "「雜病篇」", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53ad011c87dd85901baf4f0a" }, "o" : "가 운데", "r" : "가운데", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53ad012a87dd85901baf4f0b" }, "o" : " 둥의 ", "r" : " 등의 ", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53ad014c87dd85901baf4f0c" }, "o" : "로 인 하", "r" : "로 인하", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53ad015f87dd85901baf4f0d" }, "o" : "飲", "r" : "飮", "e" : 0, "b" : "text_neuropsychiatry" }
+{ "_id" : { "$oid" : "53ad036987dd85901baf4f0e" }, "o" : " 攀로", "r" : " 鬱로", "e" : 0, "b" : "text_neuropsychiatry" }
 { "_id" : { "$oid" : "53c0f052195d0248189ec624" }, "o" : "에 서 ", "r" : "에 서 ", "e" : 0, "b" : "yanghan" }
 { "_id" : { "$oid" : "53c0f057195d0248189ec625" }, "o" : "에 서 ", "r" : "에서 ", "e" : 0, "b" : "yanghan" }
 { "_id" : { "$oid" : "53c0f06b195d0248189ec626" }, "o" : "에\\n서 ", "r" : "에서 ", "e" : 1, "b" : "yanghan" }
@@ -465,653 +465,837 @@
 { "_id" : { "$oid" : "53c123ad2428674420615598" }, "o" : "흥막염", "r" : "흉막염", "e" : 0, "b" : "yanghan" }
 { "_id" : { "$oid" : "53c123f02428674420615599" }, "o" : "해독 탕", "r" : "해독탕", "e" : 0, "b" : "yanghan" }
 { "_id" : { "$oid" : "53c1241f242867442061559a" }, "o" : "드黃心湯", "r" : "三黃瀉心湯", "e" : 0, "b" : "yanghan" }
-{ "o" : "투여 군", "r" : "투여군", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d750e96062cba01937e099" } }
-{ "o" : "내 과비록", "r" : "내과비록", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d751566062cba01937e09a" } }
-{ "o" : "곰 팡이", "r" : "곰팡이", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d7517d6062cba01937e09b" } }
-{ "o" : "티 스", "r" : "티스", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d751906062cba01937e09c" } }
-{ "o" : "호藥", "r" : "芍藥", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d751bf6062cba01937e09d" } }
-{ "o" : " 사 용한", "r" : " 사용한", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d751d36062cba01937e09e" } }
-{ "o" : "성종 양", "r" : "성종양", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d751e46062cba01937e09f" } }
-{ "o" : "黃S", "r" : "黃芪", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d752046062cba01937e0a0" } }
-{ "o" : "노夢", "r" : "人蔘", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d752276062cba01937e0a1" } }
-{ "o" : "를중심", "r" : "를 중심", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d752316062cba01937e0a2" } }
-{ "o" : "로폭넓", "r" : "로 폭넓", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d7523d6062cba01937e0a3" } }
-{ "o" : "白求", "r" : "白朮", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d752926062cba01937e0a4" } }
-{ "o" : "生墓", "r" : "生薑", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d752a86062cba01937e0a5" } }
-{ "o" : " Ttt 甘", "r" : "朮甘", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d752c16062cba01937e0a6" } }
-{ "o" : "편두 통", "r" : "편두통", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d753196062cba01937e0a7" } }
-{ "o" : "신경 학", "r" : "신경학", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d753276062cba01937e0a8" } }
-{ "o" : "를하", "r" : "를 하", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d753386062cba01937e0a9" } }
-{ "o" : "白 求", "r" : "白朮", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d753636062cba01937e0aa" } }
-{ "o" : "노ᅵ", "r" : "뇌", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d7538f6062cba01937e0ab" } }
-{ "o" : "포인트\\n\\n", "r" : "포인트\\n", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d754076062cba01937e0ac" } }
-{ "o" : " 일 정하", "r" : " 일정하", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8521c267f07b818179f27" } }
-{ "o" : "는의미", "r" : "는 의미", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85249267f07b818179f28" } }
-{ "o" : "이 면 ", "r" : "이면 ", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d854db267f07b818179f29" } }
-{ "o" : "자주사", "r" : "자주 사", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d854e4267f07b818179f2a" } }
-{ "o" : "것같", "r" : "것 같", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85502267f07b818179f2b" } }
-{ "o" : "慧甘", "r" : "薏甘", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85558267f07b818179f2c" } }
-{ "o" : "신 경통", "r" : "신경통", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85567267f07b818179f2d" } }
-{ "o" : " Ttt 湯", "r" : "朮湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d855a3267f07b818179f2e" } }
-{ "o" : "이포함", "r" : "이 포함", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d855b7267f07b818179f2f" } }
-{ "o" : "경 향", "r" : "경향", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d855de267f07b818179f30" } }
-{ "o" : "求甘湯", "r" : "朮甘湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d855f8267f07b818179f31" } }
-{ "o" : "慧졌仁", "r" : "薏苡仁", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85656267f07b818179f32" } }
-{ "o" : "黃 S ", "r" : "黃芪", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d856a5267f07b818179f33" } }
-{ "o" : " 배 출", "r" : " 배출", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d856c9267f07b818179f34" } }
-{ "o" : "越碑", "r" : "越婢", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d856e4267f07b818179f35" } }
-{ "o" : "에적", "r" : "에 적", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85733267f07b818179f36" } }
-{ "o" : "가많", "r" : "가 많", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85772267f07b818179f37" } }
-{ "o" : "酸棄仁", "r" : "酸棗仁", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85800267f07b818179f38" } }
-{ "o" : "胃茶湯", "r" : "胃苓湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85957267f07b818179f39" } }
-{ "o" : "효과 가 ", "r" : "효과가 ", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85969267f07b818179f3a" } }
-{ "o" : "黃芸", "r" : "黃芪", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85999267f07b818179f3b" } }
-{ "o" : " 혈 압", "r" : " 혈압", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85a29267f07b818179f3c" } }
-{ "o" : " Ttt ", "r" : "朮", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85b2b267f07b818179f3d" } }
-{ "o" : "/v夢", "r" : "人蔘", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85b45267f07b818179f3e" } }
-{ "o" : "측墓", "r" : "苓薑", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85b55267f07b818179f3f" } }
-{ "o" : "간것", "r" : "간 것", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85b63267f07b818179f40" } }
-{ "o" : "의증상", "r" : "의 증상", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85b6b267f07b818179f41" } }
-{ "o" : " 적 용", "r" : " 적용", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85b74267f07b818179f42" } }
-{ "o" : "는내", "r" : "는 내", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85be7267f07b818179f43" } }
-{ "o" : "을참고", "r" : "을 참고", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85bee267f07b818179f44" } }
-{ "o" : "로한다", "r" : "로 한다", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85c00267f07b818179f45" } }
-{ "o" : " 증 상", "r" : " 증상", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85c66267f07b818179f46" } }
-{ "o" : "어 린", "r" : "어린", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85caa267f07b818179f47" } }
-{ "o" : " 에게", "r" : "에게", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85cb3267f07b818179f48" } }
-{ "o" : "竹药", "r" : "竹茹", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85d13267f07b818179f49" } }
-{ "o" : "인증상", "r" : "인 증상", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85d38267f07b818179f4a" } }
-{ "o" : "의경우", "r" : "의 경우", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85d44267f07b818179f4b" } }
-{ "o" : "이조건", "r" : "이 조건", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85d86267f07b818179f4c" } }
-{ "o" : "측甘", "r" : "苓甘", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85d9f267f07b818179f4d" } }
-{ "o" : "塞味", "r" : "薑味", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85dab267f07b818179f4e" } }
-{ "o" : "과유사", "r" : "과 유사", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85dc1267f07b818179f4f" } }
-{ "o" : "苓甘藍味", "r" : "苓甘薑味", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85e4c267f07b818179f50" } }
-{ "o" : "에관", "r" : "에 관", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85ed7267f07b818179f51" } }
-{ "o" : "는 가에", "r" : "는가에", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85eef267f07b818179f52" } }
-{ "o" : " 분 석", "r" : " 분석", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85ef8267f07b818179f53" } }
-{ "o" : "이특징", "r" : "이 특징", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85f09267f07b818179f54" } }
-{ "o" : "靑育틀", "r" : "靑龍", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85f1e267f07b818179f55" } }
-{ "o" : "도사용", "r" : "도 사용", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85f2b267f07b818179f56" } }
-{ "o" : "茵陳舊", "r" : "茵蔯蒿", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d85fce267f07b818179f57" } }
-{ "o" : "을목표", "r" : "을 목표", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86000267f07b818179f58" } }
-{ "o" : "것 을", "r" : "것을", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86007267f07b818179f59" } }
-{ "o" : "五華散", "r" : "五苓散", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8601f267f07b818179f5a" } }
-{ "o" : "吳菜！!", "r" : "吳茱萸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d860ad267f07b818179f5b" } }
-{ "o" : "生蓮湯", "r" : "生薑湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d860b9267f07b818179f5c" } }
-{ "o" : "을동반", "r" : "을 동반", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d860e3267f07b818179f5d" } }
-{ "o" : "夜爷", "r" : "茯苓", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8610b267f07b818179f5e" } }
-{ "o" : "茵陳", "r" : "茵蔯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86140267f07b818179f5f" } }
-{ "o" : "한응용", "r" : "한 응용", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86183267f07b818179f60" } }
-{ "o" : "고본다", "r" : "고 본다", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d861b4267f07b818179f61" } }
-{ "o" : "해 야 ", "r" : "해야 ", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d861d4267f07b818179f62" } }
-{ "o" : "柴흡湯", "r" : "柴苓湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8623c267f07b818179f63" } }
-{ "o" : "黃度湯", "r" : "黃芪湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8624d267f07b818179f64" } }
-{ "o" : "한결과", "r" : "한 결과", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8628d267f07b818179f65" } }
-{ "o" : " 고 려", "r" : " 고려", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d862b0267f07b818179f66" } }
-{ "o" : "補賢", "r" : "補腎", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d862e8267f07b818179f67" } }
-{ "o" : "五휴散", "r" : "五苓散", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8631a267f07b818179f68" } }
-{ "o" : "흡桂", "r" : "苓桂", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86384267f07b818179f69" } }
-{ "o" : "水甘 湯", "r" : "朮甘湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8638f267f07b818179f6a" } }
-{ "o" : "계择", "r" : "계悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d863b0267f07b818179f6b" } }
-{ "o" : " 나 타나", "r" : " 나타나", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d863bb267f07b818179f6c" } }
-{ "o" : "加龙湯", "r" : "加朮湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d863c9267f07b818179f6d" } }
-{ "o" : "茶墓朮", "r" : "苓薑朮", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d864a4267f07b818179f6e" } }
-{ "o" : "ᄎ棄", "r" : "大棗", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d864d4267f07b818179f6f" } }
-{ "o" : "배 꼽", "r" : "배꼽", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d864e7267f07b818179f70" } }
-{ "o" : "»上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86557267f07b818179f71" } }
-{ "o" : "ᄎ裏", "r" : "大棗", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86575267f07b818179f72" } }
-{ "o" : "짖먹이", "r" : "젖먹이", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d865d7267f07b818179f73" } }
-{ "o" : "한근거", "r" : "한 근거", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d865e9267f07b818179f74" } }
-{ "o" : "에대", "r" : "에 대", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86625267f07b818179f75" } }
-{ "o" : "러가", "r" : "러 가", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86630267f07b818179f76" } }
-{ "o" : "여 윈", "r" : "여윈", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8663e267f07b818179f77" } }
-{ "o" : " 를 ", "r" : "를 ", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d86677267f07b818179f78" } }
-{ "o" : "없 ", "r" : "없", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8797b267f07b818179f79" } }
-{ "o" : "茵蔯惹", "r" : "茵蔯蒿", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d879c2267f07b818179f7a" } }
-{ "o" : "猪흉", "r" : "猪苓", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87a1d267f07b818179f7b" } }
-{ "o" : "柴爷", "r" : "柴苓", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87a30267f07b818179f7c" } }
-{ "o" : "훼 ", "r" : "훼", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87a47267f07b818179f7d" } }
-{ "o" : "는일", "r" : "는 일", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87a4e267f07b818179f7e" } }
-{ "o" : ";易", "r" : "湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87a74267f07b818179f7f" } }
-{ "o" : "芒碑", "r" : "芒硝", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87aad267f07b818179f80" } }
-{ "o" : "芒確", "r" : "芒硝", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87ab5267f07b818179f81" } }
-{ "o" : "芒銷", "r" : "芒硝", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87af9267f07b818179f82" } }
-{ "o" : " 효 과", "r" : " 효과", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87b0f267f07b818179f83" } }
-{ "o" : "大黃黃", "r" : "大黃", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87b27267f07b818179f84" } }
-{ "o" : "五흡散", "r" : "五苓散", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87b5a267f07b818179f85" } }
-{ "o" : "곤 란", "r" : "곤란", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87bd1267f07b818179f86" } }
-{ "o" : "용 된", "r" : "용된", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87bdf267f07b818179f87" } }
-{ "o" : "夜측", "r" : "茯苓", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87c38267f07b818179f88" } }
-{ "o" : "\\*黃甘草", "r" : "大黃甘草", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87c61267f07b818179f89" } }
-{ "o" : " 과 ", "r" : "과 ", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87c92267f07b818179f8a" } }
-{ "o" : "벗 ", "r" : "벗", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87d69267f07b818179f8b" } }
-{ "o" : "Ttt湯", "r" : "朮湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87dfc267f07b818179f8c" } }
-{ "o" : "를요", "r" : "를 요", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87e98267f07b818179f8d" } }
-{ "o" : "Ttt", "r" : "朮", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87f05267f07b818179f8e" } }
-{ "o" : "惹졌仁", "r" : "薏苡仁", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87f7b267f07b818179f8f" } }
-{ "o" : "黃 s ", "r" : "黃芪", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87fda267f07b818179f90" } }
-{ "o" : "청藥", "r" : "芍藥", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d87ffa267f07b818179f91" } }
-{ "o" : "\\+全大", "r" : "十全大", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88016267f07b818179f92" } }
-{ "o" : "酸秦仁", "r" : "酸棗仁", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8806a267f07b818179f93" } }
-{ "o" : "滞", "r" : "滯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88d60267f07b818179f94" } }
-{ "o" : "获훈", "r" : "茯苓", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88d77267f07b818179f95" } }
-{ "o" : "鎮", "r" : "鎭", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88d93267f07b818179f96" } }
-{ "o" : "產", "r" : "産", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88eb4267f07b818179f97" } }
-{ "o" : "부 터", "r" : "부터", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88ee0267f07b818179f98" } }
-{ "o" : " 투 여", "r" : " 투여", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88f4a267f07b818179f99" } }
-{ "o" : "될수", "r" : "될 수", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88f78267f07b818179f9a" } }
-{ "o" : "을들", "r" : "을 들", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88fe2267f07b818179f9b" } }
-{ "o" : "지특징", "r" : "지 특징", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d88fea267f07b818179f9c" } }
-{ "o" : "j寫", "r" : "瀉", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8901f267f07b818179f9d" } }
-{ "o" : "乾藍湯", "r" : "乾薑湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d891f0267f07b818179f9e" } }
-{ "o" : "고끊", "r" : "고 끊", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89200267f07b818179f9f" } }
-{ "o" : "Af용", "r" : "사용", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8925e267f07b818179fa0" } }
-{ "o" : " 자 주", "r" : " 자주", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8926d267f07b818179fa1" } }
-{ "o" : "上ft症", "r" : "上氣症", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d892a0267f07b818179fa2" } }
-{ "o" : "라고하", "r" : "라고 하", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d892ae267f07b818179fa3" } }
-{ "o" : "人夢", "r" : "人蔘", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8934b267f07b818179fa4" } }
-{ "o" : "黃s", "r" : "黃芪", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89355267f07b818179fa5" } }
-{ "o" : "酸S仁", "r" : "酸棗仁", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89379267f07b818179fa6" } }
-{ "o" : "혹歸膠", "r" : "芎歸膠", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d893dc267f07b818179fa7" } }
-{ "o" : "턴藥", "r" : "芍藥", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8943d267f07b818179fa8" } }
-{ "o" : "遺遙", "r" : "逍遙", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89460267f07b818179fa9" } }
-{ "o" : "을느", "r" : "을 느", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d894a3267f07b818179faa" } }
-{ "o" : "고적용", "r" : "고 적용", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89537267f07b818179fab" } }
-{ "o" : "著墓朮甘", "r" : "苓薑朮甘", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89575267f07b818179fac" } }
-{ "o" : "漠肝", "r" : "瀉肝", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8988d267f07b818179fad" } }
-{ "o" : "이 러", "r" : "이러", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d898be267f07b818179fae" } }
-{ "o" : "을사용", "r" : "을 사용", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89917267f07b818179faf" } }
-{ "o" : "쇼痛", "r" : "止痛", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89965267f07b818179fb0" } }
-{ "o" : "필 요", "r" : "필요", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89979267f07b818179fb1" } }
-{ "o" : "紅門", "r" : "肛門", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8998d267f07b818179fb2" } }
-{ "o" : "득歸膠", "r" : "芎歸膠", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d899ad267f07b818179fb3" } }
-{ "o" : "\\)’寫", "r" : "瀉", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d899cb267f07b818179fb4" } }
-{ "o" : "\\+味敗", "r" : "十味敗", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89a82267f07b818179fb5" } }
-{ "o" : "\\-貫堂", "r" : "一貫堂", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89adf267f07b818179fb6" } }
-{ "o" : "신음허W陰", "r" : "신음허腎陰", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89b65267f07b818179fb7" } }
-{ "o" : "신양허W陽", "r" : "신양허腎陽", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89b73267f07b818179fb8" } }
-{ "o" : "거 림", "r" : "거림", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89b97267f07b818179fb9" } }
-{ "o" : "에따", "r" : "에 따", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89c57267f07b818179fba" } }
-{ "o" : "라사용", "r" : "라 사용", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89c5e267f07b818179fbb" } }
-{ "o" : "莉芥", "r" : "荊芥", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89c97267f07b818179fbc" } }
-{ "o" : "連熱湯", "r" : "蓮翹湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89ca3267f07b818179fbd" } }
-{ "o" : " 대 한", "r" : " 대한", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89cb3267f07b818179fbe" } }
-{ "o" : "意\\]茨仁", "r" : "薏苡仁", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89cd8267f07b818179fbf" } }
-{ "o" : "連鍾湯", "r" : "蓮翹湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89ea6267f07b818179fc0" } }
-{ "o" : "加求湯", "r" : "加朮湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89ef2267f07b818179fc1" } }
-{ "o" : "하지 만 ", "r" : "하지만 ", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89f24267f07b818179fc2" } }
-{ "o" : "가포함", "r" : "가 포함", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89f52267f07b818179fc3" } }
-{ "o" : "慧！茨仁", "r" : "薏苡仁", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89fa4267f07b818179fc4" } }
-{ "o" : "猪茶", "r" : "猪苓", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d89fe5267f07b818179fc5" } }
-{ "o" : "를증", "r" : "를 증", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a036267f07b818179fc6" } }
-{ "o" : "黃혹", "r" : "黃芩", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a061267f07b818179fc7" } }
-{ "o" : "山梅子", "r" : "山梔子", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a074267f07b818179fc8" } }
-{ "o" : "도 록", "r" : "도록", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a0ae267f07b818179fc9" } }
-{ "o" : "猪휴", "r" : "猪苓", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a0ba267f07b818179fca" } }
-{ "o" : "W上 1f", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a168267f07b818179fcb" } }
-{ "o" : "를느", "r" : "를 느", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a180267f07b818179fcc" } }
-{ "o" : "K上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a188267f07b818179fcd" } }
-{ "o" : "i寫", "r" : "瀉", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a1e2267f07b818179fce" } }
-{ "o" : "答桂朮", "r" : "苓桂朮", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a26f267f07b818179fcf" } }
-{ "o" : " 둥도", "r" : " 등도", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a2ab267f07b818179fd0" } }
-{ "o" : "에까", "r" : "에 까", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a34b267f07b818179fd1" } }
-{ "o" : "판 정", "r" : "판정", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a394267f07b818179fd2" } }
-{ "o" : "를가", "r" : "를 가", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a3a9267f07b818179fd3" } }
-{ "o" : "桂梗", "r" : "桔梗", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a3c9267f07b818179fd4" } }
-{ "o" : "에 까지", "r" : "에까지", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a3e8267f07b818179fd5" } }
-{ "o" : " A]용", "r" : " 사용", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a41f267f07b818179fd6" } }
-{ "o" : "\\-貫 堂", "r" : "一貫堂", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a42f267f07b818179fd7" } }
-{ "o" : "蕩心湯", "r" : "瀉心湯", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a46b267f07b818179fd8" } }
-{ "o" : "8S上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a4ec267f07b818179fd9" } }
-{ "o" : "가특징", "r" : "가 특징", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a556267f07b818179fda" } }
-{ "o" : "가존재", "r" : "가 존재", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a807267f07b818179fdb" } }
-{ "o" : "는설", "r" : "는 설", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d8a867267f07b818179fdc" } }
-{ "o" : "ffi上If", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d96f7e3de3ca7407aa7710" } }
-{ "o" : "한증상", "r" : "한 증상", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d96f8b3de3ca7407aa7711" } }
-{ "o" : "R上洋", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d96f9a3de3ca7407aa7712" } }
-{ "o" : "을잘", "r" : "을 잘", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d96fb43de3ca7407aa7713" } }
-{ "o" : "W上偉", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d972943de3ca7407aa7714" } }
-{ "o" : "K 上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d973243de3ca7407aa7715" } }
-{ "o" : "가중요", "r" : "가 중요", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d9732b3de3ca7407aa7716" } }
-{ "o" : "흥 분", "r" : "흥분", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d973533de3ca7407aa7717" } }
-{ "o" : "BS上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d973823de3ca7407aa7718" } }
-{ "o" : "8S上洋", "r" : "臍上悸", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d973eb3de3ca7407aa7719" } }
-{ "o" : "効", "r" : "效", "e" : 1, "b" : "yanghan", "_id" : { "$oid" : "53d9751b3de3ca7407aa771c" } }
-{ "o" : " '", "r" : " ‘", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d99cfa3de3ca7407aa771d" } }
-{ "o" : "1한방의학’", "r" : "‘한방의학’", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d99d0f3de3ca7407aa771e" } }
-{ "o" : "고방 파", "r" : "고방파", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d99d533de3ca7407aa771f" } }
-{ "o" : "\\(古方®", "r" : "(古方派)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d99d6d3de3ca7407aa7720" } }
-{ "o" : "있 ", "r" : "있", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9acd8155c77080d051379" } }
-{ "o" : "일 본", "r" : "일본", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ad93155c77080d05137a" } }
-{ "o" : "숲\\{募", "r" : "金傷", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9add3155c77080d05137b" } }
-{ "o" : "과관련", "r" : "과 관련", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9adea155c77080d05137c" } }
-{ "o" : "을만", "r" : "을 만", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ae02155c77080d05137d" } }
-{ "o" : "드陰", "r" : "三陰", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ae41155c77080d05137e" } }
-{ "o" : "드 陽", "r" : "三陽", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ae4b155c77080d05137f" } }
-{ "o" : "드陽", "r" : "三陽", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ae4f155c77080d051380" } }
-{ "o" : "m 참고문헌 t\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ae78155c77080d051381" } }
-{ "o" : "扁昔\\I", "r" : "扁鵲", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9af14155c77080d051382" } }
-{ "o" : "黃帝內®", "r" : "黃帝內經", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9af3d155c77080d051383" } }
-{ "o" : "황제내경j", "r" : "황제내경』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9af67155c77080d051384" } }
-{ "o" : "신농본초경j", "r" : "신농본초경』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9af80155c77080d051385" } }
-{ "o" : "상한잡병론J", "r" : "상한잡병론』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9af99155c77080d051386" } }
-{ "o" : "\\(傷寒論\\)J", "r" : "(傷寒論)』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9afad155c77080d051387" } }
-{ "o" : "金匿要", "r" : "金匱要", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9afd0155c77080d051388" } }
-{ "o" : "要略\\)J", "r" : "要略)』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9afe7155c77080d051389" } }
-{ "o" : "彌中景", "r" : "張仲景", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9affb155c77080d05138a" } }
-{ "o" : "육경\\(六@", "r" : "육경(六經)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b011155c77080d05138b" } }
-{ "o" : "상한론j", "r" : "상한론』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b021155c77080d05138c" } }
-{ "o" : "상 한론", "r" : "상한론", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b036155c77080d05138d" } }
-{ "o" : "論\\)j ", "r" : "論)』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b052155c77080d05138e" } }
-{ "o" : "方\\)j ", "r" : "方)』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b066155c77080d05138f" } }
-{ "o" : "孫思it", "r" : "孫思邈", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b077155c77080d051390" } }
-{ "o" : "孫思M", "r" : "孫思邈", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b07e155c77080d051391" } }
-{ "o" : "천금요방j ", "r" : "천금요방』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b0b7155c77080d051392" } }
-{ "o" : "r비급천금", "r" : "『비급천금", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b0c5155c77080d051393" } }
-{ "o" : "천금익방j", "r" : "천금익방』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b0d2155c77080d051394" } }
-{ "o" : "결 과", "r" : "결과", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b152155c77080d051395" } }
-{ "o" : "r상한론", "r" : "『상한론", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b167155c77080d051396" } }
-{ "o" : "\\,『", "r" : ", 『", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b17e155c77080d051397" } }
-{ "o" : "ᄎ宗", "r" : "大宗", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b1a4155c77080d051398" } }
-{ "o" : "이 론", "r" : "이론", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b1b1155c77080d051399" } }
-{ "o" : "東±D", "r" : "東垣", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b1e3155c77080d05139a" } }
-{ "o" : "드喜", "r" : "三喜", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b208155c77080d05139b" } }
-{ "o" : "條辨\\)j", "r" : "條辨)』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b261155c77080d05139c" } }
-{ "o" : " 이며", "r" : "이며", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b31a155c77080d05139d" } }
-{ "o" : " 사 실", "r" : " 사실", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b38a155c77080d05139e" } }
-{ "o" : "\\{水毒\\)", "r" : "(水毒)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b3b3155c77080d05139f" } }
-{ "o" : "笞", "r" : "苔", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b3da155c77080d0513a0" } }
-{ "o" : "있는", "r" : "있는 ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b3ee155c77080d0513a1" } }
-{ "o" : "있는  ", "r" : "있는 ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b3f6155c77080d0513a2" } }
-{ "o" : "백 태", "r" : "백태", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b3ff155c77080d0513a3" } }
-{ "o" : "\\(醫宗\\^\\)j", "r" : "(醫宗金鑑)』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b48d155c77080d0513a4" } }
-{ "o" : "의종금감j", "r" : "의종금감』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b496155c77080d0513a5" } }
-{ "o" : "1’의종금감", "r" : "『의종금감", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b4e8155c77080d0513a6" } }
-{ "o" : "아 직", "r" : "아직", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b50a155c77080d0513a7" } }
-{ "o" : "併", "r" : "倂", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b532155c77080d0513a8" } }
-{ "o" : "黃痕", "r" : "黃疸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b552155c77080d0513a9" } }
-{ "o" : "한설명", "r" : "한 설명", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b55b155c77080d0513aa" } }
-{ "o" : "촌구 맥", "r" : "촌구맥", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b57d155c77080d0513ab" } }
-{ "o" : "일븐", "r" : "일본", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b5ae155c77080d0513ac" } }
-{ "o" : "\\<古方®", "r" : "(古方派)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b5c0155c77080d0513ad" } }
-{ "o" : "염 두", "r" : "염두", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b5ef155c77080d0513ae" } }
-{ "o" : " 속 도", "r" : " 속도", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b5fa155c77080d0513af" } }
-{ "o" : "한방의 학적", "r" : "한방의학적", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b615155c77080d0513b0" } }
-{ "o" : "리돔", "r" : "리듬", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b620155c77080d0513b1" } }
-{ "o" : "沈IJi", "r" : "沈脈", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b636155c77080d0513b2" } }
-{ "o" : "고있", "r" : "고 있", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b706155c77080d0513b3" } }
-{ "o" : "표 \\(S\\)", "r" : "표(表)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b733155c77080d0513b5" } }
-{ "o" : "부식■", "r" : "부삭", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b781155c77080d0513b6" } }
-{ "o" : "이\\(«\\)", "r" : "이(裏)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b7a9155c77080d0513b7" } }
-{ "o" : "\\<寒\\)", "r" : "(寒)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9b7b6155c77080d0513b8" } }
-{ "o" : "용 골모려", "r" : "용골모려", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cd35155c77080d0513b9" } }
-{ "o" : "洪ᄎ", "r" : "洪大", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cd49155c77080d0513ba" } }
-{ "o" : "혈OflL\\)", "r" : "혈(血)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cdf9155c77080d0513bb" } }
-{ "o" : "心下癌5M", "r" : "心下痞硬", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ce77155c77080d0513bc" } }
-{ "o" : " 실 시한", "r" : " 실시한", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ce89155c77080d0513bd" } }
-{ "o" : "\\<心下\\)", "r" : "(心下)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ceaa155c77080d0513be" } }
-{ "o" : "심히\\(心", "r" : "심하(心", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ceba155c77080d0513bf" } }
-{ "o" : "月力", "r" : "肋", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cec6155c77080d0513c0" } }
-{ "o" : "제상\\(脑소", "r" : "제상(臍上", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ceec155c77080d0513c1" } }
-{ "o" : "廝旁", "r" : "臍旁", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cefe155c77080d0513c2" } }
-{ "o" : "소복\\(小膨", "r" : "소복(小腹)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cf0e155c77080d0513c3" } }
-{ "o" : "心下癌", "r" : "心下痞", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cf24155c77080d0513c4" } }
-{ "o" : "心下唐", "r" : "心下痞", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cf2e155c77080d0513c5" } }
-{ "o" : "心窝해", "r" : "心窩部", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cf6f155c77080d0513c6" } }
-{ "o" : "는소", "r" : "는 소", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cf7b155c77080d0513c7" } }
-{ "o" : "한디<그림", "r" : "한디(그림", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cfa8155c77080d0513c8" } }
-{ "o" : "한디\\(그림", "r" : "한다(그림", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9cfb4155c77080d0513c9" } }
-{ "o" : "를이", "r" : "를 이", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d074155c77080d0513ca" } }
-{ "o" : "心下俘", "r" : "心下悸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d08d155c77080d0513cb" } }
-{ "o" : " 가 느끼", "r" : "가 느끼", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d09a155c77080d0513cc" } }
-{ "o" : "膀下怪", "r" : "膀下悸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d0a5155c77080d0513cd" } }
-{ "o" : "촉 지", "r" : "촉지", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d0b2155c77080d0513ce" } }
-{ "o" : "膀上悸", "r" : "臍上悸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d0cb155c77080d0513cf" } }
-{ "o" : "膀下悸", "r" : "臍下悸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d0d6155c77080d0513d0" } }
-{ "o" : "기역\\(氣왠", "r" : "기역(氣逆", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d0e9155c77080d0513d1" } }
-{ "o" : "오 령산", "r" : "오령산", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d0f4155c77080d0513d2" } }
-{ "o" : " 므로", "r" : "므로", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d18b155c77080d0513d6" } }
-{ "o" : "변증\\(辨譜", "r" : "변증(辨證)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d21e155c77080d0513d7" } }
-{ "o" : "辨m", "r" : "辨證", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d23b155c77080d0513d8" } }
-{ "o" : "辨it", "r" : "辨證", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d240155c77080d0513d9" } }
-{ "o" : "辨if", "r" : "辨證", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d249155c77080d0513da" } }
-{ "o" : "바 란", "r" : "바란", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d26c155c77080d0513db" } }
-{ "o" : "따 라", "r" : "따라", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d2bb155c77080d0513dc" } }
-{ "o" : "라정리", "r" : "라 정리", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d2c2155c77080d0513dd" } }
-{ "o" : "부\\(膽\\)", "r" : "부(腑)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d302155c77080d0513df" } }
-{ "o" : "명확 하", "r" : "명확하", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d34c155c77080d0513e0" } }
-{ "o" : "五ᄎ", "r" : "五大", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d36e155c77080d0513e1" } }
-{ "o" : "풍\\(膨", "r" : "풍(風)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d382155c77080d0513e2" } }
-{ "o" : "화 0X\\)", "r" : "화(火)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d39a155c77080d0513e3" } }
-{ "o" : "에 도 ", "r" : "에도 ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d3a5155c77080d0513e4" } }
-{ "o" : "r금궤요략", "r" : "『금궤요략", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d3f3155c77080d0513e5" } }
-{ "o" : "금궤요략J", "r" : "『금궤요략』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d403155c77080d0513e6" } }
-{ "o" : "금궤요략J", "r" : "금궤요략』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d527155c77080d0513e9" } }
-{ "o" : "정기\\(精췄", "r" : "정기(精氣", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d565155c77080d0513ea" } }
-{ "o" : "음식 물", "r" : "음식물", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d578155c77080d0513eb" } }
-{ "o" : "많 ", "r" : "많", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d57f155c77080d0513ec" } }
-{ "o" : "진 찰", "r" : "진찰", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d597155c77080d0513ed" } }
-{ "o" : " 체 질", "r" : " 체질", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d5a1155c77080d0513ee" } }
-{ "o" : "질 환", "r" : "질환", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d5af155c77080d0513ef" } }
-{ "o" : "사진\\(四談", "r" : "사진(四診", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d623155c77080d0513f0" } }
-{ "o" : "이\\(\\*\\)", "r" : "이(裏)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d692155c77080d0513f1" } }
-{ "o" : " 병 변", "r" : " 병변", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d69c155c77080d0513f2" } }
-{ "o" : "서양의 학의", "r" : "서양의학의", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d6ce155c77080d0513f3" } }
-{ "o" : "신\\(賢\\)", "r" : "신(腎)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d6e8155c77080d0513f4" } }
-{ "o" : "췌\\(勝\\)", "r" : "췌(膵)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d6fd155c77080d0513f5" } }
-{ "o" : "상한론_\\|", "r" : "상한론』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d739155c77080d0513f6" } }
-{ "o" : "소양 병", "r" : "소양병", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d744155c77080d0513f7" } }
-{ "o" : "짧 ", "r" : "짧", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d751155c77080d0513f8" } }
-{ "o" : "를거", "r" : "를 거", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d759155c77080d0513f9" } }
-{ "o" : "진행 되", "r" : "진행되", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d768155c77080d0513fa" } }
-{ "o" : " \\(", "r" : "(", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d79a155c77080d0513fb" } }
-{ "o" : "부맥\\(浮月© ", "r" : "부맥(浮脈)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d7bd155c77080d0513fc" } }
-{ "o" : "解 表", "r" : "解表", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d7c9155c77080d0513fd" } }
-{ "o" : "마 르", "r" : "마르", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d7d2155c77080d0513fe" } }
-{ "o" : "實 熱", "r" : "實熱", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d7de155c77080d0513ff" } }
-{ "o" : "의같", "r" : "의 같", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d836155c77080d051400" } }
-{ "o" : "는 데\\, ", "r" : "는데, ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d862155c77080d051401" } }
-{ "o" : "홑트", "r" : "흩트", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d87c155c77080d051402" } }
-{ "o" : " 며\\,", "r" : "며,", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d896155c77080d051403" } }
-{ "o" : "『상한론」", "r" : "『상한론』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d8cc155c77080d051404" } }
-{ "o" : "「상한론』", "r" : "『상한론』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d8d2155c77080d051405" } }
-{ "o" : " 알 아", "r" : " 알아", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d8e9155c77080d051406" } }
-{ "o" : "태양 병", "r" : "태양병", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d8f2155c77080d051407" } }
-{ "o" : "총 괄", "r" : "총괄", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d8fa155c77080d051408" } }
-{ "o" : "상한론_!", "r" : "상한론』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d943155c77080d051409" } }
-{ "o" : "상한론\\(傷寒論\\) J", "r" : "상한론(傷寒論) 』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d954155c77080d05140a" } }
-{ "o" : " 론적", "r" : "론적", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d978155c77080d05140b" } }
-{ "o" : "기\\(M\\)", "r" : "기(氣)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d997155c77080d05140c" } }
-{ "o" : "혈\\(船", "r" : "혈(血)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d9a3155c77080d05140d" } }
-{ "o" : "따라일", "r" : "따라 일", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d9b4155c77080d05140e" } }
-{ "o" : "을조정", "r" : "을 조정", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d9be155c77080d05140f" } }
-{ "o" : "고여겨", "r" : "고 여겨", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d9d5155c77080d051410" } }
-{ "o" : "의개념", "r" : "의 개념", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9d9ef155c77080d051411" } }
-{ "o" : "할수 있", "r" : "할 수 있", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9daf7155c77080d051413" } }
-{ "o" : "기와혈", "r" : "기와 혈", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9db3b155c77080d051414" } }
-{ "o" : " 말 초", "r" : " 말초", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9db67155c77080d051415" } }
-{ "o" : "혈 류", "r" : "혈류", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9db71155c77080d051416" } }
-{ "o" : "로하여", "r" : "로 하여", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9db7d155c77080d051417" } }
-{ "o" : "기울\\(氣蜜", "r" : "기울(氣鬱", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dbb1155c77080d051418" } }
-{ "o" : "후 박탕", "r" : "후박탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dbd8155c77080d051419" } }
-{ "o" : "동 계", "r" : "동계", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dbf0155c77080d05141a" } }
-{ "o" : "계 지탕", "r" : "계지탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dc18155c77080d05141b" } }
-{ "o" : "익기 탕", "r" : "익기탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dc32155c77080d05141c" } }
-{ "o" : "을포함", "r" : "을 포함", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dc53155c77080d05141d" } }
-{ "o" : "는방제", "r" : "는 방제", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dc5a155c77080d05141e" } }
-{ "o" : "어혈\\(疲血", "r" : "어혈(瘀血", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dc78155c77080d05141f" } }
-{ "o" : "혈어\\(血疲", "r" : "혈어(血瘀", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dc90155c77080d051420" } }
-{ "o" : "가되는", "r" : "가 되는", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dcc9155c77080d051421" } }
-{ "o" : "환 자", "r" : "환자", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dce0155c77080d051422" } }
-{ "o" : "수기\\(水놓", "r" : "수기(水氣", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dda1155c77080d051423" } }
-{ "o" : "저령 탕", "r" : "저령탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ddfc155c77080d051424" } }
-{ "o" : "영 감강미", "r" : "영감강미", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9de0f155c77080d051426" } }
-{ "o" : "담 당", "r" : "담당", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9de8a155c77080d051427" } }
-{ "o" : "신\\(背\\)", "r" : "신(腎)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9dee0155c77080d051428" } }
-{ "o" : "에들", "r" : "에 들", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e001155c77080d051429" } }
-{ "o" : "다고되", "r" : "다고 되", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e011155c77080d05142a" } }
-{ "o" : "금궤요략j ", "r" : "금궤요략』", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e074155c77080d05142b" } }
-{ "o" : "본 래", "r" : "본래", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e08d155c77080d05142c" } }
-{ "o" : "미지 황", "r" : "미지황", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e0a3155c77080d05142d" } }
-{ "o" : "승 마", "r" : "승마", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e0f6155c77080d05142e" } }
-{ "o" : "삼 소음", "r" : "삼소음", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e110155c77080d05142f" } }
-{ "o" : "淸下劑", "r" : "瀉下劑", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e125155c77080d051430" } }
-{ "o" : " 등 이 ", "r" : " 등이 ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e176155c77080d051431" } }
-{ "o" : "산조 인", "r" : "산조인", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e186155c77080d051432" } }
-{ "o" : "祐換血", "r" : "袪瘀血", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e1ab155c77080d051433" } }
-{ "o" : " \\lOOmL", "r" : "100mL", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e1d5155c77080d051434" } }
-{ "o" : " 례", "r" : "례", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e1ee155c77080d051435" } }
-{ "o" : "악 화", "r" : "악화", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e26f155c77080d051436" } }
-{ "o" : "속 적", "r" : "속적", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e278155c77080d051437" } }
-{ "o" : "해 독탕", "r" : "해독탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e2af155c77080d051438" } }
-{ "o" : "고나서", "r" : "고 나서", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e2c2155c77080d051439" } }
-{ "o" : "을공격", "r" : "을 공격", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e2c9155c77080d05143a" } }
-{ "o" : "m 참고문헌 «\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e354155c77080d05143b" } }
-{ "o" : " 검 사", "r" : " 검사", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e594155c77080d05143c" } }
-{ "o" : "혈 관", "r" : "혈관", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e5a3155c77080d05143d" } }
-{ "o" : "를넘", "r" : "를 넘", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e6be155c77080d05143e" } }
-{ "o" : " a 차단제", "r" : " α 차단제", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e81d155c77080d05143f" } }
-{ "o" : "한방의 학의", "r" : "한방의학의", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e839155c77080d051440" } }
-{ "o" : " 적 응", "r" : " 적응", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e842155c77080d051441" } }
-{ "o" : " 한 방약", "r" : " 한방약", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e871155c77080d051442" } }
-{ "o" : " 경 우", "r" : " 경우", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e882155c77080d051443" } }
-{ "o" : "\\l40", "r" : "140", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e8a2155c77080d051444" } }
-{ "o" : "스 트레", "r" : "스트레", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e8d1155c77080d051445" } }
-{ "o" : " 이 있", "r" : "이 있", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e93e155c77080d051446" } }
-{ "o" : "모려 탕", "r" : "모려탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e958155c77080d051447" } }
-{ "o" : "牡蠣끓", "r" : "牡蠣湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e964155c77080d051448" } }
-{ "o" : "【목표】 o", "r" : "【목표】 o>", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e983155c77080d051449" } }
-{ "o" : "【목표】 O", "r" : "【목표】 o>", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e997155c77080d05144a" } }
-{ "o" : "변 비", "r" : "변비", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e9b4155c77080d05144b" } }
-{ "o" : " 작 용", "r" : " 작용", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e9c2155c77080d05144c" } }
-{ "o" : "사심 탕", "r" : "사심탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e9d8155c77080d05144d" } }
-{ "o" : "滨心", "r" : "瀉心", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9e9e6155c77080d05144e" } }
-{ "o" : "解毒끓", "r" : "解毒湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ea67155c77080d051452" } }
-{ "o" : "釣膝散", "r" : "釣藤散", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9eada155c77080d051453" } }
-{ "o" : "두 중감", "r" : "두중감", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9eae6155c77080d051454" } }
-{ "o" : " 이 나타", "r" : "이 나타", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9eaf7155c77080d051455" } }
-{ "o" : " 강 하", "r" : " 강하", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9eb37155c77080d051456" } }
-{ "o" : "합氣丸", "r" : "腎氣丸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9eb7c155c77080d051457" } }
-{ "o" : "降下港", "r" : "降下湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ebc0155c77080d051458" } }
-{ "o" : "진우탕", "r" : "진무탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ebce155c77080d051459" } }
-{ "o" : "遊遙", "r" : "逍遙", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ebfd155c77080d05145a" } }
-{ "o" : "黃民끓", "r" : "黃芪湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9ec3e155c77080d05145b" } }
-{ "o" : "억 간산", "r" : "억간산", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f153155c77080d05145c" } }
-{ "o" : " 상 태", "r" : " 상태", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f16a155c77080d05145d" } }
-{ "o" : "진 피", "r" : "진피", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f182155c77080d05145e" } }
-{ "o" : "방줌통성", "r" : "방풍통성", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f1c5155c77080d05145f" } }
-{ "o" : "도핵 승기", "r" : "도핵승기", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f248155c77080d051460" } }
-{ "o" : "승기 탕", "r" : "승기탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f24e155c77080d051461" } }
-{ "o" : "承氣港", "r" : "承氣湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f257155c77080d051462" } }
-{ "o" : "경불 순", "r" : "경불순", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f26a155c77080d051463" } }
-{ "o" : "【=표】", "r" : "【목표】", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f289155c77080d051464" } }
-{ "o" : "四物港", "r" : "四物湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f2ae155c77080d051465" } }
-{ "o" : "화藥", "r" : "芍藥", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f2d4155c77080d051466" } }
-{ "o" : "허 증", "r" : "허증", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f2e0155c77080d051467" } }
-{ "o" : " 와 병용", "r" : "와 병용", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f2ec155c77080d051468" } }
-{ "o" : "\\lOO", "r" : "100", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f315155c77080d051469" } }
-{ "o" : "서 양의학에서", "r" : "서양의학에서", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f32c155c77080d05146a" } }
-{ "o" : " a 자극제", "r" : " α 자극제", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f33f155c77080d05146b" } }
-{ "o" : "고식 염", "r" : "고식염", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f367155c77080d05146c" } }
-{ "o" : "의 대옹", "r" : "의 대응", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f37d155c77080d05146d" } }
-{ "o" : "포함 하", "r" : "포함하", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f39c155c77080d05146e" } }
-{ "o" : "전체 적", "r" : "전체적", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f3c2155c77080d05146f" } }
-{ "o" : "하 다\\.", "r" : "하다.", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f3d1155c77080d051470" } }
-{ "o" : "신 진대사", "r" : "신진대사", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f3dd155c77080d051471" } }
-{ "o" : "현기 증", "r" : "현기증", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f44a155c77080d051472" } }
-{ "o" : "을결", "r" : "을 결", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f463155c77080d051473" } }
-{ "o" : "계 피", "r" : "계피", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f471155c77080d051474" } }
-{ "o" : "益氣游", "r" : "益氣湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f487155c77080d051475" } }
-{ "o" : "君子港", "r" : "君子湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f49f155c77080d051476" } }
-{ "o" : "】 O", "r" : "】 o", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f4bc155c77080d051477" } }
-{ "o" : "을제거", "r" : "을 제거", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f4ee155c77080d051478" } }
-{ "o" : "육균자", "r" : "육군자", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f500155c77080d051479" } }
-{ "o" : "厚朴끓", "r" : "厚朴湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f51c155c77080d05147a" } }
-{ "o" : "에작", "r" : "에 작", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f55c155c77080d05147b" } }
-{ "o" : "眞武황", "r" : "眞武湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f572155c77080d05147c" } }
-{ "o" : "복 통", "r" : "복통", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f57b155c77080d05147d" } }
-{ "o" : "현 기증", "r" : "현기증", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f5bb155c77080d05147e" } }
-{ "o" : "白才L", "r" : "白朮", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f5d3155c77080d05147f" } }
-{ "o" : "天麻場", "r" : "天麻湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f5dc155c77080d051480" } }
-{ "o" : "한사람", "r" : "한 사람", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f607155c77080d051481" } }
-{ "o" : "大補황", "r" : "大補湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f63f155c77080d051482" } }
-{ "o" : "동맥경 화", "r" : "동맥경화", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9f951155c77080d051483" } }
-{ "o" : "以소", "r" : "以上", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fb11155c77080d051484" } }
-{ "o" : "〜", "r" : "~", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fb75155c77080d051485" } }
-{ "o" : "柴胡易", "r" : "柴胡湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fbad155c77080d051486" } }
-{ "o" : "방뚱통성", "r" : "방풍통성", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fbc9155c77080d051487" } }
-{ "o" : "실 증", "r" : "실증", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fbd1155c77080d051488" } }
-{ "o" : "解毒海", "r" : "解毒湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fce3155c77080d051489" } }
-{ "o" : "특 징", "r" : "특징", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fd72155c77080d05148a" } }
-{ "o" : "난 다\\.", "r" : "난다.", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fd81155c77080d05148b" } }
-{ "o" : " 이 없", "r" : "이 없", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fdc7155c77080d05148c" } }
-{ "o" : "끓\\)", "r" : "湯)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fde5155c77080d05148d" } }
-{ "o" : "當\\^芍藥", "r" : "當歸芍藥", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fe1a155c77080d05148e" } }
-{ "o" : "월 경", "r" : "월경", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fe28155c77080d05148f" } }
-{ "o" : " 부 정", "r" : " 부정", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fe6b155c77080d051490" } }
-{ "o" : "심 전도", "r" : "심전도", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fe78155c77080d051491" } }
-{ "o" : "1季", "r" : "悸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fe9d155c77080d051492" } }
-{ "o" : "삭맥\\(數M", "r" : "삭맥(數脈", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9feb4155c77080d051493" } }
-{ "o" : "지맥\\(遲M", "r" : "지맥(遲脈", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9fec8155c77080d051494" } }
-{ "o" : "대맥\\(帶M", "r" : "대맥(帶脈", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53d9feda155c77080d051495" } }
-{ "o" : "빴 ", "r" : "빴", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daf2e6e14e39a407a90981" } }
-{ "o" : "@ 서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daf2ffe14e39a407a90982" } }
-{ "o" : "卷 한방의학의 적응과", "r" : "4갤한방의학의 적응과", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daf311e14e39a407a90983" } }
-{ "o" : " 고 주파", "r" : " 고주파", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daf324e14e39a407a90984" } }
-{ "o" : " 아직 도 ", "r" : " 아직도 ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daf333e14e39a407a90985" } }
-{ "o" : " 심 하게", "r" : " 심하게", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daf33ee14e39a407a90986" } }
-{ "o" : "翁 치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daf394e14e39a407a90987" } }
-{ "o" : "엑 기스", "r" : "엑기스", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafdaee14e39a407a90988" } }
-{ "o" : "나타 난", "r" : "나타난", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafdd6e14e39a407a90989" } }
-{ "o" : "牡蠣淸", "r" : "牡蠣湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafdebe14e39a407a9098a" } }
-{ "o" : "乾薑易", "r" : "乾薑湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafdf4e14e39a407a9098b" } }
-{ "o" : "이있", "r" : "이 있", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafe0ce14e39a407a9098c" } }
-{ "o" : "厚朴易", "r" : "厚朴湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafe28e14e39a407a9098d" } }
-{ "o" : "기울\\(氣變", "r" : "기울(氣鬱", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafe37e14e39a407a9098e" } }
-{ "o" : "炎甘草", "r" : "炙甘草", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafe53e14e39a407a9098f" } }
-{ "o" : "잘내", "r" : "잘 내", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafe6de14e39a407a90990" } }
-{ "o" : "通遙散", "r" : "逍遙散", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafeaae14e39a407a90991" } }
-{ "o" : " 유 효", "r" : " 유효", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53dafee4e14e39a407a90992" } }
-{ "o" : "중후군", "r" : "증후군", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daff22e14e39a407a90993" } }
-{ "o" : "©총론", "r" : "4갤총론", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53daff36e14e39a407a90994" } }
-{ "o" : "할수없", "r" : "할 수 없", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db0364e14e39a407a90995" } }
-{ "o" : "는증후", "r" : "는 증후", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db036ee14e39a407a90996" } }
-{ "o" : "흡 연", "r" : "흡연", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db037de14e39a407a90997" } }
-{ "o" : "卷치료처방", "r" : "4갤치료처방", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db048de14e39a407a90998" } }
-{ "o" : "杜螺", "r" : "牡蠣", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db04a9e14e39a407a90999" } }
-{ "o" : "港\\)", "r" : "湯)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db04b7e14e39a407a9099a" } }
-{ "o" : "膝苔", "r" : "膩苔", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db04e7e14e39a407a9099b" } }
-{ "o" : "현맥\\(弦膨", "r" : "현맥(弦脈)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db04f8e14e39a407a9099c" } }
-{ "o" : "【애\\-】", "r" : "【해설】", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db05d5e14e39a407a9099d" } }
-{ "o" : "니 트로", "r" : "니트로", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db05fbe14e39a407a9099e" } }
-{ "o" : "积實", "r" : "枳實", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db062be14e39a407a9099f" } }
-{ "o" : "雍白", "r" : "薤白", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db0651e14e39a407a909a0" } }
-{ "o" : "해백\\(難白", "r" : "해백(薤白", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db0666e14e39a407a909a1" } }
-{ "o" : "卷 병태 개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db06a7e14e39a407a909a2" } }
-{ "o" : "상과임상", "r" : "상과 임상", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db06b6e14e39a407a909a3" } }
-{ "o" : "翁증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db06c0e14e39a407a909a4" } }
-{ "o" : "@치료처방", "r" : "4갤치료처방", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db075ee14e39a407a909a5" } }
-{ "o" : "防己易", "r" : "防己湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db0786e14e39a407a909a6" } }
-{ "o" : "五茶散", "r" : "五苓散", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db07c3e14e39a407a909a7" } }
-{ "o" : "翁 병태개요", "r" : "4갤병태개요", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db083be14e39a407a909a8" } }
-{ "o" : "@ 증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db084ee14e39a407a909a9" } }
-{ "o" : " 폐 색", "r" : " 폐색", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db085de14e39a407a909aa" } }
-{ "o" : "變서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db08a0e14e39a407a909ab" } }
-{ "o" : " 한 것", "r" : "한 것", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db253ae14e39a407a909ac" } }
-{ "o" : "m 한방의학의 적응과", "r" : "4갤한방의학의 적응과", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db254ce14e39a407a909ad" } }
-{ "o" : " 계 지", "r" : " 계지", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db2cf8e14e39a407a909ae" } }
-{ "o" : "腐心", "r" : "瀉心", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db2d46e14e39a407a909af" } }
-{ "o" : "드黃", "r" : "三黃", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db2d4fe14e39a407a909b0" } }
-{ "o" : "해득탕", "r" : "해독탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db2d69e14e39a407a909b1" } }
-{ "o" : "방뚱통", "r" : "방풍통", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db2d78e14e39a407a909b2" } }
-{ "o" : "방풍통 성 산", "r" : "방풍통성산", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db2d81e14e39a407a909b3" } }
-{ "o" : " 사 탐은", "r" : " 사람은", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db2f9ee14e39a407a909b4" } }
-{ "o" : "⑩ 병태개요", "r" : "4갤병태개요", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3003e14e39a407a909b5" } }
-{ "o" : "⑩증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db300ee14e39a407a909b6" } }
-{ "o" : "翁서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db304ee14e39a407a909b7" } }
-{ "o" : "# 한방의학의 적응과", "r" : "4갤한방의학의 적응과", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3060e14e39a407a909b8" } }
-{ "o" : "@ 치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3075e14e39a407a909b9" } }
-{ "o" : "吳莱雙", "r" : "吳茱萸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db30aae14e39a407a909ba" } }
-{ "o" : "生薑황", "r" : "生薑湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db30b5e14e39a407a909bb" } }
-{ "o" : "狭측", "r" : "茯苓", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3129e14e39a407a909bc" } }
-{ "o" : "혈소 판", "r" : "혈소판", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db317ae14e39a407a909bd" } }
-{ "o" : "牡蠣황", "r" : "牡蠣湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db31bae14e39a407a909be" } }
-{ "o" : "\\：목표】", "r" : "【목표】", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db31d4e14e39a407a909bf" } }
-{ "o" : "방품통", "r" : "방풍통", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db320de14e39a407a909c0" } }
-{ "o" : "방풍통 성 산", "r" : "방풍통성산", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3216e14e39a407a909c1" } }
-{ "o" : "별 히", "r" : "별히", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3244e14e39a407a909c2" } }
-{ "o" : "다\\-", "r" : "다.", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3264e14e39a407a909c3" } }
-{ "o" : "다■", "r" : "다.", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3291e14e39a407a909c4" } }
-{ "o" : "@서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db329de14e39a407a909c5" } }
-{ "o" : "의대응", "r" : "의 대응", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db32aae14e39a407a909c6" } }
-{ "o" : "을실시", "r" : "을 실시", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db330fe14e39a407a909c7" } }
-{ "o" : " 근 치", "r" : " 근치", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3316e14e39a407a909c8" } }
-{ "o" : " 정 맥", "r" : " 정맥", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db332be14e39a407a909c9" } }
-{ "o" : "노창\\(怒膨", "r" : "노창(怒脹)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3397e14e39a407a909ca" } }
-{ "o" : "四物황", "r" : "四物湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3599e14e39a407a909d1" } }
-{ "o" : "賢氣", "r" : "腎氣", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db35bce14e39a407a909d2" } }
-{ "o" : "흑歸", "r" : "芎歸", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db35d6e14e39a407a909d3" } }
-{ "o" : "翁병태개요", "r" : "4갤병태개요", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db36e0e14e39a407a909d4" } }
-{ "o" : " 불 명", "r" : " 불명", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db36efe14e39a407a909d5" } }
-{ "o" : " 혈 전", "r" : " 혈전", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3709e14e39a407a909d6" } }
-{ "o" : "人F용", "r" : "사용", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3760e14e39a407a909d7" } }
-{ "o" : "游\\)", "r" : "湯)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3786e14e39a407a909d8" } }
-{ "o" : "목단피 탕", "r" : "목단피탕", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db37fee14e39a407a909d9" } }
-{ "o" : "後휴", "r" : "茯苓", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3865e14e39a407a909da" } }
-{ "o" : "으 며", "r" : "으며", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3870e14e39a407a909db" } }
-{ "o" : "작 약", "r" : "작약", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db38a4e14e39a407a909dc" } }
-{ "o" : "황\\)", "r" : "湯)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3961e14e39a407a909dd" } }
-{ "o" : " 심 하", "r" : " 심하", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3971e14e39a407a909de" } }
-{ "o" : "대湯\\)", "r" : "대황)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3ce2e14e39a407a909df" } }
-{ "o" : "易\\)", "r" : "湯)", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3cfae14e39a407a909e0" } }
-{ "o" : "정 형 ", "r" : "정형 ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3d0ae14e39a407a909e1" } }
-{ "o" : "鴻心", "r" : "瀉心", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3d2fe14e39a407a909e2" } }
-{ "o" : "益氣渗", "r" : "益氣湯", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3d45e14e39a407a909e3" } }
-{ "o" : " 연 약", "r" : " 연약", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3d5fe14e39a407a909e4" } }
-{ "o" : "⑩병태개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3d81e14e39a407a909e5" } }
-{ "o" : "익 히", "r" : "익히", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3da6e14e39a407a909e6" } }
-{ "o" : " 변 증", "r" : " 변증", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3dbce14e39a407a909e7" } }
-{ "o" : "m 한방의학적 변증과", "r" : "4갤한방의학적 변증과", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3dcbe14e39a407a909e8" } }
-{ "o" : "에의", "r" : "에 의", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e01e14e39a407a909e9" } }
-{ "o" : "해결정", "r" : "해 결정", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e08e14e39a407a909ea" } }
-{ "o" : "는처", "r" : "는 처", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e0ee14e39a407a909eb" } }
-{ "o" : "⑩치료처방", "r" : "4갤치료처방", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e29e14e39a407a909ec" } }
-{ "o" : "茶桂", "r" : "苓桂", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e4fe14e39a407a909ed" } }
-{ "o" : "；t 甘", "r" : "朮甘", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e5be14e39a407a909ee" } }
-{ "o" : "奔M", "r" : "奔豚", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e6ce14e39a407a909ef" } }
-{ "o" : "적 인 ", "r" : "적인 ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e91e14e39a407a909f0" } }
-{ "o" : "의작용", "r" : "의 작용", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3e9ce14e39a407a909f1" } }
-{ "o" : "：", "r" : ": ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3ec6e14e39a407a909f2" } }
-{ "o" : "매 핵", "r" : "매핵", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3edde14e39a407a909f3" } }
-{ "o" : "樓鄉", "r" : "檳榔", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3f28e14e39a407a909f4" } }
-{ "o" : "을없", "r" : "을 없", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3f3ae14e39a407a909f5" } }
-{ "o" : "뎨지", "r" : "계지", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3fb1e14e39a407a909f6" } }
-{ "o" : "拔爷", "r" : "茯苓", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db3fbce14e39a407a909f7" } }
-{ "o" : " 하 복", "r" : " 하복", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4049e14e39a407a909fb" } }
-{ "o" : " 기 본", "r" : " 기본", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4055e14e39a407a909fc" } }
-{ "o" : " 전 신", "r" : " 전신", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db406ee14e39a407a909fd" } }
-{ "o" : " 결 체", "r" : " 결체", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db40b7e14e39a407a909fe" } }
-{ "o" : "酸轰仁", "r" : "酸棗仁", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4109e14e39a407a909ff" } }
-{ "o" : "를제", "r" : "를 제", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db41bae14e39a407a90a00" } }
-{ "o" : " 하 고", "r" : " 하고", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4206e14e39a407a90a01" } }
-{ "o" : " 로\\,", "r" : "로,", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db424ee14e39a407a90a02" } }
-{ "o" : "호톱기", "r" : "호흡기", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db42b5e14e39a407a90a03" } }
-{ "o" : "된 다\\. ", "r" : "된다. ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4329e14e39a407a90a04" } }
-{ "o" : "빈 번", "r" : "빈번", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db438be14e39a407a90a05" } }
-{ "o" : "아 니", "r" : "아니", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db43b1e14e39a407a90a06" } }
-{ "o" : "卷서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db43ece14e39a407a90a07" } }
-{ "o" : "폐 렴", "r" : "폐렴", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db43f8e14e39a407a90a08" } }
-{ "o" : "翁 한방의학적 변증", "r" : "4갤한방의학적 변증", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4414e14e39a407a90a09" } }
-{ "o" : " 시 기", "r" : " 시기", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4478e14e39a407a90a0a" } }
-{ "o" : "戀 치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db45cde14e39a407a90a0b" } }
-{ "o" : "【애설】", "r" : "【해설】", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db45dce14e39a407a90a0c" } }
-{ "o" : "【해설】 o ", "r" : "【해설】 o> ", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4659e14e39a407a90a0d" } }
-{ "o" : "었 ", "r" : "었", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4674e14e39a407a90a0e" } }
-{ "o" : "흘 리", "r" : "흘리", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4799e14e39a407a90a0f" } }
-{ "o" : "키 닌", "r" : "키닌", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db485ce14e39a407a90a10" } }
-{ "o" : "황 금", "r" : "황금", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db48a3e14e39a407a90a11" } }
-{ "o" : "m 참고문헌 i\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db48bee14e39a407a90a12" } }
-{ "o" : " 고\\,", "r" : "고,", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db48d8e14e39a407a90a13" } }
-{ "o" : "을치료", "r" : "을 치료", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db48f1e14e39a407a90a14" } }
-{ "o" : " 가 많", "r" : "가 많", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4a2ee14e39a407a90a15" } }
-{ "o" : "복 령", "r" : "복령", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4a73e14e39a407a90a16" } }
-{ "o" : "대 조", "r" : "대조", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4b04e14e39a407a90a17" } }
-{ "o" : "증과치료", "r" : "증과 치료", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4c5eaeeda55c185c05ce" } }
-{ "o" : "문류", "r" : "분류", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4d05b4a6736818b0b358" } }
-{ "o" : "구 균", "r" : "구균", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4d13b4a6736818b0b359" } }
-{ "o" : "로많", "r" : "로 많", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4d1cb4a6736818b0b35a" } }
-{ "o" : "附구", "r" : "附子", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4d73b4a6736818b0b35b" } }
-{ "o" : "细", "r" : "細", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4d7cb4a6736818b0b35c" } }
-{ "o" : "여 겨", "r" : "여겨", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4db4b4a6736818b0b35d" } }
-{ "o" : "신 경", "r" : "신경", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4df6b4a6736818b0b35e" } }
-{ "o" : " 에서", "r" : "에서", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4e1eb4a6736818b0b35f" } }
-{ "o" : "논 의하", "r" : "논의하", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4e38b4a6736818b0b360" } }
-{ "o" : "흡 인", "r" : "흡인", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4e41b4a6736818b0b361" } }
-{ "o" : "마 른", "r" : "마른", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4e85b4a6736818b0b362" } }
-{ "o" : " 상 반", "r" : " 상반", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4e9eb4a6736818b0b363" } }
-{ "o" : "운증", "r" : "운 증", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4eb0b4a6736818b0b364" } }
-{ "o" : "太豁", "r" : "太谿", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4ed4b4a6736818b0b365" } }
-{ "o" : "필 자", "r" : "필자", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4eddb4a6736818b0b366" } }
-{ "o" : "m참고문헌 ®", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4ef4b4a6736818b0b367" } }
-{ "o" : "翁 증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53db4f26b4a6736818b0b368" } }
+{ "_id" : { "$oid" : "53d750e96062cba01937e099" }, "o" : "투여 군", "r" : "투여군", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d751566062cba01937e09a" }, "o" : "내 과비록", "r" : "내과비록", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d7517d6062cba01937e09b" }, "o" : "곰 팡이", "r" : "곰팡이", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d751906062cba01937e09c" }, "o" : "티 스", "r" : "티스", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d751bf6062cba01937e09d" }, "o" : "호藥", "r" : "芍藥", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d751d36062cba01937e09e" }, "o" : " 사 용한", "r" : " 사용한", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d751e46062cba01937e09f" }, "o" : "성종 양", "r" : "성종양", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d752046062cba01937e0a0" }, "o" : "黃S", "r" : "黃芪", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d752276062cba01937e0a1" }, "o" : "노夢", "r" : "人蔘", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d752316062cba01937e0a2" }, "o" : "를중심", "r" : "를 중심", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d7523d6062cba01937e0a3" }, "o" : "로폭넓", "r" : "로 폭넓", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d752926062cba01937e0a4" }, "o" : "白求", "r" : "白朮", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d752a86062cba01937e0a5" }, "o" : "生墓", "r" : "生薑", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d752c16062cba01937e0a6" }, "o" : " Ttt 甘", "r" : "朮甘", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d753196062cba01937e0a7" }, "o" : "편두 통", "r" : "편두통", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d753276062cba01937e0a8" }, "o" : "신경 학", "r" : "신경학", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d753386062cba01937e0a9" }, "o" : "를하", "r" : "를 하", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d753636062cba01937e0aa" }, "o" : "白 求", "r" : "白朮", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d7538f6062cba01937e0ab" }, "o" : "노ᅵ", "r" : "뇌", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d754076062cba01937e0ac" }, "o" : "포인트\\n\\n", "r" : "포인트\\n", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8521c267f07b818179f27" }, "o" : " 일 정하", "r" : " 일정하", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85249267f07b818179f28" }, "o" : "는의미", "r" : "는 의미", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d854db267f07b818179f29" }, "o" : "이 면 ", "r" : "이면 ", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d854e4267f07b818179f2a" }, "o" : "자주사", "r" : "자주 사", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85502267f07b818179f2b" }, "o" : "것같", "r" : "것 같", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85558267f07b818179f2c" }, "o" : "慧甘", "r" : "薏甘", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85567267f07b818179f2d" }, "o" : "신 경통", "r" : "신경통", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d855a3267f07b818179f2e" }, "o" : " Ttt 湯", "r" : "朮湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d855b7267f07b818179f2f" }, "o" : "이포함", "r" : "이 포함", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d855de267f07b818179f30" }, "o" : "경 향", "r" : "경향", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d855f8267f07b818179f31" }, "o" : "求甘湯", "r" : "朮甘湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85656267f07b818179f32" }, "o" : "慧졌仁", "r" : "薏苡仁", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d856a5267f07b818179f33" }, "o" : "黃 S ", "r" : "黃芪", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d856c9267f07b818179f34" }, "o" : " 배 출", "r" : " 배출", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d856e4267f07b818179f35" }, "o" : "越碑", "r" : "越婢", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85733267f07b818179f36" }, "o" : "에적", "r" : "에 적", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85772267f07b818179f37" }, "o" : "가많", "r" : "가 많", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85800267f07b818179f38" }, "o" : "酸棄仁", "r" : "酸棗仁", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85957267f07b818179f39" }, "o" : "胃茶湯", "r" : "胃苓湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85969267f07b818179f3a" }, "o" : "효과 가 ", "r" : "효과가 ", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85999267f07b818179f3b" }, "o" : "黃芸", "r" : "黃芪", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85a29267f07b818179f3c" }, "o" : " 혈 압", "r" : " 혈압", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85b2b267f07b818179f3d" }, "o" : " Ttt ", "r" : "朮", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85b45267f07b818179f3e" }, "o" : "/v夢", "r" : "人蔘", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85b55267f07b818179f3f" }, "o" : "측墓", "r" : "苓薑", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85b63267f07b818179f40" }, "o" : "간것", "r" : "간 것", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85b6b267f07b818179f41" }, "o" : "의증상", "r" : "의 증상", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85b74267f07b818179f42" }, "o" : " 적 용", "r" : " 적용", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85be7267f07b818179f43" }, "o" : "는내", "r" : "는 내", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85bee267f07b818179f44" }, "o" : "을참고", "r" : "을 참고", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85c00267f07b818179f45" }, "o" : "로한다", "r" : "로 한다", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85c66267f07b818179f46" }, "o" : " 증 상", "r" : " 증상", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85caa267f07b818179f47" }, "o" : "어 린", "r" : "어린", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85cb3267f07b818179f48" }, "o" : " 에게", "r" : "에게", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85d13267f07b818179f49" }, "o" : "竹药", "r" : "竹茹", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85d38267f07b818179f4a" }, "o" : "인증상", "r" : "인 증상", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85d44267f07b818179f4b" }, "o" : "의경우", "r" : "의 경우", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85d86267f07b818179f4c" }, "o" : "이조건", "r" : "이 조건", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85d9f267f07b818179f4d" }, "o" : "측甘", "r" : "苓甘", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85dab267f07b818179f4e" }, "o" : "塞味", "r" : "薑味", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85dc1267f07b818179f4f" }, "o" : "과유사", "r" : "과 유사", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85e4c267f07b818179f50" }, "o" : "苓甘藍味", "r" : "苓甘薑味", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85ed7267f07b818179f51" }, "o" : "에관", "r" : "에 관", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85eef267f07b818179f52" }, "o" : "는 가에", "r" : "는가에", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85ef8267f07b818179f53" }, "o" : " 분 석", "r" : " 분석", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85f09267f07b818179f54" }, "o" : "이특징", "r" : "이 특징", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85f1e267f07b818179f55" }, "o" : "靑育틀", "r" : "靑龍", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85f2b267f07b818179f56" }, "o" : "도사용", "r" : "도 사용", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d85fce267f07b818179f57" }, "o" : "茵陳舊", "r" : "茵蔯蒿", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86000267f07b818179f58" }, "o" : "을목표", "r" : "을 목표", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86007267f07b818179f59" }, "o" : "것 을", "r" : "것을", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8601f267f07b818179f5a" }, "o" : "五華散", "r" : "五苓散", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d860ad267f07b818179f5b" }, "o" : "吳菜！!", "r" : "吳茱萸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d860b9267f07b818179f5c" }, "o" : "生蓮湯", "r" : "生薑湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d860e3267f07b818179f5d" }, "o" : "을동반", "r" : "을 동반", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8610b267f07b818179f5e" }, "o" : "夜爷", "r" : "茯苓", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86140267f07b818179f5f" }, "o" : "茵陳", "r" : "茵蔯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86183267f07b818179f60" }, "o" : "한응용", "r" : "한 응용", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d861b4267f07b818179f61" }, "o" : "고본다", "r" : "고 본다", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d861d4267f07b818179f62" }, "o" : "해 야 ", "r" : "해야 ", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8623c267f07b818179f63" }, "o" : "柴흡湯", "r" : "柴苓湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8624d267f07b818179f64" }, "o" : "黃度湯", "r" : "黃芪湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8628d267f07b818179f65" }, "o" : "한결과", "r" : "한 결과", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d862b0267f07b818179f66" }, "o" : " 고 려", "r" : " 고려", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d862e8267f07b818179f67" }, "o" : "補賢", "r" : "補腎", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8631a267f07b818179f68" }, "o" : "五휴散", "r" : "五苓散", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86384267f07b818179f69" }, "o" : "흡桂", "r" : "苓桂", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8638f267f07b818179f6a" }, "o" : "水甘 湯", "r" : "朮甘湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d863b0267f07b818179f6b" }, "o" : "계择", "r" : "계悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d863bb267f07b818179f6c" }, "o" : " 나 타나", "r" : " 나타나", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d863c9267f07b818179f6d" }, "o" : "加龙湯", "r" : "加朮湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d864a4267f07b818179f6e" }, "o" : "茶墓朮", "r" : "苓薑朮", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d864d4267f07b818179f6f" }, "o" : "ᄎ棄", "r" : "大棗", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d864e7267f07b818179f70" }, "o" : "배 꼽", "r" : "배꼽", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86557267f07b818179f71" }, "o" : "»上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86575267f07b818179f72" }, "o" : "ᄎ裏", "r" : "大棗", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d865d7267f07b818179f73" }, "o" : "짖먹이", "r" : "젖먹이", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d865e9267f07b818179f74" }, "o" : "한근거", "r" : "한 근거", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86625267f07b818179f75" }, "o" : "에대", "r" : "에 대", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86630267f07b818179f76" }, "o" : "러가", "r" : "러 가", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8663e267f07b818179f77" }, "o" : "여 윈", "r" : "여윈", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d86677267f07b818179f78" }, "o" : " 를 ", "r" : "를 ", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8797b267f07b818179f79" }, "o" : "없 ", "r" : "없", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d879c2267f07b818179f7a" }, "o" : "茵蔯惹", "r" : "茵蔯蒿", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87a1d267f07b818179f7b" }, "o" : "猪흉", "r" : "猪苓", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87a30267f07b818179f7c" }, "o" : "柴爷", "r" : "柴苓", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87a47267f07b818179f7d" }, "o" : "훼 ", "r" : "훼", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87a4e267f07b818179f7e" }, "o" : "는일", "r" : "는 일", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87a74267f07b818179f7f" }, "o" : ";易", "r" : "湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87aad267f07b818179f80" }, "o" : "芒碑", "r" : "芒硝", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87ab5267f07b818179f81" }, "o" : "芒確", "r" : "芒硝", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87af9267f07b818179f82" }, "o" : "芒銷", "r" : "芒硝", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87b0f267f07b818179f83" }, "o" : " 효 과", "r" : " 효과", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87b27267f07b818179f84" }, "o" : "大黃黃", "r" : "大黃", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87b5a267f07b818179f85" }, "o" : "五흡散", "r" : "五苓散", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87bd1267f07b818179f86" }, "o" : "곤 란", "r" : "곤란", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87bdf267f07b818179f87" }, "o" : "용 된", "r" : "용된", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87c38267f07b818179f88" }, "o" : "夜측", "r" : "茯苓", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87c61267f07b818179f89" }, "o" : "\\*黃甘草", "r" : "大黃甘草", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87c92267f07b818179f8a" }, "o" : " 과 ", "r" : "과 ", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87d69267f07b818179f8b" }, "o" : "벗 ", "r" : "벗", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87dfc267f07b818179f8c" }, "o" : "Ttt湯", "r" : "朮湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87e98267f07b818179f8d" }, "o" : "를요", "r" : "를 요", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87f05267f07b818179f8e" }, "o" : "Ttt", "r" : "朮", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87f7b267f07b818179f8f" }, "o" : "惹졌仁", "r" : "薏苡仁", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87fda267f07b818179f90" }, "o" : "黃 s ", "r" : "黃芪", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d87ffa267f07b818179f91" }, "o" : "청藥", "r" : "芍藥", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88016267f07b818179f92" }, "o" : "\\+全大", "r" : "十全大", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8806a267f07b818179f93" }, "o" : "酸秦仁", "r" : "酸棗仁", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88d60267f07b818179f94" }, "o" : "滞", "r" : "滯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88d77267f07b818179f95" }, "o" : "获훈", "r" : "茯苓", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88d93267f07b818179f96" }, "o" : "鎮", "r" : "鎭", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88eb4267f07b818179f97" }, "o" : "產", "r" : "産", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88ee0267f07b818179f98" }, "o" : "부 터", "r" : "부터", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88f4a267f07b818179f99" }, "o" : " 투 여", "r" : " 투여", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88f78267f07b818179f9a" }, "o" : "될수", "r" : "될 수", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88fe2267f07b818179f9b" }, "o" : "을들", "r" : "을 들", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d88fea267f07b818179f9c" }, "o" : "지특징", "r" : "지 특징", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8901f267f07b818179f9d" }, "o" : "j寫", "r" : "瀉", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d891f0267f07b818179f9e" }, "o" : "乾藍湯", "r" : "乾薑湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89200267f07b818179f9f" }, "o" : "고끊", "r" : "고 끊", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8925e267f07b818179fa0" }, "o" : "Af용", "r" : "사용", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8926d267f07b818179fa1" }, "o" : " 자 주", "r" : " 자주", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d892a0267f07b818179fa2" }, "o" : "上ft症", "r" : "上氣症", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d892ae267f07b818179fa3" }, "o" : "라고하", "r" : "라고 하", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8934b267f07b818179fa4" }, "o" : "人夢", "r" : "人蔘", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89355267f07b818179fa5" }, "o" : "黃s", "r" : "黃芪", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89379267f07b818179fa6" }, "o" : "酸S仁", "r" : "酸棗仁", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d893dc267f07b818179fa7" }, "o" : "혹歸膠", "r" : "芎歸膠", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8943d267f07b818179fa8" }, "o" : "턴藥", "r" : "芍藥", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89460267f07b818179fa9" }, "o" : "遺遙", "r" : "逍遙", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d894a3267f07b818179faa" }, "o" : "을느", "r" : "을 느", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89537267f07b818179fab" }, "o" : "고적용", "r" : "고 적용", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89575267f07b818179fac" }, "o" : "著墓朮甘", "r" : "苓薑朮甘", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8988d267f07b818179fad" }, "o" : "漠肝", "r" : "瀉肝", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d898be267f07b818179fae" }, "o" : "이 러", "r" : "이러", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89917267f07b818179faf" }, "o" : "을사용", "r" : "을 사용", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89965267f07b818179fb0" }, "o" : "쇼痛", "r" : "止痛", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89979267f07b818179fb1" }, "o" : "필 요", "r" : "필요", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8998d267f07b818179fb2" }, "o" : "紅門", "r" : "肛門", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d899ad267f07b818179fb3" }, "o" : "득歸膠", "r" : "芎歸膠", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d899cb267f07b818179fb4" }, "o" : "\\)’寫", "r" : "瀉", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89a82267f07b818179fb5" }, "o" : "\\+味敗", "r" : "十味敗", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89adf267f07b818179fb6" }, "o" : "\\-貫堂", "r" : "一貫堂", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89b65267f07b818179fb7" }, "o" : "신음허W陰", "r" : "신음허腎陰", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89b73267f07b818179fb8" }, "o" : "신양허W陽", "r" : "신양허腎陽", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89b97267f07b818179fb9" }, "o" : "거 림", "r" : "거림", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89c57267f07b818179fba" }, "o" : "에따", "r" : "에 따", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89c5e267f07b818179fbb" }, "o" : "라사용", "r" : "라 사용", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89c97267f07b818179fbc" }, "o" : "莉芥", "r" : "荊芥", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89ca3267f07b818179fbd" }, "o" : "連熱湯", "r" : "蓮翹湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89cb3267f07b818179fbe" }, "o" : " 대 한", "r" : " 대한", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89cd8267f07b818179fbf" }, "o" : "意\\]茨仁", "r" : "薏苡仁", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89ea6267f07b818179fc0" }, "o" : "連鍾湯", "r" : "蓮翹湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89ef2267f07b818179fc1" }, "o" : "加求湯", "r" : "加朮湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89f24267f07b818179fc2" }, "o" : "하지 만 ", "r" : "하지만 ", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89f52267f07b818179fc3" }, "o" : "가포함", "r" : "가 포함", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89fa4267f07b818179fc4" }, "o" : "慧！茨仁", "r" : "薏苡仁", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d89fe5267f07b818179fc5" }, "o" : "猪茶", "r" : "猪苓", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a036267f07b818179fc6" }, "o" : "를증", "r" : "를 증", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a061267f07b818179fc7" }, "o" : "黃혹", "r" : "黃芩", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a074267f07b818179fc8" }, "o" : "山梅子", "r" : "山梔子", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a0ae267f07b818179fc9" }, "o" : "도 록", "r" : "도록", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a0ba267f07b818179fca" }, "o" : "猪휴", "r" : "猪苓", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a168267f07b818179fcb" }, "o" : "W上 1f", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a180267f07b818179fcc" }, "o" : "를느", "r" : "를 느", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a188267f07b818179fcd" }, "o" : "K上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a1e2267f07b818179fce" }, "o" : "i寫", "r" : "瀉", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a26f267f07b818179fcf" }, "o" : "答桂朮", "r" : "苓桂朮", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a2ab267f07b818179fd0" }, "o" : " 둥도", "r" : " 등도", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a34b267f07b818179fd1" }, "o" : "에까", "r" : "에 까", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a394267f07b818179fd2" }, "o" : "판 정", "r" : "판정", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a3a9267f07b818179fd3" }, "o" : "를가", "r" : "를 가", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a3c9267f07b818179fd4" }, "o" : "桂梗", "r" : "桔梗", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a3e8267f07b818179fd5" }, "o" : "에 까지", "r" : "에까지", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a41f267f07b818179fd6" }, "o" : " A]용", "r" : " 사용", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a42f267f07b818179fd7" }, "o" : "\\-貫 堂", "r" : "一貫堂", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a46b267f07b818179fd8" }, "o" : "蕩心湯", "r" : "瀉心湯", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a4ec267f07b818179fd9" }, "o" : "8S上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a556267f07b818179fda" }, "o" : "가특징", "r" : "가 특징", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a807267f07b818179fdb" }, "o" : "가존재", "r" : "가 존재", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d8a867267f07b818179fdc" }, "o" : "는설", "r" : "는 설", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d96f7e3de3ca7407aa7710" }, "o" : "ffi上If", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d96f8b3de3ca7407aa7711" }, "o" : "한증상", "r" : "한 증상", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d96f9a3de3ca7407aa7712" }, "o" : "R上洋", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d96fb43de3ca7407aa7713" }, "o" : "을잘", "r" : "을 잘", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d972943de3ca7407aa7714" }, "o" : "W上偉", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d973243de3ca7407aa7715" }, "o" : "K 上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d9732b3de3ca7407aa7716" }, "o" : "가중요", "r" : "가 중요", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d973533de3ca7407aa7717" }, "o" : "흥 분", "r" : "흥분", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d973823de3ca7407aa7718" }, "o" : "BS上择", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d973eb3de3ca7407aa7719" }, "o" : "8S上洋", "r" : "臍上悸", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d9751b3de3ca7407aa771c" }, "o" : "効", "r" : "效", "e" : 1, "b" : "yanghan" }
+{ "_id" : { "$oid" : "53d99cfa3de3ca7407aa771d" }, "o" : " '", "r" : " ‘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d99d0f3de3ca7407aa771e" }, "o" : "1한방의학’", "r" : "‘한방의학’", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d99d533de3ca7407aa771f" }, "o" : "고방 파", "r" : "고방파", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d99d6d3de3ca7407aa7720" }, "o" : "\\(古方®", "r" : "(古方派)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9acd8155c77080d051379" }, "o" : "있 ", "r" : "있", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ad93155c77080d05137a" }, "o" : "일 본", "r" : "일본", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9add3155c77080d05137b" }, "o" : "숲\\{募", "r" : "金傷", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9adea155c77080d05137c" }, "o" : "과관련", "r" : "과 관련", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ae02155c77080d05137d" }, "o" : "을만", "r" : "을 만", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ae41155c77080d05137e" }, "o" : "드陰", "r" : "三陰", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ae4b155c77080d05137f" }, "o" : "드 陽", "r" : "三陽", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ae4f155c77080d051380" }, "o" : "드陽", "r" : "三陽", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ae78155c77080d051381" }, "o" : "m 참고문헌 t\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9af14155c77080d051382" }, "o" : "扁昔\\I", "r" : "扁鵲", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9af3d155c77080d051383" }, "o" : "黃帝內®", "r" : "黃帝內經", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9af67155c77080d051384" }, "o" : "황제내경j", "r" : "황제내경』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9af80155c77080d051385" }, "o" : "신농본초경j", "r" : "신농본초경』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9af99155c77080d051386" }, "o" : "상한잡병론J", "r" : "상한잡병론』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9afad155c77080d051387" }, "o" : "\\(傷寒論\\)J", "r" : "(傷寒論)』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9afd0155c77080d051388" }, "o" : "金匿要", "r" : "金匱要", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9afe7155c77080d051389" }, "o" : "要略\\)J", "r" : "要略)』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9affb155c77080d05138a" }, "o" : "彌中景", "r" : "張仲景", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b011155c77080d05138b" }, "o" : "육경\\(六@", "r" : "육경(六經)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b021155c77080d05138c" }, "o" : "상한론j", "r" : "상한론』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b036155c77080d05138d" }, "o" : "상 한론", "r" : "상한론", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b052155c77080d05138e" }, "o" : "論\\)j ", "r" : "論)』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b066155c77080d05138f" }, "o" : "方\\)j ", "r" : "方)』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b077155c77080d051390" }, "o" : "孫思it", "r" : "孫思邈", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b07e155c77080d051391" }, "o" : "孫思M", "r" : "孫思邈", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b0b7155c77080d051392" }, "o" : "천금요방j ", "r" : "천금요방』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b0c5155c77080d051393" }, "o" : "r비급천금", "r" : "『비급천금", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b0d2155c77080d051394" }, "o" : "천금익방j", "r" : "천금익방』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b152155c77080d051395" }, "o" : "결 과", "r" : "결과", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b167155c77080d051396" }, "o" : "r상한론", "r" : "『상한론", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b17e155c77080d051397" }, "o" : "\\,『", "r" : ", 『", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b1a4155c77080d051398" }, "o" : "ᄎ宗", "r" : "大宗", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b1b1155c77080d051399" }, "o" : "이 론", "r" : "이론", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b1e3155c77080d05139a" }, "o" : "東±D", "r" : "東垣", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b208155c77080d05139b" }, "o" : "드喜", "r" : "三喜", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b261155c77080d05139c" }, "o" : "條辨\\)j", "r" : "條辨)』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b31a155c77080d05139d" }, "o" : " 이며", "r" : "이며", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b38a155c77080d05139e" }, "o" : " 사 실", "r" : " 사실", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b3b3155c77080d05139f" }, "o" : "\\{水毒\\)", "r" : "(水毒)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b3da155c77080d0513a0" }, "o" : "笞", "r" : "苔", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b3ee155c77080d0513a1" }, "o" : "있는", "r" : "있는 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b3f6155c77080d0513a2" }, "o" : "있는  ", "r" : "있는 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b3ff155c77080d0513a3" }, "o" : "백 태", "r" : "백태", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b48d155c77080d0513a4" }, "o" : "\\(醫宗\\^\\)j", "r" : "(醫宗金鑑)』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b496155c77080d0513a5" }, "o" : "의종금감j", "r" : "의종금감』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b4e8155c77080d0513a6" }, "o" : "1’의종금감", "r" : "『의종금감", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b50a155c77080d0513a7" }, "o" : "아 직", "r" : "아직", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b532155c77080d0513a8" }, "o" : "併", "r" : "倂", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b552155c77080d0513a9" }, "o" : "黃痕", "r" : "黃疸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b55b155c77080d0513aa" }, "o" : "한설명", "r" : "한 설명", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b57d155c77080d0513ab" }, "o" : "촌구 맥", "r" : "촌구맥", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b5ae155c77080d0513ac" }, "o" : "일븐", "r" : "일본", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b5c0155c77080d0513ad" }, "o" : "\\<古方®", "r" : "(古方派)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b5ef155c77080d0513ae" }, "o" : "염 두", "r" : "염두", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b5fa155c77080d0513af" }, "o" : " 속 도", "r" : " 속도", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b615155c77080d0513b0" }, "o" : "한방의 학적", "r" : "한방의학적", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b620155c77080d0513b1" }, "o" : "리돔", "r" : "리듬", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b636155c77080d0513b2" }, "o" : "沈IJi", "r" : "沈脈", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b706155c77080d0513b3" }, "o" : "고있", "r" : "고 있", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b733155c77080d0513b5" }, "o" : "표 \\(S\\)", "r" : "표(表)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b781155c77080d0513b6" }, "o" : "부식■", "r" : "부삭", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b7a9155c77080d0513b7" }, "o" : "이\\(«\\)", "r" : "이(裏)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9b7b6155c77080d0513b8" }, "o" : "\\<寒\\)", "r" : "(寒)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cd35155c77080d0513b9" }, "o" : "용 골모려", "r" : "용골모려", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cd49155c77080d0513ba" }, "o" : "洪ᄎ", "r" : "洪大", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cdf9155c77080d0513bb" }, "o" : "혈OflL\\)", "r" : "혈(血)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ce77155c77080d0513bc" }, "o" : "心下癌5M", "r" : "心下痞硬", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ce89155c77080d0513bd" }, "o" : " 실 시한", "r" : " 실시한", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ceaa155c77080d0513be" }, "o" : "\\<心下\\)", "r" : "(心下)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ceba155c77080d0513bf" }, "o" : "심히\\(心", "r" : "심하(心", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cec6155c77080d0513c0" }, "o" : "月力", "r" : "肋", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ceec155c77080d0513c1" }, "o" : "제상\\(脑소", "r" : "제상(臍上", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cefe155c77080d0513c2" }, "o" : "廝旁", "r" : "臍旁", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cf0e155c77080d0513c3" }, "o" : "소복\\(小膨", "r" : "소복(小腹)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cf24155c77080d0513c4" }, "o" : "心下癌", "r" : "心下痞", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cf2e155c77080d0513c5" }, "o" : "心下唐", "r" : "心下痞", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cf6f155c77080d0513c6" }, "o" : "心窝해", "r" : "心窩部", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cf7b155c77080d0513c7" }, "o" : "는소", "r" : "는 소", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cfa8155c77080d0513c8" }, "o" : "한디<그림", "r" : "한디(그림", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9cfb4155c77080d0513c9" }, "o" : "한디\\(그림", "r" : "한다(그림", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d074155c77080d0513ca" }, "o" : "를이", "r" : "를 이", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d08d155c77080d0513cb" }, "o" : "心下俘", "r" : "心下悸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d09a155c77080d0513cc" }, "o" : " 가 느끼", "r" : "가 느끼", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d0a5155c77080d0513cd" }, "o" : "膀下怪", "r" : "膀下悸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d0b2155c77080d0513ce" }, "o" : "촉 지", "r" : "촉지", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d0cb155c77080d0513cf" }, "o" : "膀上悸", "r" : "臍上悸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d0d6155c77080d0513d0" }, "o" : "膀下悸", "r" : "臍下悸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d0e9155c77080d0513d1" }, "o" : "기역\\(氣왠", "r" : "기역(氣逆", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d0f4155c77080d0513d2" }, "o" : "오 령산", "r" : "오령산", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d18b155c77080d0513d6" }, "o" : " 므로", "r" : "므로", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d21e155c77080d0513d7" }, "o" : "변증\\(辨譜", "r" : "변증(辨證)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d23b155c77080d0513d8" }, "o" : "辨m", "r" : "辨證", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d240155c77080d0513d9" }, "o" : "辨it", "r" : "辨證", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d249155c77080d0513da" }, "o" : "辨if", "r" : "辨證", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d26c155c77080d0513db" }, "o" : "바 란", "r" : "바란", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d2bb155c77080d0513dc" }, "o" : "따 라", "r" : "따라", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d2c2155c77080d0513dd" }, "o" : "라정리", "r" : "라 정리", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d302155c77080d0513df" }, "o" : "부\\(膽\\)", "r" : "부(腑)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d34c155c77080d0513e0" }, "o" : "명확 하", "r" : "명확하", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d36e155c77080d0513e1" }, "o" : "五ᄎ", "r" : "五大", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d382155c77080d0513e2" }, "o" : "풍\\(膨", "r" : "풍(風)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d39a155c77080d0513e3" }, "o" : "화 0X\\)", "r" : "화(火)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d3a5155c77080d0513e4" }, "o" : "에 도 ", "r" : "에도 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d3f3155c77080d0513e5" }, "o" : "r금궤요략", "r" : "『금궤요략", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d403155c77080d0513e6" }, "o" : "금궤요략J", "r" : "『금궤요략』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d527155c77080d0513e9" }, "o" : "금궤요략J", "r" : "금궤요략』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d565155c77080d0513ea" }, "o" : "정기\\(精췄", "r" : "정기(精氣", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d578155c77080d0513eb" }, "o" : "음식 물", "r" : "음식물", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d57f155c77080d0513ec" }, "o" : "많 ", "r" : "많", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d597155c77080d0513ed" }, "o" : "진 찰", "r" : "진찰", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d5a1155c77080d0513ee" }, "o" : " 체 질", "r" : " 체질", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d5af155c77080d0513ef" }, "o" : "질 환", "r" : "질환", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d623155c77080d0513f0" }, "o" : "사진\\(四談", "r" : "사진(四診", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d692155c77080d0513f1" }, "o" : "이\\(\\*\\)", "r" : "이(裏)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d69c155c77080d0513f2" }, "o" : " 병 변", "r" : " 병변", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d6ce155c77080d0513f3" }, "o" : "서양의 학의", "r" : "서양의학의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d6e8155c77080d0513f4" }, "o" : "신\\(賢\\)", "r" : "신(腎)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d6fd155c77080d0513f5" }, "o" : "췌\\(勝\\)", "r" : "췌(膵)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d739155c77080d0513f6" }, "o" : "상한론_\\|", "r" : "상한론』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d744155c77080d0513f7" }, "o" : "소양 병", "r" : "소양병", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d751155c77080d0513f8" }, "o" : "짧 ", "r" : "짧", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d759155c77080d0513f9" }, "o" : "를거", "r" : "를 거", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d768155c77080d0513fa" }, "o" : "진행 되", "r" : "진행되", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d79a155c77080d0513fb" }, "o" : " \\(", "r" : "(", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d7bd155c77080d0513fc" }, "o" : "부맥\\(浮月© ", "r" : "부맥(浮脈)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d7c9155c77080d0513fd" }, "o" : "解 表", "r" : "解表", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d7d2155c77080d0513fe" }, "o" : "마 르", "r" : "마르", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d7de155c77080d0513ff" }, "o" : "實 熱", "r" : "實熱", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d836155c77080d051400" }, "o" : "의같", "r" : "의 같", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d862155c77080d051401" }, "o" : "는 데\\, ", "r" : "는데, ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d87c155c77080d051402" }, "o" : "홑트", "r" : "흩트", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d896155c77080d051403" }, "o" : " 며\\,", "r" : "며,", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d8cc155c77080d051404" }, "o" : "『상한론」", "r" : "『상한론』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d8d2155c77080d051405" }, "o" : "「상한론』", "r" : "『상한론』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d8e9155c77080d051406" }, "o" : " 알 아", "r" : " 알아", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d8f2155c77080d051407" }, "o" : "태양 병", "r" : "태양병", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d8fa155c77080d051408" }, "o" : "총 괄", "r" : "총괄", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d943155c77080d051409" }, "o" : "상한론_!", "r" : "상한론』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d954155c77080d05140a" }, "o" : "상한론\\(傷寒論\\) J", "r" : "상한론(傷寒論) 』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d978155c77080d05140b" }, "o" : " 론적", "r" : "론적", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d997155c77080d05140c" }, "o" : "기\\(M\\)", "r" : "기(氣)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d9a3155c77080d05140d" }, "o" : "혈\\(船", "r" : "혈(血)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d9b4155c77080d05140e" }, "o" : "따라일", "r" : "따라 일", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d9be155c77080d05140f" }, "o" : "을조정", "r" : "을 조정", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d9d5155c77080d051410" }, "o" : "고여겨", "r" : "고 여겨", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9d9ef155c77080d051411" }, "o" : "의개념", "r" : "의 개념", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9daf7155c77080d051413" }, "o" : "할수 있", "r" : "할 수 있", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9db3b155c77080d051414" }, "o" : "기와혈", "r" : "기와 혈", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9db67155c77080d051415" }, "o" : " 말 초", "r" : " 말초", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9db71155c77080d051416" }, "o" : "혈 류", "r" : "혈류", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9db7d155c77080d051417" }, "o" : "로하여", "r" : "로 하여", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dbb1155c77080d051418" }, "o" : "기울\\(氣蜜", "r" : "기울(氣鬱", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dbd8155c77080d051419" }, "o" : "후 박탕", "r" : "후박탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dbf0155c77080d05141a" }, "o" : "동 계", "r" : "동계", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dc18155c77080d05141b" }, "o" : "계 지탕", "r" : "계지탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dc32155c77080d05141c" }, "o" : "익기 탕", "r" : "익기탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dc53155c77080d05141d" }, "o" : "을포함", "r" : "을 포함", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dc5a155c77080d05141e" }, "o" : "는방제", "r" : "는 방제", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dc78155c77080d05141f" }, "o" : "어혈\\(疲血", "r" : "어혈(瘀血", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dc90155c77080d051420" }, "o" : "혈어\\(血疲", "r" : "혈어(血瘀", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dcc9155c77080d051421" }, "o" : "가되는", "r" : "가 되는", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dce0155c77080d051422" }, "o" : "환 자", "r" : "환자", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dda1155c77080d051423" }, "o" : "수기\\(水놓", "r" : "수기(水氣", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ddfc155c77080d051424" }, "o" : "저령 탕", "r" : "저령탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9de0f155c77080d051426" }, "o" : "영 감강미", "r" : "영감강미", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9de8a155c77080d051427" }, "o" : "담 당", "r" : "담당", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9dee0155c77080d051428" }, "o" : "신\\(背\\)", "r" : "신(腎)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e001155c77080d051429" }, "o" : "에들", "r" : "에 들", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e011155c77080d05142a" }, "o" : "다고되", "r" : "다고 되", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e074155c77080d05142b" }, "o" : "금궤요략j ", "r" : "금궤요략』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e08d155c77080d05142c" }, "o" : "본 래", "r" : "본래", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e0a3155c77080d05142d" }, "o" : "미지 황", "r" : "미지황", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e0f6155c77080d05142e" }, "o" : "승 마", "r" : "승마", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e110155c77080d05142f" }, "o" : "삼 소음", "r" : "삼소음", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e125155c77080d051430" }, "o" : "淸下劑", "r" : "瀉下劑", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e176155c77080d051431" }, "o" : " 등 이 ", "r" : " 등이 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e186155c77080d051432" }, "o" : "산조 인", "r" : "산조인", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e1ab155c77080d051433" }, "o" : "祐換血", "r" : "袪瘀血", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e1d5155c77080d051434" }, "o" : " \\lOOmL", "r" : "100mL", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e1ee155c77080d051435" }, "o" : " 례", "r" : "례", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e26f155c77080d051436" }, "o" : "악 화", "r" : "악화", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e278155c77080d051437" }, "o" : "속 적", "r" : "속적", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e2af155c77080d051438" }, "o" : "해 독탕", "r" : "해독탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e2c2155c77080d051439" }, "o" : "고나서", "r" : "고 나서", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e2c9155c77080d05143a" }, "o" : "을공격", "r" : "을 공격", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e354155c77080d05143b" }, "o" : "m 참고문헌 «\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e594155c77080d05143c" }, "o" : " 검 사", "r" : " 검사", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e5a3155c77080d05143d" }, "o" : "혈 관", "r" : "혈관", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e6be155c77080d05143e" }, "o" : "를넘", "r" : "를 넘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e81d155c77080d05143f" }, "o" : " a 차단제", "r" : " α 차단제", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e839155c77080d051440" }, "o" : "한방의 학의", "r" : "한방의학의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e842155c77080d051441" }, "o" : " 적 응", "r" : " 적응", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e871155c77080d051442" }, "o" : " 한 방약", "r" : " 한방약", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e882155c77080d051443" }, "o" : " 경 우", "r" : " 경우", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e8a2155c77080d051444" }, "o" : "\\l40", "r" : "140", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e8d1155c77080d051445" }, "o" : "스 트레", "r" : "스트레", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e93e155c77080d051446" }, "o" : " 이 있", "r" : "이 있", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e958155c77080d051447" }, "o" : "모려 탕", "r" : "모려탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e964155c77080d051448" }, "o" : "牡蠣끓", "r" : "牡蠣湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e983155c77080d051449" }, "o" : "【목표】 o", "r" : "【목표】 o>", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e997155c77080d05144a" }, "o" : "【목표】 O", "r" : "【목표】 o>", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e9b4155c77080d05144b" }, "o" : "변 비", "r" : "변비", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e9c2155c77080d05144c" }, "o" : " 작 용", "r" : " 작용", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e9d8155c77080d05144d" }, "o" : "사심 탕", "r" : "사심탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9e9e6155c77080d05144e" }, "o" : "滨心", "r" : "瀉心", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ea67155c77080d051452" }, "o" : "解毒끓", "r" : "解毒湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9eada155c77080d051453" }, "o" : "釣膝散", "r" : "釣藤散", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9eae6155c77080d051454" }, "o" : "두 중감", "r" : "두중감", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9eaf7155c77080d051455" }, "o" : " 이 나타", "r" : "이 나타", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9eb37155c77080d051456" }, "o" : " 강 하", "r" : " 강하", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9eb7c155c77080d051457" }, "o" : "합氣丸", "r" : "腎氣丸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ebc0155c77080d051458" }, "o" : "降下港", "r" : "降下湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ebce155c77080d051459" }, "o" : "진우탕", "r" : "진무탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ebfd155c77080d05145a" }, "o" : "遊遙", "r" : "逍遙", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9ec3e155c77080d05145b" }, "o" : "黃民끓", "r" : "黃芪湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f153155c77080d05145c" }, "o" : "억 간산", "r" : "억간산", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f16a155c77080d05145d" }, "o" : " 상 태", "r" : " 상태", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f182155c77080d05145e" }, "o" : "진 피", "r" : "진피", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f1c5155c77080d05145f" }, "o" : "방줌통성", "r" : "방풍통성", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f248155c77080d051460" }, "o" : "도핵 승기", "r" : "도핵승기", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f24e155c77080d051461" }, "o" : "승기 탕", "r" : "승기탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f257155c77080d051462" }, "o" : "承氣港", "r" : "承氣湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f26a155c77080d051463" }, "o" : "경불 순", "r" : "경불순", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f289155c77080d051464" }, "o" : "【=표】", "r" : "【목표】", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f2ae155c77080d051465" }, "o" : "四物港", "r" : "四物湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f2d4155c77080d051466" }, "o" : "화藥", "r" : "芍藥", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f2e0155c77080d051467" }, "o" : "허 증", "r" : "허증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f2ec155c77080d051468" }, "o" : " 와 병용", "r" : "와 병용", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f315155c77080d051469" }, "o" : "\\lOO", "r" : "100", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f32c155c77080d05146a" }, "o" : "서 양의학에서", "r" : "서양의학에서", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f33f155c77080d05146b" }, "o" : " a 자극제", "r" : " α 자극제", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f367155c77080d05146c" }, "o" : "고식 염", "r" : "고식염", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f37d155c77080d05146d" }, "o" : "의 대옹", "r" : "의 대응", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f39c155c77080d05146e" }, "o" : "포함 하", "r" : "포함하", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f3c2155c77080d05146f" }, "o" : "전체 적", "r" : "전체적", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f3d1155c77080d051470" }, "o" : "하 다\\.", "r" : "하다.", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f3dd155c77080d051471" }, "o" : "신 진대사", "r" : "신진대사", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f44a155c77080d051472" }, "o" : "현기 증", "r" : "현기증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f463155c77080d051473" }, "o" : "을결", "r" : "을 결", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f471155c77080d051474" }, "o" : "계 피", "r" : "계피", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f487155c77080d051475" }, "o" : "益氣游", "r" : "益氣湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f49f155c77080d051476" }, "o" : "君子港", "r" : "君子湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f4bc155c77080d051477" }, "o" : "】 O", "r" : "】 o", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f4ee155c77080d051478" }, "o" : "을제거", "r" : "을 제거", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f500155c77080d051479" }, "o" : "육균자", "r" : "육군자", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f51c155c77080d05147a" }, "o" : "厚朴끓", "r" : "厚朴湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f55c155c77080d05147b" }, "o" : "에작", "r" : "에 작", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f572155c77080d05147c" }, "o" : "眞武황", "r" : "眞武湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f57b155c77080d05147d" }, "o" : "복 통", "r" : "복통", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f5bb155c77080d05147e" }, "o" : "현 기증", "r" : "현기증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f5d3155c77080d05147f" }, "o" : "白才L", "r" : "白朮", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f5dc155c77080d051480" }, "o" : "天麻場", "r" : "天麻湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f607155c77080d051481" }, "o" : "한사람", "r" : "한 사람", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f63f155c77080d051482" }, "o" : "大補황", "r" : "大補湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9f951155c77080d051483" }, "o" : "동맥경 화", "r" : "동맥경화", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fb11155c77080d051484" }, "o" : "以소", "r" : "以上", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fb75155c77080d051485" }, "o" : "〜", "r" : "~", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fbad155c77080d051486" }, "o" : "柴胡易", "r" : "柴胡湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fbc9155c77080d051487" }, "o" : "방뚱통성", "r" : "방풍통성", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fbd1155c77080d051488" }, "o" : "실 증", "r" : "실증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fce3155c77080d051489" }, "o" : "解毒海", "r" : "解毒湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fd72155c77080d05148a" }, "o" : "특 징", "r" : "특징", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fd81155c77080d05148b" }, "o" : "난 다\\.", "r" : "난다.", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fdc7155c77080d05148c" }, "o" : " 이 없", "r" : "이 없", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fde5155c77080d05148d" }, "o" : "끓\\)", "r" : "湯)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fe1a155c77080d05148e" }, "o" : "當\\^芍藥", "r" : "當歸芍藥", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fe28155c77080d05148f" }, "o" : "월 경", "r" : "월경", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fe6b155c77080d051490" }, "o" : " 부 정", "r" : " 부정", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fe78155c77080d051491" }, "o" : "심 전도", "r" : "심전도", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fe9d155c77080d051492" }, "o" : "1季", "r" : "悸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9feb4155c77080d051493" }, "o" : "삭맥\\(數M", "r" : "삭맥(數脈", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9fec8155c77080d051494" }, "o" : "지맥\\(遲M", "r" : "지맥(遲脈", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53d9feda155c77080d051495" }, "o" : "대맥\\(帶M", "r" : "대맥(帶脈", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daf2e6e14e39a407a90981" }, "o" : "빴 ", "r" : "빴", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daf2ffe14e39a407a90982" }, "o" : "@ 서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daf311e14e39a407a90983" }, "o" : "卷 한방의학의 적응과", "r" : "4갤한방의학의 적응과", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daf324e14e39a407a90984" }, "o" : " 고 주파", "r" : " 고주파", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daf333e14e39a407a90985" }, "o" : " 아직 도 ", "r" : " 아직도 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daf33ee14e39a407a90986" }, "o" : " 심 하게", "r" : " 심하게", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daf394e14e39a407a90987" }, "o" : "翁 치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafdaee14e39a407a90988" }, "o" : "엑 기스", "r" : "엑기스", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafdd6e14e39a407a90989" }, "o" : "나타 난", "r" : "나타난", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafdebe14e39a407a9098a" }, "o" : "牡蠣淸", "r" : "牡蠣湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafdf4e14e39a407a9098b" }, "o" : "乾薑易", "r" : "乾薑湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafe0ce14e39a407a9098c" }, "o" : "이있", "r" : "이 있", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafe28e14e39a407a9098d" }, "o" : "厚朴易", "r" : "厚朴湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafe37e14e39a407a9098e" }, "o" : "기울\\(氣變", "r" : "기울(氣鬱", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafe53e14e39a407a9098f" }, "o" : "炎甘草", "r" : "炙甘草", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafe6de14e39a407a90990" }, "o" : "잘내", "r" : "잘 내", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafeaae14e39a407a90991" }, "o" : "通遙散", "r" : "逍遙散", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dafee4e14e39a407a90992" }, "o" : " 유 효", "r" : " 유효", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daff22e14e39a407a90993" }, "o" : "중후군", "r" : "증후군", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53daff36e14e39a407a90994" }, "o" : "©총론", "r" : "4갤총론", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db0364e14e39a407a90995" }, "o" : "할수없", "r" : "할 수 없", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db036ee14e39a407a90996" }, "o" : "는증후", "r" : "는 증후", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db037de14e39a407a90997" }, "o" : "흡 연", "r" : "흡연", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db048de14e39a407a90998" }, "o" : "卷치료처방", "r" : "4갤치료처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db04a9e14e39a407a90999" }, "o" : "杜螺", "r" : "牡蠣", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db04b7e14e39a407a9099a" }, "o" : "港\\)", "r" : "湯)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db04e7e14e39a407a9099b" }, "o" : "膝苔", "r" : "膩苔", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db04f8e14e39a407a9099c" }, "o" : "현맥\\(弦膨", "r" : "현맥(弦脈)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db05d5e14e39a407a9099d" }, "o" : "【애\\-】", "r" : "【해설】", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db05fbe14e39a407a9099e" }, "o" : "니 트로", "r" : "니트로", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db062be14e39a407a9099f" }, "o" : "积實", "r" : "枳實", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db0651e14e39a407a909a0" }, "o" : "雍白", "r" : "薤白", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db0666e14e39a407a909a1" }, "o" : "해백\\(難白", "r" : "해백(薤白", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db06a7e14e39a407a909a2" }, "o" : "卷 병태 개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db06b6e14e39a407a909a3" }, "o" : "상과임상", "r" : "상과 임상", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db06c0e14e39a407a909a4" }, "o" : "翁증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db075ee14e39a407a909a5" }, "o" : "@치료처방", "r" : "4갤치료처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db0786e14e39a407a909a6" }, "o" : "防己易", "r" : "防己湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db07c3e14e39a407a909a7" }, "o" : "五茶散", "r" : "五苓散", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db083be14e39a407a909a8" }, "o" : "翁 병태개요", "r" : "4갤병태개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db084ee14e39a407a909a9" }, "o" : "@ 증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db085de14e39a407a909aa" }, "o" : " 폐 색", "r" : " 폐색", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db08a0e14e39a407a909ab" }, "o" : "變서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db253ae14e39a407a909ac" }, "o" : " 한 것", "r" : "한 것", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db254ce14e39a407a909ad" }, "o" : "m 한방의학의 적응과", "r" : "4갤한방의학의 적응과", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db2cf8e14e39a407a909ae" }, "o" : " 계 지", "r" : " 계지", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db2d46e14e39a407a909af" }, "o" : "腐心", "r" : "瀉心", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db2d4fe14e39a407a909b0" }, "o" : "드黃", "r" : "三黃", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db2d69e14e39a407a909b1" }, "o" : "해득탕", "r" : "해독탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db2d78e14e39a407a909b2" }, "o" : "방뚱통", "r" : "방풍통", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db2d81e14e39a407a909b3" }, "o" : "방풍통 성 산", "r" : "방풍통성산", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db2f9ee14e39a407a909b4" }, "o" : " 사 탐은", "r" : " 사람은", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3003e14e39a407a909b5" }, "o" : "⑩ 병태개요", "r" : "4갤병태개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db300ee14e39a407a909b6" }, "o" : "⑩증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db304ee14e39a407a909b7" }, "o" : "翁서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3060e14e39a407a909b8" }, "o" : "# 한방의학의 적응과", "r" : "4갤한방의학의 적응과", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3075e14e39a407a909b9" }, "o" : "@ 치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db30aae14e39a407a909ba" }, "o" : "吳莱雙", "r" : "吳茱萸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db30b5e14e39a407a909bb" }, "o" : "生薑황", "r" : "生薑湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3129e14e39a407a909bc" }, "o" : "狭측", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db317ae14e39a407a909bd" }, "o" : "혈소 판", "r" : "혈소판", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db31bae14e39a407a909be" }, "o" : "牡蠣황", "r" : "牡蠣湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db31d4e14e39a407a909bf" }, "o" : "\\：목표】", "r" : "【목표】", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db320de14e39a407a909c0" }, "o" : "방품통", "r" : "방풍통", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3216e14e39a407a909c1" }, "o" : "방풍통 성 산", "r" : "방풍통성산", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3244e14e39a407a909c2" }, "o" : "별 히", "r" : "별히", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3264e14e39a407a909c3" }, "o" : "다\\-", "r" : "다.", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3291e14e39a407a909c4" }, "o" : "다■", "r" : "다.", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db329de14e39a407a909c5" }, "o" : "@서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db32aae14e39a407a909c6" }, "o" : "의대응", "r" : "의 대응", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db330fe14e39a407a909c7" }, "o" : "을실시", "r" : "을 실시", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3316e14e39a407a909c8" }, "o" : " 근 치", "r" : " 근치", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db332be14e39a407a909c9" }, "o" : " 정 맥", "r" : " 정맥", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3397e14e39a407a909ca" }, "o" : "노창\\(怒膨", "r" : "노창(怒脹)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3599e14e39a407a909d1" }, "o" : "四物황", "r" : "四物湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db35bce14e39a407a909d2" }, "o" : "賢氣", "r" : "腎氣", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db35d6e14e39a407a909d3" }, "o" : "흑歸", "r" : "芎歸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db36e0e14e39a407a909d4" }, "o" : "翁병태개요", "r" : "4갤병태개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db36efe14e39a407a909d5" }, "o" : " 불 명", "r" : " 불명", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3709e14e39a407a909d6" }, "o" : " 혈 전", "r" : " 혈전", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3760e14e39a407a909d7" }, "o" : "人F용", "r" : "사용", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3786e14e39a407a909d8" }, "o" : "游\\)", "r" : "湯)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db37fee14e39a407a909d9" }, "o" : "목단피 탕", "r" : "목단피탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3865e14e39a407a909da" }, "o" : "後휴", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3870e14e39a407a909db" }, "o" : "으 며", "r" : "으며", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db38a4e14e39a407a909dc" }, "o" : "작 약", "r" : "작약", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3961e14e39a407a909dd" }, "o" : "황\\)", "r" : "湯)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3971e14e39a407a909de" }, "o" : " 심 하", "r" : " 심하", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3ce2e14e39a407a909df" }, "o" : "대湯\\)", "r" : "대황)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3cfae14e39a407a909e0" }, "o" : "易\\)", "r" : "湯)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3d0ae14e39a407a909e1" }, "o" : "정 형 ", "r" : "정형 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3d2fe14e39a407a909e2" }, "o" : "鴻心", "r" : "瀉心", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3d45e14e39a407a909e3" }, "o" : "益氣渗", "r" : "益氣湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3d5fe14e39a407a909e4" }, "o" : " 연 약", "r" : " 연약", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3d81e14e39a407a909e5" }, "o" : "⑩병태개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3da6e14e39a407a909e6" }, "o" : "익 히", "r" : "익히", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3dbce14e39a407a909e7" }, "o" : " 변 증", "r" : " 변증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3dcbe14e39a407a909e8" }, "o" : "m 한방의학적 변증과", "r" : "4갤한방의학적 변증과", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e01e14e39a407a909e9" }, "o" : "에의", "r" : "에 의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e08e14e39a407a909ea" }, "o" : "해결정", "r" : "해 결정", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e0ee14e39a407a909eb" }, "o" : "는처", "r" : "는 처", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e29e14e39a407a909ec" }, "o" : "⑩치료처방", "r" : "4갤치료처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e4fe14e39a407a909ed" }, "o" : "茶桂", "r" : "苓桂", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e5be14e39a407a909ee" }, "o" : "；t 甘", "r" : "朮甘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e6ce14e39a407a909ef" }, "o" : "奔M", "r" : "奔豚", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e91e14e39a407a909f0" }, "o" : "적 인 ", "r" : "적인 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3e9ce14e39a407a909f1" }, "o" : "의작용", "r" : "의 작용", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3ec6e14e39a407a909f2" }, "o" : "：", "r" : ": ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3edde14e39a407a909f3" }, "o" : "매 핵", "r" : "매핵", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3f28e14e39a407a909f4" }, "o" : "樓鄉", "r" : "檳榔", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3f3ae14e39a407a909f5" }, "o" : "을없", "r" : "을 없", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3fb1e14e39a407a909f6" }, "o" : "뎨지", "r" : "계지", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db3fbce14e39a407a909f7" }, "o" : "拔爷", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4049e14e39a407a909fb" }, "o" : " 하 복", "r" : " 하복", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4055e14e39a407a909fc" }, "o" : " 기 본", "r" : " 기본", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db406ee14e39a407a909fd" }, "o" : " 전 신", "r" : " 전신", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db40b7e14e39a407a909fe" }, "o" : " 결 체", "r" : " 결체", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4109e14e39a407a909ff" }, "o" : "酸轰仁", "r" : "酸棗仁", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db41bae14e39a407a90a00" }, "o" : "를제", "r" : "를 제", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4206e14e39a407a90a01" }, "o" : " 하 고", "r" : " 하고", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db424ee14e39a407a90a02" }, "o" : " 로\\,", "r" : "로,", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db42b5e14e39a407a90a03" }, "o" : "호톱기", "r" : "호흡기", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4329e14e39a407a90a04" }, "o" : "된 다\\. ", "r" : "된다. ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db438be14e39a407a90a05" }, "o" : "빈 번", "r" : "빈번", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db43b1e14e39a407a90a06" }, "o" : "아 니", "r" : "아니", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db43ece14e39a407a90a07" }, "o" : "卷서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db43f8e14e39a407a90a08" }, "o" : "폐 렴", "r" : "폐렴", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4414e14e39a407a90a09" }, "o" : "翁 한방의학적 변증", "r" : "4갤한방의학적 변증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4478e14e39a407a90a0a" }, "o" : " 시 기", "r" : " 시기", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db45cde14e39a407a90a0b" }, "o" : "戀 치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db45dce14e39a407a90a0c" }, "o" : "【애설】", "r" : "【해설】", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4659e14e39a407a90a0d" }, "o" : "【해설】 o ", "r" : "【해설】 o> ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4674e14e39a407a90a0e" }, "o" : "었 ", "r" : "었", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4799e14e39a407a90a0f" }, "o" : "흘 리", "r" : "흘리", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db485ce14e39a407a90a10" }, "o" : "키 닌", "r" : "키닌", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db48a3e14e39a407a90a11" }, "o" : "황 금", "r" : "황금", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db48bee14e39a407a90a12" }, "o" : "m 참고문헌 i\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db48d8e14e39a407a90a13" }, "o" : " 고\\,", "r" : "고,", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db48f1e14e39a407a90a14" }, "o" : "을치료", "r" : "을 치료", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4a2ee14e39a407a90a15" }, "o" : " 가 많", "r" : "가 많", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4a73e14e39a407a90a16" }, "o" : "복 령", "r" : "복령", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4b04e14e39a407a90a17" }, "o" : "대 조", "r" : "대조", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4c5eaeeda55c185c05ce" }, "o" : "증과치료", "r" : "증과 치료", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4d05b4a6736818b0b358" }, "o" : "문류", "r" : "분류", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4d13b4a6736818b0b359" }, "o" : "구 균", "r" : "구균", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4d1cb4a6736818b0b35a" }, "o" : "로많", "r" : "로 많", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4d73b4a6736818b0b35b" }, "o" : "附구", "r" : "附子", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4d7cb4a6736818b0b35c" }, "o" : "细", "r" : "細", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4db4b4a6736818b0b35d" }, "o" : "여 겨", "r" : "여겨", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4df6b4a6736818b0b35e" }, "o" : "신 경", "r" : "신경", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4e1eb4a6736818b0b35f" }, "o" : " 에서", "r" : "에서", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4e38b4a6736818b0b360" }, "o" : "논 의하", "r" : "논의하", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4e41b4a6736818b0b361" }, "o" : "흡 인", "r" : "흡인", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4e85b4a6736818b0b362" }, "o" : "마 른", "r" : "마른", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4e9eb4a6736818b0b363" }, "o" : " 상 반", "r" : " 상반", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4eb0b4a6736818b0b364" }, "o" : "운증", "r" : "운 증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4ed4b4a6736818b0b365" }, "o" : "太豁", "r" : "太谿", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4eddb4a6736818b0b366" }, "o" : "필 자", "r" : "필자", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4ef4b4a6736818b0b367" }, "o" : "m참고문헌 ®", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53db4f26b4a6736818b0b368" }, "o" : "翁 증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd627d239d642014019b97" }, "o" : "렙 토", "r" : "렙토", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd62dc239d642014019b98" }, "o" : "t\\) 참고문헌 i\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6367239d642014019b99" }, "o" : "人參", "r" : "人蔘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd63b5239d642014019b9a" }, "o" : " 고 있", "r" : "고 있", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd64cd239d642014019b9e" }, "o" : "麻务", "r" : "麻杏", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6510239d642014019b9f" }, "o" : " 위 해 ", "r" : " 위해 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd65d4239d642014019ba1" }, "o" : "胸库", "r" : "胸痺", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6653239d642014019ba2" }, "o" : "한느낌", "r" : "한 느낌", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd665a239d642014019ba3" }, "o" : "는듯", "r" : "는 듯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6697239d642014019ba4" }, "o" : "石賣", "r" : "石膏", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd66ac239d642014019ba5" }, "o" : "获측", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd66f8239d642014019ba7" }, "o" : "获茶", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6759239d642014019ba8" }, "o" : "휴甘", "r" : "苓甘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6823239d642014019ba9" }, "o" : "获휴", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6831239d642014019baa" }, "o" : "四逆淸", "r" : "四逆湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd68e2239d642014019bab" }, "o" : "翁치료처방", "r" : "4갤치료처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd68f0239d642014019bac" }, "o" : "않 ", "r" : "않", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6989239d642014019bad" }, "o" : "특 히", "r" : "특히", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd69d3239d642014019bae" }, "o" : "竹환", "r" : "竹茹", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6a1b239d642014019baf" }, "o" : "여 러", "r" : "여러", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6a26239d642014019bb0" }, "o" : "에 이 용", "r" : "에 이용", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6aa7239d642014019bb1" }, "o" : "夜茶", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6acc239d642014019bb2" }, "o" : "\\(D 참고문헌 t\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6b8d239d642014019bb3" }, "o" : "과 민성", "r" : "과민성", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6bb4239d642014019bb4" }, "o" : "@ 한방의학적 변증과 ", "r" : "4갤한방의학적 변증과 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6bdb239d642014019bb5" }, "o" : "@ 병태 개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6bed239d642014019bb6" }, "o" : "스 테로", "r" : "스테로", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6bfb239d642014019bb7" }, "o" : "# 서양의학에서의 ", "r" : "4갤서양의학에서의 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6c14239d642014019bb8" }, "o" : "# 한방의학적 변증과 ", "r" : "4갤한방의학적 변증과", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6c6d239d642014019bb9" }, "o" : "获爷", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6ce8239d642014019bba" }, "o" : "® 증상과 임상소견", "r" : "4갤증상과 임상소견", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6dd3239d642014019bbb" }, "o" : "m 참고문현 t\\)", "r" : "◎참고문현◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6e0b239d642014019bbc" }, "o" : "를포", "r" : "를 포", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6e22239d642014019bbd" }, "o" : "에있", "r" : "에 있", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6eb4239d642014019bbe" }, "o" : "병 형 분류", "r" : "병형 분류", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6ec1239d642014019bbf" }, "o" : "® 증상과 임상 소견", "r" : "4갤증상과 임상 소견", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6f3a239d642014019bc0" }, "o" : "夜휴", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6f6e239d642014019bc1" }, "o" : "卷 증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd6fa7239d642014019bc2" }, "o" : "S 서양의학에서의 대응", "r" : "4갤서양의학에서의 대응", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd7036239d642014019bc3" }, "o" : "©병태개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd7042239d642014019bc4" }, "o" : "⑩ 증상과 임상 소견", "r" : "4갤증상과 임상 소견", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd704c239d642014019bc5" }, "o" : "병형분류", "r" : "병형 분류", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd70aa239d642014019bc6" }, "o" : "盆氣", "r" : "益氣", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd7138239d642014019bc7" }, "o" : "#서양의학에서의 대응", "r" : "4갤서양의학에서의 대응", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd714d239d642014019bc8" }, "o" : "다\\^", "r" : "다.", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd71a8239d642014019bc9" }, "o" : "藝 한방의학적 변증", "r" : "4갤한방의학적 변증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd71f2239d642014019bca" }, "o" : "을높", "r" : "을 높", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd7452239d642014019bcb" }, "o" : "@증상과 임상소견", "r" : "4갤증상과 임상소견", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dd74d2239d642014019bcc" }, "o" : "⑩ 병태 개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc3870f0d6fcc1ab057ee" }, "o" : "ᄎ", "r" : "大", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc39f0f0d6fcc1ab057ef" }, "o" : "테 리", "r" : "테리", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc3ad0f0d6fcc1ab057f0" }, "o" : "卷증상과 임상소견", "r" : "4갤증상과 임상소견", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc58b0f0d6fcc1ab057f1" }, "o" : "获혼", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc6050f0d6fcc1ab057f2" }, "o" : "m참고문헌 m", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc6140f0d6fcc1ab057f3" }, "o" : "출 혈", "r" : "출혈", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc6880f0d6fcc1ab057f4" }, "o" : "®서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc6bd0f0d6fcc1ab057f5" }, "o" : " 급 성", "r" : " 급성", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc7270f0d6fcc1ab057f6" }, "o" : "狭爷", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc7740f0d6fcc1ab057f7" }, "o" : "濱心", "r" : "瀉心", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc80c0f0d6fcc1ab057f8" }, "o" : "人幕", "r" : "人蔘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc8440f0d6fcc1ab057f9" }, "o" : "사균자", "r" : "사군자", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc86a0f0d6fcc1ab057fa" }, "o" : "@ 병태개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc8c00f0d6fcc1ab057fb" }, "o" : "⑩서양의학에서의 대응", "r" : "4갤서양의학에서의 대응", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc8f30f0d6fcc1ab057fc" }, "o" : "人蔘場", "r" : "人蔘湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddc9990f0d6fcc1ab057fd" }, "o" : "i\\) 참고문헌 «\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddca420f0d6fcc1ab057fe" }, "o" : "및", "r" : " 및 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddca4c0f0d6fcc1ab057ff" }, "o" : "및  ", "r" : "및 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddca560f0d6fcc1ab05800" }, "o" : "  및", "r" : " 및", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddca880f0d6fcc1ab05801" }, "o" : "人爹", "r" : "人蔘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcaa70f0d6fcc1ab05802" }, "o" : " 대 상", "r" : " 대상", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcb650f0d6fcc1ab05803" }, "o" : "된 다\\.", "r" : "된다.", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcba20f0d6fcc1ab05804" }, "o" : "黃茶", "r" : "黃芩", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcbbd0f0d6fcc1ab05805" }, "o" : " 및 게 한", "r" : " 멎게 한", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcbd60f0d6fcc1ab05806" }, "o" : "柴茶", "r" : "柴苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcbfa0f0d6fcc1ab05807" }, "o" : " 몇게 한", "r" : " 멎게 한", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcc090f0d6fcc1ab05808" }, "o" : "시 켜", "r" : "시켜", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcc770f0d6fcc1ab05809" }, "o" : "滴心", "r" : "瀉心", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcca60f0d6fcc1ab0580a" }, "o" : "眞武淸", "r" : "眞武湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddccae0f0d6fcc1ab0580b" }, "o" : "眞武끓", "r" : "眞武湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddccb70f0d6fcc1ab0580c" }, "o" : "紅參", "r" : "紅蔘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcf2d0f0d6fcc1ab0580d" }, "o" : "人蔘황", "r" : "人蔘湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcf4f0f0d6fcc1ab0580e" }, "o" : "라 고 한", "r" : "라고 한", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcf5f0f0d6fcc1ab0580f" }, "o" : "柴홉", "r" : "柴苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcf9b0f0d6fcc1ab05810" }, "o" : "폭歸", "r" : "芎歸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcfb50f0d6fcc1ab05811" }, "o" : "紅幕", "r" : "紅蔘", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcfc20f0d6fcc1ab05812" }, "o" : "芍藥끓", "r" : "芍藥湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddcfcc0f0d6fcc1ab05813" }, "o" : "횽삼", "r" : "홍삼", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd30f0f0d6fcc1ab05814" }, "o" : "⑩ 서양의학에서의 대응", "r" : "4갤서양의학에서의 대응", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd3350f0d6fcc1ab05815" }, "o" : "藥 한방의학적 변증", "r" : "4갤한방의학적 변증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd35f0f0d6fcc1ab05816" }, "o" : "옹\\(癒\\)", "r" : "옹(癰)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd3940f0d6fcc1ab05817" }, "o" : "建中游", "r" : "建中湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd3e70f0d6fcc1ab05818" }, "o" : "계지 탕", "r" : "계지탕", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd4350f0d6fcc1ab05819" }, "o" : "4갤병태개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd4600f0d6fcc1ab0581a" }, "o" : "爆서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd4790f0d6fcc1ab0581b" }, "o" : "急後M", "r" : "急後重", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd4c80f0d6fcc1ab0581c" }, "o" : "眞武港", "r" : "眞武湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd4ef0f0d6fcc1ab0581d" }, "o" : "芍藥淸", "r" : "芍藥湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd5300f0d6fcc1ab0581e" }, "o" : "卷 한방의학적 변증", "r" : "4갤한방의학적 변증", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd5b10f0d6fcc1ab0581f" }, "o" : "궤요략j", "r" : "궤요략』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd5b90f0d6fcc1ab05820" }, "o" : "금 궤요략", "r" : "금궤요략", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd5da0f0d6fcc1ab05821" }, "o" : "拉治", "r" : "竝治", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd6850f0d6fcc1ab05822" }, "o" : "祐疲", "r" : "祛瘀", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddd76d0f0d6fcc1ab05823" }, "o" : "蒼었仁", "r" : "薏苡仁", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde4a40f0d6fcc1ab05826" }, "o" : " 게 한", "r" : "게 한", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde4ce0f0d6fcc1ab05827" }, "o" : "黃民", "r" : "黃芪", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde4df0f0d6fcc1ab05828" }, "o" : " 치투", "r" : " 치루", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde4eb0f0d6fcc1ab05829" }, "o" : "참 조", "r" : "참조", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde57d0f0d6fcc1ab0582a" }, "o" : " 가 없", "r" : "가 없", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde5d40f0d6fcc1ab0582b" }, "o" : "建中淸", "r" : "建中湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde6180f0d6fcc1ab0582c" }, "o" : "芍藥황", "r" : "芍藥湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde6410f0d6fcc1ab0582d" }, "o" : "甘草끓", "r" : "甘草湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde7660f0d6fcc1ab0582e" }, "o" : "大黃港", "r" : "大黃湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde7ce0f0d6fcc1ab0582f" }, "o" : "吳莱焚", "r" : "大黃湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde8180f0d6fcc1ab05830" }, "o" : "t\\) 참고문헌 t\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dde9d70f0d6fcc1ab05831" }, "o" : "변증과치료", "r" : "변증과 치료", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddea2b0f0d6fcc1ab05832" }, "o" : "좋 ", "r" : "좋", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddea510f0d6fcc1ab05833" }, "o" : "承氣海", "r" : "承氣湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddea660f0d6fcc1ab05834" }, "o" : "綱胃", "r" : "調胃", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddea820f0d6fcc1ab05835" }, "o" : "柴胡場", "r" : "柴胡湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddeab60f0d6fcc1ab05836" }, "o" : "방둥통", "r" : "방풍통", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddeb890f0d6fcc1ab05837" }, "o" : "淸\\)", "r" : "湯)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddeba60f0d6fcc1ab05838" }, "o" : " 로 한", "r" : "로 한", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddebd80f0d6fcc1ab05839" }, "o" : "藝 증상과 임상", "r" : "4갤증상과 임상", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddec240f0d6fcc1ab0583a" }, "o" : "치료처방", "r" : "치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddec750f0d6fcc1ab0583b" }, "o" : "중 요한", "r" : "중요한", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddecfd0f0d6fcc1ab0583c" }, "o" : "戀치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53dded210f0d6fcc1ab0583d" }, "o" : "芍藥港", "r" : "芍藥湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddef260f0d6fcc1ab0583e" }, "o" : "翁 병태 개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddef6c0f0d6fcc1ab0583f" }, "o" : "藝 치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddefd30f0d6fcc1ab05840" }, "o" : "菌끓萬", "r" : "茵蔯蒿", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddeff60f0d6fcc1ab05841" }, "o" : "棍子", "r" : "梔子", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf02a0f0d6fcc1ab05842" }, "o" : "窟悶", "r" : "痞悶", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf0420f0d6fcc1ab05843" }, "o" : "흉협고 만", "r" : "흉협고만", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf1aa0f0d6fcc1ab05845" }, "o" : "避遙", "r" : "逍遙", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf1b50f0d6fcc1ab05846" }, "o" : " 만 성 ", "r" : " 만성 ", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf2160f0d6fcc1ab05847" }, "o" : "莉芬", "r" : "荊芥", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf7510f0d6fcc1ab05849" }, "o" : "확 실", "r" : "확실", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf75d0f0d6fcc1ab0584a" }, "o" : "藝치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf78e0f0d6fcc1ab0584b" }, "o" : "花측", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf7ed0f0d6fcc1ab0584c" }, "o" : "五혼散", "r" : "五苓散", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf9270f0d6fcc1ab05850" }, "o" : "穆 치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddf9c40f0d6fcc1ab05851" }, "o" : "콜 린", "r" : "콜린", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfa3b0f0d6fcc1ab05852" }, "o" : "®참고문헌 ®", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfa930f0d6fcc1ab05853" }, "o" : "茵 i莱萬", "r" : "茵蔯蒿", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfb180f0d6fcc1ab05854" }, "o" : "藥서양의학에서의 대응", "r" : "4갤서양의학에서의 대응", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfb600f0d6fcc1ab05855" }, "o" : "菌표萬", "r" : "茵蔯蒿", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfbbf0f0d6fcc1ab05856" }, "o" : "卷 병태개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfbdc0f0d6fcc1ab05857" }, "o" : "y\\-GTP", "r" : "γ-GTP", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfc8a0f0d6fcc1ab05858" }, "o" : "알 코", "r" : "알코", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfd5c0f0d6fcc1ab05859" }, "o" : "場\\)", "r" : "湯)", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfdcf0f0d6fcc1ab0585a" }, "o" : "茵표萬", "r" : "茵蔯蒿", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfe2f0f0d6fcc1ab0585b" }, "o" : "藝 병태개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfe670f0d6fcc1ab0585c" }, "o" : "茵끓萬", "r" : "茵蔯蒿", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfe6d0f0d6fcc1ab0585d" }, "o" : "茵蔽萬", "r" : "茵蔯蒿", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfe780f0d6fcc1ab0585e" }, "o" : "蔯蒿港", "r" : "蔯蒿湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddfef50f0d6fcc1ab0585f" }, "o" : "「금궤요략』", "r" : "『금궤요략』", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddff080f0d6fcc1ab05860" }, "o" : "善 병태개요", "r" : "4갤병태 개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddff3c0f0d6fcc1ab05861" }, "o" : "「『", "r" : "『", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53ddffd60f0d6fcc1ab05862" }, "o" : "립 신", "r" : "립신", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de00120f0d6fcc1ab05863" }, "o" : "메털", "r" : "메틸", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de00420f0d6fcc1ab05864" }, "o" : "君子淸", "r" : "君子湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de01fb0f0d6fcc1ab05865" }, "o" : "春 병태개요", "r" : "4갤병태개요", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de020d0f0d6fcc1ab05866" }, "o" : "眷서양의학에서의", "r" : "4갤서양의학에서의", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de02a40f0d6fcc1ab05867" }, "o" : "을참", "r" : "을 참", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de02b50f0d6fcc1ab05868" }, "o" : "란 다", "r" : "란다", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de03190f0d6fcc1ab05869" }, "o" : "减", "r" : "減", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de033f0f0d6fcc1ab0586a" }, "o" : "무자이중", "r" : "부자이중", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de035c0f0d6fcc1ab0586b" }, "o" : "人蔘游", "r" : "人蔘湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de04930f0d6fcc1ab0586c" }, "o" : "소청룡", "r" : "소청통", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de04bc0f0d6fcc1ab0586d" }, "o" : "柴측", "r" : "柴苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de06ac0f0d6fcc1ab0586f" }, "o" : "爷後", "r" : "茯苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de07260f0d6fcc1ab05870" }, "o" : "柴胡游", "r" : "柴胡湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de073d0f0d6fcc1ab05871" }, "o" : "滨肝", "r" : "瀉肝", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de078d0f0d6fcc1ab05872" }, "o" : "볼수있", "r" : "볼 수 있", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de07a50f0d6fcc1ab05873" }, "o" : "桂枝海", "r" : "桂枝湯", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de082c0f0d6fcc1ab05874" }, "o" : "五측散", "r" : "五苓散", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de08360f0d6fcc1ab05875" }, "o" : "柴휴", "r" : "柴苓", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de0e2d0f0d6fcc1ab05876" }, "o" : "五홉散", "r" : "五苓散", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de0ea70f0d6fcc1ab05877" }, "o" : "m 참고문헌\\(i\\)", "r" : "◎참고문헌◎", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de0eef0f0d6fcc1ab05878" }, "o" : "사용 한", "r" : "사용한", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de0f2b0f0d6fcc1ab05879" }, "o" : " 사 용", "r" : " 사용", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de10270f0d6fcc1ab0587a" }, "o" : "갖 ", "r" : "갖", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de10390f0d6fcc1ab0587b" }, "o" : "眷치료 처방", "r" : "4갤치료 처방", "e" : 1, "b" : "imhan" }
+{ "_id" : { "$oid" : "53de10ce0f0d6fcc1ab0587c" }, "o" : "藝증상과 임상 소견", "r" : "4갤증상과 임상 소견", "e" : 1, "b" : "imhan" }
