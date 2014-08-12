@@ -67,7 +67,14 @@ exports.replaceOne = function(req, res) {
 //0. readFile / 1. get replace data(mongodb) / 2. replace loop / 3. writeFile
 exports.replaceAll = function(req, res) {
   var book = req.params.book;
+  var type = req.params.type || 'r1'; //r2: 교정후처리, r0: 교정전처리
   var file = BOOKDIR + book + '.txt';
+  var col = "bookEdit";
+
+  if (!type || type != 'r1') {
+    col = col + '_' + type;
+  }
+
 
   //console.log('file', file);
 
@@ -77,7 +84,7 @@ exports.replaceAll = function(req, res) {
       function(callback) {
         //db.bookEdit.find().sort({_id:1})
         var filter = {$query:{}, $orderby:{_id:1}}; //_id 오름차순으로...@@@@
-        mH_utils.mgReadAllRs({"col":"bookEdit", "filter":filter}, function(err, rs) {
+        mH_utils.mgReadAllRs({"col":col, "filter":filter}, function(err, rs) {
           //console.log('bookEdit rs', rs);
           callback(err, rs);
         });

@@ -168,7 +168,7 @@ app.get('/getPrmTxs/:term', chart.getPrmTxs);  //약속 치료 검색 결과 목
 //=============================================================================
 app.get('/book/viewPage/:book/:page', book.viewPage);  //
 app.post('/book/replace/:book', book.replaceOne);  //
-app.get('/book/replaceAll/:book', book.replaceAll);  //
+app.get('/book/replaceAll/:book/:type', book.replaceAll);  //
 app.post('/book/savePage/:book/:page', book.savePage);  //
 
 //=============================================================================

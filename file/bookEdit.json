@@ -1368,3 +1368,433 @@
 { "o" : "시군자", "r" : "사군자", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53e4195d6067de1012d0601d" } }
 { "o" : "다고한다", "r" : "다고 한다", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53e41c096067de1012d0601f" } }
 { "o" : "하 며", "r" : "하며", "e" : 1, "b" : "imhan", "_id" : { "$oid" : "53e41c8d6067de1012d06020" } }
+{ "o" : "天A相", "r" : "天人相", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95cdbc341782c12c9e3b4" } }
+{ "o" : "측 면", "r" : "측면", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95d27c341782c12c9e3b5" } }
+{ "o" : "처 해", "r" : "처해", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95d3dc341782c12c9e3b6" } }
+{ "o" : "腺滿", "r" : "脹滿", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95dcec341782c12c9e3b7" } }
+{ "o" : "惧", "r" : "惕", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e1cc341782c12c9e3b8" } }
+{ "o" : "氣蠻", "r" : "氣鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e32c341782c12c9e3b9" } }
+{ "o" : "濕蠻", "r" : "濕鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e3ec341782c12c9e3ba" } }
+{ "o" : "熱蠻", "r" : "熱鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e46c341782c12c9e3bb" } }
+{ "o" : "氣攀", "r" : "氣鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e53c341782c12c9e3bc" } }
+{ "o" : "血攀", "r" : "血鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e59c341782c12c9e3bd" } }
+{ "o" : "食攀", "r" : "食鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e5fc341782c12c9e3be" } }
+{ "o" : "六蠻", "r" : "六鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e6bc341782c12c9e3bf" } }
+{ "o" : " 褒蠻", "r" : " 痰鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95e7ec341782c12c9e3c0" } }
+{ "o" : "诞", "r" : "涎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95ea6c341782c12c9e3c1" } }
+{ "o" : "佛蠻", "r" : "怫鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95ee8c341782c12c9e3c2" } }
+{ "o" : "腫\\*", "r" : "腫大", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95efec341782c12c9e3c3" } }
+{ "o" : "蠻結", "r" : "鬱結", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95f16c341782c12c9e3c4" } }
+{ "o" : "蠻者", "r" : "鬱者", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95f2ac341782c12c9e3c5" } }
+{ "o" : "欲\\*", "r" : "欲大", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95f5ec341782c12c9e3c6" } }
+{ "o" : "tig정선", "r" : "신경정신", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95faac341782c12c9e3c7" } }
+{ "o" : "狂A", "r" : "狂人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95fd3c341782c12c9e3c8" } }
+{ "o" : "더 욱", "r" : "더욱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95fddc341782c12c9e3c9" } }
+{ "o" : "况巫", "r" : "呪巫", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e95ff9c341782c12c9e3ca" } }
+{ "o" : "ffi儀", "r" : "巫儀", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e960b1c341782c12c9e3cc" } }
+{ "o" : " 정 신", "r" : " 정신", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e960c4c341782c12c9e3cd" } }
+{ "o" : " 립", "r" : "립", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e960d2c341782c12c9e3ce" } }
+{ "o" : "黃 帝", "r" : "黃帝", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e960f5c341782c12c9e3cf" } }
+{ "o" : "張 仲", "r" : "張仲", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96100c341782c12c9e3d0" } }
+{ "o" : "Af상", "r" : "사상", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96110c341782c12c9e3d1" } }
+{ "o" : "시싱•", "r" : "사상", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9611ac341782c12c9e3d2" } }
+{ "o" : "金R要", "r" : "金匱要", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9613ac341782c12c9e3d3" } }
+{ "o" : "癒狂", "r" : "癲狂", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e961c8c341782c12c9e3d4" } }
+{ "o" : "히는", "r" : "하는", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96302c341782c12c9e3d5" } }
+{ "o" : "r陰陽應象", "r" : "『陰陽應象", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96338c341782c12c9e3d6" } }
+{ "o" : "論」", "r" : "論』", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9634cc341782c12c9e3d7" } }
+{ "o" : "r四氣調神", "r" : "『四氣調神", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96379c341782c12c9e3d8" } }
+{ "o" : "「上古天眞", "r" : "『上古天眞", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96384c341782c12c9e3d9" } }
+{ "o" : "\\*道", "r" : "大道", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e963a4c341782c12c9e3da" } }
+{ "o" : " 닌", "r" : "닌", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e963b1c341782c12c9e3db" } }
+{ "o" : "急 方", "r" : "急方", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e963c3c341782c12c9e3dc" } }
+{ "o" : "'\\I忽", "r" : "惚", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e963e5c341782c12c9e3dd" } }
+{ "o" : "候條j", "r" : "候條』", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96405c341782c12c9e3de" } }
+{ "o" : "r 風病諸候", "r" : "『風病諸候", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96416c341782c12c9e3df" } }
+{ "o" : "痛과 狂", "r" : "癲과 狂", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96453c341782c12c9e3e0" } }
+{ "o" : "f季", "r" : "悸", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96487c341782c12c9e3e1" } }
+{ "o" : "癲狂瘤", "r" : "癲狂癎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9649cc341782c12c9e3e2" } }
+{ "o" : "癒病有五", "r" : "癲病有五", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e964c2c341782c12c9e3e3" } }
+{ "o" : "띠와서", "r" : "따라서", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96500c341782c12c9e3e4" } }
+{ "o" : "\\*方", "r" : "大方", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96537c341782c12c9e3e5" } }
+{ "o" : "□齒", "r" : "口齒", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96548c341782c12c9e3e6" } }
+{ "o" : "四\\*", "r" : "四大", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9655fc341782c12c9e3e7" } }
+{ "o" : "寒 凉", "r" : "寒凉", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96567c341782c12c9e3e8" } }
+{ "o" : "十A", "r" : "十人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96575c341782c12c9e3e9" } }
+{ "o" : "고 \\^다\\.", "r" : "고 있다.", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9658cc341782c12c9e3ea" } }
+{ "o" : "儒 門", "r" : "儒門", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9659ac341782c12c9e3eb" } }
+{ "o" : "瘤", "r" : "癎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9667dc341782c12c9e3ec" } }
+{ "o" : "張 元", "r" : "張元", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9668fc341782c12c9e3ed" } }
+{ "o" : "有 餘", "r" : "有餘", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e966acc341782c12c9e3ee" } }
+{ "o" : "張子 和", "r" : "張子和", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e966bac341782c12c9e3ef" } }
+{ "o" : " 다 만", "r" : " 다만", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e966c2c341782c12c9e3f0" } }
+{ "o" : " 둥이", "r" : " 등이", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96782c341782c12c9e3f1" } }
+{ "o" : " 만 약", "r" : " 만약", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9678cc341782c12c9e3f2" } }
+{ "o" : " 대 체", "r" : " 대체", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96795c341782c12c9e3f3" } }
+{ "o" : "劉 河", "r" : "劉河", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e967bfc341782c12c9e3f4" } }
+{ "o" : "知梯", "r" : "知悌", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9680ac341782c12c9e3f5" } }
+{ "o" : "心 法", "r" : "心法", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96818c341782c12c9e3f6" } }
+{ "o" : "蜜塞", "r" : "壅塞", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9683ac341782c12c9e3f7" } }
+{ "o" : "痕", "r" : "痰", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96870c341782c12c9e3f8" } }
+{ "o" : "褒", "r" : "痰", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96895c341782c12c9e3f9" } }
+{ "o" : "治疲", "r" : "治痰", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e968a0c341782c12c9e3fa" } }
+{ "o" : "근 본", "r" : "근본", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e968a8c341782c12c9e3fb" } }
+{ "o" : " 因性", "r" : "因性", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96970c341782c12c9e3fc" } }
+{ "o" : "變積", "r" : "鬱積", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9699dc341782c12c9e3fd" } }
+{ "o" : "관 계", "r" : "관계", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e969a5c341782c12c9e3fe" } }
+{ "o" : "蠻病", "r" : "鬱病", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e969b9c341782c12c9e3ff" } }
+{ "o" : "卒中瘦", "r" : "卒中痙", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e969dfc341782c12c9e400" } }
+{ "o" : "蜜閉", "r" : "壅閉", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e969f2c341782c12c9e401" } }
+{ "o" : "之 症", "r" : "之症", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96a22c341782c12c9e402" } }
+{ "o" : "痛癎", "r" : "癲癎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96a38c341782c12c9e403" } }
+{ "o" : "癌", "r" : "癲", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96b2bc341782c12c9e404" } }
+{ "o" : "痛과 癎", "r" : "癲과 癎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96b4dc341782c12c9e405" } }
+{ "o" : " 癎狂", "r" : " 癲狂", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96b70c341782c12c9e406" } }
+{ "o" : "癒爲心血", "r" : " 癲爲心血", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96b86c341782c12c9e407" } }
+{ "o" : " 痛은 心血不足", "r" : " 癲은 心血不足", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96b97c341782c12c9e408" } }
+{ "o" : "癒則宜", "r" : "癲則宜", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96bb8c341782c12c9e409" } }
+{ "o" : "氣 攀", "r" : "氣鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96bd5c341782c12c9e40a" } }
+{ "o" : "健 忘", "r" : "健忘", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96bdfc341782c12c9e40b" } }
+{ "o" : "어 져", "r" : "어져", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96bf0c341782c12c9e40c" } }
+{ "o" : " 약 간", "r" : " 약간", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96c1dc341782c12c9e40d" } }
+{ "o" : "癒屬喜", "r" : "癲屬喜", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96c57c341782c12c9e40e" } }
+{ "o" : "癒則癎", "r" : "癲則癎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96ce9c341782c12c9e40f" } }
+{ "o" : " 癎과 癎", "r" : " 癲과 癎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96cfec341782c12c9e410" } }
+{ "o" : "졌 ", "r" : "졌", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96d9cc341782c12c9e411" } }
+{ "o" : " 痛에", "r" : " 癲에", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96dbbc341782c12c9e412" } }
+{ "o" : "痛病多由痰", "r" : "癲病多由痰", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96ddac341782c12c9e413" } }
+{ "o" : " 癒證", "r" : " 癲證", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96dedc341782c12c9e414" } }
+{ "o" : "癎癎", "r" : "癲癎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96dffc341782c12c9e415" } }
+{ "o" : "有疲", "r" : "有痰", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96e12c341782c12c9e416" } }
+{ "o" : "癒病之", "r" : "癲病之", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96e2fc341782c12c9e417" } }
+{ "o" : "花痛", "r" : "花癲", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96e5dc341782c12c9e418" } }
+{ "o" : "潘盛", "r" : "燔盛", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96e77c341782c12c9e419" } }
+{ "o" : " 變證", "r" : " 鬱證", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96e8dc341782c12c9e41a" } }
+{ "o" : " 痛, 狂", "r" : " 癲, 狂", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96ea3c341782c12c9e41b" } }
+{ "o" : "膽妄", "r" : "譫妄", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96eeac341782c12c9e41c" } }
+{ "o" : "驚懐", "r" : "驚悸", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96f1bc341782c12c9e41d" } }
+{ "o" : "痛狂", "r" : "癲狂", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96f2cc341782c12c9e41e" } }
+{ "o" : "이루 ", "r" : "이루", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96f85c341782c12c9e41f" } }
+{ "o" : "에서 도 ", "r" : "에서도 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96f91c341782c12c9e420" } }
+{ "o" : " 4용", "r" : " 사용", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96fb5c341782c12c9e421" } }
+{ "o" : "娠眩", "r" : "賑眩", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e96ff2c341782c12c9e422" } }
+{ "o" : "例水", "r" : "冽水", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97148c341782c12c9e423" } }
+{ "o" : "柩", "r" : "樞", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e971bac341782c12c9e424" } }
+{ "o" : "煩憑", "r" : "煩懣", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e971ccc341782c12c9e425" } }
+{ "o" : "晕", "r" : "暈", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e971d6c341782c12c9e426" } }
+{ "o" : "ffl醫", "r" : "巫醫", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9721bc341782c12c9e427" } }
+{ "o" : "\\-\\-端", "r" : "一端", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9722ac341782c12c9e428" } }
+{ "o" : "况禁", "r" : "呪禁", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97288c341782c12c9e429" } }
+{ "o" : "史 記", "r" : "史記", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e972a3c341782c12c9e42a" } }
+{ "o" : "誠術", "r" : "鍼術", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e972fac341782c12c9e42b" } }
+{ "o" : "로 써 ", "r" : "로써 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97309c341782c12c9e42c" } }
+{ "o" : "鄉", "r" : "鄕", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97342c341782c12c9e42d" } }
+{ "o" : "人夢", "r" : "人蔘", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97510c341782c12c9e42e" } }
+{ "o" : "驚择", "r" : "驚悸", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97524c341782c12c9e42f" } }
+{ "o" : " 륙", "r" : "륙", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97534c341782c12c9e430" } }
+{ "o" : "况 禁", "r" : "呪禁", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97544c341782c12c9e431" } }
+{ "o" : "수 \\^다", "r" : "수 있다", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9755ec341782c12c9e432" } }
+{ "o" : "二A", "r" : "二人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97574c341782c12c9e433" } }
+{ "o" : "癒癎", "r" : "癲癎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e975a8c341782c12c9e434" } }
+{ "o" : "許淺", "r" : "許浚", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e975cfc341782c12c9e435" } }
+{ "o" : "氣變,", "r" : "氣鬱,", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e976a5c341782c12c9e436" } }
+{ "o" : "征 仲", "r" : "怔忡", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e976bec341782c12c9e437" } }
+{ "o" : "新 編", "r" : "新編", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e976dac341782c12c9e438" } }
+{ "o" : "合 編", "r" : "合編", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e976e2c341782c12c9e439" } }
+{ "o" : "東쁠", "r" : "東醫", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e976f0c341782c12c9e43a" } }
+{ "o" : ", 賢", "r" : ", 腎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97721c341782c12c9e43b" } }
+{ "o" : "또立", "r" : "王立", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97769c341782c12c9e43c" } }
+{ "o" : "단 계", "r" : "단계", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9778dc341782c12c9e43d" } }
+{ "o" : "마 지", "r" : "마지", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97796c341782c12c9e43e" } }
+{ "o" : "르 네", "r" : "르네", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97923c341782c12c9e43f" } }
+{ "o" : "다 란", "r" : "다란", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97a73c341782c12c9e440" } }
+{ "o" : "장 애", "r" : "장애", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97adcc341782c12c9e441" } }
+{ "o" : " 적 ", "r" : "적 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97ae5c341782c12c9e442" } }
+{ "o" : "보 여", "r" : "보여", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97af0c341782c12c9e443" } }
+{ "o" : " 이디", "r" : "이디", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97afcc341782c12c9e444" } }
+{ "o" : " 가 장", "r" : " 가장", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97b11c341782c12c9e445" } }
+{ "o" : " 였", "r" : "였", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97bd1c341782c12c9e446" } }
+{ "o" : "칭출", "r" : "창출", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97ce8c341782c12c9e447" } }
+{ "o" : " 적,", "r" : "적,", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97cf0c341782c12c9e448" } }
+{ "o" : "三 卷", "r" : "三卷", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97d18c341782c12c9e449" } }
+{ "o" : "\\*學", "r" : "大學", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97d28c341782c12c9e44a" } }
+{ "o" : "研", "r" : "硏", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97d38c341782c12c9e44b" } }
+{ "o" : "慶끓", "r" : "慶熙", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97d6bc341782c12c9e44c" } }
+{ "o" : "모 델", "r" : "모델", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97d84c341782c12c9e44d" } }
+{ "o" : "醫\\*", "r" : "醫大", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97daac341782c12c9e44e" } }
+{ "o" : "\\*阪", "r" : "大阪", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97dbbc341782c12c9e44f" } }
+{ "o" : " 한의 학", "r" : " 한의학", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e97dfdc341782c12c9e450" } }
+{ "o" : "타 내", "r" : "타내", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98590c341782c12c9e451" } }
+{ "o" : "내 게", "r" : "내게", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9859cc341782c12c9e452" } }
+{ "o" : "니누", "r" : "나누", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e985aec341782c12c9e453" } }
+{ "o" : "五 神", "r" : "五神", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e985d2c341782c12c9e454" } }
+{ "o" : "넓 ", "r" : "넓", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e985ddc341782c12c9e455" } }
+{ "o" : "臓膽", "r" : "臟腑", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98690c341782c12c9e456" } }
+{ "o" : "\\*氣", "r" : "大氣", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e986a3c341782c12c9e457" } }
+{ "o" : "형 태", "r" : "형태", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e986adc341782c12c9e458" } }
+{ "o" : " 은 ", "r" : "은 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e986cec341782c12c9e459" } }
+{ "o" : "므\\^ ", "r" : "므로 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e986e4c341782c12c9e45a" } }
+{ "o" : "변 화", "r" : "변화", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e986efc341782c12c9e45b" } }
+{ "o" : "\\-\\-其", "r" : "一其", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98711c341782c12c9e45c" } }
+{ "o" : "A絶", "r" : "人絶", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98737c341782c12c9e45d" } }
+{ "o" : "臓贿", "r" : "臟腑", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9874ec341782c12c9e45e" } }
+{ "o" : "기 초", "r" : "기초", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98758c341782c12c9e45f" } }
+{ "o" : "皆 屬", "r" : "皆屬", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98767c341782c12c9e460" } }
+{ "o" : " 賢에", "r" : " 腎에", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9877cc341782c12c9e461" } }
+{ "o" : " 臂이", "r" : " 腎이", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98786c341782c12c9e462" } }
+{ "o" : "六贿", "r" : "六腑", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98793c341782c12c9e463" } }
+{ "o" : "愁火", "r" : "慾火", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e987aac341782c12c9e464" } }
+{ "o" : "涛泄", "r" : "瀉泄", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e987d6c341782c12c9e465" } }
+{ "o" : " 인 체", "r" : " 인체", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98842c341782c12c9e466" } }
+{ "o" : "시 킬", "r" : "시킬", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98865c341782c12c9e467" } }
+{ "o" : "체 적", "r" : "체적", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9888ec341782c12c9e468" } }
+{ "o" : "不 隨", "r" : "不隨", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e988a5c341782c12c9e469" } }
+{ "o" : "관 점", "r" : "관점", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e988adc341782c12c9e46a" } }
+{ "o" : "精 神", "r" : "精神", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e988bcc341782c12c9e46b" } }
+{ "o" : "意識", "r" : "意識", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e988cac341782c12c9e46c" } }
+{ "o" : "關窮", "r" : "關竅", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e988e3c341782c12c9e46d" } }
+{ "o" : "형 식", "r" : "형식", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e988edc341782c12c9e46e" } }
+{ "o" : "r上古天", "r" : "『上古天", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98901c341782c12c9e46f" } }
+{ "o" : "秘 典", "r" : "秘典", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98928c341782c12c9e470" } }
+{ "o" : "r宣明五氣", "r" : "『宣明五氣", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98938c341782c12c9e471" } }
+{ "o" : "篇j", "r" : "篇』", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9894dc341782c12c9e472" } }
+{ "o" : "또冰", "r" : "王冰", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98959c341782c12c9e473" } }
+{ "o" : "생명활\\^", "r" : "생명활동", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98976c341782c12c9e474" } }
+{ "o" : "있어 서", "r" : "있어서", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e98983c341782c12c9e475" } }
+{ "o" : "靈框 ", "r" : "靈框樞", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e989a8c341782c12c9e476" } }
+{ "o" : "靈框樞", "r" : "靈樞", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e989b0c341782c12c9e477" } }
+{ "o" : " 論』", "r" : "論』", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e989bbc341782c12c9e478" } }
+{ "o" : "解怠", "r" : "懈怠", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e989d5c341782c12c9e479" } }
+{ "o" : "心 有", "r" : "心有", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99c7bc341782c12c9e47a" } }
+{ "o" : "태 어", "r" : "태어", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99ca1c341782c12c9e47b" } }
+{ "o" : " 賢 ", "r" : " 腎 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99cd6c341782c12c9e47c" } }
+{ "o" : "에 띠와", "r" : "에 따라", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99d4dc341782c12c9e47d" } }
+{ "o" : "띠와 서", "r" : "따라서", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99d61c341782c12c9e47e" } }
+{ "o" : "도 띠와", "r" : "도 따라", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99d9bc341782c12c9e47f" } }
+{ "o" : "을 띠와", "r" : "을 따라", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99da5c341782c12c9e480" } }
+{ "o" : "를 띠와", "r" : "를 따라", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99dabc341782c12c9e481" } }
+{ "o" : "띠과서", "r" : "따라서", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99dcec341782c12c9e482" } }
+{ "o" : "관 찰", "r" : "관찰", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99ddac341782c12c9e483" } }
+{ "o" : "하P로", "r" : "하므로", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99df9c341782c12c9e484" } }
+{ "o" : "지P로", "r" : "지므로", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99e02c341782c12c9e485" } }
+{ "o" : "蠻欲", "r" : "鬱欲", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99e1bc341782c12c9e486" } }
+{ "o" : "소회될•량", "r" : "소화불량", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99e2dc341782c12c9e487" } }
+{ "o" : " 련", "r" : "련", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99e53c341782c12c9e488" } }
+{ "o" : "싱승", "r" : "상승", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99e60c341782c12c9e489" } }
+{ "o" : "취 급", "r" : "취급", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99e6dc341782c12c9e48a" } }
+{ "o" : " 者,", "r" : "者,", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99e7fc341782c12c9e48b" } }
+{ "o" : " 띠라", "r" : " 따라", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99eb0c341782c12c9e48c" } }
+{ "o" : "동 안", "r" : "동안", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99ebbc341782c12c9e48d" } }
+{ "o" : "로 운", "r" : "로운", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99ec5c341782c12c9e48e" } }
+{ "o" : "반 복", "r" : "반복", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99f1cc341782c12c9e48f" } }
+{ "o" : "라한다", "r" : "라 한다", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99f5ec341782c12c9e490" } }
+{ "o" : " 篇』", "r" : "篇』", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99f6ac341782c12c9e491" } }
+{ "o" : "다 음", "r" : "다음", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99f79c341782c12c9e492" } }
+{ "o" : "ᄉ", "r" : "人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99fbdc341782c12c9e493" } }
+{ "o" : "之 A", "r" : "之人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99fe7c341782c12c9e494" } }
+{ "o" : "利A", "r" : "利人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99ff5c341782c12c9e495" } }
+{ "o" : "附A", "r" : "附人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e99fffc341782c12c9e496" } }
+{ "o" : "給A", "r" : "給人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a006c341782c12c9e497" } }
+{ "o" : "二十五人j", "r" : "二十五人』", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a042c341782c12c9e498" } }
+{ "o" : "\\^였다", "r" : "하였다", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a061c341782c12c9e499" } }
+{ "o" : "平A", "r" : "平人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a06fc341782c12c9e49a" } }
+{ "o" : "見A", "r" : "見人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a079c341782c12c9e49b" } }
+{ "o" : "陰 A", "r" : "陰人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a08fc341782c12c9e49c" } }
+{ "o" : "陰A", "r" : "陰人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a091c341782c12c9e49d" } }
+{ "o" : "陽 A", "r" : "陽人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a09bc341782c12c9e49e" } }
+{ "o" : "陽A", "r" : "陽人", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a09ec341782c12c9e49f" } }
+{ "o" : "講諫", "r" : "講諦", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a0fdc341782c12c9e4a0" } }
+{ "o" : "人않의학", "r" : "사상의학", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a133c341782c12c9e4a1" } }
+{ "o" : "東 醫", "r" : "東醫", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a13dc341782c12c9e4a2" } }
+{ "o" : "人棄臓", "r" : "人稟臓", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a151c341782c12c9e4a3" } }
+{ "o" : "肝賢", "r" : "肝腎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a168c341782c12c9e4a4" } }
+{ "o" : "大 小", "r" : "大小", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a170c341782c12c9e4a5" } }
+{ "o" : "\\*小", "r" : "大小", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a191c341782c12c9e4a6" } }
+{ "o" : "매 우", "r" : "매우", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a1b9c341782c12c9e4a7" } }
+{ "o" : "不濱", "r" : "不瀉", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a458c341782c12c9e4a9" } }
+{ "o" : "之贿", "r" : "之腑", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a46dc341782c12c9e4aa" } }
+{ "o" : "贿", "r" : "腑", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a47bc341782c12c9e4ab" } }
+{ "o" : "人 之", "r" : "人之", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a4a3c341782c12c9e4ac" } }
+{ "o" : "라 고한", "r" : "라고 한", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a4b6c341782c12c9e4ad" } }
+{ "o" : "謂之 ", "r" : "謂之", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a4c9c341782c12c9e4ae" } }
+{ "o" : " 인 식", "r" : " 인식", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a4e5c341782c12c9e4af" } }
+{ "o" : "하고 \\^음", "r" : "하고 있음", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a4f9c341782c12c9e4b0" } }
+{ "o" : "니이•", "r" : "나아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a50cc341782c12c9e4b1" } }
+{ "o" : "\\*寒", "r" : "大寒", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a51bc341782c12c9e4b2" } }
+{ "o" : "喻", "r" : "喩", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a549c341782c12c9e4b3" } }
+{ "o" : "\\*主", "r" : "大主", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a58ac341782c12c9e4b4" } }
+{ "o" : "弯", "r" : "穹", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a5b1c341782c12c9e4b5" } }
+{ "o" : "醒通學", "r" : "匯通學", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a5cec341782c12c9e4b6" } }
+{ "o" : "또昂", "r" : "王昂", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a5dfc341782c12c9e4b7" } }
+{ "o" : "또學", "r" : "王學", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a5e9c341782c12c9e4b8" } }
+{ "o" : "또淸", "r" : "王淸", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a5f1c341782c12c9e4b9" } }
+{ "o" : "彦陣", "r" : "彦暉", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a600c341782c12c9e4ba" } }
+{ "o" : "最 近", "r" : "最近", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a616c341782c12c9e4bb" } }
+{ "o" : "또惠", "r" : "王惠", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a620c341782c12c9e4bc" } }
+{ "o" : "醫 學", "r" : "醫學", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a626c341782c12c9e4bd" } }
+{ "o" : "□鼻", "r" : "口鼻", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a634c341782c12c9e4be" } }
+{ "o" : "□", "r" : "口", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a63fc341782c12c9e4bf" } }
+{ "o" : "기 능", "r" : "기능", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a650c341782c12c9e4c0" } }
+{ "o" : "르 러", "r" : "르러", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a65ec341782c12c9e4c1" } }
+{ "o" : "腦 髓", "r" : "腦髓", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a66fc341782c12c9e4c2" } }
+{ "o" : "다음과 \\^다", "r" : "다음과 같다", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a67fc341782c12c9e4c3" } }
+{ "o" : " 라고 ", "r" : "라고 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a697c341782c12c9e4c4" } }
+{ "o" : "賢精", "r" : "腎精", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a6a6c341782c12c9e4c5" } }
+{ "o" : "賢은", "r" : "腎은", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a7d2c341782c12c9e4c6" } }
+{ "o" : "賢爲", "r" : "腎爲", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a7dfc341782c12c9e4c7" } }
+{ "o" : "始 生", "r" : "始生", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a7eac341782c12c9e4c8" } }
+{ "o" : " 皆 ", "r" : " 皆", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a81fc341782c12c9e4c9" } }
+{ "o" : "五癒津", "r" : "五癮津", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a840c341782c12c9e4ca" } }
+{ "o" : "素 問", "r" : "素問", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a85bc341782c12c9e4cb" } }
+{ "o" : "생 산", "r" : "생산", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a869c341782c12c9e4cc" } }
+{ "o" : " 屬", "r" : "屬", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a8a6c341782c12c9e4cd" } }
+{ "o" : "溫 胞", "r" : "溫煦", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a8c0c341782c12c9e4ce" } }
+{ "o" : "이P로", "r" : "이므로", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a8dec341782c12c9e4cf" } }
+{ "o" : "邪 客", "r" : "邪客", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a945c341782c12c9e4d0" } }
+{ "o" : "有 ", "r" : "有", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a96dc341782c12c9e4d1" } }
+{ "o" : "必 ", "r" : "必", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a9bec341782c12c9e4d2" } }
+{ "o" : "於 ", "r" : "於", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9a9c6c341782c12c9e4d3" } }
+{ "o" : "고 하 \\^다", "r" : "고 하였다", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aa1ac341782c12c9e4d4" } }
+{ "o" : "킨 다", "r" : "킨다", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aa28c341782c12c9e4d5" } }
+{ "o" : "띠리", "r" : "따라", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aa37c341782c12c9e4d6" } }
+{ "o" : "惡賠", "r" : "惡虧", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aa4cc341782c12c9e4d7" } }
+{ "o" : "之腺", "r" : "之臟", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aa69c341782c12c9e4d8" } }
+{ "o" : "臓", "r" : "臟", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aa71c341782c12c9e4d9" } }
+{ "o" : "經疲眩", "r" : "脛痠眩", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aab3c341782c12c9e4da" } }
+{ "o" : "더 불", "r" : "더불", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aacfc341782c12c9e4db" } }
+{ "o" : " 痛證,", "r" : " 癲證,", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ab0ec341782c12c9e4dc" } }
+{ "o" : "發로", "r" : "竅로", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ab63c341782c12c9e4dd" } }
+{ "o" : "靜譜", "r" : "靜謐", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9acccc341782c12c9e4de" } }
+{ "o" : "藏而不淸", "r" : "藏而不瀉", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ada6c341782c12c9e4df" } }
+{ "o" : "則 ", "r" : "則", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9adc6c341782c12c9e4e0" } }
+{ "o" : "膽語", "r" : "譫語", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9adf5c341782c12c9e4e1" } }
+{ "o" : "宜伸忌聽", "r" : "宜伸忌鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ae11c341782c12c9e4e2" } }
+{ "o" : "宜伸忌變", "r" : "宜伸忌鬱", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ae17c341782c12c9e4e3" } }
+{ "o" : "當腺", "r" : "當腑", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ae30c341782c12c9e4e4" } }
+{ "o" : "之 ", "r" : "之", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ae78c341782c12c9e4e5" } }
+{ "o" : "不 ", "r" : "不", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ae87c341782c12c9e4e6" } }
+{ "o" : "시 대", "r" : "시대", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ae8fc341782c12c9e4e7" } }
+{ "o" : "外 賢", "r" : "外腎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aedac341782c12c9e4e8" } }
+{ "o" : "外賢", "r" : "外腎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aeddc341782c12c9e4e9" } }
+{ "o" : " 賢이", "r" : " 腎이", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aee6c341782c12c9e4ea" } }
+{ "o" : " 賢뿐", "r" : " 腎뿐", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9af15c341782c12c9e4eb" } }
+{ "o" : "心賢", "r" : "心腎", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9af22c341782c12c9e4ec" } }
+{ "o" : "機 ", "r" : "機", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9af38c341782c12c9e4ed" } }
+{ "o" : "이 란", "r" : "이란", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9af89c341782c12c9e4ee" } }
+{ "o" : " 인 해", "r" : " 인해", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9afb7c341782c12c9e4ef" } }
+{ "o" : " 대 신", "r" : " 대신", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9afbec341782c12c9e4f0" } }
+{ "o" : "eg◦", "r" : "ego", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9afe2c341782c12c9e4f1" } }
+{ "o" : "생 물", "r" : "생물", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9aff1c341782c12c9e4f2" } }
+{ "o" : "본 능", "r" : "본능", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9affec341782c12c9e4f3" } }
+{ "o" : "파 괴", "r" : "파괴", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b014c341782c12c9e4f4" } }
+{ "o" : "돌 아", "r" : "돌아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b021c341782c12c9e4f5" } }
+{ "o" : "만 족", "r" : "만족", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b03fc341782c12c9e4f6" } }
+{ "o" : "선밍", "r" : "선망", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b089c341782c12c9e4f7" } }
+{ "o" : "자아이", "r" : "지이•이", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b09bc341782c12c9e4f8" } }
+{ "o" : "지이•이", "r" : "자아이", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b0a8c341782c12c9e4f9" } }
+{ "o" : "ᅭ 인해", "r" : "으로 인해", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b0bcc341782c12c9e4fa" } }
+{ "o" : "로 서 ", "r" : "로서 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b0c5c341782c12c9e4fb" } }
+{ "o" : "무의 식", "r" : "무의식", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b12fc341782c12c9e4fc" } }
+{ "o" : "투시pro", "r" : "투사pro", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b15bc341782c12c9e4fd" } }
+{ "o" : "로 소 ", "r" : "로소 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b170c341782c12c9e4fe" } }
+{ "o" : "크 ", "r" : "크", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b185c341782c12c9e4ff" } }
+{ "o" : "symb이", "r" : "symbol", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b1a1c341782c12c9e500" } }
+{ "o" : "심 층", "r" : "심층", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b1aac341782c12c9e501" } }
+{ "o" : "쉽 ", "r" : "쉽", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b54dc341782c12c9e502" } }
+{ "o" : "객 ", "r" : "객", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b564c341782c12c9e503" } }
+{ "o" : "에 띠과", "r" : "에 따라", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b576c341782c12c9e504" } }
+{ "o" : "태 도", "r" : "태도", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b57ec341782c12c9e505" } }
+{ "o" : "역 할", "r" : "역할", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b82ec341782c12c9e506" } }
+{ "o" : " 린", "r" : "린", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b83ec341782c12c9e507" } }
+{ "o" : "지이•", "r" : "자아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b8d3c341782c12c9e508" } }
+{ "o" : "콤 플", "r" : "콤플", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b8e7c341782c12c9e509" } }
+{ "o" : " 지와면서", "r" : " 자라면서", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b915c341782c12c9e50a" } }
+{ "o" : "어 울", "r" : "어울", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b925c341782c12c9e50b" } }
+{ "o" : "지이^go", "r" : "자아ego", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b97cc341782c12c9e50c" } }
+{ "o" : "지이\\^go", "r" : "자아ego", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b985c341782c12c9e50d" } }
+{ "o" : "인괴론", "r" : "인과론", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b9f3c341782c12c9e50e" } }
+{ "o" : "존 재", "r" : "존재", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9b9fcc341782c12c9e50f" } }
+{ "o" : "방법을 사\\^하", "r" : "방법을 사용하", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ba69c341782c12c9e510" } }
+{ "o" : "사 회", "r" : "사회", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bbedc341782c12c9e511" } }
+{ "o" : "유 형", "r" : "유형", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bbffc341782c12c9e512" } }
+{ "o" : "빙•어", "r" : "방어", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bc17c341782c12c9e513" } }
+{ "o" : "투사 pro", "r" : "투사pro", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bc3dc341782c12c9e514" } }
+{ "o" : "친 다\\.", "r" : "친다.", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bc53c341782c12c9e515" } }
+{ "o" : "행동회상ctin", "r" : "행동화actin", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bca1c341782c12c9e516" } }
+{ "o" : "충 동", "r" : "충동", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bcb0c341782c12c9e517" } }
+{ "o" : "향 한", "r" : "향한", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bcbcc341782c12c9e518" } }
+{ "o" : "들 어", "r" : "들어", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bcc8c341782c12c9e519" } }
+{ "o" : "특 정", "r" : "특정", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bcd1c341782c12c9e51a" } }
+{ "o" : "시 키", "r" : "시키", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bd43c341782c12c9e51b" } }
+{ "o" : "받이#여", "r" : "받아들여", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bd54c341782c12c9e51c" } }
+{ "o" : "지 기 ", "r" : "지기 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bd60c341782c12c9e51d" } }
+{ "o" : "몰이•", "r" : "몰아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bd6cc341782c12c9e51e" } }
+{ "o" : "유메lu", "r" : "유머hu", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bd8ec341782c12c9e51f" } }
+{ "o" : "승회\"Sub", "r" : "승화sub", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bda9c341782c12c9e520" } }
+{ "o" : "유메iirni", "r" : "유머hum", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bdd4c341782c12c9e521" } }
+{ "o" : "드 러", "r" : "드러", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bddec341782c12c9e522" } }
+{ "o" : "자이•", "r" : "자아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bdfbc341782c12c9e523" } }
+{ "o" : " 게 ", "r" : "게 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9be20c341782c12c9e524" } }
+{ "o" : " 지이\"", "r" : " 자아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9be2ec341782c12c9e525" } }
+{ "o" : "시 킴", "r" : "시킴", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9be46c341782c12c9e526" } }
+{ "o" : "고 플", "r" : "고플", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9be62c341782c12c9e527" } }
+{ "o" : "느 냐", "r" : "느냐", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9be7ec341782c12c9e528" } }
+{ "o" : " 와는", "r" : "와는", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9be95c341782c12c9e529" } }
+{ "o" : "연싱", "r" : "연상", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bea2c341782c12c9e52a" } }
+{ "o" : " 쁜", "r" : "쁜", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bf09c341782c12c9e52b" } }
+{ "o" : "리비도", "r" : " 리비도", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bf56c341782c12c9e52c" } }
+{ "o" : "  리비도", "r" : " 리비도", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bf59c341782c12c9e52d" } }
+{ "o" : " 자 신", "r" : " 자신", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bf76c341782c12c9e52e" } }
+{ "o" : "홍분", "r" : "흥분", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bf8ec341782c12c9e52f" } }
+{ "o" : "반 리비도", "r" : "반리비도", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bfaec341782c12c9e530" } }
+{ "o" : "증싱", "r" : "증상", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bfcdc341782c12c9e531" } }
+{ "o" : "욕 구", "r" : "욕구", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bfddc341782c12c9e532" } }
+{ "o" : "경 험", "r" : "경험", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9bff2c341782c12c9e533" } }
+{ "o" : "계 속", "r" : "계속", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c03bc341782c12c9e534" } }
+{ "o" : "좋이이:", "r" : "좋아야", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c064c341782c12c9e535" } }
+{ "o" : "애칙", "r" : "애착", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c07bc341782c12c9e536" } }
+{ "o" : "영 향", "r" : "영향", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c086c341782c12c9e537" } }
+{ "o" : "정 체", "r" : "정체", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c095c341782c12c9e538" } }
+{ "o" : " >1•기", "r" : " 유아기", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c0abc341782c12c9e539" } }
+{ "o" : "실이•", "r" : "살아 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c0dbc341782c12c9e53a" } }
+{ "o" : "집이•", "r" : "잡아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c112c341782c12c9e53b" } }
+{ "o" : "신 체", "r" : "신체", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c135c341782c12c9e53c" } }
+{ "o" : "7\\]능", "r" : "가능", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c1c5c341782c12c9e53d" } }
+{ "o" : "지이■", "r" : "자아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c1d3c341782c12c9e53e" } }
+{ "o" : "참지아", "r" : "참자아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c1ffc341782c12c9e53f" } }
+{ "o" : "생 겨", "r" : "생겨", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c219c341782c12c9e540" } }
+{ "o" : " 뢰", "r" : "뢰", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c23fc341782c12c9e541" } }
+{ "o" : "71능", "r" : "가능", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c252c341782c12c9e542" } }
+{ "o" : " 인 격", "r" : " 인격", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c26bc341782c12c9e543" } }
+{ "o" : "같 ", "r" : "같", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c2b0c341782c12c9e544" } }
+{ "o" : "외싱", "r" : "외상", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c2cbc341782c12c9e545" } }
+{ "o" : "\\>1•", "r" : "유아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c310c341782c12c9e546" } }
+{ "o" : " 랑", "r" : "랑", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c348c341782c12c9e547" } }
+{ "o" : " 적인 ", "r" : "적인 ", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c358c341782c12c9e548" } }
+{ "o" : "발 달", "r" : "발달", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c368c341782c12c9e549" } }
+{ "o" : "형 성", "r" : "형성", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c392c341782c12c9e54a" } }
+{ "o" : "던 져", "r" : "던져", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c39bc341782c12c9e54b" } }
+{ "o" : "좌 절", "r" : "좌절", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c3bec341782c12c9e54c" } }
+{ "o" : "내 용", "r" : "내용", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c661c341782c12c9e54d" } }
+{ "o" : "통 해", "r" : "통해", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c693c341782c12c9e54e" } }
+{ "o" : "하H로", "r" : "하므로", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c6b2c341782c12c9e54f" } }
+{ "o" : "책 임", "r" : "책임", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c6c1c341782c12c9e550" } }
+{ "o" : "유 사", "r" : "유사", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c6d7c341782c12c9e551" } }
+{ "o" : "전 체", "r" : "전체", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c6dfc341782c12c9e552" } }
+{ "o" : "행 동", "r" : "행동", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c706c341782c12c9e553" } }
+{ "o" : "조직회", "r" : "조직화", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c75dc341782c12c9e554" } }
+{ "o" : "상 징", "r" : "상징", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c767c341782c12c9e555" } }
+{ "o" : "을 人傳", "r" : "을 사용", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9c7b8c341782c12c9e556" } }
+{ "o" : " 럽", "r" : "럽", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cc0fc341782c12c9e557" } }
+{ "o" : "리 키", "r" : "리키", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cc82101ca3c01ccc75c5" } }
+{ "o" : "ᄆ", "r" : "口", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cc9d101ca3c01ccc75c6" } }
+{ "o" : "부 분", "r" : "부분", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ccaa101ca3c01ccc75c7" } }
+{ "o" : "공 격", "r" : "공격", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ccc0101ca3c01ccc75c8" } }
+{ "o" : "알이•", "r" : "알아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cccc101ca3c01ccc75c9" } }
+{ "o" : " 안 \\^다\\.", "r" : " 안 된다.", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ccee101ca3c01ccc75ca" } }
+{ "o" : "받이•", "r" : "받아", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cd03101ca3c01ccc75cb" } }
+{ "o" : "효괴", "r" : "효과", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cd56101ca3c01ccc75cc" } }
+{ "o" : "정 돈", "r" : "정돈", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cd63101ca3c01ccc75cd" } }
+{ "o" : "K門", "r" : "肛門", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cd87101ca3c01ccc75ce" } }
+{ "o" : "아 버", "r" : "아버", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9ce05101ca3c01ccc75cf" } }
+{ "o" : "판 단", "r" : "판단", "e" : 1, "b" : "text_neuropsychiatry", "_id" : { "$oid" : "53e9cea0101ca3c01ccc75d0" } }
