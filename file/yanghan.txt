@@ -36,10 +36,10 @@
 1) 서양의학적 치료와 한방치료에 각각 뛰어난 분야가 있다는 것은
 `007
 말할 필요도 없다. 유효성 및 예후에 관한 기초 데이터가 풍부하게 축적되어 있는 것은 당연히 서양의학이다. 따라서 눈 앞의 환자에게 어느 쪽을 적용해야 할지 판단을 내리지 못하는 경우 먼저 양약을 단독으로 사용하는 것이 무난하다고 본다.
-2)	어느 쪽도 유효하지만 단독으로는 충분하지 않다고 생각되는 경우에는 병용을 선택할 가능성이 있다. 그 경우에는 한방의 관점에서 보면 일정기간 한방약을 단독으로 사용하여 효과를 확인한 후에 양약을 병용하도록 하면 된다. 양약을 먼저 사용하여 효과를 확인 한 후, 한방약을 추가 처방하는 경우도 생각할 수 있다.
-3)	한방약을 주된 방법으로 치료하는 입장에서 보면 병용보다 한방단독으로 질환을 관리하는 경우에 증례로부터 배울 때가 많다.
-4)	환자가 복수 질환을 앓고 있는 경우에는 개개의 질환에 양약, 한방 약 어느 쪽의 약제를 적용할 것인가를 결정한다. 이 경우에는 필연적으로 양약, 한방약을 병용하는 경우도 발생할 수 있다. 한방약도 그 약효에 대해서는 양약과 같은 방법으로 약효분류가 가능하다고 본다. 따라서 양약과 한방약을 병용하면 유사한 약효의 중복과 약효가 길항하는 경우도 있을 수 있다. 이 점에 대해서는 양약을 복수처방할 때와 같은 배려를 요한다.
-5)	상기의 목적을 달성하기 위해서는 한방연구가가 모름지기 최신의 서양의학 및 양약에 관한 지식을 깊이 있게 쌓아가야 할 것이다. 이상의 관점에서 보는 처방을 저자는「양한통합처방」이라고 부르
+2)  어느 쪽도 유효하지만 단독으로는 충분하지 않다고 생각되는 경우에는 병용을 선택할 가능성이 있다. 그 경우에는 한방의 관점에서 보면 일정기간 한방약을 단독으로 사용하여 효과를 확인한 후에 양약을 병용하도록 하면 된다. 양약을 먼저 사용하여 효과를 확인 한 후, 한방약을 추가 처방하는 경우도 생각할 수 있다.
+3)  한방약을 주된 방법으로 치료하는 입장에서 보면 병용보다 한방단독으로 질환을 관리하는 경우에 증례로부터 배울 때가 많다.
+4)  환자가 복수 질환을 앓고 있는 경우에는 개개의 질환에 양약, 한방 약 어느 쪽의 약제를 적용할 것인가를 결정한다. 이 경우에는 필연적으로 양약, 한방약을 병용하는 경우도 발생할 수 있다. 한방약도 그 약효에 대해서는 양약과 같은 방법으로 약효분류가 가능하다고 본다. 따라서 양약과 한방약을 병용하면 유사한 약효의 중복과 약효가 길항하는 경우도 있을 수 있다. 이 점에 대해서는 양약을 복수처방할 때와 같은 배려를 요한다.
+5)  상기의 목적을 달성하기 위해서는 한방연구가가 모름지기 최신의 서양의학 및 양약에 관한 지식을 깊이 있게 쌓아가야 할 것이다. 이상의 관점에서 보는 처방을 저자는「양한통합처방」이라고 부르
 `008
 고 있다.
 2갤본서에서 사용하는「腹力복력」이라는 용어
@@ -67,15 +67,15 @@
 `011
 1갤실제로 한방약을 처방하기 위한 한방진단계에 관해서
 진단계라는 것은 한방약을 운용하는 한방진단 체계로 다음의 9항목으로 이루어져 있다.
-1.	출전의 조문=증상군
-2.	복진소견
-3.	기氣•혈血•수水
-4.	육병위六病位
-5.	맥진, 설진
-6.	경험 =구결口訣
-7.	서양의학적 병명
-8.	전통적인 생약의 약리학(본초학)
-9.	음양오행설
+1.  출전의 조문=증상군
+2.  복진소견
+3.  기氣•혈血•수水
+4.  육병위六病位
+5.  맥진, 설진
+6.  경험 =구결口訣
+7.  서양의학적 병명
+8.  전통적인 생약의 약리학(본초학)
+9.  음양오행설
 앞으로 한방치료를 실시하려고 하는 사람이 가장 곤란해하는 것은 실제로 환자에게 어떤 근거를 가지고 한방제제를 처방할 것인가, 하는 것이 아닐까 생각한다.|
 `012
 저자는 판단근거로 약 9가지의 영역이 있다고 생각한다. 중요한 것은 전통의학의 임상에 필요한 거의 모든 요소가 여기에 포함되어 있다는 것이다.
@@ -95,17 +95,17 @@
 [그]복직근의 긴장 〈복진그림〉
 터 복진소견이 중요시되는 방제도 있다. 따라서 앞으로 이루어지는 설명은 이것을 염두에 두고 있다는 점을 양해해 주길 바란다.
 • 복진으로 검토하는 것은 다음 각각의 항목이다.
-1)	복력
-2)	심하비心下痞
-3)	흉협고만胸脇苦滿
-4)	어혈 압통점
-5)	복직근의 구련腹皮拘攣
-6)	제상계臍上悸 • 제하계臍下悸
-7)	위부진수음胃部振水音|
+1)  복력
+2)  심하비心下痞
+3)  흉협고만胸脇苦滿
+4)  어혈 압통점
+5)  복직근의 구련腹皮拘攣
+6)  제상계臍上悸 • 제하계臍下悸
+7)  위부진수음胃部振水音|
 `015
-8)	제하불인臍下不仁
-9)	피부의 성상
-10) 	복후服候의 한계
+8)  제하불인臍下不仁
+9)  피부의 성상
+10)   복후服候의 한계
 3갤1) 복력
 복력이란 천정을 향하여 반듯이 누워 전신의 힘을 뺐을 때의 복벽의 긴장도를 말한다. 대체로 경험할 수 있는 긴장도가 가장 강한 복력을 「강强」, 가장 긴장이 약한 복력을「연약軟弱」으로 하여 강 (5), 약간 강 (4), 중간 정도 (3), 약간 연약 ⑵, 연약 (1)의 5단계로 분류하는 것이 현재 상 황이다. 좀더 세세한 뉘앙스를 필요로 하는 경우에는 (3 - 4), 혹은(3+) 등으로 표현하면 될 것이다.
 복력의 강약에 따라 적용 처방약을 대강 3군으로 크게 분류할 수 있다는 것은 경험적으로 알려져 있다. 여기에서는 지면상 구체적인 처방약은 그 일부만 제시한다(표1).
@@ -113,10 +113,10 @@
 `016
 주2 ： 복력에 관계없이 널리 사용되는 처방약도 존재하는데『안중산安中散, 『작약감초탕芍藥甘草湯』, 『소경활혈탕疎經活血湯』그 밖에도 수 많은 처방약이 있다. 또한 경험이 많은 의사는 아주 흔한 처방으로 난증을 치료하거나 자기 경험을 바탕으로 능숙히 처방약을 운용한다. 복력과 관계없이 활용하는 경우도 적지 않다.
 표 1. 복력과 투여 약제의 관계 (양쪽 모두에 속하는 것도 있다)
-복력의 정도	적용 가능한 방제
-복력 강 (3, 4, 5 단계)	대황大黃을 포함하는 제제와 황금, 황련, 산치자 등의 냉성약을 포함하는 제제의 대부분이 여기에 속한다. 『대시호탕大柴胡湯』, 『시호가용골모려탕柴胡加牡蠣湯』, 『소시호탕小柴胡湯』 등『대황목단피탕大黃牡丹皮湯』,『도핵승기탕桃核承氣湯』, 『계지복령환桂枝茯苓丸』 등
-복력 중간 정도 (2, 3, 4 단계)	『시호가용골모려탕柴胡加牡蠣湯』, 『소시호탕小柴胡湯』, 『시호계지탕柴胡桂枝湯』, 『시호계지건강탕柴胡桂枝乾薑湯』,『계지복령환桂枝茯苓丸』, 『가미소요산加味逍遙散』,『조등산釣藤散』,『보중익기탕補中益氣湯』,『십전대보탕十全大補湯』 등
-복력 약 (1, 2, 3 단계)	『시호계지건강탕柴胡桂枝乾薑湯』,『보중익기탕補中효氣』,『조등산釣藤散』,『당귀작약산當歸芍藥酸』,『사군자탕四君子湯』등의 온성약을 중심으로 하는 처방이다.
+복력의 정도  적용 가능한 방제
+복력 강 (3, 4, 5 단계) 대황大黃을 포함하는 제제와 황금, 황련, 산치자 등의 냉성약을 포함하는 제제의 대부분이 여기에 속한다. 『대시호탕大柴胡湯』, 『시호가용골모려탕柴胡加牡蠣湯』, 『소시호탕小柴胡湯』 등『대황목단피탕大黃牡丹皮湯』,『도핵승기탕桃核承氣湯』, 『계지복령환桂枝茯苓丸』 등
+복력 중간 정도 (2, 3, 4 단계) 『시호가용골모려탕柴胡加牡蠣湯』, 『소시호탕小柴胡湯』, 『시호계지탕柴胡桂枝湯』, 『시호계지건강탕柴胡桂枝乾薑湯』,『계지복령환桂枝茯苓丸』, 『가미소요산加味逍遙散』,『조등산釣藤散』,『보중익기탕補中益氣湯』,『십전대보탕十全大補湯』 등
+복력 약 (1, 2, 3 단계) 『시호계지건강탕柴胡桂枝乾薑湯』,『보중익기탕補中효氣』,『조등산釣藤散』,『당귀작약산當歸芍藥酸』,『사군자탕四君子湯』등의 온성약을 중심으로 하는 처방이다.
 참고문헌 ； 藤平 健:漢方處方類方鑑別便覽, 린네, 동경, 1982|
 `017
 주3： 복후腹候가 진단계로서 성립하는 것은 만성의 안정기일 때 장기 투여를 전제로 한 경우이고, 급성기와 단기간의 적용에서는 적합하지 않다. 급성기에는 밖으로 나타나는 증후外證이라고뿐다와 脈候를 가장 중요하게 여긴다.
@@ -124,15 +124,15 @@
 손가락을 가지런히 해서 심하를 가볍게 압박하는 경우 검사하는 사람의 손가락 끝에 느껴지는 저항을「경鞭」, 피험자가 느끼는 뭔가 걸린 듯한 느낌을「비痞」라고 부른다. 이것을 아울러「心下痞鞭심하비경」이라고 하기 때문에 痞가 양성이고, 鞭이 음성, 혹은 그 반대일 수도 있다.
 복진을 하는 모습에서도 알 수 있듯이 이 소견은 현대의학적인 상부 소화기병변과 흉강내병변과 깊이 관련을 맺고 있다. 아마 심부전 등과도 관련될 것이다.
 한방적으로는『사심탕류瀉心湯類』, 『시호제류柴胡劑類』 인삼人蔘을 포함한 방제,『목방기탕木防己湯』등을 선택하는 근거가 된다고 본다.
-3)	흉협고만胸脇苦滿
+3)  흉협고만胸脇苦滿
 흉협고만이란 늑골궁肋骨弓을 둘러싼 복벽의 긴장을 말하며 현대의학적으로는 횡격막 주변 흉벽의 병변을 반영한 것이라고 생각할 수 있다. 크게 분류하여 염증성과 어떤 종류의 정신적인 병적인 상태에 유래하는 병변이 포함된다.|
 `018
 전통의학적으로는「肝鬱간울」등의 지표가 되고 시호柴胡 등을 사용하여 그 긴장을「느슨하게 한다」, 혹은 간기肝氣를 소통시키는 것이 일반적인 방법이다.
 처방에는 이른바 고전적 시호제柴胡劑가 있고 肝鬱간울의 정도와 그 밖의 병의 상태를 감안하여 대시호탕大柴胡湯, 시호가용골모려탕柴胡加龍骨牡蠣湯, 소시호탕小柴胡湯, 시호계지탕柴胡桂枝湯, 시호계지건강팅柴胡桂枝乾薑湯 등이 선택된다. 이 때, 앞에서 서술한 복후腹候의 복력에 주의하여 가능성이 있는 처방약을 대강 선별할 수 있다(→표 1).
-3갤4)	어혈 압통점
+3갤4)  어혈 압통점
 어혈 상태의 존재를 시사하는 압통점으로 배꼽 주변의 압통점, 회맹 부압통점, S상결장압통점 등의 대표점이 있다. 손가락끝으로 압박해 보면 검사자의 손가락에 특유의 저항감이 느껴지고, 피검자가 압통을 느끼는 것으로 판정하다.
 어혈의 압통점을 목표로 투여된 처방에는 대황목단피탕大黃牡丹皮湯, 도핵승기탕桃核承氣湯, 계지복령환桂枝茯苓丸, 당귀작약산當歸芍藥 등이 있고 개개의 선택에서는 복력이 참고가 된다(→표 1)
-3갤5)	복직근의 구련腹皮拘攣
+3갤5)  복직근의 구련腹皮拘攣
 복직근의 강한 긴장은 강한 복력에 동반된다고 보는 경우도 있지만, 의외로 마른체형에 많다. 이 경우에는 복벽이 얇으면서도 긴장된 경우
 `019
 가 많고 복력은 파악하기 힘들다. 그 때에는 늑골궁의 각도가 90도 이하이고 복부가 마른형이면 복력은 5분의 2정도로 생각하는 것이 요점이다. 즉, 훨씬 허하다고 생각하는 것이다.
@@ -143,12 +143,12 @@
 제상계臍上悸는 일종의 정신적인 흥분상태가 존재한다는 것을 알 수 있는 지표임과 동시에 어딘가가 쇠약해졌다는 증상을 수반한 상태라고 생각할 수 있다. 臍上悸가 나타나는 증례에 대한 대응은 2가지 방법이 있다.용골 龍骨 • 모려牡蠣가 포함된 처방을 선택 柴胡加龍骨牡蠣湯, 柴胡桂枝乾薑湯, 桂枝加龍骨牡蠣湯하는 경우와, 영계출감탕苓桂朮甘湯, 억간산가진피반하抑肝散加陳皮半夏와 같이 水와 관련된 처방을 선택하는 경우가 있다. 후자는 역사적으
 `020
 로 배꼽 주변의 悸를「水分의 悸」라고 해석한 것에서 유래한다.
-7)	위부진수음胃部振水音
+7)  위부진수음胃部振水音
 수체@水滯:옛날에는 飮이라고 했다@의 존재를 의심함과 동시에 이른바 위장이 허약하다는 사실을 살피게 하는 증후이다.
 진수음이 인정되는 환자에게는 소화기에 부담을 주기 쉬운 마황麻黃,  지황地黃 등을 포함한 처방약을 제일의 선택에서 피하는 것이 현명하다.
 위부진수음이 양성인 예에서는 영계출감탕苓桂朮甘湯, 복령음茯苓飮, 당귀작약산當歸芍藥散 등을 적용한다.
 위부진수음은 특유의 진동수로 복벽을 심하게 흔들었을 때의 공진共振을 이용한 진찰 방법이다. 다소의 요령이 필요하고 익숙하지 않으면 위음성爲陰性이 되기 쉽기 때문에 주의해야 한다. 젊은 여성에서 약간 의심스러운 음성인 경우에는 배에서 소리가 나는 일은 없는지 물어보면 될 것이다. 소리가 난다고 하면 저자는 양성소견으로 다루고 있다.
-8)	제하불인臍下不仁
+8)  제하불인臍下不仁
 제하연臍下軟, 소복불인少腹不仁 등으로도 불리는 복후腹候소견이다. 배꼽 밑의 한가운데의 복벽이 부드러운 경우와 같은 부위에 지각마비의 경우가 있고 복진에 의한 신허증腎虛證의 진단에 사용되고 있다.
 腎虛證의 진단은 오히려 증상을 참고로 하는 것이 좋을지도 모르겠 다. 팔미지황환八味地黃丸과 육미환六味丸의 적응에 있어서는 「냉증」을 수반
 `021
@@ -157,7 +157,7 @@
 복진을 할 때 파악되는 피부의 상태로부터 한방적인 상태파악을 한다.
 피부가 부드럽고 섬세하며 땀이 잘 나는 경우에는 방기황기팅防己黃耆湯, 황기건중탕黃耆建中湯 등을 선택하는 판단근거가 된다.
 반대로 피부가 건조하고 까칠까칠한 상태는 사물탕류四物湯, 육미환六味丸, 팔미지황환八味地黃丸 등 지황地黃이 들어간 처방으로 윤기있게 하는 것이 필요하다.
-3갤10)	복후腹候의 한계
+3갤10) 복후腹候의 한계
 腹候는 한방치료의 전통적「진단계」중의 하나이다. 전통의학의 다른 진단계에도 공통되지만, 모두 경험적 사실을 귀납해서 얻어진「이론」이고 세부적인 면에 걸친 논리적 정합성整合性은 부족하기 때문에 적절하게 활용하는 것이 현명하다고 생각된다.
 3.기•혈•수氣•血•水
 氣•血•水는 세 종류의 가상된 병리개념이지만, 양적 질적인 판단에 따라 치료방법을 선택하는 데에 도움이 된다.
@@ -180,139 +180,139 @@
 설진도 또한 급성질환, 만성질환에서 특유의 소견을 가지고 있다. 좀 더 자세하게 알고 싶으면 다른 책들을 참고하길 바란다.|
 `024
 표2. 六病位로 본 처방약의 분류시안
-六病位	提網(病位의 특징)	처방약
-태양병	태양의 병으로 浮脈,	越婢加朮湯
-	목덜미가 뻗뻗하고	葛根湯
-	통증이 있으며	葛根湯加川芎辛夷
-	그리고 오한을 느낀다.	桂枝加朮附湯
-		桂枝湯
-		小靑龍湯
-		升麻葛根湯
-		參蘇飮
-		麻黃湯
-소양병	소양의 병으로 입안이	安中散
-	쓰고 목이 마르며	茵蔯五苓散
-	어지럼증이 있다.	胃苓湯
-		溫淸飮
-		越婢加朮附湯
-		乙字湯
-		黃連解毒湯
-		加味逍遙散
+六病位 提網(病位의 특징)  처방약
+태양병 태양의 병으로 浮脈, 越婢加朮湯
+  목덜미가 뻗뻗하고 葛根湯
+  통증이 있으며 葛根湯加川芎辛夷
+  그리고 오한을 느낀다.  桂枝加朮附湯
+    桂枝湯
+    小靑龍湯
+    升麻葛根湯
+    參蘇飮
+    麻黃湯
+소양병 소양의 병으로 입안이 安中散
+  쓰고 목이 마르며 茵蔯五苓散
+  어지럼증이 있다. 胃苓湯
+    溫淸飮
+    越婢加朮附湯
+    乙字湯
+    黃連解毒湯
+    加味逍遙散
 甘麥大棗湯
-		桔梗湯
-		荆芥連翅湯
-		桂枝加龍骨牡蠣湯
-		桂枝茯苓丸
-		香蘇散
-		五虎湯
-		五積散
-		五淋散
-		五苓散
-		柴陷湯
-		柴胡加龍骨牡蠣湯
-		柴胡桂枝湯
+    桔梗湯
+    荆芥連翅湯
+    桂枝加龍骨牡蠣湯
+    桂枝茯苓丸
+    香蘇散
+    五虎湯
+    五積散
+    五淋散
+    五苓散
+    柴陷湯
+    柴胡加龍骨牡蠣湯
+    柴胡桂枝湯
 `025
-六病位	提網(病位의 특징)	처방약
-		柴胡桂枝乾薑湯
-		柴胡淸肝湯
-		柴朴湯
-		柴苓湯
-		三黃瀉心湯
-		三物黃芩湯
-		滋陰降火湯
-		四逆散
-		七物降下湯
-		炙甘草湯
-		十味敗毒湯
-		小柴胡湯
-		小柴胡湯加桔梗石膏
-		小半夏加茯苓湯
-		消風散
-		辛夷淸肺湯
-		神秘湯
-		淸心蓮子飮
-		淸上防風湯
-		淸肺湯
-		大柴胡湯
-		治打撲一方
-		治頭瘡一方
-		釣藤散
-		猪苓湯
-		通導散
-		二朮湯
-		二陳湯
-		女神散
-		麥門冬湯
+六病位 提網(病位의 특징)  처방약
+    柴胡桂枝乾薑湯
+    柴胡淸肝湯
+    柴朴湯
+    柴苓湯
+    三黃瀉心湯
+    三物黃芩湯
+    滋陰降火湯
+    四逆散
+    七物降下湯
+    炙甘草湯
+    十味敗毒湯
+    小柴胡湯
+    小柴胡湯加桔梗石膏
+    小半夏加茯苓湯
+    消風散
+    辛夷淸肺湯
+    神秘湯
+    淸心蓮子飮
+    淸上防風湯
+    淸肺湯
+    大柴胡湯
+    治打撲一方
+    治頭瘡一方
+    釣藤散
+    猪苓湯
+    通導散
+    二朮湯
+    二陳湯
+    女神散
+    麥門冬湯
 `026
-六病位	提網(病位의 특징)	처방약
-		半夏厚朴湯
-		半夏白朮天麻湯
-		茯苓飮
-		茯苓飮合半夏厚朴湯
-		平胃散
-		防風通聖散
-		補中益氣湯
-		麻子仁丸
-		麻杏甘石湯
-		麻杏意甘湯
-		木防己湯
-		木防己湯
-		抑肝散
-		抑肝散加陳皮半夏
-		苓桂朮甘湯
-		六君子湯
-		龍膽瀉肝湯
-陽明病	陽明의 병으로	茵蔯蒿湯
-	胃家實하게 된다.	大黃牧丹皮湯
-		大承氣湯
-		調胃承氣湯
-		桃核承氣湯
-		白虎加人蔘湯
-태음병	태음의 병으로 복만으로	溫經湯
-	구토를 하고 음식이	加味逍遙散
-	내려가지 않고 自利가	芎歸膠艾湯
-	점점 심해지고	歸脾湯
-	때로는 배가 아프다.	桂枝加芍藥大黃湯
-		桂枝加芍藥湯
+六病位 提網(病位의 특징)  처방약
+    半夏厚朴湯
+    半夏白朮天麻湯
+    茯苓飮
+    茯苓飮合半夏厚朴湯
+    平胃散
+    防風通聖散
+    補中益氣湯
+    麻子仁丸
+    麻杏甘石湯
+    麻杏意甘湯
+    木防己湯
+    木防己湯
+    抑肝散
+    抑肝散加陳皮半夏
+    苓桂朮甘湯
+    六君子湯
+    龍膽瀉肝湯
+陽明病 陽明의 병으로 茵蔯蒿湯
+  胃家實하게 된다. 大黃牧丹皮湯
+    大承氣湯
+    調胃承氣湯
+    桃核承氣湯
+    白虎加人蔘湯
+태음병 태음의 병으로 복만으로  溫經湯
+  구토를 하고 음식이  加味逍遙散
+  내려가지 않고 自利가 芎歸膠艾湯
+  점점 심해지고 歸脾湯
+  때로는 배가 아프다. 桂枝加芍藥大黃湯
+    桂枝加芍藥湯
 `027
-六病位	提網(病位의 특징)	처방약
-		桂枝人蔘湯
-		牛車腎氣丸
-		吳茱萸湯
-		酸棗仁湯
-		滋陰至寶湯
-		四君子湯
-		四物湯
-		十全大補湯
-		芍藥甘草湯
-		潤腸湯
-		小建中湯
-		淸暑益氣湯
-		疏經活血湯
-		大黃甘草湯
-		大建中湯
-		竹茹溫膽湯
-		當歸飮子
-		當歸四逆加吳茱萸生薑湯
-		當歸芍藥散
-		富歸湯
-		人蔘湯
-		人蔘養榮湯
-		八味地黃丸
-		防己黃耆湯
-		苓甘薑味辛夏仁湯
-		苓薑朮甘湯
-		六味丸
-少陰病	소음의 병으로 맥이	四逆散
-	미세하며 그저 눕고만	眞武湯
-	싶어한다.	麻黃附子細辛湯
+六病位 提網(病位의 특징)  처방약
+    桂枝人蔘湯
+    牛車腎氣丸
+    吳茱萸湯
+    酸棗仁湯
+    滋陰至寶湯
+    四君子湯
+    四物湯
+    十全大補湯
+    芍藥甘草湯
+    潤腸湯
+    小建中湯
+    淸暑益氣湯
+    疏經活血湯
+    大黃甘草湯
+    大建中湯
+    竹茹溫膽湯
+    當歸飮子
+    當歸四逆加吳茱萸生薑湯
+    當歸芍藥散
+    富歸湯
+    人蔘湯
+    人蔘養榮湯
+    八味地黃丸
+    防己黃耆湯
+    苓甘薑味辛夏仁湯
+    苓薑朮甘湯
+    六味丸
+少陰病 소음의 병으로 맥이  四逆散
+  미세하며 그저 눕고만 眞武湯
+  싶어한다. 麻黃附子細辛湯
 `028
-六病位	提網(病位의 특징)	처방약
-厥陰病	궐음의 병으로 갈증이	대체로 소음병의
-	나고, 氣가 心에 상충하고,	처방약을 사용하지만
-	心中疼熱하여 배가	상태에 따라서 모든
-	고파도 음식을 먹으려	病位의 치료가 적응될
-	하지 않는다.	가능성이 있다.
+六病位 提網(病位의 특징)  처방약
+厥陰病 궐음의 병으로 갈증이 대체로 소음병의
+  나고, 氣가 心에 상충하고, 처방약을 사용하지만
+  心中疼熱하여 배가 상태에 따라서 모든
+  고파도 음식을 먹으려 病位의 치료가 적응될
+  하지 않는다. 가능성이 있다.
 * 참고문헌 ： 藤平 健 : 漢方處方類方鑑別便費, 린네, 동경, 1982에서 일부 변경
 2갤6. 경험=구결口訣
 선인들은 우수한 한방치료를 이루기 위하여 치료비결이라고도 할 만 한 것들을 짧은 말로 표현하여 수없이 많이 남겼다. 이것을 구결이라고 하는데 아마도 같은 문하 외에서는 말하기를 꺼려했을 것이다. 후세에 이르러 문자화된 구결집도 나오게 되었다. 淺田宗伯아사다 소하쿠, 1815-94의 『물오약실방함구결勿誤藥實方函口訣』등이 대표적이다.
@@ -339,7 +339,7 @@
 3갤2) 오행= 木•火•土•金•水
 태고의 사람들에게 있어서 자연계는 공포와 은혜를 가져다주는 두려움의 대상이었다. 계속해서 발생하는 자연현상은 사람들의 예측을 뛰어 넘고 때로는 끝을 알 수 없는 재앙을 불러 일으켰다. 사람들은 어떻게든지 자연계에 법칙성을 발견하고 앞으로 발생할 사태를 예측하고 가능하면 그것을 회피하고 싶다고 생각했음에 틀림없다.
 그렇게 해서 사람들은 자연계에 존재하는 다섯개의 물질이 서로 변화하고 상호간에 영향을 미친다는 사실로부터 하나의 모델계를 창출했다. 그리고 비교하여 추론하면 지금까지 축적한 경험을 잘 설명할 수 있다는 것을 알게 되었다. 이것이 오행설이다.
-3)	상생
+3)  상생
 木•火•土•金•水가 그 다섯 개의 요소적인 물질이다. 먼저, 나무木는 서로 비비면 불火을 일으키고, 나무木를 태우면 불꽃이 왕성하게 타오른다. 즉, 木氣는 火氣를 만들어 낸다.
 火는 왕성하게 타들어가면 점차 약해져 재가 된다. 재는 즉 흙土이니,  火氣는 土氣를 만들어낸다.
 광물과 금속의 대부분은 흙 속에 있으므로 土氣는 金氣를 만들어 낸
@@ -458,10 +458,10 @@ A 호흡기질환 B 순환기질환 C 소화기질환 D 신장질환 E 대사•
 초기에는 단독으로 위의 처방들을 가지고 1 - 3일 경과를 충분히 관찰 할 수 있다. 항생제는 3일 이후에 농성 객담 등을 동반하면 병용을 권한다. 해열진통제$$1)는 보통 불필요하지만, 사용한다면 사용하고 싶을 때마다 사용한다. 위의 처방들에서는 진해작용이나 거담작용도 기대되기 때문에 진해제@@2) 거담제$$3)는 일반적으로 필요하지 않다.
 1) 시상하부의 체온조절 중추와 말초표적에서 prostaglandin합성을 차단, acetaminopen (타이레놀®), aspirin 등이 있다.
 2) 진해제는 크게 세가지로 구분하는데,
-(1)	아드레날린 약용약으로는 albuterol, salmetrol, terbutaline 등이 있는데, 이는 기도 평활근을 직접적으로 이완시킴
-(2)	corticosteroids 약물로는 beclomethasone, fluticasone, triamcinolone, budesonide(풀미코트) 등이 있으며, 기관지 염증에 관여하는 macrophage, eosinophils, T - lymphocytes의 수와 활성을 감소시킴
-(3)	기타: cromolyn, nedocromil, theophylline 등이 있다.
-3)	거담제: acetylcysteine, ambroxol, bromhexine, s - carboxymethylcysteine(리나치올) 등이 있다.
+(1) 아드레날린 약용약으로는 albuterol, salmetrol, terbutaline 등이 있는데, 이는 기도 평활근을 직접적으로 이완시킴
+(2) corticosteroids 약물로는 beclomethasone, fluticasone, triamcinolone, budesonide(풀미코트) 등이 있으며, 기관지 염증에 관여하는 macrophage, eosinophils, T - lymphocytes의 수와 활성을 감소시킴
+(3) 기타: cromolyn, nedocromil, theophylline 등이 있다.
+3)  거담제: acetylcysteine, ambroxol, bromhexine, s - carboxymethylcysteine(리나치올) 등이 있다.
 임상근거
 요지:  麻黃附子細辛湯마황부자세신탕의 감기 증후군에 대한 효과를 검토한 랜덤화 비교 시험
 214례의 감기 증후군을 봉투법을 이용해 무작위로 두 군으로 나눈 후, 한 군에는 종 합 감기약을 투여하고, 다른 군에는 쯔무라 한방제제 마황부자세신탕 7.5g을 1일 3 회에 걸쳐 투여한 다음 각각 3일간 또는 치유될 때까지 적용하여 효과를 비교하였다. 그 결과, 마황부자세신탕군에서 발열, 열감, 전신권태감, 기침, 담의 증상들이 유의하게 단기간에 소실되었다.
@@ -479,8 +479,8 @@ A 호흡기질환 B 순환기질환 C 소화기질환 D 신장질환 E 대사•
 `051
 작용을 이해하기 위해서는 처음에는 한방약 단독 사용을 권한다.
 1) 항생제는 4가지로 구분한다.
-①	beta lactams로는 penicillin계: penicillin, ampicillin, amoxacillin, methicillin, piperacillin, cephalosporin계: cephazolin, cefterole(이하 1세대), cefotiam, cefaclor, cefotetan(이하 2세대), cefotaxime, ceftraxone, cefixime(이하 3세 대), cefepime, cefpirome(이하 4세대)이 있고, monobactam ： aztreonem, carmonam, carbapenem : imipenem, meropenem, beta lactamase inhibitor: clavualnic acid, sulbactam, tazobactam 등이 있다.
-②	aminoglycosides: gentamicin, tobramycin, amikacin, netilimicin, streptomycin, kanamycin
+① beta lactams로는 penicillin계: penicillin, ampicillin, amoxacillin, methicillin, piperacillin, cephalosporin계: cephazolin, cefterole(이하 1세대), cefotiam, cefaclor, cefotetan(이하 2세대), cefotaxime, ceftraxone, cefixime(이하 3세 대), cefepime, cefpirome(이하 4세대)이 있고, monobactam ： aztreonem, carmonam, carbapenem : imipenem, meropenem, beta lactamase inhibitor: clavualnic acid, sulbactam, tazobactam 등이 있다.
+② aminoglycosides: gentamicin, tobramycin, amikacin, netilimicin, streptomycin, kanamycin
 ⑤ 단백합성저해제 (1) macrolides: erythromycin, clarithromycin, azithromycin, roxithromycin (2) tetracyclines: tetracycline, doxicycline, minocycline (3) lincosamides : clindamycin, lincomycin (4) chloramphenicol
 ④기타: (1) glycopeptides: vancomycin, teicoplanin (2) quinolones: norfloxacin, ciprofloxacin, ofloxacin, pefloxacin (3) sulfonamides : sulfamethoxazole, sulfisoxazol (4) nitromidazols: metronidazole, tinidazole
 임상근거
@@ -500,10 +500,10 @@ A 호흡기질환 B 순환기질환 C 소화기질환 D 신장질환 E 대사•
 여기에 설명한 한방약의 효능은 독특하며, 양약으로 유사한 약효를 나타내는 것은 불가능하다. 川 考茶調散천궁다조산의 진통작용은 때로는 비 스테로이드 항염증제 (NSAIDs)$$1)에도 필적하며, 더구나 위장에 대한 영향은 경미하다. 補中益氣湯보중익기탕은 보기補氣작용에 의하여 일반적인 비타민제 등과 다른 독특한 약효를 기대할 수 있다.
 1) 비스테로이드 항염증제(NSAIDs) ： 해열, 진통, 항염증 작용면에서 다른 화학적으로 유사성이 없는 제제의 그룹으로 주로 cyclooxygenase를 억제함으로써 작용한다.|
 `053
-①	acetylsalicylic acid and other salicylates: aspirin, diflunisal
-②	propionic acid 유도체: ibuprofen(부루펜®), naproxen(낙센®),  ketoprofen(케토톱®)
-③	indoleacetic acids 유도체: indometacin, sulindac, etodolac
-④	oxicam 유도체: piroxicam
+① acetylsalicylic acid and other salicylates: aspirin, diflunisal
+② propionic acid 유도체: ibuprofen(부루펜®), naproxen(낙센®),  ketoprofen(케토톱®)
+③ indoleacetic acids 유도체: indometacin, sulindac, etodolac
+④ oxicam 유도체: piroxicam
 © fenamates ： mefenamic acid, meclofenamate ⑥ 기타: diclofenac, ketorolac
 3갤[기관지염]
 #小柴胡湯소시호탕
@@ -527,15 +527,15 @@ A 호흡기질환 B 순환기질환 C 소화기질환 D 신장질환 E 대사•
 통합처방의 포인트
 장기화하는 경우에는  항생제$$1)를 병용하고 싶은 유혹에 휩싸이지만, 한방약의 효과를 확인한 다음  항생제틀 병용할 것을 잊어서는 안 된다.
 1)  항생제는 크게 4가지로 구분한다.
-(1)	beta lactams로는
+(1) beta lactams로는
 penicillin계 ： penicillin, ampicillin, amoxacillin, methicillin, piperacillin cephalosporin ： cephazolin, cefterole(이하 1세대), cefotiam, cefaclor, cefotetan(이하 2세대), cefotaxime, ceftraxone, cefixime(이하 3세대),  cefepime, cefpirome(이하 4세대)이 있다. monobactam ： aztreonem, carmonam carbapenem : imipenem, meropenem
 beta lactamase inhibitor : clavualnic acid, sulbactam, tazobactam 등이 있다.
-(2)	aminoglycosides : gentamicin, tobramycin, amikacin, netilimicin, streptomycin, kanamycin
-(3)	단백합성저해제 ：
--	macrolides: erythromycin, clarithromycin, azithromycin, roxithromycin
--	tetracyclines: tetracycline, doxicycline, minocycline
--	lincosamides: clindamycin, lincomycin
--	chloramphenicol ⑷기타:
+(2) aminoglycosides : gentamicin, tobramycin, amikacin, netilimicin, streptomycin, kanamycin
+(3) 단백합성저해제 ：
+- macrolides: erythromycin, clarithromycin, azithromycin, roxithromycin
+- tetracyclines: tetracycline, doxicycline, minocycline
+- lincosamides: clindamycin, lincomycin
+- chloramphenicol ⑷기타:
 glycopeptides(vancomycin, teicoplanin), quinolones(norfloxacin, ciprofloxacin, ofloxacin, pefloxacin) 등이 있다.
 임상근거
 다음 연구도  항생제류 등을 병용하고 있지 않은 결과라는 점에 주목하여 주었으면 한다. 요지: 小靑龍湯소청룡탕의 기관지염에 대한 효과를 검토한 다시설 이중맹검 랜덤화 비교 시험
@@ -568,9 +568,9 @@ glycopeptides(vancomycin, teicoplanin), quinolones(norfloxacin, ciprofloxacin, o
 통합처방의 포인트
 소청룡탕, 마황탕, 마행감석탕, 오호탕, 신비탕에는 마황이 들어가 있다. 마황은 수용체자극작용을 가지고 있기 때문에, 양약의 기관지확장제$$1>와 병용하는 경우에는 양약을 감량하는 등의 주의가 필요한 경우가 있다. 맥문동탕麥門冬湯이나 시박탕柴朴湯, 영감강미신하인탕苓甘薑味辛夏仁湯과 같은 비마황제非麻黃劑인 경우에는 원칙적으로 고려할 필요가 없다. 가벼운 발작시에는 한방약만으로도 충분하지만 첩부제貼付劑의 기관지확장제와는 좋은 조합이 된다.
 1) 기관지확장제는 크게 3가지로 구분할 수 있다.
-(1)	아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. 제제로는 albuterol, salmetrol, terbutaline 등이 있음.
-(2)	corticosteroids ： 기관지 염증에 관여하는macrophage, T - lymphocytes, eosinophils의 수와 활성을 감소시킴, 제제로는 beclomethasone, fluticasone, triamcinolone, budesonide(풀미코트®) 등이 있음
-(3)	기타 : cromolyn, nedocromil, theophylline|
+(1) 아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. 제제로는 albuterol, salmetrol, terbutaline 등이 있음.
+(2) corticosteroids ： 기관지 염증에 관여하는macrophage, T - lymphocytes, eosinophils의 수와 활성을 감소시킴, 제제로는 beclomethasone, fluticasone, triamcinolone, budesonide(풀미코트®) 등이 있음
+(3) 기타 : cromolyn, nedocromil, theophylline|
 `059
 4갤■ 비발작시
 #小靑龍湯소청룡탕
@@ -591,9 +591,9 @@ glycopeptides(vancomycin, teicoplanin), quinolones(norfloxacin, ciprofloxacin, o
 이들을 잘 병용하면서 증상의 안정을 기다리고, 그런 다음 간결한 처방내용으로 옮 겨가는 것이 임상가의 남모르는 기쁨이라고 하겠다. 그러나 신중하여야 하며 절대로 무리는 하지 말아야 한다.
 시박탕柴朴湯은 아미노필린계 약제6)의 혈중농도에 영향을 미치지 않는다고 보고되고 있다.
 천식치료의 가이드라인으로서 한방약은 기타 약제로서 분류되고 있다. 마황제®黃劑와 기관지확장제와의 병용은 심근의 산소수요를 증가시키고, 부정맥 등의 여러 가지 부작용을 야기시킬 가능성이 있기 때문에, 각각 투약량에 주의를 하여 야 한다.
-1)	에페드린(ephedrine): 아드레날린 작용성 화합물로 수종의 ephedra로부터 추출, 또는 합성된다. 비강 알러지의 충혈 감소, 기관지천식 때의 기관지 확장, 마약 및 신경억제제에 의한중추신경장애에 대한자극, 척수마취 또는침윤마취 때 혈압하 강예방시에도 사용
-2)	슈도에페드린(pseudoephedrine): 에페드린의 입체이성체의 하나. 에페드린보다 약한 혈압상승작용과 중추신경 흥분 작용이 있음.
-3)	P자극제(아드레날린 작용약물): p2활성이 있는 홉인용 약물로 경중 천식의 선택
+1)  에페드린(ephedrine): 아드레날린 작용성 화합물로 수종의 ephedra로부터 추출, 또는 합성된다. 비강 알러지의 충혈 감소, 기관지천식 때의 기관지 확장, 마약 및 신경억제제에 의한중추신경장애에 대한자극, 척수마취 또는침윤마취 때 혈압하 강예방시에도 사용
+2)  슈도에페드린(pseudoephedrine): 에페드린의 입체이성체의 하나. 에페드린보다 약한 혈압상승작용과 중추신경 흥분 작용이 있음.
+3)  P자극제(아드레날린 작용약물): p2활성이 있는 홉인용 약물로 경중 천식의 선택
 약제임. 기도평활근을 직접적으로 이완시키는 강력한 기관지 확장제임. 단시간
 작용성약물(pirbuterol, terbutaline, albuterol)과 장시간 작용성약물(salmeterol)
 이 있다.|
@@ -655,7 +655,7 @@ glycopeptides(vancomycin, teicoplanin), quinolones(norfloxacin, ciprofloxacin, o
 통합처방의 포인트
 @@@처음에는 될 수 있는 한 한방 단독 사용으로 효과를 확인할 것을 권유한다.  항생제$$1) 기관지확장제2) 등은 필요에 따라 추가하지만, 위에 거론한 한방약은 모두 뛰어난 거 담작용을 발휘한다.
 1) 항생제:4가지로구분
-(1)	beta lactams 로는
+(1) beta lactams 로는
 penicillin계 ： penicillin, ampicillin, amoxacillin, methicillin, piperacillin
 cephalosporin계 ： cephazolin, cefterole(이하 1세대), cefotiam, cefaclor,
 cefotetan(이하 2세대), cefotaxime, ceftraxone, cefixime(이하 3세대),
@@ -663,17 +663,17 @@ cefepime, cefpirome(이하 4세대)이 있다.
 monobactam 계 ： aztreonem, carmonam
 carbapenem 계 : imipenem, meropenem
 beta lactamase inhibitor: clavualnic acid, sulbactam, tazobactam
-(2)	aminoglycosides : gentamicin, tobramycin, amikacin, netilimicin, streptomycin, kanamycin
-(3)	단백합성저해제 ：
+(2) aminoglycosides : gentamicin, tobramycin, amikacin, netilimicin, streptomycin, kanamycin
+(3) 단백합성저해제 ：
 macrolides ： erythromycin, clarithromycin, azithromycin, roxithromycin tetracyclines : tetracycline, doxicycline, minocycline lincosamides : clindamycin, lincomycin chloramphenicol
-(4)	기타:
--	glycopeptides : vancomycin, teicoplanin
--	quinolones : norfloxacin, ciprofloxacin, ofloxacin, pefloxacin
--	sulfonamides(sulfamethoxazole, sulfisoxazol), nitromidazols (metronidazole, tinidazole) 등이 있다.
-2)	기관지확장제는 크게 3가지로 구분할 수 있다.
-(1)	아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. 제제로는 albuterol, salmetrol, terbutaline 등이 있음.
-(2)	corticosteroids ： 기관지 염증에 관여하는 macrophage, T lymphocytes, eosinophils의 수와 활성을 감소시킴, 제제로는 beclomethasone, fluticasone, triamcinolone, budesonide(풀미 코트®) 등이 있음
-(3)	기타: cromolyn, nedocromil, theophylline|
+(4) 기타:
+- glycopeptides : vancomycin, teicoplanin
+- quinolones : norfloxacin, ciprofloxacin, ofloxacin, pefloxacin
+- sulfonamides(sulfamethoxazole, sulfisoxazol), nitromidazols (metronidazole, tinidazole) 등이 있다.
+2)  기관지확장제는 크게 3가지로 구분할 수 있다.
+(1) 아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. 제제로는 albuterol, salmetrol, terbutaline 등이 있음.
+(2) corticosteroids ： 기관지 염증에 관여하는 macrophage, T lymphocytes, eosinophils의 수와 활성을 감소시킴, 제제로는 beclomethasone, fluticasone, triamcinolone, budesonide(풀미 코트®) 등이 있음
+(3) 기타: cromolyn, nedocromil, theophylline|
 `067
 3갤[ 폐렴 ]
 #小柴胡湯소시호탕
@@ -709,8 +709,8 @@ macrolides ： erythromycin, clarithromycin, azithromycin, roxithromycin tetracy
 뜨거운 채로 마시면 출혈이 더 심하여질 염려가 있기 때문이다. pm 사용에는 증례를 선택할 여유가 없을지도 모르지만, 원래 본 처방은 혈색이 좋은 붉은 얼굴에 적용된다. 삼황사심탕三黃瀉心湯도 같은 목적으로 사용된다.
 통합처방의 포인트
 카르바조크롬(Carbazochrome)$$1>과 트라넥사믹 엑시드(tranexamic acid)2> 등의 일반 적인 양약 지혈제, 인산코데인등의진해제와의 병용은 문제되지 않는다.
-1)	carbazochrome ： adrenaline의 산화생성물. 혈관을 수축시켜 강한 지혈작용. 주 로 정맥과 모세혈관에 작용한다. 모세혈관 저항성 감약 및 투과성 항진에 기인되는피부, 점막, 내막에서의출혈, 안저출혈, 신출혈, 자궁출혈, 수술중•후둥의출 혈, 잇몸질환에서 잇몸출혈을 방지하기 위하여 사용. 상품명 ： 덴타민갑셀, 덴타갑 셀둥
-2)	tranexamic acid ： 항plasmin제(지혈제)출혈성 질환(자반성, 재생불량성빈혈, 암 둥)의 이상출혈, 폐결핵에 의한 출혈, 수술시의 출혈, 알레르기성 염증성 증상, 습진, 편도선염, 후두염 둥에 의한 발적종창, 출혈 둥. 상품명 ： 도란사민캅셀
+1)  carbazochrome ： adrenaline의 산화생성물. 혈관을 수축시켜 강한 지혈작용. 주 로 정맥과 모세혈관에 작용한다. 모세혈관 저항성 감약 및 투과성 항진에 기인되는피부, 점막, 내막에서의출혈, 안저출혈, 신출혈, 자궁출혈, 수술중•후둥의출 혈, 잇몸질환에서 잇몸출혈을 방지하기 위하여 사용. 상품명 ： 덴타민갑셀, 덴타갑 셀둥
+2)  tranexamic acid ： 항plasmin제(지혈제)출혈성 질환(자반성, 재생불량성빈혈, 암 둥)의 이상출혈, 폐결핵에 의한 출혈, 수술시의 출혈, 알레르기성 염증성 증상, 습진, 편도선염, 후두염 둥에 의한 발적종창, 출혈 둥. 상품명 ： 도란사민캅셀
 4갤호흡기질환에 관한기타 임상근거@@@
 폐기종을 주로 하는 만성 폐쇄성 폐질환(COPD)에 대하여 6개월간 한방약을 투여한 바 유의하게 2차감염의 이환빈도감소, 체중증가, NK세포의 활성상승을 관찰하였다 고 보고하고 있다.
 요지: 보중익기탕?*中益^과 소시호탕、柴SM의 만성 폐쇄성 폐질환(COPD)에 대한 효과를 검토한 비랜덤화 비교시험
@@ -744,12 +744,12 @@ macrolides ： erythromycin, clarithromycin, azithromycin, roxithromycin tetracy
 대변을 통하여 기를 시원스럽게 흐르게 하는 것이 본 처방의 목적이다. 변비, 복만, 기분이 불안정한 고혈압증에서 비교적 심한 변비로 고생하는 증례에 적용된다. 복력은 중간 정도 이상이면 좋다.
 통합처방의 포인트
 양약의 혈압강하제는 최근 눈부시게 발전하여 뛰어난 임상근거를 제시하고 있기 때문에, 강압목적이라면 한방약을 사용할 필요성은 거의 없어지게 되었다. 그러나 수 반증상으로서 어깨결림, 두통, 어지러움, 쉬 피로, 권태감, 뇌졸중후유증 등이 있을 때에는 이들에 대한 해결에 오히려 한방에 대한 높은 기대가 모아지고 있다. 수반증 상의 한방 치료에 대해서는 다음 항목을 봐주기 바란다. 한방약 가운데 감초는 잘 알다시피 고혈압, 부종, 저칼륨혈증 등을 주 특징으로 하는 가성 알도스테론증$$1)을 일으키는 경우가 있다. 한방제제와 강압이뇨제$$2)와의 병용은 혈청 칼룸저하를 초래하기 쉽기 때문에 주의를 요한다. (권말의『甘草를 함유하고 있지 않은 한방제제』참고)
-1)	가성 알도스테론중 ： 부신이외의 원인으로 renin angiotensin aldosterone system 이 활성화되어 생김
-2)	이뇨제(diuretic drugs)는 4가지로 분류할 수 있다.
-(1)	thiazides ： hydrochlorothiazide(다이크로짓®)’ chlorthalidone
-(2)	Loop diuretics ： furosemide(라식스®)’ torasemide(토램®), bumetamide
-(3)	K sparing diuretics ： spironolactone(알닥톤®)’ triamterene, amiloride
-(4)	삼투성 이 isi제 (osmotic diuretics) ： mannitol
+1)  가성 알도스테론중 ： 부신이외의 원인으로 renin angiotensin aldosterone system 이 활성화되어 생김
+2)  이뇨제(diuretic drugs)는 4가지로 분류할 수 있다.
+(1) thiazides ： hydrochlorothiazide(다이크로짓®)’ chlorthalidone
+(2) Loop diuretics ： furosemide(라식스®)’ torasemide(토램®), bumetamide
+(3) K sparing diuretics ： spironolactone(알닥톤®)’ triamterene, amiloride
+(4) 삼투성 이 isi제 (osmotic diuretics) ： mannitol
 3갤[고혈압증 및 수반증상]
 #七物降下湯칠물강하탕
 본 처방은 1955년 경 일본에서 새롭게 만들어진 한방약으로 오츠카게이세 츠大塚敬節처방이다. 빈혈 유사증상을 가지면서 야윈사람에게 적당하다. 四物
@@ -781,12 +781,12 @@ macrolides ： erythromycin, clarithromycin, azithromycin, roxithromycin tetracy
 이른바 좌심부전의 상태라고 할 수 있으며, 천명을 수반한 호흡곤란과 해수 등의 증상에 적용된다. 선인들은 복력에 상관없이 심하가 단단하며 막혀 있는 느낌을 목표로 본 처방을 적용하였다.
 통합처방의 포인트
 심부전을 한방 단독으로 관리한다는 것은 쉬운 일이 아니다. 목방기탕木防己湯 은 감초 가 들어가 있지 않기 때문에 혈청 칼룸에 영향을 미치지 않는다. 필요하면 디기탈리 스제제1>나 혹은 이뇨제2)와의 병용도 가능하다. (권말의『甘草를 함유하고 있지 않은 한방제제』참고)
-1)	디기탈리스(digitalis) ： 강심배당체는 대부분의 약들이 digitalis 식물에서 유래되기 때문에 보통 디기탈리스배당체라 부른다. 심근의 수축력을증가시킬 수 있어서 심 부전 치료에 널리 사용되는 화학적으로 유사한 화합물 그룹으로 치료적으로 유효 량과 중독량이나 치사량간에 약간의 차이만 있음. 종류: digitoxin, digoxin이 있다.
-2)	이뇨제(diuretic drugs)는
-(1)	thiazides ： hydrochlorothiazide(다이크로짓®)’ chlorthalidone
-(2)	Loop diuretics ： furosemide(라식스®)’ torasemide(토램®)’ bumetamide
-(3)	K sparing diuretics ： spironolactone(알닥톤®)’ triamterene, amiloride
-(4)	삼투성 이뇨제(osmotic diuretics) ： mannitol 등이 있다.|
+1)  디기탈리스(digitalis) ： 강심배당체는 대부분의 약들이 digitalis 식물에서 유래되기 때문에 보통 디기탈리스배당체라 부른다. 심근의 수축력을증가시킬 수 있어서 심 부전 치료에 널리 사용되는 화학적으로 유사한 화합물 그룹으로 치료적으로 유효 량과 중독량이나 치사량간에 약간의 차이만 있음. 종류: digitoxin, digoxin이 있다.
+2)  이뇨제(diuretic drugs)는
+(1) thiazides ： hydrochlorothiazide(다이크로짓®)’ chlorthalidone
+(2) Loop diuretics ： furosemide(라식스®)’ torasemide(토램®)’ bumetamide
+(3) K sparing diuretics ： spironolactone(알닥톤®)’ triamterene, amiloride
+(4) 삼투성 이뇨제(osmotic diuretics) ： mannitol 등이 있다.|
 `078
 3갤[심장판막증]
 當歸芍藥散당귀작약산
@@ -863,9 +863,9 @@ macrolides ： erythromycin, clarithromycin, azithromycin, roxithromycin tetracy
 통합처방의 포인트
 비타민 B12나 비타민 E, 프로스타그란딘제제$$1>등과 우차신기환牛車腎氣丸의 병용은 무 리없이 가능하다. 우차신기환에 수치한 부자가루 1.0g 혹은 2.0g 정도를 넣으면 더 효과가 높아지는 경우가 있다.
 1) 프로스타그란딘제제(prostaglandins) ： 불포화 지방산 유도체이며 합성한 조직에 작용하고 작용부위에서 불활성 산물로 신속히 대사된다.
-(1)	유산(abortion) ： dinoprost, dinoprostone, carboprost
-(2)	소화성 궤양 ： misoprostol
-(3)발기기능부전:	alprostadil
+(1) 유산(abortion) ： dinoprost, dinoprostone, carboprost
+(2) 소화성 궤양 ： misoprostol
+(3)발기기능부전:  alprostadil
 3갤[임파선염]
 #葛根湯갈근탕
 급성염증으로 두경부頭頸部와 안면, 아래 턱 부분의 임파선염 초기에 적용한다. 맥은 떠있고 힘이 있어야 한다.|
@@ -996,16 +996,16 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 `096
 통합처방의 포인트
 양약에서는 소량의 항불안제$$1)나 항우울제$$2)가 처방되는 경우가 많다고 생각된다. 그러나 신경이 예민한 사람들은 이 약에도 불안을 느껴 복용지시를 지키지 않은 결과,  개선되지 않는 경우도 있는 듯하다. 한방약은 가벼운 항불안작용, 항우울작용을 발 휘하는데, 당연한 이야기지만 졸림이나 휘청거림을 초래하지 않는다.
-1)	항불안제 ：
-(1)	benzodiazepines ： alprazolam(자낙스), diazepam(바륨), lorazepam(아티반)’ chlordiazepoxide, clonazepam(리보트릴), clorazepate
-(2)	other anxiolytic drugs : Zolpidem, buspirone(부스파), hydroxyzine
-(3)	benzodiazepine antagonist: flumazenil
-(4)	barbiturates •• amobarbital, phenobarbital, pentobarbital, secobarbital, thiopental
-(5)	nonbarbiturate sedatives : chloral hydrate, diphenhydramine, ethanol 등이 있다.
-2)	항우울제
-(1)	TCA(tricyclic antidepressants) ： Clomipramine(클로미프라민)’ Imipramine, Amitrityptiline(에나폰, 에트라빌), Nortryptiline(센시발), Trimipramine, Desipramine
-(2)	MA이 (monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine
-(3)	SSRI (selective serotonin reuptake inhibitors) ： Paroxetine(세■로■자트, 곽실)’ Escitalopram(렉사프로), Citalopram(씨프람>, Fluvoxamine(듀미록스), Setraline (졸로푸트), Fluoxetine(푸로작)
+1)  항불안제 ：
+(1) benzodiazepines ： alprazolam(자낙스), diazepam(바륨), lorazepam(아티반)’ chlordiazepoxide, clonazepam(리보트릴), clorazepate
+(2) other anxiolytic drugs : Zolpidem, buspirone(부스파), hydroxyzine
+(3) benzodiazepine antagonist: flumazenil
+(4) barbiturates •• amobarbital, phenobarbital, pentobarbital, secobarbital, thiopental
+(5) nonbarbiturate sedatives : chloral hydrate, diphenhydramine, ethanol 등이 있다.
+2)  항우울제
+(1) TCA(tricyclic antidepressants) ： Clomipramine(클로미프라민)’ Imipramine, Amitrityptiline(에나폰, 에트라빌), Nortryptiline(센시발), Trimipramine, Desipramine
+(2) MA이 (monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine
+(3) SSRI (selective serotonin reuptake inhibitors) ： Paroxetine(세■로■자트, 곽실)’ Escitalopram(렉사프로), Citalopram(씨프람>, Fluvoxamine(듀미록스), Setraline (졸로푸트), Fluoxetine(푸로작)
 4갤■위궤양
 #柴胡桂枝湯시호계지탕
 활동기가 지난 위궤양의 재발방지를 목표로 예전에는 자주 사용되었다. 진통효과가 있고 동물실험에서 항궤양작용을 확인하였다. 복력은 중간 정도 전후이다.|
@@ -1013,8 +1013,8 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #四逆散사역산
 신경질적이고 손발이 자주 차가워지고 설사 등도 잘 하는 증례에 사용한다. 본 처방은 진통효과가 있고 동물실험에서 항궤양작용을 확인하였다. 본 처방도 복력은 중간 정도를 중심으로 폭넓게 사용한다,
 한 때 위궤양, 십이지궤양의 재발예방에 시호계지탕이나 사역산이 활발하게 사용된 적이 있지만, 프로톤펌프 저해제1>의 등장으로 위궤양에 한방약을 사용할 기회는 줄 어들었다. H2 수용체길항제2)와의 병용에 대해서는 특히 문제가 되는 것은 없다.
-1)	프로톤펌프 저해제(proton pump inhibitor)로 omeprazole(로섹), lansoprazole이 있다.
-2)	H2 수용체 길항제(H2 receptor antagonist)로는 cimetidine, ranitidine(잔탁, 큐 란), famotidine(가스터), nizatidine(액시드) 등이 있다.
+1)  프로톤펌프 저해제(proton pump inhibitor)로 omeprazole(로섹), lansoprazole이 있다.
+2)  H2 수용체 길항제(H2 receptor antagonist)로는 cimetidine, ranitidine(잔탁, 큐 란), famotidine(가스터), nizatidine(액시드) 등이 있다.
 4갤■십이지장궤양
 #柴胡桂枝湯시호계지탕
 본 처방은 경련에도 유효하다고 했기 때문에 본 처방의 십 • 이지장궤양 대한 효과는 중추작용과 관련된 것인지도 모른다. 아직 증명되지는 않았지 만, 가능성은 생각할 수 있다. 복력은 중간 정도 전후이다.
@@ -1027,14 +1027,14 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #四逆散사역산
 내용을 보면 대시호탕과 비슷한 성격의 처방이라는 것을 알 수 있다. 대황은 포함되어 있지 않기 때문에 변비가 없는 환자에게 적합하다. 복직근 전체에 걸쳐서 긴장감이 있고 복력은 중간 정도 전후이다.
 통합처방의 포인트
-뭔가의 이유로 최근에 양약이 잘 맞아 들어가지 않는 경우에 한방약의 적용을 고려 해볼수 있다. 예전부터 가지고 있는 일상적인 증상이기 때문에 위의 두처방 이외에 도 본 증에 효능을 가지고 있는 많은 한방약이 존재한다. 한방 단독으로 경과 관찰이 가능하지만 제산제$$1>나 위점막보호제$$2) 등의 일반적인 소화관약과의 병용은 문제될 것은 없다.|1)	제산제(antacid) ： NaHCOj, CaC03, Al(OH)3 and/or Mg(OH)2, (겔포스) 등이 있다.|2)	위점막 보호제(mucosal protective agents, coating agent) ： sucralfate(아-투•사루 민, ulcermin), colloidal bismuth 등이 있다.
+뭔가의 이유로 최근에 양약이 잘 맞아 들어가지 않는 경우에 한방약의 적용을 고려 해볼수 있다. 예전부터 가지고 있는 일상적인 증상이기 때문에 위의 두처방 이외에 도 본 증에 효능을 가지고 있는 많은 한방약이 존재한다. 한방 단독으로 경과 관찰이 가능하지만 제산제$$1>나 위점막보호제$$2) 등의 일반적인 소화관약과의 병용은 문제될 것은 없다.|1) 제산제(antacid) ： NaHCOj, CaC03, Al(OH)3 and/or Mg(OH)2, (겔포스) 등이 있다.|2) 위점막 보호제(mucosal protective agents, coating agent) ： sucralfate(아-투•사루 민, ulcermin), colloidal bismuth 등이 있다.
 4갤■트림
 #半夏瀉心湯반하사심탕
 본 처방에는 위내용물의 배출촉진작용이 있고 동물실험에서는 급성 위
 `099
 점막병변에 대한 효과를 인정하였다. 복력은 중간 정도를 중심으로 폭넓게 적용한다.
 통합처방의 포인트
-항콜린제$$1)등 위의 연동을 억제하는 약제와 병용하는 것은 한방약의 위내용 배출 촉 진작용을 저해할 가능성이 있기 때문에 신중하게 하여야 한다.|1) 항콜린제 (cholinergic antagonists)로는|(1)	항무스카린약 ： atropine, scopolamine, ipratropium|(2)	신경절 차단제 • nicotine, trimethaphan, mecamylamine|(3)	신경근 차단약: tubocurarine, succinylcholine 등이 있다.
+항콜린제$$1)등 위의 연동을 억제하는 약제와 병용하는 것은 한방약의 위내용 배출 촉 진작용을 저해할 가능성이 있기 때문에 신중하게 하여야 한다.|1) 항콜린제 (cholinergic antagonists)로는|(1) 항무스카린약 ： atropine, scopolamine, ipratropium|(2) 신경절 차단제 • nicotine, trimethaphan, mecamylamine|(3)  신경근 차단약: tubocurarine, succinylcholine 등이 있다.
 4갤■ 위가그득함.유음留飮
 #茯苓飮복령음
 아사다소하쿠淺田宗伯는 본 처방을 위가 그득차 있을 때의 주된 약으로 칭찬을 아끼지 않았다. 복력은 중간 정도 전후이다.
@@ -1068,7 +1068,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 통합처방의 포인트
 최근 일부 과민성장증후군에서 이와같은 증상이 나타난다. 양약의 소화관운동조절약$$1> 장내가스제거 약$$2) 나아가 향정신약 등도 병용할 가능성이 있지만 지금까지 문제가 된다 고하는보고는 없다.
 1) 소화관 운동 조절약 ： metoclopramide(멕소롱), domperidone 등이 있다.
-2)장내가스제거약:소화효소제이며펩신, 판크레아틴, 디아스타제둥이	있다.
+2)장내가스제거약:소화효소제이며펩신, 판크레아틴, 디아스타제둥이 있다.
 4갤■ 토혈
 #黃連解毒湯황련해독탕
 토혈에는 한방제제약을 따뜻한 물에 녹인 다음 얼음 등으로 급히 냉각시켜 경구로 복용하게 하든가, 위관으로 위내에 주입시킨다. 식히지 않고 뜨거운 상태로 복용하면 출혈을 조장할 수가 있다. 단시간이면 복력에 의존하지 않고 적용 가능하다. 삼황사심탕도 같은 목적으로 사용한다.
@@ -1110,7 +1110,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #桂枝加芍藥大黃湯계지가작약대황탕
 복만과 심한 복통이 있는 증례에 사용한다. 이 경우의 大黃은 설사를 시키는 것이 목적이 아니라 설사를 멈추게 하는 목적으로 작용한다. 급성증은 복력에 구애받지 않고 오히려 맥의 긴장으로 약을 선택한다. 본 처방은 본래 약간 허증을 보이는 맥에 적합하다.
 통합처방의 포인트
-세균성 설사는 오히려 설사를 멈추게 하지 말고 세균성외독소의 배설을 촉진시키는 것이 좋다고 한다. 대부분의 한방약이 배설을 시켜야 하는 경우에는 장관운동에 촉 진적으로 작용하는 것 같다. 만약 장관운동을 억제시키는 항콜린약$$1) 등을 사용하면 가스도 나오기 힘들어져서 복만으로 괴로워할 것이 예상되기 때문에 바람직하지 않다.  항생제와 한방약과의 병용은 원칙적으로는 문제는 없다.|1) 항콜린제 (cholinergic antagonists)로는|(1)	항무스카린약 ： atropine, scopolamine, ipratropium|(2)	신경절 차단제 ： nicotine, trimethaphan, mecamylamine|(3)	신경근 차단약 : tubocurarine, succinylcholine 등이 있다.|
+세균성 설사는 오히려 설사를 멈추게 하지 말고 세균성외독소의 배설을 촉진시키는 것이 좋다고 한다. 대부분의 한방약이 배설을 시켜야 하는 경우에는 장관운동에 촉 진적으로 작용하는 것 같다. 만약 장관운동을 억제시키는 항콜린약$$1) 등을 사용하면 가스도 나오기 힘들어져서 복만으로 괴로워할 것이 예상되기 때문에 바람직하지 않다.  항생제와 한방약과의 병용은 원칙적으로는 문제는 없다.|1) 항콜린제 (cholinergic antagonists)로는|(1) 항무스카린약 ： atropine, scopolamine, ipratropium|(2) 신경절 차단제 ： nicotine, trimethaphan, mecamylamine|(3)  신경근 차단약 : tubocurarine, succinylcholine 등이 있다.|
 `106
 4갤■ 만성장염•대장염•설사
 #半夏瀉心湯반하사심탕
@@ -1147,7 +1147,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 통합처방의 포인트
 인산코데인$$1), 항콜린제$$2)같이 장관운동억제제나, 탄닌화합물$$3) 같은 수렴제를 사용하면 불쾌한 복부팽만감이 나오는 경우가 있다. 복용 후 자각증상의 개선이 뛰어난 것이 한방약의 특징이다. 필요에 따라서는  항생제를 병용한다.|
 `109
-1)	인산코데인(codeine phosphate) ： 모르핀보다 진통작용이 훨씬 약하지만 남용 가 능성이 낮고 약물의존성을 거의 유발하지 않음.|2)	항콜린제 (cholinergic antagonists) 로는|(1)	항무스카린약 ： atropine, scopolamine, ipratropium|(2)	신경절 치"단제 ： nicotine, trimethaphan, mecamylamine|(3)	신경근 차단약 ： tubocurarine, succinylcholine 등이 있다.|3)	탄닌화합물(tannic acid) ： 오배자, 몰식자에서 추출하며 수렴제로 이용.
+1)  인산코데인(codeine phosphate) ： 모르핀보다 진통작용이 훨씬 약하지만 남용 가 능성이 낮고 약물의존성을 거의 유발하지 않음.|2)  항콜린제 (cholinergic antagonists) 로는|(1) 항무스카린약 ： atropine, scopolamine, ipratropium|(2) 신경절 치"단제 ： nicotine, trimethaphan, mecamylamine|(3) 신경근 차단약 ： tubocurarine, succinylcholine 등이 있다.|3) 탄닌화합물(tannic acid) ： 오배자, 몰식자에서 추출하며 수렴제로 이용.
 4갤■下血
 #黃連解毒湯황련해독탕
 하혈의 경우에도토혈처럼 차게 복용하는 것이 기본이다. 복력은 다양하고 일정하지 않다.
@@ -1160,7 +1160,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #當歸建中湯당귀건중탕
 안색이 나쁘고 쉬 피로를 호소하고 냉증을 자각하는 하복부통에 적용한다. 복직근이 심하게 긴장되는 경우가 있다. 복력은 중간 정도 이하이다.
 통합처방의 포인트
-여성의 하복통에 사용할 기회가 적지 않다. 한방만으로 통증이 콘트롤되지 않는 경우에는 비스테로이드 항염증제(NSAIDs)$$1)의 prn 복용은 가능하다.|1) 비스테로이드 항염증제(NSAIDs) ： 해열, 진통, 항염증 작용면에서 다른 화학적으로 유사성이 없는 제제의 그룹으로 주로 cyclooxygenase를 억제함으로써 작용 한다.|(1)	acetylsalicylic acid and other salicylates : aspirin, diflunisal|(2)	propionic acid 유도체 : ibuprofen(부루펜®), naproxen(낙센®),  ketoprofen(케토톱®)|(3)	indoleacetic acids 유도체 : indometacin, sulindac, etodolac|(4)	oxicam 유도체 : piroxicam|(5)	fenamates : mefenamic acid, meclofenamate|(6)	기타 : diclofenac, ketorolac
+여성의 하복통에 사용할 기회가 적지 않다. 한방만으로 통증이 콘트롤되지 않는 경우에는 비스테로이드 항염증제(NSAIDs)$$1)의 prn 복용은 가능하다.|1) 비스테로이드 항염증제(NSAIDs) ： 해열, 진통, 항염증 작용면에서 다른 화학적으로 유사성이 없는 제제의 그룹으로 주로 cyclooxygenase를 억제함으로써 작용 한다.|(1)  acetylsalicylic acid and other salicylates : aspirin, diflunisal|(2)  propionic acid 유도체 : ibuprofen(부루펜®), naproxen(낙센®),  ketoprofen(케토톱®)|(3)  indoleacetic acids 유도체 : indometacin, sulindac, etodolac|(4)  oxicam 유도체 : piroxicam|(5)  fenamates : mefenamic acid, meclofenamate|(6) 기타 : diclofenac, ketorolac
 3갤3) 전반적 위장장애
 4갤■위장질환
 #眞武湯진무탕
@@ -1313,7 +1313,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 요지: 대황감초탕의 변비에 대한 효과를 검토한 다기관이중맹검 랜덤화 비교시험 기능성 변비 156례를 쯔무라 한방제제 대황감초탕의 상용 용량 투여군 53례, 상용 용량의 1/3의 저용량투여군 49례, 위약군 54례로 하였다. 각각의 약제는 모두 1일
 `123
 7.5g으로 조정하고 3회 분복하여 식전 또는 식간에 복용하였다. 그리고, 2주간 또는 환자가 희망할 때에는 4주간까지 계속 복용하는 것으로 하였다. 배변 횟수 등을 5단 계로 평가하여 효과를 검토한 결과 상용 용량군에서 위약군에 비해 유의한 차이가 인정되었다. 본 처방은 감초 함유제제이지만, 감초에 기인하는 가성알도스테론 (aldosterone)증이 의심되는 임상검사치 이상은 나타나지 않았다.
-<三好秋馬, 正宗 研, 福富久之 외 ： 쯔무라대황감초탕	엑기스과립(쯔무라한방제
+<三好秋馬, 正宗 研, 福富久之 외 ： 쯔무라대황감초탕  엑기스과립(쯔무라한방제
 저1)의 이중맹검법에 의한 변비증에 대한 임상효과. 소화기과, 18(3) ： 299 - 312, 1994)
 소화기질환에 관한 그 밖의 임상근거
 지금부터 소개하고자 하는 보고는 실험적인 연구이고 내시경 전처치에 대황감초탕제제의 사용은 2006년 현재 보험진료상 인정되지 않고 있기 때문에 미리 양해를 구하고 자 한다. 대황감초탕이 뛰어난 완하작용의 일면을 가지고 있다는 사실을 이해바란다.|요지: 대장내시경의 전처치에 대황감초탕을 사용한 램덤화 비교시험 두 곳의 기관에서 60례의 대장내시경검사전처치를 Brown변법군과 쯔무라 한방제 제 대황감초탕 7.5g/1 일 3회 분복, 2일간 복용한 군으로 랜덤화하여 그 결과를 비교 검토한 결과 대황감초탕을 사용한 방법은 장관의 세정기능이 뛰어나고 거의 모든 증례에 정확한 검사를 실시할 수 있었다.
@@ -1375,7 +1375,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #柴胡桂枝湯시호계지탕
 경증의 췌장염 통증은 본 처방으로 완화되는 경우가 있다. 복력은 중간 정도 전후이다.
 통합처방의 포인트
-다른 처방에 비하여 시호계지탕은 자각증상 개선에 유효하다는 임상이 있다. 췌장외 분비효소제제$$1)나 혹은 트립신인히비터제제$$2>와의 병용은 가능하다.|1)췌장외분비효소제제	： cholecystokinin receptor antagonist, somatostatin, octreotide 등이 있다.|2)	트립신인히비 터제제 (trypsin inhibitor) ： a2 - Antiplasmin from human plasma Aprotinin from bovine lung, al - Antitrypsin from human plasma, Antipain hydrochloride, 4 - Aminobenzamidine dihydrochloride, Antithrombin III from human plasma, 4 - (2 - AminoethyDbenzenesulfonyl fluoride hydrochloride, Ecotin, | al - Antitrypsin from human plasma, Antithrombin III from bovine plasma Bdellin from leeches, Benzamidine hydrochloride hydrate, Gabexate mesylate, Diisopropyl fluorophosphate, 3,4 - Dichloroisocoumarin, Trypsin inhibitor Glycine max(soybean), Leupeptin trifluoroacetate salt, a2 - Macroglobulin from human plasma, Phenylmethanesulfonyl fluoride, Trypsin inhibitor from bovine pancreas | Trypsin inhibitor from chicken egg white, Trypsin inhibitor from turkey egg white, Na p Tosyl L lysine chloromethyl ketone hydrochloride, Trypsin inhibitor from chicken egg white, Trypsin inhibitor from Phaseolus limensisdima bean), Trypsin chymotrypsin inhibitor from Glycine max(soybean) 등이 있다.|
+다른 처방에 비하여 시호계지탕은 자각증상 개선에 유효하다는 임상이 있다. 췌장외 분비효소제제$$1)나 혹은 트립신인히비터제제$$2>와의 병용은 가능하다.|1)췌장외분비효소제제 ： cholecystokinin receptor antagonist, somatostatin, octreotide 등이 있다.|2) 트립신인히비 터제제 (trypsin inhibitor) ： a2 - Antiplasmin from human plasma Aprotinin from bovine lung, al - Antitrypsin from human plasma, Antipain hydrochloride, 4 - Aminobenzamidine dihydrochloride, Antithrombin III from human plasma, 4 - (2 - AminoethyDbenzenesulfonyl fluoride hydrochloride, Ecotin, | al - Antitrypsin from human plasma, Antithrombin III from bovine plasma Bdellin from leeches, Benzamidine hydrochloride hydrate, Gabexate mesylate, Diisopropyl fluorophosphate, 3,4 - Dichloroisocoumarin, Trypsin inhibitor Glycine max(soybean), Leupeptin trifluoroacetate salt, a2 - Macroglobulin from human plasma, Phenylmethanesulfonyl fluoride, Trypsin inhibitor from bovine pancreas | Trypsin inhibitor from chicken egg white, Trypsin inhibitor from turkey egg white, Na p Tosyl L lysine chloromethyl ketone hydrochloride, Trypsin inhibitor from chicken egg white, Trypsin inhibitor from Phaseolus limensisdima bean), Trypsin chymotrypsin inhibitor from Glycine max(soybean) 등이 있다.|
 `130
 4■복막염
 #桂枝茯苓丸계지복령환
@@ -1463,7 +1463,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #猪苓湯저령탕
 저령猪苓 • 복령茯苓 등 이수제利水劑가 물을 관리하고 아교阿膠가 혈뇨를 개선한다. 복력은 중간 정도 전후이다. 본 처방도 감초 비함유제제이다.
 통합처방의 포인트
-신염에 한방적용을 고려하는 경우는 아급성기 혹은 만성기로 생각한다. 병용 약제로는 혈소판응집억제 혹은 이뇨제, 지혈제 등 많이 있을 수 있다. 그리고 신기능 저하의 예에서는 고요산혈증에 대한 요산생성저해제$$1)도 사용될 가능성이 있다. 신염에 대한 한방약의 유효성은 여러 가지로서, 일률적으로 논할 수는 없다. 그러므로 이미 표준적인 양약을 사용하고 있는 치료에 한방약을 보조적으로 더하는 것이 원칙이라고 생각된다.|항응고제와 면역억제제$$2)에 대한 한방병용에 대해서는 그다지 보고가 없기 때문에 신 기능을 보아 가며 신중하게 투여할 필요가 있다.|1)	요산생성 저해제 ： allopurinol|2)	면역억제제(cyclosphorine) ： 사구체 신염 환자 중 cyclophosphamide의 투여에 반 응이 실패한 후 자주 재발하거나, steroid 의존적 환자, cyclophosphamide에 대해 금기이거나생식선 독성이 나타난환자, 성장을 시키거나사춘기 때문에 steroids 휴약기간(steroids holiday)이 필요한 steroids 의존성 환자, steroids 내성인 환자에게 투여한다.
+신염에 한방적용을 고려하는 경우는 아급성기 혹은 만성기로 생각한다. 병용 약제로는 혈소판응집억제 혹은 이뇨제, 지혈제 등 많이 있을 수 있다. 그리고 신기능 저하의 예에서는 고요산혈증에 대한 요산생성저해제$$1)도 사용될 가능성이 있다. 신염에 대한 한방약의 유효성은 여러 가지로서, 일률적으로 논할 수는 없다. 그러므로 이미 표준적인 양약을 사용하고 있는 치료에 한방약을 보조적으로 더하는 것이 원칙이라고 생각된다.|항응고제와 면역억제제$$2)에 대한 한방병용에 대해서는 그다지 보고가 없기 때문에 신 기능을 보아 가며 신중하게 투여할 필요가 있다.|1) 요산생성 저해제 ： allopurinol|2) 면역억제제(cyclosphorine) ： 사구체 신염 환자 중 cyclophosphamide의 투여에 반 응이 실패한 후 자주 재발하거나, steroid 의존적 환자, cyclophosphamide에 대해 금기이거나생식선 독성이 나타난환자, 성장을 시키거나사춘기 때문에 steroids 휴약기간(steroids holiday)이 필요한 steroids 의존성 환자, steroids 내성인 환자에게 투여한다.
 3갤[네프로제]
 #五苓散오령산
 구갈이 있고 뇨의 양이 적고, 때로는 부종이 나타나는 네프로제증후군에 사용한다. 복력은 중간 정도 전후이지만, 폭넓게 적용된다. 본 처방도 甘草 비함유제제이다. (다권말의「甘草를 포함하지 않는 한방제제」참고)|
@@ -1477,7 +1477,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #茵蔯蒿湯인진호탕
 목에서 위쪽으로 땀이 나고 몸에는 땀이 나지 않고 목이 마르지만 소변이 나오지 않는 증례에 적용한다. 복력은 중간 정도 이상으로 변비경향을 수반 한다. 본 처방도 감초 비함유제제 중의 하나이다.
 통합처방의 포인트
-네프로제$$1>는 원래 난치성이므로 한방약의 효과를 미리 예견한다는 것은 곤란하다. 그러므로 본증에서는 우선 양약을 사용하고, 그 후 필요가 있으면 한방약을 더한다는 전략이 좋을 것이다. 처음에는 스테로이드제$$2)나 면역억제제$$3>의 유지량의 감소, 재발 가능성을 줄이는 것이 목표이다.|1)	네프로제 ： 신장의 사구체에 이상이 있어 혈액 속의 단백질이 오줌 속에 다량으로 배출되며 몸이 붓는 병. 신장의 병 외에 당뇨병 같은 대사 이상r 碑常, 전신성에 리테마토데스 따위가 원인이 된다.|2)	스테로이드제제 ： 사구체신염 환자에게 prednisone 투여|
+네프로제$$1>는 원래 난치성이므로 한방약의 효과를 미리 예견한다는 것은 곤란하다. 그러므로 본증에서는 우선 양약을 사용하고, 그 후 필요가 있으면 한방약을 더한다는 전략이 좋을 것이다. 처음에는 스테로이드제$$2)나 면역억제제$$3>의 유지량의 감소, 재발 가능성을 줄이는 것이 목표이다.|1) 네프로제 ： 신장의 사구체에 이상이 있어 혈액 속의 단백질이 오줌 속에 다량으로 배출되며 몸이 붓는 병. 신장의 병 외에 당뇨병 같은 대사 이상r 碑常, 전신성에 리테마토데스 따위가 원인이 된다.|2)  스테로이드제제 ： 사구체신염 환자에게 prednisone 투여|
 `140
 3) 면역억제제(cyclosphorine) ： 사구체신염 환자 중 cyclophosphamid의 투여에 반응 이 실패한 후 자주 재발하거나, steroid 의존적인 환자, cyclophosphamide에 대하여 금기이거나 생식선 독성이 나타난 환자, 성장을 시키거나 사춘기 때문에 steroids 휴약기간(steroids holiday)이 필요한 steroids 의존성 환자, steroids 내성 인 환자에게 투여한다.
 신腎질환에 관한 그 밖의 임상근거
@@ -1512,7 +1512,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 지나친 수분 섭취를 억제하여 최대한 이뇨를 꾀하는 목적으로 적용된다. 두통과 오심 등의 자각증상개선에는 유효할 가능성이 있다. 그러나 본 처방으로 요독증을 치료하는 것은 쉽지 않다. 신속한 치료방침을 확정하는 것이 바람직하다.|
 `143
 통합처방의 포인트
-칼륨이온교환수지나 혹은 흡착탄제제$$1), 강력한 루프이뇨제$$2) 등, 양약 중심 치료에 한방약의 병용투여를 하지 않으면 안된다고 생각한다.|1)	홉착탄제제 ： 홉착제제라고도 하며, kaolin, pectin, methylcellulose, activated attapulgite, magnesium aluminum silicate 등이 있다.|2)	루프 이뇨제(Loop diuretics) ： furosemide(라식스), torasemide(토렘),  bumetamide
+칼륨이온교환수지나 혹은 흡착탄제제$$1), 강력한 루프이뇨제$$2) 등, 양약 중심 치료에 한방약의 병용투여를 하지 않으면 안된다고 생각한다.|1)  홉착탄제제 ： 홉착제제라고도 하며, kaolin, pectin, methylcellulose, activated attapulgite, magnesium aluminum silicate 등이 있다.|2) 루프 이뇨제(Loop diuretics) ： furosemide(라식스), torasemide(토렘),  bumetamide
 3갤[ 위축신 ]
 #人蔘湯인삼탕
 위축신은 신장이 정상의 절반 이하로 줄고 굳어져서 기능장애가 일어난 상태를  말한다. 따라서 뇨를 농축시키는 힘이 저하되기 때문에 비위脾胃의 허한虛寒을 따뜻하게 하여 소화관의 기능을 부활시킴과 동시에 신腎기능의 보전을 기대한다. 복력은 중간 정도 이하이다.
@@ -1523,7 +1523,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #猪苓湯저령탕
 본 처방은 육안으로 보아 혈뇨와 배뇨를 할 때에 느끼는 불쾌감을 목표로 사용하고 신결석증의 대표적 처방이다. 복력은 중간 정도 전후이다.
 통합처방의 포인트
-요관의 동통성 경련을 관해하기 위하여 작약감초탕의 병용, 그리고 항콜린제$$1)틀의 병용할 필요가 있는 경우도 있다.|1) 항콜린제 (cholinergic antagonists)는 3가지로 구분하는데,|(1)	항무스카린약 ： atropine, scopolamine, ipratropium | (2)	신경절 차단제 • nicotine, trimethaphan, mecamylamine | (3)	신경근 차단약 • tubocurarine, succinylcholine 이 있다.
+요관의 동통성 경련을 관해하기 위하여 작약감초탕의 병용, 그리고 항콜린제$$1)틀의 병용할 필요가 있는 경우도 있다.|1) 항콜린제 (cholinergic antagonists)는 3가지로 구분하는데,|(1)  항무스카린약 ： atropine, scopolamine, ipratropium | (2) 신경절 차단제 • nicotine, trimethaphan, mecamylamine | (3)  신경근 차단약 • tubocurarine, succinylcholine 이 있다.
 임상근거
 체외충격파로 부순 결석 파편의 배출이 신속하게 이루어져야 하는 것이 바람직하다는 것은 말할 것도 없다. 조금이라도 빨리 배출시킬 목적으로 한방약을 활용하는 경우가 있다.|요지: 저령탕의 체외충격파(ESWL)로 부순 결석 파편 배출에 관한 효과를 검토한 비 랜덤화비교시험|ESWL를 시행한 후의 74증례에 쯔무라 한방제제 저령탕 7.5g/1 일 3회 분복 투여하 고, 완전 배석을 확인한 날까지 연속적으로 투여하였다. 비투여군으로서 연령, 성별, 결석의 크기, 부위를 일치시킨 75례를 대조군으로 설정하고, ESWL후 X선상에서 완 전배석을 확인한 일수를 비교하여 효과를 판정하였다. 완전배석까지의 기간은 투여군 16.0±2.2일, 비투여군 21.5土2.5일로, 투여군에서 짧게 나타났다. 결석의 최대
 `145
@@ -1539,7 +1539,7 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 #五苓散오령산
 심한 구갈을 억제하고 한편에서는 충분한 소변의 양을 유지하는 역할을 한다.폭넓게 적용가능하다.
 통합처방의 포인트
-한방약으로 당뇨병을 치료하는 전제는 식이요법과 운동요법이 적절하게 행해져야 한다는 것이다. 경구혈당강하제$$1), 인슐린제제, 고지혈증치료약$$2), CX 글루코시다제 저해제$$3>, 인슐린저항성개선약$$4) 등과 한방약을 병용하는 것은 종종 있는 일이다.|1)	경구용 혈당강하제 ： metformin(글루코파지), acarbose(글루코바이) 등이 있다|2)	고지혈증 치료제 ：|(1)	statins ： lovastatin, pravastatin, simvastatin, fluvastatin | (2)	fibric acids ： gemfibrozil, fenofibrozil, bezafibrate, ciprofibrate, etofibrate | 3)	a - 글루코시다제 저해제(alpha glucosidase inhibitor) : acarbose, voglibose, miglitol 등이 있다.|4)	인슐린 저항성 개선약 ： pioglitazone(액토스정), rosiglitazone(아반디아정) 등이 있다.|
+한방약으로 당뇨병을 치료하는 전제는 식이요법과 운동요법이 적절하게 행해져야 한다는 것이다. 경구혈당강하제$$1), 인슐린제제, 고지혈증치료약$$2), CX 글루코시다제 저해제$$3>, 인슐린저항성개선약$$4) 등과 한방약을 병용하는 것은 종종 있는 일이다.|1)  경구용 혈당강하제 ： metformin(글루코파지), acarbose(글루코바이) 등이 있다|2)  고지혈증 치료제 ：|(1)  statins ： lovastatin, pravastatin, simvastatin, fluvastatin | (2) fibric acids ： gemfibrozil, fenofibrozil, bezafibrate, ciprofibrate, etofibrate | 3)  a - 글루코시다제 저해제(alpha glucosidase inhibitor) : acarbose, voglibose, miglitol 등이 있다.|4) 인슐린 저항성 개선약 ： pioglitazone(액토스정), rosiglitazone(아반디아정) 등이 있다.|
 `147
 대사 • 내분비질환에 관한 기타 임상근거
 淸心蓮子飮청심연자음이 인슐린 저항성을 개선시킬 수 있다는 단서가 된 연구이다. 요지 1 ： 청심연자음의 당뇨병에 대한 효과를 검토한 다기관랜덤화 비교시험 인슐린 비의존형 당뇨병 18례 중에서 12례에 쯔무라 한방제제 청심연자음 7.5g/1 일 3회 분복하여 연속적으로 2주간 투여하고, 6례의 대조군과 비교한 결과, 청심연자음 군에서 유의한내당능의 개선을 보였다.
@@ -1599,8 +1599,8 @@ McDowell의 기준에 의한 기립성저혈압이 있는 당뇨병환자 10례(
 위장허약이 만성화된 증례의 통풍과 류마티스에 시용한다. 안색도 나쁘고 냉증을 수반한 경우가 많은 것 같다. 복력은 중간 정도 혹은 그 이하일 것이다.
 통합처방의 포인트
 한방에서 통풍은 서양의학에서 말하는 통풍보다 훨씬 넓은 범위를 가리킨다. 류마티스나 모든 관절통, 신경통 등을 포함한 개념이다. 한방의 진통작용은 약하기 때문에 급성기에는 비스테로이드 항염증제를 사용하고, 동통종창이 관해된 다음 본 처방을 시작하는 것이 좋을 듯하다. 관해 후에도 요산이 높으면 요산생성저해제$$1) 혹은 배설 촉진제$$2>를 사용하여야 한다. 저자는 월비가출탕으로 요산 수치가 저하되고, 경과가 양호한통풍 예를 경험한적이 있다.
-1)	요산생성 저해제 ： allopurinol
-2)	요산배설 촉진제 ： probenecid, sulfinpyrazone, benzbromazone 등이 있다.|
+1)  요산생성 저해제 ： allopurinol
+2)  요산배설 촉진제 ： probenecid, sulfinpyrazone, benzbromazone 등이 있다.|
 `153
 2갤F. 혈액질환
 3갤[빈혈]
@@ -1797,12 +1797,12 @@ T2 강조영상에서 3mm이상의 크기의 무증후성 뇌경색 142례(남�
 통합처방의 포인트
 고전적으로 관절 류마티스는 광범위한 관절염, 관절통의 상태를  포함한다. 관절류마 티스는 최근 치료원칙이 크게 변하고 있다. 즉 진단 초기부터 메토트랙세이트 (Methotrexate)1)등의 DMARDs2>를 적극적으로 적용하고, 관절기능 저하를 예방하는 전략이다. 처음에는 한방약을 보조적으로 추가함으로써 효과를 확인하는 것이 좋다고 생각한다.
 「관절통」「근염」의항목도 참고하길 바란다.
-1)	메토트렉세이트(methotrexate, MTX) ： NSAIDs에 반응하지 않는 심한 류마티스성 관절염에 사용하며 암 화학요법에 필요한 양보다 훨씬 적은 양을 투여
-2)	DMARDs(Disease Modifying Anti Rheumatic Agents) ：
-(1)	gold salts
-(2)	chloroquine and hydroxychloroquine
-(3)	D - penicillamine
-(4)	methotrexate 등이 있다.|
+1)  메토트렉세이트(methotrexate, MTX) ： NSAIDs에 반응하지 않는 심한 류마티스성 관절염에 사용하며 암 화학요법에 필요한 양보다 훨씬 적은 양을 투여
+2)  DMARDs(Disease Modifying Anti Rheumatic Agents) ：
+(1) gold salts
+(2) chloroquine and hydroxychloroquine
+(3) D - penicillamine
+(4) methotrexate 등이 있다.|
 `172
 2갤I. 기타
 3갤[불면증]
@@ -1832,11 +1832,11 @@ T2 강조영상에서 3mm이상의 크기의 무증후성 뇌경색 142례(남�
 통합처방의 포인트
 한방약에는 양약의 수면제$$1}에 해당하는 한방약은 없다. 지나친 기대를 가지지 말고, 몸에 맞춘 수면 메카니즘을 활성화한다고 하는 관점에서 적용하면 큰 잘못은 없을 것이다.
 1) 수면도입제(항불안약과 동일)
-(1)	benzodiazepines ： alprazolam(자낙스®), diazepam(바리움®), lorazepam(아 티반®), chlordiazepoxide, clonazepam(리보트릴®), clorazepate
-(2)	other anxiolytic drugs ： Zolpidem, buspirone(부스파®)’ hydroxyzine
-(3)	benzodiazepine antagonist: flumazenil
-(4)	barbiturates : amobarbital, phenobarbital, pentobarbital, secobarbital, thiopental
-(5)	nonbarbiturate sedatives : chloral hydrate, diphenhydramine, ethanol 등이 있다.
+(1) benzodiazepines ： alprazolam(자낙스®), diazepam(바리움®), lorazepam(아 티반®), chlordiazepoxide, clonazepam(리보트릴®), clorazepate
+(2) other anxiolytic drugs ： Zolpidem, buspirone(부스파®)’ hydroxyzine
+(3) benzodiazepine antagonist: flumazenil
+(4) barbiturates : amobarbital, phenobarbital, pentobarbital, secobarbital, thiopental
+(5) nonbarbiturate sedatives : chloral hydrate, diphenhydramine, ethanol 등이 있다.
 임상근거
 요지: 女神散여신산, 抑肝散加陳皮半夏억간산가진피반하의 불면에 대한 효과를 검토한 증례수집연구
 폐경기의 부인들이 불면인 경우에 동의를 얻은 후, 女神散여신산 7.5g을 3회 분복하는 15례, 抑肝散加陳皮半夏억간산가진피반하 7.5g을 3회 분복하는 9례를 이용하여 8주 후에 평가를 하였다. 그 결과 각각 유의하게 수면상태가 개선된 사실이 판명되었다.
@@ -1848,15 +1848,15 @@ T2 강조영상에서 3mm이상의 크기의 무증후성 뇌경색 142례(남�
 통합처방의 포인트
 半夏厚朴湯반하후박탕의 약효는 종종 신경안정제와 비교되고 있다. 반하후박탕은 정동情動을 억제하는 것이 아니고, 생명의 근원인 기를 순환시키는 작용을 가지고 있다. 향정신약1)과의 병용은 가능하다.
 1)향정신약
-(1)	항불안약
-①	benzodiazepines ： alprazolam(자낙스®), diazepam(바리움®), lorazepam(아티빈^), chlordiazepoxide, clonazepam(리보트릴®),  clorazepate
-②	other anxiolytic drugs ： Zolpidem, buspirone(부스파®), hydroxyzine
+(1) 항불안약
+① benzodiazepines ： alprazolam(자낙스®), diazepam(바리움®), lorazepam(아티빈^), chlordiazepoxide, clonazepam(리보트릴®),  clorazepate
+② other anxiolytic drugs ： Zolpidem, buspirone(부스파®), hydroxyzine
 © benzodiazepine antagonist: flumazenil
 ® barbiturates : amobarbital, phenobarbital, pentobarbital, secobarbital, thiopental
 ⑤ nonbarbiturate sedatives : chloral hydrate, diphenhydramine, ethanol
-(2)	항우울약
-①	TCA(tricyclic antidepressants) ： Imipramine(이미프라민®),  Clomipramine(클로미프라민®), Trimipramine, Amitrityptiline(에나폰®,  에트라빌®), Desipramine, Nortryptiline(센시발®)
-②	MAOI(monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine
+(2) 항우울약
+① TCA(tricyclic antidepressants) ： Imipramine(이미프라민®),  Clomipramine(클로미프라민®), Trimipramine, Amitrityptiline(에나폰®,  에트라빌®), Desipramine, Nortryptiline(센시발®)
+② MAOI(monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine
 ⑤ SSRI (selective serotonin reuptake inhibitors) : Citalopram(씨프림쌍),
 `176
 Escitalopram(렉사프로®), Fluoxetine(푸로작®), Fluvoxamine(듀미록스®), Paroxetine(세로자트® 팍실®), Setraline(졸로푸트®) (3) 알츠하이머 치료제 :donepezil(아리셉트®), rivastigmine(엑셀톤®), galantamine(레미닐®), memeantine(에빅사®) 등이다.
@@ -1953,9 +1953,9 @@ Escitalopram(렉사프로®), Fluoxetine(푸로작®), Fluvoxamine(듀미록스�
 도한에 대해서는 일부 항우울제1)가 유효한 경우가 있지만, 한방약으로 치료 하는 편 이 보다 뛰어난 치료법이라고 생각된다.|
 `184
 1) 항우울약 ：
-(1)	TCA(tricyclic antidepressants) ： Amitrityptiline(에나폰®, 에트라빌®),  Clomipramine(클로미프라민®), Imipramine(이미프라민®), Nortryptiline(센시 발®), Trimipramine, Desipramine
-(2)	MA이(monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine
-(3)	SSRI (selective serotonin reuptake inhibitors) ： Paroxetine(세로지•트®, 팍실®),  Citalopram(씨프탐®), Setraline(졸로푸트®), Fluoxetine(푸로작®),  Escitalopram(렉사프로®), Fluvoxamine(듀미록스®) 등이 있다.
+(1) TCA(tricyclic antidepressants) ： Amitrityptiline(에나폰®, 에트라빌®),  Clomipramine(클로미프라민®), Imipramine(이미프라민®), Nortryptiline(센시 발®), Trimipramine, Desipramine
+(2) MA이(monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine
+(3) SSRI (selective serotonin reuptake inhibitors) ： Paroxetine(세로지•트®, 팍실®),  Citalopram(씨프탐®), Setraline(졸로푸트®), Fluoxetine(푸로작®),  Escitalopram(렉사프로®), Fluvoxamine(듀미록스®) 등이 있다.
 3갤[다한증]
 #防己黃芪湯방기황기탕
 땀을 잘 흘리면서도 목은 별로 마르지 않고 쉽게 피로를 느끼는 경우가 목표이다. 복력은 중간 정도보다 이하이다. 연약하고 팽만된 소위 올챙이 배의 특유한 복후腹候가 나타나는 경우가 많다.
@@ -2016,14 +2016,14 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 복약 횟수는 발열성 질환 등 급성기에는 세 번 혹은 네 번으로 나누어 복용하고, 만성질환에는 하루에 2번으로 나누어 복약한다. 전통적으로 이와 같은 복약 방법을 취하고 있는데, 그 이유는 급성기에 여러 번 복용하여 신 속한 약물홉수와 효과발현을 기대했기 때문이라고 추측된다.
 소아의 투여량은 알기 힘들지만, 다음의 두 가지 방법 모두 사용할 것을 권한다.
 (1) 소아의 약 복용량은후생성 감수의『일반용 한방처방의 매뉴얼』에 나오는 내용을 참고로 한다.
-연령	2세 미만	2세 이상	4세 이상	7세 이상	15세 이상
-		4세 미만	7세 미만	15세 미만
-분량	성인량의	성인량의	성인량의	성인량의	성인량
-	1/4이하	1/3	1/2	2/3
+연령  2세 미만 2세 이상 4세 이상 7세 이상 15세 이상
+    4세 미만 7세 미만 15세 미만
+분량  성인량의  성인량의  성인량의  성인량의  성인량
+  1/4이하 1/3 1/2 2/3
 「일반용 한방처방의 매뉴얼」, 후생성약무국 감수에서
 ⑵ 저자는 소아과에서 실시되는 타카츠高津의 式과 von Harnack의 환산 표를 기준으로 사용하고 있다. 유아의 투약량이 쉽게 산출된다.
-연령	신생아	3개월	6개월	1세	3세	7.5세	12세	성인
-분량	성인량의 1/20 1/10	1/6	1/5	1/4	1/3	1/2	2/3	1
+연령  신생아 3개월 6개월 1세  3세  7.5세  12세 성인
+분량  성인량의 1/20 1/10  1/6 1/5 1/4 1/3 1/2 2/3 1
 `191
 3갤[ 감기 • 인플루엔자 유사질환의 초기에 사용되는 한방약 ]
 감기 • 인플루엔자 유사질환에 적용이 있는 처방에는 다음과 같은 것이 있다. 초기, 중기, 기타로 나누어서 생각한다.
@@ -2102,11 +2102,11 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 오한이나 냉감을 동반하는 경우가 원칙이지만, 고령자를 비롯하여 오늘날 폭넓게 응용되고 있다. 영감강미신하인탕, 소청룡탕과 유사한 기관지염의 상태이며, 냉증이 비교적 심한 소아에게 적용한다.
 통합처방의 포인트
 이들의 처방은 급성기관지염에 사용하는 경우에는 진해제膽劑”와 거담제麵劑2는 병용하지 않아도 좋을 것 같다. 그리고 열의 강약으로 병세를 알기 위해 사용하는 해 열제는 가능한한 이용하지 않도록 하고 있다.
-1)	진해제 ：
-(1)	아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. albuterol, salmetrol, terbutaline 등이 있음
-(2)	corticosteroids ： 기관지 염중에 관여하는 macrophage, eosinophils, T - lymphocytes의 수와 활성을 감소시킴. budesonide(풀미코트),  beclomethasone, fluticasone, triamcinolone 등이 있음.
-(3)	기타: cromolyn, nedocromil, theophylline 등이 있음
-2)	거담제 ： acetylcysteine, ambroxol, s-carboxymethylcysteine(리나치올), bromhexine 등이 있음.|
+1)  진해제 ：
+(1) 아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. albuterol, salmetrol, terbutaline 등이 있음
+(2) corticosteroids ： 기관지 염중에 관여하는 macrophage, eosinophils, T - lymphocytes의 수와 활성을 감소시킴. budesonide(풀미코트),  beclomethasone, fluticasone, triamcinolone 등이 있음.
+(3) 기타: cromolyn, nedocromil, theophylline 등이 있음
+2)  거담제 ： acetylcysteine, ambroxol, s-carboxymethylcysteine(리나치올), bromhexine 등이 있음.|
 `198
 참고가 되는 임상근거
 본 연구는 성인을 대상으로 한 임상근거이기 때문에 소아는 포함되어 있지 않지만, 참고로 제시한다. 본 연구도  항생제 종류 등을 병용하고 있지 않다는 사실에 주목해 주길 바란다.
@@ -2133,9 +2133,9 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 소청룡탕 • 마황탕 • 마행감석탕 • 오호탕 • 신비탕에는 마황이 포함되어 있다. 마황은 수용체자극작용이 있기 때문에, 양약의 기관지확장제1>를 병용하는 경우에는 양 약을 감량하는 등의 주의를 요한다. 麥門冬湯맥문동탕과 柴朴湯시박탕, 甘墓味辛夏仁湯 영감강미신하인탕에는 마황을 포함하지 않는다. 하지만 기전의 차이가 있는 것 같고, 어 느 쪽이 더 효과가 있다고는 일괄적으로 말할 수 없다. 개별 생약을 의식한 응용이 필요하다는 사실만은 틀림없다.|
 `200
 1) 기관지확장제는
-(1)	아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. albuterol, salmetrol, terbutaline 등이 있음.
-(2)	corticosteroids ： 기관지 염중에 관여히는 macrophage, eosinophils, T - lymphocytes의 수와 활성을 감소시킴. budesonide(풀미코트),  beclomethasone, fluticasone, triamcinolone 등이 있음
-(3)	기타 : cromolyn, nedocromil, theophylline 등이 있다.
+(1) 아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. albuterol, salmetrol, terbutaline 등이 있음.
+(2) corticosteroids ： 기관지 염중에 관여히는 macrophage, eosinophils, T - lymphocytes의 수와 활성을 감소시킴. budesonide(풀미코트),  beclomethasone, fluticasone, triamcinolone 등이 있음
+(3) 기타 : cromolyn, nedocromil, theophylline 등이 있다.
 4갤■ 비발작시
 #小靑龍湯소청룡탕
 안색이 별로 좋지 않고, 마르고 추위를 잘 타는 천식환자에게 이른바 체질개선이 기대된다.
@@ -2151,14 +2151,14 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 통합처방의 포인트
 한방제제는 항알레르기작용, 진해작용, 거담작용이 있으므로, 단독으로 천식관리가 가능한 경우도 적지 않다. 스테로이드제의 흡입1)과 자극제의 흡입 등도 안전하게 병용된다. 柴朴湯시박탕에 관해서는임상에서데오피린(theophyline)서방제제의혈중 농도에 간섭하지 않는다는 보고가 있다.
 생약 마황«黃은 p자극제2>와 같은 작용이 있고 기관지확장제3>와의 병용은 심장의 산 소수요를 증가시켜 각종 부작용을 일으킬 가능성이 있으므로 약의 양을 줄이는 등 주의가 필요하다.
-1)	홉입스테로이드제 ： 기관지 염증에 관여하는 macrophage, eosinophils, T lymphocytes의 수와 활성을 감소시킴’ beclomethasone, fluticasone, triamcinolone, budesonide(풀미코트®) 등이 있고, 부작용으로는 구강칸디다가 있다.
-2)	P자극제(아드레닐린 작용약물) ： p2활성이 있는 홉인용 약물로 경중 천식의 선택 약제임. 기도평활근을 직접적으로 이완시키는 강력한 기관지 확장제임
-(1)	단시간 작용성 약물: pirbuterol, terbutaline, albuterol
-(2)	장시간 작용성 약물: salmeterol 이 있다.
-3)	기관지확장제 ：
-(1)	아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. albuterol, salmetrol, terbutaline 등이 있음.
-(2)	corticosteroids ： 염증에 관여하는 macrophage, eosinophils, T - lymphocytes의 수와 활성을 감소시킴. budesonide(풀미코트), beclomethasone, fluticasone, triamcinolone 등이 있음.
-(3)	기타 : cromolyn, nedocromil, theophylline 등이 있다.|
+1)  홉입스테로이드제 ： 기관지 염증에 관여하는 macrophage, eosinophils, T lymphocytes의 수와 활성을 감소시킴’ beclomethasone, fluticasone, triamcinolone, budesonide(풀미코트®) 등이 있고, 부작용으로는 구강칸디다가 있다.
+2)  P자극제(아드레닐린 작용약물) ： p2활성이 있는 홉인용 약물로 경중 천식의 선택 약제임. 기도평활근을 직접적으로 이완시키는 강력한 기관지 확장제임
+(1) 단시간 작용성 약물: pirbuterol, terbutaline, albuterol
+(2) 장시간 작용성 약물: salmeterol 이 있다.
+3)  기관지확장제 ：
+(1) 아드레날린 약용약 ： 기도 평활근을 직접적으로 이완시킴. albuterol, salmetrol, terbutaline 등이 있음.
+(2) corticosteroids ： 염증에 관여하는 macrophage, eosinophils, T - lymphocytes의 수와 활성을 감소시킴. budesonide(풀미코트), beclomethasone, fluticasone, triamcinolone 등이 있음.
+(3) 기타 : cromolyn, nedocromil, theophylline 등이 있다.|
 `202
 참고가 되는 임상근거
 다음에 설명하는 연구도 소아를 대상으로 하지 않지만 참고로 제시한다. 요지 1 ： 麥門冬湯맥문동탕의 기관지 천식에 대한 효과를 검토한 증례수집연구 17례의 기침 감수성이 항진된 남성 6례, 여성 11례 전원에게 쯔무라 한방제제 맥문 동탕 9g/1 일 3회 분복으로 2개월 이상 투여했다. 그리고 그 전후에 캡사이신 (capsaicin) 기침유발 흡입시험을 실행하고 기침의 역치를 비교검토한 결과, 기침의 역치는 맥문동탕 투여 후에 유의하게 상승하였다. 기도염증은 약 절반이상이 개선되 었지만, 유의한 차이는 인정되지 않았다.
@@ -2210,8 +2210,8 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 `206
 통합처방의 포인트
 인터페론(interferon)과의 병용은 간질성 폐렴 등의 위험이 있기 때문에 금기이다. 단, 인터페론(interferon)투여가 종료된 후라면 지장은 없다. 글리칠리친(glycyrrhizin)제제1>의 정맥내주사와 내복약을 병용하는 것은 기본적으로 문제 없지만, 그 때에는 혈청 칼룸치의 저하 등 가성알도스테론(aldosterone)증2)에 주의하는 것이 중요한다. 소시호탕에 의한 간질성 폐렴의 초기증상은 발열, 건성기침, 몸을 움직일 때 숨이 차는 증상, 호흡곤란이 있다. 1, 2주간의 투여로 발증한 증례도 있다는 보고가 있기 때문에 주의해야 한다. 단, 지금까지의 보고는 모두 성인의 경우이고 소아의 경우는 없다.
-1)	glycyrrhizin제제 ： 감초의 뿌리에서 채취되며 설탕보다 30 - 50배 단맛이 있어 인 공감미료 둥으로 사용된다. 암과 종양의 발생을 억제하고, 콜레스테롤을 감소시켜 동맥경화를 개선하며, 간 보호효과 등이 있는 것으로 알려져 있으나, 과용하면 고 혈압과 부종을 일으키는 것으로 보고되고 있다.
-2)	가성 알도스테론증 ： 세뇨관, 타액선唾液腺, 한선汗腺, 대장 점막 등의 세포 내에 존재 하는 aldosteron과 미네랄 코르티코이드(mineral corticoid)에 대한 수용체에 선천 적인 이상이 있으면 Na 저류나 K 이온의 배설작용이 발휘되지 않는다. 이 때문에 Na나 수분의 상실을 초래하여 알도스테론 분비 부전의 상태가 되는 것을 말한다.
+1)  glycyrrhizin제제 ： 감초의 뿌리에서 채취되며 설탕보다 30 - 50배 단맛이 있어 인 공감미료 둥으로 사용된다. 암과 종양의 발생을 억제하고, 콜레스테롤을 감소시켜 동맥경화를 개선하며, 간 보호효과 등이 있는 것으로 알려져 있으나, 과용하면 고 혈압과 부종을 일으키는 것으로 보고되고 있다.
+2)  가성 알도스테론증 ： 세뇨관, 타액선唾液腺, 한선汗腺, 대장 점막 등의 세포 내에 존재 하는 aldosteron과 미네랄 코르티코이드(mineral corticoid)에 대한 수용체에 선천 적인 이상이 있으면 Na 저류나 K 이온의 배설작용이 발휘되지 않는다. 이 때문에 Na나 수분의 상실을 초래하여 알도스테론 분비 부전의 상태가 되는 것을 말한다.
 3갤[간기능장애]
 #大柴胡湯대시호탕
 시호제柴胡劑는 간기능장애 치료의 중요한 약이다. 복력이 중간 정도 이상이고 흉협고만이 심한 경우에 적용한다.
@@ -2276,8 +2276,8 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 본 처방은 육군자탕에 산사자山査子 • 연육蓮肉 • 산약山藥 등의 건비健脾 • 지사 작용을 발휘하는 약을 가미한 것이다. 설사를 잘 하고, 기력이 없는 예에 사용한다.
 통합처방의 포인트
 소아의 과민성장증후군의 일부에 소화불량 증상이 있다. 양약의 소화관운동조절약1>, 장내가스제거약2>, 또 향정신약 등도 장기간 병용될 가능성이 있지만, 주의해서 사용하면 문제는 없을 것이다.
-1)	소화관 운동 조절약 ： metoclopramide(멕소롱®), domperidone 등이 있다.
-2)	장내가스제거약 ： 소화효소제이며 펩신, 판크레아틴, 디아스타제 등이 있다.|
+1)  소화관 운동 조절약 ： metoclopramide(멕소롱®), domperidone 등이 있다.
+2)  장내가스제거약 ： 소화효소제이며 펩신, 판크레아틴, 디아스타제 등이 있다.|
 `212
 3갤[하복부통]
 #當歸四逆加吳茱萸生薑湯당귀사역가오수유생강탕
@@ -2287,9 +2287,9 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 통합처방의 포인트
 정확한 진단을 내릴 때까지는 복통의 증상에 맞추어 앞에서 설명한 한방약을 사용하는 것은 좋은 방법이다. 왜냐하면 한방약은 항콜린제1>등과는 달리 소화관운동 그 자 체는 억제하는 경우가 없으므로 그 다음의 치료를 방해하거나 하지는 않기 때문이다.
 1) 항콜린제 (cholinergic antagonists) ：
-(1)	항무스카린약 • atropine, scopolamine, ipratropium
-(2)	신경절 차단제 : nicotine, trimethaphan, mecamylamine
-(3)	신경근 차단약 ： tubocurarine, succinylcholine 등이 있다.
+(1) 항무스카린약 • atropine, scopolamine, ipratropium
+(2) 신경절 차단제 : nicotine, trimethaphan, mecamylamine
+(3) 신경근 차단약 ： tubocurarine, succinylcholine 등이 있다.
 3갤[오심]
 #大柴胡湯대시호탕
 시호제柴胡劑는 모두 구토증을 주된 치료목표로 하지만, 본 제제는 비교적 구토가 심하고 복력이 있으면서 변비가 있는 경우에 적용한다.|
@@ -2339,8 +2339,8 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 본 처방은 여름에 더위를 타서 식욕부진 증상이 나타난 경우에 그 특효약으로서 오래 전부터 알려져 있다. 기능은 補中益氣湯보중익기탕에 가깝다.
 통합처방의 포인트
 한방약은 식욕부진에 대한 치료가 뛰어나다. 소화관운동촉진제1소화효소제2* 등의 양약과의 병용은 아무런 지장을 초래하지 않는다.
-1)	소화관 운동 조절약 ： metoclopramide(멕소롱®), domperidone 등이 있다.
-2)	소화효소제(장내가스제거약) ： 펩신, 판크레아틴, 디아스타제 등이 있다.
+1)  소화관 운동 조절약 ： metoclopramide(멕소롱®), domperidone 등이 있다.
+2)  소화효소제(장내가스제거약) ： 펩신, 판크레아틴, 디아스타제 등이 있다.
 3갤[신장병]
 #苓甘薑味辛夏仁湯영감강미신하인탕
 본 처방은 호흡기질환에도 등장하지만, 신장병에 대한 응용은 그 이뇨작용에 기대가 된다. 안색은 빈혈 증상을 보이며, 냉증이고, 부종에 또한 숨이 차는 증상 등을 목표로 한다. 복력은 중간 정도 이하이다.
@@ -2363,18 +2363,18 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 택사澤瀉• 저령猪苓 • 복령茯苓 등의 이수제利水劑가 물을 조절하고, 활석滑石이 염증을 제거하고, 아교阿膠가 혈뇨를 개선한다.
 통합처방의 포인트
 신염에 한방약적용을 고려할 때는 아급성기 혹은 만성기에 들어서서 아직 뇨 소견에 이상이 있는 경우이다. 병용약제로서는 스테로이드제$$1), 혈소판 응집억제제2), 이뇨제3>, 지혈제 등이 상정된다. 면역억제제를 사용하는 경우에는 한방약과의 병용을 신중하게 고려해야 한다. 신기능저하의 예에서는 고요산혈증4)에 대해 퉁풍치료약5>도 사용 될 가능성이 있다.
-1)	스테로이드제제 ： 사구체 신염 환자에게 prednisone 투여한다.
-2)	혈소판 웅집 억제제 ： aspirin, ticlopidine, dipyridamole, sulfinpyrazone 등이 있다.
-3)	이뇨제 (diuretic drugs) ：
-(1)	thiazides ： hydrochlorothiazide(다이크로짓), chlorthalidone
-(2)	Loop diuretics ： furosemide(라식스®), torasemide(토렘)’ bumetamide
-(3)	K sparing diuretics ： spironolactone(알닥톤)’ triamterene, amiloride
-(4)	삼투성 이뇨제(osmotic diuretics) ： mannitol 등이다.
-4)	고요산혈증 ： 요산은 여러 가지 식품에 들어있는 핵산의 일종인 퓨린이라는 물질 이 대사된 후에 생기는 일종의 노폐물입니다. 우리 몸에서 생긴 요산의 2/3는 신 장을 통하여 소변으로, 나머지는 소화액이나 땀, 타액 둥으로 배설됩니다. 체내에서 요산이 많이 생기거나, 신장 기능의 이상으로 잘 배출되지 않거나, 퓨린이 많은 음식의 섭취로 인해 요산이 체내에 축적된 것을 말한다. 이는 상당히 혼한데 요산 이 많아서 관절에 염증이 생긴 통풍과는 다른 상태입니다. 고요산혈증이 있더라 도 관절염(통풍), 요로결석, 신장 질환 등이 생기는 경우는 그리 많지 않으므로 약을 먹을 필요는 없고요산이 높아진 원인을 찾아 그것을 치료는 것이 좋습니다.
-5)	통풍치료약:
-(1)	요산생성 저해제 ： allopurinol
-(2)	요산대사 촉진제 ： rasburicase
-(3)	요산배설 촉진제 ： probenecid, sulfinpyrazone, benzbromazone 등이 있다.|
+1)  스테로이드제제 ： 사구체 신염 환자에게 prednisone 투여한다.
+2)  혈소판 웅집 억제제 ： aspirin, ticlopidine, dipyridamole, sulfinpyrazone 등이 있다.
+3)  이뇨제 (diuretic drugs) ：
+(1) thiazides ： hydrochlorothiazide(다이크로짓), chlorthalidone
+(2) Loop diuretics ： furosemide(라식스®), torasemide(토렘)’ bumetamide
+(3) K sparing diuretics ： spironolactone(알닥톤)’ triamterene, amiloride
+(4) 삼투성 이뇨제(osmotic diuretics) ： mannitol 등이다.
+4)  고요산혈증 ： 요산은 여러 가지 식품에 들어있는 핵산의 일종인 퓨린이라는 물질 이 대사된 후에 생기는 일종의 노폐물입니다. 우리 몸에서 생긴 요산의 2/3는 신 장을 통하여 소변으로, 나머지는 소화액이나 땀, 타액 둥으로 배설됩니다. 체내에서 요산이 많이 생기거나, 신장 기능의 이상으로 잘 배출되지 않거나, 퓨린이 많은 음식의 섭취로 인해 요산이 체내에 축적된 것을 말한다. 이는 상당히 혼한데 요산 이 많아서 관절에 염증이 생긴 통풍과는 다른 상태입니다. 고요산혈증이 있더라 도 관절염(통풍), 요로결석, 신장 질환 등이 생기는 경우는 그리 많지 않으므로 약을 먹을 필요는 없고요산이 높아진 원인을 찾아 그것을 치료는 것이 좋습니다.
+5)  통풍치료약:
+(1) 요산생성 저해제 ： allopurinol
+(2) 요산대사 촉진제 ： rasburicase
+(3) 요산배설 촉진제 ： probenecid, sulfinpyrazone, benzbromazone 등이 있다.|
 `219
 3갤[ 만성 신염 ]
 #當歸芍藥散당귀작약산
@@ -2430,10 +2430,10 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 통합처방의 포인트
 여기에서 설명한 처방은 부종의 원인이 분명하지 않을 때에 사용하여 그 상태를  관찰 하는 경우에 적합하다. 이미 이뇨제1)등을 사용하고 있는 경우에는 혈청칼륨 수치의 저하를 살피고 투여한 약 속의 감초甘草 함유량 등에도 주의를 기울여야 한다. H 권말의「甘草를 포함하지 않는 한방약제」참고)
 1) 이뇨제 (diuretic drugs) ：
-(1)	thiazides ： hydrochlorothiazide(다이크로짓®)’ chlorthalidone
-(2)	Loop diuretics ： furosemide(라식스®)’ torasemide(토램®)’ bumetamide
-(3)	K sparing diuretics ： spironolactone(알닥톤®)’ triamterene, amiloride
-(4)	삼투성 이 it제 (osmotic diuretics) ： mannitol
+(1) thiazides ： hydrochlorothiazide(다이크로짓®)’ chlorthalidone
+(2) Loop diuretics ： furosemide(라식스®)’ torasemide(토램®)’ bumetamide
+(3) K sparing diuretics ： spironolactone(알닥톤®)’ triamterene, amiloride
+(4) 삼투성 이 it제 (osmotic diuretics) ： mannitol
 3갤[어지러움]
 #五苓散오령산
 어지러움증에 대한 한방적 원인으로서는 수체와 기의 상충을 생각할 수 있다. 五苓散오령산의 효능은 이 두가지를 치료하는 것이므로 어지럼증의 제일의 선택약으로서 폭넓게 이용된다.|
@@ -2546,8 +2546,8 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 자주 손발의 화끈거림을 호소하는 소아의 습진에 적용된다. 만성습진으로 인해 피부에 색소침착과 피부건조가 나타나는 경우가 있다.
 통합처방의 포인트
 스테로이드 외용제1)를 잘 이용하여 진무르고 썩지 않도록 치료하는 것이 중요하다. 생활면에서는 리놀레산(linoleic acid)2)등의 co6군의 불포화지방산을 지나치게 섭취하지 않도록 지도하는 것도 중요하다. 이들의 처방은 보통 복력에 상관없이 사용한다.
-1)	스테로이드 외용제 ： prednicarbate(더마톱연고), clobetasol - 17 - propionate(더 모베이트 연고), desoxymethasone(에스파손로오션), 1% hydrocortisone(l% 하 이드로코르티숀 연고) 등이 있다.
-2)	리놀레산(linoleic acid) ： 2가의 불포화 필수지방산이다.
+1)  스테로이드 외용제 ： prednicarbate(더마톱연고), clobetasol - 17 - propionate(더 모베이트 연고), desoxymethasone(에스파손로오션), 1% hydrocortisone(l% 하 이드로코르티숀 연고) 등이 있다.
+2)  리놀레산(linoleic acid) ： 2가의 불포화 필수지방산이다.
 3갤[ 담마진 ]
 #葛根湯갈근탕
 급성의 담마진은 감기치료와 같은 발표發表작용으로 개선을 도모하려고 한다. 마황제이지만, 소아에게 사용하기 쉽다.
@@ -2639,8 +2639,8 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 `243
 통합처방의 포인트
 식욕부진의 증례에는 산뜻하게 단순한 처방으로 대처하고 싶은 것이다. 소화효소제$$1> 와 소화관운동촉진제2> 등의 병용은 지장이 없다.
-1)	소화효소제(장내가스제거약) ： 펩신, 판크레아틴, 디아스타제 등이 있다.
-2)소화관운동조절약:	metoclopramide(멕소롱®), domperidone 등이 있다.
+1)  소화효소제(장내가스제거약) ： 펩신, 판크레아틴, 디아스타제 등이 있다.
+2)소화관운동조절약: metoclopramide(멕소롱®), domperidone 등이 있다.
 3갤[설사]
 #半夏浪心湯반하사심탕
 복명을 수반한 설사로 때로는 메스꺼움과 발열이 있는 경우에 사용한다. 복력은 중간 정도 전후일 것이다.
@@ -2714,10 +2714,10 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 여기에 거론한 처방들은 부종의 원인이 불명확한 것에 사용하여 경과를 관찰하는데 적응된다. 이뇨제1) 등을 이미 사용하고 있는 경우에는 감초甘草가 들어가 있는 제제는 혈청칼룸치의 저하에 주의하여야 한다.
 권말의「감초를함유하지 않은한방제제」참고)
 1) 이;뇨제 (diuretic drugs) ：
-(1)	thiazides ： hydrochlorothiazide(다이크로짓®), chlorthalidone
-(2)	Loop diuretics ： furosemide(라식스®), torasemide(토램®)’ bumetamide
-(3)	K sparing diuretics ： spironolactone(알닥톤®)’ triamterene, amiloride
-(4)	삼투성 이뇨제(osmotic diuretics) ： mannitol 등이다.
+(1) thiazides ： hydrochlorothiazide(다이크로짓®), chlorthalidone
+(2) Loop diuretics ： furosemide(라식스®), torasemide(토램®)’ bumetamide
+(3) K sparing diuretics ： spironolactone(알닥톤®)’ triamterene, amiloride
+(4) 삼투성 이뇨제(osmotic diuretics) ： mannitol 등이다.
 3갤[임파선염]
 #葛根湯갈근탕
 신체 국소의 급성염증의 파급으로 인한 임파선염에 적용한다. 체표에 열감이 강한 경우에 적용한다.
@@ -2790,10 +2790,10 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 `255
 통합처방의 포인트
 증상에 따라서는 진통제$$1>를 병용하여 급성기의 동통에 대한 대처가 필요하게 된다. 1) 진통제 ：
-(1)	기전 ： 우리몸의 특히, 뇌의 통증중추를 마비시켜 신경전달을 억제하여 01곤 감각을 느끼는 것을 억제합니다
-(2)	종류 ：
-①	마약성진통제 ： 코데인, 몰핀, 페치딘 등 중독성이 강함
-②	비마약성진통제: 아세트아미노펜(타이레놀), 나프록센나트륨,클로닉신리 지네이트 이부프로펜, 메 페나믹산, 케토롤락트로메타민, 피록시감, 록소프 로펜, 멜로시감, 탈리플루메이트, 쎄레콕시브 등이 있다.
+(1) 기전 ： 우리몸의 특히, 뇌의 통증중추를 마비시켜 신경전달을 억제하여 01곤 감각을 느끼는 것을 억제합니다
+(2) 종류 ：
+① 마약성진통제 ： 코데인, 몰핀, 페치딘 등 중독성이 강함
+② 비마약성진통제: 아세트아미노펜(타이레놀), 나프록센나트륨,클로닉신리 지네이트 이부프로펜, 메 페나믹산, 케토롤락트로메타민, 피록시감, 록소프 로펜, 멜로시감, 탈리플루메이트, 쎄레콕시브 등이 있다.
 3갤[화상]
 #紫雲膏자운고
 화상에 紫雲膏자운고를 사용할 때의 비결이「미란을 덮은 농성태膽性苔를 벗기지 않고 그대로 두는 것이다」라는 것은 치바현千葉縣八街市의 서촌가西村家에 전해 내려오는 비전이다. 현장에서 紫雲膏자운고를 면봉에 골고루 발라 상처의 표면에 외용하는 기술은 대단히 훌륭하다. 가벼운 열상熱傷은 충분히 냉각시킨 후에 자운고를 외용하는 것만으로도 관리할 수 있다.|
@@ -2843,12 +2843,12 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 통합처방의 포인트
 본 처방의 효과는 독특한데, 비스테로이드 항염증제1>가 효과가 없는 경우에도 유효 성을 발휘하는 경우가 있다. 통증이 심할 때는 양약과의 병용도 어쩔 수 없이 하여야 한다.
 1) 비스테로이드 항염증제(NSAIDs) ： 해열, 진통, 항염증 작용면에서 다른 화학적으로 유사성이 없는 제제의 그룹으로주로cyclooxygenase를 억제함으로써 작용한다.
-(1)	acetylsalicylic acid and other salicylates ： aspirin, diflunisal
-(2)	propionic acid 유도체 : ibuprofen(부루펜®), naproxen(낙센®〉,  ketoprofen(케토톱®)
-(3)	indoleacetic acids 유도체 ： indometacin, sulindac, etodolac
-(4)	oxicam 유도체 : piroxicam
-(5)	fenamates ： mefenamic acid, meclofenamate
-(6)	기 타 ： diclofenac, ketorolac
+(1) acetylsalicylic acid and other salicylates ： aspirin, diflunisal
+(2) propionic acid 유도체 : ibuprofen(부루펜®), naproxen(낙센®〉,  ketoprofen(케토톱®)
+(3) indoleacetic acids 유도체 ： indometacin, sulindac, etodolac
+(4) oxicam 유도체 : piroxicam
+(5) fenamates ： mefenamic acid, meclofenamate
+(6) 기 타 ： diclofenac, ketorolac
 3갤[저림】
 #牛車腎氣丸우차신기환
 하반신 저림에 대한 제일의 선택약으로 버거병(Buerger's disease)$$1)등의 순환장애의 초기에도 적용된다. 복력에구애받지 않고 적용된다.
@@ -2858,9 +2858,9 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 양약의 비타민 B12와 비타민 E, 프로스타글란딘(prostaglandin)제제1>까지 동원해도 효과가 나타나지 않는 경우가 있다. 기초질환과 합병증에도 의하지만, 우차신기환 단독이나 여기에 수치한 부자가루修治附子末 10g 내지는 2.0g을 가미해 결과가 좋은 경우가 있다.
 (=> p.258「요통」참고)
 1) 프로스타그란딘제제(prostaglandins) ： 불포화 지방산 유도체이며 합성한 조직에 작용하고 작용부위에서 불활성 산물로 신속히 대사된다.
-(1)	유산(abortion) ： dinoprost, dinoprostone, carboprost
-(2)	소화성 궤양 ： misoprostol
-(3)발기기능부전:	alprostadil 등이있다.
+(1) 유산(abortion) ： dinoprost, dinoprostone, carboprost
+(2) 소화성 궤양 ： misoprostol
+(3)발기기능부전:  alprostadil 등이있다.
 3갤[하지통]
 #牛車腎氣丸(우차신기환)
 하지가 자주 차가운 사람의 하지 신경통, 무릎 관절통, 순환장애에 유효하다.
@@ -2965,8 +2965,8 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 통합처방의 포인트
 철결핍성 빈혈로 철제进劑 단독과 當歸芍藥散 好ᅵ작약산 단독의 치료효과가 같다는 보고가 있다. 十全:大補湯 이하는 악성종양과 혈액질환에 수반되는 빈혈에 적용된다. 필요 하면 철제鋼1)와병용이가능하다.
 1) 철제제:
-(1)	경구제제 • ferrous sulfate, ferrous gluconate, ferrous fumarate, ferric polymaltose, ferric threonine, ferrous glycine sulfate, sodium ferric gluconate, sodium ferrous citrate
-(2)	주사제 : ferric hydroxide, ferric chloride, ion dextran 등이 있다.
+(1) 경구제제 • ferrous sulfate, ferrous gluconate, ferrous fumarate, ferric polymaltose, ferric threonine, ferrous glycine sulfate, sodium ferric gluconate, sodium ferrous citrate
+(2) 주사제 : ferric hydroxide, ferric chloride, ion dextran 등이 있다.
 정형외과 영역에 관한 기타 임상근거
 요지 ： 계지복령환의 요골원위단ta骨遠位端골절에 대한 효과를 검토한 증례수집연구 요골원위단골절 증례에서 고정기를 사용한 38례(남성 6례, 여성 32례)에 관해서 I 군 ： 고정기 사용 단독군 23례, II 군 ： 고정기에 쯔무라 한방제제 계지복령환 7.5g/1 일을 3회로 나누어 복용한 15례로 하고, 수관절手Mrn 종창소실까지의 기간, 손가락 움직이는 영역이 정상으로 돌아올 때까지의 기간, 골절 치료성적을 비교 검 토한 결과, 수관절手Mffi 종창소실까지의 기간은 I 군이 81.8±46.1일, II 군은 42.7 ±25.8일로 II 군이 유의하게 단기간이었다. 손가락 움직이는 영역이 정상으로 돌 아올 때까지의 기간도 ᅵᅵ 군이 유의하게 단기간이었다. 골절 치료성적에는 유의한 차이는 없었다.
 〈阿部靖之, 中野哲雄, 越智龍弥 ： 요골원위단搜骨a位端골절에 의한 손가락, 수관절手M 종창에 대한 계지복령환의 효과. 통증과 한방, 12 ： 62 - 65, 2002)
@@ -3076,14 +3076,14 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 통합처방의 포인트
 본 처방은 통상적인 향정신약1》과의 병용이 가능하다.
 1)향정신약:
-(1)	항불안약
-①	benzodiazepines ： alprazolam(자낙스diazepam(바리움®)’ lorazepam (아티헌}®)’ chlordiazepoxide, clonazepam(리보트릴®), clorazepate
-②	other anxiolytic drugs ： Zolpidem, buspirone(부스파®), hydroxyzine © benzodiazepine antagonist: flumazenil
+(1) 항불안약
+① benzodiazepines ： alprazolam(자낙스diazepam(바리움®)’ lorazepam (아티헌}®)’ chlordiazepoxide, clonazepam(리보트릴®), clorazepate
+② other anxiolytic drugs ： Zolpidem, buspirone(부스파®), hydroxyzine © benzodiazepine antagonist: flumazenil
 ④ barbiturates : amobarbital, phenobarbital, pentobarbital, secobarbital, thiopental
 0 nonbarbiturate sedatives : chloral hydrate, diphenhydramine, ethanol
-(2)	항우울약
-①	TCA(tricyclic antidepressants) ： Amitrityptiline(에나폰®’ 에트라빌®),  Clomipramine(클로미프라민®), Imipramine(이미프라민®), Trimipramine, Desipramine, Nortryptiline(센시빌"®)
-②	MAOI (monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine|
+(2) 항우울약
+① TCA(tricyclic antidepressants) ： Amitrityptiline(에나폰®’ 에트라빌®),  Clomipramine(클로미프라민®), Imipramine(이미프라민®), Trimipramine, Desipramine, Nortryptiline(센시빌"®)
+② MAOI (monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine|
 `283
 ③ SSRI(selective serotonin reuptake inhibitors) ： Citalopram(씨프랑®)’ Escitalopram(렉사프로®), Fluoxetine(푸로작®), Fluvoxamine(듀미록스®), Paroxetine(세로자트®, 곽실®), Setraline(졸로푸트®)
 3갤[산전산후 신경증]
@@ -3137,8 +3137,8 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 통합처방의 포인트
 철 결핍 성빈혈로 철제제1>단독과, 당귀작약산단독의 치료효과가 동일하다는 보고가 있다. 十全大補湯 십전대보탕 이하는 악성종양과 혈액질환에 나타나는 빈혈에 적용한다.
 1) 철제제 ：
-(1)	경구제제 ： ferrous sulfate, ferrous gluconate, ferrous fumarate, ferric polymaltose, ferric threonine, ferrous glycine sulfate, sodium ferric gluconate, sodium ferrous citrate
-(2)	주사제 ： ferric hydroxide, ferric chloride, ion dextran 등이 있다.|
+(1) 경구제제 ： ferrous sulfate, ferrous gluconate, ferrous fumarate, ferric polymaltose, ferric threonine, ferrous glycine sulfate, sodium ferric gluconate, sodium ferrous citrate
+(2) 주사제 ： ferric hydroxide, ferric chloride, ion dextran 등이 있다.|
 `288
 임상근거
 요지: 人蔘養榮湯인삼양영탕의 빈혈에 대한 효과를 검토한 랜덤화비교시험 봉투법에 의한 랜덤화로 39례의 철결핍성 빈혈환자를 I 군 ： 쯔무라 한방제제 인삼 양영탕 5g/1 일, 시트르산(citric acid) 제일철第-si100mg/1 일 병용군 21례, II군 ： 시 트르산(citric acid) 제일철第-at 100mg/1 일군 18례의 두 군으로 나누어서 4주 후에 비교검토하였다. 양군 모두 투여개시일에 비해서 4주 후에는 각각 빈혈이 유의하게 개선되었지만, 전후 수치의 변화를 %변화율로 검토하면 적혈구, Ht수치, Hb수치는 군간에 유의한 차이가 있고 I 군이 유의하게 높은 수치를 보였다.
@@ -3338,13 +3338,13 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 65례의 수술 전 자기혈저장 예정자를 3군으로 나누어 1군 ： Hb14g이상의 경우로 철
 `304
 제 240mg(정맥주사) 단독 8례’ 2군 ： Hb14g미만으로 에포에틴 베타(epoetin beta)6000단위, 주 3회 정맥주사에 철제병용 28례, 3군 ： Hb14g미만으로 철제,에 포에틴 베타(epoetin beta), 쯔무라 한방제제 십전대보탕 759(제1회 저장혈 날로부터 수술전날까지)이라는 3군을 설정했다. 저장혈에 의한 적혈구의 감소폭은 2, 3군에서 유의한 차이는 없었다. 저자들의 人蔘養榮湯 솨을 사용한 같은 연구에서는 철, 에리스로포이에틴(Erythropoietin^, 인삼양영탕 병용군과의 유의한 차이는 나타 나지 않았기 때문에 十全大補湯 이 이들의 목적에 효과가 있다고 생각된다.
-〈靑江尙志, 住田由美, 高田恭자 외 ： 수술전 자기혈축혈에서 에리스로포이에틴 (Erythropoietin)제제와 A參養榮湯	의 병용효과에 관해서. 산부인과 한방연
+〈靑江尙志, 住田由美, 高田恭자 외 ： 수술전 자기혈축혈에서 에리스로포이에틴 (Erythropoietin)제제와 A參養榮湯  의 병용효과에 관해서. 산부인과 한방연
 구의진보, 15 ： 77 - 81,1998)
-1)	에리스로포이에틴(erythropoietin) ： 조혈세포 성장인자로서 유전자 재조합 기술을 이용해 만들어진 사람의 erythropoietin인 epoetin 알파가 사용됨, 166개의 아 미노산으로 이루어진 glycoprotein으로서 적혈구의 증식과 분화를 유도하는 작용을 담당하며, 저산소증에 반응하여 신장에서 합성한다.
+1)  에리스로포이에틴(erythropoietin) ： 조혈세포 성장인자로서 유전자 재조합 기술을 이용해 만들어진 사람의 erythropoietin인 epoetin 알파가 사용됨, 166개의 아 미노산으로 이루어진 glycoprotein으로서 적혈구의 증식과 분화를 유도하는 작용을 담당하며, 저산소증에 반응하여 신장에서 합성한다.
 요지 3: Paclitaxel(TXL)2>의 부작용인 근육통 • 관절통에 대한 芍藥甘草湯의 crossover 비교시험
 1999년 12월부터 2000년 7월 사이에 Paclitaxeᅵ(TXL)을 포함한 화학요법을 받은 환 자로 grade2 이상의 근육통 • 관절통이 나타나고 그 후 2 코스 이상의 투여가 예정된 난소암 13례, 자궁경암 1례, 외음암 1례의 15례에 관해서 나머지 2 코스를 crossover법으로 군을 바꾸어 각 1 코스씩 작약감초탕 7.5g/1 일 3회 분복 투여하고 L - Glutamine 2.0g/1 일 3회 분복 투여하여 군간을 비교했다. 최종 평가대상은 12례 였지만, 두 군간에는 모든 점에서 유의한 차이가 없고, 작약감초탕은 L - Glutamine과 동등한 효과가 있다는 사실이 판명되었다.
 〈長谷川幸淸, 水谷靖司, 倉本博行 외 ： Paclitaxel 투여시의 근육통 . 관절통에 대한 芍藥甘草湯작약감초탕, L - Glutamine의 효과. 암과화학요법, 29(4) ： 569- 574, 2002)
-2)	paclitaxel(탁솔®) ： 식물성 알칼로이드에 속하는 항암제로 주목나무(Taxus baccata)에서 추출했다. cisplatin과 병용하여 비소세포폐암 치료에 쓰이고 carboplatin과 병용하여 난소암, cisplatin, trastzumab과 병용하여 유방암치료에 쓰인다.|
+2)  paclitaxel(탁솔®) ： 식물성 알칼로이드에 속하는 항암제로 주목나무(Taxus baccata)에서 추출했다. cisplatin과 병용하여 비소세포폐암 치료에 쓰이고 carboplatin과 병용하여 난소암, cisplatin, trastzumab과 병용하여 유방암치료에 쓰인다.|
 `305
 피부과
 `306
@@ -3401,8 +3401,8 @@ Kallidinogenase$$1) 혹은 비타민 E 등은 말초혈행을 개선하는 약�
 `311
 통합처방의 포인트
 만성습진은 치료에 어려운 예가 적지 않다. 생활전반을 시야에 넣은 대책이 무엇보다 필요하다. 또한 스테로이드 외용제$$1>를 잘 사용하여 문드러지지 않도록 치료하는 것이 중요하다. 저자는 리놀레산(linoleic acid)2)등의 w6군의 불포화지방산을 지나치게 섭취하지 않도록 지도하는 데에 주의를 기울이고 있다. 한방약은 통상 예상되는 이상으로 국소 세균 감염에 효력을 발휘한다. 필요하다면 주저하지 말고 외과처치를 선택 한다든지,  항생제를 병용한다든지 한다.
-1)	스테로이드 외용제 ： prednicarbate(더마톱연고®), clobetasol - 17 - propionate (더모베이트 연고®), desoxymethasone(에스파손로오션®), 1% hydrocortisone (1% 하이드로코르티숀 연고®) 등이 있다.
-2)	리놀레산(linoleic acid) ： 2가의 불포화 필수지방산이다.
+1)  스테로이드 외용제 ： prednicarbate(더마톱연고®), clobetasol - 17 - propionate (더모베이트 연고®), desoxymethasone(에스파손로오션®), 1% hydrocortisone (1% 하이드로코르티숀 연고®) 등이 있다.
+2)  리놀레산(linoleic acid) ： 2가의 불포화 필수지방산이다.
 임상근거
 (=> p. 306「만성피부병 • 피부병 • 피부염」참고
 3갤[ 담마진 ]
@@ -3619,7 +3619,7 @@ a - blocker1)등의 양약이나 외과적 수술이 임상응용되고 있다. 
 원질환에 따라 필요한 서양의학적인 치료수단을 선택한다. 지혈제 등의 병용은 구애 받을 필요가 없다. 猪苓湯合四物湯저령탕합사물탕을 시도하여 효과가 없으면 관점을 바꾸어 보기제補氣劑 등의 사용도 고려한다.
 비뇨기과영역에 관한 기타 임상근거
 요지: 폭歸躍艾湯궁귀교애탕과 柴苓湯시령탕의 특발성 혈뇨에 대한 효과를 검토한 랜덤 화비교시험
-68례의 특발성 현미경적 혈뇨를 A군 ： 26례, 쯔무라 한방제제 폭歸膠艾湯궁귀교애탕 
+68례의 특발성 현미경적 혈뇨를 A군 ： 26례, 쯔무라 한방제제 폭歸膠艾湯궁귀교애탕
 `331
 9g/1 일을 3회 분복 투여, B군 ： 19례, 쯔무라 한방제제 시령탕 9g/1 일을 3회 분복 투여, C군 ： 23례, 투여를 하지 않은 비교군과 랜덤으로 나누었다. 판정은 초진시와 4주 간 투여 후에 도뇨*尿에 의한 검뇨를 시행했다. 현저한 효고h 개선, 불변, 악화의 4단 계로 평가를 하고 혈뇨의 효과판정은 鈴木씨들의 기준에 준하였다. 그 결과, A군은 현저한 효과34.6%,개선38.5%, B 군은현저한 효과26.3%,개선31.6%로두군모두 유의하게 혈뇨개선이 인정되었다. 양군간 효과에는 유의한 차이가 나타나지 않았다.
 〈吉)ᅵI裕康, 池內隆夫, 甲斐祥生 ： 특발성 현미경적 혈뇨에 대한 考歸膠艾湯궁귀교애탕과 柴茶湯시령탕의 임상효과. 한방과 최신치료, 6(1) ： 55 - 58’ 1997)
@@ -3636,17 +3636,17 @@ a - blocker1)등의 양약이나 외과적 수술이 임상응용되고 있다. 
 통합처방의 포인트
 빈용되는 약제 중에서도 혈압강하제$$1)가 남성기능을 손상시키는 예가 많이 보인다. 장년 남성 예에서는 이러한 예가 적지 않은 것이 아닌가 생각된다.
 1. 혈압강하제 ：
-1)	diuretics
-(1)	thiazides ： hydrochlorothiazide(다이크로짓), chlorthalidone
-(2)	Loop diuretics ： furosemide(라식스), torasemide(토렘), bumetamide
-(3)	K Sparing diuretics : spironolactone(알닥톤), triamterene, amiloride
-(4)	삼투성 이뇨제(osmotic diuretics) ： mannitol
-2)	beta blockers : metoprolol, atenolol, acebutelol, propranolol
-3)	alpha blockers : prazosin(미니프레스®)’ terazosin, doxazosin(굿]"두■라®)
-4)	calcium channel blockers ： verapamil(이솝틴®), diltiazem(헤르벤®), nimodipine(니모톱®), amlodipine(노바스크®)
-5)	ACE inhibitor ： captopril(카프릴®), enalapriK레니텍
-6)	angiotensin 2 - receptor antagonists : candesartan(atacand), irbesartan(Co -approvel®), losartan(cozaar®), telmisartan(pritor®), valsartan(diovan®)
-7)	혈관확장제 : hydralazine, isosorbide, minoxidil, sodium nitroprusside등이다.
+1)  diuretics
+(1) thiazides ： hydrochlorothiazide(다이크로짓), chlorthalidone
+(2) Loop diuretics ： furosemide(라식스), torasemide(토렘), bumetamide
+(3) K Sparing diuretics : spironolactone(알닥톤), triamterene, amiloride
+(4) 삼투성 이뇨제(osmotic diuretics) ： mannitol
+2)  beta blockers : metoprolol, atenolol, acebutelol, propranolol
+3)  alpha blockers : prazosin(미니프레스®)’ terazosin, doxazosin(굿]"두■라®)
+4)  calcium channel blockers ： verapamil(이솝틴®), diltiazem(헤르벤®), nimodipine(니모톱®), amlodipine(노바스크®)
+5)  ACE inhibitor ： captopril(카프릴®), enalapriK레니텍
+6)  angiotensin 2 - receptor antagonists : candesartan(atacand), irbesartan(Co -approvel®), losartan(cozaar®), telmisartan(pritor®), valsartan(diovan®)
+7)  혈관확장제 : hydralazine, isosorbide, minoxidil, sodium nitroprusside등이다.
 3갤[유정遺精]
 #桂枝加龍骨牡蠣湯계지가용골모려탕
 냉증으로 복후腹候상 제상계臍上悸가 인지되는 경우에 적용된다.|
@@ -3694,7 +3694,7 @@ a - blocker1)등의 양약이나 외과적 수술이 임상응용되고 있다. 
 임상근거
 요지: 半夏白朮天麻湯의 어지럼증에 대한 효과를 검토한 증례수집연구
 21례의 말초성 어지럼증에 쯔무라 한방제제 반하백출천마탕 7.5g/1 일을 3회 분복 투여로 연속 8주간 사용하고, 2, 4, 8주 후에 평가한 결과 전반개선도는 개선이상 42.1%, 약간 개선이상 73.7%였다. 유효한 증례는 반드시 한방적인 이른바 증 과는 합치하지 않는 경향을 보였다.
-〈木村貴昭, 山中 昇, 九鬼淸典 외 ： 어지럼중에 대한 半夏白Tit天麻湯	의
+〈木村貴昭, 山中 昇, 九鬼淸典 외 ： 어지럼중에 대한 半夏白Tit天麻湯  의
 임상효과. 이비 와 임상, 45(5) ： 443 - 449,1999>
 3갤[알레르기성 비염• 비염]
 #小靑龍湯소청룡탕
@@ -3810,7 +3810,7 @@ a - blocker1)등의 양약이나 외과적 수술이 임상응용되고 있다. 
 (=> p. 367「치과」영역참고
 이비인후과 영역에 관한 기타 임상근거
 요지 1: 麥門冬湯맥문동탕의 쇼그렌 증후군$$1>에 대한 효과를 검토한 비랜덤화 비교시 험, 부분적으로 crossover법으로 비교
-72례는 후생성의 진단기준에 의해 확실한 쇼그렌(Sjoegren)증후군으로, A군 ： 40례에 쯔무라 한방제제 맥문동탕 9.0g/1 일을 3회 분복 투여, B군 ： 32례는 쯔무라 한방 제제 보중익기탕 7.5g/1 일 3회 분복 투여한 2군으로 하여 연속 4주간 투여했다. 그 
+72례는 후생성의 진단기준에 의해 확실한 쇼그렌(Sjoegren)증후군으로, A군 ： 40례에 쯔무라 한방제제 맥문동탕 9.0g/1 일을 3회 분복 투여, B군 ： 32례는 쯔무라 한방 제제 보중익기탕 7.5g/1 일 3회 분복 투여한 2군으로 하여 연속 4주간 투여했다. 그
 `347
 후, A군의 13례는 맥문동탕으로, B군의 8례는 보중익기탕으로 변경하여 교차시험을 실시했다. 효과 판정은 시판하는 껌을 2개 씹게 하여 타액량을 측정하는 낌테스트의 결과를 Rubin & Holt에 의한 타액선조영의 스테이지분류에 따라 검토했다. 그 결과, 투여 4주 후의 타액분비량은 A군에서 유의하게 증가했지만(8.2±1.1 mL에서 11 4土 1 4mL, p(0.005, n=38), B군에서는 타액분비량의 증가는 없었다. 4주 후의 교차 투여에서 당초 맥문동탕으로 유의하게 증가하였던 타액분비량은 보중익기탕으로 바꾸자 감소하였다. 타액선조영에 의해 stage ᅵ-IV으로 분류하고 각 stage 마다 맥문동탕의 효과를 검토, stage I, II에서 유의하게 타액분비량의 증가가 나타났지만, 타액분비량의 증 가율에서는 stagelll, IV가 높은 수치를 보였다. 4주 이후에도 낌테스트를 시행할 수 있었던 7례에서는 투여기간과 함께 타액분비량이 증가하는 경향이 나타났다.
 〈ᄎ野修嗣, 土肥 豊 ： 쇼그렌(Sjoegren)증후군의 타액분비장애에 대한 麥門冬湯맥문동 탕의 효과. 구강 • 후두과, 2(2) ： 51 - 57,1990)
@@ -3867,17 +3867,17 @@ a - blocker1)등의 양약이나 외과적 수술이 임상응용되고 있다. 
 통합처방의 포인트
 필요한 향정신약$$1)의 병용은 종종 이루어진다.
 1)향정신약:
-(1)	항불안약
-①	benzodiazepines ： alprazolam(자낙스)’ diazepam(바리움)’ lorazepam(아티반)’ chlordiazepoxide, clonazepam(리^!■릴)’ clorazepate
-②	other anxiolytic drugs ： Zolpidem, buspirone(부스파)’ hydroxyzine
-③	benzodiazepine antagonist ： flumazenil
-④	barbiturates : amobarbital, phenobarbital, pentobarbital, secobarbital,  thiopental
+(1) 항불안약
+① benzodiazepines ： alprazolam(자낙스)’ diazepam(바리움)’ lorazepam(아티반)’ chlordiazepoxide, clonazepam(리^!■릴)’ clorazepate
+② other anxiolytic drugs ： Zolpidem, buspirone(부스파)’ hydroxyzine
+③ benzodiazepine antagonist ： flumazenil
+④ barbiturates : amobarbital, phenobarbital, pentobarbital, secobarbital,  thiopental
 © nonbarbiturate sedatives ： chloral hydrate, diphenhydramine, ethanol
-(2)	항우울약
-①	TCA (tricyclic antidepressants) ： Amitrityptiline(에나폰’ 에트라빌),  Clomipramine(클로비프라민), Imipramine(이미프라민), Trimipramine, Desipramine, Nortryptiline (센시발)
-②	MA이(monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine
-③	SSRI (selective serotonin reuptake inhibitors) ： Citalopram(씨프람)’ Escitalopram(렉사프로), Fluoxetine(푸로작), Fluvoxamine(듀미록스),  Paroxetine(세로자트, 팍실), Setraline (졸로푸트)
-(3)	알츠하이머 치료제 ： donepezil(아리셉트), rivastigmine(엑셀론), galantamine
+(2) 항우울약
+① TCA (tricyclic antidepressants) ： Amitrityptiline(에나폰’ 에트라빌),  Clomipramine(클로비프라민), Imipramine(이미프라민), Trimipramine, Desipramine, Nortryptiline (센시발)
+② MA이(monoamine oxidase inhibitors) ： Phenelzine, Tranylcypromine
+③ SSRI (selective serotonin reuptake inhibitors) ： Citalopram(씨프람)’ Escitalopram(렉사프로), Fluoxetine(푸로작), Fluvoxamine(듀미록스),  Paroxetine(세로자트, 팍실), Setraline (졸로푸트)
+(3) 알츠하이머 치료제 ： donepezil(아리셉트), rivastigmine(엑셀론), galantamine
 (레미날), memeantine(에빅사) 등이 있다.|
 `354
 3갤[ 신경쇠약(신경질) ]
@@ -4286,7 +4286,7 @@ mm.............................................................................
 오다이요도M台格堂, 1799- 1870의 저서로 오늘날 고방파古方派에 대해서 알 수 있는 최고의 문헌이다.
 육병우I六病位 .......................................................................
 병태인식의 하나의 계통으로 발열성질환의 시간적인 진행을 태양병, 소 양병, 양명병, 태음병, 소음병, 궐음병의 육병위六病位로 분류하고 각각 적절 한치료를 하려고하는 것.
-•으八	...........................
+•으八 ...........................
 □ fe ..................................................................................
 음陰의 의미내용에는 여러 가지 설이 있다. 본서에서는음陰이 혈 •진-액 •정血.津.;夜.精을 가르킨다. 음액陰液.
 율ᄒ나髓.............................................................................
@@ -4418,20 +4418,20 @@ S ᄒ나越.....................................................................
 柴胡桂枝乾置湯시호계지건강탕의 조문에 있는데 가벼운 흉협고만1W苦滿이라 고 생각된다.
 `401
 참고문헌
-1)	長濱善夫 ： 東洋医學槪說. 創元社 1961
-2)	藤平 能 小倉重成共著 ： 漢方槪論. 創元社 1979
-3)	鎌田慶市郎編著, 藤平 健監修 ： 漢方古方用語량医道의 日本社, 1986
-4)	西山英雄 ： 漢方醫語！^. 創元社, 1973
-5)	創醫會學術部 ： 漢方用語ᄎ燒原, 1984
-6)	神戶中醫學研究會編著 ： 中醫學入門.醫齒藥出版, 1981
-7)	神戶中醫學研究會編 ： 實用漢藥핸드북. 醫齒藥出版, 1987
-8)	成都中醫學院외編著 ： 中國漢方醫語中國漢方, 1980
-9)	日本東洋医學會用語위원회編 ： 東洋医學用語集 I . 日本東洋医學會, 1969
-10)	日本東洋医學會用語위원회編 ： 東洋医學用語集II. 日本東洋医學會, 1980
-11)	朝日新聞社編 ： 일본역사인물事典.朝日新聞社, 1994
-12)	上海中醫學院編, 神戶中醫學研究會譯 ： 改訂中醫學基礎.燒原, 1988
-13)	日本東洋医學會EBM특별위원회編 ： 日本東洋医學雜誌 제56권 별책호 「한방치료에서 에비던스보고서」, 2005
-14)	秋葉哲生 ： 東西竊學의 교차점. 丸善프라넷, 2004
+1)  長濱善夫 ： 東洋医學槪說. 創元社 1961
+2)  藤平 能 小倉重成共著 ： 漢方槪論. 創元社 1979
+3)  鎌田慶市郎編著, 藤平 健監修 ： 漢方古方用語량医道의 日本社, 1986
+4)  西山英雄 ： 漢方醫語！^. 創元社, 1973
+5)  創醫會學術部 ： 漢方用語ᄎ燒原, 1984
+6)  神戶中醫學研究會編著 ： 中醫學入門.醫齒藥出版, 1981
+7)  神戶中醫學研究會編 ： 實用漢藥핸드북. 醫齒藥出版, 1987
+8)  成都中醫學院외編著 ： 中國漢方醫語中國漢方, 1980
+9)  日本東洋医學會用語위원회編 ： 東洋医學用語集 I . 日本東洋医學會, 1969
+10) 日本東洋医學會用語위원회編 ： 東洋医學用語集II. 日本東洋医學會, 1980
+11) 朝日新聞社編 ： 일본역사인물事典.朝日新聞社, 1994
+12) 上海中醫學院編, 神戶中醫學研究會譯 ： 改訂中醫學基礎.燒原, 1988
+13) 日本東洋医學會EBM특별위원회編 ： 日本東洋医學雜誌 제56권 별책호 「한방치료에서 에비던스보고서」, 2005
+14) 秋葉哲生 ： 東西竊學의 교차점. 丸善프라넷, 2004
 `402
 `403
 처방색인
@@ -4660,23 +4660,23 @@ A ^湯인삼탕 ....................................... 89, 91,113,114,143’274
 350
 처방색인 스11
 지은이 I 아키바테쯔오
-옮긴이 한의학부	조기호 고창남 박정미
-의학부	김종진방재승
-치의학부	박준봉	® § 신 대 2f 교
-약학부	김정태	■ᅳ"’ᅳ
+옮긴이 한의학부  조기호 고창남 박정미
+의학부 김종진방재승
+치의학부  박준봉 ® § 신 대 2f 교
+약학부 김정태 ■ᅳ"’ᅳ
 ■隱圓111
 EM0292449
 군:다 fiH 사
 양•한방병용처방매뉴얼
 洋漢統合處方力、6各 t 漢方製劑保險診療7 ^
 첫째판 1쇄 인쇄 I 2008년 8월 25일 첫째판 1쇄 발행 ᅵ 2008년 9월 5일
-지 은 이	秋葉 哲生
-옮긴이	조기호
-발행인	장주연
-편집디자인	김성아
-표지디자인	이지선
-발행처	군자출판사
-"o —1	제 4"139호(1991. 6. 24)
+지 은 이 秋葉 哲生
+옮긴이 조기호
+발행인 장주연
+편집디자인 김성아
+표지디자인 이지선
+발행처 군자출판사
+"o —1 제 4"139호(1991. 6. 24)
 본 사 (110-717) 서울특별시 종로구 인의동 11M 동원회관 BD 3충
 Tel. (02) 762-9194/5 Fax. (02) 764-0209 대구지점 Tel. (053)428-2748 Fax. (053)428-2749 광주지점 Tel. (062)228-0252 Fax. (062)228-0251 부산지점 Tel. (051)893-8989 Fax. (051)893-8986
 The original Japanese language work has been published by： Life Science Co., Ltd. Cosmos Aoyama, 5-53-67 Jingumae, Shibuya-ku, Tokyo 150-0001, Japan. Copyright © 2006. All rights reserved.
@@ -4791,10 +4791,10 @@ xvi
 요통 ...........................................................166
 관절통 .........................................................167
 근염 ...........................................................169
-H.	교원병 .......................................................
+H.  교원병 .......................................................
 170
 관절류마티스 ..................................................170
-I.기타	..........................................................
+I.기타  ..........................................................
 172
 불면증 .........................................................172
 신경성 식도협착증 .............................................175

@@ -67,14 +67,7 @@ exports.replaceOne = function(req, res) {
 //0. readFile / 1. get replace data(mongodb) / 2. replace loop / 3. writeFile
 exports.replaceAll = function(req, res) {
   var book = req.params.book;
-  var type = req.params.type || 'r1'; //r2: 교정후처리, r0: 교정전처리
   var file = BOOKDIR + book + '.txt';
-  var col = "bookEdit";
-
-  if (!type || type != 'r1') {
-    col = col + '_' + type;
-  }
-
 
   //console.log('file', file);
 
@@ -84,7 +77,7 @@ exports.replaceAll = function(req, res) {
       function(callback) {
         //db.bookEdit.find().sort({_id:1})
         var filter = {$query:{}, $orderby:{_id:1}}; //_id 오름차순으로...@@@@
-        mH_utils.mgReadAllRs({"col":col, "filter":filter}, function(err, rs) {
+        mH_utils.mgReadAllRs({"col":"bookEdit", "filter":filter}, function(err, rs) {
           //console.log('bookEdit rs', rs);
           callback(err, rs);
         });
@@ -124,6 +117,90 @@ exports.replaceAll = function(req, res) {
       //res.send(results);
     });
   });
+}
+
+
+
+//원본 txt파일을 json, md 파일로 변경
+//0. readFile / 1. get replace data(mongodb) / 2. replace loop / 3. writeFile
+exports.convertFile = function(req, res) {
+  var book = req.params.book;
+  var type = req.params.type || 'md';
+  var bookConv = BOOKDIR + 'json/' + book + '_conv.json';
+  //var bookConv = BOOKDIR + type + '/' + book + '_conv.json';
+  var oldFile = BOOKDIR + book + '.txt';
+  var newFile = BOOKDIR + type + '/' + book + '.' + type;
+/*
+  var conv = require(bookConv);
+  console.log(conv.json.trans);
+  for (var i in conv.json.trans) {
+  	//val = conf[i];
+  	console.log(conv.json.trans[i].o);
+  	console.log(conv.json.trans[i].r);
+	}
+
+
+        fs.readFile(bookConv, {encoding: 'utf-8'}, function(err, rs) {
+          //console.log('bookEdit rs', rs);
+          var jr = JSON.parse(rs);
+          //console.log('bookConv trans', rs.json.trans);
+          console.log('bookConv trans', jr.json.trans);
+          //callback(err, jr.json.trans);
+        });
+  res.end();
+*/
+
+
+  //console.log('file', file);
+
+  fs.readFile(oldFile, {encoding: 'utf-8'}, function(err, data) {
+    //var content = data;
+    async.waterfall([
+      function(callback) {
+        fs.readFile(bookConv, {encoding: 'utf-8'}, function(err, rs) {
+          var jr = JSON.parse(rs);
+          //console.log('bookConv trans', jr.json.trans);
+          console.log('bookConv trans', jr[type].t);
+          //callback(err, jr.json.trans);
+          callback(err, jr[type].t);
+        });
+      },
+
+      function(rs, callback) {
+      	//data = data.replace(/^1갤(.+)$/,	'{"h1":"\1"}');
+      	//data = data.replace(/1갤(.+)/g,	'{"h1":"' + '$1' + '"},');
+      	//data = data.replace(/1갤(.+)/g,	'{"h1":"$1"},');
+      	//data = data.replace(/(\d)갤(.+)/g,	'{"h$1":"$2"},');
+      	//callback(err, rs);
+
+        async.each(rs, function(r, cb) {
+          //pat = r.o;
+          //pat = _setPattern(pat, r.o);
+          pat = new RegExp(r.o, 'g');
+          console.log('pat2', pat);
+          data = data.replace(pat, r.r);
+          //data = data.replace(/^1갤(.+)$/,	'{"h1":"\1"}');
+          cb();
+        }, function(err) {
+          //console.log('foreach rs', rs);
+          callback(err, rs);  //each가 완료된 후 callback함수로 err, rs 넘김
+        });
+
+      },
+
+    ],
+
+    function(err, results) {
+      //console.log(results);
+      fs.writeFile(newFile, data, function(err) {
+        if(err) throw err;
+        //console.log('file edit success');
+        res.end();
+      });
+      //res.send(results);
+    });
+  });
+
 }
 
 
