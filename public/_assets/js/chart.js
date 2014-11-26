@@ -9,6 +9,7 @@ require.config({
     paths: {
         chart: '../chart',
         list: '../list',
+        //diagnosis: '../diagnosis',
         share: '../_share',
         chart_tpl: '../../tpl/chart',
         list_tpl: '../../tpl/list',

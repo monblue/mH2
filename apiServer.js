@@ -5,6 +5,7 @@ var path = require('path');
 
 var list = require('./routes/list');
 var chart = require('./routes/chart');
+var diagnosis = require('./routes/diagnosis');  //진단
 //var test = require('./routes/test');
 var hanja = require('./routes/hanja');
 var upload = require('./routes/upload');
@@ -162,6 +163,18 @@ app.get('/getPrmTxs/:term', chart.getPrmTxs);  //약속 치료 검색 결과 목
 //-----------------------------------------------------------------------------
 
 
+
+//=============================================================================
+// diagnosis    //@@@@@@@@@@@@@@
+//=============================================================================
+
+app.post('/diagnosis/:id/:date', diagnosis.createDiagnosis);  //Create
+//app.get('/diagnosis/:date/:id/:user', diagnosis.createDiagnosis_);  //TEST!!!!@@@@@@@@@@
+//app.get('/diagnosis/:id', diagnosis.readAllDiagnosis);  //ReadAll
+//app.get('/diagnosis/:id/:cat1/:cat2', diagnosis.readAllDiagnosisByCategory);  //ReadAll by Category
+app.get('/diagnosis/:id/:date', diagnosis.readOneDiagnosis);  //ReadOne
+//app.put('/diagnosis/:id/:date', diagnosis.updateDiagnosis);  //Update
+//app.delete('/diagnosis/:id/:date', diagnosis.deleteDiagnosis);  //Delete*/
 
 //=============================================================================
 // BOOK

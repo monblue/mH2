@@ -1,7 +1,7 @@
 <% var options = {"LAST":LAST, "LAST2":LAST2, "JTIME":JTIME, "SEX":SEX, "AGE":AGE, "ORDER1":ORDER1, "ITYPE":ITYPE, "JEJUCODE":JEJUCODE, "PIC":PIC};
   var out = mH_getListUI(options);
 %>
-  <a href="#" class="pull-left js-takePhoto"><img src="/photo/thumb/<%=out.txtPIC%>" class="_img-thumbnail" /></a>
+  <a class="pull-left js-takePhoto"><img src="/photo/thumb/<%=out.txtPIC%>" class="_img-thumbnail" /></a>
   <!--<div class="pull-right line-btn hidden-xs">-->
   <div class="pull-right line-btn">
     <span><%=out.txtJTIME%></span>

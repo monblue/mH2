@@ -1,0 +1,1 @@
+var dxMain = [{"group":"1","name":"신상","weight":"1","width":"150px","dxitems":[{"code":"nm", "name":"성명","value":"","type":"text"},{"code":"adr","name":"주소","value":"","type":"text"}]}];

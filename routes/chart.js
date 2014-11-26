@@ -107,6 +107,9 @@ exports.readChartRc = function(req, res) {
     //if (rs || rs.length) {  //Rc가 입력되어있는 경우 현재 날짜 데이터 가져옴@@@
     if (!rs || !rs.length) {  //Rc가 입력되지 않은 경우 ref_date 날짜 데이터 가져옴@@@@@
       opts.date = req.params.ref_date;
+      console.log('미입력' + opts.date);   //@@@@@@@@@@@@@@@@
+    } else {
+      console.log('기입력' + opts.date);   //@@@@@@@@@@@@@@@@
     }
 
     async.parallel([	//async functions
@@ -127,10 +130,14 @@ exports.readChartRc = function(req, res) {
     ],
 
     function(err, results) {	//callback
-      var rs2 = {};
-      rs2['OSSC_PF'] = mH_utils.trim(results[0][0].OSSC_PF);	//@@@@@@@@에러 생기는 경우 있음... node server down 현상은 어떻게....@@@@@@@@@@@@@
-      rs2['JINMEMO_MEMO'] = mH_utils.trim(results[1][0].JINMEMO_MEMO);
-      rs2['REMK_REMARK'] = mH_utils.trim(results[2][0].REMK_REMARK);
+      var rs2 = {'OSSC_PF':'', 'JINMEMO_MEMO':'', 'REMK_REMARK':''};
+      //console.log(results);
+      if (results[0][0])
+        rs2['OSSC_PF'] = mH_utils.trim(results[0][0].OSSC_PF);	//@@@@@@@@에러 생기는 경우 있음... node server down 현상은 어떻게....@@@@@@@@@@@@@
+			if (results[1][0])
+      	rs2['JINMEMO_MEMO'] = mH_utils.trim(results[1][0].JINMEMO_MEMO);
+      if (results[2][0])
+      	rs2['REMK_REMARK'] = mH_utils.trim(results[2][0].REMK_REMARK);
       res.send(rs2);  //response
     });
   });
@@ -792,7 +799,7 @@ var _getMommDataMS = function(req, res) {
 
   que = "SELECT MOMM_HNAME AS name, MOMM_M1_SUGA AS price" +
         " FROM hanimacCS.dbo.CC_MOMM" +
-        " WHERE MOMM_ID = '" + id + "'";
+        " WHERE MOMM_ID = '" + req.params.id + "'";  //@@@@@@@@@ReferenceError: id is not defined
   mH_utils.msQueryRs({"que":que}, function(err, rs){
     res.send(rs);
   });
@@ -1050,11 +1057,13 @@ function _readRcMSQue(opts) {
     que = "SELECT CAST(OSSC_PF AS text) AS OSSC_PF FROM OHIS_H.dbo.OSSC" + opts.ohis +
           " WHERE OSSC_CHAM_ID = '" + opts.id +
           "' AND OSSC_DATE = '" + opts.date + "'";
+    console.log(que);
     break;
   case 'RcJm':
     que = "SELECT CAST(JINMEMO_MEMO AS text) AS JINMEMO_MEMO" +
     			" FROM hanimacCS.dbo.CC_JINMEMO" +
           " WHERE JINMEMO_CHAM_ID = '" + opts.id + "'";
+    console.log(que);
     break;
   case 'RcRm':
     que = "SELECT  CAST(REMK_REMARK AS text) AS REMK_REMARK" +
