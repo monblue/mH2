@@ -136,7 +136,7 @@ define(function (require) {
 
       ///if (charing mode)
       ChartDxView.bodyView.preRender();
-      ChartDxView.headView.$el.find('.glyphicon-folder-close').trigger('click');  //fold chartDx
+      //ChartDxView.headView.$el.find('.glyphicon-folder-close').trigger('click');  //fold chartDx
       ChartRcView.bodyView.preRender();
       ChartIxView.bodyView.preRender();
       ChartTxView.bodyView.preRender();

@@ -29,7 +29,12 @@ define(function (require) {
 //-----------------------------------------------------------------------------
   var headerTpl  = require('text!chart_tpl/ChartDxHeader.html');
   var bodyTpl  = require('text!chart_tpl/ChartDxBody.html');
-
+	var preDxTpl	= require('text!chart_tpl/ChartDx-preDx.html');
+	var firstDxTpl	= require('text!chart_tpl/ChartDx-1stDx.html');
+	var progressTpl	= require('text!chart_tpl/ChartDx-progress.html');
+	var prognosisTpl	= require('text!chart_tpl/ChartDx-prognosis.html');
+	//var bodyTpl	= require('text!chart_tpl/ChartTxBody.html');
+  //var optionsTpl = require('text!chart_tpl/ChartTx-Item-options.html');
 ////===========================================================================
 //// private properties
 ////===========================================================================
@@ -107,8 +112,10 @@ define(function (require) {
 
     events: {
       //'click .js-showDx': 'showDx',
-      'click .js-showDx': 'showDx',
-      'click .js-showSr': 'showSr',
+      'click .js-showPreDx': 'showPreDx',
+      'click .js-show1stDx': 'show1stDx',
+      'click .js-showProgress': 'showProgress',
+      'click .js-showPrognosis': 'showPrognosis',
       'click .js-save': 'save',
       'click .glyphicon-folder-close': 'fold',
       'click .glyphicon-folder-open': 'unfold',
@@ -124,60 +131,57 @@ define(function (require) {
       }
     },
 */
-    showDx: function(e) {
-      //console.log('showDx....!!!!!!!!!!!');
+    showPreDx: function(e) {
+      console.log('showPreDx....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
       if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
         $(e.target).parent().addClass('active').siblings().removeClass('active');
-        $panel.find('#chartDx_Dx').removeClass('hide').siblings('div').addClass("hide");
+
+				$tpl = $(_.template(preDxTpl)({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
+        $('#chartDx_Dx').html($tpl);
+
       }
     },
 
-    showSr: function(e) {
-      //console.log('showSr....!!!!!!!!!!!');
-      var strHtml = '<table class="table table-striped">' +
-            '<thead><td>날짜</td><td>진료기록 요약</td><td>적용</td></thead>' +
-            '<tbody>';
-      $.ajax({
-        //url: GLOBAL.get('_BASEURL') + 'API/chart/ChartOsscs/' + GLOBAL.get('_CURPTID'),
-        url: GLOBAL.get('_BASEURL') + 'ChartOsscs/' + GLOBAL.get('_CURPTID'),
-        async: false,
-        dataType: 'json',
-        success: function(res) {
-          ////console.log('res!!!!!!!!', JSON.parse(res));
-          //console.log('res!!!!!!!!', res);
+    show1stDx: function(e) {
+      console.log('show1stDx....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
+      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
+        $(e.target).parent().addClass('active').siblings().removeClass('active');
+        //$panel.find('#chartDx_Dx').removeClass('hide').siblings('div').addClass("hide");
+				$tpl = $(_.template(firstDxTpl)({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
+        $('#chartDx_Dx').html($tpl);
+      }
+    },
 
-          _.each(res, function(item){
-            ////console.log('item.OSSC_DATE', item.OSSC_DATE, item.OSSC_PF);
-            strHtml += '<tr><td>' + item.OSSC_DATE + '</td>' +
-                   '<td class="OSSC_PF">' + item.OSSC_PF + '</td>' +
-                   '<td><button class="btn btn-danger js-copyOssc" data-val="' + item.OSSC_DATE + '">적용</button></td></tr>';
+    showProgress: function(e) {
+      console.log('showProgress....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
+      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
+        $(e.target).parent().addClass('active').siblings().removeClass('active');
 
-          });
+				$tpl = $(_.template(progressTpl)({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
+        $('#chartDx_Dx').html($tpl);
 
-          strHtml = strHtml + '</tbody></table>';
-          ////console.log('strHtml!!!!!!!!', strHtml);
+      }
 
-          MH.modal({title:'이력:진료기록', body:strHtml});
-        }
-        //OSSC_DATE, CAST(OSSC_PF AS text) AS OSSC_PF
-      });
+    },
 
-      $modal = $('body .modal');
 
-      $modal.find('.js-copyOssc').on('click', function(){
-        ////console.log('bodyView.model.toJSON()', bodyView.model.toJSON());
-        //bodyView.model.set({OSSC_PF:bodyView.$el.find(".OSSC_PF").text()});
-        bodyView.model.set({OSSC_PF:$(this).parent().parent().find(".OSSC_PF").text()});
-        bodyView.model.trigger('change');
-        bodyView.render();
-        //console.log('bodyView.model.toJSON()', bodyView.model.toJSON());
-        ////console.log('js-copyOssc', $(this).attr('data-val'));
-        //$('#chartSection').find('#OSSC_PF').val($(this).parent().parent().find(".OSSC_PF").text());
-        //날짜 변경
-        //GLOBAL.set('_REFDATE', $(this).attr('data-val');
-      });
-      ////console.log('strHtml', strHtml);
+    showPrognosis: function(e) {
+      console.log('showPrognosis....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
+      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
+        $(e.target).parent().addClass('active').siblings().removeClass('active');
 
+				$tpl = $(_.template(prognosisTpl)({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
+        $('#chartDx_Dx').html($tpl);
+
+      }
     },
 
     save: function(e) { //@@@진료기록/신상기록/특이사항 나누어서 저장
@@ -279,6 +283,7 @@ define(function (require) {
       'click .js-addStamp': 'addStamp',
       'click .js-delStamp': 'delStamp',
       'click .js-delArea': 'delArea',
+      'click .js-saveAudio': 'saveAudio',
     },
 
     showOssc: function(e) {
@@ -344,6 +349,92 @@ define(function (require) {
       $area.val('');
     },
 
+    saveAudio: function(e) { //녹음 파일 저장
+      console.log('saveAudio....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
+
+  		var apiUrl = 'http://192.168.0.11:3333/saveAudio/';
+  		var id = GLOBAL.get('_CURPTID');
+
+			//var fd = new FormData(document.getElementById("audio-file"));
+			//console.log('formdata', fd);
+			//fd.append("CustomField", "This is some extra data");
+
+			var formData = new FormData();
+			//formData.append('file', $('input[type=file]')[0].files[0]);
+			//formData.append('file', $(e.target).parent().find('#np-audio-file')[0].files[0]);
+			//var audiofile = $('#np-audio-file')[0].files[0] || $('#np-audio-file').files[0];
+			formData.append('file', $('#np-audio-file')[0].files[0]);	//@@@@@@@@@@@@@ [0] 로 인해서 에러가 날 수 있음!!!!!!!!!!
+			//alert(audiofile.name);
+			//console.log(audiofile);
+
+			$.ajax({
+        url: apiUrl + id,
+        type: 'POST',
+			  data: formData,
+        async: false,
+        cache: false,
+			  processData: false,  // tell jQuery not to process the data
+			  contentType: false   // tell jQuery not to set contentType
+			});
+
+/*
+      $.ajax({
+        url: apiUrl + id,
+        async: false,
+        type: 'POST',
+        data: {},
+        //dataType: 'json',
+        success: function(res) {
+          console.log('saveAudio done!!!', res);
+          //rs = res;
+        }
+      });
+*/
+    },
+
+/*
+var fd = new FormData(document.getElementById("fileinfo"));
+fd.append("CustomField", "This is some extra data");
+$.ajax({
+  url: "stash.php",
+  type: "POST",
+  data: fd,
+  processData: false,  // tell jQuery not to process the data
+  contentType: false   // tell jQuery not to set contentType
+});
+
+
+    var _takeaudioHandler = function($ui, self) {
+      var audioFile = '';
+
+      $ui.find('#np-audio-file').on('change', function(){
+        audioFile = newFile;
+        return false;
+      });
+
+      $ui.find('#modal-confirm').on('click', function(){
+        if (audioFile) {
+          // append audio into FormData object
+          var formData = new FormData();
+
+          formData.append('file', audioFile);
+          formData.append('memo', $('#np-audio-memo').val());
+          formData.append('uid', GLOBAL.get('_USERID')); //로그인 사용자 아이디에서 불러옴 ###
+          formData.append('path', GLOBAL.get('_PATH_IMG')); //설정에서 불러옴 ###
+
+          var id = self.model.get('CHARTID');
+          //var newPic = _savePatientPhoto({id:id, data:formData}, $ui);
+          //var oldPic = self.model.get('PIC');
+
+          //oldPic.push(newPic);	//사진정보 추가
+
+          //self.model.save({CHARTID:id, PIC:oldPic}, {patch: true});
+        }
+      });
+    };
+*/
   });
 
 //-----------------------------------------------------------------------------

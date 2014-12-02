@@ -3,6 +3,11 @@
 //-----------------------------------------------------------------------------
 var IMG_SIZE = 540;
 var TMB_SIZE = 54;
+
+
+//var _PATH_IMG:'D:/SOM_Photo/',  // Global.js
+var AUDIO_DIR = 'D:/SOM_AUDIO/';
+
 //-----------------------------------------------------------------------------
 // REQUIRE
 //-----------------------------------------------------------------------------
@@ -18,6 +23,10 @@ var easyimg = require('easyimage');
 //var app = express();
 //app.use(bodyParser()); // instruct the app to use the `bodyParser()` middleware for all routes
 
+
+//-----------------------------------------------------------------------------
+// 신상 사진 저장
+//-----------------------------------------------------------------------------
 var _saveFile = function(req, res) {
   /*
   //case:
@@ -105,6 +114,7 @@ var _saveFile = function(req, res) {
 							im.resize(resizeImg, function(err, stdout, stderr) {
 							  if (err) throw err
 							  fs.writeFileSync(newPath, stdout, 'binary');
+								console.log('saved file is', newPath);
 							  //console.log('resized ' + imageName + ' to fit within 256x256px')
 							});
 
@@ -215,10 +225,63 @@ var _getExtension = function(fName) {
 }
 
 
+//-----------------------------------------------------------------------------
+// 녹음 파일 저장(form data > 파일 이름 생성 > 저장)
+//-----------------------------------------------------------------------------
+var _saveAudio = function(req, res) {
 
+	var form = new formidable.IncomingForm();
+	var id = req.params.id;
+	var timeTag = dateFormat(new Date(), "yymmddHHMMss");
 
+	form.parse(req, function(err, fields, files) {
+	  //fs.readFile(files.file.path, function(err, data) {@@@
+
+ 	  //console.log(files);
+	  //console.log(files.file.name, files.file.path);
+	  //var saveDir = fields.path;
+	  console.log('file name is', files.file.name);
+
+	//console.log('save Audio File' + id);
+	  var ext = _getExtension(files.file.name);
+	  var newPath = AUDIO_DIR + id + timeTag + '.' + ext;
+	  //console.log('File is ' + files.file.name + id);
+
+		fs.readFile(files.file.path, function(err, audio) {
+			if (err) throw err;
+			console.log('saved file is', newPath);
+
+			/*
+			fs.writeFileSync(newPath, audio, 'binary');
+			*/
+			fs.writeFile(newPath, audio, 'binary', function (err) {
+			  if (err) throw err;
+			  res.send();
+			  //console.log('save Audio File' + files.file.name + id);
+			});
+
+		});
+
+	});
+
+/*
+	var id = req.params.id;
+	var timeTag = dateFormat(new Date(), "yymmddHHMMss");
+	//console.log('save Audio File' + id);
+
+		fs.readFile('d:/VC_RED.cab', function(err, audio) {
+			if (err) throw err;
+			fs.writeFile(AUDIO_DIR + id + timeTag + '.cab', audio, 'binary', function (err) {
+			  if (err) throw err;
+			  console.log('save Audio File' + id);
+			});
+
+		});
+*/
+};
 
 exports.saveFile = _saveFile;
+exports.saveAudio = _saveAudio;
 
 
 

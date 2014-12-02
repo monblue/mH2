@@ -91,7 +91,10 @@ app.get('/var1', function(req,res){console.log(test.var1)});  //ReadAll
 */
 
 //app.get('/saveFace/:id', upload.saveFile);
-app.post('/saveFace/:id', upload.saveFile);
+app.post('/saveFace/:id', upload.saveFile);	//신상 사진 저장
+
+app.post('/saveAudio/:id', upload.saveAudio);  //녹음 파일 저장
+//app.post('/saveAudio', upload.saveAudio);  //녹음 파일 저장
 
 
 
