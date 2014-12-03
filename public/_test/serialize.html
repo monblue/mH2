@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Data serialize & empty & fill Test</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+form {
+    line-height: 2em;
+}
+p {
+    margin: 5px 0;
+}
+h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold
+}
+#result {
+    margin: 10px;
+    background: #eee;
+    padding: 10px;
+    height: 40px;
+    overflow: auto;
+}
+</style>
+<body>
+<h2>Form</h2>
+<form id="frmTest">
+<!--<form action="" method="post">-->
+    First Name:<input type="text" name="Fname" maxlength="12" size="12"/> <br/>
+    Last Name:<input type="text" name="Lname" maxlength="36" size="12"/> <br/>
+    Gender:<br/>
+    Male:<input type="radio" name="gender" value="Male"/><br/>
+    Female:<input type="radio" name="gender" value="Female"/><br/>
+    Favorite Food:<br/>
+    Steak:<input type="checkbox" name="food" value="Steak"/><br/>
+    Pizza:<input type="checkbox" name="food" value="Pizza"/><br/>
+    Chicken:<input type="checkbox" name="food" value="Chicken"/><br/>
+    <textarea wrap="physical" cols="20" name="quote" rows="5">Enter your favorite quote!</textarea><br/>
+    Select a Level of Education:<br/>
+    <select name="education">
+        <option value="Jr.High">Jr.High</option>
+        <option value="HighSchool">HighSchool</option>
+        <option value="College">College</option></select><br/>
+    Select your favorite time of day:<br/>
+    <select size="3" name="Sb1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option></select>
+    <p><input type="submit" id="submitFrm" /></p>
+    <select size="3" multiple name="TofD">
+        <option value="Morning">Morning</option>
+        <option value="Day">Day</option>
+        <option value="Night">Night</option></select>
+    <p><input type="submit" id="submitFrm" /></p>
+</form>
+<button id="js-emptyEl">비우기</button>
+<button id="js-fillEl">채우기</button>
+<h2>JSON</h2>
+<pre id="result">
+</pre>
+
+<script src="../_assets/js/_lib/MH_func.js"></script>
+<script src="../_assets/js/_lib/jquery.js"></script>
+<script src="../_assets/js/_lib/underscore.js"></script>
+<script src="../_assets/js/_lib/backbone.js"></script>
+
+<script type="text/javascript">
+// Use internal $.serializeArray to get list of form elements which is consistent with $.serialize
+//
+// And to avoid names such as
+// => object["favorite-color"]
+//
+// We camelcase the name part, so the notation becomes
+// => object["favoriteColor"]
+//
+// Conveniently, this allows period notation to be used.
+// => object.favoriteColor
+//
+// This behaviour is similar to $(element).data()
+//
+// $('<div data-favorite-color="yellow"></div>').data()
+// => { favoriteColor: 'yellow' }
+$.fn.hM_serializeObject = function() {
+    var o = Object.create(null),
+        elementMapper = function(element) {
+            element.name = $.camelCase(element.name);
+            return element;
+        },
+        appendToResult = function(i, element) {
+            var node = o[element.name];
+
+            if ('undefined' != typeof node && node !== null) {
+                o[element.name] = node.push ? node.push(element.value) : [node, element.value];
+            } else {
+                o[element.name] = element.value;
+            }
+        };
+
+    $.each($.map(this.serializeArray(), elementMapper), appendToResult);
+    //return o;
+    return hM_delEmptyEl(o);
+};
+
+//json data에서 빈 요소 제거
+function hM_delEmptyEl(data) {
+	var rs = {};
+	//console.log('_delEmptyEl', data);
+	for(i in data) {
+		//console.log('_delEmptyEl', data[i]);
+		if (data[i] && data[i].length) {
+		//if (data[i]) {
+			console.log('el is not empty', i);
+			rs[i] = data[i];
+		}
+	}
+	return rs;
+}
+
+
+		//fill form data
+		function fillForm(opts) {
+			var data = opts.data;
+			var $obj = opts.obj;
+			for (i in data) {
+				console.log($obj.find("[name='" + i + "']"));
+
+				//if (typeof data[i] == ('string' || 'number')) {
+				if (typeof data[i] != 'object') {
+					var oType = $obj.find("[name='" + i + "']").prop('type');
+
+					if (oType == 'radio') {
+						$obj.find("[name='" + i + "'][value='" + data[i] + "']").prop('checked', true);  //for radio
+					} else if (oType == 'select'){
+						$obj.find("[name='" + i + "'] [value='" + data[i] + "']").prop('selected', true);  //for select
+					}
+
+					$obj.find("[name='" + i + "']").val(data[i]);	//for text, textarea
+
+				} else {  //배열(object)인 경우
+					console.log('array', i, data[i]);
+					if ($obj.find("[name='" + i + "']").first().prop('type') == 'checkbox') { //for checkbox
+						for (j in data[i]) {
+							$obj.find("[name='" + i + "'][value='" + data[i][j] + "']").prop('checked', true);
+						}
+					} else { //for select-multiple
+						for (j in data[i]) {
+							$obj.find("[name='" + i + "'] [value='" + data[i][j] + "']").prop('selected', true);
+						}
+					}
+				}
+			}
+		}
+/*
+//
+// TEST
+//
+$(function() {
+    $('form').submit(function() {
+        $('#result').text(JSON.stringify($('form').serializeObject()));
+        return false;
+    });
+});
+*/
+
+  $(document).ready(function() {
+    $('#submitFrm').on('click', function(){
+    	//var data = $('form').serializeObject();
+    	var data = $('#frmTest').hM_serializeObject();
+    	console.log('data is', $('#frmTest').serialize(), data);
+      $('#result').text(JSON.stringify(data));
+      return false;
+    });
+
+    $('#js-emptyEl').on('click', function(){
+    	console.log('emptyEl');
+    	$('#frmTest')[0].reset();	//@@@@@@@@@@
+      return false;
+    });
+
+    $('#js-fillEl').on('click', function(){
+    	console.log('fillEl');
+    	var frm = $('#frmTest');
+    	//var data = {"Fname":"문","Lname":"정삼", "gender":"Male", "food":["Steak","Pizza"],"quote":"테스트 중입니다.","education":"HighSchool","TofD":["Morning","Day","Night"],"Sb1":"1"};
+     	var data = {"Fname":"문","Lname":"정삼", "gender":"Male", "food":["Steak"],"quote":"테스트 중입니다.111","education":"College","TofD":["Morning","Night"],"Sb1":"3"};
+    	fillForm({obj:frm, data:data});
+      //return false;
+    });
+
+
+    $('#js-knowEl').on('click', function(){
+    	console.log('knowEl');
+    	var data = {}
+      return false;
+    });
+
+
+    /*
+    $("#id option").each(function() {
+    	$(this).prop('selected', true);
+		});
+
+
+		var selected_val =$.map($("input[name='d_name']:checked"),function(a){return a.value;}).join(',');
+		alert(selected_val);
+
+		$('#test').find("select option:contains('B')").filter(":selected");
+
+		$(".some_class[type=checkbox][checked]").serializeArray();
+		*/
+
+  });
+
+</script>
+</body>
+</html>

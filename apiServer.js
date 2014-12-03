@@ -170,7 +170,6 @@ app.get('/getPrmTxs/:term', chart.getPrmTxs);  //약속 치료 검색 결과 목
 //=============================================================================
 // diagnosis    //@@@@@@@@@@@@@@
 //=============================================================================
-
 app.post('/diagnosis/:id/:date', diagnosis.createDiagnosis);  //Create
 //app.get('/diagnosis/:date/:id/:user', diagnosis.createDiagnosis_);  //TEST!!!!@@@@@@@@@@
 //app.get('/diagnosis/:id', diagnosis.readAllDiagnosis);  //ReadAll

@@ -29,12 +29,15 @@ define(function (require) {
 //-----------------------------------------------------------------------------
   var headerTpl  = require('text!chart_tpl/ChartDxHeader.html');
   var bodyTpl  = require('text!chart_tpl/ChartDxBody.html');
-	var preDxTpl	= require('text!chart_tpl/ChartDx-preDx.html');
-	var firstDxTpl	= require('text!chart_tpl/ChartDx-1stDx.html');
-	var progressTpl	= require('text!chart_tpl/ChartDx-progress.html');
-	var prognosisTpl	= require('text!chart_tpl/ChartDx-prognosis.html');
-	//var bodyTpl	= require('text!chart_tpl/ChartTxBody.html');
-  //var optionsTpl = require('text!chart_tpl/ChartTx-Item-options.html');
+
+	var subTpl = {
+		'preDx': require('text!chart_tpl/ChartDx-preDx.html'),
+		'mainDx': require('text!chart_tpl/ChartDx-mainDx.html'),
+		'progress': require('text!chart_tpl/ChartDx-progress.html'),
+		'prognosis': require('text!chart_tpl/ChartDx-prognosis.html'),
+		'decision': require('text!chart_tpl/ChartDx-decision.html')
+	}
+
 ////===========================================================================
 //// private properties
 ////===========================================================================
@@ -111,74 +114,21 @@ define(function (require) {
     },
 
     events: {
-      //'click .js-showDx': 'showDx',
-      'click .js-showPreDx': 'showPreDx',
-      'click .js-show1stDx': 'show1stDx',
-      'click .js-showProgress': 'showProgress',
-      'click .js-showPrognosis': 'showPrognosis',
+      'click .js-showSub': 'showSub',
       'click .js-save': 'save',
       'click .glyphicon-folder-close': 'fold',
       'click .glyphicon-folder-open': 'unfold',
       'click .js-load': 'load',
-      //'click .js-reList': 'reList',
     },
-/*
-    showDx: function(e) {
-      //console.log('showDx....!!!!!!!!!!!');
-      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
-        $(e.target).parent().addClass('active').siblings().removeClass('active');
-        $panel.find('#chartDR_Dx').removeClass('hide').siblings('div').addClass("hide");
-      }
-    },
-*/
-    showPreDx: function(e) {
-      console.log('showPreDx....!!!!!!!!!!!');
+
+    showSub: function(e) {	//저장할 것인지 물어보도록 해야!!!@@@@
+      console.log('showDecision....!!!!!!!!!!!');
       e.preventDefault();
       e.stopPropagation();
+
       if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
         $(e.target).parent().addClass('active').siblings().removeClass('active');
-
-				$tpl = $(_.template(preDxTpl)({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
-        $('#chartDx_Dx').html($tpl);
-
-      }
-    },
-
-    show1stDx: function(e) {
-      console.log('show1stDx....!!!!!!!!!!!');
-      e.preventDefault();
-      e.stopPropagation();
-      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
-        $(e.target).parent().addClass('active').siblings().removeClass('active');
-        //$panel.find('#chartDx_Dx').removeClass('hide').siblings('div').addClass("hide");
-				$tpl = $(_.template(firstDxTpl)({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
-        $('#chartDx_Dx').html($tpl);
-      }
-    },
-
-    showProgress: function(e) {
-      console.log('showProgress....!!!!!!!!!!!');
-      e.preventDefault();
-      e.stopPropagation();
-      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
-        $(e.target).parent().addClass('active').siblings().removeClass('active');
-
-				$tpl = $(_.template(progressTpl)({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
-        $('#chartDx_Dx').html($tpl);
-
-      }
-
-    },
-
-
-    showPrognosis: function(e) {
-      console.log('showPrognosis....!!!!!!!!!!!');
-      e.preventDefault();
-      e.stopPropagation();
-      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
-        $(e.target).parent().addClass('active').siblings().removeClass('active');
-
-				$tpl = $(_.template(prognosisTpl)({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
+				$tpl = $(_.template(subTpl[$(e.target).attr('data-value')])({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
         $('#chartDx_Dx').html($tpl);
 
       }
@@ -245,23 +195,14 @@ define(function (require) {
       //$panel.find('.panel-heading').empty().append(new ChartDxHeader().render());
       $panel.find('.panel-heading').empty().append(headView.render());
       $panel.find('.panel-body').empty().append(this.$el);
+
+      this.$el.on();	//테스트중
     },
 
     changeId: function() {
-      ////console.log('chartDx rendering......');
       this.model = new ChartDx();
-      //this.model.fetch({async:false});
-
-      //this.patient = Patient.Patients.get(GLOBAL.get('_CURPTID'));  //@@@@@@@patient 변수로 지정
-
       this.render();
       headView.reRender();
-      //$panel.find('.panel-heading').empty().append(headView.render());
-
-      //console.log('this.patient', this.patient.toJSON());
-      //this.$el.find('#newJin').val(''); //신상기록 추가 textarea 비우기
-      //this.$el.find('.js-delStamp').trigger('click'); //진료기록 날짜 제거@@@
-      //this.$el.find('.js-delArea').trigger('click'); //특이사항 비우기@@@
     },
 
     render: function() {
@@ -277,84 +218,21 @@ define(function (require) {
     },
 
     events: {
-      'click #js-showOssc': 'showOssc',
-      'click #js-showJinmemo': 'showJinmemo',
-      'click #js-showRemark': 'showRemark',
-      'click .js-addStamp': 'addStamp',
-      'click .js-delStamp': 'delStamp',
-      'click .js-delArea': 'delArea',
+      'click .js-saveDxPre': 'saveDxPre',
+      'click .js-fillDxPre': 'fillDxPre',
+      'click .js-loadDxPre': 'loadDxPre',
       'click .js-saveAudio': 'saveAudio',
+      'click .js-showMainDx': 'showMainDx',
+
     },
 
-    showOssc: function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
-        $(e.target).parent().addClass('active').siblings().removeClass('active');
-        $(this.el).find('#Ossc').removeClass('hide').siblings('span').addClass("hide");
-      }
-    },
-
-    showJinmemo: function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
-        $(e.target).parent().addClass('active').siblings().removeClass('active');
-        $(this.el).find('#Jinmemo').removeClass('hide').siblings('span').addClass("hide");
-      }
-    },
-
-    showRemark: function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      if (!$(e.target).hasClass('active')) {  //parent()안 넣는 방법은??
-        $(e.target).parent().addClass('active').siblings().removeClass('active');
-        $(this.el).find('#Remark').removeClass('hide').siblings('span').addClass("hide");
-      }
-    },
-
-    addStamp: function(e) {
-      console.log('addStamp@@@');
-      e.preventDefault();
-      e.stopPropagation();
-      var $area = $(e.target).parent().next('textarea');
-      var content = hM_trim($area.val());
-      $area.val(hM_addDxStamp(content, {}));
-      /*
-      if(content) {
-        //console.log('내용이 있어요...');
-        $(this.el).find('#newJin').hM_selectRange($(this.el).find('#newJin').val().length);
-      } else {
-        //$(this.el).find('#newJin').val(hM_makeDxStamp() + '\n');
-        //$(this.el).find('#newJin').hM_selectRange(hM_makeDxStamp().length + 2);
-        $(this.el).find('#newJin').val(hM_makeDxStamp() + '\n');
-        $(this.el).find('#newJin').hM_selectRange(hM_makeDxStamp().length + 2);
-      }
-      */
-    },
-
-    delStamp: function(e) {
-      console.log('delStamp@@@');
-      e.preventDefault();
-      e.stopPropagation();
-      var $area = $(e.target).parent().next('textarea');
-      var content = hM_trim($area.val());
-      $area.val(hM_delDxStamp(content, {}));
-    },
-
-    delArea: function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      var $area = $(e.target).parent().next('textarea');
-      $area.val('');
-    },
 
     saveAudio: function(e) { //녹음 파일 저장
       console.log('saveAudio....!!!!!!!!!!!');
       e.preventDefault();
       e.stopPropagation();
 
-  		var apiUrl = 'http://192.168.0.11:3333/saveAudio/';
+  		var apiUrl = GLOBAL.get('_BASEURL') + 'saveAudio/';
   		var id = GLOBAL.get('_CURPTID');
 
 			//var fd = new FormData(document.getElementById("audio-file"));
@@ -394,47 +272,90 @@ define(function (require) {
 */
     },
 
-/*
-var fd = new FormData(document.getElementById("fileinfo"));
-fd.append("CustomField", "This is some extra data");
-$.ajax({
-  url: "stash.php",
-  type: "POST",
-  data: fd,
-  processData: false,  // tell jQuery not to process the data
-  contentType: false   // tell jQuery not to set contentType
-});
+    saveDxPre: function(e) { //예진 저장
+      console.log('saveDxPre....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
 
+  		var apiUrl = GLOBAL.get('_BASEURL') + 'diagnosis/';
+  		var id = GLOBAL.get('_CURPTID');
+  		var date = GLOBAL.get('_EDITDATE');
 
-    var _takeaudioHandler = function($ui, self) {
-      var audioFile = '';
+  		console.log('id, date', id, date);
 
-      $ui.find('#np-audio-file').on('change', function(){
-        audioFile = newFile;
-        return false;
-      });
+			var data = MH.serializeObject(this.$el.find('#frmPreDx'));
+			//console.log('serialized Data!!!! ', data.serializeArray());
+			console.log('data!!!! ', data, Object.keys(data).length);
 
-      $ui.find('#modal-confirm').on('click', function(){
-        if (audioFile) {
-          // append audio into FormData object
-          var formData = new FormData();
+			if (!id || !date || !Object.keys(data).length) {
+				alert('id, date가 없어요!!!');	//@@@@@@@
+				return false;	//id, date가 없으면 오류 발생
+			}
 
-          formData.append('file', audioFile);
-          formData.append('memo', $('#np-audio-memo').val());
-          formData.append('uid', GLOBAL.get('_USERID')); //로그인 사용자 아이디에서 불러옴 ###
-          formData.append('path', GLOBAL.get('_PATH_IMG')); //설정에서 불러옴 ###
+			data.date = date;
+			data.chartId = id;
+			data.kind = '예진';
 
-          var id = self.model.get('CHARTID');
-          //var newPic = _savePatientPhoto({id:id, data:formData}, $ui);
-          //var oldPic = self.model.get('PIC');
+			//@@@@1일 1회 초과 저장 가능하게 할 것인지?
+			//동일 날짜에 저장 data가 있는 경우는 update할 것인지...
+			//저장되면 저장 button을 inActivate 할 것인지?
 
-          //oldPic.push(newPic);	//사진정보 추가
+			$.ajax({
+        url: apiUrl + id + '/' + date,
+        type: 'POST',
+        dataType: 'json',
+			  data: data,
+        async: false,
+        cache: false,
+			});
 
-          //self.model.save({CHARTID:id, PIC:oldPic}, {patch: true});
-        }
-      });
-    };
-*/
+    },
+
+    fillDxPre: function(e) { //예진 폼 채우기
+      console.log('saveDxPre....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
+
+			var frm = this.$el.find('#frmPreDx');
+    	//var data = {"Fname":"문","Lname":"정삼", "gender":"Male", "food":["Steak","Pizza"],"quote":"테스트 중입니다.","education":"HighSchool","TofD":["Morning","Day","Night"],"Sb1":"1"};
+     	var data = {"주소증" : "허리 통증", "체중" : "56", "신장" : "156", "혈압수축" : "120", "혈압이완" : "80" };
+     	//var data = { "cc" : "요각통", "wt" : "35", "ht" : "120", "bp1" : "110", "bp2" : "78" };
+    	MH.fillForm({obj:frm, data:data});
+    },
+
+    loadDxPre: function(e) { //예진 폼 채우기
+      console.log('loadDxPre....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
+
+  		var apiUrl = GLOBAL.get('_BASEURL') + 'diagnosis/';
+  		var id = GLOBAL.get('_CURPTID');
+  		var date = GLOBAL.get('_EDITDATE');
+
+  		var self = this;
+			$.ajax({
+        url: apiUrl + id + '/' + date,
+        type: 'GET',
+      	dataType: 'json',
+      	async: false
+			})
+			.done(function (res) {
+				console.log('read data', res);
+				var frm = self.$el.find('#frmPreDx');
+      	MH.fillForm({obj:frm, data:res});
+    	});
+
+    },
+
+		showMainDx: function(e) { //show 망진
+      //console.log('showMainDx1....!!!!!!!!!!!');
+      e.preventDefault();
+      e.stopPropagation();
+      $(e.target).parent().addClass('active').siblings().removeClass('active');
+      //console.log('show', $(e.target).attr('data-target'));
+      this.$el.find($(e.target).attr('data-target')).removeClass('hide').siblings('div').addClass("hide");
+		},
+
   });
 
 //-----------------------------------------------------------------------------

@@ -1,39 +1,58 @@
 <div>
+<form id="frmPreDx">
 <div>
 <label>주소증</label>
-<textarea></textarea>
+<textarea class="dx-pre" name="주소증" id="preDx_cc"></textarea>
 </div>
 <div>
-<label>체중</label>
-<input><span>kg</span>
-<label>신장</label>
-<input><span>cm</span>
+<label>VAS</label>
+<!--<meter value="0" min="-50"  max="50">100%</meter>-->
+    <input type="range" name="points" value="5" min="0" max="10" style="width:100px;display:inline-block;" onchange="rangevalue2.value=value" />
+    <output id="rangevalue2" style="width:20px;display:inline-block;">5</output>
 </div>
 <div>
+<label id="lbWt">체격</label>
+<input class="dx-pre" name="체중" id="preDx_wt"><span>kg</span>
+<input class="dx-pre" name="신장" id="preDx_ht"><span>cm</span>
+</div>
+<div>
+<div>
+<label>복용약물</label>
+<input class="dx-pre" name="복용약물" id="preDx_dg"><span>kg</span>
+</div>
 <label>혈압</label>
-<label>수축</label><input>
-<label>이완</label><input>
-<label>박동</label><input>
+( <input class="dx-pre" name="혈압수축" id="preDx_bp1"> /
+<input class="dx-pre" name="혈압이완" id="preDx_bp2"> )
+<input class="dx-pre" name="혈압박동" id="preDx_bp3"> 회
 </div>
 <div>
-<label>혈당</label><input>
+<label>혈당</label>
+공복시 <input class="dx-pre" name="혈당" id="preDx_bg">
+아침 <input class="dx-pre" name="혈당2" id="preDx_bg">
 </div>
+</form>
+<div>
+<label>분야</label>
+<select name="category" multiple id="preDx_cat">
+	<option value="근골격">근골격</option>
+	<option value="감기">감기</option>
+	<option value="자보">자보</option>
+	<option value="내상">내상</option>
+</select>
+<label>패키지</label>
+<select name="package" multiple id="preDx_pkg">
+	<option value="다이어트">다이어트</option>
+	<option value="안면침">안면침</option>
+	<option value="비염">비염</option>
+	<option value="성장">성장</option>
+</select>
+</div>
+<button class="js-saveDxPre">DB저장</button>
+<button class="js-fillDxPre">fillForm</button>
+<button class="js-loadDxPre">loadForm</button>
+
 <form id="audio-file" enctype="multipart/form-data" method="post" name="audio-file">
 <input id="np-audio-file" name="np-audio-file" type="file" accept="audio/*;capture=microphone">
 </form>
 <button class="js-saveAudio" >저장</button>
-
-
-<!--
-<form enctype="multipart/form-data" method="post" name="fileinfo">
-  <label>Your email address:</label>
-  <input type="email" autocomplete="on" autofocus name="userid" placeholder="email" required size="32" maxlength="64" /><br />
-  <label>Custom file label:</label>
-  <input type="text" name="filelabel" size="12" maxlength="32" /><br />
-  <label>File to stash:</label>
-  <input type="file" name="file" required />
-  <input type="submit" value="Stash the file!" />
-</form>
-<div id="output"></div>
--->
 </div>

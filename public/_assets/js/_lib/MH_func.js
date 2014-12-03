@@ -38,14 +38,29 @@ function hM_today() {
   return stamp;
 }
 
+//기능: gap[millisecs] 만큼의 시간 동안 스크립트 지연
+function hM_delay(gap) {
+  var then,now;
+  then = new Date().getTime();
+  now = then;
+  while((now - then) < gap) {
+    now = new Date().getTime();
+  }
+}
 
-function hM_delay(gap) { /* gap is in millisecs */
-    var then,now;
-    then = new Date().getTime();
-    now = then;
-    while((now - then) < gap) {
-        now = new Date().getTime();
-    }
+
+//기능: json data에서 빈 요소 제거
+function hM_delEmptyEl(data) {
+	var rs = {};
+	//console.log('_delEmptyEl', data);
+	for(i in data) {
+		//console.log('_delEmptyEl', data[i]);
+		if (data[i] && data[i].length) {
+			console.log('el is not empty', i);
+			rs[i] = data[i];
+		}
+	}
+	return rs;
 }
 
 //기능: 치료기록, 신상기록 등에 '[2014-01-01 문정삼]' 생성
@@ -679,6 +694,30 @@ function mH_getBirth(jumin) {
   return vy + '-' + vm + '-' + vd;
 }
 
+/*
+	//기능: jQuery 객체의 데이터를 json 형식으로 반환
+	//용법: var data = $('#userForm').hM_serializeObject();
+	$.fn.hM_serializeObject = function() {
+	    var o = Object.create(null),
+	        elementMapper = function(element) {
+	            element.name = $.camelCase(element.name);
+	            return element;
+	        },
+	        appendToResult = function(i, element) {
+	            var node = o[element.name];
+
+	            if ('undefined' != typeof node && node !== null) {
+	                o[element.name] = node.push ? node.push(element.value) : [node, element.value];
+	            } else {
+	                o[element.name] = element.value;
+	            }
+	        };
+
+	    $.each($.map(this.serializeArray(), elementMapper), appendToResult);
+	    //return o;
+	    return hM_delEmptyEl(o);
+	};
+*/
 /*
 //기능: $obj에 대해서 togClass1, togClass2 class를 toggle
 $.fn.hM_toggleIcon = function(togClass1, togClass2) {

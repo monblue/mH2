@@ -152,6 +152,79 @@ define(function (require) {
       return picked;
     },
 
+
+		//기능: jQuery 객체의 데이터를 json 형식으로 반환
+		//용법: var data = MH.serializeObject($('#userForm'));
+		//용법(not use it!!): var data = $('#userForm').serializeObject();
+		serializeObject: function($obj) {
+	    var o = Object.create(null),
+	        elementMapper = function(element) {
+	            element.name = $.camelCase(element.name);	//@@@??
+	            return element;
+	        },
+	        appendToResult = function(i, element) {
+	            var node = o[element.name];
+
+	            if ('undefined' != typeof node && node !== null) {
+	                o[element.name] = node.push ? node.push(element.value) : [node, element.value];
+	            } else {
+	                o[element.name] = element.value;
+	            }
+	        };
+
+	    $.each($.map($obj.serializeArray(), elementMapper), appendToResult);
+	    //return o;
+	    return hM_delEmptyEl(o);
+		},
+
+		//기능: clear form data
+		emptyForm: function($obj) {
+			/*
+			//$(':input','#myform')
+			$($obj)
+			 .not(':button, :submit, :reset, :hidden')
+			 .val('')
+			 .removeAttr('checked')
+			 .removeAttr('selected');
+			*/
+			$($obj)[0].reset();
+		},
+
+		//기능: fill form data
+		fillForm: function(opts) {
+			var data = opts.data;
+			var $obj = opts.obj;
+			$($obj)[0].reset();
+
+			for (var i in data) {
+				console.log($obj.find("[name='" + i + "']"));
+
+				//if (typeof data[i] == ('string' || 'number')) {
+				if (typeof data[i] != 'object') {
+					var oType = $obj.find("[name='" + i + "']").prop('type');
+
+					if (oType == 'radio') {
+						$obj.find("[name='" + i + "'][value='" + data[i] + "']").prop('checked', true);  //for radio
+					} else if (oType == 'select'){
+						$obj.find("[name='" + i + "'] [value='" + data[i] + "']").prop('selected', true);  //for select
+					}
+
+					$obj.find("[name='" + i + "']").val(data[i]);	//for text, textarea
+
+				} else {  //배열(object)인 경우
+					console.log('array', i, data[i]);
+					if ($obj.find("[name='" + i + "']").first().prop('type') == 'checkbox') { //for checkbox
+						for (var j in data[i]) {
+							$obj.find("[name='" + i + "'][value='" + data[i][j] + "']").prop('checked', true);
+						}
+					} else { //for select-multiple
+						for (var j in data[i]) {
+							$obj.find("[name='" + i + "'] [value='" + data[i][j] + "']").prop('selected', true);
+						}
+					}
+				}
+			}
+		},
 //-----------------------------------------------------------------------------
 // cookie
 //-----------------------------------------------------------------------------
@@ -428,3 +501,62 @@ define(function (require) {
 */
 
 });
+
+
+
+
+/*
+//기능: jQuery 객체의 데이터를 json 형식으로 반환
+//용법: var data = $('#userForm').hM_serializeObject();
+$.fn.hM_serializeObject2 = function() {
+  var arrayData, objectData;
+  arrayData = this.serializeArray();
+  console.log('this', this);
+  console.log('arrayData', arrayData);
+  objectData = {};
+
+  $.each(arrayData, function() {
+    var value;
+    if (this.value != null) {
+      value = this.value;
+    } else {
+      value = '';
+    }
+    if (objectData[this.name] != null) {
+      if (!objectData[this.name].push) {
+        objectData[this.name] = [objectData[this.name]];
+      }
+      objectData[this.name].push(value);
+    } else {
+      objectData[this.name] = value;
+    }
+  });
+
+	return objectData;
+};
+
+
+
+	//기능: jQuery 객체의 데이터를 json 형식으로 반환
+	//용법: var data = $('#userForm').hM_serializeObject();
+	$.fn.hM_serializeObject: function() {
+	    var o = Object.create(null),
+	        elementMapper = function(element) {
+	            element.name = $.camelCase(element.name);
+	            return element;
+	        },
+	        appendToResult = function(i, element) {
+	            var node = o[element.name];
+
+	            if ('undefined' != typeof node && node !== null) {
+	                o[element.name] = node.push ? node.push(element.value) : [node, element.value];
+	            } else {
+	                o[element.name] = element.value;
+	            }
+	        };
+
+	    $.each($.map(this.serializeArray(), elementMapper), appendToResult);
+	    //return o;
+	    return hM_delEmptyEl(o);
+	},
+*/
