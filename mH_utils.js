@@ -87,7 +87,13 @@ exports.mgReadFieldsRs = function(opts, cb) {
 exports.mgUpdateRs = function(opts, cb) {
   var filter = opts.filter || {};  //filter = {"date":date, "id":id}
   mgdb.collection(opts.col, function(err, collection) {
+  	/*
+  	//@@@@ opts.body에 없는 field들은 없어져 버림!!!!
     collection.update(filter, opts.body, {safe:true}, function(err, rs) {
+      cb(err, rs);
+    });
+		*/
+    collection.update(filter, { $set: opts.body }, {safe:true}, function(err, rs) {
       cb(err, rs);
     });
   });

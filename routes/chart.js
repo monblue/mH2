@@ -548,7 +548,8 @@ var _createChartTxs = function(req, res) {
 
             if (mommId.substr(1, 1) == 'C' || momrId.substr(1, 1) == 'G') {
                 gubun = 6;
-                momrId = str_replace('`', '', mommId);  //없애도 되는지 테스트@@@@@@@@@
+                momrId = mommId.replace('`', '');  //없애도 되는지 테스트@@@@@@@@@
+                //momrId = str_replace('`', '', mommId);  //없애도 되는지 테스트@@@@@@@@@
             } else {
                 gubun = 5;
             }

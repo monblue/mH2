@@ -63,37 +63,6 @@ define(function (require) {
     });
   };
 
-/**
- * Ajax : get ServerIP
- * @caution: NOT YET So Slow!!!
- * @param
- * @return
- */
-
-/*
-  function _getServerIp() {
-    var ips = [
-      '192.168.0.2','192.168.0.3','192.168.0.4','192.168.0.5','192.168.0.6',
-      '192.168.0.7','192.168.0.8','192.168.0.9','192.168.0.10','192.168.0.11',
-      '192.168.0.12','192.168.0.13','192.168.0.14','192.168.0.15','192.168.0.16'
-    ];
-
-    for (var ip in ips) {
-      ////console.log('url is ', 'http://' + ips[ip] + '/mH/API/list/hereIs');
-
-      $.ajax({
-        dataType: 'json',
-        async: false,
-        url: 'http://' + ips[ip]+ '/mH/API/list/hereIam',
-        success: function() {
-           //console.log( 'Here I am',  ips[ip]);
-           return;  //!!!for loop가 종료되지 않음
-        }
-      });
-
-    }
-  };
-*/
 ////===========================================================================
 //// OBJECTS
 ////===========================================================================
@@ -122,10 +91,7 @@ define(function (require) {
       //실행하지 않아도 되는 경우는?
       var date = date || MH.getToday();
       GLOBAL.set('_LISTDATE', date);
-      console.log('chart initialize ', date);
-      //Backbone.history.navigate('L' + date);
-      //_createPatientTable(GLOBAL.get('_LISTDATE'));
-      //_createPatientTable(date);
+      //console.log('chart initialize ', date);
 
       ////@@layout render
       ShellView.render();
@@ -154,15 +120,17 @@ define(function (require) {
 
     },
 
+/*
     login: function() {
       //$('#testArea').html(new TestView().render().el);
       ////console.log('testArea el: ', new TestView().render().el);
     },
-
+*/
 
     //refDate가 undefined인 경우는???@@@@@@@@@
     chart: function(date, id, refDate) {
-      console.log('chart initialize ', date);
+      //console.log('chart initialize ', date);
+/*
       GLOBAL.set('_LISTDATE', date);
       if (id) {
         console.log('_CURPTID is changed', GLOBAL.previousAttributes());
@@ -174,10 +142,6 @@ define(function (require) {
         //@@@@@header부분 empty
         ShellView.fillHeaderInfo('');
         GLOBAL.set({_CURPTID:''});
-        //chart부분 empty
-        //ChartRcView.bodyView.();
-        //ChartIxView.bodyView.blankIxs();
-        //ChartTxView.bodyView.preRender();
       }
 
       console.log('mH-ibtn reactivate');
@@ -188,7 +152,7 @@ define(function (require) {
         console.log('iconButton clicked');
         $(e.target).children('i').trigger('click');
       });
-
+*/
       //setInverval!!!!!!!
       //var reload = setInterval(function() {GLOBAL.trigger('change:_LISTDATE'); }, 60000);
 

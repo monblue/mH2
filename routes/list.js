@@ -25,7 +25,7 @@ var _createPatient = function(req, res) {
   };
 */
   _createPatientMSQue(opts, function(que){
-    console.log(que);
+    //console.log(que);
     mH_utils.msQueryRs({"que":que}, function(err, rs){
       _syncAdd(opts, function(err, rs){
         mH_utils.mgReadOneRs({"filter":{"date":opts.date, "CHARTID":opts.id}, "col":'daily'}, function(err, rs){  //patient data res.send
@@ -220,6 +220,7 @@ function _addPatientMS(date, data) {
 var _readAllPatientsMG = function(req, res) {
   var date = req.params.date || '20140723';
   mH_utils.mgReadAllRs({"filter":{"date":date}, "col":'daily'}, function(err, rs){
+    console.log('readAllPatientsMG', date, rs);
     res.send(rs);
   });
 }
@@ -306,7 +307,7 @@ var _searchPatientsMS = function(req, res) {
 
   function(err, results) {
     //console.log(arguments);
-    console.log(results);
+    //console.log(results);
     res.send(results);
     //cb(err, results);
   });
@@ -338,9 +339,9 @@ var _syncPatientsMSMG = function(req, res) {
   async.parallel([
     function(callback) {
       var que = _readPatientsMSQue({"date":date, "type":'sync'});
-      console.log(que);
       mH_utils.msQueryRs({"que":que}, function(err, rs){
         callback(null, rs);
+        //console.log('MS Data', rs);
       });
     },
 
@@ -348,6 +349,7 @@ var _syncPatientsMSMG = function(req, res) {
       var fields = { CHARTID: 1, KSTATE: 1, LAST: 1, LAST2: 1, BNUM: 1, BTIME: 1, BONBU: 1, TOTAL: 1, BIBO: 1, ORDER1: 1, _id: 0 };
       mH_utils.mgReadFieldsRs({"filter":{"date":date}, "fields":fields, "col":'daily'}, function(err, rs){
         //console.log('_readAllPatientsMG with callback', rs);
+        console.log('mongo Data1', rs);
         callback(null, rs);
       });
     }
@@ -355,19 +357,19 @@ var _syncPatientsMSMG = function(req, res) {
 
   // 모든 task를 끝내고, 아래 callback으로 에러와 배열인자가 전달됩니다.
   function(err, results) {
-    console.log(results[0], results[1]);
+    console.log('MS Data', results[0], 'mongo Data', results[1]);
     mH_utils.compareJsonArr({"a":results[0], "b":results[1], "key":"CHARTID"}, function(updated) {
 
       if (updated.num) {
-        console.log('MSData is updated!!! update event will be triggered!!!');
+        //console.log('MSData is updated!!! update event will be triggered!!!', updated);
 
         //환자 추가
         var added = updated.add;
         if (added.length) {
-          console.log('added array', added);
+          //console.log('added array', added);
 
           for(i in added) {
-            //@@@@@ id로 상세 환자정보 얻어내고 mongodb에 insert
+            //@@@@@@reload시 2번째 reload를 시켜야 추가된 환자가 UI에 적용됨
             //_syncAdd({"id":added[i].CHARTID, "date":date, "res":res}, function(err, rs) {
             _syncAdd({"id":added[i].CHARTID, "date":date}, function(err, rs) {
               //res.send(rs); //@@@@@@@@@@Can't set headers after they are sent.
@@ -383,7 +385,8 @@ var _syncPatientsMSMG = function(req, res) {
           for(i in upded) {
             //@@@@@ 해당 id의 환자 mongodb update
             //_updatePatientMG;
-            mH_utils.mgUpdateRs({"body":upded[i], "filter":{"date":date, "CHARTID":upded[i].CHARTID}, "col":'daily'}, function(err, rs){
+            mH_utils.mgUpdateRs({"body":upded[i], "filter":{"date":date, "CHARTID":upded[i].CHARTID}, "col":'daily'}, function(err, rs) {
+            	//console.log('mongodb updated', date, upded[i]);
               //res.send(rs); //@@@@@@@@@@Can't set headers after they are sent.
             });
           }
@@ -392,7 +395,7 @@ var _syncPatientsMSMG = function(req, res) {
         //환자 삭제
         var deled = updated.del;
         if (deled.length) {
-          console.log('deled array', deled);
+          //console.log('deled array', deled);
 
           for(i in deled) {
             //@@@@@ 해당 id의 환자 mongodb delete
@@ -402,9 +405,10 @@ var _syncPatientsMSMG = function(req, res) {
             });
           }
         }
-        res.end('sync success!!!');
+
+        res.send(true);
       } else {
-        res.end('MSData is not updated!!!');
+        res.send(false);
         //console.log('MSData is not updated!!!');
       }
 
@@ -453,7 +457,7 @@ var _saveTimer = function(req, res) {
   //}
 
   mH_utils.mgPatchRs({"body":{"TIMER":strTimer}, "filter":{"date":date, "CHARTID":id}, "col":'daily'}, function(err, rs){
-    console.log();
+    //console.log();
     res.end();
     //res.send(rs);
   });
@@ -541,7 +545,7 @@ var _syncAdd = function(opts, cb) {
 
   function(err, results) {
     //console.log(arguments);
-    console.log(results);
+    //console.log(results);
     cb(err, results);
   });
 
@@ -560,7 +564,7 @@ var _patchPatientMS = function(opts, cb) {
   var que = patch.que;
   var patient = patch.obj;
 
-  console.log(que);
+  //console.log(que);
 
   mH_utils.msQueryRs({"que":que}, function(err, rs){
     cb(patient);
@@ -694,7 +698,7 @@ var _searchPatientsMSQue = function(opts) {
   var tel = opts.data.tel;
   var jumin = opts.data.jumin;
 
-  console.log('searchPatientsMSQue', opts.data.name);
+  //console.log('searchPatientsMSQue', opts.data.name);
 
   //where 구문
   var where = ' WHERE ';
@@ -797,13 +801,13 @@ exports.patchPatient = function(req, res) {
 
   if (data.BNUM || data.KSTATE || data.ORDER1) {  //MSSQL도 update!!!
     _patchPatientMS({date:date, id:id, data:data}, function(rs){
-      console.log('_patchPatientMS', rs);
+      //console.log('_patchPatientMS', rs);
       res.send(rs);
       //mongodb update(patch)
     });
   } else {  //mongodb만 update
     mH_utils.mgPatchRs({"body":data, "filter":{"date":date, "CHARTID":id}, "col":'daily'}, function(err, rs){
-      console.log();
+      //console.log();
       res.end();
       //res.send(rs);
     });

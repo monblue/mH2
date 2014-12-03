@@ -14,13 +14,7 @@ require.config({
         share_tpl: '../../tpl/_share',
         UI_tpl: '../../tpl/_UI'
     },
-/*
-    map: {
-        '*': {
-            //'app/models/employee': 'app/models/memory/employee'
-        }
-    },
-*/
+
     shim: {
         'backbone.collectionsubset': {
             deps: ['underscore', 'jquery', 'backbone'],
@@ -35,19 +29,28 @@ require.config({
         },
         'bootstrap': {
             deps: ['jquery'],
-            //exports: 'Backbone'
         },
         'bootstrap-modal': {
             deps: ['jquery'],
-            //exports: 'Backbone'
         },
     }
 });
 
 require(['jquery', 'backbone', 'bootstrap', 'MH_utils', 'share/Global', 'list/router'], function ($, Backbone, bootstrap, MH, GLOBAL, Router) {
+    var date = GLOBAL.get('_LISTDATE') || '';
+
+    if (!date || !date.length) {
+      date = MH.getToday();
+    	GLOBAL.setListDate(date);
+    }
+
+    var app = new Router();
+    Backbone.history.start();
+
+/*
     date = MH.getToday();
     GLOBAL.setListDate(date);
     var app = new Router();
     Backbone.history.start();
-
+*/
 });

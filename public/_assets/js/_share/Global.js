@@ -36,7 +36,8 @@ define(function (require) {
       _EDITDATE:'',   //차트 편집일
       _REFDATE:'',  //차트 참고일
       //_BASEURL:'http://192.168.0.11/mH/', //API base url
-      _BASEURL:'http://192.168.0.11:3333/', //API base url
+      //_BASEURL:'http://192.168.0.11:3333/', //내부ip API base url
+      _BASEURL:'http://monwater.iptime.org:3333', //원격접속 API base url
       _TXSTATE:'진료대기',  //default state
       _RMSTATE:'대기', //대기(진료대기), 치료(치료대기/베드), 수납(수납대기), 완료(보험환자/일반환자)
       _TPLTAG:'WW', //

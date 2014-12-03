@@ -39,6 +39,15 @@ function hM_today() {
 }
 
 
+function hM_delay(gap) { /* gap is in millisecs */
+    var then,now;
+    then = new Date().getTime();
+    now = then;
+    while((now - then) < gap) {
+        now = new Date().getTime();
+    }
+}
+
 //기능: 치료기록, 신상기록 등에 '[2014-01-01 문정삼]' 생성
 function hM_makeRcStamp(date, doc) {
   var date = date || hM_formatDate(hM_today(), '-');
@@ -368,7 +377,7 @@ function hM_delCookie(cName) {
   document.cookie = cName + "= " + "; expires=" + expire.toGMTString() + "; path=/";
 }
 
-//@@@@@@@@@@@@@@@@
+//list에 보여지는 데이터 값 구함...
 function mH_getListUI(opts) {
   var out = {};
   var rs;
@@ -446,7 +455,7 @@ function mH_getListUI(opts) {
     	if (opts.SEX == '0') out.txtPIC = 'default0.png';
     	else out.txtPIC = 'default1.png';
     } else {
-      out.txtPIC = opts.PIC[0]['CAP_PATH'];
+      out.txtPIC = opts.PIC[opts.PIC.length - 1]['CAP_PATH'];
     }
   }
 
@@ -574,6 +583,34 @@ function mH_getListBonbu(age, jeju, bonbu) {
 
 //기능: 수납 예상액, 보험약, 비보험
 //{"total":total, "bonbu":bonbu, "chungu":chungu, "bibo":bibo, "sunab": bonbu + bibo};
+
+function mH_getPreSunab(charted) {
+  if (!charted.total) {
+    //console.log('blank json', charted);
+    return ['hide', ''];
+  } else {
+    //console.log('filled json', charted);
+    //var json = charted;
+    var txt = '';
+    //if (json.sunab) {
+      txt += '수납액: ' + hM_formatNum(charted.sunab);
+      //console.log('charted added ', txt);
+    //}
+    if (charted.EX) {
+      txt += ' // 보험약: ' + charted.EX;
+      //console.log('charted added ', txt);
+    }
+    if (charted.bibo) {
+      txt += ' // 비보험: ' + charted.bibo;
+      //console.log('charted added ', txt);
+    }
+    return ['', txt ];
+    //return ['', '수납액 '];
+    //return ['', '수납액:' + sunab + ',' + '보험약:' + ex +  ',' + '비보험:' + bibo];
+  }
+
+}
+/*
 function mH_getPreSunab(charted) {
   if (!charted.TOTAL) {
     //console.log('blank json', charted);
@@ -600,10 +637,47 @@ function mH_getPreSunab(charted) {
   }
 
 }
+*/
 
+//상세 정보 modal에 보여지는 정보
+function mH_getDetailInfo(opts) {
+  var out = {};
+  var rs;
 
+  if (opts.PIC.length > 0) {
+    out.path = opts.PIC[opts.PIC.length -1].CAP_PATH
+  } else {
+  	out.path = 'defaultPhoto1.jpg';
+  }
 
+  out.birth = mH_getBirth(opts.JUMIN);
 
+  if (opts.FIRSTDATE) {
+  	out.first = hM_formatDate(opts.FIRSTDATE, '-');
+  } else {
+  	out.first = '초진';
+  }
+
+  if (opts.LASTDATE) {
+  	out.last = hM_formatDate(opts.LASTDATE, '-');
+  } else {
+  	out.last = '초진';
+  }
+
+  return out;
+}
+
+//jumin: yymmddA 예) 6705061 (주민번호: 670506-1******)
+//from /MH_utils.js(serverSide js)
+function mH_getBirth(jumin) {
+  var v1 = Number(jumin.substr(0,2));
+  var v2 = Number(jumin.substr(6,1));
+  var vy = (v2==1 || v2==2 || v2==5 || v2==6) ? 1900 +v1 : ((v2==3 || v2==4 || v2==7 || v2==8) ? 2000 +v1 : 0);
+  var vm = Number(jumin.substr(2,2));
+  var vd = Number(jumin.substr(4,2));
+
+  return vy + '-' + vm + '-' + vd;
+}
 
 /*
 //기능: $obj에 대해서 togClass1, togClass2 class를 toggle

@@ -40,9 +40,9 @@ define(function (require) {
   var photoTpl    = require('text!list_tpl/List-takePhoto.html');
   var carouselTpl    = require('text!list_tpl/List-takePhoto-carousel.html');
 
-  var srhOuterTpl      = require('text!list_tpl/list-searchOuter.html');
-  var srhInnerTpl      = require('text!list_tpl/list-searchInner.html');
-  var moveStateTpl      = require('text!list_tpl/list-moveState.html');
+  var srhOuterTpl      = require('text!list_tpl/List-searchOuter.html');
+  var srhInnerTpl      = require('text!list_tpl/List-searchInner.html');
+  var moveStateTpl      = require('text!list_tpl/List-moveState.html');
 
 ////===========================================================================
 //// private properties
@@ -101,27 +101,9 @@ define(function (require) {
  */
   var _syncPatients = function() {
     //console.log('_syncPatients!!!!!!!!!!');
-    //_syncPatientsMSMY();
-    //_syncPatientsMYBB();
-    _syncPatientsMSMG();
-    _syncPatientsMGBB();
-  };
-
-/**
- * Ajax : Sync MYSQL -> Backbone
- * @caution:
- * @return
-
-  var _syncPatientsMYBB = function() {
-    //console.log('_syncPatientsMYBB date:', GLOBAL.get('_LISTDATE'));
-    $.ajax({
-      dataType: 'json',
-      async:false,
-      url: GLOBAL.get('_BASEURL') + 'API/list/patients/' + GLOBAL.get('_LISTDATE'),
-      success: function(res) {
-        Patient.Patients.set(res);
-      }
-    });
+    //_syncPatientsMSMG();
+    //_syncPatientsMGBB();
+    _syncPatientsMSMGBB();
   };
 
 
@@ -130,33 +112,19 @@ define(function (require) {
  * @caution:
  * @return
  */
+  //@@@@@@@@@@PIC data 변경시는???
   var _syncPatientsMGBB = function(date) {
+  	console.log('sync MG(monggodb) to BB(backbone)');
     $.ajax({
       dataType: 'json',
       async: false,
       url: GLOBAL.get('_BASEURL') + 'patients/' + GLOBAL.get('_LISTDATE'),
       success: function(res) {
       	Patient.Patients.set(res);
-        //console.log('sync MS(MSSQL) to MG(mongodb)');
+        console.log('sync MG(monggodb) to BB(backbone) success!!!');
       }
     });
   };
-
-
-/**
- * Ajax : Sync MSSQL -> MYSQL
- * @caution: setInterval
-
-  var _syncPatientsMSMY = function() {
-    //console.log('_syncPatientsMSMY date:', GLOBAL.get('_LISTDATE'));
-    $.ajax({
-      dataType: 'json',
-      async:false,
-      url: GLOBAL.get('_BASEURL') + 'API/list/syncPatientsMSMY/' + GLOBAL.get('_LISTDATE'),
-    });
-  };
- */
-
 
 /**
  * Ajax : Sync MSSQL -> mongodb
@@ -168,9 +136,52 @@ define(function (require) {
       dataType: 'json',
       async: false,
       url: GLOBAL.get('_BASEURL') + 'syncPatientsMSMG/' + GLOBAL.get('_LISTDATE'),
-      //url: GLOBAL.get('_BASEURL') + 'syncPatientsMSMG/' +'20140713',
     });
   };
+
+
+	//동기화 시에 _syncPatientsMGBB보다 _syncPatientsMSMG가 먼저 실행되어버림... @@@@@@
+  var _syncPatientsMSMGBB = function() {
+  	console.log('_syncPatientsMSMG date:!!!!!', GLOBAL.get('_LISTDATE'));
+    $.ajax({
+      dataType: 'json',
+      async: false,
+      url: GLOBAL.get('_BASEURL') + 'syncPatientsMSMG/' + GLOBAL.get('_LISTDATE')
+    })
+    .done(function (res) {
+      //if (res) {
+      	//setTimeout('',100);	//delay 100밀리초@@@@@@@@
+      	hM_delay(1000);	//강제 delay 1000밀리초@@@@@@@@
+	      _syncPatientsMGBB();
+      	console.log('sync MG(monggodb) to BB(backbone) delayed true', res);
+      //}
+    })
+    .fail(function () {
+        console.log('sync MG(monggodb) to BB(backbone) false');
+        //_syncPatientsMGBB();
+        //    + photoFile.name + ' !' );
+        return false;
+    });
+/*
+    .done(function (res) {
+      //_syncPatientsMGBB();
+      console.log('sync MG(monggodb) to BB(backbone)', res);
+
+	    $.ajax({
+	      dataType: 'json',
+	      async: false,
+	      url: GLOBAL.get('_BASEURL') + 'syncPatientsMSMG/' + GLOBAL.get('_LISTDATE'),
+	    });
+
+    })
+    .fail(function () {
+        //console.log('Error! An error occurred while uploading ');
+        //    + photoFile.name + ' !' );
+        return false;
+    });
+*/
+  };
+
 
 /**
  * setInverval / clearInterval
@@ -415,10 +426,17 @@ define(function (require) {
           var id = self.model.get('CHARTID');
           var newPic = _savePatientPhoto({id:id, data:formData}, $ui);
           var oldPic = self.model.get('PIC');
+          console.log(oldPic);	//testing@@@@
 
           oldPic.push(newPic);	//사진정보 추가
 
-          self.model.save({CHARTID:id, PIC:oldPic}, {patch: true});
+          self.model.save({CHARTID:id, PIC:oldPic}, {patch:true, wait: true});
+          //self.model.save({CHARTID:id, PIC:oldPic}, {patch:true});
+          //setTimeout('', 2000);
+          hM_delay(500);  //강제 delay 500밀리초
+          self.model.trigger('change:PIC');	//@@@
+          console.log('change PIC triggered', newPic);	//testing@@@@
+          //@@@@@@@@@사진 변경이 즉시 반영되도록!!!!!!@@@@@@@@@@@@
         }
       });
     };
@@ -715,6 +733,7 @@ define(function (require) {
       this.listenTo(GLOBAL, 'change:_LISTDATE', this.reList);
       this.listenTo(GLOBAL, 'change:_RUNTIME', this.runtime);
       this.listenTo(Patient.Patients, 'add', this.showStateNum);
+      //this.listenTo(Patient.Patients, 'change', this.showStateNum);
       this.listenTo(Patient.Patients, 'remove', this.showStateNum);
       //!!!현재 UI state와 비교... 동일한 경우 UI 삭제/추가
       this.listenTo(Patient.Patients, 'change:KSTATE', this.showStateNum);
@@ -766,7 +785,7 @@ define(function (require) {
  * @caution: //@@listenTo로 호출된 경우-Uncaught TypeError: Cannot read property 'preventDefault' of undefined
  */
     reList: function(e) {
-      //console.log('reList is called');
+      console.log('reList is called');
       if (e) {
         //e.stopPropagation();
       }
@@ -775,17 +794,7 @@ define(function (require) {
         e.preventDefault();
         e.stopPropagation();
       }
-      /*
-      if (e && !e.type) {
-        //console.log('e', e, e.type);
-        //e.preventDefault();
-        e.stopPropagation();
-      }
-      if (e && e.type) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-      */
+
       _syncPatients();
     },
 
@@ -941,12 +950,15 @@ define(function (require) {
     initialize: function() {
       //this.listenTo(this.model, 'change', this.render);
       this.listenTo(GLOBAL, 'change:_SAVEDTX', this.render);	//@@@확인요('수' 마크 때문에 추가했으나, 없어도 됐었음)
-      this.listenTo(this.model, 'change', this.changeModel);
+      //this.listenTo(this.model, 'change:PIC', this.changeModel);
+      this.listenTo(this.model, 'change:PIC', this.changeModel);
       this.listenTo(this.model, 'destroy', this.close);
     },
 
     changeModel: function() {
-      //console.log('model changed', this.model.toJSON());
+    	setTimeout('', 1000);
+    	this.render();	//@@@@@@@@
+      console.log('model PIC changed', this.model.toJSON());
     },
 
     render: function() {
@@ -1005,7 +1017,17 @@ define(function (require) {
     showChart: function() {
       //LASTDATE, @@@차팅 되었는지 표시....
       //초진의 경우 오늘날짜로 LASTDATE 설정@@@@@@@@
-      //var refDate = this.model.get('LASTDATE') || GLOBAL.get('_LISTDATE');
+      var refDate = this.model.get('LASTDATE') || GLOBAL.get('_LISTDATE');
+
+      GLOBAL.set({_CURPTID:this.model.get('CHARTID'),
+            _REFDATE:refDate,
+            _EDITDATE:GLOBAL.get('_LISTDATE')});
+
+      console.log('showChart', GLOBAL.get('_CURPTID'), GLOBAL.get('_REFDATE'), GLOBAL.get('_EDITDATE'));
+
+      this.$el.siblings().removeClass('active');
+      this.$el.addClass('active');
+/*
 
       if (!this.model.get('LASTDATE')) {
         this.model.set('LASTDATE', GLOBAL.get('_LISTDATE'));
@@ -1015,23 +1037,19 @@ define(function (require) {
       var urlTail = 'L' + GLOBAL.get('_LISTDATE') + '/C' + this.model.get('CHARTID') + '/R' + this.model.get('LASTDATE');
 
       Backbone.history.navigate(urlTail, {trigger: true})
-      //document.location.replace(arrUrl[0] + '#L' + date);
-      //Backbone.history.navigate(urlTail);
-      //app.navigate('L' + GLOBAL.get('_LISTDATE') + '/C' + this.model.get('CHARTID') + '/R' + this.model.get('LASTDATE'));
-/*
-      GLOBAL.set({_CURPTID:this.model.get('CHARTID'),
-            _REFDATE:this.model.get('LASTDATE'),
-            _EDITDATE:GLOBAL.get('_LISTDATE')});
-*/
       this.$el.siblings().removeClass('active');
       this.$el.addClass('active');
+*/
     },
 
 /**
  * showDetail
  * @caution:
  */
-    showDetail: function() {
+    showDetail: function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      console.log(this.model.toJSON());
       $modal = MH.modal({title:'상세 정보', body:_.template(detailTpl)(this.model.toJSON())});
     },
 

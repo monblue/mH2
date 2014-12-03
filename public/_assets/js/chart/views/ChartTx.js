@@ -34,7 +34,7 @@ define(function (require) {
 	var subBIGO5Tpl	= require('text!chart_tpl/ChartTx-subBIGO5.html');
 	var subBIGO2Tpl	= require('text!chart_tpl/ChartTx-subBIGO2.html');
 	var curTxsTpl	= require('text!chart_tpl/ChartTx-curTxs.html');
-	var prmAcusTpl	= require('text!chart_tpl/ChartTx-prmAcus.html');
+	var prmAcusTpl	= require('text!chart_tpl/ChartTx-PrmAcus.html');
   var prmTxsTpl  = require('text!chart_tpl/ChartTx-PrmTxs.html');
 	var selAcuTpl	= require('text!chart_tpl/ChartTx-selAcu.html');
 
