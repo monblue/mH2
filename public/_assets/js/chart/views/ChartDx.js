@@ -31,11 +31,20 @@ define(function (require) {
   var bodyTpl  = require('text!chart_tpl/ChartDxBody.html');
 
 	var subTpl = {
-		'preDx': require('text!chart_tpl/ChartDx-preDx.html'),
-		'mainDx': require('text!chart_tpl/ChartDx-mainDx.html'),
-		'progress': require('text!chart_tpl/ChartDx-progress.html'),
-		'prognosis': require('text!chart_tpl/ChartDx-prognosis.html'),
-		'decision': require('text!chart_tpl/ChartDx-decision.html')
+		'preDx': require('text!chart_tpl/diagnosis/ChartDx-preDx.html'),
+		'mainDx': require('text!chart_tpl/diagnosis/ChartDx-mainDx.html'),
+		'progress': require('text!chart_tpl/diagnosis/ChartDx-progress.html'),
+		'prognosis': require('text!chart_tpl/diagnosis/ChartDx-prognosis.html'),
+		'decision': require('text!chart_tpl/diagnosis/ChartDx-decision.html'),
+		'manual': require('text!chart_tpl/manual/ChartDx-manual.html'),
+		'manualMb': require('text!chart_tpl/manual/ChartDx-manual-근골.html'),
+		'manualCd': require('text!chart_tpl/manual/ChartDx-manual-감기.html'),
+		'manualNn': require('text!chart_tpl/manual/ChartDx-manual-내상.html'),
+		'manualMb01': require('text!chart_tpl/manual/ChartDx-manual-근골-요통.html'),
+		'manualMb02': require('text!chart_tpl/manual/ChartDx-manual-근골-슬통.html'),
+		'manualMb03': require('text!chart_tpl/manual/ChartDx-manual-근골-견통.html'),
+		'manualMb04': require('text!chart_tpl/manual/ChartDx-manual-근골-항강.html'),
+		'manualMb05': require('text!chart_tpl/manual/ChartDx-manual-근골-염좌.html'),
 	}
 
 ////===========================================================================
@@ -119,6 +128,7 @@ define(function (require) {
       'click .glyphicon-folder-close': 'fold',
       'click .glyphicon-folder-open': 'unfold',
       'click .js-load': 'load',
+      'click .js-loadHtml': 'loadHtml',
     },
 
     showSub: function(e) {	//저장할 것인지 물어보도록 해야!!!@@@@
@@ -173,6 +183,16 @@ define(function (require) {
     },
 
 
+		loadHtml: function(e) {
+      console.log('showDxManual....!!!!!!!!!!!', 'manual' + $(e.target).val());
+      e.preventDefault();
+      e.stopPropagation();
+
+      var url = $(e.target).attr('data-url');
+      var obj = $(e.target).attr('data-obj');
+			$(obj).load(url);
+		},
+
   });
 
 //-----------------------------------------------------------------------------
@@ -223,6 +243,8 @@ define(function (require) {
       'click .js-loadDxPre': 'loadDxPre',
       'click .js-saveAudio': 'saveAudio',
       'click .js-showMainDx': 'showMainDx',
+      'change #js-dxManual': 'showDxManual',
+      'change #js-dxManual2': 'showDxManual2'
 
     },
 
@@ -355,6 +377,29 @@ define(function (require) {
       //console.log('show', $(e.target).attr('data-target'));
       this.$el.find($(e.target).attr('data-target')).removeClass('hide').siblings('div').addClass("hide");
 		},
+
+		showDxManual: function(e) {
+      console.log('showDxManual....!!!!!!!!!!!', 'manual' + $(e.target).val());
+      e.preventDefault();
+      e.stopPropagation();
+
+      //$(e.target).parent().addClass('active').siblings().removeClass('active');
+			$tpl = $(_.template(subTpl['manual' + $(e.target).val()])({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
+			console.log('tpl', $tpl);
+      this.$el.find('#cont-dxManual').empty().append($tpl);
+		},
+
+		showDxManual2: function(e) {
+      console.log('showDxManual....!!!!!!!!!!!', 'manual' + $(e.target).val());
+      e.preventDefault();
+      e.stopPropagation();
+
+      //$(e.target).parent().addClass('active').siblings().removeClass('active');
+			$tpl = $(_.template(subTpl['manual' + $(e.target).val()])({}));	//@@@@@@@@@@@@ data에 따른 변경 가능하도록!!!
+			console.log('tpl', $tpl);
+      this.$el.find('#cont-dxManual2').empty().append($tpl);
+		},
+
 
   });
 

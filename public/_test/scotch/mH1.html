@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head> <!-- s: head -->
+  	<meta charset="utf-8">
+  	<title>Scotch Panels ♥ jQuery Off Canvas Menus and Panels Plugin</title>
+<!--
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://scotch.io/favicon.ico">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <link rel="stylesheet" href="test/style.css">
+-->
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css::External::library : bootstrap -->
+  <link href="../../_assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+  <style>
+  .navbar span.text-warning {
+    color: #f00;
+	}
+	#main {
+		height:100%;
+		_overflow: scroll;
+	}
+	#list {
+		min-width: 340px;
+		max-width: 600px;
+		_height:100%;
+		_overflow: scroll;
+	}
+	li img {
+		_float: left;
+		_margin: -5px 10px -5px 0;
+		margin: -8px 0px -8px -10px;
+		border-radius: 100px;
+	}
+	li.list-group-item > span.img {
+		width:60px;
+	}
+	li.list-group-item > span.txt {
+		width:260px;
+		float: right;
+	}
+	#list_tooltip {
+		position:fixed;
+		bottom:100px;
+		background-color:#f00;
+		opacity:0.5;
+	}
+  </style>
+</head>
+<body>
+<body> <!-- s: body -->
+  <header> <!-- s: header -->
+  </header> <!-- e: header -->
+
+  <div id="main"> <!-- s: main -->
+  	<article id="list" class="col-xs-5"> <!-- s: article#list -->
+	  	<header class="navbar navbar-default navbar-static-top"> <!-- s: header -->
+	    <div class="navbar-header">
+	      <a href="#" id="offCanvas1" class="navbar-brand pull-left"><i class="glyphicon glyphicon-th-large"></i></a>
+	      <span class="navbar-text text-warning pull-left">12.05</span>
+	      <span class="navbar-text text-warning pull-left">2345</span>
+	      <span class="navbar-text badge pull-right">badge</span>
+	    </div>
+	    </header>
+	    <div class="content">
+			<ul class="list-group">
+			  <li class="list-group-item">
+			  <span class="badge">14</span>
+			  Cras justo odio
+			  </li>
+			  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+			  <li class="list-group-item">
+				  <span class="img"><img src="images/000.jpg"></span>
+				  <span class="txt pull-right">Morbi leo risus Morbi leo risus Morbi leo risus Morbi leo risus</span>
+				  <span class="label label-success">123</span>
+			  </li>
+			  <li class="list-group-item list-group-item-warning">
+			  <span class="badge">9</span>
+			  Porta ac consectetur ac
+			  <a class="listTooltip">tt</a>
+			  </li>
+			  <li class="list-group-item active">
+			  <table>
+			  	<tr>
+			  		<td><img src="images/001.jpg"></td>
+			  		<td>
+				  <h4 class="list-group-item-heading">List group item heading</h4>
+				  <p class="list-group-item-text">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component</p>
+				  <a class="listTooltip">tt</a>
+				  </td>
+				 		<td>
+				 			<span class="badge">9</span>
+				 			<span class="caret"></span>
+				 		</td>
+			  	</tr>
+			  </table>
+			  <!--
+			  	<span class="img">
+			  	<img src="images/001.jpg">
+			  	</span>
+			  	<span class="txt">
+				  <h4 class="list-group-item-heading">List group item heading</h4>
+				  <p class="list-group-item-text">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component</p>
+				  </span>
+				  -->
+			  </li>
+
+
+
+			  <li class="list-group-item">
+			  <span class="badge">14</span>
+			  Cras justo odio
+			  </li>
+			  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+			  <li class="list-group-item">
+				  <span class="img"><img src="images/000.jpg"></span>
+				  <span class="txt pull-right">Morbi leo risus Morbi leo risus Morbi leo risus Morbi leo risus</span>
+				  <span class="label label-success">123</span>
+			  </li>
+			  <li class="list-group-item list-group-item-warning">
+			  <span class="badge">9</span>
+			  Porta ac consectetur ac
+			  <a class="listTooltip">tt</a>
+			  </li>
+			  <li class="list-group-item active">
+			  <table>
+			  	<tr>
+			  		<td><img src="images/001.jpg"></td>
+			  		<td>
+				  <h4 class="list-group-item-heading">List group item heading</h4>
+				  <p class="list-group-item-text">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component</p>
+				  <a class="listTooltip">tt</a>
+				  </td>
+				 		<td>
+				 			<span class="badge">9</span>
+				 			<span class="caret"></span>
+				 		</td>
+			  	</tr>
+			  </table>
+			  <!--
+			  	<span class="img">
+			  	<img src="images/001.jpg">
+			  	</span>
+			  	<span class="txt">
+				  <h4 class="list-group-item-heading">List group item heading</h4>
+				  <p class="list-group-item-text">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component</p>
+				  </span>
+				  -->
+			  </li>
+
+
+
+			  <li class="list-group-item">
+			  <span class="badge">14</span>
+			  Cras justo odio
+			  </li>
+			  <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+			  <li class="list-group-item">
+				  <span class="img"><img src="images/000.jpg"></span>
+				  <span class="txt pull-right">Morbi leo risus Morbi leo risus Morbi leo risus Morbi leo risus</span>
+				  <span class="label label-success">123</span>
+			  </li>
+			  <li class="list-group-item list-group-item-warning">
+			  <span class="badge">9</span>
+			  Porta ac consectetur ac
+			  <a class="listTooltip">tt</a>
+			  </li>
+			  <li class="list-group-item active">
+			  <table>
+			  	<tr>
+			  		<td><img src="images/001.jpg"></td>
+			  		<td>
+				  <h4 class="list-group-item-heading">List group item heading</h4>
+				  <p class="list-group-item-text">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component</p>
+				  <a class="listTooltip">tt</a>
+				  </td>
+				 		<td>
+				 			<span class="badge">9</span>
+				 			<span class="caret"></span>
+				 		</td>
+			  	</tr>
+			  </table>
+			  <!--
+			  	<span class="img">
+			  	<img src="images/001.jpg">
+			  	</span>
+			  	<span class="txt">
+				  <h4 class="list-group-item-heading">List group item heading</h4>
+				  <p class="list-group-item-text">While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component</p>
+				  </span>
+				  -->
+			  </li>
+			</ul>
+	  	</div>
+	  	<div id="list_tooltip">
+	  	this is tooltip
+	  	</div>
+  	</article> <!-- e: article#list -->
+  	<article id="chart" class="col-xs-7"> <!-- s: article#chart -->
+	  	<header class="navbar navbar-inverse navbar-static-top"> <!-- s: header -->
+	    <div class="navbar-header">
+	      <a href="#" id="offCanvas0" class="navbar-brand pull-left"><i class="glyphicon glyphicon-th-large"></i></a>
+	      <span class="navbar-text text-warning pull-left">12.05</span>
+	      <span class="navbar-text text-warning pull-left">2345</span>
+	      <span class="navbar-text badge pull-right">badge</span>
+	    </div>
+	    </header>
+  		<section id="chart_Dx"> <!-- s: article#chart_Dx -->
+  		This is chart_Dx<br>
+  		This is chart_Dx<br>
+  		This is chart_Dx<br>
+  		This is chart_Dx<br>
+  		This is chart_Dx<br>
+  		</section> <!-- e: article#chart_Dx -->
+
+  		<section id="chart_Rc"> <!-- s: article#chart_Rc -->
+  		This is chart_Rc<br>
+  		This is chart_Rc<br>
+  		This is chart_Rc<br>
+  		This is chart_Rc<br>
+  		This is chart_Rc<br>
+  		This is chart_Rc<br>
+  		</section> <!-- e: article#chart_Rc -->
+
+  		<section id="chart_Ix"> <!-- s: article#chart_Ix -->
+			This is chart_Ix<br>
+			This is chart_Ix<br>
+			This is chart_Ix<br>
+			This is chart_Ix<br>
+			This is chart_Ix<br>
+  		</section> <!-- e: article#chart_Ix -->
+
+  		<section id="chart_Tx"> <!-- s: article#chart_Tx -->
+			This is chart_Tx<br>
+			This is chart_Tx<br>
+			This is chart_Tx<br>
+			This is chart_Tx<br>
+			This is chart_Tx<br>
+			This is chart_Tx<br>
+  		</section> <!-- e: article#chart_Tx -->
+  	</article> <!-- e: article#list -->
+  </div> <!-- e: main -->
+
+  <footer>
+  	This is Footer
+  </footer>
+  <script src="../../_assets/js/_lib/jquery.js"></script>
+  <script src="../../_assets/js/_lib/_MH_Fns.js"></script>
+
+
+
+<!--    <script src="../_jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+-->
+    <script src="dist/scotchPanels.js"></script> <!--@@@@@@@@-->
+    <script>
+    /*
+			$(function() {
+        $('#list').scotchPanel({
+          //containerSelector: '#main',
+          containerSelector: 'body',
+          direction: 'left',
+          clickSelector: '#offCanvas0',
+          distanceX: '340px',
+        });
+
+        $('#list_tooltip').scotchPanel({
+          //containerSelector: '#main',
+          containerSelector: '#list',
+          direction: 'top',
+          clickSelector: '.listTooltip',
+        });
+
+        $('#offCanvas0').trigger('click');
+
+	      $('#offCanvas1').on('click', function(){
+	      	$('#offCanvas0').trigger('click');
+	      });
+
+
+      });
+*/
+
+
+    </script>
+
+
+</body>
+</html>

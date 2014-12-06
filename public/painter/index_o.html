@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta charset="UTF-8">
+<meta name="description" content="A simple HTML5 painting application.">
+
+<title>Painter | Caleb Evans</title>
+
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400" rel="stylesheet">
+<link href="/projects/resources/styles/css/global.css" rel="stylesheet">
+<link href="/projects/resources/images/favicon.ico" rel="shortcut icon"><link href="resources/styles/css/global.css" rel="stylesheet">
+</head>
+<body class="black" cz-shortcut-listen="true">
+
+<a class="author nav" href="/"><span class="by">by</span> Caleb Evans</a>
+
+<div id="app">
+
+	<canvas width="640" height="480" id="canvas"></canvas>
+
+	<div id="sidebar">
+
+		<h1>Painter</h1>
+
+		<div id="controls">
+			<button id="clear" class="red">Clear</button>
+			<button id="save">Save</button>
+			<button id="undo">Undo</button>
+		</div>
+		<div id="tools">
+			<button id="brush" class="tool chosen" title="Drag to paint">Brush</button>
+			<button id="path" class="tool" title="Click to make straight lines, click/hold to make curves">Path</button>
+			<button id="rect" class="tool" title="Drag to make rectangles (Shift for squares)">Rect</button>
+			<button id="ellipse" class="tool" title="Drag to make ellipses (Shift for circles)">Ellipse</button>
+			<button id="erase" class="tool" title="Drag to erase">Erase</button>
+			<!--
+			<button id='bucket' title='Click to fill'>Bucket</button>
+			-->
+		</div>
+
+		<div id="stroke-container" style="">
+			<h2>Stroke</h2>
+			<div id="slider" class="ui-slider light ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+				<div id="handle" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 49.4949494949495%;"></div>
+			</div>
+			<div id="box">
+				<div id="stroke" style="margin-top: 17.5px; width: 25px; height: 25px; background-color: rgb(51, 102, 221);"></div>
+			</div>
+		</div>
+
+		<div id="colors"><div class="color red light" style="background-color: rgb(238, 85, 85);"></div><div class="color red medium" style="background-color: rgb(204, 51, 51);"></div><div class="color red dark" style="background-color: rgb(170, 17, 17);"></div><div class="color green light" style="background-color: rgb(136, 255, 68);"></div><div class="color green medium" style="background-color: rgb(102, 221, 34);"></div><div class="color green dark" style="background-color: rgb(68, 187, 17);"></div><div class="color blue light" style="background-color: rgb(85, 136, 255);"></div><div class="color blue medium chosen" style="background-color: rgb(51, 102, 221);"></div><div class="color blue dark" style="background-color: rgb(17, 68, 187);"></div><div class="color orange light" style="background-color: rgb(255, 153, 85);"></div><div class="color orange medium" style="background-color: rgb(255, 119, 51);"></div><div class="color orange dark" style="background-color: rgb(221, 85, 17);"></div><div class="color yellow light" style="background-color: rgb(255, 255, 85);"></div><div class="color yellow medium" style="background-color: rgb(255, 238, 51);"></div><div class="color yellow dark" style="background-color: rgb(238, 221, 34);"></div><div class="color purple light" style="background-color: rgb(187, 136, 255);"></div><div class="color purple medium" style="background-color: rgb(153, 102, 255);"></div><div class="color purple dark" style="background-color: rgb(119, 85, 221);"></div><div class="color black light" style="background-color: rgb(204, 204, 204);"></div><div class="color black medium" style="background-color: rgb(102, 102, 102);"></div><div class="color black dark" style="background-color: rgb(0, 0, 0);"></div></div>
+	</div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+	if (!window.jQuery) {
+		document.write("<script src='/projects/resources/scripts/jquery/jquery.min.js'><\/script>");
+	}
+</script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script>
+	if (!window.jQuery.ui) {
+		document.write("<script src='/projects/resources/scripts/jquery/jquery-ui.min.js'><\/script>");
+	}
+</script>
+<script src="/projects/resources/scripts/jquery/jquery-ui-touch-punch.min.js"></script>
+<script src="/projects/resources/scripts/jcanvas.min.js"></script><script src="resources/tools/brush.min.js"></script>
+<script src="resources/tools/path.min.js"></script>
+<script src="resources/tools/rect.min.js"></script>
+<script src="resources/tools/ellipse.min.js"></script>
+<script src="resources/tools/eraser.min.js"></script>
+<script src="resources/tools/bucket.min.js"></script>
+<script src="resources/scripts/global.min.js"></script>
+
+</body></html>

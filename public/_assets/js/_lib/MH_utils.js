@@ -187,14 +187,14 @@ define(function (require) {
 			 .removeAttr('checked')
 			 .removeAttr('selected');
 			*/
-			$($obj)[0].reset();
+			$obj[0].reset();
 		},
 
 		//기능: fill form data
 		fillForm: function(opts) {
 			var data = opts.data;
 			var $obj = opts.obj;
-			$($obj)[0].reset();
+			$obj[0].reset();
 
 			for (var i in data) {
 				console.log($obj.find("[name='" + i + "']"));

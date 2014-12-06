@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head> <!-- s: head -->
+  	<meta charset="utf-8">
+  	<title>Scotch Panels ♥ jQuery Off Canvas Menus and Panels Plugin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://scotch.io/favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <!--<link rel="stylesheet" href="test/style.css">-->
+    <style>
+			/*==================================
+			=            SITE STUFF            =
+			==================================*/
+			a {
+			    text-decoration: none !important;
+			    -webkit-transition: all 225ms ease;
+			    -moz-transition: all 225ms ease;
+			    transition: all 225ms ease;
+			}
+			header {
+			    position: relative;
+			    background: #222;
+			    height: 50px;
+			}
+			header a {
+			    color: #777;
+			}
+			header a:hover {
+			    color: #fff;
+			}
+			header .logo {
+			    display: inline-block;
+			    height: 50px;
+			    line-height: 50px;
+			}
+			header .toggle-panel {
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			    font-size: 25px;
+			    width: 50px;
+			    height: 50px;
+			    line-height: 50px;
+			    text-align: center;
+			    background: #333;
+			}
+			article {
+			    height: 5000px;
+			}
+
+
+
+
+			/*====================================
+			=            PANEL STYLES            =
+			====================================*/
+			#scotch-panel {
+			    background: #444;;
+			}
+			#scotch-panel ul {
+			    list-style: none;
+			    padding: 0;
+			    margin: 0;
+			    text-align: center;
+			}
+			#scotch-panel ul li a {
+			    display: block;
+			    width: 100%;
+			    height: 50px;
+			    line-height: 50px;
+			    background: transparent;
+			    color: #fff;
+			}
+			#scotch-panel ul li a:hover {
+			    background: #555;
+			}
+    </style>
+
+</head>
+<body>
+
+    <div id="scotch-panel">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/" class="logo">Scotch Panels</a>
+                    <a href="#" class="toggle-panel"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Callbacks API</h1>
+                <p class="lead">Need to get real custom?</p>
+                <pre>
+                <code class="language-javascript">
+                $('#scotch-panel').scotchPanel({
+
+                    beforePanelOpen: function() {
+                        alert('Before Panel Opened');
+                    },
+                    afterPanelOpen: function() {
+                        alert('After Panel Opened');
+                    },
+                    beforePanelClose: function() {
+                        alert('Before Panel Closed');
+                    },
+                    afterPanelClose: function() {
+                        alert('After Panel Opened');
+                    },
+
+                    containerSelector: 'body',
+                    direction: 'right',
+                    clickSelector: '.toggle-panel'
+                });
+                </code>
+                </pre>
+            </div>
+        </div>
+    </article>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+    <script src="dist/scotchPanels.js"></script>
+    <!--<script src="power.js"></script>-->
+    <script>
+			$(function() {
+                $('#scotch-panel').scotchPanel({
+
+                    beforePanelOpen: function() {
+                      //alert('Before Panel Opened');
+                      $('#scotch-panel').find('a').first().text('Test');
+                    },
+                    afterPanelOpen: function() {
+                        //alert('After Panel Opened');
+                        $('#scotch-panel').find('a').last().text('Test4');
+                    },
+                    beforePanelClose: function() {
+                        //alert('Before Panel Closed');
+                        $('#scotch-panel').find('a').last().text('Test444');
+                        alert('Before Panel Closed');
+                    },
+                    afterPanelClose: function() {
+                        //alert('After Panel Opened');
+                        //$('#scotch-panel').find('a').last().text('Test4');
+                    },
+
+                    containerSelector: 'body',
+                    direction: 'right',
+                    clickSelector: '.toggle-panel'
+                });
+			});
+
+    </script>
+</body>
+</html>

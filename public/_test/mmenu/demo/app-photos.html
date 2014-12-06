@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>jQuery.mmenu - Demo</title>
+
+		<link type="text/css" rel="stylesheet" href="inc/demo.css" />
+		<link type="text/css" rel="stylesheet" href="../mmenu/css/jquery.mmenu.all.css" />
+		<style type="text/css">
+			.Header,
+			.Prev,
+			.Next
+			{
+				display: none;
+			}
+
+			#menu
+			{
+				background: #222;
+			}
+			h4
+			{
+				margin: 0 0 10px 0;
+			}
+			.thumb
+			{
+				display: block;
+				width: 30%;
+				margin: 0 2% 2% 0;
+				float: left;
+			}
+			.thumb img
+			{
+				float: left;
+				width: 100%;
+				height: auto;
+			}
+			.thumb-xs
+			{
+				vertical-align: middle;
+				display: inline-block;
+				margin: -5px 10px -5px 0;
+			}
+			.clear
+			{
+				clear: both;
+				display: block;
+				padding: 5px 0;
+				margin-bottom: 20px;
+			}
+			.large
+			{
+				width: 100%;
+				height: auto;
+			}
+			.mm-panel[id^="panel-"]:not(#panel-categories):not(#app)
+			{
+				padding-right: 0;
+			}
+		</style>
+		<style type="text/css">
+			#menu {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../mmenu/js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#menu")
+					.mmenu({
+		offCanvas	: false,
+		classes		: 'mm-black',
+		header		: {
+			add			: true,
+			update		: true,
+			title		: 'Demo app'
+		},
+		searchfield	: {
+			add			: true,
+			search		: true,
+			placeholder	: 'Search categories',
+			addTo		: '#panel-categories'
+		}
+					})
+					.on("click", "a[href=\"#\"]",
+						function() {
+							alert("Thank you for clicking, but that's a demo link.");
+							return false;
+						}
+					);
+			});
+		</script>
+	</head>
+	<body>
+		<nav id="menu">
+		<div id="app">
+			<br />
+			<p><strong>This is a demo app.</strong><br />
+				It demonstrates how you could use the jQuery.mmenu plugin for content other than a typical menu.</p>
+
+			<ul class="List">
+				<li><span>View photo's</span>
+					<div id="panel-categories">
+						<p>Open one of the categories in the list below to view the images.</p>
+						<ul class="List">
+							<li>
+								<span>
+									<img class="thumb-xs" src="http://lorempixel.com/40/40/animals/1/" />
+									Animals
+								</span>
+								<em class="Counter">8</em>
+								<div id="panel-animals">
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/animals/1/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/animals/2/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/animals/3/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/animals/4/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/animals/5/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/animals/6/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/animals/7/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/animals/8/" /></a>		
+									<!-- header info -->
+									<h3 class="Header">Animals photos</h3>
+									<a href="#panel-categories" class="Prev"></a>
+								</div>
+							</li>
+							<li>
+								<span>
+									<img class="thumb-xs" src="http://lorempixel.com/40/40/city/1/" />
+									City
+								</span>
+								<em class="Counter">7</em>
+								<div id="panel-city">
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/city/1/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/city/2/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/city/3/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/city/4/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/city/5/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/city/6/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/city/7/" /></a>		
+									<!-- header info -->
+									<h3 class="Header">City photos</h3>
+									<a href="#panel-categories" class="Prev"></a>
+								</div>
+							</li>
+							<li>
+								<span>
+									<img class="thumb-xs" src="http://lorempixel.com/40/40/fashion/1/" />
+									Fashion
+								</span>
+								<em class="Counter">9</em>
+								<div id="panel-fashion">
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/1/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/2/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/3/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/4/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/5/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/6/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/7/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/8/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/fashion/9/" /></a>		
+									<!-- header info -->
+									<h3 class="Header">Fashion photos</h3>
+									<a href="#panel-categories" class="Prev"></a>
+								</div>
+							</li>
+							<li>
+								<span>
+									<img class="thumb-xs" src="http://lorempixel.com/40/40/nature/1/" />
+									Nature
+								</span>
+								<em class="Counter">10</em>
+								<div id="panel-nature">
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/1/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/2/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/3/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/4/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/5/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/6/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/7/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/8/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/9/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/nature/10/" /></a>		
+									<!-- header info -->
+									<h3 class="Header">Nature photos</h3>
+									<a href="#panel-categories" class="Prev"></a>
+								</div>
+							</li>
+							<li>
+								<span>
+									<img class="thumb-xs" src="http://lorempixel.com/40/40/sports/1/" />
+									Sports
+								</span>
+								<em class="Counter">9</em>
+								<div id="panel-sports">
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/1/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/2/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/3/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/4/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/5/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/6/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/7/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/8/" /></a>
+									<a href="#" class="thumb"><img src="http://lorempixel.com/100/100/sports/9/" /></a>		
+									<!-- header info -->
+									<h3 class="Header">Sports photos</h3>
+									<a href="#panel-categories" class="Prev"></a>
+								</div>
+							</li>
+						</ul>
+		
+						<!-- header info -->
+						<h3 class="Header">Photos</h3>
+						<a href="#app" class="Prev"></a>
+					</div>
+				</li>					
+			</ul>
+		</div>
+		</nav>
+	</body>
+</html>
