@@ -1,0 +1,72 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+/* @media screen and (max-width: 768px) { */
+@media screen and (max-width: 1200px) {
+  .row-offcanvas {
+    position: relative;
+    background-color: #00f;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    _left: -50%;
+    _left: -300px;
+    left: -100%;
+    background-color: #0f0;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    _left: calc(1px - 100%);
+  }
+
+
+  .row-offcanvas-left.active {
+    _left: 50%;
+    _left: 300px;
+    left: 100%;
+    background-color: #f00;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    _left: calc(100% - 1px);
+  }
+
+/* 추가 */
+  .offcanvas-main.active {
+    left: -50%;
+    _left: -100%;
+    _width: 100%;
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    _width: 50%;
+    _margin-left: 12px;
+    _width: 300px;		/* 추가 by Moon @@@@@@@ */
+    _width: 100%; /* fallback if needed */
+  	_width: calc(100% - 1px);
+    min-width: 300px;		/* 추가 by Moon @@@@@@@ */
+    _max-width: 300px;		/* 추가 by Moon @@@@@@@ */
+  }
+}

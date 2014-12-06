@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="Slide and push menus that are initially hidden off screen, and transition into view with CSS transitions." />
+<title>Slide And Push Menus With CSS3 Transitions</title>
+    
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/font-awesome/font-awesome.css">
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+
+
+<body>
+
+<nav class="menu slide-menu-left">
+    <ul>
+        <li><button class="close-menu">&larr; Close</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+</nav><!-- /slide menu left -->
+
+<nav class="menu slide-menu-right">
+    <ul>
+        <li><button class="close-menu">Close &rarr;</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+</nav><!-- /slide menu right -->
+
+<nav class="menu slide-menu-top">
+    <ul>
+        <li><button class="close-menu">&uarr; Close</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+</nav><!-- /slide menu top -->
+
+<nav class="menu slide-menu-bottom">
+    <ul>
+        <li><button class="close-menu">Close &darr;</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+</nav><!-- /slide menu bottom -->
+
+<nav class="menu push-menu-left">
+    <ul>
+        <li><button class="close-menu">&larr; Close</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+</nav><!-- /push menu left -->
+
+<nav class="menu push-menu-right">
+    <ul>
+        <li><button class="close-menu">Close &rarr;</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+</nav><!-- /push menu right -->
+
+<nav class="menu push-menu-top">
+    <ul>
+        <li><button class="close-menu">&uarr; Close</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+</nav><!-- /push menu top -->
+
+<nav class="menu push-menu-bottom">
+    <ul>
+        <li><button class="close-menu">Close &darr;</button></li>
+        <li><a href="#">Broccoli</a></li>
+        <li><a href="#">Tomato</a></li>
+        <li><a href="#">Cucumber</a></li>
+        <li><a href="#">Kale</a></li>
+        <li><a href="#">Celery</a></li>
+    </ul>
+</nav><!-- /push menu bottom -->
+
+<div id="wrapper">
+
+    <div class="info-bar">
+        <div class="container">
+            <a href="http://www.callmenick.com/?p=458" class="icon fa fa-home" data-title="Back To Tutorial"></a>
+            <a href="http://callmenick.com/tutorial-demos/image-caption-reveal-on-hover/" class="icon fa fa-arrow-left" data-title="Pevious Demo"></a>
+            <!-- <a href="" class="icon fa fa-arrow-right" data-title="Next Demo"></a> -->
+            <a href="http://callmenick.com/tutorial-demos/slide-push-menus/slide-push-menus.zip" class="icon fa fa-download" data-title="Download Source"></a>
+            <a href="http://www.callmenick.com/tutorials" class="icon fa fa-folder-open" data-title="Tutorial Archives"></a>
+        </div>
+    </div><!-- /.info-bar -->
+    
+    <header>
+        <div class="branding">
+            <div class="container clearfix">
+                <div class="logo">
+                    <a href="http://www.callmenick.com">
+                        <img src="img/logo.png" alt="Call Me Nick - Tutorials, Resources, &amp; Articles for Web Design &amp; Web Development" />
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/callmenick1" target="_blank" class="fb">facebook</a>
+                    <a href="https://twitter.com/nicksalloum_" target="_blank" class="twitter">twitter</a>
+                    <a href="https://plus.google.com/115555859876227750152/" target="_blank" class="googleplus">google plus</a>
+                    <a href="http://feeds.feedburner.com/callmenick_" target="_blank" class="rss">rss</a>
+                    <a href="http://www.callmenick.com/subscribe/" class="email">email</a>
+                </div>
+            </div>
+        </div><!-- /.branding -->
+        <div class="site-title">
+            <div class="container">
+                <h1>Off Screen Menus That Transition Into View Using CSS3</h1>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="main">
+        <div class="container">
+            
+            <div class="buttons">
+                <button class="nav-toggler toggle-slide-left">Slide Menu Left</button>
+                <button class="nav-toggler toggle-slide-right">Slide Menu Right</button>
+                <button class="nav-toggler toggle-slide-top">Slide Menu Top</button>
+                <button class="nav-toggler toggle-slide-bottom">Slide Menu Bottom</button><br>
+                <button class="nav-toggler toggle-push-left">Push Menu Left</button>
+                <button class="nav-toggler toggle-push-right">Push Menu Right</button>
+                <button class="nav-toggler toggle-push-top">Push Menu Top</button>
+                <button class="nav-toggler toggle-push-bottom">Push Menu Bottom</button>
+            </div><!-- /buttons -->
+
+            <section class="content">
+                <h1>Vegetables</h1>
+
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                
+            </section>
+
+        </div>
+    </div><!-- #main -->
+
+
+    <footer>
+        <div class="container">
+            <div class="clearfix">
+                <aside>
+                    <ul>
+                        <li><a href="http://www.callmenick.com/">Welcome</a></li>
+                        <li><a href="http://www.callmenick.com/category/tutorials">Tutorials</a></li>
+                        <li><a href="http://www.callmenick.com/category/snippets">Snippets</a></li>
+                        <li><a href="http://www.callmenick.com/category/articles">Articles</a></li>
+                        <li><a href="http://www.callmenick.com/category/resources">Resources</a></li>
+                    </ul>
+                </aside>
+                <aside>
+                    <ul>
+                        <li><a href="http://www.callmenick.com/about">About</a></li>
+                        <li><a href="http://www.callmenick.com/contact">Contact</a></li>
+                        <li><a href="http://www.callmenick.com/subscribe">Subscribe</a></li>
+                    </ul>
+                </aside>
+                <aside class="logo">
+                    <a href="http://www.callmenick.com/">
+                        <img src="img/logo.png" alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development">
+                    </a>
+                </aside>
+            </div>
+            <div class="copyright">
+                <span>
+                    &copy; 2014, Nick Salloum<br>
+                    <a href="http://callmenick.com" target="_blank">callmenick.com</a>
+                </span>
+            </div>
+        </div>
+    </footer><!-- /footer -->
+
+</div><!-- /#wrapper -->
+
+<!-- js -->
+<script src="js/classie.js"></script>
+<script src="js/nav.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34160351-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
